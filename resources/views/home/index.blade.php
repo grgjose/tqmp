@@ -305,7 +305,7 @@
       class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
       <div>
         <a href="" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="../src/TQMPLogo.png" alt="Header Image" class="header" width="80">
+          <img src="{{asset('storage/logos/TQMPLogo.png')}}" alt="Header Image" class="header" width="80">
         </a>
       </div>
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
@@ -370,21 +370,21 @@
         <p class="link-secondary">Companies teamed with</p><br>
         <div class="logos">
           <!-- Logos -->
-          <img src="../src/logos/assa-abloy-logo.png" alt="Assa Abloy" class="header-img">
-          <img src="../src/logos/master_armoured_vehicle-logo.png" alt="Master Armoured" class="header-img">
-          <img src="../src/logos/pgpsi-logo.png" alt="PGPSI" class="header-img">
-          <img src="../src/logos/pioneer_logo.png" alt="Pioneer" class="header-img">
-          <img src="../src/logos/thore-logo.png" alt="Thore" class="header-img">
-          <img src="../src/logos/wacker-logo.png" alt="Wacker" class="header-img">
-          <img src="../src/logos/yale-logo.png" alt="Yale" class="header-img">
+          <img src="{{asset('storage/logos/assa-abloy-logo.png')}}" alt="Assa Abloy" class="header-img">
+          <img src="{{asset('storage/logos/master_armoured_vehicle-logo.png')}}" alt="Master Armoured" class="header-img">
+          <img src="{{asset('storage/logos/pgpsi-logo.png')}}" alt="PGPSI" class="header-img">
+          <img src="{{asset('storage/logos/pioneer_logo.png')}}" alt="Pioneer" class="header-img">
+          <img src="{{asset('storage/logos/thore-logo.png')}}" alt="Thore" class="header-img">
+          <img src="{{asset('storage/logos/wacker-logo.png')}}" alt="Wacker" class="header-img">
+          <img src="{{asset('storage/logos/yale-logo.png')}}" alt="Yale" class="header-img">
           <!-- Duplicate logos for seamless scrolling -->
-          <img src="../src/logos/assa-abloy-logo.png" alt="Assa Abloy" class="header-img">
-          <img src="../src/logos/master_armoured_vehicle-logo.png" alt="Master Armoured" class="header-img">
-          <img src="../src/logos/pgpsi-logo.png" alt="PGPSI" class="header-img">
-          <img src="../src/logos/pioneer_logo.png" alt="Pioneer" class="header-img">
-          <img src="../src/logos/thore-logo.png" alt="Thore" class="header-img">
-          <img src="../src/logos/wacker-logo.png" alt="Wacker" class="header-img">
-          <img src="../src/logos/yale-logo.png" alt="Yale" class="header-img">
+          <img src="{{asset('storage/logos/assa-abloy-logo.png')}}" alt="Assa Abloy" class="header-img">
+          <img src="{{asset('storage/logos/master_armoured_vehicle-logo.png')}}" alt="Master Armoured" class="header-img">
+          <img src="{{asset('storage/logos/pgpsi-logo.png')}}" alt="PGPSI" class="header-img">
+          <img src="{{asset('storage/logos/pioneer_logo.png')}}" alt="Pioneer" class="header-img">
+          <img src="{{asset('storage/logos/thore-logo.png')}}" alt="Thore" class="header-img">
+          <img src="{{asset('storage/logos/wacker-logo.png')}}" alt="Wacker" class="header-img">
+          <img src="{{asset('storage/logos/yale-logo.png')}}" alt="Yale" class="header-img">
         </div>
       </div>
       <br>
@@ -702,7 +702,7 @@
         <!-- Logo and Description -->
         <div class="col-md-3 mb-4">
           <a href="" class="d-inline-flex link-body-emphasis text-decoration-none">
-            <img src="../src/TQMPLogo.png" alt="Header Image" class="header" width="80">
+            <img src="{{asset('storage/logos/TQMPLogo.png')}}" alt="Header Image" class="header" width="80">
           </a>
           <p class="small">
             Sed ut perspiciatis undmnis is iste natus error sit amet voluptatem totam rem aperiam.
