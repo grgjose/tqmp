@@ -300,30 +300,36 @@
 <body>
 
   <!-- Header -->
-  <div class="container sticky-top">
-    <header
-      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-      <div>
-        <a href="" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="{{asset('storage/logos/TQMPLogo.png')}}" alt="Header Image" class="header" width="80">
-        </a>
-      </div>
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 active">Home</a></li>
-        <li><a href="#" class="nav-link px-2">About Us</a></li>
-        <li><a href="#" class="nav-link px-2">Contact Us</a></li>
-        <li><a href="#" class="nav-link px-2">Services</a></li>
-        <li><a href="#" class="nav-link px-2">Process Glass</a></li>
-        <li><a href="#" class="nav-link px-2">Float Glass</a></li>
-        <li><a href="#" class="nav-link px-2">Aluminum Glass</a></li>
+<div class="container sticky-top">
+  <header class="navbar">
+    <a href="#" class="navbar-brand">
+      <img src="{{asset('storage/logos/TQMPLogo.png')}}" alt="Header Image">
+    </a>
+
+    <button class="navbar-toggler" onclick="document.querySelector('.navbar-menu').classList.toggle('open');">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar-menu">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Process Glass</a></li>
+        <li><a href="#">Float Glass</a></li>
+        <li><a href="#">Aluminum Glass</a></li>
       </ul>
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <ul>
         <li>
-          <button type="button" class="btn btn-danger">My Cart</button>
+          <button type="button" class="navbar-button">My Cart</button>
         </li>
       </ul>
-    </header>
-  </div>
+    </nav>
+  </header>
+</div>
   <!-- End of Header -->
 
   <!-- Landing -->
