@@ -300,30 +300,45 @@
 <body>
 
   <!-- Header -->
-  <div class="container sticky-top">
-    <header
-      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-      <div>
-        <a href="" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="{{asset('storage/logos/TQMPLogo.png')}}" alt="Header Image" class="header" width="80">
-        </a>
-      </div>
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 active">Home</a></li>
-        <li><a href="#" class="nav-link px-2">About Us</a></li>
-        <li><a href="#" class="nav-link px-2">Contact Us</a></li>
-        <li><a href="#" class="nav-link px-2">Services</a></li>
-        <li><a href="#" class="nav-link px-2">Process Glass</a></li>
-        <li><a href="#" class="nav-link px-2">Float Glass</a></li>
-        <li><a href="#" class="nav-link px-2">Aluminum Glass</a></li>
-      </ul>
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li>
+  <nav class="navbar bg-body-tertiary rounded sticky-top" aria-label="Thirteenth navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom" id="navbar">
+               <a href="" class="d-inline-flex link-body-emphasis text-decoration-none">
+        <img src="{{asset('storage/logos/TQMPLogo.png')}}" alt="Header Image" class="header" width="80">
+      </a>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link px-2 active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#">Process Glass</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#">Float Glass</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#">Aluminum Glass</a>
+          </li>
+        </ul>
+        <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <button type="button" class="btn btn-danger">My Cart</button>
-        </li>
-      </ul>
-    </header>
-  </div>
+        </div>
+      </div>
+    </div>
+  </nav>
   <!-- End of Header -->
 
   <!-- Landing -->
