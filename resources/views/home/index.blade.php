@@ -323,7 +323,7 @@
             <a class="nav-link px-2" href="#">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-2" href="#">Process Glass</a>
+            <a class="nav-link px-2" href="#">Glass Processing</a>
           </li>
           <li class="nav-item">
             <a class="nav-link px-2" href="#">Float Glass</a>
@@ -339,6 +339,38 @@
     </div>
   </nav>
   <!-- End of Header -->
+
+  <!-- Albums (Company Logos) -->
+  <section id="companies" class=" container d-flex gap-2 justify-content-center py-4">
+    <div align="center" valign="middle">
+      <br>
+      <br>
+      <div class="logo-scroller">
+        <p class="link-secondary">Companies teamed with</p><br>
+        <div class="logos">
+          <!-- Logos -->
+          <img src="{{asset('storage/logos/assa-abloy-logo.png')}}" alt="Assa Abloy" class="header-img">
+          <img src="{{asset('storage/logos/master_armoured_vehicle-logo.png')}}" alt="Master Armoured" class="header-img">
+          <img src="{{asset('storage/logos/pgpsi-logo.png')}}" alt="PGPSI" class="header-img">
+          <img src="{{asset('storage/logos/pioneer_logo.png')}}" alt="Pioneer" class="header-img">
+          <img src="{{asset('storage/logos/thore-logo.png')}}" alt="Thore" class="header-img">
+          <img src="{{asset('storage/logos/wacker-logo.png')}}" alt="Wacker" class="header-img">
+          <img src="{{asset('storage/logos/yale-logo.png')}}" alt="Yale" class="header-img">
+          <!-- Duplicate logos for seamless scrolling -->
+          <img src="{{asset('storage/logos/assa-abloy-logo.png')}}" alt="Assa Abloy" class="header-img">
+          <img src="{{asset('storage/logos/master_armoured_vehicle-logo.png')}}" alt="Master Armoured" class="header-img">
+          <img src="{{asset('storage/logos/pgpsi-logo.png')}}" alt="PGPSI" class="header-img">
+          <img src="{{asset('storage/logos/pioneer_logo.png')}}" alt="Pioneer" class="header-img">
+          <img src="{{asset('storage/logos/thore-logo.png')}}" alt="Thore" class="header-img">
+          <img src="{{asset('storage/logos/wacker-logo.png')}}" alt="Wacker" class="header-img">
+          <img src="{{asset('storage/logos/yale-logo.png')}}" alt="Yale" class="header-img">
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+  </section>
+  <!-- End of Albums -->
 
   <!-- Landing -->
   <section class="custom-section fade-in py-5">
@@ -375,37 +407,7 @@
   </section>
   <!-- End of Landing -->
 
-  <!-- Albums (Company Logos) -->
-  <section id="companies" class=" container d-flex gap-2 justify-content-center py-4">
-    <div align="center" valign="middle">
-      <br>
-      <br>
-      <div class="logo-scroller">
-        <p class="link-secondary">Companies teamed with</p><br>
-        <div class="logos">
-          <!-- Logos -->
-          <img src="{{asset('storage/logos/assa-abloy-logo.png')}}" alt="Assa Abloy" class="header-img">
-          <img src="{{asset('storage/logos/master_armoured_vehicle-logo.png')}}" alt="Master Armoured" class="header-img">
-          <img src="{{asset('storage/logos/pgpsi-logo.png')}}" alt="PGPSI" class="header-img">
-          <img src="{{asset('storage/logos/pioneer_logo.png')}}" alt="Pioneer" class="header-img">
-          <img src="{{asset('storage/logos/thore-logo.png')}}" alt="Thore" class="header-img">
-          <img src="{{asset('storage/logos/wacker-logo.png')}}" alt="Wacker" class="header-img">
-          <img src="{{asset('storage/logos/yale-logo.png')}}" alt="Yale" class="header-img">
-          <!-- Duplicate logos for seamless scrolling -->
-          <img src="{{asset('storage/logos/assa-abloy-logo.png')}}" alt="Assa Abloy" class="header-img">
-          <img src="{{asset('storage/logos/master_armoured_vehicle-logo.png')}}" alt="Master Armoured" class="header-img">
-          <img src="{{asset('storage/logos/pgpsi-logo.png')}}" alt="PGPSI" class="header-img">
-          <img src="{{asset('storage/logos/pioneer_logo.png')}}" alt="Pioneer" class="header-img">
-          <img src="{{asset('storage/logos/thore-logo.png')}}" alt="Thore" class="header-img">
-          <img src="{{asset('storage/logos/wacker-logo.png')}}" alt="Wacker" class="header-img">
-          <img src="{{asset('storage/logos/yale-logo.png')}}" alt="Yale" class="header-img">
-        </div>
-      </div>
-      <br>
-      <br>
-    </div>
-  </section>
-  <!-- End of Albums -->
+
 
   <!-- About Us -->
   <section id="about" class="parallax-section">
