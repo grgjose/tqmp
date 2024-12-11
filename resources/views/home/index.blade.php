@@ -298,7 +298,6 @@
 </style>
 
 <body>
-
     <!-- Header -->
     <nav class="navbar navbar-expand-md bg-body-tertiary rounded sticky-top" aria-label="Navbar example">
         <div class="container">
@@ -373,125 +372,7 @@
                 <div class="d-flex">
                     <button type="button" class="btn btn-danger">My Cart</button>
                 </div>
-                <!-- Header -->
-                <nav class="navbar navbar-expand-md bg-body-tertiary rounded sticky-top" aria-label="Navbar example">
-                    <div class="container">
-                        <a href="#" class="navbar-brand d-inline-flex link-body-emphasis text-decoration-none">
-                            <img src="{{ asset('storage/logos/TQMPLogo.png') }}" alt="Header Image" class="header"
-                                width="80">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarContent">
-                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link px-2 active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-2" href="#">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-2" href="#">Contact Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-2" href="#">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-2" href="#">Glass Processing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-2" href="#">Float Glass</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-2" href="#">Aluminum Glass</a>
-                                </li>
-                            </ul>
-                            <div class="d-flex">
-                                <button type="button" class="btn btn-danger">My Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <!-- End of Header -->
 
-                <!-- Albums (Company Logos) -->
-                <section id="companies" class=" container d-flex gap-2 justify-content-center py-4">
-                    <div align="center" valign="middle">
-                        <br>
-                        <br>
-                        <div class="logo-scroller">
-                            <p class="link-secondary">Companies teamed with</p><br>
-                            <div class="logos">
-                                <!-- Logos -->
-                                <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy"
-                                    class="header-img">
-                                <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}"
-                                    alt="Master Armoured" class="header-img">
-                                <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI"
-                                    class="header-img">
-                                <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer"
-                                    class="header-img">
-                                <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore"
-                                    class="header-img">
-                                <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker"
-                                    class="header-img">
-                                <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale"
-                                    class="header-img">
-                                <!-- Duplicate logos for seamless scrolling -->
-                                <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy"
-                                    class="header-img">
-                                <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}"
-                                    alt="Master Armoured" class="header-img">
-                                <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI"
-                                    class="header-img">
-                                <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer"
-                                    class="header-img">
-                                <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore"
-                                    class="header-img">
-                                <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker"
-                                    class="header-img">
-                                <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale"
-                                    class="header-img">
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                    </div>
-                </section>
-                <!-- End of Albums -->
-
-                <!-- Landing -->
-                <section class="custom-section fade-in py-5">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <!-- Text Column -->
-                            <div class="col-md-6 text-center text-md-start">
-                                <h2 class="display-5 fw-bold mb-0">TOTAL QUALITY</h2>
-                                <h2 class="display-5 fw-bold mb-0">MANAGEMENT</h2>
-                                <h2 class="display-5 fw-bold mb-0">PRODUCTS</h2>
-                                <h2 class="display-5 fw-bold text-danger mb-0">PHILIPPINES</h2>
-                                <p class="text-muted mb-4">
-                                    Transforming industries with cutting-edge solutions and unwavering commitment to
-                                    excellence. Join us on our
-                                    journey to redefine quality and innovation.
-                                </p>
-                                <button type="button" class="btn btn-danger btn-lg px-4 py-2">
-                                    Get Started
-                                </button>
-                            </div>
-
-                            <!-- Image Column -->
-                            <div class="col-md-6 text-center">
-                                <div class="position-relative">
-                                    <img src="https://images.pexels.com/photos/942540/pexels-photo-942540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                        alt="Philippines" class="img-fluid rounded shadow-lg">
-                                    <div
-                                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
-                                    </div>
-                                </div>
     </nav>
     <!-- End of Header -->
 
@@ -595,9 +476,6 @@
             </div>
         </div>
     </section>
-
-
-
     <!-- End of About Us -->
 
     <!-- Services -->
