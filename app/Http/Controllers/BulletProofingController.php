@@ -11,7 +11,7 @@ class BulletProofingController extends Controller
      */
     public function index()
     {
-        //
+        return view('bulletproofing.index');
     }
 
     /**

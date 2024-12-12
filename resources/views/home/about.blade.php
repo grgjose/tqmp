@@ -32,7 +32,6 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-
 <style>
   /* Font */
   body {
@@ -43,103 +42,103 @@
   }
 
   /* Header  */
-/* General Button Styling */
-.btn {
-  width: 110px;
-}
-
-.btn-red {
-  background-color: #950101;
-  color: white;
-}
-
-.btn-red:hover {
-  background-color: #950101;
-  opacity: 0.9;
-}
-
-/* Style for menu items */
-.nav-link {
-  color: #1C2033;
-  font-weight: normal;
-  transition: color 0.3s ease, font-weight 0.3s ease;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: #950101;
-  font-weight: bold;
-}
-
-/* Header Styling */
-.sticky-top {
-  position: sticky;
-  top: 0;
-  /* z-index: 1020; */
-  background-color: white;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-}
-
-.header {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive Toggle Button */
-.navbar-toggler {
-  border: none;
-  outline: none;
-  font-size: 1.5rem;
-  color: #950101;
-  background: none;
-  cursor: pointer;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+  /* General Button Styling */
+  .btn {
+    width: 110px;
   }
 
+  .btn-red {
+    background-color: #950101;
+    color: white;
+  }
+
+  .btn-red:hover {
+    background-color: #950101;
+    opacity: 0.9;
+  }
+
+  /* Style for menu items */
   .nav-link {
-    width: 100%;
-    text-align: left;
-    padding: 0.5rem 1rem;
+    color: #1C2033;
+    font-weight: normal;
+    transition: color 0.3s ease, font-weight 0.3s ease;
   }
 
-  .btn-red {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
+  .nav-link:hover,
+  .nav-link.active {
+    color: #950101;
+    font-weight: bold;
   }
 
-  .navbar-collapse {
+  /* Header Styling */
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    /* z-index: 1020; */
     background-color: white;
-    padding: 10px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   }
 
+  .header {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Responsive Toggle Button */
   .navbar-toggler {
-    display: inline-block;
-  }
-}
-
-@media (min-width: 769px) {
-  .navbar-toggler {
-    display: none;
-  }
-
-  .nav {
-    flex-direction: row;
-    align-items: center;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #950101;
+    background: none;
+    cursor: pointer;
   }
 
-  .btn-red {
-    width: auto;
-    text-align: center;
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .nav-link {
+      width: 100%;
+      text-align: left;
+      padding: 0.5rem 1rem;
+    }
+
+    .btn-red {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .navbar-collapse {
+      background-color: white;
+      padding: 10px;
+    }
+
+    .navbar-toggler {
+      display: inline-block;
+    }
   }
-}
+
+  @media (min-width: 769px) {
+    .navbar-toggler {
+      display: none;
+    }
+
+    .nav {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .btn-red {
+      width: auto;
+      text-align: center;
+    }
+  }
 
 
   /* End of header */
@@ -299,79 +298,7 @@
 
 <body>
 
- <!-- Header -->
-  <nav class="navbar navbar-expand-md bg-body-tertiary rounded sticky-top" aria-label="Navbar example">
-    <div class="container">
-      <a href="#" class="navbar-brand d-inline-flex link-body-emphasis text-decoration-none">
-        <img src="../src/TQMPLogo.png" alt="Header Image" class="header" width="80">
-      </a>
-     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link px-2" aria-current="page" href="#">Home</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Bullet Proofing</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Bullet Proof Armouring</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Glass MFG</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Glass Manufacturing</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Aluminum MFG</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Aljuminum Manufacturing</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Glass Processing</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Glass Processing</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Gen. Trade</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Trading</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-2 active" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-2" href="#">FAQs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-2" href="#">Contact Us</a>
-          </li>
-        </ul>
-        <div class="d-flex">
-          <button type="button" class="btn btn-danger">My Cart</button>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- End of Header -->
+  @include('plus.navbar')
 
 <!-- About Us Section -->    
 <section>

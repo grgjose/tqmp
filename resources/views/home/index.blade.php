@@ -298,7 +298,7 @@
 
 <body>
 
-    @include('plus.navbar');
+    @include('plus.navbar')
 
     <!-- Landing -->
     <section class="custom-section fade-in py-5">
