@@ -307,9 +307,9 @@
                 <!-- Text Column -->
                 <div class="col-md-6 text-center text-md-start">
                     <h2 class="display-5 fw-bold mb-0">TOTAL QUALITY</h2>
-                    <h2 class="display-5 fw-bold mb-0">MANAGEMENT</h2>
+                    <h2 class="display-5 fw-bold mb-0">MANUFACTURING</h2>
                     <h2 class="display-5 fw-bold mb-0">PRODUCTS</h2>
-                    <h2 class="display-5 fw-bold text-danger mb-0">PHILIPPINES</h2>
+                    <h2 class="display-5 fw-bold text-danger mb-0">PHILIPPINES CORPORATION</h2>
                     <p class="text-muted mb-4">
                         Transforming industries with cutting-edge solutions and unwavering commitment to excellence.
                         Join us on our
@@ -368,39 +368,6 @@
         </div>
     </section>
     <!-- End of Albums -->
-
-    <!-- About Us -->
-    <section id="about" class="parallax-section">
-        <div class="container about-section">
-            <div class="row align-items-center">
-                <!-- Left Column: Text -->
-                <div class="col-md-6">
-                    <span class="badge text-white mb-2" style="background-color: #950101;">About Us</span>
-                    <h2 class="fw-bold">Make our customers happy by giving services</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae semper odio. Integer
-                        consequat
-                        augue at
-                        libero auctor, sed varius justo ullamcorper. Vivamus euismod, metus eget fermentum laoreet,
-                        leo
-                        orci
-                        volutpat turpis, a vehicula lorem elit eget libero.</p>
-                    <p>Nullam tristique, urna eget tristique efficitur, mauris odio facilisis enim, sit amet
-                        eleifend
-                        turpis lorem
-                        eu turpis. Duis vel nulla a odio faucibus euismod. Fusce vehicula ipsum a purus laoreet, ac
-                        faucibus sapien
-                        lobortis. Cras suscipit risus et dui vulputate, non feugiat urna mollis.</p>
-                    <button type="button" class="btn btn-danger">Get Started</button>
-                </div>
-
-                <!-- Right Column: Placeholder Image -->
-                <div class="col-md-6 text-center">
-                    <img src="https://via.placeholder.com/400x400" alt="Placeholder Image" class="img-fluid rounded">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of About Us -->
 
     <!-- Services -->
     <section id="services" class="py-5">
