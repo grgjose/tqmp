@@ -11,7 +11,7 @@ class GlassProcessingController extends Controller
      */
     public function index()
     {
-        //
+        return view('glass.processing.index');
     }
 
     /**
