@@ -32,7 +32,6 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-
 <style>
     /* Font */
     body {
@@ -318,7 +317,7 @@
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                             aria-expanded="false">Bullet Proofing</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Bullet Proof Armouring</a></li>
+                            <li><a class="dropdown-item" href="/bulletproofing">Bullet Proof Armouring</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>

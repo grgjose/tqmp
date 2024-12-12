@@ -11,14 +11,14 @@ use App\Http\Controllers\GenTradeController;
 
 // Home Pages
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
-Route::get('/1', [HomeController::class, 'about'])->name('home.index');
-Route::get('/2', [HomeController::class, 'contact'])->name('home.index');
-Route::get('/3', [HomeController::class, 'FAQs'])->name('home.index');
+Route::get('/about', [HomeController::class, 'about'])->name('home.about');
+Route::get('/contact', [HomeController::class, 'contact'])->name('home.contact');
+Route::get('/faqs', [HomeController::class, 'FAQs'])->name('home.faqs');
 
 // Product Pages
-Route::get('/4', [ServicesController::class, 'index'])->name('services.index');
-Route::get('/5', [BulletProofingController::class, 'index'])->name('bulletproofing.index');
-Route::get('/6', [GlassManufacturingController::class, 'index'])->name('glass.manufacturing.index');
-Route::get('/7', [AluminumManufacturingController::class, 'index'])->name('aluminum.manufacturing.index');
-Route::get('/8', [GlassProcessingController::class, 'index'])->name('glass.processing.index');
-Route::get('/9', [GenTradeController::class, 'index'])->name('gentrade.index');
+Route::get('/services', [ServicesController::class, 'index'])->name('services.index');
+Route::get('/bulletproofing', [BulletProofingController::class, 'index'])->name('bulletproofing.index');
+Route::get('/glassmanufacturing', [GlassManufacturingController::class, 'index'])->name('glass.manufacturing.index');
+Route::get('/aluminummanufacturing', [AluminumManufacturingController::class, 'index'])->name('aluminum.manufacturing.index');
+Route::get('/glassprocessing', [GlassProcessingController::class, 'index'])->name('glass.processing.index');
+Route::get('/gentrade', [GenTradeController::class, 'index'])->name('gentrade.index');
