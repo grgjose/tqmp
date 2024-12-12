@@ -11,7 +11,7 @@ class GlassManufacturingController extends Controller
      */
     public function index()
     {
-        //
+        return view('glass.manufacturing.index');
     }
 
     /**

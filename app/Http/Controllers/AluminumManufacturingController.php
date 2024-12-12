@@ -11,7 +11,7 @@ class AluminumManufacturingController extends Controller
      */
     public function index()
     {
-        //
+        return view('aluminum.manufacturing.index');
     }
 
     /**

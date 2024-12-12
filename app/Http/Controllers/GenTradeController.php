@@ -11,7 +11,7 @@ class GenTradeController extends Controller
      */
     public function index()
     {
-        //
+        return view('gentrade.index');
     }
 
     /**
