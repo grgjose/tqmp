@@ -27,7 +27,7 @@
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                         aria-expanded="false">Glass MFG</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Glass Manufacturing</a></li>
+                        <li><a class="dropdown-item" href="/glassmanufacturing">Glass Manufacturing</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
@@ -36,7 +36,7 @@
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                         aria-expanded="false">Aluminum MFG</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Aluminum Manufacturing</a></li>
+                        <li><a class="dropdown-item" href="/aluminummanufacturing">Aluminum Manufacturing</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
@@ -45,7 +45,7 @@
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                         aria-expanded="false">Glass Processing</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Glass Processing</a></li>
+                        <li><a class="dropdown-item" href="/glassprocessing">Glass Processing</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
@@ -54,19 +54,19 @@
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                         aria-expanded="false">Gen. Trade</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Trading</a></li>
+                        <li><a class="dropdown-item" href="/gentrade">Trading</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="#">About Us</a>
+                    <a class="nav-link px-2" href="/about">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="#">FAQs</a>
+                    <a class="nav-link px-2" href="/faqs">FAQs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="#">Contact Us</a>
+                    <a class="nav-link px-2" href="/contact">Contact Us</a>
                 </li>
             </ul>
             <div class="d-flex">
