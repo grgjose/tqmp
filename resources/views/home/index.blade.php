@@ -37,48 +37,11 @@
     @include('plus.navbar')
     <!-- End of Header -->
 
-    <!-- Landing -->
-    <section class="custom-section fade-in py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Text Column -->
-                <div class="col-md-6 text-center text-md-start">
-                    <h2 class="display-5 fw-bold mb-0">TOTAL QUALITY</h2>
-                    <h2 class="display-5 fw-bold mb-0">MANUFACTURING</h2>
-                    <h2 class="display-5 fw-bold mb-0">PRODUCTS</h2>
-                    <h2 class="display-5 fw-bold text-danger mb-0">PHILIPPINES CORPORATION</h2>
-                    <p class="text-muted mb-4">
-                        Transforming industries with cutting-edge solutions and unwavering commitment to excellence.
-                        Join us on our
-                        journey to redefine quality and innovation.
-                    </p>
-                    <button type="button" class="btn btn-danger btn-lg px-4 py-2">
-                        Get Started
-                    </button>
-                </div>
-
-                <!-- Image Column -->
-                <div class="col-md-6 text-center">
-                    <div class="position-relative">
-                        <img src="{{ asset('storage/logos/TQMPBuilding.jpg') }}"
-                            alt="Philippines" class="img-fluid rounded shadow-lg">
-                        <div
-                            class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Landing -->
-
     <!-- Albums (Company Logos) -->
-    <section id="companies" class=" container d-flex gap-2 justify-content-center py-4">
+    <section id="companies" class=" container d-flex gap-2 justify-content-center py-3">
         <div align="center" valign="middle">
-            <br>
-            <br>
             <div class="logo-scroller">
-                <p class="link-secondary">Companies teamed with</p><br>
+                {{-- <p class="link-secondary">Companies teamed with</p><br> --}}
                 <div class="logos">
                     <!-- Logos -->
                     <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img">
@@ -105,6 +68,41 @@
         </div>
     </section>
     <!-- End of Albums -->
+
+    <!-- Landing -->
+    <section class="custom-section fade-in py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Column -->
+                <div class="col-md-6 text-center text-md-start">
+                    <h2 class="display-5 fw-bold mb-0">TOTAL QUALITY</h2>
+                    <h2 class="display-5 fw-bold mb-0">MANUFACTURING</h2>
+                    <h2 class="display-5 fw-bold mb-0">PRODUCTS</h2>
+                    <h2 class="display-5 fw-bold text-danger mb-0">PHILIPPINES CORPORATION</h2>
+                    <p class="text-muted mb-4">
+                        Transforming industries with cutting-edge solutions and unwavering commitment to excellence.
+                        Join us on our
+                        journey to redefine quality and innovation.
+                    </p>
+                    <button type="button" class="btn btn-danger btn-lg px-4 py-2">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-md-6 text-center">
+                    <div class="position-relative">
+                        <img src="{{ asset('storage/logos/TQMPBuilding.jpg') }}" alt="Philippines"
+                            class="img-fluid rounded shadow-lg">
+                        <div
+                            class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Landing -->
 
     <!-- Services -->
     <section id="services" class="py-5">

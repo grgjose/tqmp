@@ -111,7 +111,7 @@
 
     /* Landing Page Scrolling Animation */
     .custom-section {
-        background-color: #f8f9fa;
+        background-color: #ffffff;
         /* Light grey background */
         font-family: 'Roboto', sans-serif;
         /* Modern, clean font */
@@ -186,7 +186,7 @@
     }
 
     .custom-section {
-        min-height: 80vh;
+        min-height: 65vh;
         display: flex;
         align-items: center;
     }
@@ -240,7 +240,7 @@
 
     /* Logos: maintain aspect ratio and size */
     .header-img {
-        height: 50px;
+        height: 40px;
         /* Set a consistent height for all logos */
         object-fit: contain;
         /* Ensures logos fit without stretching */
