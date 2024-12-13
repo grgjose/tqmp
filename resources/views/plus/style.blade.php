@@ -260,4 +260,19 @@
     }
 
     /* End of Company Logos Animation  */
+    .image-aboutus-banner {
+        background: linear-gradient(rgba(80, 75, 75, 0.7), rgba(146, 142, 142, 0.7)), url("https://scontent.fmnl11-1.fna.fbcdn.net/v/t39.30808-6/462583924_122118744182380974_7900839856824172498_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHJRaTQImxuOL49XEWJWElALOVgT6JYnJIs5WBPolicksuZ_hBiYTmGM4AEONAbUHUypOvpYmMNTPO9oKCKtZgg&_nc_ohc=fl4c5nJJCTwQ7kNvgHRbFhM&_nc_zt=23&_nc_ht=scontent.fmnl11-1.fna&_nc_gid=ADHP7qpgHyA8Zyv3N7BPYlr&oh=00_AYCjWiee5e213CbK-fnnx25n8bc02GDMmynpWviQgJ2tgQ&oe=67625AB7");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: #fff;
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
+    .bulletproof-section {
+        min-height: 65vh;
+        display: flex;
+        align-items: center;
+    }
 </style>

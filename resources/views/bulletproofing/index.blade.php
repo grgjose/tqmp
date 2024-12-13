@@ -37,93 +37,31 @@
     @include('plus.navbar')
     <!-- End of Header -->
 
-    <!-- Services -->
-    <section id="services" class="py-4">
-        <div class="container text-center">
-            <!-- Badge -->
-            <span class="badge text-white mb-2" style="background-color: #950101;">Our Services</span>
-            <!-- Heading -->
-            <h2 class="fw-bold">Bullet Proofing</h2>
-            <!-- Paragraph -->
-            <p class="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                vestibulum.
-                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
-                elementum
-                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
-            </p>
-            <!-- Cards -->
-            <div class="row mt-4">
-                <!-- Card 1 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 1" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/8159/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 1" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 1" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Browse See More Button -->
-            <div class="mt-4">
-                <button type="button" class="btn btn-danger">See More</button>
-            </div>
-    </section>
-    <!-- End of Services -->
 
     <!-- Trial -->
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-    <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <h1 class="display-3 fw-bold">Designed for engineers</h1>
-      <h3 class="fw-normal text-muted mb-3">Build anything you want with Aperture</h3>
-      <div class="d-flex gap-3 justify-content-center lead fw-normal">
-        <a class="icon-link" href="#">
-          Learn more
-          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-        </a>
-        <a class="icon-link" href="#">
-          Buy
-          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-        </a>
-      </div>
+    <div class="image-aboutus-banner position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary" style="margin-top:70px">
+        <div class="container">
+            <div class="row col-md-6 p-lg-5 mx-auto my-5">
+                <div class="col-md-12">
+                    <h2 class="fw-bold">Master Armoured Vehicle</h2>
+                    <h5 class="fw-normal text-light mb-3">Your premier source for top-of-the-line and precision-engineered armoured vehicles</h5>
+                    <button type="button" class="btn btn-danger">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-  </div>
     <!-- End of Trial -->
 
     <!-- Bullet Proofing Section -->
-    <div class="container py-4">
-        <section class="custom-section fade-in">
+    <div class="container py-5">
+        <section class="fade-in">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Text Column -->
-                    <div class="col-md-6 text-center text-md-start">
+                    <div class="col-md-6 text-center text-md-end">
                         <h2 class="fw-bold">Bullet Proofing</h2>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis
                             lacus faucibus, placerat magna sed, lacinia enim. Maecenas vitae fringilla metus, ac
@@ -136,8 +74,8 @@
                     <!-- Image Column -->
                     <div class="col-md-6 text-center">
                         <div class="position-relative">
-                            <img src="https://images.pexels.com/photos/942540/pexels-photo-942540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="Philippines" class="img-fluid rounded shadow-lg">
+                            <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}"
+                                alt="Philippines" class="img-fluid rounded lg">
                             <div
                                 class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
                             </div>
@@ -148,6 +86,197 @@
         </section>
     </div>
     <!-- Bullet Proofing Section -->
+
+    <!-- START THE FEATURETTES -->
+    <div class="container">
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7">
+                <h2 class="fw-bold">Armoured Car</h2>
+                <p class="text-muted">Some great placeholder content for the first featurette here. Imagine some
+                    exciting prose here.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/logos/bulletproof-1.jpg') }}"
+                        alt="Philippines" class="img-fluid rounded lg">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="fw-bold">Radiator Grill</h2>
+                <p class="text-muted">Another featurette? Of course. More placeholder content here to give you
+                    an
+                    idea of how this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/logos/bulletproof-2.jpg') }}"
+                        alt="Philippines" class="img-fluid rounded lg">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7">
+                <h2 class="fw-bold">Gas Tank Cover</h2>
+                <p class="text-muted">And yes, this is the last block of representative placeholder content.
+                    Again,
+                    not really intended to be actually read, simply here to give you a better view of what this
+                    would look like with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/logos/bulletproof-3.jpg') }}"
+                        alt="Philippines" class="img-fluid rounded lg">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="fw-bold">Upgraded Suspension</h2>
+                <p class="text-muted">Another featurette? Of course. More placeholder content here to give you
+                    an
+                    idea of how this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/logos/bulletproof-4.jpg') }}"
+                        alt="Philippines" class="img-fluid rounded lg">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7">
+                <h2 class="fw-bold">Battery & Fuse Box Cover</h2>
+                <p class="text-muted">And yes, this is the last block of representative placeholder content.
+                    Again,
+                    not really intended to be actually read, simply here to give you a better view of what this
+                    would look like with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/logos/bulletproof-5.jpg') }}"
+                        alt="Philippines" class="img-fluid rounded lg">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="fw-bold">Run Flat Insert</h2>
+                <p class="text-muted">Another featurette? Of course. More placeholder content here to give you
+                    an
+                    idea of how this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/logos/bulletproof-6.jpg') }}"
+                        alt="Philippines" class="img-fluid rounded lg">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7">
+                <h2 class="fw-bold">Back Door Partition</h2>
+                <p class="text-muted">And yes, this is the last block of representative placeholder content.
+                    Again,
+                    not really intended to be actually read, simply here to give you a better view of what this
+                    would look like with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/logos/bulletproof-7.jpg') }}"
+                        alt="Philippines" class="img-fluid rounded lg">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="fw-bold">Bullet Catcher</h2>
+                <p class="text-muted">Another featurette? Of course. More placeholder content here to give you
+                    an
+                    idea of how this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/logos/bulletproof-8.jpg') }}"
+                        alt="Philippines" class="img-fluid rounded lg">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7">
+                <h2 class="fw-bold">Premium Leather Seats</h2>
+                <p class="text-muted">And yes, this is the last block of representative placeholder content.
+                    Again,
+                    not really intended to be actually read, simply here to give you a better view of what this
+                    would look like with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/logos/bulletproof-9.jpg') }}"
+                        alt="Philippines" class="img-fluid rounded lg">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+    </div>
+    <!-- /END THE FEATURETTES -->
 
     <!-- Accordion Section -->
     @include ('plus.accordion')

@@ -1,5 +1,5 @@
     <!-- Call to Action -->
-    <section>
+    <br><br><section>
         <body class="bg-white">
             <!-- Centered Section -->
             <div class="d-flex justify-content-center align-items-center" style="height: auto;">
@@ -8,8 +8,8 @@
                     <div class="row align-items-center">
                         <!-- Left Column -->
                         <div class="col-md-8 text-light">
-                            <h3 class="fw-bold mb-2">Lorem ipsum dolor sit amet</h3>
-                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <h3 class="fw-bold mb-2">From Design to Delivery, We've Got You!</h3>
+                            <p class="mb-1">Whether it's sliding doors, aluminum installations, or custom glass solutions, we deliver exceptional quality every time.</p>
                         </div>
                         <!-- Right Column -->
                         <div class="col-md-4 text-md-end">
@@ -21,5 +21,5 @@
                 </div>
             </div>
         </body>
-    </section>
+    </section><br><br>
     <!-- End of Call to Action -->
