@@ -60,7 +60,7 @@
                 <!-- Image Column -->
                 <div class="col-md-6 text-center">
                     <div class="position-relative">
-                        <img src="https://images.pexels.com/photos/942540/pexels-photo-942540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        <img src="{{ asset('storage/logos/TQMPBuilding.jpg') }}"
                             alt="Philippines" class="img-fluid rounded shadow-lg">
                         <div
                             class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
