@@ -4,7 +4,7 @@
             <!-- Centered Section -->
             <div class="d-flex justify-content-center align-items-center" style="height: auto;">
                 <div class="p-5"
-                    style="background-color: #232B37; border-radius: 8px; max-width: 900px; width: 100%;">
+                    style="background-color: #161b22; border-radius: 8px; max-width: 900px; width: 100%;">
                     <div class="row align-items-center">
                         <!-- Left Column -->
                         <div class="col-md-8 text-light">
@@ -21,5 +21,5 @@
                 </div>
             </div>
         </body>
-    </section> <br><br>
+    </section>
     <!-- End of Call to Action -->

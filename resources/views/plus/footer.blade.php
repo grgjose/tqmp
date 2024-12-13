@@ -1,5 +1,5 @@
     <!-- Footer -->
-    <footer class="text-light py-5" style="background-color: #232B37;">
+    <footer class="text-light py-5" style="background-color: #161b22;">
         <div class="container">
             <div class="row">
                 <!-- Logo and Description -->
