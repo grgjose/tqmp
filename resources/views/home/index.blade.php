@@ -38,10 +38,10 @@
     <!-- End of Header -->
 
     <!-- Albums (Company Logos) -->
-    <section id="companies" class=" container d-flex gap-2 justify-content-center py-3">
+    <section id="companies" class=" container d-flex gap-2 justify-content-center py-5">
         <div align="center" valign="middle">
             <div class="logo-scroller">
-                {{-- <p class="link-secondary">Companies teamed with</p><br> --}}
+                <!-- <p class="link-secondary">Companies teamed with</p><br> -->
                 <div class="logos">
                     <!-- Logos -->
                     <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img">

@@ -12,7 +12,7 @@
                         Sed ut perspiciatis undmnis is iste natus error sit amet voluptatem totam rem aperiam.
                     </p>
                     <p class="mb-0">
-                        <i class="bi bi-telephone"></i> +012 (345) 678 99
+                        <i class="bi bi-telephone"></i> +632-7717-8767
                     </p>
                 </div>
 
