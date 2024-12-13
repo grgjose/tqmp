@@ -37,9 +37,68 @@
     @include('plus.navbar')
     <!-- End of Header -->
 
+    <!-- Services -->
+    <section id="services" class="py-4">
+        <div class="container text-center">
+            <!-- Badge -->
+            <span class="badge text-white mb-2" style="background-color: #950101;">Our Services</span>
+            <!-- Heading -->
+            <h2 class="fw-bold">Bullet Proofing</h2>
+            <!-- Paragraph -->
+            <p class="mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                vestibulum.
+                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
+                elementum
+                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+            </p>
+            <!-- Cards -->
+            <div class="row mt-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Category 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Category 1</h5>
+                            <p class="text-muted">8 Products Available</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="https://images.pexels.com/photos/8159/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Category 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Category 1</h5>
+                            <p class="text-muted">8 Products Available</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Category 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Category 1</h5>
+                            <p class="text-muted">8 Products Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Browse See More Button -->
+            <div class="mt-4">
+                <button type="button" class="btn btn-danger">See More</button>
+            </div>
+    </section>
+    <!-- End of Services -->
+
     <!-- Bullet Proofing Section -->
     <div class="container py-4">
-        <section class="custom-section fade-in py-5">
+        <section class="custom-section fade-in">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Text Column -->
@@ -66,61 +125,10 @@
                 </div>
             </div>
         </section>
-
-        <div class="container py-5">
-            <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
-                <!-- Product 1 -->
-                <div class="col">
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Sliding Door Installation">
-                        <h5>Sliding Door Installation</h5>
-                        <p class="price">$39.00</p>
-                    </div>
-                </div>
-                <!-- Product 2 -->
-                <div class="col">
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Glass Installation">
-                        <h5>Glass Installation</h5>
-                        <p class="price">$39.00</p>
-                    </div>
-                </div>
-                <!-- Product 3 -->
-                <div class="col">
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Window Installation">
-                        <h5>Window Installation</h5>
-                        <p class="price">$39.00</p>
-                    </div>
-                </div>
-                <!-- Product 4 -->
-                <div class="col">
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Hardware">
-                        <h5>Hardware</h5>
-                        <p class="price">$39.00</p>
-                    </div>
-                </div>
-                <!-- Product 5 -->
-                <div class="col">
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Aluminum Installation">
-                        <h5>Aluminum Installation</h5>
-                        <p class="price">$39.00</p>
-                    </div>
-                </div>
-                <!-- Product 6 -->
-                <div class="col">
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Chemicals">
-                        <h5>Chemicals</h5>
-                        <p class="price">$39.00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- Bullet Proofing Section -->
+
+
 
     <!-- Accordion Section -->
     @include ('plus.accordion')
