@@ -128,8 +128,6 @@
     </div>
     <!-- Bullet Proofing Section -->
 
-
-
     <!-- Accordion Section -->
     @include ('plus.accordion')
     <!-- End of Accordion -->
