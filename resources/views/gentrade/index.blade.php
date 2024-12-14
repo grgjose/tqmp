@@ -37,11 +37,59 @@
     @include('plus.navbar')
     <!-- End of Header -->
 
+        <!-- Trial -->
+        <div class="image-aboutus-banner position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary" style="margin-top:70px">
+        <div class="container">
+            <div class="row col-md-6 p-lg-5 mx-auto my-5">
+                <div class="col-md-12">
+                    <h2 class="fw-bold">Architectural Hardwares</h2>
+                    <h5 class="fw-normal text-light mb-3">Your one stop page for general tool merchandises</h5>
+                    <!-- <button type="button" class="btn btn-danger">
+                        Facebook Page
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Trial -->
+
+    <!-- Bullet Proofing Section -->
+    <div class="container py-5">
+        <section class="fade-in">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Text Column -->
+                    <div class="col-md-6 text-center text-md-end">
+                        <h2 class="fw-bold">Gen Trade</h2>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis
+                            lacus faucibus, placerat magna sed, lacinia enim. Maecenas vitae fringilla metus, ac
+                            dignissim elit.</p>
+                        <!-- <button type="button" class="btn btn-danger">
+                            Get Started
+                        </button> -->
+                    </div>
+
+                    <!-- Image Column -->
+                    <div class="col-md-6 text-center">
+                        <div class="position-relative">
+                            <img src="{{ asset('storage/logos/TQMPLogo.png') }}"
+                                alt="Philippines" class="img-fluid rounded lg">
+                            <div
+                                class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- Bullet Proofing Section -->
+
     <!-- Services -->
     <section id="services" class="py-4">
         <div class="container text-center">
-            <!-- Badge -->
-            <span class="badge text-white mb-2" style="background-color: #950101;">Our Services</span>
             <!-- Heading -->
             <h2 class="fw-bold">Gen Trading</h2>
             <!-- Paragraph -->

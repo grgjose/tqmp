@@ -45,7 +45,7 @@
                     <h2 class="fw-bold">Master Armoured Vehicle</h2>
                     <h5 class="fw-normal text-light mb-3">Your premier source for top-of-the-line and precision-engineered armoured vehicles</h5>
                     <button type="button" class="btn btn-danger">
-                        Get Started
+                        Facebook Page
                     </button>
                 </div>
             </div>
@@ -64,9 +64,9 @@
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis
                             lacus faucibus, placerat magna sed, lacinia enim. Maecenas vitae fringilla metus, ac
                             dignissim elit.</p>
-                        <button type="button" class="btn btn-danger">
+                        <!-- <button type="button" class="btn btn-danger">
                             Get Started
-                        </button>
+                        </button> -->
                     </div>
 
                     <!-- Image Column -->
