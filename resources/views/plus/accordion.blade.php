@@ -1,5 +1,5 @@
     <!-- Accordion Section -->
-    <section class="py-5" >
+    <section class="py-3" >
         <div class="container text-center">
             <!-- FAQ Heading -->
             <span class="badge text-white mb-2" style="background-color: #950101;">FAQs</span>

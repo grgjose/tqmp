@@ -1,5 +1,5 @@
     <!-- Call to Action -->
-    <br><br><section>
+    <section class="py-3">
         <body class="bg-white">
             <!-- Centered Section -->
             <div class="d-flex justify-content-center align-items-center" style="height: auto;">
@@ -21,5 +21,5 @@
                 </div>
             </div>
         </body>
-    </section><br><br>
+    </section>
     <!-- End of Call to Action -->

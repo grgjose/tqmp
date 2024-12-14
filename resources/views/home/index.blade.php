@@ -90,7 +90,7 @@
                 </div>
 
                 <!-- Image Column -->
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center py-3">
                     <div class="position-relative">
                         <img src="{{ asset('storage/logos/TQMPBuilding.jpg') }}" alt="Philippines"
                             class="img-fluid rounded shadow-lg">
@@ -104,8 +104,14 @@
     </section>
     <!-- End of Landing -->
 
+    <!-- Line -->
+    <div class="container text-center">
+        <hr style="width: 30%;  margin: 20px auto;">
+    </div>
+    <!-- End of Line -->
+
     <!-- Services -->
-    <section id="services" class="py-5">
+    <section id="services" class="py-3">
         <div class="container text-center">
             <!-- Badge -->
             <span class="badge text-white mb-2" style="background-color: #950101;">Our Services</span>
@@ -120,36 +126,25 @@
                 lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
             </p>
             <!-- Cards -->
-            <div class="row mt-4">
+            <div class="row mt-6">
                 <!-- Card 1 -->
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card border-0">
                         <img src="https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
+                            <h5 class="fw-bold">Bullet Proofing</h5>
                             <p class="text-muted">8 Products Available</p>
                         </div>
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card border-0">
                         <img src="https://images.pexels.com/photos/8159/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 1" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
+                            <h5 class="fw-bold">Glass Processing</h5>
                             <p class="text-muted">8 Products Available</p>
                         </div>
                     </div>
@@ -157,18 +152,14 @@
             </div>
 
             <!-- Browse See More Button -->
-            <div class="mt-4">
+            <!-- <div class="mt-4">
                 <button type="button" class="btn btn-danger">See More</button>
-            </div>
+            </div> -->
     </section>
     <!-- End of Services -->
 
-    <!-- Space -->
-    <br><br>
-    <!-- End of Space -->
-
     <!-- Category -->
-    <section id="category" class="py-5">
+    <section id="category" class="py-3">
         <div class="container text-center">
             <!-- Badge -->
             <span class="badge text-white mb-2" style="background-color: #950101;">Category</span>
@@ -185,48 +176,36 @@
             <!-- Category Cards -->
             <div class="row mt-5">
                 <!-- Category 1 -->
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card border-0">
                         <img src="https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
+                            <h5 class="fw-bold">Glass</h5>
                             <p class="text-muted">8 Products Available</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Category 2 -->
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card border-0">
                         <img src="https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Category 2" class="card-img-top rounded">
                         <div class="card-body">
-                            <h5 class="fw-bold">Category 2</h5>
+                            <h5 class="fw-bold">Aluminum</h5>
                             <p class="text-muted">8 Products Available</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Category 3 -->
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card border-0">
                         <img src="https://images.pexels.com/photos/454499/pexels-photo-454499.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt="Category 3" class="card-img-top rounded">
                         <div class="card-body">
-                            <h5 class="fw-bold">Category 3</h5>
-                            <p class="text-muted">8 Products Available</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Category 4 -->
-                <div class="col-md-3">
-                    <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/7219179/pexels-photo-7219179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 4" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Category 4</h5>
+                            <h5 class="fw-bold">Gen Trade</h5>
                             <p class="text-muted">8 Products Available</p>
                         </div>
                     </div>
@@ -234,7 +213,7 @@
             </div>
 
             <!-- Browse More Button -->
-            <div class="mt-4">
+            <div class="">
                 <button type="button" class="btn btn-danger">See More</button>
             </div>
 
