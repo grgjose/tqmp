@@ -41,7 +41,7 @@
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
         style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                    url('https://scontent.fmnl11-1.fna.fbcdn.net/v/t39.30808-6/461859668_122117741834380974_3985590456915764538_n.png?stp=dst-png_s960x960&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHAPT0fNhfH8WqZfEN-AVwbC5TsUhf_OyYLlOxSF_87JlooOy632UQTI7jxPgZQARg3zD0et3nEYyhBb3QrpbNB&_nc_ohc=r1YikZqf36EQ7kNvgEvC3Dw&_nc_zt=23&_nc_ht=scontent.fmnl11-1.fna&_nc_gid=AqnWnb_8SfEd9-MY7KUSnHO&oh=00_AYAVrDatLNUGOT76aCROlJFcbc6GLSPgfKKN7opVzUyHdg&oe=67650FC9') no-repeat center center/cover;">
+                    url('https://images.pexels.com/photos/21263452/pexels-photo-21263452/free-photo-of-a-bullet-hole-in-a-glass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
