@@ -41,7 +41,7 @@
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
         style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                    url('https://lh6.googleusercontent.com/Kk1TT2tf7vKV8OXxGxjnpYvBqV7KRGbrrnLGvNKv1Z4HNPvu5bOkba12r0SwivWeaXig8GD8wfLPfMaouBWEg_W5s1YN4q_4h5PoEkIqmBMgPu3R4uzwyqe30CyAlCT_lA=w1280') no-repeat center center/cover;">
+                    url('https://images.pexels.com/photos/3736110/pexels-photo-3736110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -89,13 +89,17 @@
     </section>
     <!-- Glass Processing Section -->
 
-    <hr class="featurette-divider">
+    <!-- Line -->
+    <div class="container text-center">
+        <hr style="width: 30%;  margin: 20px auto;">
+    </div>
+    <!-- End of Line -->
 
     <!-- Services -->
     <section id="services" class="py-4">
         <div class="container text-center">
             <!-- Heading -->
-            <h2 class="fw-bold">Gen Trading</h2>
+            <h2 class="fw-bold">List of Process</h2>
             <!-- Paragraph -->
             <p class="mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
@@ -110,10 +114,10 @@
                 <div class="col-md-4">
                     <div class="card border-0">
                         <img src="https://lh6.googleusercontent.com/Ab4O3T2VOIvE6duGpYFPKbx6z1y6wBOv2dOpbD_sQ-OFN5K_Qem5KLSHjcJ1Q4oCvj3GaOhXuafeZ97ITEmkEUfrF7SSw5YINbtqrFgNvMunlc5BBBpX788x121U87wWbQ=w1280"
-                            alt="Category 1" class="card-img-top rounded">
+                            alt="Category 1" class="card-img-top rounded" height="300">
                         <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
+                            <h5 class="fw-bold">Tempered Glass</h5>
+                            <p class="text-muted"> Fully tempered glass is a unique glazing material. It is about 3 to 5 times stronger than an ordinary or annealed glass of the same thickness and configuration.</p>
                         </div>
                     </div>
                 </div>
@@ -121,10 +125,10 @@
                 <div class="col-md-4">
                     <div class="card border-0">
                         <img src="https://lh6.googleusercontent.com/Kk1TT2tf7vKV8OXxGxjnpYvBqV7KRGbrrnLGvNKv1Z4HNPvu5bOkba12r0SwivWeaXig8GD8wfLPfMaouBWEg_W5s1YN4q_4h5PoEkIqmBMgPu3R4uzwyqe30CyAlCT_lA=w1280"
-                            alt="Category 1" class="card-img-top rounded">
+                            alt="Category 1" class="card-img-top rounded" height="300">
                         <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
+                            <h5 class="fw-bold">Laminated Glass</h5>
+                            <p class="text-muted"> Laminated glass is a multi-functional glazing material that can be used in a variety of applications. It is manufactured by permanently bonding two or more glass panes with layers of polyvinyl butyral (PVB) interlayer, under heat and pressure to produce a single products.</p>
                         </div>
                     </div>
                 </div>
@@ -132,10 +136,10 @@
                 <div class="col-md-4">
                     <div class="card border-0">
                         <img src="https://lh3.googleusercontent.com/BCB9wJ57qZyW4Amzf78j1QmRtfazVr_1zXW-mh-vmaLTVrJ9to--zIi5JhmdqR4TaiPjDIFdiU6feGS9uGonwF6octfMmfK8SiqsHUxy-XuTa6_x-lOVfBsWzI5B5ZWV5A=w1280"
-                            alt="Category 1" class="card-img-top rounded">
+                            alt="Category 1" class="card-img-top rounded" height="300">
                         <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
+                            <h5 class="fw-bold">Curved Tempered Glass</h5>
+                            <p class="text-muted"> In the same manner with flat tempered glass, curved tempered glass is also resistant to mechanical stresses (bending, impact, etc.) and thermal stresses (temperature difference), without altering the properties of the basic products.</p>
                         </div>
                     </div>
                 </div>
@@ -148,34 +152,6 @@
         </div>
     </section>
     <!-- End of Services -->
-
-    <section class="custom-section fade-in py-5 align-items-center">
-        <div class="container py-4">
-            <div class="row align-items-center">
-                <!-- Text Column -->
-                <div class="col-md-6 text-center text-md-start">
-                    <h2 class="fw-bold">Gen Trade</h2>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis
-                        lacus faucibus, placerat magna sed, lacinia enim. Maecenas vitae fringilla metus, ac
-                        dignissim elit.</p>
-                    <button type="button" class="btn btn-danger">
-                        Get Started
-                    </button>
-                </div>
-
-                <!-- Image Column -->
-                <div class="col-md-6 text-center">
-                    <div class="position-relative">
-                        <img src="https://images.pexels.com/photos/942540/pexels-photo-942540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Philippines" class="img-fluid rounded shadow-lg">
-                        <div
-                            class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Accordion Section -->
     @include ('plus.accordion')
