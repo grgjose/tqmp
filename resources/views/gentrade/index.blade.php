@@ -60,45 +60,8 @@
     </section>
     <!-- End of landing  -->
 
-    <!-- iNTRO Section -->
-    <div class="container py-5">
-        <section class="fade-in">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Text Column -->
-                    <div class="col-md-6 text-center text-md-end">
-                        <h2 class="fw-bold">Gen Trade</h2>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis
-                            lacus faucibus, placerat magna sed, lacinia enim. Maecenas vitae fringilla metus, ac
-                            dignissim elit.</p>
-                        <!-- <button type="button" class="btn btn-danger">
-                            Get Started
-                        </button> -->
-                    </div>
-
-                    <!-- Image Column -->
-                    <div class="col-md-6 text-center">
-                        <div class="position-relative">
-                            <img src="{{ asset('storage/logos/TQMPLogo.png') }}"
-                                alt="Philippines" class="img-fluid rounded lg">
-                            <div
-                                class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Line -->
-    <div class="container text-center">
-        <hr style="width: 30%;  margin: 20px auto;">
-    </div>
-    <!-- End of Line -->
-
     <!-- Doors -->
-    <section id="services" class="py-4">
+    <section id="services" class="py-5">
         <div class="container text-center">
             <!-- Heading -->
             <h2 class="fw-bold">Door Closers and Floor Hinges</h2>
