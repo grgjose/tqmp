@@ -261,7 +261,7 @@
 
     /* End of Company Logos Animation  */
     .image-aboutus-banner {
-        background: linear-gradient(rgba(129, 38, 38, 0.7), rgba(71, 69, 69, 0.7)), url("https://scontent.fmnl11-1.fna.fbcdn.net/v/t39.30808-6/462583924_122118744182380974_7900839856824172498_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHJRaTQImxuOL49XEWJWElALOVgT6JYnJIs5WBPolicksuZ_hBiYTmGM4AEONAbUHUypOvpYmMNTPO9oKCKtZgg&_nc_ohc=fl4c5nJJCTwQ7kNvgHRbFhM&_nc_zt=23&_nc_ht=scontent.fmnl11-1.fna&_nc_gid=ADHP7qpgHyA8Zyv3N7BPYlr&oh=00_AYCjWiee5e213CbK-fnnx25n8bc02GDMmynpWviQgJ2tgQ&oe=67625AB7");
+        background: linear-gradient(rgba(129, 38, 38, 0.7), rgba(71, 69, 69, 0.7)), url("https://images.pexels.com/photos/7219187/pexels-photo-7219187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;

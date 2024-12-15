@@ -8,13 +8,13 @@
                     <div class="row align-items-center">
                         <!-- Left Column -->
                         <div class="col-md-8 text-light">
-                            <h3 class="fw-bold mb-2">From Design to Delivery, We've Got You!</h3>
-                            <p class="mb-1">Whether it's sliding doors, aluminum installations, or custom glass solutions, we deliver exceptional quality every time.</p>
+                            <h3 class="fw-bold mb-2">If you need industrial solution, We are available for you.</h3>
+                            <p class="mb-1">We provide innovative solutions for sustainable progress. Our professional team works to increase productivity and cost effectiveness on the market</p>
                         </div>
                         <!-- Right Column -->
                         <div class="col-md-4 text-md-end">
-                            <button type="button" class="btn btn-danger">Get Started</button>
-                            <button type="button" class="btn btn-outline-light" style="font-size: smaller;">Learn
+                            <!-- <button type="button" class="btn btn-danger">Get Started</button> -->
+                            <button type="button" class="btn btn-light" style="font-size: smaller;">Learn
                                 More</button>
                         </div>
                     </div>

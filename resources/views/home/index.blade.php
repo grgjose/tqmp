@@ -220,12 +220,6 @@
     </section>
     <!-- End of Category -->
 
-    <!-- Line -->
-    <div class="container text-center">
-        <hr style="width: 30%;  margin: 20px auto;">
-    </div>
-    <!-- End of Line -->
-
     <!-- Accordion Section -->
     @include ('plus.accordion')
     <!-- End of Accordion -->
