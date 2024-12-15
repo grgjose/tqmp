@@ -131,8 +131,8 @@
                 <!-- Card 1 -->
                 <div class="col-md-6">
                     <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 1" class="card-img-top rounded">
+                        <img src="https://scontent.fmnl11-1.fna.fbcdn.net/v/t39.30808-6/468985122_122125057418380974_4059153245440699735_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGcsMyMyLSviP2rX-8l4-jYehWf2pF00gB6FZ_akXTSADXe7JSjTPvcf19COhT6vojzZEZpMs27lUR5J-5HB-JG&_nc_ohc=RupZod6R30UQ7kNvgG3hy-N&_nc_zt=23&_nc_ht=scontent.fmnl11-1.fna&_nc_gid=Aeqh0xEfnJuy8fRYave7AoC&oh=00_AYCPXm9qv71x7s0_q2tZPflAWRa86dsJAzs_gsRYiXMyzA&oe=676529AB"
+                            alt="Category 1" class="card-img-top rounded" height="425">
                         <div class="card-body">
                             <h5 class="fw-bold">Bullet Proofing</h5>
                             <p class="text-muted">8 Products Available</p>
@@ -142,7 +142,7 @@
                 <!-- Card 2 -->
                 <div class="col-md-6">
                     <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/8159/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        <img src="https://images.pexels.com/photos/3736110/pexels-photo-3736110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="card-body">
                             <h5 class="fw-bold">Glass Processing</h5>
