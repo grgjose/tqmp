@@ -37,23 +37,30 @@
     @include('plus.navbar')
     <!-- End of Header -->
 
-    <!-- Trial -->
-    <div class="image-aboutus-banner position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary" style="margin-top:70px">
+    <!-- landing  -->
+    <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                    url('https://scontent.fmnl11-1.fna.fbcdn.net/v/t39.30808-6/461859668_122117741834380974_3985590456915764538_n.png?stp=dst-png_s960x960&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHAPT0fNhfH8WqZfEN-AVwbC5TsUhf_OyYLlOxSF_87JlooOy632UQTI7jxPgZQARg3zD0et3nEYyhBb3QrpbNB&_nc_ohc=r1YikZqf36EQ7kNvgEvC3Dw&_nc_zt=23&_nc_ht=scontent.fmnl11-1.fna&_nc_gid=AqnWnb_8SfEd9-MY7KUSnHO&oh=00_AYAVrDatLNUGOT76aCROlJFcbc6GLSPgfKKN7opVzUyHdg&oe=67650FC9') no-repeat center center/cover;">
         <div class="container">
-            <div class="row col-md-6 p-lg-5 mx-auto my-5">
-                <div class="col-md-12">
-                    <h2 class="fw-bold">Master Armoured Vehicle</h2>
-                    <h5 class="fw-normal text-light mb-3">Your premier source for top-of-the-line and precision-engineered armoured vehicles</h5>
-                    <button href="" type="button" class="btn btn-danger">
-                        Facebook Page
-                    </button>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="fw-bold display-3" style="color: white;">Master Armoured Vehicle</h2>
+                    <p class="lead mt-3" style="color: white;">
+                        Your premier source for top-of-the-line and precision-engineered armoured vehicles
+                    </p>
+                    <div class="mt-4">
+                        <button href="" type="button" class="btn btn-danger">
+                            Find out more
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End of Trial -->
+    </section>
+    <!-- End of landing  -->
 
     <!-- Bullet Proofing Section -->
+    <section class="custom-section fade-in py-5 align-items-center">
     <div class="container py-5">
         <section class="fade-in">
             <div class="container">
@@ -82,7 +89,9 @@
                 </div>
             </div>
         </section>
-    </div>
+    </div>  
+     </section>
+
     <!-- Bullet Proofing Section -->
 
     <!-- START THE FEATURETTES -->
@@ -268,11 +277,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-
+        </div><br>
     </div>
     <!-- /END THE FEATURETTES -->
 
