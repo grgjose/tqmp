@@ -40,8 +40,7 @@
         <!-- Background image -->
         <div class="p-5 bg-image" style="
         background-image: url('https://images.pexels.com/photos/6804255/pexels-photo-6804255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        height: 300px;
-        "></div>
+        height: 300px;"></div>
         <!-- Background image -->
 
         <div class="card mx-4 mx-md-5 shadow-5-strong bg-body-tertiary" style="
