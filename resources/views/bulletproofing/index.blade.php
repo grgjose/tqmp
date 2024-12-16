@@ -41,7 +41,7 @@
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
         style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                    url('https://images.pexels.com/photos/21263452/pexels-photo-21263452/free-photo-of-a-bullet-hole-in-a-glass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
+                    url('https://images.pexels.com/photos/10981370/pexels-photo-10981370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
