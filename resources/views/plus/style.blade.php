@@ -137,6 +137,21 @@
         font-size: smaller;
     }
 
+    button.btn-primary {
+        background-color: rgb(1, 48, 149);
+        /* Match primary brand color */
+        color: white;
+        border: none;
+        font-size: smaller;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button.btn-primary:hover {
+        background-color: rgb(1, 48, 149);
+        transform: translateY(-2px);
+        font-size: smaller;
+    }
+
     .img-fluid {
         border-radius: 10px;
     }
@@ -309,4 +324,6 @@
         color: #950101;
         /* Change text color */
     }
+
+
 </style>

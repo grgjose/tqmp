@@ -61,7 +61,7 @@
     <!-- End of landing  -->
 
     <!-- Doors -->
-    <section id="services" class="py-5">
+    <section id="services" class="py-5 bg-light" >
         <div class="container text-center">
             <!-- Heading -->
             <h2 class="fw-bold">Door Closers and Floor Hinges</h2>
@@ -324,7 +324,7 @@
     <!-- End of Line -->
 
     <!-- Handles -->
-    <section id="services" class="py-4">
+    <section id="services" class="py-4 bg-light">
         <div class="container text-center">
             <!-- Heading -->
             <h2 class="fw-bold">Handles</h2>
@@ -514,7 +514,7 @@
     <!-- End of Line -->
 
     <!-- Shower Glass Clip -->
-    <section id="services" class="py-4">
+    <section id="services" class="py-4 bg-light">
         <div class="container text-center">
             <!-- Heading -->
             <h2 class="fw-bold">Shower Glass Clips</h2>
