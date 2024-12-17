@@ -69,9 +69,11 @@
                     <a class="nav-link px-2" href="/contact">Contact Us</a>
                 </li>
             </ul>
-            <div class="d-flex">
-                <button type="button" class="btn btn-danger">My Cart</button>
+            <div class="d-flex mb-2 align-items-center">
+                <button type="button" class="btn btn-danger me-2">My Cart</button>
+                <button type="button" class="btn btn-primary">Login</button>
             </div>
+
         </div>
     </div>
 </nav>

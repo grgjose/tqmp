@@ -40,7 +40,7 @@
 
     <!-- About Us Section -->
     <div class="container py-4">
-        <section class="custom-section fade-in py-5 p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+        <section class="custom-section fade-in py-5 p-4 p-md-5 mb-4 rounded text-body-emphasis bg-light">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Text Column -->
