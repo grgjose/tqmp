@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <!-- Header -->
 <nav class="navbar navbar-expand-md bg-body-tertiary rounded sticky-top" aria-label="Navbar example">
     <div class="container">
@@ -69,9 +71,14 @@
                     <a class="nav-link px-2" href="/contact">Contact Us</a>
                 </li>
             </ul>
-            <div class="d-flex mb-2 align-items-center">
-                <button type="button" class="btn btn-danger me-2">My Cart</button>
-                <button type="button" class="btn btn-primary">Login</button>
+               <!-- Cart and Login Buttons -->
+               <div class="d-flex align-items-center ">
+                <button href="/cart" type="button" class="btn btn-danger me-2 d-flex align-items-center justify-content-center">
+                    <i class="fas fa-shopping-cart me-1"></i> <span>Cart</span>
+                </button>
+                <button href="/login" type="button" class="btn btn-primary d-flex align-items-center justify-content-center">
+                    <i class="fas fa-user me-1"></i> <span>Login</span>
+                </button>
             </div>
 
         </div>

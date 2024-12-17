@@ -656,7 +656,7 @@
                 <!-- Card 1 -->
                 <div class="col-md-6">
                     <div class="card border-0">
-                        <img src="https://lh4.googleusercontent.com/l6L9O1-PJtTnkWzmpDdTedrwiMcZIY9_8A509SF_95CnaT4ZMChMuQhc3ujVwW8lv1Y2grXqmIAURxIALIGvZ7LOUU0axiea2URhZMAY_sohTJOOcUNDqPZF7osjL-sHWw=w1280"
+                        <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0102.jpg') }}"
                             alt="Category 1" class="card-img-top rounded" height="auto">
                         <!-- <div class="card-body">
                             <h5 class="fw-bold">Category 1</h5>
@@ -667,7 +667,7 @@
                 <!-- Card 2 -->
                 <div class="col-md-6">
                     <div class="card border-0">
-                        <img src="https://lh6.googleusercontent.com/wivA7QGCQMGhs1Bz-_EIzCM-ZtbOndVUXfESCUABIpmAoUeFUqYZZvYlPtWmdU9bE7ArFrW4E6xq_-_aBTsR9eNtaBm0J-NS3MZnYmWUa1i6GjiJkUodQMBg20jy6cAqig=w1280"
+                        <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0103.jpg') }}"
                             alt="Category 1" class="card-img-top rounded"  height="auto">
                         <!-- <div class="card-body">
                             <h5 class="fw-bold">Category 1</h5>
