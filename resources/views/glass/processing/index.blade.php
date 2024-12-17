@@ -113,7 +113,7 @@
                 <!-- Card 1 -->
                 <div class="col-md-4">
                     <div class="card border-0">
-                        <img src="https://lh6.googleusercontent.com/Ab4O3T2VOIvE6duGpYFPKbx6z1y6wBOv2dOpbD_sQ-OFN5K_Qem5KLSHjcJ1Q4oCvj3GaOhXuafeZ97ITEmkEUfrF7SSw5YINbtqrFgNvMunlc5BBBpX788x121U87wWbQ=w1280"
+                        <img src="{{ asset('storage/glass-processing/tempered.png') }}"
                             alt="Category 1" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Tempered Glass</h5>
@@ -124,7 +124,7 @@
                 <!-- Card 2 -->
                 <div class="col-md-4">
                     <div class="card border-0">
-                        <img src="https://lh6.googleusercontent.com/Kk1TT2tf7vKV8OXxGxjnpYvBqV7KRGbrrnLGvNKv1Z4HNPvu5bOkba12r0SwivWeaXig8GD8wfLPfMaouBWEg_W5s1YN4q_4h5PoEkIqmBMgPu3R4uzwyqe30CyAlCT_lA=w1280"
+                        <img src="{{ asset('storage/glass-processing/laminated.png') }}"
                             alt="Category 1" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Laminated Glass</h5>
@@ -135,7 +135,7 @@
                 <!-- Card 3 -->
                 <div class="col-md-4">
                     <div class="card border-0">
-                        <img src="https://lh3.googleusercontent.com/BCB9wJ57qZyW4Amzf78j1QmRtfazVr_1zXW-mh-vmaLTVrJ9to--zIi5JhmdqR4TaiPjDIFdiU6feGS9uGonwF6octfMmfK8SiqsHUxy-XuTa6_x-lOVfBsWzI5B5ZWV5A=w1280"
+                        <img src="{{ asset('storage/glass-processing/curved.jpg') }}"
                             alt="Category 1" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Curved Tempered Glass</h5>
