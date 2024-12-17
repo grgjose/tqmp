@@ -120,11 +120,10 @@
             <h2 class="fw-bold">What We Offer</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                vestibulum.
-                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
-                elementum
-                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+                We are offering a Bulletproofing Vehicle with a benefits of very good option for your additional security, 
+                the bullets literally “bounce off” to the vehicle, it has thick and heavy body, like a tank for protection, 
+                it has special tires and glass, literally it saves lives.
+                We do process glass also such as: tempered glass, curve glass, laminated glass and insulating glass unit (IGU).
             </p>
             <!-- Cards -->
             <div class="row mt-6">
@@ -168,11 +167,8 @@
             <h2 class="fw-bold">Shop by Category</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                vestibulum.
-                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
-                elementum
-                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+                For our valued customer we are now extending our services thru online shopping to be next on your door. 
+                Now feel ease to our new online services we are providing.
             </p>
             <!-- Category Cards -->
             <div class="row mt-5">

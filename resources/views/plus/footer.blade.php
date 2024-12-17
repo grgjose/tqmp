@@ -1,15 +1,16 @@
     <!-- Footer -->
-    <footer class="text-light py-5" style="background-color: #161b22;">
+    <footer class="text-light py-5" style="background-color: #950101;">
         <div class="container">
             <div class="row">
                 <!-- Logo and Description -->
                 <div class="col-md-3 mb-4">
                     <a href="" class="d-inline-flex link-body-emphasis text-decoration-none">
-                        <img src="{{ asset('storage/logos/TQMPLogo.png') }}" alt="Header Image" class="header"
+                        <img src="{{ asset('storage/logos/TQMPLogo-White.png') }}" alt="Header Image" class="header"
                             width="80">
                     </a>
                     <p class="small">
-                        Sed ut perspiciatis undmnis is iste natus error sit amet voluptatem totam rem aperiam.
+                        Transforming industries with cutting-edge solutions and unwavering commitment to excellence.
+                        Join us on our journey to redefine quality and innovation.
                     </p>
                     <p class="mb-0">
                         <i class="bi bi-telephone"></i> +632-7717-8767

@@ -92,6 +92,21 @@
                             <p>Mon-Sat: 8am-5pm</p>
                         </div>
                     </div>
+                </div> <br> <br> <br> <br>
+                <div class="row">
+                    <!-- Google Map Section -->
+                    <div class="col-lg-12">
+                        <h3 class="fw-bold">We are located at</h3>
+                        <div class="mt-4">
+                            <iframe
+                                width="100%" height="700"
+                                frameborder="0" style="border:1px solid black"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB_kj6QnkgpVZsuwXh1-XxX_K3xt1UjCF0&q=TQMP+Glass+and+Aluminum+Supply"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

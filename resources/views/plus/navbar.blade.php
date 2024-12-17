@@ -77,7 +77,7 @@
                     <i class="fas fa-shopping-cart me-1"></i> <span>Cart</span>
                 </button>
                 <button href="/login" type="button" class="btn btn-primary d-flex align-items-center justify-content-center">
-                    <i class="fas fa-user me-1"></i> <span>Login</span>
+                    <i class="fas fa-user me-1"></i> <a href="/login">Login</a>
                 </button>
             </div>
 
