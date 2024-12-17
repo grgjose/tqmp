@@ -69,9 +69,9 @@
                     <h2 class="fw-bold">Glass Processing</h2>
                     <p class="text-muted">Pioneer Float Glass Manufacturing Inc. (PFGMI) is the leading flat glass manufacturer in the Philippines.</p>
                     <p class="text-muted">Established in 1958 under the former name of Republic Glass Corporation, and eventually became a wholly owned subsidiary of AGC in 2001 adopting the company name AGC Flat Glass Philippines Inc. In 2017, TQMP Glass Manufacturing Corp. acquired 100% of the AGPH shares thus becaming the torch bearer for the flat glass industry in the Philippines.</p>
-                    <button type="button" class="btn btn-danger">
+                    <!-- <button type="button" class="btn btn-danger">
                         Get Started
-                    </button>
+                    </button> -->
                 </div>
 
                 <!-- Image Column -->

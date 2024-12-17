@@ -81,15 +81,16 @@
     <!-- Glass Manufacturing Section -->
     <section class="custom-section fade-in py-5 align-items-center">
         <div class="container">
+            <section class="fade-in">
             <div class="row align-items-center">
                 <!-- Text Column -->
                 <div class="col-md-6 text-center text-md-start">
                     <h2 class="fw-bold">Glass Manufacturing</h2>
                     <p class="text-muted">Pioneer Float Glass Manufacturing Inc. (PFGMI) is the leading flat glass manufacturer in the Philippines.</p>
                     <p class="text-muted">Established in 1958 under the former name of Republic Glass Corporation, and eventually became a wholly owned subsidiary of AGC in 2001 adopting the company name AGC Flat Glass Philippines Inc. In 2017, TQMP Glass Manufacturing Corp. acquired 100% of the AGPH shares thus becaming the torch bearer for the flat glass industry in the Philippines.</p>
-                    <button type="button" class="btn btn-danger">
+                    <!-- <button type="button" class="btn btn-danger">
                         Get Started
-                    </button>
+                    </button> -->
                 </div>
 
                 <!-- Image Column -->
@@ -97,12 +98,12 @@
                     <div class="position-relative">
                         <img src="{{ asset('storage/logos/pioneer_logo.png') }}"
                             alt="Philippines" class="img-fluid rounded lg">
-                        <div
-                            class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
-                        </div>
+                        <div class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity"> </div>
                     </div>
                 </div>
             </div>
+            </section>
+           
         </div>
     </section>
     <!-- Glass Manufacturing Section -->

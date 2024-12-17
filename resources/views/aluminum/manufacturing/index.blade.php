@@ -42,7 +42,7 @@
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
         style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                    url('https://lh3.googleusercontent.com/4BDZrycRmLkmGXVOMJ6qY9bQdRARadSnZhkYcGgUh8Q5FUkcmFlzSlL9cFnrbIQ2S39WXYoVwA_Sda9liPgDk93Lzs3Od2Ivx_bPDyegQ0ZO4feOpI6Pt6DOFBaThWdfGw=w1280') no-repeat center center/cover;">
+                    url('https://images.pexels.com/photos/15508177/pexels-photo-15508177/free-photo-of-metal-tubes-on-stack.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -71,9 +71,9 @@
                     <h2 class="fw-bold">Aluminum Manufacturing</h2>
                     <p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
                         vestibulum.</p>
-                    <button type="button" class="btn btn-danger">
+                    <!-- <button type="button" class="btn btn-danger">
                         Get Started
-                    </button>
+                    </button> -->
                 </div>
 
                 <!-- Image Column -->
