@@ -71,16 +71,20 @@
                     <a class="nav-link px-2" href="/contact">Contact Us</a>
                 </li>
             </ul>
-               <!-- Cart and Login Buttons -->
-               <div class="d-flex align-items-center ">
-                <button href="/cart" type="button" class="btn btn-danger me-2 d-flex align-items-center justify-content-center">
-                    <i class="fas fa-shopping-cart me-1"></i> <span>Cart</span>
-                </button>
-                <button href="/login" type="button" class="btn btn-primary d-flex align-items-center justify-content-center">
-                    <i class="fas fa-user me-1"></i> <a href="/login">Login</a>
-                </button>
-            </div>
 
+            <!-- Cart and Login Buttons -->
+            <div class="d-flex align-items-center">
+                <a href="/cart"
+                    class="d-flex align-items-center justify-content-center text-decoration-none me-2"
+                    style="padding: 0.5rem 1rem; border: 1px solid #950101; border-radius: 5px; background-color: #950101; color: #fff;">
+                    <i class="fas fa-shopping-cart me-1"></i> <span>Cart</span>
+                </a>
+                <a href="/login"
+                    class="d-flex align-items-center justify-content-center text-decoration-none"
+                    style="padding: 0.5rem 1rem; border: 1px solid #013095; border-radius: 5px; background-color: #013095; color: #fff;">
+                    <i class="fas fa-user me-1"></i> <span>Login</span>
+                </a>
+            </div>
         </div>
     </div>
 </nav>

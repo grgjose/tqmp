@@ -47,7 +47,7 @@
                 <div class="col-md-8">
                     <h2 class="fw-bold display-3" style="color: white;">Architectural Hardwares</h2>
                     <p class="lead mt-3" style="color: white;">
-                        Your premier source for top-of-the-line and precision-engineered armoured vehicles
+                    We are not just looking for wide range of architectural hardware we are aiming for strengthen, endurance and resistance of the product such as THORE Brand.
                     </p>
                     <div class="mt-4">
                         <button href="" type="button" class="btn btn-danger">
@@ -74,53 +74,41 @@
                 lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
             </p>
             <!-- Cards Row 1 -->
-            <div class="row mt-4">
-                <!-- Card 1 -->
+            <!-- <div class="row mt-4">
+                
                 <div class="col-md-3">
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/doors/yale yfs-923.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <!-- <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
-                        </div> -->
+              
                     </div>
                 </div>
-                <!-- Card 2 -->
+                
                 <div class="col-md-3">
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/doors/yale yfs-934.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <!-- <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
-                        </div> -->
+       
                     </div>
                 </div>
-                <!-- Card 3 -->
+               
                 <div class="col-md-3">
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/doors/yale yfs-8003.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <!-- <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
-                        </div> -->
+            
                     </div>
                 </div>
 
-                <!-- Card 4 -->
+               
                 <div class="col-md-3">
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/doors/yale ytdc854.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <!-- <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
-                        </div> -->
+              
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Cards Row 2 -->
             <div class="row mt-4">
@@ -159,30 +147,24 @@
             </div>
 
             <!-- Cards Row 3 -->
-            <div class="row mt-6">
-                <!-- Card 1 -->
+            <!-- <div class="row mt-6">
+              
                 <div class="col-md-6">
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/doors/abloy dc420.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <!-- <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
-                        </div> -->
+                 
                     </div>
                 </div>
-                <!-- Card 2 -->
+             
                 <div class="col-md-6">
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/doors/abloy dc477.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <!-- <div class="card-body">
-                            <h5 class="fw-bold">Category 1</h5>
-                            <p class="text-muted">8 Products Available</p>
-                        </div> -->
+                    
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Browse See More Button -->
             <div class="mt-4">

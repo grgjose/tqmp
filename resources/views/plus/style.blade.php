@@ -138,7 +138,7 @@
     }
 
     button.btn-primary {
-        background-color: rgb(1, 48, 149);
+        background-color: #013095;
         /* Match primary brand color */
         color: white;
         border: none;
@@ -147,7 +147,7 @@
     }
 
     button.btn-primary:hover {
-        background-color: rgb(1, 48, 149);
+        background-color: #013095;
         transform: translateY(-2px);
         font-size: smaller;
     }
