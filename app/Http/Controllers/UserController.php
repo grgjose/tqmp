@@ -17,15 +17,36 @@ class UserController extends Controller
     /**
      * Sign-in Process
      */    
-    public function signin(Request $request){
+    public function logon(Request $request){
+        $validated = $request->validate([
+            "email" => ['required', 'min:2'],
+            "password" => ['required', 'min:2']
+        ]);
         
+        $remember = $request->input("remember_me");
+
+        if(auth()->attempt($validated, $remember) || auth()->viaRemember()){
+            $request->session()->regenerate();
+            return "LOGIN";
+        } else {
+            return "INVALID CREDENTIALS";
+            //return redirect('/')->with('error_msg', 'Invalid Credentials!');
+        }
     }
 
     /**
      * Login a User
      */    
     public function login(Request $request){
+        return view("home.login");
+    }
 
+    /**
+     * Logout a User
+     */    
+    public function logout(Request $request){   
+        auth()->logout();
+        return "LOGOUT";
     }
 
     /**

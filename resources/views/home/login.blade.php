@@ -21,15 +21,16 @@
             <p class="text-center text-muted mb-4">Access your account</p>
 
             <!-- Login Form -->
-            <form>
+            <form action="/login" method="post">
+              @csrf
               <!-- Email Input -->
               <div class="form-outline mb-4">
-                <input type="email" id="loginEmail" class="form-control" placeholder="Email address" required />
+                <input type="email" id="loginEmail" name="email" class="form-control" placeholder="Email address" required />
               </div>
 
               <!-- Password Input -->
               <div class="form-outline mb-4">
-                <input type="password" id="loginPassword" class="form-control" placeholder="Password" required />
+                <input type="password" id="loginPassword" name="password" class="form-control" placeholder="Password" required />
               </div>
 
               <!-- Remember Me and Forgot Password -->
@@ -42,7 +43,7 @@
               </div>
 
               <!-- Submit Button -->
-              <button type="submit" class="btn btn-primary btn-block w-100 mb-3">Login</button>
+              <input type="submit" class="btn btn-primary btn-block w-100 mb-3" value="Login">
 
               <!-- Register Link -->
               <p class="text-center small">
