@@ -13,9 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -40,66 +38,93 @@
 
     <!-- About Us Section -->
 
-    <div class="container py-4">
-        <section class="custom-section fade-in py-5 align-items-center">
+    <!-- Contact Section -->
+    <div class="container text-center py-5">
+        <h2 class="fw-bold">Contact us</h2>
+        <!-- Paragraph -->
+        <p class="mt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+            vestibulum.
+            Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit
+            amet
+            elementum
+            lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+        </p>
+    </div>
+
+    <div class="container">
+        <section class="custom-section fade-in">
             <!-- Contact Section -->
             <div class="container contact-section">
                 <div class="row">
                     <!-- Contact Form -->
                     <div class="col-md-6">
-                        <h3 class="fw-bold">Contact Us</h3>
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="name"
-                                    placeholder="Enter your full name" required>
+                        <h3 class="fw-bold">Fill out the form</h3>
+                        <form class="py-3">
+                            <div class="mb-3 ">
+                                <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Your full name">
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" placeholder="Your email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Your phone number">
+                                </div>
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email"
-                                    placeholder="Enter your email" required>
+                                <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
                             </div>
                             <div class="mb-3">
-                                <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject"
-                                    placeholder="Enter the subject" required>
+                                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
                             </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Write your message here" required></textarea>
+                            <div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
                             </div>
-                            <button type="submit" class="btn btn-red">Send Message</button>
-                        </form>
+                        </form><br>
                     </div>
 
                     <!-- Contact Information -->
                     <div class="col-md-6 contact-info">
-                        <h3 class="fw-bold">Get in Touch</h3>
-                        <div class="mt-4">
-                            <h5>Address</h5>
-                            <p>168 Sapang Bakaw, Lawang Bato, Valenzuela City Philippines 1447</p>
+                        <h3 class="fw-bold">Get in Touch</h3><br>
+                        <div class="mb-4">
+                            <h5><i class="fas fa-map-marker-alt text-primary me-2"></i> Office</h5>
+                            <p class="text-muted mb-0">Please visit us to have a discussion.</p>
+                            <p>8014 Edith Blvd NE, Albuquerque, New York, United States</p>
                         </div>
-                        <div class="mt-4">
-                            <h5>Email</h5>
-                            <p>sales@tqmp.biz</p>
+                        <div class="mb-4">
+                            <h5><i class="fas fa-phone-alt text-primary me-2"></i> Phone</h5>
+                            <p class="text-muted mb-0">Please speak with us directly.</p>
+                            <p>(505) 792-2430</p>
                         </div>
-                        <div class="mt-4">
-                            <h5>Phone</h5>
-                            <p>+632-7717-8767</p>
+                        <div class="mb-4">
+                            <h5><i class="fas fa-envelope text-primary me-2"></i> Email</h5>
+                            <p class="text-muted mb-0">Please write to us directly.</p>
+                            <p>demo@yourdomain.com</p>
                         </div>
-                        <div class="mt-4">
-                            <h5>Working Hours</h5>
-                            <p>Mon-Sat: 8am-5pm</p>
+                        <div>
+                            <h5><i class="fas fa-clock text-primary me-2"></i> Opening Hours</h5>
+                            <p class="text-muted mb-0">Explore our business opening hours.</p>
+                            <p>
+                                <strong>Mon - Fri:</strong> 9am - 5pm<br>
+                                <strong>Sat - Sun:</strong> 9am - 2pm
+                            </p>
                         </div>
                     </div>
-                </div> <br> <br> <br> <br>
+                </div>
+
                 <div class="row">
                     <!-- Google Map Section -->
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 py-3">
                         <h3 class="fw-bold">We are located at</h3>
                         <div class="mt-4">
                             <iframe
-                                width="100%" height="700"
+                                width="100%" height="500"
                                 frameborder="0" style="border:1px solid black"
                                 referrerpolicy="no-referrer-when-downgrade"
                                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB_kj6QnkgpVZsuwXh1-XxX_K3xt1UjCF0&q=TQMP+Glass+and+Aluminum+Supply"

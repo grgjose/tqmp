@@ -1,25 +1,26 @@
 <style>
     /* Font */
     body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: small;
         margin: 0;
         padding: 0;
+        
     }
 
     /* Header  */
     /* General Button Styling */
     .btn {
-        width: 110px;
+        width: 115px;
     }
 
     .btn-red {
-        background-color: #950101;
+        background-color: #7E1416;
         color: white;
     }
 
     .btn-red:hover {
-        background-color: #950101;
+        background-color: #7E1416;
         opacity: 0.9;
     }
 
@@ -32,7 +33,7 @@
 
     .nav-link:hover,
     .nav-link.active {
-        color: #950101;
+        color: #7E1416;
         font-weight: bold;
     }
 
@@ -55,7 +56,7 @@
         border: none;
         outline: none;
         font-size: 1.5rem;
-        color: #950101;
+        color: #7E1416;
         background: none;
         cursor: pointer;
     }
@@ -118,12 +119,12 @@
     }
 
     .text-danger {
-        color: #950101 !important;
+        color: #7E1416 !important;
         /* Consistent color branding */
     }
 
     button.btn-danger {
-        background-color: #950101;
+        background-color: #7E1416;
         /* Match primary brand color */
         color: white;
         border: none;
@@ -132,13 +133,13 @@
     }
 
     button.btn-danger:hover {
-        background-color: #950101;
+        background-color: #7E1416;
         transform: translateY(-2px);
         font-size: smaller;
     }
 
     button.btn-primary {
-        background-color: #013095;
+        background-color: #172647;
         /* Match primary brand color */
         color: white;
         border: none;
@@ -147,7 +148,37 @@
     }
 
     button.btn-primary:hover {
-        background-color: #013095;
+        background-color: #172647;
+        transform: translateY(-2px);
+        font-size: smaller;
+    }
+
+    button.btn-warning {
+        background-color: #EACF68;
+        /* Match primary brand color */
+        color: #172647;
+        border: none;
+        font-size: smaller;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button.btn-warning:hover {
+        background-color: #EACF68;
+        transform: translateY(-2px);
+        font-size: smaller;
+    }
+
+    button.btn-light {
+        background-color: #FFFFFF;
+        /* Match primary brand color */
+        color: #172647;
+        border: none;
+        font-size: smaller;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button.btn-light:hover {
+        background-color: #FFFFFF;
         transform: translateY(-2px);
         font-size: smaller;
     }
@@ -214,7 +245,7 @@
     }
 
     .thumbnail:hover {
-        border-color: #950101;
+        border-color: #7E1416;
     }
 
     /* About us parallax effect */
@@ -321,9 +352,10 @@
     .dropdown-menu li a:hover {
         background-color: #f1f1f1;
         /* Highlight on hover */
-        color: #950101;
+        color: #7E1416;
         /* Change text color */
     }
 
+/* !!navbar transparent!! */
 
 </style>
