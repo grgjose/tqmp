@@ -92,14 +92,14 @@
 <style>
     /* Semi-transparent navbar style */
     .navbar {
-        background-color:#172647; /* Semi-transparent black */
+        background-color:#7E1416; /* Semi-transparent black */
         backdrop-filter: blur(8px); /* Optional: Adds a blurred background effect */
         transition: background-color 0.3s ease-in-out; /* Smooth transition */
     }
 
     /* Optional: Change the navbar color on scroll */
     .navbar.scrolled {
-        background-color: rgba(15, 15, 15, 0.5); /* Slightly less transparent when scrolled */
+        background-color: rgba(126, 20, 22, 0.9); /* Slightly less transparent when scrolled */
     }
 
     .nav-link {
@@ -112,6 +112,7 @@
 
     .dropdown-menu {
         background-color: rgba(0, 0, 0, 0.9); /* Dropdown background */
+        
         border: none;
     }
 
@@ -121,6 +122,7 @@
 
     .dropdown-item:hover {
         background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+        color: #172647;
     }
 </style>
 
@@ -210,13 +212,13 @@
             <!-- Cart and Login Buttons -->
             <div class="d-flex align-items-center">
                 <a href="/cart"
-                    class="d-flex align-items-center justify-content-center text-decoration-none me-2"
-                    style="padding: 0.5rem 1rem; border: 1px solid #7E1416; border-radius: 5px; background-color: #7E1416; color: #fff;">
+                    class="d-flex align-items-center justify-content-center text-decoration-none me-2 btn btn-outline-light" 
+                    style="font-size: smaller;">
                     <i class="fas fa-shopping-cart me-1"></i> <span>Cart</span>
                 </a>
                 <a href="/login"
-                    class="d-flex align-items-center justify-content-center text-decoration-none"
-                    style="padding: 0.5rem 1rem; border: 1px solid #172647; border-radius: 5px; background-color: #172647; color: #fff;">
+                    class="d-flex align-items-center justify-content-center text-decoration-none btn btn-outline-light"
+                    style="font-size: smaller;">
                     <i class="fas fa-user me-1"></i> <span>Login</span>
                 </a>
             </div>

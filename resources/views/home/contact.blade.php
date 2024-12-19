@@ -40,7 +40,8 @@
 
     <!-- Contact Section -->
     <div class="container text-center py-5">
-        <h2 class="fw-bold">Contact us</h2>
+        <span class="badge text-white mb-2" style="background-color: #950101;">Contact Us</span>
+        <h2 class="fw-bold">Reach us for inquiries</h2>
         <!-- Paragraph -->
         <p class="mt-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum

@@ -183,6 +183,21 @@
         font-size: smaller;
     }
 
+    button.btn-outline-light {
+        background-color: none;
+        /* Match primary brand color */
+        color: #FFFFFF;
+        border:  #FFFFFF;
+        font-size: smaller;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button.btn-outline-light:hover {
+        background-color: #FFFFFF;
+        transform: translateY(-2px);
+        font-size: smaller;
+    }
+
     .img-fluid {
         border-radius: 10px;
     }
@@ -351,9 +366,7 @@
 
     .dropdown-menu li a:hover {
         background-color: #f1f1f1;
-        /* Highlight on hover */
         color: #7E1416;
-        /* Change text color */
     }
 
 /* !!navbar transparent!! */
