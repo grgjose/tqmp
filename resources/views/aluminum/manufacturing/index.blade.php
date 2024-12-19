@@ -38,25 +38,23 @@
 
 
     <!-- landing  -->
-    <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
+    <section class="d-flex align-items-center justify-content-center text-center vh-100"
         style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)), 
                     url('https://images.pexels.com/photos/15508177/pexels-photo-15508177/free-photo-of-metal-tubes-on-stack.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <span class="badge bg-secondary mb-3 px-3 py-2">TQMP→</span>
-                    
                     <h2 class="fw-bold display-3" style="color: white;">Aluminum Manufacturing</h2>
                     <p class="lead mt-3" style="color: white;">
-                        To aim a must production aluminum profiles and moving ahead to a high-end aluminum profiles, HSP Paragon Corporation is an aluminum extrusion plant complete with powder coating line and anodizing line for all your aluminum section requirements. We also have a recycling plant for all kinds of aluminum scraps.
-
+                        To aim a must production aluminum profiles and moving ahead to a high-end aluminum profiles, 
+                        HSP Paragon Corporation is an aluminum extrusion plant complete with powder coating line and anodizing line for all your aluminum section requirements. 
+                        We also have a recycling plant for all kinds of aluminum scraps.
                     </p>
-                    <div class="mt-4">
-                        <button href="" type="button" class="btn btn-light">
-                           <B>FIND OUT MORE</B> 
-                        </button>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
+                            <span><b>Find out more</b></span>
+                        </a>
                     </div>
-              
                 </div>
             </div>
         </div>

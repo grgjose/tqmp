@@ -42,6 +42,7 @@
         <section id="services" class="py-5">
             <div class="container text-center">
                 <!-- Heading -->
+                <span class="badge text-white mb-2" style="background-color: #950101;">About Us</span>
                 <h2 class="fw-bold">Learn More From Us</h2>
                 <!-- Paragraph -->
                 <p class="mt-3">

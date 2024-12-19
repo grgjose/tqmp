@@ -103,25 +103,24 @@
     }
 
     .nav-link {
-        color: #fff !important; /* Ensures the links are white for better readability */
+        color: #EACF68 !important; /* Ensures the links are white for better readability */
     }
 
-    .navbar-brand img {
-        filter: brightness(0) invert(1); /* Optional: Makes logos or images compatible with dark backgrounds */
-    }
+    /* .navbar-brand img {
+        filter: brightness(0) invert(1); 
+    } */
 
     .dropdown-menu {
-        background-color: rgba(0, 0, 0, 0.9); /* Dropdown background */
-        
+        background-color: #FFFFFF; /* Dropdown background */
         border: none;
     }
 
     .dropdown-item {
-        color: #fff !important; /* Dropdown items white */
+        color: #172647 !important; /* Dropdown items white */
     }
 
     .dropdown-item:hover {
-        background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+        background-color: rgba(126, 20, 22, 0.1); /* Light hover effect */
         color: #172647;
     }
 </style>
@@ -141,7 +140,7 @@
 <nav class="navbar navbar-expand-md sticky-top navbar-dark" aria-label="Navbar example">
     <div class="container">
         <a href="/" class="navbar-brand d-inline-flex link-body-emphasis text-decoration-none">
-            <img src="{{ asset('storage/logos/TQMPLogo.png') }}" alt="Header Image" class="header" width="80">
+            <img src="{{ asset('storage/logos/TQMPLogo-Yellow.png') }}" alt="Header Image" class="header" width="80">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
             aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -156,7 +155,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="/#" data-bs-toggle="dropdown"
                         aria-expanded="false">Bullet Proofing</a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-sm">
                         <li><a class="dropdown-item" href="/bulletproofing">Bullet Proof Armouring</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -165,7 +164,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                         aria-expanded="false">Glass MFG</a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-sm">
                         <li><a class="dropdown-item" href="/glassmanufacturing">Glass Manufacturing</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -174,7 +173,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                         aria-expanded="false">Aluminum MFG</a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-sm">
                         <li><a class="dropdown-item" href="/aluminummanufacturing">Aluminum Manufacturing</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -183,7 +182,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                         aria-expanded="false">Glass Processing</a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-sm">
                         <li><a class="dropdown-item" href="/glassprocessing">Glass Processing</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -192,7 +191,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                         aria-expanded="false">Gen. Trade</a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-sm">
                         <li><a class="dropdown-item" href="/gentrade">Trading</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -212,12 +211,12 @@
             <!-- Cart and Login Buttons -->
             <div class="d-flex align-items-center">
                 <a href="/cart"
-                    class="d-flex align-items-center justify-content-center text-decoration-none me-2 btn btn-outline-light" 
+                    class="d-flex align-items-center justify-content-center text-decoration-none me-2 btn btn-outline-warning" 
                     style="font-size: smaller;">
                     <i class="fas fa-shopping-cart me-1"></i> <span>Cart</span>
                 </a>
                 <a href="/login"
-                    class="d-flex align-items-center justify-content-center text-decoration-none btn btn-outline-light"
+                    class="d-flex align-items-center justify-content-center text-decoration-none btn btn-outline-warning"
                     style="font-size: smaller;">
                     <i class="fas fa-user me-1"></i> <span>Login</span>
                 </a>

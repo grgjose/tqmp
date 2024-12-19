@@ -38,19 +38,20 @@
 
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
-        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(107, 4, 4, 0.7)), 
+        style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)), 
                     url('https://images.pexels.com/photos/10981370/pexels-photo-10981370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="fw-bold display-3" style="color: white;">Master Armoured Vehicle</h2>
+                    <h2 class="fw-bold display-3" style="color: white;">Master</h2>
+                    <h2 class="fw-bold display-3" style="color: white;">Armoured Vehicle</h2>
                     <p class="lead mt-3" style="color: white;">
                         Your premier source for top-of-the-line and precision-engineered armoured vehicles
                     </p>
-                    <div class="mt-4">
-                        <button href="" type="button" class="btn btn-danger">
-                            Find out more
-                        </button>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
+                            <span><b>Find out more</b></span>
+                        </a>
                     </div>
                 </div>
             </div>

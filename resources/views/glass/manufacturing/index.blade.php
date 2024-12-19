@@ -56,7 +56,7 @@
 
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
-        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(107, 4, 4, 0.7)), 
+        style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)), 
                     url('https://www.pfg.com.ph/images/slider/01.jpg') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
@@ -65,10 +65,10 @@
                     <p class="lead mt-3" style="color: white;">
                         With over 60 years of experience in flat glass manufacturing in the country, PFGMI produces quality flat glass such as Clear Float and Tinted Float.
                     </p>
-                    <div class="mt-4">
-                        <button href="" type="button" class="btn btn-danger">
-                            Find out more
-                        </button>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
+                            <span><b>Find out more</b></span>
+                        </a>
                     </div>
                 </div>
             </div>

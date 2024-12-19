@@ -5,7 +5,7 @@
         font-size: small;
         margin: 0;
         padding: 0;
-        
+
     }
 
     /* Header  */
@@ -187,13 +187,28 @@
         background-color: none;
         /* Match primary brand color */
         color: #FFFFFF;
-        border:  #FFFFFF;
+        border: #FFFFFF;
         font-size: smaller;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     button.btn-outline-light:hover {
         background-color: #FFFFFF;
+        transform: translateY(-2px);
+        font-size: smaller;
+    }
+
+    button.btn-outline-warning {
+        background-color: none;
+        /* Match primary brand color */
+        color: #EACF68;
+        border: #EACF68;
+        font-size: smaller;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button.btn-outline-warning:hover {
+        background-color: #EACF68;
         transform: translateY(-2px);
         font-size: smaller;
     }
@@ -369,6 +384,8 @@
         color: #7E1416;
     }
 
-/* !!navbar transparent!! */
-
+    .dropdown-menu-sm {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
 </style>

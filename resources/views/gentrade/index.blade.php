@@ -38,7 +38,7 @@
 
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
-        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(107, 4, 4, 0.7)), 
+        style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)), 
                     url('https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
@@ -47,10 +47,10 @@
                     <p class="lead mt-3" style="color: white;">
                     We are not just looking for wide range of architectural hardware we are aiming for strengthen, endurance and resistance of the product such as THORE Brand.
                     </p>
-                    <div class="mt-4">
-                        <button href="" type="button" class="btn btn-danger">
-                            Find out more
-                        </button>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
+                            <span><b>Find out more</b></span>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
@@ -38,7 +38,7 @@
 
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
-        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(107, 4, 4, 0.7)), 
+        style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)), 
                     url('https://images.pexels.com/photos/3736110/pexels-photo-3736110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
@@ -47,10 +47,10 @@
                     <p class="lead mt-3" style="color: white;">
                         Your premier source for top-of-the-line and precision-engineered armoured vehicles
                     </p>
-                    <div class="mt-4">
-                        <button href="" type="button" class="btn btn-danger">
-                            Find out more
-                        </button>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
+                            <span><b>Find out more</b></span>
+                        </a>
                     </div>
                 </div>
             </div>
