@@ -96,24 +96,24 @@
                         <div class="mb-4">
                             <h5><i class="fas fa-map-marker-alt text-primary me-2"></i> Office</h5>
                             <p class="text-muted mb-0">Please visit us to have a discussion.</p>
-                            <p>8014 Edith Blvd NE, Albuquerque, New York, United States</p>
+                            <p>168 Sapang Bakaw, Lawang Bato, Valenzuela City Philippines 1447</p>
                         </div>
                         <div class="mb-4">
                             <h5><i class="fas fa-phone-alt text-primary me-2"></i> Phone</h5>
                             <p class="text-muted mb-0">Please speak with us directly.</p>
-                            <p>(505) 792-2430</p>
+                            <p>+632-7717-8767</p>
                         </div>
                         <div class="mb-4">
                             <h5><i class="fas fa-envelope text-primary me-2"></i> Email</h5>
                             <p class="text-muted mb-0">Please write to us directly.</p>
-                            <p>demo@yourdomain.com</p>
+                            <p>sales@tqmp.biz</p>
                         </div>
                         <div>
                             <h5><i class="fas fa-clock text-primary me-2"></i> Opening Hours</h5>
                             <p class="text-muted mb-0">Explore our business opening hours.</p>
                             <p>
-                                <strong>Mon - Fri:</strong> 9am - 5pm<br>
-                                <strong>Sat - Sun:</strong> 9am - 2pm
+                                <strong>Mon - Sat:</strong> 8am - 5pm<br>
+                                <strong>Sunday:</strong> Closed
                             </p>
                         </div>
                     </div>
