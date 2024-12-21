@@ -45,7 +45,7 @@
                 <div class="col-md-8">
                     <h2 class="fw-bold display-3" style="color: white;">Architectural Hardwares</h2>
                     <p class="lead mt-3" style="color: white;">
-                    We are not just looking for wide range of architectural hardware we are aiming for strengthen, endurance and resistance of the product such as THORE Brand.
+                        We are not just looking for wide range of architectural hardware we are aiming for strengthen, endurance and resistance of the product such as THORE Brand.
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
                         <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
@@ -59,7 +59,7 @@
     <!-- End of landing  -->
 
     <!-- Doors -->
-    <section id="services" class="py-5 bg-light" >
+    <section id="services" class="py-5 bg-light">
         <div class="container text-center">
             <!-- Heading -->
             <h2 class="fw-bold">Door Closers and Floor Hinges</h2>
@@ -166,7 +166,7 @@
 
             <!-- Browse See More Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-danger">See More</button>
+                <button type="button" class="btn btn-primary">See More</button>
             </div>
         </div>
     </section>
@@ -291,7 +291,7 @@
 
             <!-- Browse See More Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-danger">See More</button>
+                <button type="button" class="btn btn-primary">See More</button>
             </div>
         </div>
     </section>
@@ -356,7 +356,7 @@
 
             <!-- Browse See More Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-danger">See More</button>
+                <button type="button" class="btn btn-primary">See More</button>
             </div>
         </div>
     </section>
@@ -481,7 +481,7 @@
 
             <!-- Browse See More Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-danger">See More</button>
+                <button type="button" class="btn btn-primary">See More</button>
             </div>
         </div>
     </section>
@@ -509,7 +509,7 @@
             <!-- Cards Row 1 -->
             <div class="row mt-4">
                 <!-- Card 1 -->
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0001.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
@@ -520,7 +520,7 @@
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0002.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
@@ -531,7 +531,7 @@
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0003.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
@@ -543,7 +543,31 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="col-md-3">
+                <div class="col-md-2">
+                    <div class="card border-0">
+                        <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0004.jpg') }}"
+                            alt="Category 1" class="card-img-top rounded">
+                        <!-- <div class="card-body">
+                            <h5 class="fw-bold">Category 1</h5>
+                            <p class="text-muted">8 Products Available</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-2">
+                    <div class="card border-0">
+                        <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0004.jpg') }}"
+                            alt="Category 1" class="card-img-top rounded">
+                        <!-- <div class="card-body">
+                            <h5 class="fw-bold">Category 1</h5>
+                            <p class="text-muted">8 Products Available</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-2">
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0004.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
@@ -602,11 +626,12 @@
                         </div> -->
                     </div>
                 </div>
+
             </div>
 
             <!-- Browse See More Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-danger">See More</button>
+                <button type="button" class="btn btn-primary">See More</button>
             </div>
         </div>
     </section>
@@ -648,7 +673,7 @@
                 <div class="col-md-6">
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0103.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded"  height="auto">
+                            alt="Category 1" class="card-img-top rounded" height="auto">
                         <!-- <div class="card-body">
                             <h5 class="fw-bold">Category 1</h5>
                             <p class="text-muted">8 Products Available</p>
@@ -659,7 +684,7 @@
 
             <!-- Browse See More Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-danger">See More</button>
+                <button type="button" class="btn btn-primary">See More</button>
             </div>
         </div>
     </section>

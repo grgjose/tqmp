@@ -83,7 +83,7 @@
                         Join us on our
                         journey to redefine quality and innovation.
                     </p>
-                    <button type="button" class="btn btn-danger btn-lg px-4 py-2">
+                    <button type="button" class="btn btn-primary btn-lg px-4 py-2">
                         Get Started
                     </button>
                 </div>
@@ -128,8 +128,7 @@
                 <!-- Card 1 -->
                 <div class="col-md-6">
                     <div class="card border-0">
-                        <img src="https://scontent.fmnl11-1.fna.fbcdn.net/v/t39.30808-6/468985122_122125057418380974_4059153245440699735_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGcsMyMyLSviP2rX-8l4-jYehWf2pF00gB6FZ_akXTSADXe7JSjTPvcf19COhT6vojzZEZpMs27lUR5J-5HB-JG&_nc_ohc=RupZod6R30UQ7kNvgG3hy-N&_nc_zt=23&_nc_ht=scontent.fmnl11-1.fna&_nc_gid=Aeqh0xEfnJuy8fRYave7AoC&oh=00_AYCPXm9qv71x7s0_q2tZPflAWRa86dsJAzs_gsRYiXMyzA&oe=676529AB"
-                            alt="Category 1" class="card-img-top rounded" height="425">
+                    <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top rounded" height="425">
                         <div class="card-body">
                             <h5 class="fw-bold">Bullet Proofing</h5>
                             <p class="text-muted">8 Products Available</p>
@@ -139,8 +138,7 @@
                 <!-- Card 2 -->
                 <div class="col-md-6">
                     <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/3736110/pexels-photo-3736110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 1" class="card-img-top rounded">
+                    <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top rounded" height="425">
                         <div class="card-body">
                             <h5 class="fw-bold">Glass Processing</h5>
                             <p class="text-muted">8 Products Available</p>
@@ -151,7 +149,7 @@
 
             <!-- Browse See More Button -->
             <!-- <div class="mt-4">
-                <button type="button" class="btn btn-danger">See More</button>
+                <button type="button" class="btn btn-primary ">See More</button>
             </div> -->
     </section>
     <!-- End of Services -->
@@ -173,8 +171,7 @@
                 <!-- Category 1 -->
                 <div class="col-md-4">
                     <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 1" class="card-img-top rounded">
+                    <img src="{{ asset('storage/glass-processing/cool silver only.jpg') }}" alt="Bulletproof"  class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Glass</h5>
                             <p class="text-muted">8 Products Available</p>
@@ -186,7 +183,7 @@
                 <div class="col-md-4">
                     <div class="card border-0">
                         <img src="https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 2" class="card-img-top rounded">
+                            alt="Category 2" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Aluminum</h5>
                             <p class="text-muted">8 Products Available</p>
@@ -197,8 +194,7 @@
                 <!-- Category 3 -->
                 <div class="col-md-4">
                     <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/454499/pexels-photo-454499.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="Category 3" class="card-img-top rounded">
+                    <img src="{{ asset('storage/archi-hardware/patch-fittings/yale p022.jpg') }}" alt="Gen Trade"  class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Gen Trade</h5>
                             <p class="text-muted">8 Products Available</p>
@@ -209,7 +205,7 @@
 
             <!-- Browse More Button -->
             <div class="">
-                <button type="button" class="btn btn-danger">See More</button>
+                <button type="button" class="btn btn-primary ">See More</button>
             </div>
 
     </section>
