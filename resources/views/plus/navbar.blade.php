@@ -89,53 +89,7 @@
 </nav> -->
 <!-- End of Header -->
 
-<!-- <style>
-    /* Semi-transparent navbar style */
-    .navbar {
-        background-color:#FFFFFF; /* Semi-transparent black */
-        backdrop-filter: blur(8px); /* Optional: Adds a blurred background effect */
-        transition: background-color 0.3s ease-in-out; /* Smooth transition */
-    }
 
-    /* Optional: Change the navbar color on scroll */
-    .navbar.scrolled {
-        background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent when scrolled */
-    }
-
-    .nav-link {
-        color: #7E1416 !important; /* Ensures the links are white for better readability */
-    }
-
-    /* .navbar-brand img {
-        filter: brightness(0) invert(1); 
-    } */
-
-    .dropdown-menu {
-        background-color: #FFFFFF; /* Dropdown background */
-        border: none;
-    }
-
-    .dropdown-item {
-        color: #172647 !important; /* Dropdown items white */
-    }
-
-    .dropdown-item:hover {
-        background-color: rgba(126, 20, 22, 0.1); /* Light hover effect */
-        color: #172647;
-    }
-</style> -->
-
-<!-- <script>
-    // Add 'scrolled' class when the page is scrolled
-    window.addEventListener("scroll", function () {
-        const navbar = document.querySelector(".navbar");
-        if (window.scrollY > 50) {
-            navbar.classList.add("scrolled");
-        } else {
-            navbar.classList.remove("scrolled");
-        }
-    });
-</script> -->
 
 <!-- Style -->
 @include('plus.style')
@@ -146,10 +100,11 @@
         <a href="/" class="navbar-brand d-inline-flex link-body-emphasis text-decoration-none">
             <img src="{{ asset('storage/logos/TQMPLogo.png') }}" alt="Header Image" class="header" width="80">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" style="background-color: #172647;" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-danger"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">

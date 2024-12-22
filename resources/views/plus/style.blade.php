@@ -53,7 +53,7 @@
 
     /* Responsive Toggle Button */
     .navbar-toggler {
-        border: none;
+        border: 2px;
         outline: none;
         font-size: 1.5rem;
         color: #7E1416;
@@ -112,7 +112,7 @@
 
     /* Landing Page Scrolling Animation */
     .custom-section {
-        background-color: #ffffff;
+        background-color:rgb(255, 255, 255);
         /* Light grey background */
         font-family: 'Roboto', sans-serif;
         /* Modern, clean font */
@@ -216,7 +216,6 @@
 
     button.btn-outline-danger {
         background-color: none;
-        /* Match primary brand color */
         color: #7E1416;
         border: #7E1416;
         font-size: smaller;
@@ -315,7 +314,6 @@
     }
 
     /* Company Logos Animation  */
-    /* Scrolling container */
     .logo-scroller {
         overflow: hidden;
         position: relative;
@@ -324,19 +322,14 @@
 
     .logos {
         display: inline-flex;
-        gap: 50px;
-        /* Space between logos */
+        gap: 20px;
         animation: slide 20s linear infinite;
     }
 
-    /* Logos: maintain aspect ratio and size */
     .header-img {
-        height: 40px;
-        /* Set a consistent height for all logos */
+        height: 50px;
         object-fit: contain;
-        /* Ensures logos fit without stretching */
         aspect-ratio: auto;
-        /* Automatically maintains the aspect ratio */
     }
 
     /* Keyframes for infinite sliding */
@@ -346,7 +339,7 @@
         }
 
         to {
-            transform: translateX(-15%);
+            transform: translateX(-20%);
         }
     }
 
