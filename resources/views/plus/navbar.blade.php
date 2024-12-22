@@ -89,21 +89,21 @@
 </nav> -->
 <!-- End of Header -->
 
-<style>
+<!-- <style>
     /* Semi-transparent navbar style */
     .navbar {
-        background-color:#7E1416; /* Semi-transparent black */
+        background-color:#FFFFFF; /* Semi-transparent black */
         backdrop-filter: blur(8px); /* Optional: Adds a blurred background effect */
         transition: background-color 0.3s ease-in-out; /* Smooth transition */
     }
 
     /* Optional: Change the navbar color on scroll */
     .navbar.scrolled {
-        background-color: rgba(126, 20, 22, 0.9); /* Slightly less transparent when scrolled */
+        background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent when scrolled */
     }
 
     .nav-link {
-        color: #EACF68 !important; /* Ensures the links are white for better readability */
+        color: #7E1416 !important; /* Ensures the links are white for better readability */
     }
 
     /* .navbar-brand img {
@@ -123,9 +123,9 @@
         background-color: rgba(126, 20, 22, 0.1); /* Light hover effect */
         color: #172647;
     }
-</style>
+</style> -->
 
-<script>
+<!-- <script>
     // Add 'scrolled' class when the page is scrolled
     window.addEventListener("scroll", function () {
         const navbar = document.querySelector(".navbar");
@@ -135,12 +135,16 @@
             navbar.classList.remove("scrolled");
         }
     });
-</script>
+</script> -->
+
+<!-- Style -->
+@include('plus.style')
+<!-- End of Style -->
 
 <nav class="navbar navbar-expand-md sticky-top navbar-dark" aria-label="Navbar example">
     <div class="container">
         <a href="/" class="navbar-brand d-inline-flex link-body-emphasis text-decoration-none">
-            <img src="{{ asset('storage/logos/TQMPLogo-Yellow.png') }}" alt="Header Image" class="header" width="80">
+            <img src="{{ asset('storage/logos/TQMPLogo.png') }}" alt="Header Image" class="header" width="80">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
             aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -211,12 +215,12 @@
             <!-- Cart and Login Buttons -->
             <div class="d-flex align-items-center">
                 <a href="/cart"
-                    class="d-flex align-items-center justify-content-center text-decoration-none me-2 btn btn-outline-warning" 
+                    class="d-flex align-items-center justify-content-center text-decoration-none me-2 btn btn-outline-danger"
                     style="font-size: smaller;">
                     <i class="fas fa-shopping-cart me-1"></i> <span>Cart</span>
                 </a>
                 <a href="/login"
-                    class="d-flex align-items-center justify-content-center text-decoration-none btn btn-outline-warning"
+                    class="d-flex align-items-center justify-content-center text-decoration-none btn btn-outline-danger"
                     style="font-size: smaller;">
                     <i class="fas fa-user me-1"></i> <span>Login</span>
                 </a>

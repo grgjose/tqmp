@@ -213,6 +213,21 @@
         font-size: smaller;
     }
 
+
+    button.btn-outline-danger {
+        background-color: none;
+        /* Match primary brand color */
+        color: #7E1416;
+        border: #7E1416;
+        font-size: smaller;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button.btn-outline-danger:hover {
+        background-color: #7E1416;
+        transform: translateY(-2px);
+        font-size: smaller;
+    }
     .img-fluid {
         border-radius: 10px;
     }

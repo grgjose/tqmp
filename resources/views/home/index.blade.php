@@ -84,7 +84,7 @@
                         journey to redefine quality and innovation.
                     </p>
                     <button type="button" class="btn btn-primary btn-lg px-4 py-2">
-                        Get Started
+                        Register Now
                     </button>
                 </div>
 
@@ -132,6 +132,7 @@
                         <div class="card-body">
                             <h5 class="fw-bold">Bullet Proofing</h5>
                             <p class="text-muted">8 Products Available</p>
+                            <button type="button" class="btn btn-primary btn-lg px-4 py-2"> Request Quotation</button>
                         </div>
                     </div>
                 </div>
@@ -142,6 +143,7 @@
                         <div class="card-body">
                             <h5 class="fw-bold">Glass Processing</h5>
                             <p class="text-muted">8 Products Available</p>
+                            <button type="button" class="btn btn-primary btn-lg px-4 py-2">Request Quotation</button>
                         </div>
                     </div>
                 </div>
@@ -205,7 +207,7 @@
 
             <!-- Browse More Button -->
             <div class="">
-                <button type="button" class="btn btn-primary ">See More</button>
+                <button type="button" class="btn btn-primary ">Order Now</button>
             </div>
 
     </section>
