@@ -14,9 +14,7 @@
                         </div>
                         <!-- Right Column -->
                         <div class="col-md-4 text-md-end">
-                            <!-- <button type="button" class="btn btn-danger">Get Started</button> -->
-                            <button type="button" class="btn" style="font-size: smaller; background: #EACF68;">Learn
-                                More</button>
+                            <button type="button" class="btn" style="font-size: smaller; background: #EACF68;"><b>Contact Us</b></button>
                         </div>
                     </div>
                 </div>

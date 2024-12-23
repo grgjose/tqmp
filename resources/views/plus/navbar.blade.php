@@ -89,8 +89,6 @@
 </nav> -->
 <!-- End of Header -->
 
-
-
 <!-- Style -->
 @include('plus.style')
 <!-- End of Style -->

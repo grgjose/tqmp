@@ -112,7 +112,7 @@
 
     /* Landing Page Scrolling Animation */
     .custom-section {
-        background-color:rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
         /* Light grey background */
         font-family: 'Roboto', sans-serif;
         /* Modern, clean font */
@@ -213,20 +213,24 @@
         font-size: smaller;
     }
 
-
-    button.btn-outline-danger {
-        background-color: none;
+    a.btn-outline-danger {
+        background-color: transparent;
+        /* Fix 'none' to 'transparent' */
         color: #7E1416;
-        border: #7E1416;
+        border: 1px solid #7E1416;
+        /* Specify solid border style */
         font-size: smaller;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    button.btn-outline-danger:hover {
+    a.btn-outline-danger:hover {
         background-color: #7E1416;
+        color: #ffffff;
+        /* Optional: Change text color on hover */
         transform: translateY(-2px);
-        font-size: smaller;
     }
+
+
     .img-fluid {
         border-radius: 10px;
     }
