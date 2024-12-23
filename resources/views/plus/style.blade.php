@@ -168,6 +168,7 @@
         font-size: smaller;
     }
 
+
     button.btn-light {
         background-color: #FFFFFF;
         /* Match primary brand color */
@@ -230,6 +231,35 @@
         transform: translateY(-2px);
     }
 
+    a.btn-danger {
+        background-color: #7E1416;
+        /* Match primary brand color */
+        color: #ffffff;
+        border: none;
+        font-size: smaller;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a.btn-danger:hover {
+        background-color: #7E1416;
+        transform: translateY(-2px);
+        font-size: smaller;
+    }
+
+    a.btn-primary {
+        background-color: #172647;
+        /* Match primary brand color */
+        color: white;
+        border: none;
+        font-size: smaller;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a.btn-primary:hover {
+        background-color: #172647;
+        transform: translateY(-2px);
+        font-size: smaller;
+    }
 
     .img-fluid {
         border-radius: 10px;

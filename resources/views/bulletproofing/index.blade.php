@@ -49,7 +49,7 @@
                         Your premier source for top-of-the-line and precision-engineered armoured vehicles
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
-                        <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
+                        <a href="https://www.facebook.com/people/Master-Armoured-Vehicle/61561429240605/" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
                             <span><b>Find out more</b></span>
                         </a>
                     </div>
@@ -278,6 +278,12 @@
         </div><br>
     </div>
     <!-- /END THE FEATURETTES -->
+
+    <div class="d-flex align-items-center justify-content-center">
+        <a href="" class="btn btn-primary text-decoration-none" style="font-size: smaller;">
+            <span><b>Request Quotation</b></span>
+        </a>
+    </div>
 
     <!-- Accordion Section -->
     @include ('plus.accordion')
