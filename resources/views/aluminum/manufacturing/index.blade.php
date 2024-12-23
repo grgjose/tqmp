@@ -46,8 +46,8 @@
                 <div class="col-md-8">
                     <h2 class="fw-bold display-3" style="color: white;">Aluminum Manufacturing</h2>
                     <p class="lead mt-3" style="color: white;">
-                        To aim a must production aluminum profiles and moving ahead to a high-end aluminum profiles, 
-                        HSP Paragon Corporation is an aluminum extrusion plant complete with powder coating line and anodizing line for all your aluminum section requirements. 
+                        To aim a must production aluminum profiles and moving ahead to a high-end aluminum profiles,
+                        HSP Paragon Corporation is an aluminum extrusion plant complete with powder coating line and anodizing line for all your aluminum section requirements.
                         We also have a recycling plant for all kinds of aluminum scraps.
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
@@ -70,7 +70,7 @@
                     <h2 class="fw-bold">Aluminum Manufacturing</h2>
                     <p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
                         vestibulum.</p>
-                    <!-- <button type="button" class="btn btn-primary">
+                    <!-- <button type="button" class="btn btn-danger">
                         Get Started
                     </button> -->
                 </div>
@@ -110,88 +110,275 @@
                 elementum
                 lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
             </p>
-            <!-- Category Cards -->
-            <div class="row mt-5">
-                <!-- Category 1 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/aluminum/01.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">ANGLE SECTIONS</h5>
-                            <p class="text-muted">A colourless and transparent glass that offers a very high level of light transmittance. Its edge displays a slight green tint and is available from 2mm to 19mm thick.</p>
+
+            <div class="container">
+                <!-- Card Content -->
+                <div class="tab-content" id="pagination-content">
+                    <!-- Page 1 -->
+                    <div class="tab-pane fade show active" id="page-1" role="tabpanel" aria-labelledby="page-1-tab">
+                        <div class="row">
+                            <!-- Card 7 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/01.jpg') }}" class="card-img-top" alt="Card 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Angle Sections</h5>
+                                        <p class="card-text">Description for Card 7.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 8 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/02.jpg') }}" class="card-img-top" alt="Card 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+                                        <p class="card-text">Description for Card 8.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 9 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/03.jpg') }}" class="card-img-top" alt="Card 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+                                        <p class="card-text">Description for Card 9.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 10 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/04.jpg') }}" class="card-img-top" alt="Card 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+                                        <p class="card-text">Description for Card 10.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 11 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/05.jpg') }}" class="card-img-top" alt="Card 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+                                        <p class="card-text">Description for Card 11.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 12 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/06.jpg') }}" class="card-img-top" alt="Card 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Screen Door and Windows</h5>
+                                        <p class="card-text">Description for Card 12.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 2 -->
+                    <div class="tab-pane fade" id="page-2" role="tabpanel" aria-labelledby="page-2-tab">
+                        <div class="row">
+                            <!-- Card 7 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/07.jpg') }}" class="card-img-top" alt="Card 7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sliding Door Sections</h5>
+                                        <p class="card-text">Description for Card 7.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 8 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/08.jpg') }}" class="card-img-top" alt="Card 8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sliding Door Sections</h5>
+                                        <p class="card-text">Description for Card 8.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 9 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/09.jpg') }}" class="card-img-top" alt="Card 9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sliding Door Sections</h5>
+                                        <p class="card-text">Description for Card 9.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 10 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/10.jpg') }}" class="card-img-top" alt="Card 10">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sliding Door Sections</h5>
+                                        <p class="card-text">Description for Card 10.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 11 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/11.jpg') }}" class="card-img-top" alt="Card 11">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Miscellaneous Sections</h5>
+                                        <p class="card-text">Description for Card 11.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 12 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/12.jpg') }}" class="card-img-top" alt="Card 12">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Swing Door Sections</h5>
+                                        <p class="card-text">Description for Card 12.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 3 -->
+                    <div class="tab-pane fade" id="page-3" role="tabpanel" aria-labelledby="page-3-tab">
+                        <div class="row">
+                            <!-- Card 7 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/13.jpg') }}" class="card-img-top" alt="Card 13">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Swing Door Sections</h5>
+                                        <p class="card-text">Description for Card 7.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 8 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/14.jpg') }}" class="card-img-top" alt="Card 14">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Counter Trim Sections</h5>
+                                        <p class="card-text">Description for Card 8.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 9 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/15.jpg') }}" class="card-img-top" alt="Card 15">
+                                    <div class="card-body">
+                                        <h5 class="card-title">YC Sections</h5>
+                                        <p class="card-text">Description for Card 9.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 10 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/16.jpg') }}" class="card-img-top" alt="Card 16">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vent Sections</h5>
+                                        <p class="card-text">Description for Card 10.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 11 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/17.jpg') }}" class="card-img-top" alt="Card 17">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Flat Bar Sections</h5>
+                                        <p class="card-text">Description for Card 11.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 12 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/18.jpg') }}" class="card-img-top" alt="Card 18">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Counter Nosing Sections</h5>
+                                        <p class="card-text">Description for Card 12.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 4 -->
+                    <div class="tab-pane fade" id="page-4" role="tabpanel" aria-labelledby="page-4-tab">
+                        <div class="row">
+                            <!-- Card 7 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/aluminum/19.jpg') }}" class="card-img-top" alt="Card 19">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Swing Door Sections</h5>
+                                        <p class="card-text">Description for Card 7.</p>
+                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Category 2 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/aluminum/02.jpg') }}"
-                            alt="Category 2" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">STORE FRONT COMPONENTS</h5>
-                            <p class="text-muted">A heat absorbing, transparent glass colored by adding such metals like cobalt, selnium or iron. It reduces the amount of heat flowing into a room thereby decreasing the cooling load.</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Pagination Tabs -->
+                <ul class="nav nav-pills justify-content-center mb-4" id="pagination-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="page-1-tab" data-bs-toggle="pill" data-bs-target="#page-1" type="button" role="tab" aria-controls="page-1" aria-selected="true" style="background-color:#7E1416; color:#fff; margin-right: 10px;">
+                            1
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab" aria-controls="page-2" aria-selected="false" style="background-color:#7E1416; color:#fff; margin-right: 10px;">
+                            2
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="page-3-tab" data-bs-toggle="pill" data-bs-target="#page-3" type="button" role="tab" aria-controls="page-3" aria-selected="false" style="background-color:#7E1416; color:#fff; margin-right: 10px;"">
+                            3
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="page-4-tab" data-bs-toggle="pill" data-bs-target="#page-4" type="button" role="tab" aria-controls="page-4" aria-selected="false" style="background-color:#7E1416; color:#fff;">
+                            4
+                        </button>
+                    </li>
+                </ul>
 
-                <!-- Category 3 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/aluminum/06.jpg') }}"
-                            alt="Category 3" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">SCREEN DOOR AND WINDOWS</h5>
-                            <p class="text-muted">This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision, thereby allowing the most natural colors to stand out.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
 
-
-            <div class="row mt-5">
-                <!-- Category 1 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/aluminum/07.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">SLIDING DOOR SECTIONS</h5>
-                            <p class="text-muted">Low-E Glass Products are designed to improve the performace of windows and curtain walls be reducing heat transfer, resulting to lower shading coeffiecient and solar factor. It is highly transparent functions with lower reflectance.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Category 2 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/aluminum/11.jpg') }}"
-                            alt="Category 2" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">MISCELLANEOUS SECTIONS</h5>
-                            <p class="text-muted">Reflective Glass has a mirror-like appearance and reflects and absorbs a major proportion of the sun's heat and radiation. Its glass performance is dependent o n the type of coating and the orientation of the glass. </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Category 3 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/aluminum/12.jpg') }}"
-                            alt="Category 3" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">SWING DOOR SECTIONS</h5>
-                            <p class="text-muted">Mirrors are made from top of the line clear or tinted float glass, chemically treated with silver and coated to prevent peeling and corrosion. PFGMI Mirros are oven cured to maintain durability through the years.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- Browse More Button -->
-            <div class="">
-                <button type="button" class="btn btn-primary">See More</button>
-            </div>
+            <!-- <div class="">
+                <button type="button" class="btn btn-danger">Order Now</button>
+            </div> -->
 
     </section>
     <!-- End of Products -->
