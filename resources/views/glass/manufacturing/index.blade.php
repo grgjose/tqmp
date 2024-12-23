@@ -260,20 +260,20 @@
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision, 
+                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
                                                             thereby allowing the most natural colors to stand out.</h6>
 
                                                         <p><b>Thickness:</b><br>
-                                                        6.0mm to 12.0mm</p>
+                                                            6.0mm to 12.0mm</p>
 
                                                         <p><b>Standard Size:</b><br>
-                                                        84" x 120" to 84" x 192"</p>
+                                                            84" x 120" to 84" x 192"</p>
 
                                                         <p><b>Ultra Thick</b><br>
-                                                        15.00mm to 19.0mm</p>
+                                                            15.00mm to 19.0mm</p>
 
                                                         <p><b>Standard Size</b><br>
-                                                        120" x 236"</p>
+                                                            120" x 236"</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -293,7 +293,42 @@
                                     <div class="card-body">
                                         <h5 class="card-title">LOW-E COATED GLASS</h5>
                                         <p class="card-text">Description for Card 10.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                            More Details
+                                        </button>
 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
+                                                            thereby allowing the most natural colors to stand out.</h6>
+
+                                                        <p><b>Thickness:</b><br>
+                                                            6.0mm to 12.0mm</p>
+
+                                                        <p><b>Standard Size:</b><br>
+                                                            84" x 120" to 84" x 192"</p>
+
+                                                        <p><b>Ultra Thick</b><br>
+                                                            15.00mm to 19.0mm</p>
+
+                                                        <p><b>Standard Size</b><br>
+                                                            120" x 236"</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -304,7 +339,42 @@
                                     <div class="card-body">
                                         <h5 class="card-title">REFLECTIVE COATED GLASS</h5>
                                         <p class="card-text">Description for Card 11.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                            More Details
+                                        </button>
 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
+                                                            thereby allowing the most natural colors to stand out.</h6>
+
+                                                        <p><b>Thickness:</b><br>
+                                                            6.0mm to 12.0mm</p>
+
+                                                        <p><b>Standard Size:</b><br>
+                                                            84" x 120" to 84" x 192"</p>
+
+                                                        <p><b>Ultra Thick</b><br>
+                                                            15.00mm to 19.0mm</p>
+
+                                                        <p><b>Standard Size</b><br>
+                                                            120" x 236"</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -315,7 +385,42 @@
                                     <div class="card-body">
                                         <h5 class="card-title">MIRROR</h5>
                                         <p class="card-text">Description for Card 12.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                                            More Details
+                                        </button>
 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
+                                                            thereby allowing the most natural colors to stand out.</h6>
+
+                                                        <p><b>Thickness:</b><br>
+                                                            6.0mm to 12.0mm</p>
+
+                                                        <p><b>Standard Size:</b><br>
+                                                            84" x 120" to 84" x 192"</p>
+
+                                                        <p><b>Ultra Thick</b><br>
+                                                            15.00mm to 19.0mm</p>
+
+                                                        <p><b>Standard Size</b><br>
+                                                            120" x 236"</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -332,7 +437,42 @@
                                     <div class="card-body">
                                         <h5 class="card-title">CURVED TEMPERED GLASS</h5>
                                         <p class="card-text">Description for Card 7.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                            More Details
+                                        </button>
 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
+                                                            thereby allowing the most natural colors to stand out.</h6>
+
+                                                        <p><b>Thickness:</b><br>
+                                                            6.0mm to 12.0mm</p>
+
+                                                        <p><b>Standard Size:</b><br>
+                                                            84" x 120" to 84" x 192"</p>
+
+                                                        <p><b>Ultra Thick</b><br>
+                                                            15.00mm to 19.0mm</p>
+
+                                                        <p><b>Standard Size</b><br>
+                                                            120" x 236"</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -343,7 +483,42 @@
                                     <div class="card-body">
                                         <h5 class="card-title">TEMPERED GLASS</h5>
                                         <p class="card-text">Description for Card 8.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                            More Details
+                                        </button>
 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
+                                                            thereby allowing the most natural colors to stand out.</h6>
+
+                                                        <p><b>Thickness:</b><br>
+                                                            6.0mm to 12.0mm</p>
+
+                                                        <p><b>Standard Size:</b><br>
+                                                            84" x 120" to 84" x 192"</p>
+
+                                                        <p><b>Ultra Thick</b><br>
+                                                            15.00mm to 19.0mm</p>
+
+                                                        <p><b>Standard Size</b><br>
+                                                            120" x 236"</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -354,7 +529,42 @@
                                     <div class="card-body">
                                         <h5 class="card-title">LAMINATED GLASS</h5>
                                         <p class="card-text">Description for Card 9.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                                            More Details
+                                        </button>
 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
+                                                            thereby allowing the most natural colors to stand out.</h6>
+
+                                                        <p><b>Thickness:</b><br>
+                                                            6.0mm to 12.0mm</p>
+
+                                                        <p><b>Standard Size:</b><br>
+                                                            84" x 120" to 84" x 192"</p>
+
+                                                        <p><b>Ultra Thick</b><br>
+                                                            15.00mm to 19.0mm</p>
+
+                                                        <p><b>Standard Size</b><br>
+                                                            120" x 236"</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -365,7 +575,42 @@
                                     <div class="card-body">
                                         <h5 class="card-title">PATTERNED GLASS</h5>
                                         <p class="card-text">Description for Card 10.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+                                            More Details
+                                        </button>
 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel10" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
+                                                            thereby allowing the most natural colors to stand out.</h6>
+
+                                                        <p><b>Thickness:</b><br>
+                                                            6.0mm to 12.0mm</p>
+
+                                                        <p><b>Standard Size:</b><br>
+                                                            84" x 120" to 84" x 192"</p>
+
+                                                        <p><b>Ultra Thick</b><br>
+                                                            15.00mm to 19.0mm</p>
+
+                                                        <p><b>Standard Size</b><br>
+                                                            120" x 236"</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -376,7 +621,42 @@
                                     <div class="card-body">
                                         <h5 class="card-title">WIRED GLASS</h5>
                                         <p class="card-text">Description for Card 11.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+                                            More Details
+                                        </button>
 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel11" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
+                                                            thereby allowing the most natural colors to stand out.</h6>
+
+                                                        <p><b>Thickness:</b><br>
+                                                            6.0mm to 12.0mm</p>
+
+                                                        <p><b>Standard Size:</b><br>
+                                                            84" x 120" to 84" x 192"</p>
+
+                                                        <p><b>Ultra Thick</b><br>
+                                                            15.00mm to 19.0mm</p>
+
+                                                        <p><b>Standard Size</b><br>
+                                                            120" x 236"</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -387,7 +667,42 @@
                                     <div class="card-body">
                                         <h5 class="card-title">INSULATING GLASS UNITS (IGU)</h5>
                                         <p class="card-text">Description for Card 12.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+                                            More Details
+                                        </button>
 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel12" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
+                                                            thereby allowing the most natural colors to stand out.</h6>
+
+                                                        <p><b>Thickness:</b><br>
+                                                            6.0mm to 12.0mm</p>
+
+                                                        <p><b>Standard Size:</b><br>
+                                                            84" x 120" to 84" x 192"</p>
+
+                                                        <p><b>Ultra Thick</b><br>
+                                                            15.00mm to 19.0mm</p>
+
+                                                        <p><b>Standard Size</b><br>
+                                                            120" x 236"</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
