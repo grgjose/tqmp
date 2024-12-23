@@ -111,6 +111,7 @@
                 lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
             </p>
 
+            <!-- Pagination  -->
             <div class="container">
                 <!-- Card Content -->
                 <div class="tab-content" id="pagination-content">

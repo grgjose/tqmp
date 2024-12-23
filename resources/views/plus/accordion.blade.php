@@ -111,7 +111,7 @@
 
                             <!-- Accordion Item 5 -->
                             <div class="accordion-item mb-3">
-                                <h2 class="accordion-header" id="headingFour">
+                                <h2 class="accordion-header" id="headingFive">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
                                         style="color: #000;">
@@ -130,7 +130,7 @@
 
                             <!-- Accordion Item 6 -->
                             <div class="accordion-item mb-3">
-                                <h2 class="accordion-header" id="headingFour">
+                                <h2 class="accordion-header" id="headingSix">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
                                         style="color: #000;">

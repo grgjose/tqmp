@@ -24,7 +24,14 @@
     <!-- Scripts -->
     <script src="../assets/js/color-modes.js" defer></script>
     <!-- Optional: Move this to the bottom of the body if it's not critical for rendering -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 JS Bundle (with Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -80,28 +87,28 @@
     <section class="custom-section fade-in py-5 align-items-center">
         <div class="container">
             <section class="fade-in">
-            <div class="row align-items-center">
-                <!-- Text Column -->
-                <div class="col-md-6 text-center text-md-start">
-                    <h2 class="fw-bold">Glass Manufacturing</h2>
-                    <p class="text-muted">Pioneer Float Glass Manufacturing Inc. (PFGMI) is the leading flat glass manufacturer in the Philippines.</p>
-                    <p class="text-muted">Established in 1958 under the former name of Republic Glass Corporation, and eventually became a wholly owned subsidiary of AGC in 2001 adopting the company name AGC Flat Glass Philippines Inc. In 2017, TQMP Glass Manufacturing Corp. acquired 100% of the AGPH shares thus becaming the torch bearer for the flat glass industry in the Philippines.</p>
-                    <!-- <button type="button" class="btn btn-danger">
+                <div class="row align-items-center">
+                    <!-- Text Column -->
+                    <div class="col-md-6 text-center text-md-start">
+                        <h2 class="fw-bold">Glass Manufacturing</h2>
+                        <p class="text-muted">Pioneer Float Glass Manufacturing Inc. (PFGMI) is the leading flat glass manufacturer in the Philippines.</p>
+                        <p class="text-muted">Established in 1958 under the former name of Republic Glass Corporation, and eventually became a wholly owned subsidiary of AGC in 2001 adopting the company name AGC Flat Glass Philippines Inc. In 2017, TQMP Glass Manufacturing Corp. acquired 100% of the AGPH shares thus becaming the torch bearer for the flat glass industry in the Philippines.</p>
+                        <!-- <button type="button" class="btn btn-danger">
                         Get Started
                     </button> -->
-                </div>
+                    </div>
 
-                <!-- Image Column -->
-                <div class="col-md-6 text-center">
-                    <div class="position-relative">
-                        <img src="{{ asset('storage/logos/pioneer_logo.png') }}"
-                            alt="Philippines" class="img-fluid rounded lg">
-                        <div class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity"> </div>
+                    <!-- Image Column -->
+                    <div class="col-md-6 text-center">
+                        <div class="position-relative">
+                            <img src="{{ asset('storage/logos/pioneer_logo.png') }}"
+                                alt="Philippines" class="img-fluid rounded lg">
+                            <div class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity"> </div>
+                        </div>
                     </div>
                 </div>
-            </div>
             </section>
-           
+
         </div>
     </section>
     <!-- Glass Manufacturing Section -->
@@ -126,89 +133,287 @@
                 elementum
                 lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
             </p>
-            <!-- Category Cards -->
-            <div class="row mt-5">
-                <!-- Category 1 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://www.pfg.com.ph/images/services/floatglass.jpg"
-                            alt="Category 1" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">CLEAR FLOAT GLASS</h5>
-                            <p class="text-muted">A colourless and transparent glass that offers a very high level of light transmittance. Its edge displays a slight green tint and is available from 2mm to 19mm thick.</p>
+
+            <!-- Pagination  -->
+
+            <div class="container">
+                <!-- Card Content -->
+                <div class="tab-content" id="pagination-content">
+                    <!-- Page 1 -->
+                    <div class="tab-pane fade show active" id="page-1" role="tabpanel" aria-labelledby="page-1-tab">
+                        <div class="row">
+                            <!-- Card 7 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/floatglass.jpg') }}" class="card-img-top" alt="Card 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CLEAR FLOAT GLASS</h5>
+                                        <p class="card-text">A Colourless and transparent glass that offers a very high level of light transmittance...</p>
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            More Details
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">CLEAR FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>A Colourless and transparent glass that offers a very high level of light transmittance.
+                                                            Its edge displays a slight green tint and is available from 2mm to 19mm thick.</h6>
+
+                                                        <p><b>Thickness:</b><br>
+                                                            2.0mm to 12.0mm</p>
+
+                                                        <p><b>Standard Size:</b><br>
+                                                            36" x 48" to 144" x 192"</p>
+
+                                                        <p><b>Ultra Thick</b><br>
+                                                            15.00mm to 19.0mm</p>
+
+                                                        <p><b>Standard Size</b><br>
+                                                            120" x 390"</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 8 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/tintedfloat.jpg') }}" class="card-img-top" alt="Card 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">TINTED FLOAT GLASS</h5>
+                                        <p class="card-text">A heat absorbing, transparent glass colored by adding such metals like cobalt...</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            More Details
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">TINTED FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>A heat absorbing, transparent glass colored by adding such metals like cobalt, selnium or iron.
+                                                            It reduces the amount of heat flowing into a room thereby decreasing the cooling load.</h6>
+
+                                                        <p><b>Bronze Float:</b><br>
+                                                            3.0mm to 12.0mm Thickness</p>
+
+                                                        <p><b>Dark Gray Float:</b><br>
+                                                            3.0mm to 12.0mm Thickness</p>
+
+                                                        <p><b>Euro Gray Float:</b><br>
+                                                            6.0mm to 12.0mm Thickness</p>
+
+                                                        <p><b>Dark Green:</b><br>
+                                                            6.0mm to 12.0mm Thickness</p>
+
+                                                        <p><b>Dark Blue:</b><br>
+                                                            6.0mm to 12.0mm Thickness</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 9 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/ultraclear.jpg') }}" class="card-img-top" alt="Card 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ULTRA CLEAR FLOAT GLASS</h5>
+                                        <p class="card-text">This kind of glass provides extreme clarity for glazing applications requiring minimum impurities...</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                            More Details
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision, 
+                                                            thereby allowing the most natural colors to stand out.</h6>
+
+                                                        <p><b>Thickness:</b><br>
+                                                        6.0mm to 12.0mm</p>
+
+                                                        <p><b>Standard Size:</b><br>
+                                                        84" x 120" to 84" x 192"</p>
+
+                                                        <p><b>Ultra Thick</b><br>
+                                                        15.00mm to 19.0mm</p>
+
+                                                        <p><b>Standard Size</b><br>
+                                                        120" x 236"</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 10 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/lowe.jpg') }}" class="card-img-top" alt="Card 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">LOW-E COATED GLASS</h5>
+                                        <p class="card-text">Description for Card 10.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 11 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/reflective.jpg') }}" class="card-img-top" alt="Card 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">REFLECTIVE COATED GLASS</h5>
+                                        <p class="card-text">Description for Card 11.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 12 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/mirror.jpg') }}" class="card-img-top" alt="Card 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">MIRROR</h5>
+                                        <p class="card-text">Description for Card 12.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 2 -->
+                    <div class="tab-pane fade" id="page-2" role="tabpanel" aria-labelledby="page-2-tab">
+                        <div class="row">
+                            <!-- Card 7 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/curvedglass.jpg') }}" class="card-img-top" alt="Card 7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CURVED TEMPERED GLASS</h5>
+                                        <p class="card-text">Description for Card 7.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 8 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/temperedglass.jpg') }}" class="card-img-top" alt="Card 8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">TEMPERED GLASS</h5>
+                                        <p class="card-text">Description for Card 8.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 9 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/laminatedglass.jpg') }}" class="card-img-top" alt="Card 9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">LAMINATED GLASS</h5>
+                                        <p class="card-text">Description for Card 9.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 10 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/patternedglass.jpg') }}" class="card-img-top" alt="Card 10">
+                                    <div class="card-body">
+                                        <h5 class="card-title">PATTERNED GLASS</h5>
+                                        <p class="card-text">Description for Card 10.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 11 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/wiredglass.jpg') }}" class="card-img-top" alt="Card 11">
+                                    <div class="card-body">
+                                        <h5 class="card-title">WIRED GLASS</h5>
+                                        <p class="card-text">Description for Card 11.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 12 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0">
+                                    <img src="{{ asset('storage/glass-mfg/igu.jpg') }}" class="card-img-top" alt="Card 12">
+                                    <div class="card-body">
+                                        <h5 class="card-title">INSULATING GLASS UNITS (IGU)</h5>
+                                        <p class="card-text">Description for Card 12.</p>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Category 2 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://www.pfg.com.ph/images/services/tintedfloat.jpg"
-                            alt="Category 2" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">TINTED FLOAT GLASS</h5>
-                            <p class="text-muted">A heat absorbing, transparent glass colored by adding such metals like cobalt, selnium or iron. It reduces the amount of heat flowing into a room thereby decreasing the cooling load.</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Pagination Tabs -->
+                <ul class="nav nav-pills justify-content-center mb-4" id="pagination-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="page-1-tab" data-bs-toggle="pill" data-bs-target="#page-1" type="button" role="tab" aria-controls="page-1" aria-selected="true" style="background-color:#7E1416; color:#fff; margin-right: 10px;">
+                            1
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab" aria-controls="page-2" aria-selected="false" style="background-color:#7E1416; color:#fff; margin-right: 10px;">
+                            2
+                        </button>
+                    </li>
+                </ul>
 
-                <!-- Category 3 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://www.pfg.com.ph/images/services/ultraclear.jpg"
-                            alt="Category 3" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">ULTRA CLEAR FLOAT GLASS</h5>
-                            <p class="text-muted">This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision, thereby allowing the most natural colors to stand out.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-
-            <div class="row mt-5">
-                <!-- Category 1 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://www.pfg.com.ph/images/services/lowe.jpg"
-                            alt="Category 1" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">LOW-E COATED GLASS</h5>
-                            <p class="text-muted">Low-E Glass Products are designed to improve the performace of windows and curtain walls be reducing heat transfer, resulting to lower shading coeffiecient and solar factor. It is highly transparent functions with lower reflectance.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Category 2 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://www.pfg.com.ph/images/services/reflective.jpg"
-                            alt="Category 2" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">REFLECTIVE COATED GLASS</h5>
-                            <p class="text-muted">Reflective Glass has a mirror-like appearance and reflects and absorbs a major proportion of the sun's heat and radiation. Its glass performance is dependent o n the type of coating and the orientation of the glass. </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Category 3 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://www.pfg.com.ph/images/services/mirror.jpg"
-                            alt="Category 3" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">MIRROR</h5>
-                            <p class="text-muted">Mirrors are made from top of the line clear or tinted float glass, chemically treated with silver and coated to prevent peeling and corrosion. PFGMI Mirros are oven cured to maintain durability through the years.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
 
             <!-- Browse More Button -->
             <div class="">
-                <button type="button" class="btn btn-danger">See More</button>
+                <button type="button" class="btn btn-danger">Order Now</button>
             </div>
 
     </section>
@@ -225,16 +430,16 @@
         <div class="container">
             <div class="row align-items-center">
                 <!-- Text Column -->
-                <div class="col-md-6 text-center text-md-end">
+                <div class="col-md-6 text-center text-md-start">
                     <h2 class="fw-bold">Awards and Recognition</h2>
                     <p class="text-muted">Outstanding Environmental Performer Award (PEZA)</p>
                     <p class="text-muted">2006 E3 Excellence in Ecology and Economy</p>
                     <p class="text-muted">Don Emilio Abello Energy Efficiency Awards</p>
                     <p class="text-muted">Dangal ng Pasig Award</p>
                     <p class="text-muted">Excellence in Ecology and Economy Award</p>
-                    <button type="button" class="btn btn-danger">
+                    <!-- <button type="button" class="btn btn-danger">
                         Get Started
-                    </button>
+                    </button> -->
                 </div>
 
                 <!-- Image Column -->
@@ -250,6 +455,16 @@
             </div>
         </div>
     </section>
+
+    <script>
+        window.onload = function() {
+            var modalElement = document.getElementById('exampleModal');
+            var modal = bootstrap.Modal.getInstance(modalElement); // Get modal instance
+            if (modal) {
+                modal.hide(); // Hide the modal if it's open
+            }
+        };
+    </script>
     <!-- End of Awards Section -->
 
     <!-- Accordion Section -->
