@@ -14,7 +14,7 @@
         width: 115px;
     }
 
-    .btn-red {
+    /* .btn-red {
         background-color: #7E1416;
         color: white;
     }
@@ -22,28 +22,26 @@
     .btn-red:hover {
         background-color: #7E1416;
         opacity: 0.9;
-    }
+    } */
 
-    /* Style for menu items */
     .nav-link {
         color: #1C2033;
         font-weight: normal;
         transition: color 0.3s ease, font-weight 0.3s ease;
     }
 
-    .nav-link:hover,
-    .nav-link.active {
-        color: #7E1416;
+    .navbar .nav-link:hover, 
+    .navbar .nav-link:focus, 
+    .navbar .nav-link.active {
+        color: #7E1416 !important; 
         font-weight: bold;
     }
 
-    /* Header Styling */
     .sticky-top {
         position: sticky;
         top: 0;
-        /* z-index: 1020; */
         background-color: white;
-        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .header {
@@ -51,7 +49,6 @@
         height: auto;
     }
 
-    /* Responsive Toggle Button */
     .navbar-toggler {
         border: 2px;
         outline: none;
@@ -61,7 +58,6 @@
         cursor: pointer;
     }
 
-    /* Responsive Styles */
     @media (max-width: 768px) {
         .nav {
             flex-direction: column;
@@ -75,11 +71,11 @@
             padding: 0.5rem 1rem;
         }
 
-        .btn-red {
+        /* .btn-red {
             width: 100%;
             text-align: center;
             margin-top: 10px;
-        }
+        } */
 
         .navbar-collapse {
             background-color: white;
@@ -173,7 +169,7 @@
         background-color: #FFFFFF;
         /* Match primary brand color */
         color: #172647;
-        border:rgb(48, 53, 65);
+        border: rgb(48, 53, 65);
         font-size: smaller;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
@@ -213,6 +209,26 @@
         transform: translateY(-2px);
         font-size: smaller;
     }
+
+    button.btn-outline-danger {
+        background-color: transparent;
+        /* Fix 'none' to 'transparent' */
+        color: #7E1416;
+        border: 1px solid #7E1416;
+        /* Specify solid border style */
+        font-size: smaller;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button.btn-outline-danger:hover {
+        background-color: #7E1416;
+        color: #ffffff;
+        font-weight: bold;
+        /* Optional: Change text color on hover */
+        transform: translateY(-2px);
+    }
+
 
     a.btn-outline-danger {
         background-color: transparent;

@@ -5,6 +5,10 @@
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Total Quality Management Products Philippines">
+    <meta name="author" content="TQMP">
+
+    <!-- Title and Favicon -->
     <title>Glass Manufacturing</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
@@ -22,16 +26,7 @@
     <link rel="stylesheet" href="main.css">
 
     <!-- Scripts -->
-    <script src="../assets/js/color-modes.js" defer></script>
-    <!-- Optional: Move this to the bottom of the body if it's not critical for rendering -->
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
-
-    <!-- Bootstrap 5.3.3 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap 5.3.3 JS Bundle (with Popper.js) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -689,7 +684,7 @@
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab" aria-controls="page-2" aria-selected="false" style="background-color:#7E1416; color:#fff; margin-right: 10px;">
+                        <button class="nav-link" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab" aria-controls="page-2" aria-selected="false" style="background-color:#7E1416; color:#fff;">
                             2
                         </button>
                     </li>
@@ -742,15 +737,7 @@
         </div>
     </section>
 
-    <script>
-        window.onload = function() {
-            var modalElement = document.getElementById('exampleModal');
-            var modal = bootstrap.Modal.getInstance(modalElement); // Get modal instance
-            if (modal) {
-                modal.hide(); // Hide the modal if it's open
-            }
-        };
-    </script>
+
     <!-- End of Awards Section -->
 
     <!-- Accordion Section -->
@@ -764,6 +751,9 @@
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,11 @@
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Frequently Asked Questions</title>
+    <meta name="description" content="Total Quality Management Products Philippines">
+    <meta name="author" content="TQMP">
+
+    <!-- Title and Favicon -->
+    <title>Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
     <!-- Preconnect for External Resources -->
@@ -22,10 +26,9 @@
     <link rel="stylesheet" href="main.css">
 
     <!-- Scripts -->
-    <script src="../assets/js/color-modes.js" defer></script>
-    <!-- Optional: Move this to the bottom of the body if it's not critical for rendering -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 
 <body>
     <!-- Style -->
@@ -46,10 +49,7 @@
                     <span class="badge text-white mb-2" style="background-color: #950101;">FAQs</span>
                     <h2 class="fw-bold">Any Questions? Look Here</h2>
                     <p class="text-muted">
-                        There are many variations of passages of Lorem Ipsum available but the majority have suffered
-                        alteration
-                        in some
-                        form.
+                    We sort a most questions that ask to us. You can choose and click below which suite your expectations.
                     </p>
                 </div>
                 <div class="accordion" id="faqAccordion">
@@ -63,9 +63,7 @@
                         <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                sit
-                                amet blandit leo lobortis eget.
+                            Yes we can, Please attach the drawing that will be analyst of our Processing Department.
                             </div>
                         </div>
                     </div>
@@ -79,8 +77,7 @@
                         <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
-                                dictum interdum, nisi lorem egestas odio.
+                            It depends where you will use or apply, ex: for main door will be 12mm glass for frameless or patch door for frame door some use 6mm and 8mm it depends to the aluminum profile frame will be using.
                             </div>
                         </div>
                     </div>
@@ -94,8 +91,7 @@
                         <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis consectetur
-                                nulla, non ultrices libero malesuada eu.
+                            It depends where you will use or apply, ex: for main door will be a height of 2.1m for standard to 2.4m with a width of 0.9m standard to 1.0m.
                             </div>
                         </div>
                     </div>
@@ -109,9 +105,7 @@
                         <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vivamus a arcu
-                                at
-                                odio viverra ornare.
+                            Price may be varies on that day was given quotation price to you.
                             </div>
                         </div>
                     </div>
@@ -125,8 +119,7 @@
                         <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies orci sed
-                                efficitur tincidunt.
+                            Please attach the clear picture to ease verification of item.
                             </div>
                         </div>
                     </div>
@@ -140,8 +133,7 @@
                         <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut quam vel turpis feugiat
-                                tincidunt in in ligula.
+                            When ordering our product we can deliver it now, there is a list of currier that you will choose or even pick-up now and when in processing or production it may vary on its total quantity you order.
                             </div>
                         </div>
                     </div>

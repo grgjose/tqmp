@@ -1,7 +1,3 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
 <!-- Style -->
 @include('plus.style')
 <!-- End of Style -->
@@ -19,7 +15,7 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link px-2 active" aria-current="page" href="/" style="color: #172647;">Home</a>
+                    <a class="nav-link px-2 active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="/#" data-bs-toggle="dropdown"
@@ -94,16 +90,4 @@
     </div>
 </nav>
 
-<!-- <script>
-    document.querySelectorAll('.dropdown-toggle').forEach((dropdown) => {
-        dropdown.addEventListener('click', (e) => {
-            e.preventDefault();
-            const menu = dropdown.nextElementSibling;
-            menu.classList.toggle('show'); // Toggle the visibility
-        });
-    });
-</script> -->
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

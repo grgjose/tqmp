@@ -5,27 +5,26 @@
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Total Quality Management Products Philippines">
+    <meta name="author" content="TQMP">
+
+    <!-- Title and Favicon -->
     <title>Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
-    <!-- Preconnect for External Resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
-    <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="main.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Scripts -->
-    <script src="../assets/js/color-modes.js" defer></script>
-    <!-- Optional: Move this to the bottom of the body if it's not critical for rendering -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom CSS (Optional) -->
+    <!-- <link rel="stylesheet" href="main.css"> -->
 </head>
+
 
 <body>
     <!-- Style -->
@@ -118,8 +117,8 @@
             <h2 class="fw-bold">What We Offer</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                We are offering a Bulletproofing Vehicle with a benefits of very good option for your additional security, 
-                the bullets literally “bounce off” to the vehicle, it has thick and heavy body, like a tank for protection, 
+                We are offering a Bulletproofing Vehicle with a benefits of very good option for your additional security,
+                the bullets literally “bounce off” to the vehicle, it has thick and heavy body, like a tank for protection,
                 it has special tires and glass, literally it saves lives.
                 We do process glass also such as: tempered glass, curve glass, laminated glass and insulating glass unit (IGU).
             </p>
@@ -128,22 +127,22 @@
                 <!-- Card 1 -->
                 <div class="col-md-6">
                     <div class="card border-0">
-                    <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top rounded" height="425">
+                        <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top rounded" height="425">
                         <div class="card-body">
                             <h5 class="fw-bold">Bullet Proofing</h5>
                             <p class="text-muted">8 Products Available</p>
-                            <button type="button" class="btn btn-primary btn-lg px-4 py-2"> Request Quotation</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm px-4 py-2"> Request Quotation</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-6">
                     <div class="card border-0">
-                    <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top rounded" height="425">
+                        <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top rounded" height="425">
                         <div class="card-body">
                             <h5 class="fw-bold">Glass Processing</h5>
                             <p class="text-muted">8 Products Available</p>
-                            <button type="button" class="btn btn-primary btn-lg px-4 py-2">Request Quotation</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm px-4 py-2">Request Quotation</button>
                         </div>
                     </div>
                 </div>
@@ -165,7 +164,7 @@
             <h2 class="fw-bold">Shop by Category</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                For our valued customer we are now extending our services thru online shopping to be next on your door. 
+                For our valued customer we are now extending our services thru online shopping to be next on your door.
                 Now feel ease to our new online services we are providing.
             </p>
             <!-- Category Cards -->
@@ -173,7 +172,7 @@
                 <!-- Category 1 -->
                 <div class="col-md-4">
                     <div class="card border-0">
-                    <img src="{{ asset('storage/glass-processing/cool silver only.jpg') }}" alt="Bulletproof"  class="card-img-top rounded" height="300">
+                        <img src="{{ asset('storage/glass-processing/cool silver only.jpg') }}" alt="Bulletproof" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Glass</h5>
                             <p class="text-muted">8 Products Available</p>
@@ -184,7 +183,7 @@
                 <!-- Category 2 -->
                 <div class="col-md-4">
                     <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        <img src="{{ asset('storage/home/aluminum.jpg') }}"
                             alt="Category 2" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Aluminum</h5>
@@ -196,7 +195,7 @@
                 <!-- Category 3 -->
                 <div class="col-md-4">
                     <div class="card border-0">
-                    <img src="{{ asset('storage/archi-hardware/patch-fittings/yale p022.jpg') }}" alt="Gen Trade"  class="card-img-top rounded" height="300">
+                        <img src="{{ asset('storage/home/gen-trade.jpg') }}" alt="Gen Trade" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Gen Trade</h5>
                             <p class="text-muted">8 Products Available</p>
@@ -207,7 +206,7 @@
 
             <!-- Browse More Button -->
             <div class="">
-                <button type="button" class="btn btn-primary ">Order Now</button>
+                <button type="button" class="btn btn-outline-danger ">Order Now</button>
             </div>
 
     </section>
@@ -224,6 +223,11 @@
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 
 </html>
