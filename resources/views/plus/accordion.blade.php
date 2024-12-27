@@ -65,7 +65,7 @@
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordionRight">
+                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordionLeft">
                                     <div class="accordion-body" style="color: #6c757d;">
                                         It depends where you will use or apply, ex: for main door will be a height of 2.1m for standard to 2.4m with a width of 0.9m standard to 1.0m.
                                     </div>

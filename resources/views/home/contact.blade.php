@@ -44,12 +44,7 @@
         <h2 class="fw-bold">Reach us for inquiries</h2>
         <!-- Paragraph -->
         <p class="mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-            vestibulum.
-            Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit
-            amet
-            elementum
-            lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+            Have questions or need assistance? Fill out the form below, and our team will get back to you promptly.
         </p>
     </div>
 
@@ -72,7 +67,7 @@
                                     <input type="email" class="form-control" id="email" placeholder="Your email">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <label for="phone" class="form-label">Phone Number <span class="text-danger">*</label>
                                     <input type="tel" class="form-control" id="phone" placeholder="Your phone number">
                                 </div>
                             </div>
@@ -84,8 +79,12 @@
                                 <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
                                 <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
                             </div>
+                            <div class="mb-3">
+                                <label for="formFileSm" class="form-label">Please upload government valid IDs <span class="text-danger">*</label>
+                                <input class="form-control form-control-sm" id="formFileSm" type="file" />
+                            </div>
                             <div>
-                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                                <button type="submit" class="btn btn-danger w-100">Send Message</button>
                             </div>
                         </form><br>
                     </div>
@@ -94,22 +93,22 @@
                     <div class="col-md-6 contact-info">
                         <h3 class="fw-bold">Get in Touch</h3><br>
                         <div class="mb-4">
-                            <h5><i class="fas fa-map-marker-alt text-primary me-2"></i> Office</h5>
+                            <h5><i class="fas fa-map-marker-alt text-danger me-2"></i> Office</h5>
                             <p class="text-muted mb-0">Please visit us to have a discussion.</p>
                             <p>168 Sapang Bakaw, Lawang Bato, Valenzuela City Philippines 1447</p>
                         </div>
                         <div class="mb-4">
-                            <h5><i class="fas fa-phone-alt text-primary me-2"></i> Phone</h5>
+                            <h5><i class="fas fa-phone-alt text-danger me-2"></i> Phone</h5>
                             <p class="text-muted mb-0">Please speak with us directly.</p>
                             <p>+632-7717-8767</p>
                         </div>
                         <div class="mb-4">
-                            <h5><i class="fas fa-envelope text-primary me-2"></i> Email</h5>
+                            <h5><i class="fas fa-envelope text-danger me-2"></i> Email</h5>
                             <p class="text-muted mb-0">Please write to us directly.</p>
                             <p>sales@tqmp.biz</p>
                         </div>
                         <div>
-                            <h5><i class="fas fa-clock text-primary me-2"></i> Opening Hours</h5>
+                            <h5><i class="fas fa-clock text-danger me-2"></i> Opening Hours</h5>
                             <p class="text-muted mb-0">Explore our business opening hours.</p>
                             <p>
                                 <strong>Mon - Sat:</strong> 8am - 5pm<br>
