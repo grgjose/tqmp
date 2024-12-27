@@ -173,7 +173,7 @@
         background-color: #FFFFFF;
         /* Match primary brand color */
         color: #172647;
-        border: none;
+        border:rgb(48, 53, 65);
         font-size: smaller;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
@@ -257,6 +257,21 @@
 
     a.btn-primary:hover {
         background-color: #172647;
+        transform: translateY(-2px);
+        font-size: smaller;
+    }
+
+    a.btn-light {
+        background-color: #FFFFFF;
+        /* Match primary brand color */
+        color: #172647;
+        border: #172647;
+        font-size: smaller;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a.btn-light:hover {
+        background-color: #FFFFFF;
         transform: translateY(-2px);
         font-size: smaller;
     }

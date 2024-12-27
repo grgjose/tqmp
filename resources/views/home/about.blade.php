@@ -51,9 +51,9 @@
                         <p class="text-muted">In the forth quarter of 2013, TQMP-Cebu was established. It houses the glass processing facilities that cater to the demands of Cebu and nearby provinces (Visayan Region).</p>
                         <p class="text-muted">Southern Philippines Glass (SPG) started operations at the second quarter of the 2014 with the same facilities of TQMP-Cebu. It serves the growing demand of the Mindanao Region.</p>
                         <p class="text-muted">In the forth quarter of 2014, the new plant in Lawang Bato started its maiden operation. Its houses one of the biggest tempering and modern glass processing facilities in Southeast Asia.</p>
-                        <button type="button" class="btn btn-danger">
+                        <!-- <button type="button" class="btn btn-danger">
                             Get Started
-                        </button>
+                        </button> -->
                     </div>
 
 
@@ -76,7 +76,7 @@
                 <h2 class="fw-bold">Learn More From Us</h2>
                 <!-- Paragraph -->
                 <p class="mt-3">
-                <p>From humble beginnings, TQMP became a byword among key industries players. Its phenomenal success and growth made it to become one of the Philippines' major players in the glass and aluminum industry.</p>
+                <p>Our belief is that our employees are the source of our strength, and that success can only be achieved through involvement and full commitment of each TQMP employees.</p>
                 </p>
                 <!-- Cards -->
                 <div class="row mt-4">

@@ -68,8 +68,7 @@
                 <!-- Text Column -->
                 <div class="col-md-6 text-center text-md-start">
                     <h2 class="fw-bold">Aluminum Manufacturing</h2>
-                    <p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                        vestibulum.</p>
+                    <p class="text-muted"> We not just developing aluminum profile we are structuring integrity, professionalism and excellence to make win-win circumstances to all of us. .</p>
                     <!-- <button type="button" class="btn btn-danger">
                         Get Started
                     </button> -->
@@ -104,11 +103,7 @@
             <h2 class="fw-bold">Aluminum Profiles</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                vestibulum.
-                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
-                elementum
-                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+                Raw Material Procurement > Mold Design and Processing > Extrusion Processing > Quality Inspection > Finished Product Packaging
             </p>
 
             <!-- Pagination  -->
@@ -124,7 +119,7 @@
                                     <img src="{{ asset('storage/aluminum/01.jpg') }}" class="card-img-top" alt="Card 1">
                                     <div class="card-body">
                                         <h5 class="card-title">Angle Sections</h5>
-                                        <p class="card-text">Description for Card 7.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -135,7 +130,7 @@
                                     <img src="{{ asset('storage/aluminum/02.jpg') }}" class="card-img-top" alt="Card 2">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
-                                        <p class="card-text">Description for Card 8.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -146,7 +141,7 @@
                                     <img src="{{ asset('storage/aluminum/03.jpg') }}" class="card-img-top" alt="Card 3">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
-                                        <p class="card-text">Description for Card 9.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -157,7 +152,7 @@
                                     <img src="{{ asset('storage/aluminum/04.jpg') }}" class="card-img-top" alt="Card 4">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
-                                        <p class="card-text">Description for Card 10.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -168,7 +163,7 @@
                                     <img src="{{ asset('storage/aluminum/05.jpg') }}" class="card-img-top" alt="Card 5">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
-                                        <p class="card-text">Description for Card 11.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -179,7 +174,7 @@
                                     <img src="{{ asset('storage/aluminum/06.jpg') }}" class="card-img-top" alt="Card 6">
                                     <div class="card-body">
                                         <h5 class="card-title">Screen Door and Windows</h5>
-                                        <p class="card-text">Description for Card 12.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -196,7 +191,7 @@
                                     <img src="{{ asset('storage/aluminum/07.jpg') }}" class="card-img-top" alt="Card 7">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
-                                        <p class="card-text">Description for Card 7.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -207,7 +202,7 @@
                                     <img src="{{ asset('storage/aluminum/08.jpg') }}" class="card-img-top" alt="Card 8">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
-                                        <p class="card-text">Description for Card 8.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -218,7 +213,7 @@
                                     <img src="{{ asset('storage/aluminum/09.jpg') }}" class="card-img-top" alt="Card 9">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
-                                        <p class="card-text">Description for Card 9.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -229,7 +224,7 @@
                                     <img src="{{ asset('storage/aluminum/10.jpg') }}" class="card-img-top" alt="Card 10">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
-                                        <p class="card-text">Description for Card 10.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -240,7 +235,7 @@
                                     <img src="{{ asset('storage/aluminum/11.jpg') }}" class="card-img-top" alt="Card 11">
                                     <div class="card-body">
                                         <h5 class="card-title">Miscellaneous Sections</h5>
-                                        <p class="card-text">Description for Card 11.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -251,7 +246,7 @@
                                     <img src="{{ asset('storage/aluminum/12.jpg') }}" class="card-img-top" alt="Card 12">
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
-                                        <p class="card-text">Description for Card 12.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -268,7 +263,7 @@
                                     <img src="{{ asset('storage/aluminum/13.jpg') }}" class="card-img-top" alt="Card 13">
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
-                                        <p class="card-text">Description for Card 7.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -279,7 +274,7 @@
                                     <img src="{{ asset('storage/aluminum/14.jpg') }}" class="card-img-top" alt="Card 14">
                                     <div class="card-body">
                                         <h5 class="card-title">Counter Trim Sections</h5>
-                                        <p class="card-text">Description for Card 8.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -290,7 +285,7 @@
                                     <img src="{{ asset('storage/aluminum/15.jpg') }}" class="card-img-top" alt="Card 15">
                                     <div class="card-body">
                                         <h5 class="card-title">YC Sections</h5>
-                                        <p class="card-text">Description for Card 9.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -301,7 +296,7 @@
                                     <img src="{{ asset('storage/aluminum/16.jpg') }}" class="card-img-top" alt="Card 16">
                                     <div class="card-body">
                                         <h5 class="card-title">Vent Sections</h5>
-                                        <p class="card-text">Description for Card 10.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -312,7 +307,7 @@
                                     <img src="{{ asset('storage/aluminum/17.jpg') }}" class="card-img-top" alt="Card 17">
                                     <div class="card-body">
                                         <h5 class="card-title">Flat Bar Sections</h5>
-                                        <p class="card-text">Description for Card 11.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -323,7 +318,7 @@
                                     <img src="{{ asset('storage/aluminum/18.jpg') }}" class="card-img-top" alt="Card 18">
                                     <div class="card-body">
                                         <h5 class="card-title">Counter Nosing Sections</h5>
-                                        <p class="card-text">Description for Card 12.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -340,7 +335,7 @@
                                     <img src="{{ asset('storage/aluminum/19.jpg') }}" class="card-img-top" alt="Card 19">
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
-                                        <p class="card-text">Description for Card 7.</p>
+
                                         <a href="#" class="btn btn-danger">Order Now</a>
                                     </div>
                                 </div>
@@ -352,26 +347,27 @@
                 <!-- Pagination Tabs -->
                 <ul class="nav nav-pills justify-content-center mb-4" id="pagination-tabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="page-1-tab" data-bs-toggle="pill" data-bs-target="#page-1" type="button" role="tab" aria-controls="page-1" aria-selected="true" style="background-color:#7E1416; color:#fff; margin-right: 10px;">
+                        <button class="nav-link active" id="page-1-tab" data-bs-toggle="pill" data-bs-target="#page-1" type="button" role="tab" aria-controls="page-1" aria-selected="true" style="background-color:#172647; color:#fff; margin-right: 10px; font-size: smaller; padding: 5px 10px;">
                             1
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab" aria-controls="page-2" aria-selected="false" style="background-color:#7E1416; color:#fff; margin-right: 10px;">
+                        <button class="nav-link" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab" aria-controls="page-2" aria-selected="false" style="background-color:#172647; color:#fff; margin-right: 10px; font-size: smaller; padding: 5px 10px;">
                             2
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="page-3-tab" data-bs-toggle="pill" data-bs-target="#page-3" type="button" role="tab" aria-controls="page-3" aria-selected="false" style="background-color:#7E1416; color:#fff; margin-right: 10px;"">
+                        <button class="nav-link" id="page-3-tab" data-bs-toggle="pill" data-bs-target="#page-3" type="button" role="tab" aria-controls="page-3" aria-selected="false" style="background-color:#172647; color:#fff; margin-right: 10px; font-size: smaller; padding: 5px 10px;">
                             3
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="page-4-tab" data-bs-toggle="pill" data-bs-target="#page-4" type="button" role="tab" aria-controls="page-4" aria-selected="false" style="background-color:#7E1416; color:#fff;">
+                        <button class="nav-link" id="page-4-tab" data-bs-toggle="pill" data-bs-target="#page-4" type="button" role="tab" aria-controls="page-4" aria-selected="false" style="background-color:#172647; color:#fff; font-size: smaller; padding: 5px 10px;">
                             4
                         </button>
                     </li>
                 </ul>
+
 
             </div>
 

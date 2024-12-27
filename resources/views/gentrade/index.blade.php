@@ -65,11 +65,7 @@
             <h2 class="fw-bold">Door Closers and Floor Hinges</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                vestibulum.
-                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
-                elementum
-                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+                Door closers and floor hinges are hardware that is use to all doors with a self closing feature.
             </p>
             <!-- Cards Row 1 -->
             <!-- <div class="row mt-4">
@@ -164,9 +160,9 @@
                 </div>
             </div> -->
 
-            <!-- Browse See More Button -->
+            <!-- Browse Order Now Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-primary">See More</button>
+                <button type="button" class="btn btn-primary">Order Now</button>
             </div>
         </div>
     </section>
@@ -185,11 +181,7 @@
             <h2 class="fw-bold">Patch Fittings</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                vestibulum.
-                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
-                elementum
-                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+                Patch Fittings is a accessories to make a frameless door that is usually seen at all facilities like malls.
             </p>
             <!-- Cards Row 1 -->
             <div class="row mt-4">
@@ -289,9 +281,9 @@
                 </div>
             </div>
 
-            <!-- Browse See More Button -->
+            <!-- Browse Order Now Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-primary">See More</button>
+                <button type="button" class="btn btn-primary">Order Now</button>
             </div>
         </div>
     </section>
@@ -310,11 +302,7 @@
             <h2 class="fw-bold">Handles</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                vestibulum.
-                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
-                elementum
-                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+                Glass doors with a specific handle to a specific door to be using.
             </p>
             <!-- Cards Row 1 -->
             <div class="row mt-4">
@@ -354,9 +342,9 @@
 
             </div>
 
-            <!-- Browse See More Button -->
+            <!-- Browse Order Now Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-primary">See More</button>
+                <button type="button" class="btn btn-primary">Order Now</button>
             </div>
         </div>
     </section>
@@ -375,11 +363,7 @@
             <h2 class="fw-bold">Shower Hinges</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                vestibulum.
-                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
-                elementum
-                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+                Shower hinges is usually applied at shower enclosure can be swing push and pull in 90 degree.
             </p>
             <!-- Cards Row 1 -->
             <div class="row mt-4">
@@ -479,9 +463,9 @@
                 </div>
             </div>
 
-            <!-- Browse See More Button -->
+            <!-- Browse Order Now Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-primary">See More</button>
+                <button type="button" class="btn btn-primary">Order Now</button>
             </div>
         </div>
     </section>
@@ -500,11 +484,7 @@
             <h2 class="fw-bold">Shower Glass Clips</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                vestibulum.
-                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
-                elementum
-                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+                Shower glass clips usually used in fix panel for a shower enclosure but most of the installer and fabricator use it in other applications such as railings with a support of stainless tube.
             </p>
             <!-- Cards Row 1 -->
             <div class="row mt-4">
@@ -629,9 +609,9 @@
 
             </div>
 
-            <!-- Browse See More Button -->
+            <!-- Browse Order Now Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-primary">See More</button>
+                <button type="button" class="btn btn-primary">Order Now</button>
             </div>
         </div>
     </section>
@@ -650,11 +630,7 @@
             <h2 class="fw-bold">Sliding Shower Emclosure</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                vestibulum.
-                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
-                elementum
-                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+                Shower enclosure usually seen in swing, we also have sliding function to space value to a minimal places.
             </p>
             <!-- Cards Row 1 -->
             <div class="row mt-6">
@@ -682,9 +658,9 @@
                 </div>
             </div>
 
-            <!-- Browse See More Button -->
+            <!-- Browse Order Now Button -->
             <div class="mt-4">
-                <button type="button" class="btn btn-primary">See More</button>
+                <button type="button" class="btn btn-primary">Order Now</button>
             </div>
         </div>
     </section>

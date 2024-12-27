@@ -127,11 +127,7 @@
             <h2 class="fw-bold">Products</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                vestibulum.
-                Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit amet
-                elementum
-                lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
+                With over 60 years of experience in flat glass manufacturing in the country, PFGMI produces quality flat glass such as Clear Float and Tinted Float. Bind our commitment reaches beyond glass companies.
             </p>
 
             <!-- Pagination  -->
@@ -292,7 +288,7 @@
                                     <img src="{{ asset('storage/glass-mfg/lowe.jpg') }}" class="card-img-top" alt="Card 4">
                                     <div class="card-body">
                                         <h5 class="card-title">LOW-E COATED GLASS</h5>
-                                        <p class="card-text">Description for Card 10.</p>
+                                        <p class="card-text">Low-e glass stands for low emissivity glass. One side of the glass has a special metal coating...</p>
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                                             More Details
@@ -303,24 +299,21 @@
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content text-start">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">LOW-E COATED GLASS</h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
-                                                            thereby allowing the most natural colors to stand out.</h6>
+                                                        <h6>Low-e glass stands for low emissivity glass. One side of the glass has a special metal coating, known as low emissivity coating.
+                                                            Low-e glass is a type of insulating glass which increases the energy efficiency of the windows by reducing the transfer of heat or cold through the glass.
+                                                            This means that during cold season, the house stays warmer, and in summer it stays cooler.</h6>
 
-                                                        <p><b>Thickness:</b><br>
-                                                            6.0mm to 12.0mm</p>
+                                                        <p><b>Clear:</b><br>
+                                                            6.0mm to 10.0mm Thickness</p>
 
-                                                        <p><b>Standard Size:</b><br>
-                                                            84" x 120" to 84" x 192"</p>
+                                                        <p><b>Euro Gray Float:</b><br>
+                                                            6.0mm to 10.0mm Thickness</p>
 
-                                                        <p><b>Ultra Thick</b><br>
-                                                            15.00mm to 19.0mm</p>
 
-                                                        <p><b>Standard Size</b><br>
-                                                            120" x 236"</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -338,7 +331,7 @@
                                     <img src="{{ asset('storage/glass-mfg/reflective.jpg') }}" class="card-img-top" alt="Card 5">
                                     <div class="card-body">
                                         <h5 class="card-title">REFLECTIVE COATED GLASS</h5>
-                                        <p class="card-text">Description for Card 11.</p>
+                                        <p class="card-text">Reflective glass is essentially an ordinary float glass with a metallic coating that helps...</p>
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
                                             More Details
@@ -349,24 +342,25 @@
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content text-start">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">REFLECTIVE COATED GLASS</h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
-                                                            thereby allowing the most natural colors to stand out.</h6>
+                                                        <h6>Reflective glass is essentially an ordinary float glass with a metallic coating that helps a building achieve a high standard of
+                                                            visual appeal besides reflecting a greater amount of heat than normal tinted float glass.
+                                                            It comes in variety of metallic colors such as gold, silver, bronze, blue and green.</h6>
 
-                                                        <p><b>Thickness:</b><br>
-                                                            6.0mm to 12.0mm</p>
+                                                        <p><b>Dark Blue:</b><br>
+                                                            6.0mm to 10.0mm Thickness</p>
 
-                                                        <p><b>Standard Size:</b><br>
-                                                            84" x 120" to 84" x 192"</p>
+                                                        <p><b>Dark Green:</b><br>
+                                                            6.0mm to 10.0mm Thickness</p>
 
-                                                        <p><b>Ultra Thick</b><br>
-                                                            15.00mm to 19.0mm</p>
+                                                        <p><b>Euro Gray:</b><br>
+                                                            6.0mm to 10.0mm Thickness</p>
 
-                                                        <p><b>Standard Size</b><br>
-                                                            120" x 236"</p>
+                                                        <p><b>Clear:</b><br>
+                                                            6.0mm to 10.0mm Thickness</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -384,7 +378,7 @@
                                     <img src="{{ asset('storage/glass-mfg/mirror.jpg') }}" class="card-img-top" alt="Card 6">
                                     <div class="card-body">
                                         <h5 class="card-title">MIRROR</h5>
-                                        <p class="card-text">Description for Card 12.</p>
+                                        <p class="card-text">Mirror are made from top of the line clear or tinted float glass...</p>
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
                                             More Details
@@ -395,24 +389,19 @@
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content text-start">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">MIRROR</h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
-                                                            thereby allowing the most natural colors to stand out.</h6>
+                                                        <h6>Mirror are made from top of the line clear or tinted float glass, chemically treated with silver and coated to prevent peeling and corrosion.
+                                                            PFGMI are oven cured to maintain durability through the years.</h6>
 
                                                         <p><b>Thickness:</b><br>
-                                                            6.0mm to 12.0mm</p>
+                                                            3.0mm to 6.0mm</p>
 
                                                         <p><b>Standard Size:</b><br>
-                                                            84" x 120" to 84" x 192"</p>
+                                                            48" x 72" to 84" x 120"</p>
 
-                                                        <p><b>Ultra Thick</b><br>
-                                                            15.00mm to 19.0mm</p>
-
-                                                        <p><b>Standard Size</b><br>
-                                                            120" x 236"</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -436,7 +425,7 @@
                                     <img src="{{ asset('storage/glass-mfg/curvedglass.jpg') }}" class="card-img-top" alt="Card 7">
                                     <div class="card-body">
                                         <h5 class="card-title">CURVED TEMPERED GLASS</h5>
-                                        <p class="card-text">Description for Card 7.</p>
+                                        <p class="card-text">Curved Glass is a single radius (cylindrically curved) tempered glass; it has a constant radius..</p>
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
                                             More Details
@@ -447,24 +436,22 @@
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content text-start">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">CURVED TEMPERED GLASS</h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
-                                                            thereby allowing the most natural colors to stand out.</h6>
+                                                        <h6>Curved Glass is a single radius (cylindrically curved) tempered glass; it has a constant radius.
+                                                            It is about 4 to 5 times stronger than annealed glass.
+                                                            It can be used in applications where safety glazing and/or structural glazing is required.
+                                                            In the same manner with flat tempered glass, curved tempered glass is also resistant to mechanical stresses (bending, impact, etc.|)
+                                                            and thermal stresses (temperature difference), without altering the properties of the basic product.</h6>
 
                                                         <p><b>Thickness:</b><br>
-                                                            6.0mm to 12.0mm</p>
+                                                        </p>
 
                                                         <p><b>Standard Size:</b><br>
-                                                            84" x 120" to 84" x 192"</p>
+                                                        </p>
 
-                                                        <p><b>Ultra Thick</b><br>
-                                                            15.00mm to 19.0mm</p>
-
-                                                        <p><b>Standard Size</b><br>
-                                                            120" x 236"</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -482,7 +469,7 @@
                                     <img src="{{ asset('storage/glass-mfg/temperedglass.jpg') }}" class="card-img-top" alt="Card 8">
                                     <div class="card-body">
                                         <h5 class="card-title">TEMPERED GLASS</h5>
-                                        <p class="card-text">Description for Card 8.</p>
+                                        <p class="card-text">Fully tempered glass is a unique glazing material. It is about 3 to 5 times stronger than an ordinary...</p>
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8">
                                             More Details
@@ -493,24 +480,22 @@
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content text-start">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">TEMPERED GLASS</h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
-                                                            thereby allowing the most natural colors to stand out.</h6>
+                                                        <h6>Fully tempered glass is a unique glazing material.
+                                                            It is about 3 to 5 times stronger than an ordinary or annealed glass of the same thickness and configuration.
+                                                            It offers added strength and safety characteristics to the user.
+                                                            Thus when fracture occurs, the risk of serious injury is significantly minimized.
+                                                            When broken, tempered glass fragments are usually relatively small and less likely to cause serious injury, so it qualifies under building codes as "safety glass."</h6>
 
                                                         <p><b>Thickness:</b><br>
-                                                            6.0mm to 12.0mm</p>
+                                                        </p>
 
                                                         <p><b>Standard Size:</b><br>
-                                                            84" x 120" to 84" x 192"</p>
+                                                        </p>
 
-                                                        <p><b>Ultra Thick</b><br>
-                                                            15.00mm to 19.0mm</p>
-
-                                                        <p><b>Standard Size</b><br>
-                                                            120" x 236"</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -528,7 +513,7 @@
                                     <img src="{{ asset('storage/glass-mfg/laminatedglass.jpg') }}" class="card-img-top" alt="Card 9">
                                     <div class="card-body">
                                         <h5 class="card-title">LAMINATED GLASS</h5>
-                                        <p class="card-text">Description for Card 9.</p>
+                                        <p class="card-text">Laminated glass is a multi-functional glazing material that can be used in a variety of applications...</p>
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal9">
                                             More Details
@@ -539,24 +524,21 @@
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content text-start">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">LAMINATED GLASS</h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
-                                                            thereby allowing the most natural colors to stand out.</h6>
+                                                        <h6>Laminated glass is a multi-functional glazing material that can be used in a variety of applications.
+                                                            It is manufactured by permanently bonding two or more glass panes with layers of polyvinyl butyral (PVB) interlayer,
+                                                            under heat and pressure to produce a single product.
+                                                            Generally, it is used to ensude and provide safety, security, sound control and energy control.</h6>
 
                                                         <p><b>Thickness:</b><br>
-                                                            6.0mm to 12.0mm</p>
+                                                        </p>
 
                                                         <p><b>Standard Size:</b><br>
-                                                            84" x 120" to 84" x 192"</p>
+                                                        </p>
 
-                                                        <p><b>Ultra Thick</b><br>
-                                                            15.00mm to 19.0mm</p>
-
-                                                        <p><b>Standard Size</b><br>
-                                                            120" x 236"</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -574,7 +556,7 @@
                                     <img src="{{ asset('storage/glass-mfg/patternedglass.jpg') }}" class="card-img-top" alt="Card 10">
                                     <div class="card-body">
                                         <h5 class="card-title">PATTERNED GLASS</h5>
-                                        <p class="card-text">Description for Card 10.</p>
+                                        <p class="card-text">Patterned Glass is a kind of decorative translucent glass with embossed pattern on one surface...</p>
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal10">
                                             More Details
@@ -585,24 +567,20 @@
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content text-start">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">PATTERNED GLASS</h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
-                                                            thereby allowing the most natural colors to stand out.</h6>
+                                                        <h6>Patterned Glass is a kind of decorative translucent glass with embossed pattern on one surface.
+                                                            It is generally used where privacy or obscurity is desired, but light transmission is still important.
+                                                            This is used in commercial, residential and specialty applications. The sheer simplicity of patterned glass makes it popular for interior design.</h6>
 
                                                         <p><b>Thickness:</b><br>
-                                                            6.0mm to 12.0mm</p>
+                                                        </p>
 
                                                         <p><b>Standard Size:</b><br>
-                                                            84" x 120" to 84" x 192"</p>
+                                                        </p>
 
-                                                        <p><b>Ultra Thick</b><br>
-                                                            15.00mm to 19.0mm</p>
-
-                                                        <p><b>Standard Size</b><br>
-                                                            120" x 236"</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -620,7 +598,7 @@
                                     <img src="{{ asset('storage/glass-mfg/wiredglass.jpg') }}" class="card-img-top" alt="Card 11">
                                     <div class="card-body">
                                         <h5 class="card-title">WIRED GLASS</h5>
-                                        <p class="card-text">Description for Card 11.</p>
+                                        <p class="card-text">Wired glass is a type of glass wherein a wire mesh is inserted during production...</p>
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal11">
                                             More Details
@@ -631,24 +609,22 @@
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content text-start">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">WIRED GLASS</h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
-                                                            thereby allowing the most natural colors to stand out.</h6>
+                                                        <h6>Wired glass is a type of glass wherein a wire mesh is inserted during production.
+                                                            It has an impact resistance similar to that of normal glass, but in case of breakage the mesh retains the pieces of glass.
+                                                            This product is traditionally accepted as low-cost fire-resistant glass.
+
+                                                        </h6>
 
                                                         <p><b>Thickness:</b><br>
-                                                            6.0mm to 12.0mm</p>
+                                                        </p>
 
                                                         <p><b>Standard Size:</b><br>
-                                                            84" x 120" to 84" x 192"</p>
+                                                        </p>
 
-                                                        <p><b>Ultra Thick</b><br>
-                                                            15.00mm to 19.0mm</p>
-
-                                                        <p><b>Standard Size</b><br>
-                                                            120" x 236"</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -666,7 +642,7 @@
                                     <img src="{{ asset('storage/glass-mfg/igu.jpg') }}" class="card-img-top" alt="Card 12">
                                     <div class="card-body">
                                         <h5 class="card-title">INSULATING GLASS UNITS (IGU)</h5>
-                                        <p class="card-text">Description for Card 12.</p>
+                                        <p class="card-text">Insulating glass unit is a set of two or more lites of glass separated by air space and hermetically sealed to...</p>
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal12">
                                             More Details
@@ -677,24 +653,19 @@
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content text-start">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">ULTRA CLEAR FLOAT GLASS</h1>
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">INSULATING GLASS UNITS (IGU)</h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision,
-                                                            thereby allowing the most natural colors to stand out.</h6>
+                                                        <h6>Insulating glass unit is a set of two or more lites of glass separated by air space and hermetically sealed to form a single unit.
+                                                            Its most important function is to imporve the thermal performance of glass when used in architectural applications.</h6>
 
                                                         <p><b>Thickness:</b><br>
-                                                            6.0mm to 12.0mm</p>
+                                                        </p>
 
                                                         <p><b>Standard Size:</b><br>
-                                                            84" x 120" to 84" x 192"</p>
+                                                        </p>
 
-                                                        <p><b>Ultra Thick</b><br>
-                                                            15.00mm to 19.0mm</p>
-
-                                                        <p><b>Standard Size</b><br>
-                                                            120" x 236"</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>

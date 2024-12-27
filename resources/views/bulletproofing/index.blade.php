@@ -66,11 +66,14 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <!-- Text Column -->
-                        <div class="col-md-6 text-center text-md-end">
+                        <div class="col-md-6 text-center text-md-start">
                             <h2 class="fw-bold">Bullet Proofing</h2>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis
-                                lacus faucibus, placerat magna sed, lacinia enim. Maecenas vitae fringilla metus, ac
-                                dignissim elit.</p>
+                            <h5>Benefits of Bullet Proof Vehicle</h5>
+                            <p class="text-muted">1. Very good option for additional security.</p>
+                            <p class="text-muted">2. Bullets literally "bounce off" to the vehicle.</p>
+                            <p class="text-muted">3. It has thick and heavy body, like a tank for protection.</p>
+                            <p class="text-muted">4. It has special tires and glass.</p>
+                            <p class="text-muted">5. It literally saves lives.</p>
                             <!-- <button type="button" class="btn btn-danger">
                             Get Started
                         </button> -->
@@ -99,8 +102,7 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7">
                 <h2 class="fw-bold">Armoured Car</h2>
-                <p class="text-muted">Some great placeholder content for the first featurette here. Imagine some
-                    exciting prose here.</p>
+                <p class="text-muted">Explore the key attributes that redefine what it means to travel securely without compromising on luxury, featuring our armoured Toyota Land Cruiser Series 300.</p>
             </div>
             <div class="col-md-5">
                 <div class="position-relative">
@@ -118,9 +120,8 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7 order-md-2">
                 <h2 class="fw-bold">Radiator Grill</h2>
-                <p class="text-muted">Another featurette? Of course. More placeholder content here to give you
-                    an
-                    idea of how this layout would work with some actual real-world content in place.</p>
+                <p class="text-muted">The radiator grill of an armored vehicle is often protected by a grill bumper or guard to reinforce the vehicle's edges and protect the radiator and
+                    engine assembly that can also remove debris or vehicles that are blocking the road</p>
             </div>
             <div class="col-md-5 order-md-1">
                 <div class="position-relative">
@@ -138,10 +139,7 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7">
                 <h2 class="fw-bold">Gas Tank Cover</h2>
-                <p class="text-muted">And yes, this is the last block of representative placeholder content.
-                    Again,
-                    not really intended to be actually read, simply here to give you a better view of what this
-                    would look like with some actual content. Your content.</p>
+                <p class="text-muted">We apply a very thick cover for the gas tank to make sure no direct penetration of any fragments.</p>
             </div>
             <div class="col-md-5">
                 <div class="position-relative">
@@ -159,9 +157,11 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7 order-md-2">
                 <h2 class="fw-bold">Upgraded Suspension</h2>
-                <p class="text-muted">Another featurette? Of course. More placeholder content here to give you
-                    an
-                    idea of how this layout would work with some actual real-world content in place.</p>
+                <p class="text-muted">Upgraded suspension parts for armored vehicles are to improve to have a better performance.
+                    Armored vehicles are heavier than regular cars, so their suspension and braking systems need to be upgraded to ensure the vehicle can stop safely and maintain control.
+                    The suspension also needs to be able to absorb impacts and keep the vehicle stable and smooth.
+                    The extent to which the suspension needs to be modified depends on the vehicle's size, the quality of the existing suspension, and the environment in which it will be driven.
+                </p>
             </div>
             <div class="col-md-5 order-md-1">
                 <div class="position-relative">
@@ -179,10 +179,7 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7">
                 <h2 class="fw-bold">Battery & Fuse Box Cover</h2>
-                <p class="text-muted">And yes, this is the last block of representative placeholder content.
-                    Again,
-                    not really intended to be actually read, simply here to give you a better view of what this
-                    would look like with some actual content. Your content.</p>
+                <p class="text-muted">Not only gas tank we also provide thick cover for battery and fuse box for extra durability protection.</p>
             </div>
             <div class="col-md-5">
                 <div class="position-relative">
@@ -200,9 +197,8 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7 order-md-2">
                 <h2 class="fw-bold">Run Flat Insert</h2>
-                <p class="text-muted">Another featurette? Of course. More placeholder content here to give you
-                    an
-                    idea of how this layout would work with some actual real-world content in place.</p>
+                <p class="text-muted">When it comes to protection, every detail counts. Our advanced run-flat insert system ensures that even in the most challenging situations,
+                    your mobility and safety are not compromised. </p>
             </div>
             <div class="col-md-5 order-md-1">
                 <div class="position-relative">
@@ -220,10 +216,7 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7">
                 <h2 class="fw-bold">Back Door Partition</h2>
-                <p class="text-muted">And yes, this is the last block of representative placeholder content.
-                    Again,
-                    not really intended to be actually read, simply here to give you a better view of what this
-                    would look like with some actual content. Your content.</p>
+                <p class="text-muted">Partition for separating, No this is for additional reinforcement to the center of the vehicle.</p>
             </div>
             <div class="col-md-5">
                 <div class="position-relative">
@@ -241,9 +234,7 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7 order-md-2">
                 <h2 class="fw-bold">Bullet Catcher</h2>
-                <p class="text-muted">Another featurette? Of course. More placeholder content here to give you
-                    an
-                    idea of how this layout would work with some actual real-world content in place.</p>
+                <p class="text-muted">Speaking catching the bullet we add this to make sure any fragments that will penetrate will not easily pass thru.</p>
             </div>
             <div class="col-md-5 order-md-1">
                 <div class="position-relative">
@@ -261,10 +252,9 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7">
                 <h2 class="fw-bold">Premium Leather Seats</h2>
-                <p class="text-muted">And yes, this is the last block of representative placeholder content.
-                    Again,
-                    not really intended to be actually read, simply here to give you a better view of what this
-                    would look like with some actual content. Your content.</p>
+                <p class="text-muted">Not just giving you a protection we also giving you a satisfaction inside your vehicle by putting a premium leather seats.
+                    Get in touch with us today and experience the strength of engineering that is built to endure.
+                </p>
             </div>
             <div class="col-md-5">
                 <div class="position-relative">
