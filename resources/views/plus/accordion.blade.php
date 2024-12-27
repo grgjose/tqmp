@@ -11,10 +11,7 @@
                 <span class="badge text-white mb-2" style="background-color: #950101;">FAQs</span>
                 <h2 class="fw-bold">Any Questions? Look Here</h2>
                 <p class="text-muted">
-                    There are many variations of passages of Lorem Ipsum available but the majority have suffered
-                    alteration
-                    in some
-                    form.
+                    We sort a most questions that ask to us. You can choose and click below which suite your expectations.
                 </p>
             </div>
 
