@@ -36,11 +36,7 @@
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                     data-bs-parent="#faqAccordionLeft">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        It takes 2–3 weeks to get your first blog post ready. That includes in-depth
-                                        research and creation of
-                                        your monthly content marketing strategy that we do before writing your first
-                                        blog
-                                        post.
+                                        Yes we can, Please attach the drawing that will be analyst of our Processing Department.
                                     </div>
                                 </div>
                             </div>
@@ -57,9 +53,7 @@
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#faqAccordionLeft">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        We begin with an introductory meeting to align goals, followed by brainstorming
-                                        ideas and presenting
-                                        an action plan.
+                                        It depends where you will use or apply, ex: for main door will be 12mm glass for frameless or patch door for frame door some use 6mm and 8mm it depends to the aluminum profile frame will be using.
                                     </div>
                                 </div>
                             </div>
@@ -76,9 +70,7 @@
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#faqAccordionRight">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        We offer blog writing, SEO optimization, and content marketing strategy services
-                                        tailored to your
-                                        needs.
+                                        It depends where you will use or apply, ex: for main door will be a height of 2.1m for standard to 2.4m with a width of 0.9m standard to 1.0m.
                                     </div>
                                 </div>
                             </div>
@@ -102,9 +94,7 @@
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#faqAccordionRight">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        Yes, we offer up to 2 free revisions per blog post to ensure your satisfaction
-                                        with
-                                        the final content.
+                                        Price may be varies on that day was given quotation price to you.
                                     </div>
                                 </div>
                             </div>
@@ -121,9 +111,7 @@
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                     data-bs-parent="#faqAccordionRight">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        Yes, we offer up to 2 free revisions per blog post to ensure your satisfaction
-                                        with
-                                        the final content.
+                                        Please attach the clear picture to ease verification of item.
                                     </div>
                                 </div>
                             </div>
@@ -140,9 +128,7 @@
                                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                     data-bs-parent="#faqAccordionRight">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        Yes, we offer up to 2 free revisions per blog post to ensure your satisfaction
-                                        with
-                                        the final content.
+                                        When ordering our product we can deliver it now, there is a list of currier that you will choose or even pick-up now and when in processing or production it may vary on its total quantity you order.
                                     </div>
                                 </div>
                             </div>
