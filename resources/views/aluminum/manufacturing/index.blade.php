@@ -9,7 +9,7 @@
     <meta name="author" content="TQMP">
 
     <!-- Title and Favicon -->
-    <title>Aluminum Manufacturing</title>
+    <title>FAQs | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
     <!-- Preconnect for External Resources -->
@@ -104,8 +104,9 @@
             <!-- Heading -->
             <h2 class="fw-bold">Aluminum Profiles</h2>
             <!-- Paragraph -->
-            <p class="mt-3">
-                Raw Material Procurement > Mold Design and Processing > Extrusion Processing > Quality Inspection > Finished Product Packaging
+            <p class="">
+                <!-- Raw Material Procurement > Mold Design and Processing > Extrusion Processing > Quality Inspection > Finished Product Packaging -->
+                <img src="{{ asset('storage/aluminum/desc.jpg') }}" alt="Philippines" class="img-fluid rounded lg">
             </p>
 
             <!-- Pagination  -->
@@ -369,15 +370,8 @@
                         </button>
                     </li>
                 </ul>
-
-
             </div>
 
-
-            <!-- Browse More Button -->
-            <!-- <div class="">
-                <button type="button" class="btn btn-danger">Order Now</button>
-            </div> -->
 
     </section>
     <!-- End of Products -->

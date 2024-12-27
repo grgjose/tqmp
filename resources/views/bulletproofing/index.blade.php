@@ -218,7 +218,7 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7">
                 <h2 class="fw-bold">Back Door Partition</h2>
-                <p class="text-muted">Partition for separating, No this is for additional reinforcement to the center of the vehicle.</p>
+                <p class="text-muted">Having a bulletproof at the back door partition is an extra security defense behind/rear part of your vehicle.</p>
             </div>
             <div class="col-md-5">
                 <div class="position-relative">

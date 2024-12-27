@@ -67,8 +67,8 @@
                 <!-- Text Column -->
                 <div class="col-md-6 text-center text-md-start">
                     <h2 class="fw-bold">Glass Processing</h2>
-                    <p class="text-muted">With years of experience in the glass industry, we pride ourselves on our commitment to providing top-notch products and services to our clients. 
-                        Our factory is equipped with state-of-the-art technology and machinery, allowing us to produce a wide range of tempered glass products including glass doors, windows, shower enclosures, and more. 
+                    <p class="text-muted">With years of experience in the glass industry, we pride ourselves on our commitment to providing top-notch products and services to our clients.
+                        Our factory is equipped with state-of-the-art technology and machinery, allowing us to produce a wide range of tempered glass products including glass doors, windows, shower enclosures, and more.
                         At Philippine Glass Processing Specialist, we prioritize customer satisfaction and strive to exceed our clients' expectations with every project. </p>
                     <!-- <button type="button" class="btn btn-danger">
                         Get Started
@@ -109,54 +109,66 @@
             <div class="row mt-4">
                 <!-- Card 1 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 card h-100">
                         <img src="{{ asset('storage/glass-processing/tempered.png') }}"
                             alt="Category 1" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Tempered Glass</h5>
                             <p class="text-muted"> Fully tempered glass is a unique glazing material. It is about 3 to 5 times stronger than an ordinary or annealed glass of the same thickness and configuration.</p>
                         </div>
+                        <div class="">
+                            <button type="button" class="btn btn-danger">Request Quotation</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 card h-100">
                         <img src="{{ asset('storage/glass-processing/laminated.png') }}"
                             alt="Category 2" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Laminated Glass</h5>
                             <p class="text-muted"> Laminated glass is a multi-functional glazing material that can be used in a variety of applications. It is manufactured by permanently bonding two or more glass panes with layers of polyvinyl butyral (PVB) interlayer, under heat and pressure to produce a single products.</p>
                         </div>
+                        <div class="">
+                            <button type="button" class="btn btn-danger">Request Quotation</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 card h-100">
                         <img src="{{ asset('storage/glass-processing/curved.jpg') }}"
                             alt="Category 3" class="card-img-top rounded" height="300" style="border: 1px solid #000; border-radius: 1px; padding: 1px;">
                         <div class="card-body">
                             <h5 class="fw-bold">Curved Tempered Glass</h5>
                             <p class="text-muted"> In the same manner with flat tempered glass, curved tempered glass is also resistant to mechanical stresses (bending, impact, etc.) and thermal stresses (temperature difference), without altering the properties of the basic products.</p>
                         </div>
+                        <div class="">
+                            <button type="button" class="btn btn-danger">Request Quotation</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Card 4 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 card h-100">
                         <img src="{{ asset('storage/glass-processing/igu.png') }}"
                             alt="Category 4" class="card-img-top rounded" height="300" style="border: 1px solid #000; border-radius: 1px; padding: 1px;">
                         <div class="card-body">
                             <h5 class="fw-bold">Insulating Glass Unit (IGU)</h5>
                             <p class="text-muted">Insulating glass unit is a set of to or more lites of glass separated by air space and hermetically sealed to form a single unit. Its most important function is to improve the thermal performance of glass when used in architectural applications.</p>
                         </div>
+                        <div class="">
+                            <button type="button" class="btn btn-danger">Request Quotation</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Browse See More Button -->
-            <div class="mt-4">
+            <!-- <div class="mt-4">
                 <button type="button" class="btn btn-danger">Request Quotation</button>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- End of Services -->

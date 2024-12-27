@@ -9,7 +9,7 @@
     <meta name="author" content="TQMP">
 
     <!-- Title and Favicon -->
-    <title>Total Quality Management Products Philippines</title>
+    <title>FAQs | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
     <!-- Preconnect for External Resources -->
