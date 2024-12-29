@@ -14,16 +14,6 @@
         width: 115px;
     }
 
-    /* .btn-red {
-        background-color: #7E1416;
-        color: white;
-    }
-
-    .btn-red:hover {
-        background-color: #7E1416;
-        opacity: 0.9;
-    } */
-
     .nav-link {
         color: #1C2033;
         font-weight: normal;
@@ -70,12 +60,6 @@
             text-align: left;
             padding: 0.5rem 1rem;
         }
-
-        /* .btn-red {
-            width: 100%;
-            text-align: center;
-            margin-top: 10px;
-        } */
 
         .navbar-collapse {
             background-color: white;

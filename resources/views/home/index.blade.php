@@ -38,7 +38,7 @@
     <!-- Albums (Company Logos) -->
     <section id="companies" class=" container d-flex gap-2 justify-content-center py-5">
         <div align="center" valign="middle">
-            <div class="logo-scroller">
+            <div class=" container logo-scroller">
                 <!-- <p class="link-secondary">Companies teamed with</p><br> -->
                 <div class="logos">
                     <!-- Logos -->
