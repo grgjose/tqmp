@@ -76,12 +76,12 @@
             <!-- Cart and Login Buttons -->
             <div class="d-flex align-items-center">
                 <a href="/cart"
-                    class="d-flex align-items-center justify-content-center text-decoration-none me-2 btn btn-danger"
+                    class="d-flex align-items-center justify-content-center text-decoration-none me-2 btn btn-outline-danger"
                     style="font-size: smaller;">
                     <i class="fas fa-shopping-cart me-1"></i> <span>Cart</span>
                 </a>
                 <a href="/login"
-                    class="d-flex align-items-center justify-content-center text-decoration-none btn btn-danger"
+                    class="d-flex align-items-center justify-content-center text-decoration-none btn btn-outline-primary"
                     style="font-size: smaller;">
                     <i class="fas fa-user me-1"></i> <span>Login</span>
                 </a>

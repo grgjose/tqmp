@@ -9,7 +9,7 @@
     <meta name="author" content="TQMP">
 
     <!-- Title and Favicon -->
-    <title>FAQs | Total Quality Management Products Philippines</title>
+    <title>Aluminum Manufacturing | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
     <!-- Preconnect for External Resources -->
@@ -123,7 +123,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Angle Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +156,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +178,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Screen Door and Windows</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -195,7 +195,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -228,7 +228,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -239,7 +239,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Miscellaneous Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +250,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -267,7 +267,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -278,7 +278,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Counter Trim Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +289,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">YC Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -300,7 +300,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Vent Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -311,7 +311,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Flat Bar Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -322,7 +322,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Counter Nosing Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -339,7 +339,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
 
-                                        <a href="#" class="btn btn-danger">Order Now</a>
+                                        <a href="#" class="btn btn-outline-primary">Order Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -348,24 +348,24 @@
                 </div>
 
                 <!-- Pagination Tabs -->
-                <ul class="nav nav-pills justify-content-center mb-4" id="pagination-tabs" role="tablist">
+                <ul class="nav justify-content-center mb-4" id="pagination-tabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="page-1-tab" data-bs-toggle="pill" data-bs-target="#page-1" type="button" role="tab" aria-controls="page-1" aria-selected="true" style="background-color:#172647; color:#fff; margin-right: 10px; font-size: smaller; padding: 5px 10px;">
+                        <button class="pagination-button active" id="page-1-tab" data-bs-toggle="pill" data-bs-target="#page-1" type="button" role="tab" aria-controls="page-1" aria-selected="true">
                             1
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab" aria-controls="page-2" aria-selected="false" style="background-color:#172647; color:#fff; margin-right: 10px; font-size: smaller; padding: 5px 10px;">
+                        <button class="pagination-button" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab" aria-controls="page-2" aria-selected="false">
                             2
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="page-3-tab" data-bs-toggle="pill" data-bs-target="#page-3" type="button" role="tab" aria-controls="page-3" aria-selected="false" style="background-color:#172647; color:#fff; margin-right: 10px; font-size: smaller; padding: 5px 10px;">
+                        <button class="pagination-button" id="page-3-tab" data-bs-toggle="pill" data-bs-target="#page-3" type="button" role="tab" aria-controls="page-3" aria-selected="false">
                             3
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="page-4-tab" data-bs-toggle="pill" data-bs-target="#page-4" type="button" role="tab" aria-controls="page-4" aria-selected="false" style="background-color:#172647; color:#fff; font-size: smaller; padding: 5px 10px;">
+                        <button class="pagination-button" id="page-4-tab" data-bs-toggle="pill" data-bs-target="#page-4" type="button" role="tab" aria-controls="page-4" aria-selected="false">
                             4
                         </button>
                     </li>

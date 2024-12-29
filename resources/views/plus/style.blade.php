@@ -30,10 +30,10 @@
         transition: color 0.3s ease, font-weight 0.3s ease;
     }
 
-    .navbar .nav-link:hover, 
-    .navbar .nav-link:focus, 
+    .navbar .nav-link:hover,
+    .navbar .nav-link:focus,
     .navbar .nav-link.active {
-        color: #7E1416 !important; 
+        color: #7E1416 !important;
         font-weight: bold;
     }
 
@@ -229,6 +229,21 @@
         transform: translateY(-2px);
     }
 
+    button.btn-outline-primary {
+        background-color: transparent;
+        color: #172647;
+        border: 1px solid #172647;
+        font-size: smaller;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button.btn-outline-primary:hover {
+        background-color: #172647;
+        color: #ffffff;
+        font-weight: bold;
+        transform: translateY(-2px);
+    }
 
     a.btn-outline-danger {
         background-color: transparent;
@@ -290,6 +305,21 @@
         background-color: #FFFFFF;
         transform: translateY(-2px);
         font-size: smaller;
+    }
+
+    a.btn-outline-primary {
+        background-color: transparent;
+        color: #172647;
+        border: 1px solid #172647;
+        font-size: smaller;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a.btn-outline-primary:hover {
+        background-color: #172647;
+        color: #ffffff;
+        font-weight: bold;
+        transform: translateY(-2px);
     }
 
     .img-fluid {
@@ -460,5 +490,43 @@
     .dropdown-menu-sm {
         font-size: 0.875rem;
         padding: 0.5rem;
+    }
+
+    /* Pagination button styles */
+    .pagination-button {
+        /* background-color: #172647;
+        color: #fff;
+        font-size: smaller;
+        padding: 5px 10px;
+        margin-right: 10px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        transition: all 0.3s ease; */
+
+        background-color: transparent;
+        color: #7E1416;
+        border: 1px solid #7E1416;
+        font-size: smaller;
+        padding: 5px 10px;
+        margin-right: 10px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .pagination-button.active {
+        background-color: #7E1416;
+        color: #fff;
+        border-color: #7E1416;
+        border-radius: 4px;
+        font-weight: bold;
+        transform: scale(1.1);
+        
+    }
+
+    .pagination-button:hover {
+        background-color: #7E1416;
+        border-radius: 4px;
+        color: #ffffff;
+        transform: translateY(-2px);
+        cursor: pointer;
     }
 </style>

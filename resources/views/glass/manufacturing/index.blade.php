@@ -142,7 +142,7 @@
                                         <p class="card-text">A Colourless and transparent glass that offers a very high level of light transmittance...</p>
 
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                             More Details
                                         </button>
 
@@ -171,7 +171,7 @@
                                                             120" x 390"</p>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
                                                         <button type="button" class="btn btn-danger">Order Now</button>
                                                     </div>
                                                 </div>
@@ -188,7 +188,7 @@
                                         <h5 class="card-title">TINTED FLOAT GLASS</h5>
                                         <p class="card-text">A heat absorbing, transparent glass colored by adding such metals like cobalt...</p>
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                                             More Details
                                         </button>
 
@@ -220,7 +220,7 @@
                                                             6.0mm to 12.0mm Thickness</p>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
                                                         <button type="button" class="btn btn-danger">Order Now</button>
                                                     </div>
                                                 </div>
@@ -238,7 +238,7 @@
                                         <h5 class="card-title">ULTRA CLEAR FLOAT GLASS</h5>
                                         <p class="card-text">This kind of glass provides extreme clarity for glazing applications requiring minimum impurities...</p>
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                                             More Details
                                         </button>
 
@@ -267,7 +267,7 @@
                                                             120" x 236"</p>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
                                                         <button type="button" class="btn btn-danger">Order Now</button>
                                                     </div>
                                                 </div>
@@ -285,7 +285,7 @@
                                         <h5 class="card-title">LOW-E COATED GLASS</h5>
                                         <p class="card-text">Low-e glass stands for low emissivity glass. One side of the glass has a special metal coating...</p>
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                                             More Details
                                         </button>
 
@@ -311,7 +311,7 @@
 
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
                                                         <button type="button" class="btn btn-danger">Order Now</button>
                                                     </div>
                                                 </div>
@@ -328,7 +328,7 @@
                                         <h5 class="card-title">REFLECTIVE COATED GLASS</h5>
                                         <p class="card-text">Reflective glass is essentially an ordinary float glass with a metallic coating that helps...</p>
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
                                             More Details
                                         </button>
 
@@ -358,7 +358,7 @@
                                                             6.0mm to 10.0mm Thickness</p>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
                                                         <button type="button" class="btn btn-danger">Order Now</button>
                                                     </div>
                                                 </div>
@@ -375,7 +375,7 @@
                                         <h5 class="card-title">MIRROR</h5>
                                         <p class="card-text">Mirror are made from top of the line clear or tinted float glass...</p>
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
                                             More Details
                                         </button>
 
@@ -399,7 +399,7 @@
 
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
                                                         <button type="button" class="btn btn-danger">Order Now</button>
                                                     </div>
                                                 </div>
@@ -423,7 +423,7 @@
                                         <h5 class="card-title">PATTERNED GLASS</h5>
                                         <p class="card-text">Patterned Glass is a kind of decorative translucent glass with embossed pattern on one surface...</p>
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal10">
                                             More Details
                                         </button>
 
@@ -448,7 +448,7 @@
 
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
                                                         <button type="button" class="btn btn-danger">Order Now</button>
                                                     </div>
                                                 </div>
@@ -465,7 +465,7 @@
                                         <h5 class="card-title">WIRED GLASS</h5>
                                         <p class="card-text">Wired glass is a type of glass wherein a wire mesh is inserted during production...</p>
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal11">
                                             More Details
                                         </button>
 
@@ -492,7 +492,7 @@
 
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
                                                         <button type="button" class="btn btn-danger">Order Now</button>
                                                     </div>
                                                 </div>
@@ -507,14 +507,14 @@
                 </div>
 
                 <!-- Pagination Tabs -->
-                <ul class="nav nav-pills justify-content-center mb-4" id="pagination-tabs" role="tablist">
+                <ul class="nav justify-content-center mb-4" id="pagination-tabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="page-1-tab" data-bs-toggle="pill" data-bs-target="#page-1" type="button" role="tab" aria-controls="page-1" aria-selected="true" style="background-color:#7E1416; color:#fff; margin-right: 10px;">
+                        <button class="pagination-button active" id="page-1-tab" data-bs-toggle="pill" data-bs-target="#page-1" type="button" role="tab" aria-controls="page-1" aria-selected="true">
                             1
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab" aria-controls="page-2" aria-selected="false" style="background-color:#7E1416; color:#fff;">
+                        <button class="pagination-button" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab" aria-controls="page-2" aria-selected="false">
                             2
                         </button>
                     </li>
@@ -524,7 +524,7 @@
 
             <!-- Browse More Button -->
             <div class="">
-                <button type="button" class="btn btn-danger">Order Now</button>
+                <button type="button" class="btn btn-outline-danger">Order Now</button>
             </div>
 
     </section>

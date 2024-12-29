@@ -61,7 +61,7 @@
     <!-- End of landing  -->
 
     <!-- Doors -->
-    <section id="services" class="py-5 bg-light">
+    <section id="services" class="py-5 ">
         <div class="container text-center">
             <!-- Heading -->
             <h2 class="fw-bold">Door Closers and Floor Hinges</h2>
@@ -114,7 +114,7 @@
                         <img src="{{ asset('storage/archi-hardware/doors/gsm-0060.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                         <img src="{{ asset('storage/archi-hardware/doors/gsm-0052.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                     <div class="card border-0">
                         <img src="{{ asset('storage/archi-hardware/doors/gsm-0038.jpg') }}" alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
 
             <!-- Browse Order Now Button -->
             <!-- <div class="mt-4">
-                <button type="button" class="btn btn-primary">Order Now</button>
+                <button type="button" class="btn btn-outline-primary">Order Now</button>
             </div> -->
         </div>
     </section>
@@ -190,7 +190,7 @@
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0039.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -200,7 +200,7 @@
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0050.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -210,7 +210,7 @@
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0054.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -221,7 +221,7 @@
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0055.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0056.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -245,7 +245,7 @@
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0057.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -255,7 +255,7 @@
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0058.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0059.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -274,7 +274,7 @@
 
             <!-- Browse Order Now Button -->
             <!-- <div class="mt-4">
-                <button type="button" class="btn btn-primary">Order Now</button>
+                <button type="button" class="btn btn-outline-primary">Order Now</button>
             </div> -->
 
 
@@ -289,7 +289,7 @@
     <!-- End of Line -->
 
     <!-- Handles -->
-    <section id="services" class="py-4 bg-light">
+    <section id="services" class="py-4 ">
         <div class="container text-center">
             <!-- Heading -->
             <h2 class="fw-bold">Handles</h2>
@@ -305,7 +305,7 @@
                         <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -315,7 +315,7 @@
                         <img src="{{ asset('storage/archi-hardware/handles/THORE H-TYPE HANDLE.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -325,7 +325,7 @@
                         <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -359,7 +359,7 @@
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0018.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -369,7 +369,7 @@
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0019.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -379,7 +379,7 @@
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0020.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -390,7 +390,7 @@
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0021.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -404,7 +404,7 @@
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0011.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -414,7 +414,7 @@
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0012.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -424,7 +424,7 @@
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0013.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -435,7 +435,7 @@
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0014.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -453,7 +453,7 @@
     <!-- End of Line -->
 
     <!-- Shower Glass Clip -->
-    <section id="services" class="py-4 bg-light">
+    <section id="services" class="py-4 ">
         <div class="container text-center">
             <!-- Heading -->
             <h2 class="fw-bold">Shower Glass Clips</h2>
@@ -469,7 +469,7 @@
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0001.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -479,7 +479,7 @@
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0002.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -489,7 +489,7 @@
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0003.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -500,7 +500,7 @@
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0004.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -516,7 +516,7 @@
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0005.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -526,7 +526,7 @@
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0006.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -536,7 +536,7 @@
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0007.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -547,7 +547,7 @@
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0008.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -582,7 +582,7 @@
                         <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0102.jpg') }}"
                             alt="Category 1" class="card-img-top rounded" height="auto">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
@@ -592,7 +592,7 @@
                         <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0103.jpg') }}"
                             alt="Category 1" class="card-img-top rounded" height="auto">
                         <div class="mt-4">
-                            <button type="button" class="btn btn-primary">Order Now</button>
+                            <button type="button" class="btn btn-outline-primary">Order Now</button>
                         </div>
                     </div>
                 </div>

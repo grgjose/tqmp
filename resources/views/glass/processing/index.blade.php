@@ -90,86 +90,92 @@
     </section>
     <!-- Glass Processing Section -->
 
-    <!-- Line -->
-    <div class="container text-center">
-        <hr style="width: 30%;  margin: 20px auto;">
-    </div>
-    <!-- End of Line -->
+
 
     <!-- Services -->
-    <section id="services" class="py-4">
-        <div class="container text-center">
-            <!-- Heading -->
-            <h2 class="fw-bold">List of Process</h2>
-            <!-- Paragraph -->
-            <p class="mt-3">
-                Glass processing has a different function and usage but it varies to your expectations, but we are highly recommended your glass must be TEMPERED in any cost to prevent high risk of accident that may cost to death.
-            </p>
-            <!-- Cards -->
-            <div class="row mt-4">
-                <!-- Card 1 -->
-                <div class="col-md-3">
-                    <div class="card border-0 card h-100">
-                        <img src="{{ asset('storage/glass-processing/tempered.png') }}"
-                            alt="Category 1" class="card-img-top rounded" height="300">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Tempered Glass</h5>
-                            <p class="text-muted"> Fully tempered glass is a unique glazing material. It is about 3 to 5 times stronger than an ordinary or annealed glass of the same thickness and configuration.</p>
-                        </div>
-                        <div class="">
-                            <button type="button" class="btn btn-danger">Request Quotation</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-3">
-                    <div class="card border-0 card h-100">
-                        <img src="{{ asset('storage/glass-processing/laminated.png') }}"
-                            alt="Category 2" class="card-img-top rounded" height="300">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Laminated Glass</h5>
-                            <p class="text-muted"> Laminated glass is a multi-functional glazing material that can be used in a variety of applications. It is manufactured by permanently bonding two or more glass panes with layers of polyvinyl butyral (PVB) interlayer, under heat and pressure to produce a single products.</p>
-                        </div>
-                        <div class="">
-                            <button type="button" class="btn btn-danger">Request Quotation</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-3">
-                    <div class="card border-0 card h-100">
-                        <img src="{{ asset('storage/glass-processing/curved.jpg') }}"
-                            alt="Category 3" class="card-img-top rounded" height="300" style="border: 1px solid #000; border-radius: 1px; padding: 1px;">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Curved Tempered Glass</h5>
-                            <p class="text-muted"> In the same manner with flat tempered glass, curved tempered glass is also resistant to mechanical stresses (bending, impact, etc.) and thermal stresses (temperature difference), without altering the properties of the basic products.</p>
-                        </div>
-                        <div class="">
-                            <button type="button" class="btn btn-danger">Request Quotation</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="col-md-3">
-                    <div class="card border-0 card h-100">
-                        <img src="{{ asset('storage/glass-processing/igu.png') }}"
-                            alt="Category 4" class="card-img-top rounded" height="300" style="border: 1px solid #000; border-radius: 1px; padding: 1px;">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Insulating Glass Unit (IGU)</h5>
-                            <p class="text-muted">Insulating glass unit is a set of to or more lites of glass separated by air space and hermetically sealed to form a single unit. Its most important function is to improve the thermal performance of glass when used in architectural applications.</p>
-                        </div>
-                        <div class="">
-                            <button type="button" class="btn btn-danger">Request Quotation</button>
-                        </div>
+    <section id="services" class=" container py-4">
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7">
+                <h2 class="fw-bold">Tempered Glass</h2>
+                <p class="text-muted"> Fully tempered glass is a unique glazing material. It is about 3 to 5 times stronger than an ordinary or annealed glass of the same thickness and configuration.</p>
+                <button type="button" class="btn btn-outline-danger">Request Quotation</button>
+            </div>
+            <div class="col-md-5">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/glass-processing/tempered.png') }}"
+                        alt="Tempered Glass" class="img-fluid rounded lg" height="500">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
                     </div>
                 </div>
             </div>
-
-            <!-- Browse See More Button -->
-            <!-- <div class="mt-4">
-                <button type="button" class="btn btn-danger">Request Quotation</button>
-            </div> -->
         </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="fw-bold">Laminated Glass</h2>
+                <p class="text-muted"> Laminated glass is a multi-functional glazing material that can be used in a variety of applications.
+                    It is manufactured by permanently bonding two or more glass panes with layers of polyvinyl butyral (PVB) interlayer, under heat and pressure to produce a single products.</p>
+                <button type="button" class="btn btn-outline-danger">Request Quotation</button>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/glass-processing/laminated.png') }}"
+                        alt="Laminated Glass" class="img-fluid rounded lg" height="500">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7">
+                <h2 class="fw-bold">Curved Tempered Glass</h2>
+                <p class="text-muted"> In the same manner with flat tempered glass, curved tempered glass is also resistant to mechanical stresses (bending, impact, etc.)
+                    and thermal stresses (temperature difference), without altering the properties of the basic products.</p>
+                <button type="button" class="btn btn-outline-danger">Request Quotation</button>
+            </div>
+            <div class="col-md-5">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/glass-processing/curved.jpg') }}"
+                        alt="Curved Glass" class="img-fluid rounded lg" height="500">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="fw-bold">Insulating Glass Unit (IGU)</h2>
+                <p class="text-muted">Insulating glass unit is a set of to or more lites of glass separated by air space and hermetically sealed to form a single unit.
+                    Its most important function is to improve the thermal performance of glass when used in architectural applications.</p>
+                <button type="button" class="btn btn-outline-danger">Request Quotation</button>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <div class="position-relative">
+                    <img src="{{ asset('storage/glass-processing/igu.png') }}"
+                        alt="IGU" class="img-fluid rounded lg" height="500">
+                    <div
+                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </section>
     <!-- End of Services -->
 

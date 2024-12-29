@@ -82,8 +82,8 @@
                         Join us on our
                         journey to redefine quality and innovation.
                     </p>
-                    <button type="button" class="btn btn-primary btn-lg px-4 py-2">
-                        Register Now
+                    <button type="button" class="btn btn-outline-danger btn-lg px-4 py-2">
+                        Register
                     </button>
                 </div>
 
@@ -130,7 +130,7 @@
                         <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top rounded" height="425">
                         <div class="card-body">
                             <h5 class="fw-bold">Bullet Proofing</h5>
-                            <p class="text-muted">8 Products Available</p>
+                            <!-- <p class="text-muted">8 Products Available</p> -->
                             <button type="button" class="btn btn-outline-danger btn-sm px-4 py-2"> Request Quotation</button>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
                         <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top rounded" height="425">
                         <div class="card-body">
                             <h5 class="fw-bold">Glass Processing</h5>
-                            <p class="text-muted">8 Products Available</p>
+                            <!-- <p class="text-muted">8 Products Available</p> -->
                             <button type="button" class="btn btn-outline-danger btn-sm px-4 py-2">Request Quotation</button>
                         </div>
                     </div>
@@ -175,7 +175,10 @@
                         <img src="{{ asset('storage/glass-processing/cool silver only.jpg') }}" alt="Bulletproof" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Glass</h5>
-                            <p class="text-muted">8 Products Available</p>
+
+                            <div class="">
+                                <button type="button" class="btn btn-outline-danger ">Order Now</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,7 +190,10 @@
                             alt="Category 2" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Aluminum</h5>
-                            <p class="text-muted">8 Products Available</p>
+
+                            <div class="">
+                                <button type="button" class="btn btn-outline-danger ">Order Now</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -198,16 +204,19 @@
                         <img src="{{ asset('storage/home/gen-trade.jpg') }}" alt="Gen Trade" class="card-img-top rounded" height="300">
                         <div class="card-body">
                             <h5 class="fw-bold">Gen Trade</h5>
-                            <p class="text-muted">8 Products Available</p>
+
+                            <div class="">
+                                <button type="button" class="btn btn-outline-danger ">Order Now</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Browse More Button -->
-            <div class="">
+            <!-- <div class="">
                 <button type="button" class="btn btn-outline-danger ">Order Now</button>
-            </div>
+            </div> -->
 
     </section>
     <!-- End of Category -->
@@ -224,8 +233,8 @@
     @include ('plus.footer')
     <!-- End of Footer -->
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
