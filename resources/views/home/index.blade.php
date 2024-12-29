@@ -36,7 +36,7 @@
     <!-- End of Header -->
 
     <!-- Albums (Company Logos) -->
-    <section id="companies" class=" container d-flex gap-2 justify-content-center py-5">
+    <section id="companies" class=" container d-flex gap-2 justify-content-center py-5 fade-in">
         <div align="center" valign="middle">
             <div class=" container logo-scroller">
                 <!-- <p class="link-secondary">Companies teamed with</p><br> -->
