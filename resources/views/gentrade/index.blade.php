@@ -46,9 +46,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <h2 class="fw-bold display-3" style="color: white;">Architectural Hardwares</h2>
-                    <p class="lead mt-3" style="color: white;">
-                        We are not just looking for wide range of architectural hardware we are aiming for strengthen, endurance and resistance of the product such as THORE Brand.
-                    </p>
+                    <p class="lead mt-3" style="color: white;">We are not just looking for wide range of architectural hardware.We are also aiming for strength, endurance and resistance of the product such as THORE Brand.</p>
                     <div class="d-flex align-items-center justify-content-center">
                         <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
                             <span><b>Find out more</b></span>

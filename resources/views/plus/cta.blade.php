@@ -9,8 +9,8 @@
                     <div class="row align-items-center">
                         <!-- Left Column -->
                         <div class="col-md-8 text-light">
-                            <h3 class="fw-bold mb-2" style="color: #EACF68;">If you need industrial solution, We are available for you.</h3>
-                            <p class="mb-1" style="color: #EACF68;">We provide innovative solutions for sustainable progress. Our professional team works to increase productivity and cost effectiveness on the market</p>
+                            <h3 class="fw-bold mb-2" style="color: #EACF68;">If you require an INDURSTRIAL SOLUTION, WE ARE HERE TO HELP!</h3>
+                            <p class="mb-1" style="color: #EACF68;">Our professional team with skilled staff strives to improve market efficiency and cost-effectiveness.</p>
                         </div>
                         <!-- Right Column -->
                         <div class="col-md-4 text-md-end">

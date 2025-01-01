@@ -49,7 +49,7 @@
                     <span class="badge text-white mb-2" style="background-color: #950101;">FAQs</span>
                     <h2 class="fw-bold">Any Questions? Look Here</h2>
                     <p class="text-muted">
-                    We sort a most questions that ask to us. You can choose and click below which suite your expectations.
+                        We have sorted out your frequently asked questions. You can select the one that best meets your needs by clicking below.
                     </p>
                 </div>
                 <div class="accordion" id="faqAccordion">
@@ -63,7 +63,7 @@
                         <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                            Yes we can, Please attach the drawing that will be analyst of our Processing Department.
+                                Our professional team with skilled staff strives to improve market efficiency and cost-effectiveness.
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                         <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                            It depends where you will use or apply, ex: for main door will be 12mm glass for frameless or patch door for frame door some use 6mm and 8mm it depends to the aluminum profile frame will be using.
+                                Depending on the application or use, for example, a primary door with 12mm glass for a frameless or patch door may use 6mm or 8mm, depending on the aluminum profile frame being used.
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                         <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                            It depends where you will use or apply, ex: for main door will be a height of 2.1m for standard to 2.4m with a width of 0.9m standard to 1.0m.
+                                It depends on where you plan to use or apply it. For example, the main door height will be between 2.1 and 2.4 meters and width between 0.9 and 1.0 meters.
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                         <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                            Price may be varies on that day was given quotation price to you.
+                                The pricing may vary or change depending on the day you received the quotation.
                             </div>
                         </div>
                     </div>
@@ -119,7 +119,7 @@
                         <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                            Please attach the clear picture to ease verification of item.
+                                Please attach a clear picture to make item verification easier.
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,8 @@
                         <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                            When ordering our product we can deliver it now, there is a list of currier that you will choose or even pick-up now and when in processing or production it may vary on its total quantity you order.
+                                When you order our products, we can send it right away. You can pick from a variety of couriers or even pick it up right away.
+                                The quantity of your order will determine how long it takes to process or produce.
                             </div>
                         </div>
                     </div>

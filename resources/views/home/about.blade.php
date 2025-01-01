@@ -44,13 +44,13 @@
 
                     <div class="col-md-6 text-center text-md-start">
                         <h2 class="fw-bold">Who are we?</h2>
-                        <p class="text-muted">TQMP PHILIPPINES is engaged in the marketing and selling of a wide range of glass products and aluminum sections instead for the construction industry. Established in 1998, an emerging leader in the aluminum and glass industries. TQMP PHILIPPINES handles importations and trading of flat glass and other related products such as engineering adhesives, silicone sealants, abrasives, hardware's for glass and aluminum installations, and the like.</p>
+                        <p class="text-muted">TQMP PHILIPPINES is engaged in the marketing and selling of a wide range of glass products and aluminum sections for the construction industry. Established in 1998, an emerging leader in the aluminum and glass industries. TQMP PHILIPPINES handles importations and trading of flat glass and other related products such as engineering adhesives, silicone sealants, abrasives, hardware's for glass and aluminum installations, and the like.</p>
                         <P class="text-muted">Armed with strong determination to meet the demand of the customers for high end architectural and industrial glass requirements, the company formed its first subsidiary company in 2005, the Philippine Glass Processing Specialist, Inc. (PGPSI), and invested several state-of-the-art processing machines.</P>
-                        <P class="text-muted"> In the third quarter of 2010, Assure Insurance Agency Corporation (AIAC), another subsidiary company of TQMP PHILIPPINES, was established. Assure Insurance Agency Corporation is the insurance arm of the company representing various insurance companies for non-life coverage's.</P>
-                        <P class="text-muted"> In the fourth quarter of 2010, another subsidiary company, TQMC Marketing, was established. TQMC Marketing imports and distributes a wide variety of chemicals and raw ingredients for numerous industrial and food processing applications.</P>
-                        <p class="text-muted">In the forth quarter of 2013, TQMP-Cebu was established. It houses the glass processing facilities that cater to the demands of Cebu and nearby provinces (Visayan Region).</p>
-                        <p class="text-muted">Southern Philippines Glass (SPG) started operations at the second quarter of the 2014 with the same facilities of TQMP-Cebu. It serves the growing demand of the Mindanao Region.</p>
-                        <p class="text-muted">In the forth quarter of 2014, the new plant in Lawang Bato started its maiden operation. Its houses one of the biggest tempering and modern glass processing facilities in Southeast Asia.</p>
+                        <P class="text-muted">In the third quarter of 2010, Assure Insurance Agency Corporation (AIAC), another subsidiary company of TQMP PHILIPPINES, was established. Assure Insurance Agency Corporation is the insurance arm of the company representing various insurance companies for non-life coverages.</P>
+                        <P class="text-muted">In the fourth quarter of 2010, another subsidiary company, TQMC Marketing, was established. TQMC Marketing imports and distributes wide variety of chemicals and raw ingredients for numerous industrial and food processing applications.</P>
+                        <p class="text-muted">In the fourth quarter of 2013, TQMP-Cebu was established. It houses the glass processing facilities that cater to the demands of Cebu and nearby provinces (Visayan Region).</p>
+                        <p class="text-muted">Southern Philippines Glass (SPG) started its operations at the second quarter of 2014 with the same facilities of TQMP-Cebu. It serves the growing demand of the Mindanao Region.</p>
+                        <p class="text-muted">In the fourth quarter of 2014, the new plant in Lawang Bato started its maiden operation. It houses one of the biggest tempering and modern glass processing facilities in Southeast Asia.</p>
                         <!-- <button type="button" class="btn btn-danger">
                             Get Started
                         </button> -->
@@ -76,8 +76,7 @@
                 <h2 class="fw-bold">Learn More From Us</h2>
                 <!-- Paragraph -->
                 <p class="mt-3">
-                <p>Our belief is that our employees are the source of our strength, and that success can only be achieved through involvement and full commitment of each TQMP employees.</p>
-                </p>
+                <p>Our belief is that our employees are the source of our strength, and that success can only be achieved through involvement and full commitment of every TQMP employee.</p>
                 <!-- Cards -->
                 <div class="row mt-4">
                     <!-- Card 1 -->
@@ -87,7 +86,7 @@
                                 alt="Category 1" class="card-img-top rounded">
                             <div class="card-body">
                                 <h5 class="fw-bold">MISSION</h5>
-                                <p class="text-muted">​Strongly committed to quality and continuous innovation in order to provide excellent products and services to our growing clientele. Sustain business growth, develop employee pride and gain community respect.</p>
+                                <p class="text-muted">Steadfastly dedicated to quality and ongoing innovation to deliver top-notch products and services to our valued customer base. Maintain company expansion, foster staff pride, and gain community respect.</p>
                             </div>
                         </div>
                     </div>
@@ -98,7 +97,7 @@
                                 alt="Category 1" class="card-img-top rounded">
                             <div class="card-body">
                                 <h5 class="fw-bold">VISION</h5>
-                                <p class="text-muted">To become a key player in the regional arena through innovative creativity and fierce devotion to quality, style and value in products and services while advocating social responsibility and business ethics.</p>
+                                <p class="text-muted">To become a major force in the regional market by promoting social responsibility and ethical business practices, as well as by demonstrating a strong commitment to quality, style, and value in products and services.</p>
                             </div>
                         </div>
                     </div>
@@ -109,7 +108,7 @@
                                 alt="Category 1" class="card-img-top rounded">
                             <div class="card-body">
                                 <h5 class="fw-bold">OUR VALUES</h5>
-                                <p class="text-muted">Our services are dynamic and are geared towards total customer satisfaction. Continuous improvement, coupled with highly technical and reliable process equipment, are keys in becoming the leader in the glass and aluminum industry.</p>
+                                <p class="text-muted">We strive for complete client satisfaction with our innovative services. Becoming the market leader in glass and aluminum requires constant improvement in addition to highly specialized and dependable process equipment.</p>
                             </div>
                         </div>
                     </div>

@@ -109,7 +109,7 @@
                         </div>
                         <div>
                             <h5><i class="fas fa-clock text-danger me-2"></i> Opening Hours</h5>
-                            <p class="text-muted mb-0">Explore our business opening hours.</p>
+                            <p class="text-muted mb-0">Check out our Business Hours</p>
                             <p>
                                 <strong>Mon - Sat:</strong> 8am - 5pm<br>
                                 <strong>Sunday:</strong> Closed

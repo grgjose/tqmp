@@ -159,11 +159,10 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7 order-md-2">
                 <h2 class="fw-bold">Upgraded Suspension</h2>
-                <p class="text-muted">Upgraded suspension parts for armored vehicles are to improve to have a better performance.
-                    Armored vehicles are heavier than regular cars, so their suspension and braking systems need to be upgraded to ensure the vehicle can stop safely and maintain control.
-                    The suspension also needs to be able to absorb impacts and keep the vehicle stable and smooth.
-                    The extent to which the suspension needs to be modified depends on the vehicle's size, the quality of the existing suspension, and the environment in which it will be driven.
-                </p>
+                <p class="text-muted">For improved performance, upgraded suspension components are needed for armored vehicles.
+                    Due to their increased weight, armored vehicles require enhanced suspension and braking systems in order to ensure safe stopping and control.
+                    In order to keep the car steady and smooth, the suspension must also be able to absorb hits.
+                    The size of the car, the condition of the current suspension, and the driving conditions all affect how much the suspension needs to be changed.</p>
             </div>
             <div class="col-md-5 order-md-1">
                 <div class="position-relative">
@@ -181,7 +180,7 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7">
                 <h2 class="fw-bold">Battery & Fuse Box Cover</h2>
-                <p class="text-muted">Not only gas tank we also provide thick cover for battery and fuse box for extra durability protection.</p>
+                <p class="text-muted">For added durability protection, we also offer robust covers for the battery and fuse box in addition to the gas tank.</p>
             </div>
             <div class="col-md-5">
                 <div class="position-relative">
@@ -254,7 +253,7 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7">
                 <h2 class="fw-bold">Premium Leather Seats</h2>
-                <p class="text-muted">Not just giving you a protection we also giving you a satisfaction inside your vehicle by putting a premium leather seats.
+                <p class="text-muted">We are not just giving you a protection, we are also also giving you a satisfaction inside your vehicle by putting premium leather seats. 
                     Get in touch with us today and experience the strength of engineering that is built to endure.
                 </p>
             </div>

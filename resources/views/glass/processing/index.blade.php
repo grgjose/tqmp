@@ -67,9 +67,9 @@
                 <!-- Text Column -->
                 <div class="col-md-6 text-center text-md-start">
                     <h2 class="fw-bold">Glass Processing</h2>
-                    <p class="text-muted">With years of experience in the glass industry, we pride ourselves on our commitment to providing top-notch products and services to our clients.
-                        Our factory is equipped with state-of-the-art technology and machinery, allowing us to produce a wide range of tempered glass products including glass doors, windows, shower enclosures, and more.
-                        At Philippine Glass Processing Specialist, we prioritize customer satisfaction and strive to exceed our clients' expectations with every project. </p>
+                    <p class="text-muted">With years of experience in the glass industry, we pride ourselves with our commitment in providing top-notch products and services to our clients. 
+                        Our factory is equipped with state-of-the-art technology and machinery, allowing us to produce a wide range of tempered glass products including glass doors, windows, shower enclosures, and more. 
+                        At Philippine Glass Processing Specialist, we prioritize customer satisfaction and strive to exceed our clients' expectations with every project.</p>
                     <!-- <button type="button" class="btn btn-danger">
                         Get Started
                     </button> -->
@@ -159,7 +159,7 @@
         <div class="row featurette align-items-center">
             <div class="col-md-7 order-md-2">
                 <h2 class="fw-bold">Insulating Glass Unit (IGU)</h2>
-                <p class="text-muted">Insulating glass unit is a set of to or more lites of glass separated by air space and hermetically sealed to form a single unit.
+                <p class="text-muted">Insulating glass unit is a set of two or more lites of glass separated by air space and hermetically sealed to form a single unit.
                     Its most important function is to improve the thermal performance of glass when used in architectural applications.</p>
                 <button type="button" class="btn btn-outline-danger">Request Quotation</button>
             </div>

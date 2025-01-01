@@ -117,10 +117,9 @@
             <h2 class="fw-bold">What We Offer</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                We are offering a Bulletproofing Vehicle with a benefits of very good option for your additional security,
-                the bullets literally “bounce off” to the vehicle, it has thick and heavy body, like a tank for protection,
-                it has special tires and glass, literally it saves lives.
-                We do process glass also such as: tempered glass, curve glass, laminated glass and insulating glass unit (IGU).
+                We offer Bulletproofing of Vehicles with several benefits and very good options for your additional security.
+                Bullets literally "bounce off" to the vehicle due to its thick and heavy body, your vehicle serves like a tank for your protection and definely a life saver!
+                We also process the following glass types; Tempered glass, Curve glass, Laminated glass and Insulating Glass Unit (ICU)
             </p>
             <!-- Cards -->
             <div class="row mt-6">
@@ -164,8 +163,7 @@
             <h2 class="fw-bold">Shop by Category</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                For our valued customer we are now extending our services thru online shopping to be next on your door.
-                Now feel ease to our new online services we are providing.
+                We are now offering our valued customers the ability to shop online and have our services delivered right to your door. Please feel free to use our new online services.
             </p>
             <!-- Category Cards -->
             <div class="row mt-5">
