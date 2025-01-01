@@ -82,7 +82,7 @@
                     <!-- Card 1 -->
                     <div class="col-md-4">
                         <div class="card border-0">
-                            <img src="https://images.pexels.com/photos/8866736/pexels-photo-8866736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            <img src="{{ asset('storage/about-us/about-1.jpg') }}"
                                 alt="Category 1" class="card-img-top rounded">
                             <div class="card-body">
                                 <h5 class="fw-bold">MISSION</h5>
@@ -93,7 +93,7 @@
                     <!-- Card 2 -->
                     <div class="col-md-4">
                         <div class="card border-0">
-                            <img src="https://images.pexels.com/photos/8159/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            <img src="{{ asset('storage/about-us/about-2.jpg') }}"
                                 alt="Category 1" class="card-img-top rounded">
                             <div class="card-body">
                                 <h5 class="fw-bold">VISION</h5>
@@ -104,7 +104,7 @@
                     <!-- Card 3 -->
                     <div class="col-md-4">
                         <div class="card border-0">
-                            <img src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            <img src="{{ asset('storage/about-us/about-5.jpg') }}"
                                 alt="Category 1" class="card-img-top rounded">
                             <div class="card-body">
                                 <h5 class="fw-bold">OUR VALUES</h5>

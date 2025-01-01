@@ -242,7 +242,7 @@
     a.btn-outline-danger:hover {
         background-color: #7E1416;
         color: #ffffff;
-        /* Optional: Change text color on hover */
+        font-weight: bold;
         transform: translateY(-2px);
     }
 

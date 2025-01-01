@@ -47,7 +47,7 @@
                 <div class="col-md-8">
                     <h2 class="fw-bold display-3" style="color: white;">Glass Processing</h2>
                     <p class="lead mt-3" style="color: white;">
-                        Your premier source for top-of-the-line and precision-engineered armoured vehicles
+                        We are equipped with State-of-the-art technology and machinery , allowing us to produce a wide range of tempered glass products.
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
                         <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
@@ -67,8 +67,8 @@
                 <!-- Text Column -->
                 <div class="col-md-6 text-center text-md-start">
                     <h2 class="fw-bold">Glass Processing</h2>
-                    <p class="text-muted">With years of experience in the glass industry, we pride ourselves with our commitment in providing top-notch products and services to our clients. 
-                        Our factory is equipped with state-of-the-art technology and machinery, allowing us to produce a wide range of tempered glass products including glass doors, windows, shower enclosures, and more. 
+                    <p class="text-muted">With years of experience in the glass industry, we pride ourselves with our commitment in providing top-notch products and services to our clients.
+                        Our factory is equipped with state-of-the-art technology and machinery, allowing us to produce a wide range of tempered glass products including glass doors, windows, shower enclosures, and more.
                         At Philippine Glass Processing Specialist, we prioritize customer satisfaction and strive to exceed our clients' expectations with every project.</p>
                     <!-- <button type="button" class="btn btn-danger">
                         Get Started
