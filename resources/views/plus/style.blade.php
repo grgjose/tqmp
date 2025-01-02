@@ -41,10 +41,11 @@
 
     .navbar-toggler {
         border: 2px;
-        outline: none;
+        outline: 2px;
         font-size: 1.5rem;
-        color: #7E1416;
-        background: none;
+        /* color: #7E1416; */
+        background-color: #7E1416;
+        /* background: none; */
         cursor: pointer;
     }
 

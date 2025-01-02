@@ -7,7 +7,7 @@
         <a href="/" class="navbar-brand d-inline-flex link-body-emphasis text-decoration-none">
             <img src="{{ asset('storage/logos/TQMPLogo.png') }}" alt="Header Image" class="header" width="80">
         </a>
-        <button class="navbar-toggler" style="background-color: #172647;" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler"  type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon text-danger"></span>
         </button>
