@@ -11,7 +11,7 @@
                 <span class="badge text-white mb-2" style="background-color: #950101;">FAQs</span>
                 <h2 class="fw-bold">Any Questions? Look Here</h2>
                 <p class="text-muted">
-                    We sort a most questions that ask to us. You can choose and click below which suite your expectations.
+                    We have sorted out your frequently asked questions. You can select the one that best meets your needs by clicking below.
                 </p>
             </div>
 
@@ -33,7 +33,7 @@
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                     data-bs-parent="#faqAccordionLeft">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        Yes we can, Please attach the drawing that will be analyst of our Processing Department.
+                                        Yes, we are able to. Kindly attach the drawing that our processing department will analyze.
                                     </div>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#faqAccordionLeft">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        It depends where you will use or apply, ex: for main door will be 12mm glass for frameless or patch door for frame door some use 6mm and 8mm it depends to the aluminum profile frame will be using.
+                                        Depending on the application or use, for example, a primary door with 12mm glass for a frameless or patch door may use 6mm or 8mm, depending on the aluminum profile frame being used.
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#faqAccordionLeft">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        It depends where you will use or apply, ex: for main door will be a height of 2.1m for standard to 2.4m with a width of 0.9m standard to 1.0m.
+                                        It depends on where you plan to use or apply it. For example, the main door height will be between 2.1 and 2.4 meters and width between 0.9 and 1.0 meters.
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#faqAccordionRight">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        Price may be varies on that day was given quotation price to you.
+                                        The pricing may vary or change depending on the day you received the quotation.
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +108,7 @@
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                     data-bs-parent="#faqAccordionRight">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        Please attach the clear picture to ease verification of item.
+                                        Please attach a clear picture to make item verification easier.
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
                                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                     data-bs-parent="#faqAccordionRight">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        When ordering our product we can deliver it now, there is a list of currier that you will choose or even pick-up now and when in processing or production it may vary on its total quantity you order.
+                                        When you order our products, we can send it right away. You can pick from a variety of couriers or even pick it up right away. The quantity of your order will determine how long it takes to process or produce.
                                     </div>
                                 </div>
                             </div>
@@ -137,4 +137,4 @@
         <!-- End of Accordion -->
 
         <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

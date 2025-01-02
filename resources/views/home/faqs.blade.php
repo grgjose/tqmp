@@ -63,7 +63,7 @@
                         <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Our professional team with skilled staff strives to improve market efficiency and cost-effectiveness.
+                                Yes, we are able to. Kindly attach the drawing that our processing department will analyze.
                             </div>
                         </div>
                     </div>
@@ -133,8 +133,7 @@
                         <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                When you order our products, we can send it right away. You can pick from a variety of couriers or even pick it up right away.
-                                The quantity of your order will determine how long it takes to process or produce.
+                                When you order our products, we can send it right away. You can pick from a variety of couriers or even pick it up right away. The quantity of your order will determine how long it takes to process or produce.
                             </div>
                         </div>
                     </div>

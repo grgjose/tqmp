@@ -59,7 +59,7 @@
                     <div class="col-md-6">
                         <h3 class="fw-bold">Fill out the form</h3>
                         <form class="py-3">
-                            <div class="mb-3 ">
+                            <div class="mb-3">
                                 <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="fullName" placeholder="Your full name">
                             </div>
@@ -68,7 +68,7 @@
                                     <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
                                     <input type="email" class="form-control" id="email" placeholder="Your email">
                                 </div>
-                                <div class="col-md-6 py-3">
+                                <div class="col-md-6">
                                     <label for="phone" class="form-label">Phone Number <span class="text-danger">*</label>
                                     <input type="tel" class="form-control" id="phone" placeholder="Your phone number">
                                 </div>
