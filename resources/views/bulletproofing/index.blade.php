@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="main.css">
 
     <!-- Scripts -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
 <body>
@@ -271,8 +271,8 @@
     <!-- /END THE FEATURETTES -->
 
     <div class="d-flex align-items-center justify-content-center">
-        <a href="" class="btn btn-primary text-decoration-none" style="font-size: smaller;">
-            <span><b>Request Quotation</b></span>
+        <a href="" class="btn btn-outline-primary text-decoration-none" style="font-size: smaller;">
+            <span>Request Quotation</span>
         </a>
     </div>
 

@@ -9,7 +9,7 @@
     <meta name="author" content="TQMP">
 
     <!-- Title and Favicon -->
-    <title>Glass Processing</title>
+    <title>Glass Processing | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
     <!-- Preconnect for External Resources -->
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="main.css">
 
     <!-- Scripts -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
 <body>
@@ -103,7 +103,7 @@
                 <p class="text-muted"> Fully tempered glass is a unique glazing material. It is about 3 to 5 times stronger than an ordinary or annealed glass of the same thickness and configuration.</p>
                 <button type="button" class="btn btn-outline-danger">Request Quotation</button>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 py-3">
                 <div class="position-relative">
                     <img src="{{ asset('storage/glass-processing/tempered.png') }}"
                         alt="Tempered Glass" class="img-fluid rounded lg" height="500">
@@ -117,13 +117,13 @@
         <hr class="featurette-divider">
 
         <div class="row featurette align-items-center">
-            <div class="col-md-7 order-md-2">
+            <div class="col-md-7">
                 <h2 class="fw-bold">Laminated Glass</h2>
                 <p class="text-muted"> Laminated glass is a multi-functional glazing material that can be used in a variety of applications.
                     It is manufactured by permanently bonding two or more glass panes with layers of polyvinyl butyral (PVB) interlayer, under heat and pressure to produce a single products.</p>
                 <button type="button" class="btn btn-outline-danger">Request Quotation</button>
             </div>
-            <div class="col-md-5 order-md-1">
+            <div class="col-md-5 py-3">
                 <div class="position-relative">
                     <img src="{{ asset('storage/glass-processing/laminated.png') }}"
                         alt="Laminated Glass" class="img-fluid rounded lg" height="500">
@@ -143,7 +143,7 @@
                     and thermal stresses (temperature difference), without altering the properties of the basic products.</p>
                 <button type="button" class="btn btn-outline-danger">Request Quotation</button>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 py-3">
                 <div class="position-relative">
                     <img src="{{ asset('storage/glass-processing/curved.jpg') }}"
                         alt="Curved Glass" class="img-fluid rounded lg" height="500">
@@ -163,7 +163,7 @@
                     Its most important function is to improve the thermal performance of glass when used in architectural applications.</p>
                 <button type="button" class="btn btn-outline-danger">Request Quotation</button>
             </div>
-            <div class="col-md-5 order-md-1">
+            <div class="col-md-5 py-3">
                 <div class="position-relative">
                     <img src="{{ asset('storage/glass-processing/igu.png') }}"
                         alt="IGU" class="img-fluid rounded lg" height="500">
