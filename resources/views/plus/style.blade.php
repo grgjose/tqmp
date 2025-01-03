@@ -297,6 +297,7 @@
         color: #172647;
         border: 1px solid #172647;
         font-size: smaller;
+        font-weight: bold;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
