@@ -117,7 +117,7 @@
         <hr class="featurette-divider">
 
         <div class="row featurette align-items-center">
-            <div class="col-md-7">
+            <div class="col-md-7 order-md-2">
                 <h2 class="fw-bold">Laminated Glass</h2>
                 <p class="text-muted"> Laminated glass is a multi-functional glazing material that can be used in a variety of applications.
                     It is manufactured by permanently bonding two or more glass panes with layers of polyvinyl butyral (PVB) interlayer, under heat and pressure to produce a single products.</p>

@@ -63,7 +63,7 @@
                         <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Yes, we are able to. Kindly attach the drawing that our processing department will analyze.
+                                Yes, we can. Kindly attach the Drawing in order for our Processing Department to assess and analyze your requirement/ sample.
                             </div>
                         </div>
                     </div>
