@@ -56,78 +56,53 @@
     <!-- End of landing  -->
 
     <!-- Doors -->
-
- 
-
     <section id="services" class="py-5">
-        <div class="container text-center">
-            <!-- Heading -->
-            <h2 class="fw-bold">Door Closers and Floor Hinges</h2>
-            <!-- Paragraph -->
-            <p class="mt-3">
-                Door closers and floor hinges are hardware that is use to all doors with a self closing feature.
-            </p>
-         
+        <div class="container py-5 bg-secondary rounded">
+            <div class="container text-center text-light">
+                <!-- Heading -->
+                <h2 class="fw-bold">Door Closers and Floor Hinges</h2>
+                <!-- Paragraph -->
+                <p class="mt-3">
+                    Door closers and floor hinges are hardware that is use to all doors with a self closing feature.
+                </p>
 
-            <!-- Cards Row 2 -->
-            <div class="row mt-4">
-                <!-- Card 1 -->
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/doors/gsm-0060.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
+                <!-- Cards Row 2 -->
+                <div class="row mt-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-lg">
+                            <img src="{{ asset('storage/archi-hardware/doors/gsm-0060.jpg') }}"
+                                alt="Category 1" class="card-img-top rounded">
+                            <a href="#" class="card-button"> Get Quotation</a>
+                        </div>
 
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/doors/gsm-0052.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-lg">
+                            <img src="{{ asset('storage/archi-hardware/doors/gsm-0052.jpg') }}"
+                                alt="Category 1" class="card-img-top rounded">
+                            <a href="#" class="card-button"> Get Quotation</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-lg">
+                            <img src="{{ asset('storage/archi-hardware/doors/gsm-0038.jpg') }}" alt="Category 1" class="card-img-top rounded">
+                            <a href="#" class="card-button"> Get Quotation</a>
+                        </div>
                     </div>
                 </div>
-                <!-- Card 3 -->
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/doors/gsm-0038.jpg') }}" alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
-                </div>
+
+
             </div>
-
-            <!-- Cards Row 3 -->
-            <!-- <div class="row mt-6">
-              
-                <div class="col-md-6">
-                     <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/doors/abloy dc420.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                 
-                    </div>
-                </div>
-             
-                <div class="col-md-6">
-                     <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/doors/abloy dc477.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                    
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- Browse Order Now Button -->
-            <!-- <div class="card-body">
-                <button type="button" class="btn btn-outline-light">Order Now</button>
-            </div> -->
         </div>
     </section>
     <!-- End of Doors -->
 
     <!-- Line -->
     <div class="container text-center">
-        <hr style="width: 40%;  margin: 100px auto;">
+        <hr style="width: 40%;  margin: 30px auto;">
     </div>
     <!-- End of Line -->
 
@@ -232,43 +207,49 @@
 
     <!-- Handles -->
     <section id="services" class="py-4 ">
-        <div class="container text-center">
-            <!-- Heading -->
-            <h2 class="fw-bold">Handles</h2>
-            <!-- Paragraph -->
-            <p class="mt-3">
-                Glass doors with a specific handle to a specific door to be using.
-            </p>
-            <!-- Cards Row 1 -->
-            <div class="row mt-4">
-                <!-- Card 1 -->
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
+        <div class="container py-5 bg-secondary rounded">
+            <div class="container text-center text-light">
+                <div class="container text-center">
+                    <!-- Heading -->
+                    <h2 class="fw-bold">Handles</h2>
+                    <!-- Paragraph -->
+                    <p class="mt-3">
+                        Glass doors with a specific handle to a specific door to be using.
+                    </p>
+                    <!-- Cards Row 1 -->
+                    <div class="row mt-4">
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}"
+                                    alt="Category 1" class="card-img-top rounded">
+                                <a href="#" class="card-button"> Get Quotation</a>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/handles/THORE H-TYPE HANDLE.jpg') }}"
+                                    alt="Category 1" class="card-img-top rounded">
+                                <a href="#" class="card-button"> Get Quotation</a>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}"
+                                    alt="Category 1" class="card-img-top rounded">
+                                <a href="#" class="card-button"> Get Quotation</a>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/handles/THORE H-TYPE HANDLE.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
+
                 </div>
 
             </div>
-
         </div>
+
     </section>
     <!-- End of Services -->
 
@@ -374,91 +355,96 @@
 
     <!-- Shower Glass Clip -->
     <section id="services" class="py-4 ">
-        <div class="container text-center">
-            <!-- Heading -->
-            <h2 class="fw-bold">Shower Glass Clips</h2>
-            <!-- Paragraph -->
-            <p class="mt-3">
-                Shower glass clips usually used in fix panel for a shower enclosure but most of the installer and fabricator use it in other applications such as railings with a support of stainless tube.
-            </p>
-            <!-- Cards Row 1 -->
-            <div class="row mt-4">
-                <!-- Card 1 -->
-                <div class="col-md-3">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0001.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-3">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0002.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-3">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0003.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
-                </div>
+        <div class="container py-5 bg-secondary rounded">
+            <div class="container text-center text-light">
+                <div class="container text-center">
+                    <!-- Heading -->
+                    <h2 class="fw-bold">Shower Glass Clips</h2>
+                    <!-- Paragraph -->
+                    <p class="mt-3">
+                        Shower glass clips usually used in fix panel for a shower enclosure but most of the installer and fabricator use it in other applications such as railings with a support of stainless tube.
+                    </p>
+                    <!-- Cards Row 1 -->
+                    <div class="row mt-4">
+                        <!-- Card 1 -->
+                        <div class="col-md-3">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0001.jpg') }}"
+                                    alt="Category 1" class="card-img-top rounded">
+                                <a href="#" class="card-button"> Get Quotation</a>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-md-3">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0002.jpg') }}"
+                                    alt="Category 1" class="card-img-top rounded">
+                                <a href="#" class="card-button"> Get Quotation</a>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-md-3">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0003.jpg') }}"
+                                    alt="Category 1" class="card-img-top rounded">
+                                <a href="#" class="card-button"> Get Quotation</a>
+                            </div>
+                        </div>
 
-                <!-- Card 4 -->
-                <div class="col-md-3">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0004.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
-                </div>
+                        <!-- Card 4 -->
+                        <div class="col-md-3">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0004.jpg') }}"
+                                    alt="Category 1" class="card-img-top rounded">
+                                <a href="#" class="card-button"> Get Quotation</a>
+                            </div>
+                        </div>
 
+
+                    </div>
+
+                    <!-- Cards Row 2 -->
+                    <div class="row mt-4">
+                        <!-- Card 1 -->
+                        <div class="col-md-3">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0005.jpg') }}"
+                                    alt="Category 1" class="card-img-top rounded">
+                                <a href="#" class="card-button"> Get Quotation</a>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-md-3">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0006.jpg') }}"
+                                    alt="Category 1" class="card-img-top rounded">
+                                <a href="#" class="card-button"> Get Quotation</a>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-md-3">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0007.jpg') }}"
+                                    alt="Category 1" class="card-img-top rounded">
+                                <a href="#" class="card-button"> Get Quotation</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-md-3">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0008.jpg') }}"
+                                    alt="Category 1" class="card-img-top rounded">
+                                <a href="#" class="card-button"> Get Quotation</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
 
             </div>
-
-            <!-- Cards Row 2 -->
-            <div class="row mt-4">
-                <!-- Card 1 -->
-                <div class="col-md-3">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0005.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-3">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0006.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-3">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0007.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-md-3">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0008.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-                        <a href="#" class="card-button"> Get Quotation</a>
-                    </div>
-                </div>
-
-            </div>
-
-
         </div>
     </section>
     <!-- End of Shower Hinges -->
@@ -500,40 +486,45 @@
 
             <!-- Browse Order Now Button -->
 
-            <div class="mt-4">
+            <!-- <div class="mt-4">
                 <button type="button" class="btn btn-outline-danger">Browse More</button>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- End of Sliding Shower Emclosure -->
 
     <!-- Ladder -->
-  
+
 
     <section id="services" class="py-4">
-        <div class="container text-center">
-            <!-- Heading -->
-            <h2 class="fw-bold">Ladder</h2>
-            <!-- Paragraph -->
-            <p class="mt-3">
-                Ladder safety begins with the selection of the proper ladder for the job includes inspection,setup, proper climbing and standing, proper use, care and storage. </p>
-            <!-- Cards Row 1 -->
-            <div class="row mt-4">
-                <!-- Card 1 -->
-                <div class="col-md-6 offset-md-3">
-                    <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="Category 1" class="card-img-top rounded" style="height: 400px; object-fit: contain;">
-                        <a href="#" class="card-button">Get Quotation</a>
+        <div class="container py-5 bg-secondary rounded">
+            <div class="container text-center text-light">
+                <div class="container text-center">
+                    <!-- Heading -->
+                    <h2 class="fw-bold">Ladder</h2>
+                    <!-- Paragraph -->
+                    <p class="mt-3">
+                        Ladder safety begins with the selection of the proper ladder for the job includes inspection,setup, proper climbing and standing, proper use, care and storage. </p>
+                    <!-- Cards Row 1 -->
+                    <div class="row mt-4">
+                        <!-- Card 1 -->
+                        <div class="col-md-6 offset-md-3">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="Category 1" class="card-img-top rounded" style="height: 400px; object-fit: contain;">
+                                <a href="#" class="card-button">Get Quotation</a>
+                            </div>
+
+                        </div>
                     </div>
 
+                    <!-- Browse Order Now Button -->
+                    <!-- <div class="mt-4">
+                        <button type="button" class="btn btn-outline-danger">Browse More</button>
+                    </div> -->
                 </div>
             </div>
-
-            <!-- Browse Order Now Button -->
-            <div class="mt-4">
-                <button type="button" class="btn btn-outline-danger">Browse More</button>
-            </div>
         </div>
+
     </section>
     <!-- End of Ladder -->
 
