@@ -9,15 +9,12 @@
     <meta name="author" content="TQMP">
 
     <!-- Title and Favicon -->
-    <title>Gen Trade</title>
+    <title>Other Products | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
-    <!-- Preconnect for External Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -46,7 +43,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <h2 class="fw-bold display-3" style="color: white;">Architectural Hardwares</h2>
-                    <p class="lead mt-3" style="color: white;">We are not just looking for wide range of architectural hardware.We are also aiming for strength, endurance and resistance of the product such as THORE Brand.</p>
+                    <p class="lead mt-3" style="color: white;">We are not just looking for wide range of architectural hardware. We are also aiming for strength, endurance and resistance of the product such as THORE Brand.</p>
                     <div class="d-flex align-items-center justify-content-center">
                         <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
                             <span><b>Find out more</b></span>
@@ -59,7 +56,10 @@
     <!-- End of landing  -->
 
     <!-- Doors -->
-    <section id="services" class="py-5 ">
+
+ 
+
+    <section id="services" class="py-5">
         <div class="container text-center">
             <!-- Heading -->
             <h2 class="fw-bold">Door Closers and Floor Hinges</h2>
@@ -67,72 +67,32 @@
             <p class="mt-3">
                 Door closers and floor hinges are hardware that is use to all doors with a self closing feature.
             </p>
-            <!-- Cards Row 1 -->
-            <!-- <div class="row mt-4">
-                
-                <div class="col-md-3">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/archi-hardware/doors/yale yfs-923.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-              
-                    </div>
-                </div>
-                
-                <div class="col-md-3">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/archi-hardware/doors/yale yfs-934.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-       
-                    </div>
-                </div>
-               
-                <div class="col-md-3">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/archi-hardware/doors/yale yfs-8003.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-            
-                    </div>
-                </div>
-
-               
-                <div class="col-md-3">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/archi-hardware/doors/yale ytdc854.jpg') }}"
-                            alt="Category 1" class="card-img-top rounded">
-              
-                    </div>
-                </div>
-            </div> -->
+         
 
             <!-- Cards Row 2 -->
             <div class="row mt-4">
                 <!-- Card 1 -->
                 <div class="col-md-4">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/doors/gsm-0060.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
+
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-4">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/doors/gsm-0052.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-4">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/doors/gsm-0038.jpg') }}" alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
             </div>
@@ -141,7 +101,7 @@
             <!-- <div class="row mt-6">
               
                 <div class="col-md-6">
-                    <div class="card border-0">
+                     <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/doors/abloy dc420.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                  
@@ -149,7 +109,7 @@
                 </div>
              
                 <div class="col-md-6">
-                    <div class="card border-0">
+                     <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/doors/abloy dc477.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
                     
@@ -158,8 +118,8 @@
             </div> -->
 
             <!-- Browse Order Now Button -->
-            <!-- <div class="mt-4">
-                <button type="button" class="btn btn-outline-primary">Order Now</button>
+            <!-- <div class="card-body">
+                <button type="button" class="btn btn-outline-light">Order Now</button>
             </div> -->
         </div>
     </section>
@@ -167,7 +127,7 @@
 
     <!-- Line -->
     <div class="container text-center">
-        <hr style="width: 30%;  margin: 20px auto;">
+        <hr style="width: 40%;  margin: 100px auto;">
     </div>
     <!-- End of Line -->
 
@@ -184,43 +144,35 @@
             <div class="row mt-4">
                 <!-- Card 1 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0039.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0050.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0054.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0055.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
             </div>
@@ -229,50 +181,42 @@
             <div class="row mt-4">
                 <!-- Card 1 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0056.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0057.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0058.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0059.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
             </div>
 
             <!-- Browse Order Now Button -->
-            <!-- <div class="mt-4">
-                <button type="button" class="btn btn-outline-primary">Order Now</button>
+            <!-- <div class="card-body">
+                <button type="button" class="btn btn-outline-light">Order Now</button>
             </div> -->
 
 
@@ -299,32 +243,26 @@
             <div class="row mt-4">
                 <!-- Card 1 -->
                 <div class="col-md-4">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-4">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/handles/THORE H-TYPE HANDLE.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-4">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
 
@@ -353,43 +291,35 @@
             <div class="row mt-4">
                 <!-- Card 1 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0018.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0019.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0020.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0021.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
             </div>
@@ -398,43 +328,35 @@
             <div class="row mt-4">
                 <!-- Card 1 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0011.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0012.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0013.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0014.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
             </div>
@@ -463,43 +385,35 @@
             <div class="row mt-4">
                 <!-- Card 1 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0001.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0002.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0003.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0004.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
 
@@ -510,43 +424,35 @@
             <div class="row mt-4">
                 <!-- Card 1 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0005.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0006.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0007.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="col-md-3">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0008.jpg') }}"
                             alt="Category 1" class="card-img-top rounded">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
 
@@ -576,28 +482,23 @@
             <div class="row mt-6">
                 <!-- Card 1 -->
                 <div class="col-md-6">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0102.jpg') }}"
                             alt="Category 1" class="card-img-top rounded" height="auto">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-6">
-                    <div class="card border-0">
+                    <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0103.jpg') }}"
                             alt="Category 1" class="card-img-top rounded" height="auto">
-                        <div class="mt-4">
-                            <button type="button" class="btn btn-outline-primary">Order Now</button>
-                        </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
                 </div>
             </div>
 
             <!-- Browse Order Now Button -->
-
 
             <div class="mt-4">
                 <button type="button" class="btn btn-outline-danger">Browse More</button>
@@ -605,6 +506,65 @@
         </div>
     </section>
     <!-- End of Sliding Shower Emclosure -->
+
+    <!-- Ladder -->
+  
+
+    <section id="services" class="py-4">
+        <div class="container text-center">
+            <!-- Heading -->
+            <h2 class="fw-bold">Ladder</h2>
+            <!-- Paragraph -->
+            <p class="mt-3">
+                Ladder safety begins with the selection of the proper ladder for the job includes inspection,setup, proper climbing and standing, proper use, care and storage. </p>
+            <!-- Cards Row 1 -->
+            <div class="row mt-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 offset-md-3">
+                    <div class="card border-0 shadow-lg">
+                        <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="Category 1" class="card-img-top rounded" style="height: 400px; object-fit: contain;">
+                        <a href="#" class="card-button">Get Quotation</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Browse Order Now Button -->
+            <div class="mt-4">
+                <button type="button" class="btn btn-outline-danger">Browse More</button>
+            </div>
+        </div>
+    </section>
+    <!-- End of Ladder -->
+
+    <!-- Jalouplus -->
+    <section id="services" class="py-4">
+        <div class="container text-center">
+            <!-- Heading -->
+            <h2 class="fw-bold">Jalouplus</h2>
+            <!-- Paragraph -->
+            <p class="mt-3">
+                Jalouplus offers style and functionality. Water penetration resistance, can be used in air conditioned area. Provides the benefits of a glass louver window but now with impenetrable security.
+            </p>
+            <!-- Cards Row 1 -->
+            <div class="row mt-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 offset-md-3">
+                    <div class="card border-0 shadow-lg">
+                        <img src="{{ asset('storage/jalouplus/jalouplus.jpg') }}" alt="Category 1" class="card-img-top rounded" style="height: 400px; object-fit: contain;">
+                        <a href="#" class="card-button">Get Quotation</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Browse Order Now Button -->
+            <div class="mt-4">
+                <button type="button" class="btn btn-outline-danger">Browse More</button>
+            </div>
+        </div>
+    </section>
+    <!-- End of Jalouplus -->
 
     <!-- Accordion Section -->
     @include ('plus.accordion')

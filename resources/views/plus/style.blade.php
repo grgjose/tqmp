@@ -1,17 +1,64 @@
 <style>
     /* Font */
     body {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: small;
+
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
         margin: 0;
         padding: 0;
 
+
     }
+
+    /* .montserrat-<uniquifier> {
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    } */
 
     /* Header  */
     /* General Button Styling */
+
+    /* Card Animation */
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Button Styles */
+    .card-button {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        width: 100%;
+        background-color: rgb(30, 50, 92);
+        color: #fff;
+        border-radius: 0 0 8px 8px;
+        text-decoration: none;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .card-button:hover {
+        text-decoration: none;
+        background-color: #172647;
+        color: #fff;
+        transform: translateY(-5px);
+    }
+
+
     .btn {
-        width: 115px;
+        width: 120px;
     }
 
     .nav-link {
@@ -23,7 +70,7 @@
     .navbar .nav-link:hover,
     .navbar .nav-link:focus,
     .navbar .nav-link.active {
-        color: #7E1416 !important;
+        color: #7E1416;
         font-weight: bold;
     }
 
@@ -120,7 +167,7 @@
     }
 
     button.btn-primary {
-        background-color: #172647;
+        background-color: #1E325C;
         /* Match primary brand color */
         color: white;
         border: none;
@@ -169,8 +216,9 @@
         background-color: none;
         /* Match primary brand color */
         color: #FFFFFF;
-        border: #FFFFFF;
+        border: 1px solid #FFFFFF;
         font-size: smaller;
+        font-weight: bold;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
@@ -178,6 +226,7 @@
         background-color: #FFFFFF;
         transform: translateY(-2px);
         font-size: smaller;
+        font-weight: bold;
     }
 
     button.btn-outline-warning {
@@ -217,7 +266,7 @@
     button.btn-outline-primary {
         background-color: transparent;
         color: #172647;
-        border: 1px solid #172647;
+        border: 1px solid #1E325C;
         font-size: smaller;
         font-weight: bold;
         transition: background-color 0.3s ease, transform 0.2s ease;
@@ -231,18 +280,18 @@
     }
 
     a.btn-outline-danger {
-        background-color: transparent;
+        background-color: #7E1416;
         /* Fix 'none' to 'transparent' */
-        color: #7E1416;
-        border: 1px solid #7E1416;
+        color: #fff;
+        border: 0.5px solid #7E1416;
         /* Specify solid border style */
         font-size: smaller;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     a.btn-outline-danger:hover {
-        background-color: #7E1416;
-        color: #ffffff;
+        background-color: #fff;
+        color: #7E1416;
         font-weight: bold;
         transform: translateY(-2px);
     }
@@ -263,7 +312,7 @@
     }
 
     a.btn-primary {
-        background-color: #172647;
+        background-color: #1E325C;
         /* Match primary brand color */
         color: white;
         border: none;
@@ -293,19 +342,36 @@
     }
 
     a.btn-outline-primary {
-        background-color: transparent;
-        color: #172647;
-        border: 1px solid #172647;
+        background-color: #1E325C;
+        color: #fff;
+        border: 0.5px solid #1E325C;
         font-size: smaller;
         font-weight: bold;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     a.btn-outline-primary:hover {
-        background-color: #172647;
-        color: #ffffff;
+        background-color: #fff;
+        color: #172647;
         font-weight: bold;
         transform: translateY(-2px);
+    }
+
+    a.btn-outline-light {
+        background-color: none;
+        /* Match primary brand color */
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        font-size: smaller;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a.btn-outline-light:hover {
+        background-color: #FFFFFF;
+        transform: translateY(-2px);
+        font-size: smaller;
+        font-weight: bold;
     }
 
     .img-fluid {
@@ -505,7 +571,7 @@
         border-radius: 4px;
         font-weight: bold;
         transform: scale(1.1);
-        
+
     }
 
     .pagination-button:hover {

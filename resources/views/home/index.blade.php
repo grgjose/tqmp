@@ -12,12 +12,9 @@
     <title>Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
-    <!-- Preconnect for External Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -71,27 +68,31 @@
     </section>
     <!-- End of Albums -->
 
+
+
+
     <!-- Landing -->
-    <section class="custom-section fade-in py-3">
-        <div class="container">
+    <!-- <section class="custom-section fade-in py-3">
+        <div class="container text-center">
+
             <div class="row align-items-center">
-                <!-- Text Column -->
+            
                 <div class="col-md-6 text-center text-md-start">
-                    <h2 class="display-5 fw-bold mb-0">TOTAL QUALITY</h2>
-                    <h2 class="display-5 fw-bold mb-0">MANUFACTURING</h2>
-                    <h2 class="display-5 fw-bold mb-0">PRODUCTS</h2>
-                    <h2 class="display-5 fw-bold text-danger mb-0">PHILIPPINES CORPORATION</h2>
+                    <h2 class="display-5 fw-bold mb-0"></h2>
+                    <h2 class="display-5 fw-bold mb-0">TOTAL </h2>
+                    <h2 class="display-5 fw-bold mb-0"> QUALITY </h2>
+                    <h2 class="display-5 fw-bold mb-0"> MANUFACTURING </h2>
+                    <h2 class="display-5 fw-bold mb-0"> PRODUCTS</h2>
+                    <h2 class=" fw-bold text-danger mb-0">PHILIPPINES CORPORATION</h2>
                     <p class="text-muted mb-4">
-                        Transforming industries with cutting-edge solutions and unwavering commitment to excellence.
-                        Join us on our
-                        journey to redefine quality and innovation.
+                        Transforming industries with cutting-edge solutions and unwavering commitment to excellence. <br>
+                        Join us on our journey to redefine quality and innovation.
                     </p>
                     <button type="button" class="btn btn-outline-danger btn-lg px-4 py-2">
                         Register
                     </button>
                 </div>
 
-                <!-- Image Column -->
                 <div class="col-md-6 text-center py-3">
                     <div class="position-relative">
                         <img src="{{ asset('storage/logos/TQMPBuilding.jpg') }}" alt="Philippines"
@@ -103,53 +104,83 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End of Landing -->
 
+    <div class="px-4 text-center border-bottom text-center">
+        <h1 class="display-4 fw-bold">We are the marketing arm of glass <br> and aluminum conglomerate</h1>
+        <div class="col-lg-6 mx-auto">
+            <h4 class="text-muted">TOTAL QUALITY MANUFACTURING PRODUCTS PHILIPPINES CORPORATION</h4>
+            <!-- <h1 class="display-4 fw-bold" style="color: #7E1416;">PHILIPPINES CORPORATION</h1> -->
+            <div class="text-center mb-5">
+                <a type="button" class="btn btn-danger btn-lg px-4 me-sm-3">Register <i class="fa-solid fa-arrow-right" style="font-size: 9px;"></i></a>
+            </div>
+        </div>
+        <div style="max-height: 40vh;">
+            <div class="container px-5">
+                <img src="{{ asset('storage/logos/TQMPBuilding.jpg') }}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="800" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- Line -->
-    <div class="container text-center">
+    <div class="container text-center py-5">
         <hr style="width: 30%;  margin: 20px auto;">
     </div>
     <!-- End of Line -->
 
+
+
     <!-- Services -->
     <section id="services" class="py-3">
-        <div class="container text-center">
-            <!-- Badge -->
-            <span class="badge text-white mb-2" style="background-color: #950101;">Our Services</span>
-            <!-- Heading -->
-            <h2 class="fw-bold">What We Offer</h2>
-            <!-- Paragraph -->
-            <p class="mt-3">
-                We offer Bulletproofing of Vehicles with several benefits and very good options for your additional security.
-                Bullets literally "bounce off" to the vehicle due to its thick and heavy body, your vehicle serves like a tank for your protection and definely a life saver!
-                We also process the following glass types; Tempered glass, Curve glass, Laminated glass and Insulating Glass Unit (ICU)
-            </p>
+        <div class="container ">
+            <div class="text-center">
+                <!-- Badge -->
+                <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Our Services</span> -->
+                <!-- Heading -->
+                <h2 class="fw-bold" style="color: #7E1416;">What We Offer</h2>
+                <!-- Paragraph -->
+                <p class="mt-3">
+                    We are dedicated to delivering high-quality products and services that meet the highest industry standards.
+                    Our advanced techniques and state-of-the-art equipment ensure that every project is completed with precision and excellence.
+                </p>
+            </div>
+
             <!-- Cards -->
-            <div class="row mt-6">
+
+            <div class="row mt-4">
                 <!-- Card 1 -->
-                <div class="col-md-6">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top rounded" height="425">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Bullet Proofing</h5>
-                            <!-- <p class="text-muted">8 Products Available</p> -->
-                            <button type="button" class="btn btn-outline-danger btn-sm px-4 py-2"> Request Quotation</button>
+                <div class="col-md-6 py-3">
+                    <div class="card border-0 shadow-lg">
+                        <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top img-fluid rounded-0" style="height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold mb-3">Bullet Proofing</h5>
+                            <p>This protection ensures your vehicle is as resilient as a tank, offering superior protection and ultimately saving lives.</p>
                         </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
+
                 </div>
                 <!-- Card 2 -->
-                <div class="col-md-6">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top rounded" height="425">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Glass Processing</h5>
-                            <!-- <p class="text-muted">8 Products Available</p> -->
-                            <button type="button" class="btn btn-outline-danger btn-sm px-4 py-2">Request Quotation</button>
+                <div class="col-md-6 py-3">
+                    <div class="card border-0 shadow-lg">
+                        <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top img-fluid rounded-0" style="height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold mb-3">Glass Processing</h5>
+                            <p>Our advanced glass processing techniques ensure durability and quality, catering to a wide range of architectural and industrial needs.</p>
                         </div>
+                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
+
                 </div>
             </div>
+
+
+
+
+
 
             <!-- Browse See More Button -->
             <!-- <div class="mt-4">
@@ -160,57 +191,52 @@
 
     <!-- Category -->
     <section id="category" class="py-3">
-        <div class="container text-center">
-            <!-- Badge -->
-            <span class="badge text-white mb-2" style="background-color: #950101;">Category</span>
-            <!-- Heading -->
-            <h2 class="fw-bold">Shop by Category</h2>
-            <!-- Paragraph -->
-            <p class="mt-3">
-                We are now offering our valued customers the ability to shop online and have our services delivered right to your door. Please feel free to use our new online services.
-            </p>
+        <div class="container  ">
+            <div class="text-center">
+                <!-- Badge -->
+                <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Category</span> -->
+                <!-- Heading -->
+                <h2 class="fw-bold" style="color: #7E1416;">Shop by Category</h2>
+                <!-- Paragraph -->
+                <p class="mt-3">
+                    We are now offering our valued customers the ability to shop online and have our services delivered right to your door. Please feel free to use our new online services.
+                </p>
+            </div>
             <!-- Category Cards -->
-            <div class="row mt-5">
+            <div class="row">
                 <!-- Category 1 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/glass-processing/cool silver only.jpg') }}" alt="Bulletproof" class="card-img-top rounded" height="300">
-                        <div class="card-body">
+                <div class="col-md-4 py-3 d-flex align-items-stretch">
+                    <div class="card border-0 shadow-lg d-flex flex-column">
+                        <img src="{{ asset('storage/glass-processing/cool silver only.jpg') }}" alt="Bulletproof" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold">Glass</h5>
-
-                            <div class="">
-                                <button type="button" class="btn btn-outline-danger ">Order Now</button>
-                            </div>
+                            <p class="flex-grow-1">We offer a wide range of glass products for different applications, ensuring quality and durability.</p>
                         </div>
+                        <a href="#" class="card-button mt-auto">Get Quotation</a>
                     </div>
                 </div>
 
                 <!-- Category 2 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/home/aluminum.jpg') }}"
-                            alt="Category 2" class="card-img-top rounded" height="300">
-                        <div class="card-body">
+                <div class="col-md-4 py-3 d-flex align-items-stretch">
+                    <div class="card border-0 shadow-lg d-flex flex-column">
+                        <img src="{{ asset('storage/home/aluminum.jpg') }}" alt="Category 2" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold">Aluminum</h5>
-
-                            <div class="">
-                                <button type="button" class="btn btn-outline-danger ">Order Now</button>
-                            </div>
+                            <p class="flex-grow-1">A versatile and lightweight metal used in a variety of applications due to its strength, corrosion resistance, and aesthetic appeal.</p>
                         </div>
+                        <a href="#" class="card-button mt-auto">Get Quotation</a>
                     </div>
                 </div>
 
                 <!-- Category 3 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('storage/home/gen-trade.jpg') }}" alt="Gen Trade" class="card-img-top rounded" height="300">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Gen Trade</h5>
-
-                            <div class="">
-                                <button type="button" class="btn btn-outline-danger ">Order Now</button>
-                            </div>
+                <div class="col-md-4 py-3 d-flex align-items-stretch">
+                    <div class="card border-0 shadow-lg d-flex flex-column">
+                        <img src="{{ asset('storage/home/gen-trade.jpg') }}" alt="Gen Trade" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold">Other Products</h5>
+                            <p class="flex-grow-1">In addition to aluminum and glass, we offer a variety of hardware products essential for construction and installation.</p>
                         </div>
+                        <a href="#" class="card-button mt-auto">Get Quotation</a>
                     </div>
                 </div>
             </div>

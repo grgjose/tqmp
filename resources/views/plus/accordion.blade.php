@@ -8,8 +8,8 @@
         <section class="py-3">
             <div class="container text-center">
                 <!-- FAQ Heading -->
-                <span class="badge text-white mb-2" style="background-color: #950101;">FAQs</span>
-                <h2 class="fw-bold">Any Questions? Look Here</h2>
+                <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">FAQs</span> -->
+                <h2 class="fw-bold" style="color: #7E1416;">Frequently Asked Questions</h2>
                 <p class="text-muted">
                     We have sorted out your frequently asked questions. You can select the one that best meets your needs by clicking below.
                 </p>

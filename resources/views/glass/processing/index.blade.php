@@ -12,12 +12,9 @@
     <title>Glass Processing | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
-    <!-- Preconnect for External Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -61,28 +58,25 @@
     <!-- End of landing  -->
 
     <!-- Glass Processing Section -->
-    <section class="custom-section fade-in py-5 align-items-center">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Text Column -->
-                <div class="col-md-6 text-center text-md-start">
-                    <h2 class="fw-bold">Glass Processing</h2>
-                    <p class="text-muted">With years of experience in the glass industry, we pride ourselves with our commitment in providing top-notch products and services to our clients.
-                        Our factory is equipped with state-of-the-art technology and machinery, allowing us to produce a wide range of tempered glass products including glass doors, windows, shower enclosures, and more.
-                        At Philippine Glass Processing Specialist, we prioritize customer satisfaction and strive to exceed our clients' expectations with every project.</p>
-                    <!-- <button type="button" class="btn btn-danger">
-                        Get Started
-                    </button> -->
-                </div>
-
+    <section>
+        <div class="container mt-5 text-center">
+            <!-- <h2 class="fw-bold" style="color: #7E1416;">Aluminum Manufacturing</h2>
+            <p></p> -->
+        </div>
+        <div class="card mb-3 mx-auto mt-5" style="max-width: 1300px;">
+            <div class="row g-0 justify-content-center">
                 <!-- Image Column -->
-                <div class="col-md-6 text-center">
-                    <div class="position-relative">
-                        <img src="{{ asset('storage/logos/pgpsi-logo.png') }}"
-                            alt="Philippines" class="img-fluid rounded lg">
-                        <div
-                            class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
-                        </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('storage/logos/pgpsi-logo.png') }}"
+                        alt="Aluminum Manufacturing" class="img-fluid rounded lg" style="padding: 20px;">
+                </div>
+                <!-- Text Column -->
+                <div class="col-md-8">
+                    <div class="card-body py-5">
+                        <h2 class="fw-bold" style="color: #7E1416;">About Glass Processing</h2>
+                        <p> With years of experience in the glass industry, we pride ourselves with our commitment in providing top-notch products and services to our clients.
+                            Our factory is equipped with state-of-the-art technology and machinery, allowing us to produce a wide range of tempered glass products including glass doors, windows, shower enclosures, and more.
+                            At Philippine Glass Processing Specialist, we prioritize customer satisfaction and strive to exceed our clients' expectations with every project.</p>
                     </div>
                 </div>
             </div>
@@ -90,93 +84,66 @@
     </section>
     <!-- Glass Processing Section -->
 
-
+    <div class="container mt-5 text-center">
+        <!-- Badge -->
+        <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Services</span> -->
+        <!-- Heading -->
+        <h2 class="fw-bold" style="color: #7E1416;">Glass Processing Services</h2>
+        <p class="text-muted">
+            The following are the services offered under Glass Processing
+        </p>
+    </div>
 
     <!-- Services -->
-    <section id="services" class=" container py-4">
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette align-items-center">
-            <div class="col-md-7">
-                <h2 class="fw-bold">Tempered Glass</h2>
-                <p class="text-muted"> Fully tempered glass is a unique glazing material. It is about 3 to 5 times stronger than an ordinary or annealed glass of the same thickness and configuration.</p>
-                <button type="button" class="btn btn-outline-danger">Request Quotation</button>
-            </div>
-            <div class="col-md-5 py-3">
-                <div class="position-relative">
-                    <img src="{{ asset('storage/glass-processing/tempered.png') }}"
-                        alt="Tempered Glass" class="img-fluid rounded lg" height="500">
-                    <div
-                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+    <section id="services" class="container py-4">
+        <div class="row">
+            <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                <div class="card border-0 shadow-lg d-flex flex-column">
+                    <img src="{{ asset('storage/glass-processing/tempered.png') }}" alt="Tempered Glass" class="card-img-top" style="object-fit: cover; height: 200px;">
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title fw-bold">Tempered Glass</h6>
+                        <p class="card-text flex-grow-1">Fully tempered glass is a unique glazing material. It is about 3 to 5 times stronger than an ordinary or annealed glass of the same thickness and configuration.</p>
                     </div>
+                    <a href="#" class="card-button mt-auto">Get Quotation</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                <div class="card border-0 shadow-lg d-flex flex-column">
+                    <img src="{{ asset('storage/glass-processing/laminated.png') }}" alt="Laminated Glass" class="card-img-top" style="object-fit: cover; height: 200px;">
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title fw-bold">Laminated Glass</h6>
+                        <p class="card-text flex-grow-1">Laminated glass is a multi-functional glazing material that can be used in a variety of applications. It is manufactured by permanently bonding two or more glass panes with layers of polyvinyl butyral (PVB) interlayer, under heat and pressure to produce a single product.</p>
+                    </div>
+                    <a href="#" class="card-button mt-auto">Get Quotation</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                <div class="card border-0 shadow-lg d-flex flex-column">
+                    <img src="{{ asset('storage/glass-processing/curved.jpg') }}" alt="Curved Glass" class="card-img-top" style="object-fit: cover; height: 200px;">
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title fw-bold">Curved Tempered Glass</h6>
+                        <p class="card-text flex-grow-1">In the same manner with flat tempered glass, curved tempered glass is also resistant to mechanical stresses (bending, impact, etc.) and thermal stresses (temperature difference), without altering the properties of the basic product.</p>
+                    </div>
+                    <a href="#" class="card-button mt-auto">Get Quotation</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                <div class="card border-0 shadow-lg d-flex flex-column">
+                    <img src="{{ asset('storage/glass-processing/igu.png') }}" alt="IGU" class="card-img-top" style="object-fit: cover; height: 200px;">
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title fw-bold">Insulating Glass Unit (IGU)</h6>
+                        <p class="card-text flex-grow-1">Insulating glass unit is a set of two or more lites of glass separated by air space and hermetically sealed to form a single unit. Its most important function is to improve the thermal performance of glass when used in architectural applications.</p>
+                    </div>
+                    <a href="#" class="card-button mt-auto">Get Quotation</a>
                 </div>
             </div>
         </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette align-items-center">
-            <div class="col-md-7 order-md-2">
-                <h2 class="fw-bold">Laminated Glass</h2>
-                <p class="text-muted"> Laminated glass is a multi-functional glazing material that can be used in a variety of applications.
-                    It is manufactured by permanently bonding two or more glass panes with layers of polyvinyl butyral (PVB) interlayer, under heat and pressure to produce a single products.</p>
-                <button type="button" class="btn btn-outline-danger">Request Quotation</button>
-            </div>
-            <div class="col-md-5 py-3">
-                <div class="position-relative">
-                    <img src="{{ asset('storage/glass-processing/laminated.png') }}"
-                        alt="Laminated Glass" class="img-fluid rounded lg" height="500">
-                    <div
-                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette align-items-center">
-            <div class="col-md-7">
-                <h2 class="fw-bold">Curved Tempered Glass</h2>
-                <p class="text-muted"> In the same manner with flat tempered glass, curved tempered glass is also resistant to mechanical stresses (bending, impact, etc.)
-                    and thermal stresses (temperature difference), without altering the properties of the basic products.</p>
-                <button type="button" class="btn btn-outline-danger">Request Quotation</button>
-            </div>
-            <div class="col-md-5 py-3">
-                <div class="position-relative">
-                    <img src="{{ asset('storage/glass-processing/curved.jpg') }}"
-                        alt="Curved Glass" class="img-fluid rounded lg" height="500">
-                    <div
-                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette align-items-center">
-            <div class="col-md-7 order-md-2">
-                <h2 class="fw-bold">Insulating Glass Unit (IGU)</h2>
-                <p class="text-muted">Insulating glass unit is a set of two or more lites of glass separated by air space and hermetically sealed to form a single unit.
-                    Its most important function is to improve the thermal performance of glass when used in architectural applications.</p>
-                <button type="button" class="btn btn-outline-danger">Request Quotation</button>
-            </div>
-            <div class="col-md-5 py-3">
-                <div class="position-relative">
-                    <img src="{{ asset('storage/glass-processing/igu.png') }}"
-                        alt="IGU" class="img-fluid rounded lg" height="500">
-                    <div
-                        class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
     </section>
+
+
     <!-- End of Services -->
 
     <!-- Accordion Section -->

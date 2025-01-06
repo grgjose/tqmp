@@ -12,12 +12,9 @@
     <title>Contact Us | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
-    <!-- Preconnect for External Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -42,7 +39,7 @@
 
     <!-- Contact Section -->
     <div class="container text-center py-5">
-        <span class="badge text-white mb-2" style="background-color: #950101;">Contact Us</span>
+        <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Contact Us</span>
         <h2 class="fw-bold">Reach us for inquiries</h2>
         <!-- Paragraph -->
         <p class="mt-3">
@@ -92,19 +89,64 @@
                     </div>
 
                     <!-- Contact Information -->
-                    <div class="col-md-6 contact-info">
-                        <h3 class="fw-bold">Get in Touch</h3><br>
-                        <div class="mb-4">
-                            <h5><i class="fas fa-map-marker-alt text-danger me-2"></i> Office</h5>
-                            <p class="text-muted mb-0">Please visit us to have a discussion.</p>
-                            <p>168 Sapang Bakaw, Lawang Bato, Valenzuela City Philippines 1447</p>
+                    <div class="col-md-3 contact-info">
+                        <h3 class="fw-bold">Locations</h3><br>
+
+                        <div class="mb-3">
+                            <h5><i class="fas fa-map-marker-alt text-danger me-2"></i> Main Office</h5>
+                            <!-- <p class="text-muted mb-0">Please visit us to have a discussion.</p> -->
+                            <p><b>Valenuzela Sales Office</b> (Main Office) <br>
+                                168 Sapang Bakaw, Lawang Bato, Valenzuela City Philippines 1447 <br>
+                                +632-7717-8767
+                            </p>
                         </div>
-                        <div class="mb-4">
+                        <div class="mb-3">
+                            <h5><i class="fas fa-map-marker-alt text-danger me-2"></i> Luzon Office</h5>
+                            <!-- <p class="text-muted mb-0">Please visit us to have a discussion.</p> -->
+                            <p><b>Cauayan Sales Office</b><br>
+                                A4 Compound , Cabanatuan Road San Fermin Cauayan City Isabela <br>
+                                Contact No. +63 78-652-1158</p>
+
+                            <p><b>Dagupan Sales office</b><br>
+                                De Venecia Ave, Lasip Choco, Dagupan City, Pangasinan <br>
+                                Contact No. 0908-876-5324 <br>
+                                Contact No. 0919-085-5110 <br>
+                                Contact No. 0919-085-5125
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <h5><i class="fas fa-map-marker-alt text-danger me-2"></i> Visayas Office</h5>
+                            <!-- <p class="text-muted mb-0">Please visit us to have a discussion.</p> -->
+                            <p><b>Cebu Branch</b><br>
+                                Km 14 SRP Highway, Dumlog, Talisay City, Cebu
+                            </p>
+                            <p><b>Iloilo Sales Office</b><br>
+                                Contact No. +63 905 551 5683
+                            </p>
+
+                        </div>
+                        <div class="mb-3">
+                            <h5><i class="fas fa-map-marker-alt text-danger me-2"></i> Mindanao Office</h5>
+                            <!-- <p class="text-muted mb-0">Please visit us to have a discussion.</p> -->
+                            <p><b>Davao Sales Office</b><br>
+                                Brgy. Bubod, Bunawan Cistrict, Davao City <br>
+                                Contact No. +639 05 551 5674
+                            </p>
+                            <p><b>Cagayan De Oro Sales office</b><br>
+                                Contact No. +63 905 551 5661
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 contact-info">
+                        <h3 class="fw-bold">Get in Touch</h3><br>
+
+                        <!-- <div class="mb-4">
                             <h5><i class="fas fa-phone-alt text-danger me-2"></i> Phone</h5>
                             <p class="text-muted mb-0">Please speak with us directly.</p>
                             <p>+632-7717-8767</p>
-                        </div>
-                        <div class="mb-4">
+                        </div> -->
+                        <div class="mb-3">
                             <h5><i class="fas fa-envelope text-danger me-2"></i> Email</h5>
                             <p class="text-muted mb-0">Please write to us directly.</p>
                             <p>sales@tqmp.biz</p>
@@ -123,7 +165,7 @@
                 <div class="row">
                     <!-- Google Map Section -->
                     <div class="col-lg-12 py-3">
-                        <h3 class="fw-bold">We are located at</h3>
+                        <h3 class="fw-bold">Our main branch is located at:</h3>
                         <div class="mt-4">
                             <iframe
                                 width="100%" height="500"
