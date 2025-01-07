@@ -58,7 +58,7 @@
 
 
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
-        style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)), 
+        style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)),
                     url('https://www.pfg.com.ph/images/slider/01.jpg') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
@@ -86,7 +86,7 @@
             <!-- Badge -->
             <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">About Bullet Proofing</span> -->
             <!-- Heading -->
-            
+
 
         </div>
         <div class="card mb-3 mx-auto mt-5" style="max-width: 1300px;">
@@ -498,7 +498,7 @@
     <!-- End of Line -->
 
     <!-- Awards Section -->
-   
+
 
     <section>
         <div class="container mt-5 text-center">
@@ -508,7 +508,7 @@
             <h2 class="fw-bold" style="color: #7E1416;">Awards and Recognition</h2>
             <p>Honoring Excellence: Celebrating our Legacy of Innovation and Quality in Glass and Aluminum Solutions.</p>
         </div>
-        
+
         <div class="card mb-3 mx-auto mt-5" style="max-width: 1300px;">
             <div class="row g-0 justify-content-center">
                 <!-- Image Column -->

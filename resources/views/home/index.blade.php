@@ -36,10 +36,26 @@
     @include('plus.navbar')
     <!-- End of Header -->
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background" style="background: url('storage/logos/tqmpnew-edited.jpg') center/cover no-repeat, rgba(0, 0, 0, 0.4); background-blend-mode: overlay;">
+        <!-- <img src="{{ asset('storage/logos/tqmpnew-edited.jpg') }}" alt="" data-aos="fade-in"> -->
+        <div class="container">
+            <div class="row justify-content-center text-center text-light" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-xl-6 col-lg-8">
+                    <h2 class="fade-in">We are the Marketing Arm of Glass and Aluminum Conglomerate<span>.</span></h2>
+                    <p class="fade-in">TOTAL QUALITY MANUFACTURING PRODUCTS PHILIPPINES CORPORATION</p>
+                    <div class="text-center mb-5 mt-3">
+                        <a type="button" class="btn btn-outline-light btn-lg px-4 me-sm-3">Register <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /Hero Section -->
+
     <!-- Albums (Company Logos) -->
     <section id="companies" class=" container d-flex gap-2 justify-content-center py-5 fade-in">
         <div align="center" valign="middle">
-            <div class=" container logo-scroller">
+            <div class=" container logo-scroller py-5">
                 <!-- <p class="link-secondary">Companies teamed with</p><br> -->
                 <div class="logos">
                     <!-- Logos -->
@@ -62,12 +78,9 @@
                     <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="header-img">
                 </div>
             </div>
-            <br>
-            <br>
         </div>
     </section>
     <!-- End of Albums -->
-
 
 
 
@@ -107,11 +120,11 @@
     </section> -->
     <!-- End of Landing -->
 
-    <div class="px-4 text-center border-bottom text-center">
+    <!-- <div class="px-4 text-center border-bottom text-center">
         <h1 class="display-4 fw-bold">We are the marketing arm of glass <br> and aluminum conglomerate</h1>
         <div class="col-lg-6 mx-auto">
             <h4 class="text-muted">TOTAL QUALITY MANUFACTURING PRODUCTS PHILIPPINES CORPORATION</h4>
-            <!-- <h1 class="display-4 fw-bold" style="color: #7E1416;">PHILIPPINES CORPORATION</h1> -->
+        
             <div class="text-center mb-5">
                 <a type="button" class="btn btn-danger btn-lg px-4 me-sm-3">Register <i class="fa-solid fa-arrow-right" style="font-size: 9px;"></i></a>
             </div>
@@ -121,14 +134,14 @@
                 <img src="{{ asset('storage/logos/TQMPBuilding.jpg') }}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="800" height="500" loading="lazy">
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
     <!-- Line -->
-    <div class="container text-center py-5">
+    <!-- <div class="container text-center">
         <hr style="width: 30%;  margin: 20px auto;">
-    </div>
+    </div> -->
     <!-- End of Line -->
 
 
