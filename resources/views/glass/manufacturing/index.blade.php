@@ -26,7 +26,7 @@
     <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
-<body>
+<body class="fade-in">
     <!-- Style -->
     @include('plus.style')
     <!-- End of Style -->
@@ -63,12 +63,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="fw-bold display-3" style="color: white;">Glass Manufacturing</h2>
-                    <p class="lead mt-3" style="color: white;">
+                    <h2 class="fw-bold display-3 fade-in" style="color: white;">Glass Manufacturing</h2>
+                    <p class="lead mt-3 fade-in" style="color: white;">
                         With over 60 years of experience in flat glass manufacturing in the country, PFGMI produces quality flat glass such as Clear Float and Tinted Float.
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
-                        <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
+                        <a href="" class="btn btn-outline-light text-decoration-none fade-in" style="font-size: smaller;">
                             <span><b>Find out more</b></span>
                         </a>
                     </div>
@@ -89,7 +89,7 @@
 
 
         </div>
-        <div class="card mb-3 mx-auto mt-5" style="max-width: 1300px;">
+        <div class="card mb-3 mx-auto mt-5 fade-in" style="max-width: 1300px;">
             <div class="row g-0 justify-content-center">
                 <!-- Image Column -->
                 <div class="col-md-4 d-flex justify-content-center align-items-center">

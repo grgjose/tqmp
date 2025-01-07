@@ -26,7 +26,7 @@
     <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
-<body>
+<body class="fade-in">
     <!-- Style -->
     @include('plus.style')
     <!-- End of Style -->
@@ -42,12 +42,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="fw-bold display-3" style="color: white;">Glass Processing</h2>
-                    <p class="lead mt-3" style="color: white;">
+                    <h2 class="fw-bold display-3 fade-in" style="color: white;">Glass Processing</h2>
+                    <p class="lead mt-3 fade-in" style="color: white;">
                         We are equipped with State-of-the-art technology and machinery , allowing us to produce a wide range of tempered glass products.
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
-                        <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
+                        <a href="" class="btn btn-outline-light text-decoration-none fade-in" style="font-size: smaller;">
                             <span><b>Find out more</b></span>
                         </a>
                     </div>
@@ -58,7 +58,7 @@
     <!-- End of landing  -->
 
     <!-- Glass Processing Section -->
-    <section>
+    <section class="fade-in">
         <div class="container mt-5 text-center">
             <!-- <h2 class="fw-bold" style="color: #7E1416;">Aluminum Manufacturing</h2>
             <p></p> -->

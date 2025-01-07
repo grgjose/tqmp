@@ -27,7 +27,7 @@
 </head>
 
 
-<body>
+<body class="fade-in">
     <!-- Style -->
     @include('plus.style')
     <!-- End of Style -->
