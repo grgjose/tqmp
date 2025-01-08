@@ -100,7 +100,7 @@
                 <!-- Text Column -->
                 <div class="col-md-8">
                     <div class="card-body py-5">
-                    <h2 class="fw-bold" style="color: #7E1416;">Glass Manufacturing</h2>
+                        <h2 class="fw-bold" style="color: #7E1416;">Glass Manufacturing</h2>
                         <p class="text-muted">Pioneer Float Glass Manufacturing Inc. (PFGMI) is the leading flat glass manufacturer in the Philippines.</p>
                         <p class="text-muted">Established in 1958 under the former name of Republic Glass Corporation, and eventually became a wholly owned subsidiary of AGC in 2001 adopting the company name AGC Flat Glass Philippines Inc.
                             In 2017, TQMP Glass Manufacturing Corp. acquired 100% of the AGPH shares thus becoming the torch bearer for the flat glass industry in the Philippines.</p>
@@ -123,13 +123,13 @@
                 <h2 class="fw-bold" style="color: #7E1416;">Products</h2>
                 <!-- Paragraph -->
                 <p class="mt-3">
-                    With over 60 years of experience in flat glass manufacturing in the country, PFGMI produces quality flat glass such as Clear Float and Tinted Float. Bind our commitment reaches beyond glass companies.
+                    With over six decades of expertise in the national flat glass manufacturing industry, PFGMI specializes in producing high-quality flat glass, including Clear Float and Tinted Float. Our dedication extends beyond the glass industry, reflecting a broader commitment to excellence.
                 </p>
 
             </div>
             <!-- Pagination  -->
 
-            <div class="container">
+            <div class="container py-5 ">
                 <!-- Card Content -->
                 <div class="tab-content" id="pagination-content">
                     <!-- Page 1 -->
@@ -146,7 +146,7 @@
                                         <p class="card-text">A Colourless and transparent glass that offers a very high level of light transmittance...</p>
 
                                         <!-- Accordion button -->
-                                        <a class="btn btn-outline-primary " type="button" data-bs-toggle="collapse" data-bs-target="#accordionExample" aria-expanded="false" aria-controls="accordionExample">
+                                        <a class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#accordionExample" aria-expanded="false" aria-controls="accordionExample">
                                             More Details <i class="fa-solid fa-chevron-down ml-3" style="font-size: 10px;"></i>
                                         </a>
 
@@ -496,37 +496,39 @@
     <!-- Awards Section -->
 
 
-    <section>
-        <div class="container mt-5 text-center">
-            <!-- Badge -->
-            <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">About Bullet Proofing</span> -->
-            <!-- Heading -->
-            <h2 class="fw-bold" style="color: #7E1416;">Awards and Recognition</h2>
-            <p>Honoring Excellence: Celebrating our Legacy of Innovation and Quality in Glass and Aluminum Solutions.</p>
-        </div>
+    <section id="awards" class="container">
+        <div class="card container py-5 mt-5 fade-in-up">
+            <div class="row justify-content-center align-items-center">
 
-        <div class="card mb-3 mx-auto mt-5" style="max-width: 1300px;">
-            <div class="row g-0 justify-content-center">
-                <!-- Image Column -->
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <img src="https://www.pfg.com.ph/images/awards/awards.jpg"
-                        alt="Philippines" class="img-fluid rounded lg" style="padding: 20px;">
+                <!-- Right Column -->
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="https://www.pfg.com.ph/images/awards/awards.jpg" alt="Philippines" class="img-fluid rounded-lg" style="padding: 20px;">
+                </div>
+                <!-- Left Column -->
+                <div class="col-lg-6">
+                    <h2 class="fw-bold" style="color: #7E1416;">Awards and Recognition</h2>
+                    <hr style="border-top: 3px solid #920B12; width: 150px;">
+
+                    <p> Honoring Excellence: Celebrating our Legacy of Innovation and Quality in Glass and Aluminum Solutions.</p>
+                    <ul style=" padding: 0;">
+                        <li><i class="bi bi-check-circle"></i><span>Outstanding Environmental Performer Award (PEZA)</span></li>
+                        <li><i class="bi bi-check-circle"></i><span>2006 E3 Excellence in Ecology and Economy</span></li>
+                        <li><i class="bi bi-check-circle"></i><span>Don Emilio Abello Energy Efficiency Awards</span></li>
+                        <li><i class="bi bi-check-circle"></i><span>Dangal ng Pasig Award</span></li>
+                        <li><i class="bi bi-check-circle"></i><span>Excellence in Ecology and Economy Award</span></li>
+                    </ul>
                 </div>
 
-                <!-- Text Column -->
-                <div class="col-md-8">
-                    <div class="card-body py-5">
-                        <!-- <h2 class="fw-bold">Awards and Recognition</h2> -->
-                        <p class="text-muted">Outstanding Environmental Performer Award (PEZA)</p>
-                        <p class="text-muted">2006 E3 Excellence in Ecology and Economy</p>
-                        <p class="text-muted">Don Emilio Abello Energy Efficiency Awards</p>
-                        <p class="text-muted">Dangal ng Pasig Award</p>
-                        <p class="text-muted">Excellence in Ecology and Economy Award</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
+
+
+
+
+
+
 
 
     <!-- End of Awards Section -->

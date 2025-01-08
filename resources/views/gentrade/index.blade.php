@@ -43,7 +43,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Architectural Hardwares</h2>
-                    <p class="lead mt-3 fade-in-up" style="color: white;">We are not just looking for wide range of architectural hardware. We are also aiming for strength, endurance and resistance of the product such as THORE Brand.</p>
+                    <p class="lead mt-3 fade-in-up" style="color: white;">With THORE Brand, we are not only seeking a wide range of architectural hardware but also prioritizing strength, endurance, and resistance in our products.</p>
                     <div class="d-flex align-items-center justify-content-center">
                         <a href="" class="btn btn-outline-light text-decoration-none fade-in" style="font-size: smaller;">
                             <span><b>Find out more</b></span>
@@ -63,7 +63,7 @@
                 <h2 class="fw-bold">Door Closers and Floor Hinges</h2>
                 <!-- Paragraph -->
                 <p class="mt-3">
-                    Door closers and floor hinges are hardware that is used for all doors with a self-closing feature.
+                    <b>Door closers and floor hinges are hardware that is used for all doors with a self-closing feature.</b>
                 </p>
 
                 <!-- Cards Row 2 -->
@@ -113,7 +113,7 @@
                 <h2 class="fw-bold">Patch Fittings</h2>
                 <!-- Paragraph -->
                 <p class="mt-3">
-                    Patch Fittings is a accessories to make a frameless door that is usually seen at all facilities like malls.
+                    <b>Patch Fittings is a accessories to make a frameless door that is usually seen at all facilities like malls.</b>
                 </p>
                 <!-- Cards Row 1 -->
                 <div class="row mt-4 g-3">
@@ -216,7 +216,7 @@
                     <h2 class="fw-bold">Handles</h2>
                     <!-- Paragraph -->
                     <p class="mt-3">
-                        Glass doors with a specific handle to a specific door to be using.
+                        <b>Glass doors with a specific handle to a specific door to be using.</b>
                     </p>
                     <!-- Cards Row 1 -->
                     <div class="row mt-4 g-3">
@@ -269,7 +269,7 @@
                 <h2 class="fw-bold">Shower Hinges</h2>
                 <!-- Paragraph -->
                 <p class="mt-3">
-                    Shower hinges is usually applied at shower enclosure can be swing push and pull in 90 degree.
+                    <b>Shower hinges is usually applied at shower enclosure can be swing push and pull in 90 degree.</b>
                 </p>
                 <!-- Cards Row 1 -->
                 <div class="row mt-4 g-3">
@@ -277,7 +277,7 @@
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0018.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;" >
+                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
                             <a href="#" class="card-button"> Get Quotation</a>
                         </div>
                     </div>
@@ -367,7 +367,7 @@
                     <h2 class="fw-bold">Shower Glass Clips</h2>
                     <!-- Paragraph -->
                     <p class="mt-3">
-                        Shower glass clips usually used in fix panel for a shower enclosure but most of the installer and fabricator use it in other applications such as railings with a support of stainless tube.
+                        <b>Shower glass clips usually used in fix panel for a shower enclosure but most of the installer and fabricator use it in other applications such as railings with a support of stainless tube.</b>
                     </p>
                     <!-- Cards Row 1 -->
                     <div class="row mt-4 g-3">
@@ -468,7 +468,7 @@
                 <h2 class="fw-bold">Sliding Shower Enclosure</h2>
                 <!-- Paragraph -->
                 <p class="mt-3">
-                    Shower enclosure usually seen in swing, we also have sliding function to space value to a minimal places.
+                    <b> Shower enclosure usually seen in swing, we also have sliding function to space value to a minimal places.</b>
                 </p>
                 <!-- Cards Row 1 -->
                 <div class="row mt-4 g-3">
@@ -512,13 +512,14 @@
                     <h2 class="fw-bold">Ladder</h2>
                     <!-- Paragraph -->
                     <p class="mt-3">
-                        Ladder safety begins with the selection of the proper ladder for the job includes inspection,setup, proper climbing and standing, proper use, care and storage. </p>
+                        <b>Ladder safety begins with the selection of the proper ladder for the job includes inspection,setup, proper climbing and standing, proper use, care and storage. </b>
+                    </p>
                     <!-- Cards Row 1 -->
-                    <div class="row mt-4 g-3">
+                    <div class="row mt-4 g-3 justify-content-center">
                         <!-- Card 1 -->
-                        <div class="col-md-6 offset-md-3">
+                        <div class="col-md-8">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="Category 1" class="card-img-top rounded" style="height: 400px; object-fit: contain;">
+                                <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="Category 1" class="card-img-top rounded" style="height: 500px; object-fit: contain;">
                                 <a href="#" class="card-button">Get Quotation</a>
                             </div>
 
@@ -539,22 +540,21 @@
     <!-- Jalouplus -->
     <section id="services" class="py-4">
         <div class="container">
-            <div class="container text-center">
+            <div class="text-center">
                 <!-- Heading -->
                 <h2 class="fw-bold">Jalouplus</h2>
                 <!-- Paragraph -->
                 <p class="mt-3">
-                    Jalouplus offers style and functionality. Water penetration resistance, can be used in air conditioned area. Provides the benefits of a glass louver window but now with impenetrable security.
+                    <b>Jalouplus offers style and functionality. Water penetration resistance, can be used in air conditioned area. Provides the benefits of a glass louver window but now with impenetrable security.</b>
                 </p>
                 <!-- Cards Row 1 -->
-                <div class="row mt-4 g-3">
+                <div class="row mt-4 g-3 justify-content-center">
                     <!-- Card 1 -->
-                    <div class="col-md-6 offset-md-3">
+                    <div class="col-md-8">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/jalouplus/jalouplus.jpg') }}" alt="Category 1" class="card-img-top rounded" style="height: 400px; object-fit: contain;">
+                            <img src="{{ asset('storage/jalouplus/jalouplus.jpg') }}" alt="Category 1" class="card-img-top rounded" style="height: 500px; object-fit: contain;">
                             <a href="#" class="card-button">Get Quotation</a>
                         </div>
-
                     </div>
                 </div>
 
@@ -564,8 +564,8 @@
                 </div>
             </div>
         </div>
-
     </section>
+
     <!-- End of Jalouplus -->
 
     <!-- Accordion Section -->

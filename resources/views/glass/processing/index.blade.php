@@ -44,7 +44,7 @@
                 <div class="col-md-8">
                     <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Glass Processing</h2>
                     <p class="lead mt-3 fade-in-up" style="color: white;">
-                        We are equipped with State-of-the-art technology and machinery , allowing us to produce a wide range of tempered glass products.
+                        Utilizing state-of-the-art technology and machinery, we are capable of producing an extensive range of tempered glass products.
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
                         <a href="" class="btn btn-outline-light text-decoration-none fade-in" style="font-size: smaller;">
@@ -74,9 +74,9 @@
                 <div class="col-md-8">
                     <div class="card-body py-5">
                         <h2 class="fw-bold" style="color: #7E1416;">About Glass Processing</h2>
-                        <p> With years of experience in the glass industry, we pride ourselves with our commitment in providing top-notch products and services to our clients.
-                            Our factory is equipped with state-of-the-art technology and machinery, allowing us to produce a wide range of tempered glass products including glass doors, windows, shower enclosures, and more.
-                            At Philippine Glass Processing Specialist, we prioritize customer satisfaction and strive to exceed our clients' expectations with every project.</p>
+                        <p> With extensive experience in the glass industry, we take pride in our commitment to delivering exceptional products and services to our clients.
+                            Our factory is equipped with state-of-the-art technology and machinery, enabling us to produce a diverse range of tempered glass products, including glass doors, windows, shower enclosures, and more.
+                            At Philippine Glass Processing Specialist, we prioritize customer satisfaction and consistently aim to exceed our clients' expectations with every project.</p>
                     </div>
                 </div>
             </div>
@@ -89,8 +89,8 @@
         <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Services</span> -->
         <!-- Heading -->
         <h2 class="fw-bold" style="color: #7E1416;">Glass Processing Services</h2>
-        <p class="text-muted">
-            The following are the services offered under Glass Processing
+        <p>
+            <b>PGPSI offers the following glass processing services</b>
         </p>
     </div>
 

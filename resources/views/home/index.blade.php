@@ -169,8 +169,7 @@
                 <h2 class="fw-bold" style="color: #7E1416;">What We Offer</h2>
                 <!-- Paragraph -->
                 <p class="mt-3">
-                    We are dedicated to delivering high-quality products and services that meet the highest industry standards.
-                    Our advanced techniques and state-of-the-art equipment ensure that every project is completed with precision and excellence.
+                    Committed to providing superior products and services that uphold the highest industry benchmarks. Our advanced techniques and state-of-the-art equipment ensure that every project is completed with precision and excellence.
                 </p>
             </div>
 

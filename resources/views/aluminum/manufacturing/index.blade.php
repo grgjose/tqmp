@@ -45,9 +45,8 @@
                 <div class="col-md-8">
                     <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Aluminum Manufacturing</h2>
                     <p class="lead mt-3 fade-in-up" style="color: white;">
-                        To aim a mass production of aluminum profiles and moving ahead to a high-end aluminum profiles,
-                        HSP Paragon Corporation is an aluminum extrusion plant complete with powder coating line and anodizing line for all your aluminum section requirements.
-                        We also have a recycling plant for all kinds of aluminum scraps.
+                        HSP Paragon Corporation, equipped with both powder coating and anodizing lines, is committed to mass-producing and advancing high-end aluminum profiles.
+                        Our facility also features a recycling plant for all types of aluminum scraps, ensuring comprehensive solutions for your aluminum section needs.
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
                         <a href="" class="btn btn-outline-light text-decoration-none fade-in" style="font-size: smaller;">
@@ -76,8 +75,8 @@
                 <!-- Text Column -->
                 <div class="col-md-8">
                     <div class="card-body py-5">
-                    <h2 class="fw-bold" style="color: #7E1416;">About aluminum</h2>
-                        <p> Aluminum manufacturing involves refining bauxite ore into alumina, followed by smelting to produce high-quality aluminum. 
+                        <h2 class="fw-bold" style="color: #7E1416;">About aluminum</h2>
+                        <p> Aluminum manufacturing involves refining bauxite ore into alumina, followed by smelting to produce high-quality aluminum.
                             This process yields a lightweight, durable, and versatile metal, essential for construction, transportation, packaging, and various industrial applications.
                             We are not just developing aluminum profiles, we are also structuring integrity, professionalism and excellence to make win-win circumstances to all of us.</p>
                     </div>

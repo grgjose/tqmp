@@ -36,7 +36,7 @@
     <!-- End of Header -->
 
     <style>
-        .timeline {
+        /* .timeline {
             position: relative;
         }
 
@@ -56,7 +56,7 @@
             margin-bottom: 30px;
             padding-left: 50px;
             padding-right: 50px;
-        }
+        } */
 
         /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
@@ -112,7 +112,7 @@
     <div class="page-title dark-background text-light" style="background: url('storage/logos/tqmpnew-edited.jpg') center/cover no-repeat, rgba(0, 0, 0, 0.4); background-blend-mode: overlay;">
         <div class="container position-relative">
             <h1 class="fade-in">Company History</h1>
-            <p class="lead mb-4 fade-in">TQMP PHILIPPINES is engaged in the marketing and selling of a wide range of glass products and aluminum sections for the construction industry. </p>
+            <p class="lead mb-4 fade-in">TQMP PHILIPPINES specializes in marketing and selling an extensive range of glass products and aluminum sections, serving the construction industry and beyond.</p>
 
         </div>
     </div>
@@ -155,49 +155,49 @@
                                     <div class="col-md-6 order-md-1 text-end">
                                         <h2 class="my-3" style="color: #920B12;"><b>1998 </b></i>
                                         </h2>
-                                        <p>Established in 1998, an emerging leader in the aluminum and glass industries. TQMP PHILIPPINES handles importations and trading of flat glass and other related products such as engineering adhesives, silicone sealants, abrasives, hardware's for glass and aluminum installations, and the like.</p>
+                                        <p class="text-center">Established in 1998, an emerging leader in the aluminum and glass industries. TQMP PHILIPPINES handles importations and trading of flat glass and other related products such as engineering adhesives, silicone sealants, abrasives, hardware's for glass and aluminum installations, and the like.</p>
                                     </div>
                                     <div class="col-md-6 order-md-2"></div>
                                 </div> <!-- Timeline Item 2 -->
                                 <div class="timeline-item d-flex align-items-center justify-content-center">
                                     <div class="col-md-6 order-md-2">
                                         <h2 class="my-3" style="color: #920B12;"><b>2005</b></h2>
-                                        <p>Armed with strong determination to meet the demand of the customers for high end architectural and industrial glass requirements, the company formed its first subsidiary company in 2005, the Philippine Glass Processing Specialist, Inc. (PGPSI), and invested several state-of-the-art processing machines.</p>
+                                        <p class="text-center">Armed with strong determination to meet the demand of the customers for high end architectural and industrial glass requirements, the company formed its first subsidiary company in 2005, the Philippine Glass Processing Specialist, Inc. (PGPSI), and invested several state-of-the-art processing machines.</p>
                                     </div>
                                     <div class="col-md-6 order-md-1 text-end"></div>
                                 </div> <!-- Timeline Item 3 -->
                                 <div class="timeline-item d-flex align-items-center justify-content-center">
                                     <div class="col-md-6 order-md-1 text-end">
                                         <h2 class="my-3" style="color: #920B12;"><b>Third Quarter of 2010</b></h2>
-                                        <p>In the third quarter of 2010, Assure Insurance Agency Corporation (AIAC), another subsidiary company of TQMP PHILIPPINES, was established. Assure Insurance Agency Corporation is the insurance arm of the company representing various insurance companies for non-life coverages.</p>
+                                        <p class="text-center">In the third quarter of 2010, Assure Insurance Agency Corporation (AIAC), another subsidiary company of TQMP PHILIPPINES, was established. Assure Insurance Agency Corporation is the insurance arm of the company representing various insurance companies for non-life coverages.</p>
                                     </div>
                                     <div class="col-md-6 order-md-2"></div>
                                 </div> <!-- Timeline Item 4 -->
                                 <div class="timeline-item d-flex align-items-center justify-content-center">
                                     <div class="col-md-6 order-md-2">
                                         <h2 class="my-3" style="color: #920B12;"><b>Fourth Quarter of 2010</b></h2>
-                                        <p>In the fourth quarter of 2010, another subsidiary company, TQMC Marketing, was established. TQMC Marketing imports and distributes wide variety of chemicals and raw ingredients for numerous industrial and food processing applications.</p>
+                                        <p class="text-center">In the fourth quarter of 2010, another subsidiary company, TQMC Marketing, was established. TQMC Marketing imports and distributes wide variety of chemicals and raw ingredients for numerous industrial and food processing applications.</p>
                                     </div>
                                     <div class="col-md-6 order-md-1 text-end"></div>
                                 </div> <!-- Timeline Item 5 -->
                                 <div class="timeline-item d-flex align-items-center justify-content-center">
                                     <div class="col-md-6 order-md-1 text-end">
                                         <h2 class="my-3" style="color: #920B12;"><b>Fourth Quarter of 2013</b></h2>
-                                        <p>In the fourth quarter of 2013, TQMP-Cebu was established. It houses the glass processing facilities that cater to the demands of Cebu and nearby provinces (Visayan Region).</p>
+                                        <p class="text-center">In the fourth quarter of 2013, TQMP-Cebu was established. It houses the glass processing facilities that cater to the demands of Cebu and nearby provinces (Visayan Region).</p>
                                     </div>
                                     <div class="col-md-6 order-md-2"></div>
                                 </div> <!-- Timeline Item 6 -->
                                 <div class="timeline-item d-flex align-items-center justify-content-center">
                                     <div class="col-md-6 order-md-2">
                                         <h2 class="my-3" style="color: #920B12;"><b>Second Quarter of 2014</b></h2>
-                                        <p>Southern Philippines Glass (SPG) started its operations at the second quarter of 2014 with the same facilities of TQMP-Cebu. It serves the growing demand of the Mindanao Region.</p>
+                                        <p class="text-center">Southern Philippines Glass (SPG) started its operations at the second quarter of 2014 with the same facilities of TQMP-Cebu. It serves the growing demand of the Mindanao Region.</p>
                                     </div>
                                     <div class="col-md-6 order-md-1 text-end"></div>
                                 </div> <!-- Timeline Item 7 -->
                                 <div class="timeline-item d-flex align-items-center justify-content-center">
                                     <div class="col-md-6 order-md-1 text-end">
                                         <h2 class="my-3" style="color: #920B12;"><b>Fourth Quarter of 2014</b></h2>
-                                        <p>In the fourth quarter of 2014, the new plant in Lawang Bato started its maiden operation. It houses one of the biggest tempering and modern glass processing facilities in Southeast Asia.</p>
+                                        <p class="text-center">In the fourth quarter of 2014, the new plant in Lawang Bato started its maiden operation. It houses one of the biggest tempering and modern glass processing facilities in Southeast Asia.</p>
                                     </div>
                                     <div class="col-md-6 order-md-2"></div>
                                 </div>
@@ -245,11 +245,13 @@
                     <!-- Card 3 -->
                     <div class="col-md-4">
                         <div class="card border-0">
-                            <img src="{{ asset('storage/about-us/about-5.jpg') }}"
+                            <img src="{{ asset('storage/about-us/about-1.jpg') }}"
                                 alt="Category 1" class="card-img-top rounded">
                             <div class="card-body">
                                 <h5 class="fw-bold">OUR VALUES</h5>
-                                <p class="text-muted">We strive for complete client satisfaction with our innovative services. Becoming the market leader in glass and aluminum requires constant improvement in addition to highly specialized and dependable process equipment.</p>
+                                <p class="text-muted">The goal is complete client satisfaction through innovative services.
+                                    Becoming the market leader in glass and aluminum requires constant
+                                    improvement and the use of highly specialized, dependable process equipment.</p>
                             </div>
                         </div>
                     </div>

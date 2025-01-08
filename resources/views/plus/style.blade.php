@@ -820,8 +820,8 @@
         transition: all 0.3s ease; */
 
         background-color: transparent;
-        color: #7E1416;
-        border: 1px solid #7E1416;
+        color: #172647;
+        border: 1px solid #172647;
         font-size: smaller;
         padding: 5px 10px;
         margin-right: 10px;
@@ -829,9 +829,9 @@
     }
 
     .pagination-button.active {
-        background-color: #7E1416;
+        background-color: #172647;
         color: #fff;
-        border-color: #7E1416;
+        border-color: #172647;
         border-radius: 4px;
         font-weight: bold;
         transform: scale(1.1);
@@ -839,7 +839,7 @@
     }
 
     .pagination-button:hover {
-        background-color: #7E1416;
+        background-color: #172647;
         border-radius: 4px;
         color: #ffffff;
         transform: translateY(-2px);

@@ -37,14 +37,14 @@
 
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
-        style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)), 
+        style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)),
                     url('https://images.pexels.com/photos/10981370/pexels-photo-10981370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Master</h2>
                     <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Armoured Vehicle</h2>
-                    <p class="lead mt-3 fade-in-up" style="color: white;">
+                    <p class="lead mt-5 fade-in-up" style="color: white;">
                         Your premier source for top-of-the-line and precision-engineered armoured vehicles
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
@@ -60,29 +60,58 @@
 
     <!-- Bullet Proofing Section -->
 
-    <section class="fade-in">
-        <div class="card mb-3 mx-auto py-3 mt-5" style="max-width: 1300px;">
-            <div class="row g-0">
-                <!-- Video Column -->
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}"
-                        alt="Bullet Proofing" class="img-fluid rounded-lg" style="padding: 20px;">
+    <section class="fade-in-up">
+        <div class="container py-5 mt-5">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Bullet Proofing" class="img-fluid rounded-lg" style="padding: 20px;">
                 </div>
-                <!-- Text Column -->
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <div class="card-body py-5 text-center">
-                        <h2 class="fw-bold" style="color: #7E1416;">Benefits of Bullet Proofing</h2>
-                        <ul class="list-unstyled">
-                            <li>1. Very good option for additional security.</li>
-                            <li>2. Bullets literally "bounce off" the vehicle.</li>
-                            <li>3. It has a thick and heavy body, like a tank for protection.</li>
-                            <li>4. It has special tires and glass.</li>
-                            <li>5. It literally saves lives.</li>
-                        </ul>
+
+                <!-- Right Column -->
+                <div class="col-lg-6">
+                    <div class="card-body py-5">
+                        <h2 class="fw-bold" style="color: #7E1416;">About us</h2>
+                        <hr style="border-top: 3px solid #920B12; width: 150px; ">
+                        <p>Bulletproofing is a meticulous security enhancement procedure designed to convert vehicles into fortified sanctuaries,
+                            capable of enduring a range of ballistic threats. This sophisticated process entails fortifying vehicles with high-grade materials like ballistic steel and advanced composites,
+                            guaranteeing substantial protection against bullets, shrapnel, and explosive devices.</p>
+                        <p>We offer tailored customization options that maintain essential security functionalities while allowing for sophisticated personalization.
+                            Our low-profile protection ensures discreet security, with armored vehicles that are virtually indistinguishable from standard models.</p>
+
                     </div>
                 </div>
-                <!-- Image Column -->
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="container py-5 mt-5 fade-in-up">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-lg-7">
+                <div class="our-story">
+
+                    <h2 class="fw-bold" style="color: #7E1416;">Benefits and key advantages of bulletproofing your vehicle</h2>
+                    <hr style="border-top: 3px solid #920B12; width: 150px; ">
+                    <p>Enjoy an unmatched sense of security with our solutions, designed for those traveling through potentially hazardous areas. Our cutting-edge security measures offer robust protection against ballistic threats and explosive devices, significantly reducing vulnerability during high-risk scenarios.</p>
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> <span>Assured Peace of mind - Provides invaluable assurance, particularly when traveling through potentially dangerous areas.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Enhanced Security - Ensures robust protection against ballistic threats, including bullets and explosive devices.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Reduced Vulnerability - Significantly lowers the risk to occupants during high-risk scenarios.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Optimized Performance - Preserves vehicle agility and handling despite the additional protective materials.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Tailored Customization - Allows for sophisticated customization while maintaining essential security functionalities.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Low Profile Protection - Offers discreet security, with armored vehicles appearing indistinguishable from standard models.</span></li>
+                    </ul>
+                    <p>In essence, our bulletproofing services are the perfect blend of advanced security, optimized performance, and customized aesthetics, all aimed at providing you with the ultimate peace of mind.</p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-5">
+                <div class="card d-flex justify-content-center align-items-center h-100">
                     <video controls class="img-fluid rounded-lg hover-video" muted loop style="padding: 10px; max-width: 100%;">
                         <source src="{{ asset('storage/vid/bulletproofvid-1.mp4') }}" type="video/mp4"> <!-- Replace with your video path -->
                         Your browser does not support the video tag.
@@ -90,22 +119,22 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <div class="container mt-5 text-center">
-        <!-- Badge -->
-        <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Services</span> -->
-        <!-- Heading -->
-        <h2 class="fw-bold" style="color: #7E1416;">Bullet Proofing Services</h2>
-        <p class="text-muted">
-            The following are the services offered under bullet proof manufacturing
-        </p>
     </div>
 
+
     <!-- Updated -->
-    <section class="container">
-        <div class="row">
+    <section class="container fade-in-up">
+        <div class="container mt-5 text-center">
+            <!-- Badge -->
+            <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Services</span> -->
+            <!-- Heading -->
+            <h2 class="fw-bold" style="color: #7E1416;">Bullet Proofing Services</h2>
+            <p class="text-muted">
+                The following are the services offered under bullet proof manufacturing
+            </p>
+        </div>
+
+        <div class="row mt-5">
             <!-- Card 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-lg">
@@ -234,7 +263,7 @@
         </div>
     </section>
 
-    <section class="container fade-in">
+    <section class="container fade-in mt-5">
         <div class="container mt-5 text-center">
             <!-- Badge -->
             <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Services</span> -->
@@ -245,7 +274,7 @@
             </p>
         </div>
 
-        <div class="container row mt-4">
+        <div class="container row mt-5">
             <!-- Card 1 -->
             <div class="col-md-6 py-3">
                 <div class="card border-0 shadow-lg">
@@ -253,7 +282,7 @@
                         <source src="{{ asset('storage/vid/bulletproofvid-2.mp4') }}" type="video/mp4"> <!-- Replace with your video path -->
                         Your browser does not support the video tag.
                     </video>
-                    <a  class="card-button">Armoured Toyota Fortuner</a>
+                    <a class="card-button">Armoured Toyota Fortuner</a>
                 </div>
             </div>
             <!-- Card 2 -->
@@ -271,9 +300,166 @@
 
     </section>
 
-    <!-- Accordion Section -->
-    @include ('plus.accordion')
-    <!-- End of Accordion -->
+    <section id="faqs">
+        <!-- Accordion Section -->
+        <section class="py-3 mt-5">
+            <div class="container text-center">
+                <!-- FAQ Heading -->
+                <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">FAQs</span> -->
+                <h2 class="fw-bold" style="color: #7E1416;">Frequently Asked Questions</h2>
+                <p class="text-muted">
+                    We have sorted out your frequently asked questions. You can select the one that best meets your needs by clicking below.
+                </p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="container mt-5">
+                <div class="accordion" id="faqAccordion">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                                style="color: #000;">
+                                <b>What types of vehicles can be bulletproofed?</b>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body" style="color: #6c757d;">
+                                N/A
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                style="color: #000;">
+                                <b>How does bulletproofing affect the vehicle's performance and handling?</b>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body" style="color: #6c757d;">
+                                N/A
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                style="color: #000;">
+                                <b>Can bulletproofing be customized to maintain the car's appearance?</b>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body" style="color: #6c757d;">
+                                N/A
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 4 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                                style="color: #000;">
+                                <b>How long does the bulletproofing process take?</b>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body" style="color: #6c757d;">
+                                N/A
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 5 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                                style="color: #000;">
+                                <b>What is the difference between light-weight and traditional armor?</b>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body" style="color: #6c757d;">
+                                N/A
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 6 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                                style="color: #000;">
+                                <b>Is bulletproofing a permanent modification?</b>
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body" style="color: #6c757d;">
+                                N/A
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 7 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"
+                                style="color: #000;">
+                                <b>How much does bulletproofing cost?</b>
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body" style="color: #6c757d;">
+                                N/A
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 8 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
+                                style="color: #000;">
+                                <b>Are there any maintenance requirements for bulletproofed vehicles?</b>
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body" style="color: #6c757d;">
+                                N/A
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- End of Accordion -->
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
 
     <!-- Call to Action -->
     @include ('plus.cta')
