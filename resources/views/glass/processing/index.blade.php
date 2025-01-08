@@ -26,7 +26,7 @@
     <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
-<body class="fade-in">
+<body>
     <!-- Style -->
     @include('plus.style')
     <!-- End of Style -->
@@ -42,8 +42,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="fw-bold display-3 fade-in" style="color: white;">Glass Processing</h2>
-                    <p class="lead mt-3 fade-in" style="color: white;">
+                    <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Glass Processing</h2>
+                    <p class="lead mt-3 fade-in-up" style="color: white;">
                         We are equipped with State-of-the-art technology and machinery , allowing us to produce a wide range of tempered glass products.
                     </p>
                     <div class="d-flex align-items-center justify-content-center">

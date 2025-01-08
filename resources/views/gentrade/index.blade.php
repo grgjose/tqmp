@@ -26,7 +26,7 @@
     <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
-<body class="fade-in">
+<body>
     <!-- Style -->
     @include('plus.style')
     <!-- End of Style -->
@@ -42,10 +42,10 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="fw-bold display-3" style="color: white;">Architectural Hardwares</h2>
-                    <p class="lead mt-3" style="color: white;">We are not just looking for wide range of architectural hardware. We are also aiming for strength, endurance and resistance of the product such as THORE Brand.</p>
+                    <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Architectural Hardwares</h2>
+                    <p class="lead mt-3 fade-in-up" style="color: white;">We are not just looking for wide range of architectural hardware. We are also aiming for strength, endurance and resistance of the product such as THORE Brand.</p>
                     <div class="d-flex align-items-center justify-content-center">
-                        <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
+                        <a href="" class="btn btn-outline-light text-decoration-none fade-in" style="font-size: smaller;">
                             <span><b>Find out more</b></span>
                         </a>
                     </div>

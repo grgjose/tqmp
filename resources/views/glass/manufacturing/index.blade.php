@@ -26,7 +26,7 @@
     <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
-<body class="fade-in">
+<body>
     <!-- Style -->
     @include('plus.style')
     <!-- End of Style -->
@@ -63,7 +63,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="fw-bold display-3 fade-in" style="color: white;">Glass Manufacturing</h2>
+                    <h2 class="fw-bold display-3 fade-up" style="color: white;">Glass Manufacturing</h2>
                     <p class="lead mt-3 fade-in" style="color: white;">
                         With over 60 years of experience in flat glass manufacturing in the country, PFGMI produces quality flat glass such as Clear Float and Tinted Float.
                     </p>

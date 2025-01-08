@@ -27,7 +27,7 @@
 </head>
 
 
-<body class="fade-in">
+<body>
     <!-- Style -->
     @include('plus.style')
     <!-- End of Style -->
@@ -50,7 +50,8 @@
                 </div>
             </div>
         </div>
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- /Hero Section -->
 
     <!-- Albums (Company Logos) -->
     <section id="companies" class=" container d-flex gap-2 justify-content-center py-5 fade-in">

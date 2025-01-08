@@ -43,14 +43,14 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="fw-bold display-3" style="color: white;">Aluminum Manufacturing</h2>
-                    <p class="lead mt-3" style="color: white;">
+                    <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Aluminum Manufacturing</h2>
+                    <p class="lead mt-3 fade-in-up" style="color: white;">
                         To aim a mass production of aluminum profiles and moving ahead to a high-end aluminum profiles,
                         HSP Paragon Corporation is an aluminum extrusion plant complete with powder coating line and anodizing line for all your aluminum section requirements.
                         We also have a recycling plant for all kinds of aluminum scraps.
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
-                        <a href="" class="btn btn-outline-light text-decoration-none" style="font-size: smaller;">
+                        <a href="" class="btn btn-outline-light text-decoration-none fade-in" style="font-size: smaller;">
                             <span><b>Find out more</b></span>
                         </a>
                     </div>

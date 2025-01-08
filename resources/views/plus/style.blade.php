@@ -1,4 +1,39 @@
 <style>
+    /* fade in up effect */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fade-in-up {
+        animation: fadeInUp 1s ease-out forwards;
+        /* Adjust the duration and easing as needed */
+    }
+
+    /* fade up effect  */
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fade-up {
+        animation: fadeUp 1s ease-out forwards;
+    }
+
     /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -112,30 +147,54 @@
         }
     }
 
-   
+    /* body,
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #hero {
+        height: 100vh;
+        margin-top: -80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('storage/logos/tqmpnew-edited.jpg') center/cover no-repeat, rgba(0, 0, 0, 0.4);
+        background-blend-mode: overlay;
+    } */
+
+    /* video playback */
+    .hover-video {
+        width: 100%;
+        transition: opacity 0.3s ease;
+    }
+
+    .hover-video:not(:hover) {
+        opacity: 0.7;
+    }
+
+    .hover-video:hover {
+        opacity: 1;
+        /* Play video on hover */
+        animation-play-state: running;
+    }
+
+    .hover-video:not(:hover) {
+        /* Pause video when not hovered */
+        animation-play-state: paused;
+    }
 
     /* Font */
     body {
         font-family: 'Poppins', sans-serif;
         font-size: small;
-
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        margin: 0;
-        padding: 0;
-
 
     }
 
-    /* .montserrat-<uniquifier> {
-        font-family: "Montserrat", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-    } */
-
-    /* Header  */
     /* General Button Styling */
 
     /* Card Animation */
@@ -143,38 +202,60 @@
         border: 1px solid #ddd;
         border-radius: 8px;
         overflow: hidden;
-        transition: transform 0.3s, box-shadow 0.3s;
+        opacity: 1;
+        /* Ensure the card is fully visible initially */
+        transform: translateY(0);
+        /* Set the starting position */
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        /* Smooth transition */
     }
 
     .card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        opacity: 0.9;
+        /* Slightly fade the card on hover */
+        transform: translateY(-10px);
+        /* Move the card up */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* Add shadow for emphasis */
     }
 
     /* Button Styles */
     .card-button {
         display: flex;
         justify-content: center;
+        align-items: center;
         padding: 10px 0;
         width: 100%;
         background-color: rgb(30, 50, 92);
         color: #fff;
         border-radius: 0 0 8px 8px;
         text-decoration: none;
-        transition: background-color 0.3s, transform 0.3s;
+        opacity: 1;
+        /* Ensure the button is fully visible initially */
+        transform: translateY(0);
+        /* Set the starting position */
+        transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+        /* Smooth transition */
     }
 
     .card-button:hover {
         text-decoration: none;
         background-color: #172647;
         color: #fff;
+        opacity: 0.9;
+        /* Slightly fade the button on hover */
         transform: translateY(-5px);
+        /* Move the button up slightly */
     }
+
+
 
 
     .btn {
         width: 120px;
     }
+
+    /* navbar effects  */
 
     .nav-link {
         color: #1C2033;
@@ -202,12 +283,6 @@
     }
 
     .navbar-toggler {
-        border: 2px;
-        outline: 2px;
-        font-size: 1.5rem;
-        /* color: #7E1416; */
-        background-color: #7E1416;
-        /* background: none; */
         cursor: pointer;
     }
 
@@ -244,11 +319,36 @@
             align-items: center;
         }
 
-        .btn-red {
-            width: auto;
-            text-align: center;
-        }
     }
+
+    /* button effect  */
+    .btn {
+   
+    border: none;
+    border-radius: 4px; /* Slightly rounded corners */
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn:hover {
+   
+    transform: translateY(-2px); /* Subtle lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.btn:active {
+    transform: translateY(1px); /* Press effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+
+.btn:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(23, 38, 71, 0.8); /* Focus glow */
+}
+
 
 
     /* End of header */
@@ -333,7 +433,6 @@
         color: #FFFFFF;
         border: 1px solid #FFFFFF;
         font-size: smaller;
-        font-weight: bold;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
@@ -461,7 +560,7 @@
         color: #fff;
         border: 0.5px solid #1E325C;
         font-size: smaller;
-        font-weight: bold;
+
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
@@ -478,7 +577,7 @@
         color: #FFFFFF;
         border: 1px solid #FFFFFF;
         font-size: smaller;
-        font-weight: bold;
+
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
@@ -552,27 +651,6 @@
 
     .thumbnail:hover {
         border-color: #7E1416;
-    }
-
-    /* About us parallax effect */
-    /* Parallax Section */
-    .parallax-section {
-        background-image: url('https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        background-size: cover;
-        background-attachment: fixed;
-        /* Enables parallax effect */
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 500px;
-        display: flex;
-        align-items: center;
-    }
-
-    .parallax-section .container {
-        background: rgba(255, 255, 255, 0.8);
-        /* Add a white overlay for text readability */
-        padding: 2rem;
-        border-radius: 10px;
     }
 
     /* Company Logos Animation  */

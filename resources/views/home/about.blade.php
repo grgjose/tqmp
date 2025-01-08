@@ -57,9 +57,67 @@
             padding-left: 50px;
             padding-right: 50px;
         }
+
+        /*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+        .page-title {
+            color: var(--default-color);
+            background-color: var(--background-color);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 160px 0 60px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .page-title:before {
+            content: "";
+            background-color: color-mix(in srgb, var(--background-color), transparent 40%);
+            position: absolute;
+            inset: 0;
+        }
+
+        .page-title h1 {
+            font-size: 56px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .page-title .breadcrumbs ol {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .page-title .breadcrumbs ol li+li {
+            padding-left: 10px;
+        }
+
+        .page-title .breadcrumbs ol li+li::before {
+            content: "/";
+            display: inline-block;
+            padding-right: 10px;
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+        }
     </style>
 
-    <section class="custom-section fade-in py-5 p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-light">
+    <!-- Page Title -->
+    <div class="page-title dark-background text-light" style="background: url('storage/logos/tqmpnew-edited.jpg') center/cover no-repeat, rgba(0, 0, 0, 0.4); background-blend-mode: overlay;">
+        <div class="container position-relative">
+            <h1 class="fade-in">Company History</h1>
+            <p class="lead mb-4 fade-in">TQMP PHILIPPINES is engaged in the marketing and selling of a wide range of glass products and aluminum sections for the construction industry. </p>
+
+        </div>
+    </div>
+
+    <!-- <section class="custom-section fade-in py-5 p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-light">
         <div class="container">
             <div class="row align-items-center text-center">
                 <div class="col-md-12 ">
@@ -79,13 +137,15 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- About Us Section -->
     <div class="container py-4">
 
+        <div class="container text-center fade-in-up">
+            <span class="badge text-white text-center mb-2" style="background-color: #950101; font-size:large;">Timeline</span>
+        </div>
 
-
-        <div id="timeline" class="container">
+        <div id="timeline" class="container fade-in-up">
             <div class="section section-md">
                 <div class="container">
                     <div class="row mt-4 justify-content-center">
@@ -197,7 +257,6 @@
 
         </section>
         <!-- End of Services -->
-
     </div>
 
     <!-- Accordion Section -->

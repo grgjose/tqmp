@@ -26,7 +26,7 @@
     <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
-<body class="fade-in">
+<body>
     <!-- Style -->
     @include('plus.style')
     <!-- End of Style -->
@@ -42,9 +42,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="fw-bold display-3 fade-in" style="color: white;">Master</h2>
-                    <h2 class="fw-bold display-3 fade-in" style="color: white;">Armoured Vehicle</h2>
-                    <p class="lead mt-3 fade-in" style="color: white;">
+                    <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Master</h2>
+                    <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Armoured Vehicle</h2>
+                    <p class="lead mt-3 fade-in-up" style="color: white;">
                         Your premier source for top-of-the-line and precision-engineered armoured vehicles
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
@@ -83,7 +83,7 @@
                 </div>
                 <!-- Image Column -->
                 <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <video controls class="img-fluid rounded-lg" style="padding: 10px; max-width: 100%;">
+                    <video controls class="img-fluid rounded-lg hover-video" muted loop style="padding: 10px; max-width: 100%;">
                         <source src="{{ asset('storage/vid/bulletproofvid-1.mp4') }}" type="video/mp4"> <!-- Replace with your video path -->
                         Your browser does not support the video tag.
                     </video>
@@ -234,7 +234,7 @@
         </div>
     </section>
 
-    <section class="fade-in">
+    <section class="container fade-in">
         <div class="container mt-5 text-center">
             <!-- Badge -->
             <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Services</span> -->
@@ -244,24 +244,31 @@
                 Here are some of our videos related to bullet proofing. You may take a look.
             </p>
         </div>
-        <div class="card mb-2 mx-auto mt-3" style="max-width: 1300px;">
-            <div class="row g-0">
-                <!-- Video Column 1 -->
-                <div class="col-md-6 d-flex justify-content-center align-items-center">
-                    <video controls class="img-fluid rounded-lg" style="padding: 10px; max-width: 50%;">
+
+        <div class="container row mt-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 py-3">
+                <div class="card border-0 shadow-lg">
+                    <video controls class="img-fluid rounded-lg hover-video" muted loop style="height: 400px; padding: 10px; max-width: 100%;">
                         <source src="{{ asset('storage/vid/bulletproofvid-2.mp4') }}" type="video/mp4"> <!-- Replace with your video path -->
                         Your browser does not support the video tag.
                     </video>
+                    <a  class="card-button">Armoured Toyota Fortuner</a>
                 </div>
-                <!-- Video Column 2 -->
-                <div class="col-md-6 d-flex justify-content-center align-items-center">
-                    <video controls class="img-fluid rounded-lg" style="padding: 10px; max-width: 50%;">
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 py-3">
+                <div class="card border-0 shadow-lg">
+                    <video controls class="img-fluid rounded-lg hover-video" muted loop style="height: 400px; padding: 10px; max-width: 100%;">
                         <source src="{{ asset('storage/vid/bulletproofvid-3.mp4') }}" type="video/mp4"> <!-- Replace with your video path -->
                         Your browser does not support the video tag.
                     </video>
+                    <a class="card-button">Armoured Land Cruiser 300 Series</a>
                 </div>
             </div>
         </div>
+
+
     </section>
 
     <!-- Accordion Section -->
@@ -275,6 +282,23 @@
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hoverVideo = document.querySelectorAll('.hover-video');
+
+            hoverVideo.forEach(video => {
+                video.addEventListener('mouseenter', function() {
+                    video.play();
+                });
+
+                video.addEventListener('mouseleave', function() {
+                    video.pause();
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
