@@ -139,7 +139,7 @@
         </div>
     </section> -->
     <!-- About Us Section -->
-    <div class="container py-4">
+    <div class="container py-5">
 
         <div class="container text-center fade-in-up">
             <span class="badge text-white text-center mb-2" style="background-color: #950101; font-size:large;">Timeline</span>
@@ -223,7 +223,7 @@
                     <!-- Card 1 -->
                     <div class="col-md-4">
                         <div class="card border-0">
-                            <img src="{{ asset('storage/about-us/about-1.jpg') }}"
+                            <img src="https://images.pexels.com/photos/7414284/pexels-photo-7414284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Category 1" class="card-img-top rounded">
                             <div class="card-body">
                                 <h5 class="fw-bold">MISSION</h5>

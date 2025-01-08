@@ -116,7 +116,7 @@
 
 
     <!-- Products -->
-    <section id="category" class="py-3 fade-in">
+    <section id="category" class="py-3 mt-5 fade-in-up">
         <div class="container ">
             <div class="container text-center">
                 <!-- Heading -->
@@ -491,11 +491,7 @@
     </section>
     <!-- End of Products -->
 
-    <!-- Line -->
-    <div class="container text-center">
-        <hr style="width: 30%;  margin: 20px auto;">
-    </div>
-    <!-- End of Line -->
+
 
     <!-- Awards Section -->
 

@@ -1,4 +1,67 @@
 <style>
+    /* Base styles for word animations */
+    .word-fade-in span {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(20px);
+        /* Start slightly below */
+        animation: wordFadeIn 0.5s ease-out forwards;
+    }
+
+    /* Stagger effect */
+    .word-fade-in span:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .word-fade-in span:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .word-fade-in span:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    .word-fade-in span:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    .word-fade-in span:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+
+    .word-fade-in span:nth-child(6) {
+        animation-delay: 0.6s;
+    }
+
+    .word-fade-in span:nth-child(7) {
+        animation-delay: 0.7s;
+    }
+
+    .word-fade-in span:nth-child(8) {
+        animation-delay: 0.8s;
+    }
+
+    .word-fade-in span:nth-child(9) {
+        animation-delay: 0.9s;
+    }
+
+    .word-fade-in span:nth-child(10) {
+        animation-delay: 1s;
+    }
+
+    /* Keyframes for the fade-in effect */
+    @keyframes wordFadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     /* fade in up effect */
     @keyframes fadeInUp {
         from {
@@ -323,31 +386,39 @@
 
     /* button effect  */
     .btn {
-   
-    border: none;
-    border-radius: 4px; /* Slightly rounded corners */
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
 
-.btn:hover {
-   
-    transform: translateY(-2px); /* Subtle lift on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-}
+        border: none;
+        border-radius: 4px;
+        /* Slightly rounded corners */
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow */
+    }
 
-.btn:active {
-    transform: translateY(1px); /* Press effect */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
-}
+    .btn:hover {
 
-.btn:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 8px rgba(23, 38, 71, 0.8); /* Focus glow */
-}
+        transform: translateY(-2px);
+        /* Subtle lift on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        /* Enhanced shadow */
+    }
+
+    .btn:active {
+        transform: translateY(1px);
+        /* Press effect */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Reduced shadow */
+    }
+
+    .btn:focus {
+        outline: none;
+        /* Remove default outline */
+        box-shadow: 0 0 8px rgba(23, 38, 71, 0.8);
+        /* Focus glow */
+    }
 
 
 

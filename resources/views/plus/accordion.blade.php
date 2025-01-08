@@ -1,11 +1,11 @@
         <!-- Line -->
-        <div class="container text-center">
+        <!-- <div class="container text-center">
             <hr style="width: 30%;  margin: 20px auto;">
-        </div>
+        </div> -->
         <!-- End of Line -->
 
         <!-- Accordion Section -->
-        <section class="py-3">
+        <section class="py-3 mt-5">
             <div class="container text-center">
                 <!-- FAQ Heading -->
                 <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">FAQs</span> -->

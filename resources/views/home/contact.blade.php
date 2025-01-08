@@ -38,7 +38,7 @@
     <!-- About Us Section -->
 
     <!-- Contact Section -->
-    <div class="container text-center py-5">
+    <div class="container text-center py-5 fade-in-up">
         <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Contact Us</span>
         <h2 class="fw-bold">Reach us for inquiries</h2>
         <!-- Paragraph -->

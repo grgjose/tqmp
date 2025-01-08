@@ -91,10 +91,10 @@
 
 
     <!-- Products -->
-    <section id="category" class="py-3 fade-in">
+    <section id="category" class="py-3 mt-5 fade-in-up">
         <div class="container text-center">
             <!-- Heading -->
-            <h2 class="fw-bold">Aluminum Profiles</h2>
+            <h2 class="fw-bold" style="color: #7E1416;">Aluminum Profiles</h2>
             <!-- Paragraph -->
             <p class="">
                 <!-- Raw Material Procurement > Mold Design and Processing > Extrusion Processing > Quality Inspection > Finished Product Packaging -->

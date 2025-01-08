@@ -61,7 +61,7 @@
     <!-- Bullet Proofing Section -->
 
     <section class="fade-in">
-        <div class="card mb-3 mx-auto mt-5" style="max-width: 1300px;">
+        <div class="card mb-3 mx-auto py-3 mt-5" style="max-width: 1300px;">
             <div class="row g-0">
                 <!-- Video Column -->
                 <div class="col-md-4 d-flex justify-content-center align-items-center">

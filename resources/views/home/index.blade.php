@@ -38,19 +38,31 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background" style="background: url('storage/logos/tqmpnew-edited.jpg') center/cover no-repeat, rgba(0, 0, 0, 0.4); background-blend-mode: overlay;">
-        <!-- <img src="{{ asset('storage/logos/tqmpnew-edited.jpg') }}" alt="" data-aos="fade-in"> -->
         <div class="container">
-            <div class="row justify-content-center text-center text-light" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center text-center text-light">
                 <div class="col-xl-6 col-lg-8">
-                    <h2 class="fade-in">We are the Marketing Arm of Glass and Aluminum Conglomerate<span>.</span></h2>
-                    <p class="fade-in">TOTAL QUALITY MANUFACTURING PRODUCTS PHILIPPINES CORPORATION</p>
+                    <!-- Heading with words wrapped in spans -->
+                    <h2 class="word-fade-in">
+                        <span>We</span> <span>are</span> <span>the</span> <span>Marketing</span> <span>Arm</span> <span>of</span>
+                        <span>Glass</span> <span>and</span> <span>Aluminum</span> <span>Conglomerate</span><span>.</span>
+                    </h2>
+                    <!-- Paragraph with words wrapped in spans -->
+                    <p class="word-fade-in">
+                        <span>TOTAL</span> <span>QUALITY</span> <span>MANUFACTURING</span> <span>PRODUCTS</span>
+                        <span>PHILIPPINES</span> <span>CORPORATION</span>
+                    </p>
+                    <!-- Button area remains the same -->
                     <div class="text-center mb-5 mt-3">
-                        <a type="button" class="btn btn-outline-light btn-lg px-4 me-sm-3">Register <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i></a>
+                        <a type="button" class="btn btn-outline-light btn-lg px-4 me-sm-3">Register
+                            <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
     <!-- /Hero Section -->
 
     <!-- Albums (Company Logos) -->
@@ -204,7 +216,7 @@
     <!-- End of Services -->
 
     <!-- Category -->
-    <section id="category" class="py-3">
+    <section id="category" class="py-3 mt-5">
         <div class="container  ">
             <div class="text-center">
                 <!-- Badge -->
