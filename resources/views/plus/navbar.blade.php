@@ -24,8 +24,8 @@
                         aria-expanded="false">Bullet Proofing</a>
                     <ul class="dropdown-menu" aria-labelledby="bulletproofingDropdown">
                         <li><a class="dropdown-item" href="/bulletproofing">Bullet Proof Armouring</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Benefits</a></li>
+                        <li><a class="dropdown-item" href="#">Videos</a></li>
                     </ul>
                 </li>
                 <!-- Glass MFG Dropdown -->
@@ -34,8 +34,8 @@
                         aria-expanded="false">Glass MFG</a>
                     <ul class="dropdown-menu" aria-labelledby="glassMfgDropdown">
                         <li><a class="dropdown-item" href="/glassmanufacturing">Glass Manufacturing</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Products</a></li>
+                        <li><a class="dropdown-item" href="#">Awards</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -43,8 +43,8 @@
                         aria-expanded="false">Aluminum MFG</a>
                     <ul class="dropdown-menu" aria-labelledby="aluminumMfgDropdown">
                         <li><a class="dropdown-item" href="/aluminummanufacturing">Aluminum MFG</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                        <li><a class="dropdown-item" href="#">Aluminum Profiles</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -52,17 +52,17 @@
                         aria-expanded="false">Glass Processing</a>
                     <ul class="dropdown-menu" aria-labelledby="glassPDropdown">
                         <li><a class="dropdown-item" href="/glassprocessing">Glass Processing</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                        <li><a class="dropdown-item" href="#">Services</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="gentradeDropdown" data-bs-toggle="dropdown"
                         aria-expanded="false">Other Products</a>
                     <ul class="dropdown-menu" aria-labelledby="gentradeDropdown">
-                        <li><a class="dropdown-item" href="/gentrade">Other Products</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="/gentrade">Architectural Hardwares</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Architectural Hardwares</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                     </ul>
                 </li>
                 <!-- Add your remaining dropdowns here following the same structure -->

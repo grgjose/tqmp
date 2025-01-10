@@ -49,6 +49,13 @@
         animation-delay: 1s;
     }
 
+    .word-fade-in span:nth-child(11) {
+        animation-delay: 1.1s;
+    }
+    .word-fade-in span:nth-child(12) {
+        animation-delay: 1.2s;
+    }
+
     /* Keyframes for the fade-in effect */
     @keyframes wordFadeIn {
         0% {
@@ -271,6 +278,7 @@
         /* Set the starting position */
         transition: opacity 0.3s ease, transform 0.3s ease;
         /* Smooth transition */
+        will-change: transform, opacity;
     }
 
     .card:hover {
@@ -278,7 +286,7 @@
         /* Slightly fade the card on hover */
         transform: translateY(-10px);
         /* Move the card up */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         /* Add shadow for emphasis */
     }
 

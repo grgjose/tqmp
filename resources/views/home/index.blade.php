@@ -36,18 +36,34 @@
     @include('plus.navbar')
     <!-- End of Header -->
 
+    <style>
+        .landing-text {
+            color: rgb(253, 253, 253);
+            text-shadow: 2px 2px 4px rgba(235, 69, 69, 0.9);
+            display: inline-block;
+            /* Ensures each word is styled separately */
+            -webkit-text-stroke: 1px white;
+            /* Outline thickness and color */
+            text-stroke: 0.5px white;
+            /* Fallback for other browsers */
+        }
+    </style>
+
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background" style="background: url('storage/logos/tqmpnew-edited.jpg') center/cover no-repeat, rgba(0, 0, 0, 0.4); background-blend-mode: overlay;">
+    <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.5), rgba(126, 20, 22, 0.5)),
+    url('storage/logos/tqmpnew-edited.jpg') no-repeat center center/cover;">
+
         <div class="container">
             <div class="row justify-content-center text-center text-light">
-                <div class="col-xl-6 col-lg-8">
+                <div class="col-xl-9 col-lg-8">
                     <!-- Heading with words wrapped in spans -->
-                    <h2 class="word-fade-in">
-                        <span>We</span> <span>are</span> <span>the</span> <span>Marketing</span> <span>Arm</span> <span>of</span>
-                        <span>Glass</span> <span>and</span> <span>Aluminum</span> <span>Conglomerate</span><span>.</span>
+                    <h2 class="word-fade-in landing-text">
+                        <span>WE</span> <span>ARE</span> <span>THE</span> <span>MARKETING</span> <span>ARM</span> <span>OF</span>
+                        <br><span>GLASS</span> <span>AND</span> <span>ALUMINUM</span>
+                        <br><span>CONGLOMERATE</span>
                     </h2>
                     <!-- Paragraph with words wrapped in spans -->
-                    <p class="word-fade-in">
+                    <p class="word-fade-in" style="font-size:xx-large;">
                         <span>TOTAL</span> <span>QUALITY</span> <span>MANUFACTURING</span> <span>PRODUCTS</span>
                         <span>PHILIPPINES</span> <span>CORPORATION</span>
                     </p>

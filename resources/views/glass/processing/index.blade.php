@@ -37,7 +37,7 @@
 
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
-        style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)), 
+        style="background: linear-gradient(rgba(23, 38, 71, 0.3), rgba(126, 20, 22, 0.4)),
                     url('https://images.pexels.com/photos/3736110/pexels-photo-3736110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">

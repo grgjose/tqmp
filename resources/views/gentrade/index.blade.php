@@ -37,7 +37,7 @@
 
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
-        style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)),
+        style="background: linear-gradient(rgba(23, 38, 71, 0.3), rgba(126, 20, 22, 0.3)),
                     url('https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
@@ -73,7 +73,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/doors/gsm-0060.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -81,7 +81,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/doors/gsm-0052.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                     <!-- Card 3 -->
@@ -89,7 +89,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/doors/gsm-0038.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0039.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -130,7 +130,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0050.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                     <!-- Card 3 -->
@@ -138,7 +138,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0054.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
 
@@ -147,7 +147,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0055.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0056.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -167,7 +167,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0057.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                     <!-- Card 3 -->
@@ -175,7 +175,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0058.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
 
@@ -184,7 +184,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0059.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
                             <div class="card border-0 shadow-lg">
                                 <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}"
                                     alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button"> Get Quotation</a>
+                                <a href="#" class="card-button">Order Now</a>
                             </div>
                         </div>
                         <!-- Card 2 -->
@@ -233,7 +233,7 @@
                             <div class="card border-0 shadow-lg">
                                 <img src="{{ asset('storage/archi-hardware/handles/THORE H-TYPE HANDLE.jpg') }}"
                                     alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button"> Get Quotation</a>
+                                <a href="#" class="card-button">Order Now</a>
                             </div>
                         </div>
                         <!-- Card 3 -->
@@ -241,7 +241,7 @@
                             <div class="card border-0 shadow-lg">
                                 <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}"
                                     alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button"> Get Quotation</a>
+                                <a href="#" class="card-button">Order Now</a>
                             </div>
                         </div>
 
@@ -278,7 +278,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0018.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -286,7 +286,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0019.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                     <!-- Card 3 -->
@@ -294,7 +294,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0020.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
 
@@ -303,7 +303,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0021.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -315,7 +315,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0011.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -323,7 +323,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0012.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                     <!-- Card 3 -->
@@ -331,7 +331,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0013.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
 
@@ -340,7 +340,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0014.jpg') }}"
                                 alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -376,7 +376,7 @@
                             <div class="card border-0 shadow-lg">
                                 <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0001.jpg') }}"
                                     alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button"> Get Quotation</a>
+                                <a href="#" class="card-button">Order Now</a>
                             </div>
                         </div>
                         <!-- Card 2 -->
@@ -384,7 +384,7 @@
                             <div class="card border-0 shadow-lg">
                                 <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0002.jpg') }}"
                                     alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button"> Get Quotation</a>
+                                <a href="#" class="card-button">Order Now</a>
                             </div>
                         </div>
                         <!-- Card 3 -->
@@ -392,7 +392,7 @@
                             <div class="card border-0 shadow-lg">
                                 <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0003.jpg') }}"
                                     alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button"> Get Quotation</a>
+                                <a href="#" class="card-button">Order Now</a>
                             </div>
                         </div>
 
@@ -401,7 +401,7 @@
                             <div class="card border-0 shadow-lg">
                                 <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0004.jpg') }}"
                                     alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button"> Get Quotation</a>
+                                <a href="#" class="card-button">Order Now</a>
                             </div>
                         </div>
 
@@ -415,7 +415,7 @@
                             <div class="card border-0 shadow-lg">
                                 <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0005.jpg') }}"
                                     alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button"> Get Quotation</a>
+                                <a href="#" class="card-button">Order Now</a>
                             </div>
                         </div>
                         <!-- Card 2 -->
@@ -423,7 +423,7 @@
                             <div class="card border-0 shadow-lg">
                                 <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0006.jpg') }}"
                                     alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button"> Get Quotation</a>
+                                <a href="#" class="card-button">Order Now</a>
                             </div>
                         </div>
                         <!-- Card 3 -->
@@ -431,7 +431,7 @@
                             <div class="card border-0 shadow-lg">
                                 <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0007.jpg') }}"
                                     alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button"> Get Quotation</a>
+                                <a href="#" class="card-button">Order Now</a>
                             </div>
                         </div>
 
@@ -440,7 +440,7 @@
                             <div class="card border-0 shadow-lg">
                                 <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0008.jpg') }}"
                                     alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button"> Get Quotation</a>
+                                <a href="#" class="card-button">Order Now</a>
                             </div>
                         </div>
 
@@ -477,7 +477,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0102.jpg') }}"
                                 alt="Category 1" class="card-img-top rounded" height="auto">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -485,7 +485,7 @@
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0103.jpg') }}"
                                 alt="Category 1" class="card-img-top rounded" height="auto">
-                            <a href="#" class="card-button"> Get Quotation</a>
+                            <a href="#" class="card-button">Order Now</a>
                         </div>
                     </div>
                 </div>

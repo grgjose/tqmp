@@ -37,7 +37,7 @@
 
     <!-- landing  -->
     <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
-        style="background: linear-gradient(rgba(23, 38, 71, 0.8), rgba(126, 20, 22, 0.9)),
+        style="background: linear-gradient(rgba(23, 38, 71, 0.3), rgba(126, 20, 22, 0.4)),
                     url('https://images.pexels.com/photos/10981370/pexels-photo-10981370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center">
@@ -305,7 +305,6 @@
         <section class="py-3 mt-5">
             <div class="container text-center">
                 <!-- FAQ Heading -->
-                <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">FAQs</span> -->
                 <h2 class="fw-bold" style="color: #7E1416;">Frequently Asked Questions</h2>
                 <p class="text-muted">
                     We have sorted out your frequently asked questions. You can select the one that best meets your needs by clicking below.
@@ -314,152 +313,147 @@
 
             <!-- FAQ Accordion -->
             <div class="container mt-5">
-                <div class="accordion" id="faqAccordion">
-                    <!-- Accordion Item 1 -->
-                    <div class="accordion-item mb-3">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
-                                style="color: #000;">
-                                <b>What types of vehicles can be bulletproofed?</b>
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body" style="color: #6c757d;">
-                                N/A
+                <div class="row">
+                    <!-- First Column -->
+                    <div class="col-md-6">
+                        <div class="accordion" id="faqAccordionLeft">
+                            <!-- Accordion Items for Left Column -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                                        style="color: #000;">
+                                        <b>What types of vehicles can be bulletproofed?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#faqAccordionLeft">
+                                    <div class="accordion-body" style="color: #6c757d;">
+                                        N/A
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                        style="color: #000;">
+                                        <b>How does bulletproofing affect the vehicle's performance?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#faqAccordionLeft">
+                                    <div class="accordion-body" style="color: #6c757d;">
+                                        N/A
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                        style="color: #000;">
+                                        <b>Can bulletproofing be customized to maintain the car's appearance?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#faqAccordionLeft">
+                                    <div class="accordion-body" style="color: #6c757d;">
+                                        N/A
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                                        style="color: #000;">
+                                        <b>How long does the bulletproofing process take?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#faqAccordionLeft">
+                                    <div class="accordion-body" style="color: #6c757d;">
+                                        N/A
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Accordion Item 2 -->
-                    <div class="accordion-item mb-3">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
-                                style="color: #000;">
-                                <b>How does bulletproofing affect the vehicle's performance and handling?</b>
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body" style="color: #6c757d;">
-                                N/A
+                    <!-- Second Column -->
+                    <div class="col-md-6">
+                        <div class="accordion" id="faqAccordionRight">
+                            <!-- Accordion Items for Right Column -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                                        style="color: #000;">
+                                        <b>Difference between light-weight and traditional armor?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#faqAccordionRight">
+                                    <div class="accordion-body" style="color: #6c757d;">
+                                        N/A
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion Item 3 -->
-                    <div class="accordion-item mb-3">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
-                                style="color: #000;">
-                                <b>Can bulletproofing be customized to maintain the car's appearance?</b>
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body" style="color: #6c757d;">
-                                N/A
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                                        style="color: #000;">
+                                        <b>Is bulletproofing a permanent modification?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#faqAccordionRight">
+                                    <div class="accordion-body" style="color: #6c757d;">
+                                        N/A
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion Item 4 -->
-                    <div class="accordion-item mb-3">
-                        <h2 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
-                                style="color: #000;">
-                                <b>How long does the bulletproofing process take?</b>
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body" style="color: #6c757d;">
-                                N/A
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"
+                                        style="color: #000;">
+                                        <b>How much does bulletproofing cost?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                    data-bs-parent="#faqAccordionRight">
+                                    <div class="accordion-body" style="color: #6c757d;">
+                                        N/A
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion Item 5 -->
-                    <div class="accordion-item mb-3">
-                        <h2 class="accordion-header" id="headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
-                                style="color: #000;">
-                                <b>What is the difference between light-weight and traditional armor?</b>
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body" style="color: #6c757d;">
-                                N/A
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion Item 6 -->
-                    <div class="accordion-item mb-3">
-                        <h2 class="accordion-header" id="headingSix">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
-                                style="color: #000;">
-                                <b>Is bulletproofing a permanent modification?</b>
-                            </button>
-                        </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body" style="color: #6c757d;">
-                                N/A
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion Item 7 -->
-                    <div class="accordion-item mb-3">
-                        <h2 class="accordion-header" id="headingSeven">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"
-                                style="color: #000;">
-                                <b>How much does bulletproofing cost?</b>
-                            </button>
-                        </h2>
-                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body" style="color: #6c757d;">
-                                N/A
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion Item 8 -->
-                    <div class="accordion-item mb-3">
-                        <h2 class="accordion-header" id="headingEight">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
-                                style="color: #000;">
-                                <b>Are there any maintenance requirements for bulletproofed vehicles?</b>
-                            </button>
-                        </h2>
-                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body" style="color: #6c757d;">
-                                N/A
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
+                                        style="color: #000;">
+                                        <b>Any maintenance requirements after bulletproofing?</b>
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                    data-bs-parent="#faqAccordionRight">
+                                    <div class="accordion-body" style="color: #6c757d;">
+                                        N/A
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </section>
-        <!-- End of Accordion -->
-
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 
     <!-- Call to Action -->
     @include ('plus.cta')
