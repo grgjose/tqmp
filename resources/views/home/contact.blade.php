@@ -48,7 +48,7 @@
     </div>
 
     <div class="container">
-        <section class=" fade-in">
+        <section class=" fade-in-up">
             <!-- Contact Section -->
             <!-- Contact Form -->
             <div class="col-md-12" style="border: 1px solid #ccc; padding: 20px; border-radius: 3px;">
@@ -174,17 +174,21 @@
 
                     <!-- Right Column: Google Map Section -->
                     <div class="col-md-6 mt-3">
-                        <h3 class="fw-bold">Office Locations Nationwide</h3>
-                        <div class="mt-4">
+                        <h3 class="fw-bold" style="color: #7E1416;">Office Locations Nationwide</h3>
+                        <div class="mt-4" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
                             <iframe
-                                width="100%" height="610"
-                                frameborder="0" style="border:1px solid black"
+                                width="100%"
+                                height="610"
+                                frameborder="0"
+                                style="border: 0; border-radius: 8px;"
                                 referrerpolicy="no-referrer-when-downgrade"
-                                src="https://www.google.com/maps/d/u/1/embed?mid=1T_rIsKAGT3S3DoiTe2Kxj2Gc0eoeVQQ&ehbc=2E312F&noprof=1"
+                                src="https://www.google.com/maps/d/u/1/embed?mid=1T_rIsKAGT3S3DoiTe2Kxj2Gc0eoeVQQ&ehbc=2E312F&noprof=1&z=6"
                                 allowfullscreen>
                             </iframe>
                         </div>
                     </div>
+
+
                 </div>
             </div>
 
