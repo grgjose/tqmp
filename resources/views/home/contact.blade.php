@@ -182,7 +182,7 @@
                                 frameborder="0"
                                 style="border: 0; border-radius: 8px;"
                                 referrerpolicy="no-referrer-when-downgrade"
-                                src="https://www.google.com/maps/d/u/1/embed?mid=1T_rIsKAGT3S3DoiTe2Kxj2Gc0eoeVQQ&ehbc=2E312F&noprof=1&z=6"
+                                src="https://www.google.com/maps/d/u/1/embed?mid=1T_rIsKAGT3S3DoiTe2Kxj2Gc0eoeVQQ&ehbc=2E312F&noprof=1&z=5"
                                 allowfullscreen>
                             </iframe>
                         </div>

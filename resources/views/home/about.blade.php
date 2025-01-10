@@ -210,7 +210,7 @@
 
 
         <!-- Details -->
-        <section id="values" class="mt-5">
+        <section id="values" class="mt-5 py-5">
             <div class="container text-center">
                 <!-- Heading -->
                 <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">About Us</span> -->
