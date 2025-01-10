@@ -50,7 +50,7 @@
     </style>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.5), rgba(126, 20, 22, 0.5)),
+    <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.5), rgba(92, 15, 16, 0.3)),
     url('storage/logos/tqmpnew-edited.jpg') no-repeat center center/cover;">
 
         <div class="container">
@@ -63,9 +63,12 @@
                         <br><span>CONGLOMERATE</span>
                     </h2>
                     <!-- Paragraph with words wrapped in spans -->
-                    <p class="word-fade-in" style="font-size:xx-large;">
+                    <!-- <p class="word-fade-in" style="font-size:xx-large;">
                         <span>TOTAL</span> <span>QUALITY</span> <span>MANUFACTURING</span> <span>PRODUCTS</span>
                         <span>PHILIPPINES</span> <span>CORPORATION</span>
+                    </p> -->
+                    <p class="lead mt-3 fade-in-up" style="color: white;">
+                        TOTAL QUALITY MANUFACTURING PRODUCTS PHILIPPINES CORPORATION
                     </p>
                     <!-- Button area remains the same -->
                     <div class="text-center mb-5 mt-3">
