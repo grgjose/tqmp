@@ -198,28 +198,27 @@
                 <!-- Card 1 -->
                 <div class="col-md-6 py-3">
                     <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top img-fluid rounded-0" style="height: 300px; object-fit: cover;">
+                        <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top img-fluid" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold mb-3">Bullet Proofing</h5>
                             <p>This protection ensures your vehicle is as resilient as a tank, offering superior protection and ultimately saving lives.</p>
+                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
                         </div>
-                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
-
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-6 py-3">
                     <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top img-fluid rounded-0" style="height: 300px; object-fit: cover;">
+                        <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top img-fluid" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold mb-3">Glass Processing</h5>
                             <p>Our advanced glass processing techniques ensure durability and quality, catering to a wide range of architectural and industrial needs.</p>
+                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
                         </div>
-                        <a href="#" class="card-button"> Get Quotation</a>
                     </div>
-
                 </div>
             </div>
+
 
 
 
@@ -251,39 +250,40 @@
                 <!-- Category 1 -->
                 <div class="col-md-4 py-3 d-flex align-items-stretch">
                     <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/glass-processing/cool silver only.jpg') }}" alt="Bulletproof" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <img src="{{ asset('storage/glass-processing/cool silver only.jpg') }}" alt="Bulletproof" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold">Glass</h5>
                             <p class="flex-grow-1">We offer a wide range of glass products for different applications, ensuring quality and durability.</p>
+                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
                         </div>
-                        <a href="#" class="card-button mt-auto">Get Quotation</a>
                     </div>
                 </div>
 
                 <!-- Category 2 -->
                 <div class="col-md-4 py-3 d-flex align-items-stretch">
                     <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/home/aluminum.jpg') }}" alt="Category 2" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <img src="{{ asset('storage/home/aluminum.jpg') }}" alt="Category 2" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold">Aluminum</h5>
                             <p class="flex-grow-1">A versatile and lightweight metal used in a variety of applications due to its strength, corrosion resistance, and aesthetic appeal.</p>
+                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
                         </div>
-                        <a href="#" class="card-button mt-auto">Get Quotation</a>
                     </div>
                 </div>
 
                 <!-- Category 3 -->
                 <div class="col-md-4 py-3 d-flex align-items-stretch">
                     <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/home/gen-trade.jpg') }}" alt="Gen Trade" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <img src="{{ asset('storage/home/gen-trade.jpg') }}" alt="Gen Trade" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold">Other Products</h5>
                             <p class="flex-grow-1">In addition to aluminum and glass, we offer a variety of hardware products essential for construction and installation.</p>
+                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
                         </div>
-                        <a href="#" class="card-button mt-auto">Get Quotation</a>
                     </div>
                 </div>
             </div>
+
 
             <!-- Browse More Button -->
             <!-- <div class="">
