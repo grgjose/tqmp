@@ -76,6 +76,7 @@
                 <div class="col-md-8">
                     <div class="card-body py-5">
                         <h2 class="fw-bold" style="color: #7E1416;">About aluminum</h2>
+                        <hr style="border-top: 3px solid #920B12; width: 150px; ">
                         <p> Aluminum manufacturing involves refining bauxite ore into alumina, followed by smelting to produce high-quality aluminum.
                             This process yields a lightweight, durable, and versatile metal, essential for construction, transportation, packaging, and various industrial applications.
                             We are not just developing aluminum profiles, we are also structuring integrity, professionalism and excellence to make win-win circumstances to all of us.</p>

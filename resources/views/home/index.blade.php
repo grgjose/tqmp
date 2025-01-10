@@ -50,7 +50,7 @@
     </style>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.5), rgba(92, 15, 16, 0.3)),
+    <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.5), rgba(30, 26, 26, 0.6)),
     url('storage/logos/tqmpnew-edited.jpg') no-repeat center center/cover;">
 
         <div class="container">
@@ -198,7 +198,7 @@
                 <!-- Card 1 -->
                 <div class="col-md-6 py-3">
                     <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top img-fluid" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                        <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold mb-3">Bullet Proofing</h5>
                             <p>This protection ensures your vehicle is as resilient as a tank, offering superior protection and ultimately saving lives.</p>
@@ -209,7 +209,7 @@
                 <!-- Card 2 -->
                 <div class="col-md-6 py-3">
                     <div class="card border-0 shadow-lg">
-                        <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top img-fluid" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                        <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold mb-3">Glass Processing</h5>
                             <p>Our advanced glass processing techniques ensure durability and quality, catering to a wide range of architectural and industrial needs.</p>
