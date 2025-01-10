@@ -297,7 +297,7 @@
         align-items: center;
         padding: 10px 0;
         width: 100%;
-        background-color: rgb(30, 50, 92);
+        background-color: #7E1416;
         color: #fff;
         border-radius: 0 0 8px 8px;
         text-decoration: none;

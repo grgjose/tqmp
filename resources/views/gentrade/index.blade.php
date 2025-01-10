@@ -298,7 +298,7 @@
                 <!-- Cards Row 1 -->
                 <div class="row mt-4 g-3">
                     <!-- Card 1 -->
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                             <div class="card-body">
@@ -307,7 +307,7 @@
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/handles/THORE H-TYPE HANDLE.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                             <div class="card-body">
@@ -316,7 +316,16 @@
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="col-md-4">
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-lg">
+                            <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
                             <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                             <div class="card-body">

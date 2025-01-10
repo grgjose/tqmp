@@ -74,6 +74,7 @@
                 <div class="col-md-8">
                     <div class="card-body py-5">
                         <h2 class="fw-bold" style="color: #7E1416;">About Glass Processing</h2>
+                        <hr style="border-top: 3px solid #920B12; width: 150px; ">
                         <p> With extensive experience in the glass industry, we take pride in our commitment to delivering exceptional products and services to our clients.
                             Our factory is equipped with state-of-the-art technology and machinery, enabling us to produce a diverse range of tempered glass products, including glass doors, windows, shower enclosures, and more.
                             At Philippine Glass Processing Specialist, we prioritize customer satisfaction and consistently aim to exceed our clients' expectations with every project.</p>
