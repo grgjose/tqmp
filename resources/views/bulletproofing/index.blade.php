@@ -44,7 +44,7 @@
                 <div class="col-md-8">
                     <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Master</h2>
                     <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Armoured Vehicle</h2>
-                    <p class="lead mt-5 fade-in-up" style="color: white;">
+                    <p class="lead fade-in-up" style="color: white;">
                         Your premier source for top-of-the-line and precision-engineered armoured vehicles
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
