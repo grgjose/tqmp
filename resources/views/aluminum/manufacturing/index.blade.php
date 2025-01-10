@@ -91,14 +91,17 @@
 
     <!-- Products -->
     <section id="category" class="py-3 mt-5 fade-in-up">
-        <div class="container text-center">
-            <!-- Heading -->
-            <h2 class="fw-bold" style="color: #7E1416;">Aluminum Profiles</h2>
-            <!-- Paragraph -->
-            <p class="">
-                <!-- Raw Material Procurement > Mold Design and Processing > Extrusion Processing > Quality Inspection > Finished Product Packaging -->
-                <img src="{{ asset('storage/aluminum/desc.jpg') }}" alt="Philippines" class="img-fluid rounded lg">
-            </p>
+        <div class="container">
+            <div class="text-center">
+                <!-- Heading -->
+                <h2 class="fw-bold" style="color: #7E1416;">Aluminum Profiles</h2>
+                <!-- Paragraph -->
+                <p class="">
+                    <!-- Raw Material Procurement > Mold Design and Processing > Extrusion Processing > Quality Inspection > Finished Product Packaging -->
+                    <img src="{{ asset('storage/aluminum/desc.jpg') }}" alt="Philippines" class="img-fluid rounded lg">
+                </p>
+
+            </div>
 
             <!-- Pagination  -->
             <div class="container">
@@ -110,75 +113,66 @@
                             <!-- Card 7 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/01.jpg') }}" class="card-img-top" alt="Card 1">
+                                    <img src="{{ asset('storage/aluminum/01.jpg') }}" class="card-img-top" alt="Card 1" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Angle Sections</h5>
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
-
-
                             </div>
                             <!-- Card 8 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/02.jpg') }}" class="card-img-top" alt="Card 2">
+                                    <img src="{{ asset('storage/aluminum/02.jpg') }}" class="card-img-top" alt="Card 2" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 9 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/03.jpg') }}" class="card-img-top" alt="Card 3">
+                                    <img src="{{ asset('storage/aluminum/03.jpg') }}" class="card-img-top" alt="Card 3" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 10 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/04.jpg') }}" class="card-img-top" alt="Card 4">
+                                    <img src="{{ asset('storage/aluminum/04.jpg') }}" class="card-img-top" alt="Card 4" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 11 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/05.jpg') }}" class="card-img-top" alt="Card 5">
+                                    <img src="{{ asset('storage/aluminum/05.jpg') }}" class="card-img-top" alt="Card 5" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 12 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/06.jpg') }}" class="card-img-top" alt="Card 6">
+                                    <img src="{{ asset('storage/aluminum/06.jpg') }}" class="card-img-top" alt="Card 6" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Screen Door and Windows</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
 
                     <!-- Page 2 -->
                     <div class="tab-pane fade" id="page-2" role="tabpanel" aria-labelledby="page-2-tab">
@@ -186,77 +180,66 @@
                             <!-- Card 7 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/07.jpg') }}" class="card-img-top" alt="Card 7">
+                                    <img src="{{ asset('storage/aluminum/07.jpg') }}" class="card-img-top" alt="Card 7" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 8 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/08.jpg') }}" class="card-img-top" alt="Card 8">
+                                    <img src="{{ asset('storage/aluminum/08.jpg') }}" class="card-img-top" alt="Card 8" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 9 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/09.jpg') }}" class="card-img-top" alt="Card 9">
+                                    <img src="{{ asset('storage/aluminum/09.jpg') }}" class="card-img-top" alt="Card 9" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 10 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/10.jpg') }}" class="card-img-top" alt="Card 10">
+                                    <img src="{{ asset('storage/aluminum/10.jpg') }}" class="card-img-top" alt="Card 10" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 11 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/11.jpg') }}" class="card-img-top" alt="Card 11">
+                                    <img src="{{ asset('storage/aluminum/11.jpg') }}" class="card-img-top" alt="Card 11" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Miscellaneous Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 12 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/12.jpg') }}" class="card-img-top" alt="Card 12">
+                                    <img src="{{ asset('storage/aluminum/12.jpg') }}" class="card-img-top" alt="Card 12" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
 
                     <!-- Page 3 -->
                     <div class="tab-pane fade" id="page-3" role="tabpanel" aria-labelledby="page-3-tab">
@@ -264,77 +247,66 @@
                             <!-- Card 7 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/13.jpg') }}" class="card-img-top" alt="Card 13">
+                                    <img src="{{ asset('storage/aluminum/13.jpg') }}" class="card-img-top" alt="Card 13" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 8 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/14.jpg') }}" class="card-img-top" alt="Card 14">
+                                    <img src="{{ asset('storage/aluminum/14.jpg') }}" class="card-img-top" alt="Card 14" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Counter Trim Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 9 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/15.jpg') }}" class="card-img-top" alt="Card 15">
+                                    <img src="{{ asset('storage/aluminum/15.jpg') }}" class="card-img-top" alt="Card 15" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">YC Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 10 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/16.jpg') }}" class="card-img-top" alt="Card 16">
+                                    <img src="{{ asset('storage/aluminum/16.jpg') }}" class="card-img-top" alt="Card 16" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Vent Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 11 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/17.jpg') }}" class="card-img-top" alt="Card 17">
+                                    <img src="{{ asset('storage/aluminum/17.jpg') }}" class="card-img-top" alt="Card 17" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Flat Bar Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                             <!-- Card 12 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/18.jpg') }}" class="card-img-top" alt="Card 18">
+                                    <img src="{{ asset('storage/aluminum/18.jpg') }}" class="card-img-top" alt="Card 18" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Counter Nosing Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
 
                     <!-- Page 4 -->
                     <div class="tab-pane fade" id="page-4" role="tabpanel" aria-labelledby="page-4-tab">
@@ -342,17 +314,16 @@
                             <!-- Card 7 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/19.jpg') }}" class="card-img-top" alt="Card 19">
+                                    <img src="{{ asset('storage/aluminum/19.jpg') }}" class="card-img-top" alt="Card 19" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
-
-
+                                        <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
                                     </div>
-                                    <a href="#" class="card-button"> Order Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Pagination Tabs -->

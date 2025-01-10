@@ -311,7 +311,7 @@
 
     .card-button:hover {
         text-decoration: none;
-        background-color: #172647;
+        background-color: #7E1416;
         color: #fff;
         opacity: 0.9;
         /* Slightly fade the button on hover */
@@ -828,8 +828,8 @@
         transition: all 0.3s ease; */
 
         background-color: transparent;
-        color: #172647;
-        border: 1px solid #172647;
+        color: #7E1416;
+        border: 1px solid #7E1416;
         font-size: smaller;
         padding: 5px 10px;
         margin-right: 10px;
@@ -837,9 +837,9 @@
     }
 
     .pagination-button.active {
-        background-color: #172647;
+        background-color: #7E1416;
         color: #fff;
-        border-color: #172647;
+        border-color: #7E1416;
         border-radius: 4px;
         font-weight: bold;
         transform: scale(1.1);
@@ -847,7 +847,7 @@
     }
 
     .pagination-button:hover {
-        background-color: #172647;
+        background-color:rgb(188, 36, 38);
         border-radius: 4px;
         color: #ffffff;
         transform: translateY(-2px);

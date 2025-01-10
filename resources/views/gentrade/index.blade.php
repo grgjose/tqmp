@@ -71,28 +71,32 @@
                     <!-- Card 1 -->
                     <div class="col-md-4">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/doors/gsm-0060.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/doors/gsm-0060.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 2 -->
                     <div class="col-md-4">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/doors/gsm-0052.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/doors/gsm-0052.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 3 -->
                     <div class="col-md-4">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/doors/gsm-0038.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/doors/gsm-0038.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -120,74 +124,82 @@
                     <!-- Card 1 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0039.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0039.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 2 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0050.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0050.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 3 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0054.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0054.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
-
                     <!-- Card 4 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0055.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0055.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Cards Row 2 -->
                 <div class="row mt-4 g-3">
                     <!-- Card 1 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0056.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0056.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 2 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0057.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0057.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 3 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0058.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0058.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
-
                     <!-- Card 4 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0059.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0059.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Browse Order Now Button -->
                 <!-- <div class="card-body">
@@ -221,31 +233,43 @@
                     <!-- Cards Row 1 -->
                     <div class="row mt-4 g-3">
                         <!-- Card 1 -->
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}"
-                                    alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button">Order Now</a>
+                                <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0056.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 2 -->
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/archi-hardware/handles/THORE H-TYPE HANDLE.jpg') }}"
-                                    alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button">Order Now</a>
+                                <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0057.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 3 -->
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}"
-                                    alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button">Order Now</a>
+                                <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0058.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
                         </div>
-
+                        <!-- Card 4 -->
+                        <div class="col-md-3">
+                            <div class="card border-0 shadow-lg">
+                                <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0059.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
 
@@ -274,76 +298,75 @@
                 <!-- Cards Row 1 -->
                 <div class="row mt-4 g-3">
                     <!-- Card 1 -->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0018.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0019.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/handles/THORE H-TYPE HANDLE.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0020.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="col-md-3">
-                        <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0021.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Cards Row 2 -->
                 <div class="row mt-4 g-3">
                     <!-- Card 1 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0011.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0018.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 2 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0012.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0019.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 3 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0013.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0020.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
-
                     <!-- Card 4 -->
                     <div class="col-md-3">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0014.jpg') }}"
-                                alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0021.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
 
             </div>
@@ -374,38 +397,39 @@
                         <!-- Card 1 -->
                         <div class="col-md-3">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0001.jpg') }}"
-                                    alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button">Order Now</a>
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0001.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 2 -->
                         <div class="col-md-3">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0002.jpg') }}"
-                                    alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button">Order Now</a>
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0002.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 3 -->
                         <div class="col-md-3">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0003.jpg') }}"
-                                    alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button">Order Now</a>
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0003.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
                         </div>
-
                         <!-- Card 4 -->
                         <div class="col-md-3">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0004.jpg') }}"
-                                    alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button">Order Now</a>
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0004.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
                         </div>
-
-
                     </div>
 
                     <!-- Cards Row 2 -->
@@ -413,38 +437,41 @@
                         <!-- Card 1 -->
                         <div class="col-md-3">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0005.jpg') }}"
-                                    alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button">Order Now</a>
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0005.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 2 -->
                         <div class="col-md-3">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0006.jpg') }}"
-                                    alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button">Order Now</a>
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0006.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 3 -->
                         <div class="col-md-3">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0007.jpg') }}"
-                                    alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button">Order Now</a>
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0007.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
                         </div>
-
                         <!-- Card 4 -->
                         <div class="col-md-3">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0008.jpg') }}"
-                                    alt="Category 1" class="card-img-top" style="object-fit: contain; height: 300px;">
-                                <a href="#" class="card-button">Order Now</a>
+                                <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0008.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
                         </div>
-
                     </div>
+
 
 
                 </div>
@@ -475,20 +502,23 @@
                     <!-- Card 1 -->
                     <div class="col-md-6">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0102.jpg') }}"
-                                alt="Category 1" class="card-img-top rounded" height="auto">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0102.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: auto; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 2 -->
                     <div class="col-md-6">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0103.jpg') }}"
-                                alt="Category 1" class="card-img-top rounded" height="auto">
-                            <a href="#" class="card-button">Order Now</a>
+                            <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0103.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: auto; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Browse Order Now Button -->
 
@@ -519,12 +549,14 @@
                         <!-- Card 1 -->
                         <div class="col-md-8">
                             <div class="card border-0 shadow-lg">
-                                <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="Category 1" class="card-img-top rounded" style="height: 500px; object-fit: contain;">
-                                <a href="#" class="card-button">Get Quotation</a>
+                                <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 500px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body">
+                                    <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                                </div>
                             </div>
-
                         </div>
                     </div>
+
 
                     <!-- Browse Order Now Button -->
                     <!-- <div class="mt-4">
@@ -552,15 +584,18 @@
                     <!-- Card 1 -->
                     <div class="col-md-8">
                         <div class="card border-0 shadow-lg">
-                            <img src="{{ asset('storage/jalouplus/jalouplus.jpg') }}" alt="Category 1" class="card-img-top rounded" style="height: 500px; object-fit: contain;">
-                            <a href="#" class="card-button">Get Quotation</a>
+                            <img src="{{ asset('storage/jalouplus/jalouplus.jpg') }}" alt="Category 1" class="card-img-top" style="object-fit: contain; width: 100%; height: 500px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <div class="card-body">
+                                <a href="#" class="card-button btn btn-danger mt-auto">Order Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+
                 <!-- Browse Order Now Button -->
-                <div class="mt-4">
-                    <button type="button" class="btn btn-outline-danger">Browse More</button>
+                <div class="mt-4 py-5">
+                    <button type="button" class="btn btn-danger">Browse More</button>
                 </div>
             </div>
         </div>
