@@ -174,7 +174,7 @@
 
                     <!-- Right Column: Google Map Section -->
                     <div class="col-md-6 mt-3">
-                        <h3 class="fw-bold" style="color: #7E1416;">Office Locations Nationwide</h3>
+                        <h3 class="fw-bold">Office Locations Nationwide</h3>
                         <div class="mt-4" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
                             <iframe
                                 width="100%"
@@ -182,7 +182,7 @@
                                 frameborder="0"
                                 style="border: 0; border-radius: 8px;"
                                 referrerpolicy="no-referrer-when-downgrade"
-                                src="https://www.google.com/maps/d/u/1/embed?mid=1T_rIsKAGT3S3DoiTe2Kxj2Gc0eoeVQQ&ehbc=2E312F&noprof=1&z=5"
+                                src="https://www.google.com/maps/d/u/1/embed?mid=1T_rIsKAGT3S3DoiTe2Kxj2Gc0eoeVQQ&ehbc=2E312F&noprof=1&z=5&output=embed"
                                 allowfullscreen>
                             </iframe>
                         </div>
