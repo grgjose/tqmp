@@ -10,7 +10,7 @@
             <div class="col-auto d-flex align-items-center d-none d-md-flex justify-content-center">
                 <!-- Logo -->
                 <a href="/" class="navbar-brand d-inline-flex link-body-emphasis text-decoration-none">
-                    <img src="{{ asset('storage/logos/TQMPLogo-White.png') }}" alt="Header Image" width="80">
+                    <img src="{{ asset('storage/logos/TQMPLogo-Yellow.png') }}" alt="Header Image" width="80">
                 </a>
                 <!-- Header Text -->
                 <p class="lead ms-3 mb-0" style="font-weight: bold; font-size: 1.2rem; color: white;">

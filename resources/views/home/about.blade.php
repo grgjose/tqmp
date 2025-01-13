@@ -190,7 +190,7 @@
                                         <p>In the fourth quarter of 2010, another subsidiary company, TQMC Marketing, was established. TQMC Marketing imports and distributes a wide variety of chemicals and raw ingredients for numerous industrial and food processing applications.</p>
                                     </div>
                                     <div class="col-md-6 order-md-1 text-md-end mb-3">
-                                        <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="2010 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                        <img src="https://images.pexels.com/photos/2889347/pexels-photo-2889347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="2010 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
                                     </div>
                                 </div>
                                 <!-- Timeline Item 5 -->
