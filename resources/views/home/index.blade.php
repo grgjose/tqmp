@@ -50,7 +50,7 @@
     </style> -->
 
     <style>
- 
+
     </style>
 
     <!-- Hero Section -->
@@ -110,8 +110,8 @@
     <!-- Albums (Company Logos) -->
     <section id="companies" class="container py-5 fade-in text-center">
         <div class="w-100">
-            <div class="logo-scroller py-5">
-                <div class="logos d-flex flex-nowrap overflow-auto">
+            <div class="py-5">
+                <marquee behavior="scroll" direction="left" scrollamount="7">
                     <!-- Logos -->
                     <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img img-fluid mx-2 my-1">
                     <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured" class="header-img img-fluid mx-2 my-1">
@@ -120,10 +120,25 @@
                     <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="header-img img-fluid mx-2 my-1">
                     <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="header-img img-fluid mx-2 my-1">
                     <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="header-img img-fluid mx-2 my-1">
-                </div>
+                    <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="header-img img-fluid mx-2 my-1">
+                </marquee>
             </div>
         </div>
     </section>
+
 
     <!-- End of Albums -->
 
