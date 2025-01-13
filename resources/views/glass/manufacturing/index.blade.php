@@ -407,29 +407,30 @@
 
 
     <section id="awards" class="container">
-        <div class="card container py-5 mt-5 fade-in-up">
+        <div class=" card container py-5 mt-5 fade-in-up">
             <div class="row justify-content-center align-items-center">
-
-                <!-- Right Column -->
-                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                    <img src="https://www.pfg.com.ph/images/awards/awards.jpg" alt="Philippines" class="img-fluid rounded-lg" style="padding: 20px;">
-                </div>
                 <!-- Left Column -->
                 <div class="col-lg-6">
-                    <h2 class="fw-bold" style="color: #7E1416;">Awards and Recognition</h2>
-                    <hr style="border-top: 3px solid #920B12; width: 150px;">
-
-                    <p> Honoring Excellence: Celebrating our Legacy of Innovation and Quality in Glass and Aluminum Solutions.</p>
-                    <ul style=" padding: 0;">
-                        <li><i class="bi bi-check-circle"></i><span>Outstanding Environmental Performer Award (PEZA)</span></li>
-                        <li><i class="bi bi-check-circle"></i><span>2006 E3 Excellence in Ecology and Economy</span></li>
-                        <li><i class="bi bi-check-circle"></i><span>Don Emilio Abello Energy Efficiency Awards</span></li>
-                        <li><i class="bi bi-check-circle"></i><span>Dangal ng Pasig Award</span></li>
-                        <li><i class="bi bi-check-circle"></i><span>Excellence in Ecology and Economy Award</span></li>
-                    </ul>
+                    <div class=" d-flex justify-content-center align-items-center h-100">
+                        <img src="https://www.pfg.com.ph/images/awards/awards.jpg" alt="Philippines" class="img-fluid rounded-lg" style="padding: 20px;">
+                    </div>
                 </div>
 
-
+                <!-- Right Column -->
+                <div class="col-lg-6 py-3">
+                    <div class="our-story">
+                        <h2 class="fw-bold" style="color: #7E1416;">Awards and Recognition</h2>
+                        <hr style="border-top: 3px solid #920B12; width: 150px; ">
+                        <p>Honoring Excellence: Celebrating our Legacy of Innovation and Quality in Glass and Aluminum Solutions.</p>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> <span>Outstanding Environmental Performer Award (PEZA)</span></li>
+                            <li><i class="bi bi-check-circle"></i> <span>2006 E3 Excellence in Ecology and Economy</span></li>
+                            <li><i class="bi bi-check-circle"></i> <span>Don Emilio Abello Energy Efficiency Awards</span></li>
+                            <li><i class="bi bi-check-circle"></i> <span>Dangal ng Pasig Award</span></li>
+                            <li><i class="bi bi-check-circle"></i> <span>Excellence in Ecology and Economy Award</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -1,4 +1,24 @@
 <style>
+    /* text styles  */
+    /* Add this in your CSS file or within a <style> tag */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    .heading {
+        color: white;
+        font-size: xx-large;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .sub-heading {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .highlight {
+        background: linear-gradient(to right, rgb(239, 122, 112), rgb(249, 102, 73));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     /* Base styles for word animations */
     .word-fade-in span {
         display: inline-block;
@@ -52,8 +72,25 @@
     .word-fade-in span:nth-child(11) {
         animation-delay: 1.1s;
     }
+
     .word-fade-in span:nth-child(12) {
         animation-delay: 1.2s;
+    }
+
+    .word-fade-in span:nth-child(13) {
+        animation-delay: 1.3s;
+    }
+
+    .word-fade-in span:nth-child(14) {
+        animation-delay: 1.4s;
+    }
+
+    .word-fade-in span:nth-child(15) {
+        animation-delay: 1.5s;
+    }
+
+    .word-fade-in span:nth-child(16) {
+        animation-delay: 1.6s;
     }
 
     /* Keyframes for the fade-in effect */
@@ -109,7 +146,7 @@
 --------------------------------------------------------------*/
     .hero {
         width: 100%;
-        min-height: 100vh;
+        min-height: 90vh;
         position: relative;
         padding: 120px 0 80px 0;
         display: flex;
@@ -361,7 +398,7 @@
         .nav {
             flex-direction: column;
             align-items: flex-start;
-            gap: 10px;
+            gap: 15px;
         }
 
         .nav-link {
@@ -599,8 +636,9 @@
     }
 
     a.btn-danger:hover {
-        background-color: #7E1416;
+        background-color: rgb(155, 39, 41);
         transform: translateY(-2px);
+        font-weight: bold;
         font-size: smaller;
     }
 
@@ -758,7 +796,7 @@
         }
 
         to {
-            transform: translateX(-20%);
+            transform: translateX(-70%);
         }
     }
 
@@ -847,7 +885,7 @@
     }
 
     .pagination-button:hover {
-        background-color:rgb(188, 36, 38);
+        background-color: rgb(188, 36, 38);
         border-radius: 4px;
         color: #ffffff;
         transform: translateY(-2px);

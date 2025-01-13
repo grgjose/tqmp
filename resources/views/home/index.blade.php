@@ -36,17 +36,21 @@
     @include('plus.navbar')
     <!-- End of Header -->
 
-    <style>
+    <!-- <style>
         .landing-text {
             color: rgb(253, 253, 253);
             text-shadow: 2px 2px 4px rgba(235, 69, 69, 0.9);
             display: inline-block;
-            /* Ensures each word is styled separately */
+        
             -webkit-text-stroke: 1px white;
-            /* Outline thickness and color */
+          
             text-stroke: 0.5px white;
-            /* Fallback for other browsers */
+        
         }
+    </style> -->
+
+    <style>
+ 
     </style>
 
     <!-- Hero Section -->
@@ -56,21 +60,40 @@
         <div class="container">
             <div class="row justify-content-center text-center text-light">
                 <div class="col-xl-9 col-lg-8">
-                    <!-- Heading with words wrapped in spans -->
-                    <h2 class="word-fade-in landing-text">
-                        <span>WE</span> <span>ARE</span> <span>THE</span> <span>MARKETING</span> <span>ARM</span> <span>OF</span>
-                        <br><span>GLASS</span> <span>AND</span> <span>ALUMINUM</span>
-                        <br><span>CONGLOMERATE</span>
-                    </h2>
-                    <!-- Paragraph with words wrapped in spans -->
-                    <!-- <p class="word-fade-in" style="font-size:xx-large;">
-                        <span>TOTAL</span> <span>QUALITY</span> <span>MANUFACTURING</span> <span>PRODUCTS</span>
-                        <span>PHILIPPINES</span> <span>CORPORATION</span>
+                    <!-- Heading with highlighted text -->
+                    <!-- <p class="lead mt-3 mb-3 fade-in-up heading highlight" style="font-weight: bold;">
+                        <b>TOTAL QUALITY MANUFACTURING PRODUCTS PHILIPPINES CORPORATION</b>
                     </p> -->
-                    <p class="lead mt-3 fade-in-up" style="color: white;">
-                        TOTAL QUALITY MANUFACTURING PRODUCTS PHILIPPINES CORPORATION
+                    <h2 class="word-fade-in landing-text sub-heading">
+                        <span>Your</span> <span>Partner</span> <span>in</span> <span>Progress:</span>
+                        <br><span>The</span> <span>Marketing</span> <span>Arm</span> <span>of</span>
+                        <br><span>Philippines</span> <span>Glass</span> <span>and</span> <span>Aluminum</span> <span>Conglomerate</span>
+                    </h2>
+                    <!-- Modernized Button area -->
+                    <div class="text-center mb-5 mt-3">
+                        <a type="button" class="btn btn-danger fade-in-up">Register
+                            <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="container">
+            <div class="row justify-content-center text-center text-light">
+                <div class="col-xl-9 col-lg-8">
+                 
+
+                    <h2 class="word-fade-in landing-text">
+                        <span>TOTAL</span> <span>QUALITY</span> <span>MANUFACTURING</span> <span>PRODUCTS</span>
+                        <br><span>PHILIPPINES</span> <span>CORPORATION</span>
+                    </h2>
+                    <p class="lead mt-3 mb-3 fade-in-up" style="color: white;">
+                        Your Partner in Progress: The Marketing Arm of Philippines Glass and Aluminum Conglomerate
                     </p>
-                    <!-- Button area remains the same -->
+                  
                     <div class="text-center mb-5 mt-3">
                         <a type="button" class="btn btn-outline-light btn-lg px-4 me-sm-3">Register
                             <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i>
@@ -78,40 +101,30 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
 
     <!-- /Hero Section -->
 
     <!-- Albums (Company Logos) -->
-    <section id="companies" class=" container d-flex gap-2 justify-content-center py-5 fade-in">
-        <div align="center" valign="middle">
-            <div class=" container logo-scroller py-5">
-                <!-- <p class="link-secondary">Companies teamed with</p><br> -->
-                <div class="logos">
+    <section id="companies" class="container py-5 fade-in text-center">
+        <div class="w-100">
+            <div class="logo-scroller py-5">
+                <div class="logos d-flex flex-nowrap overflow-auto">
                     <!-- Logos -->
-                    <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img">
-                    <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured"
-                        class="header-img">
-                    <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="header-img">
-                    <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="header-img">
-                    <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="header-img">
-                    <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="header-img">
-                    <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="header-img">
-                    <!-- Duplicate logos for seamless scrolling -->
-                    <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img">
-                    <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured"
-                        class="header-img">
-                    <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="header-img">
-                    <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="header-img">
-                    <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="header-img">
-                    <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="header-img">
-                    <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="header-img">
+                    <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="header-img img-fluid mx-2 my-1">
+                    <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="header-img img-fluid mx-2 my-1">
                 </div>
             </div>
         </div>
     </section>
+
     <!-- End of Albums -->
 
 
