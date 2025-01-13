@@ -368,7 +368,7 @@
     .nav-link {
         color: #1C2033;
         font-weight: normal;
-        transition: color 0.3s ease, font-weight 0.3s ease;
+        transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
     }
 
     .navbar .nav-link:hover,
@@ -383,15 +383,31 @@
         top: 0;
         background-color: white;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1020;
+        /* Ensure it stays on top */
     }
 
     .header {
         max-width: 100%;
         height: auto;
+        transition: transform 0.3s ease-in-out;
+        /* Smooth transition for hover effect */
+    }
+
+    .header:hover {
+        transform: scale(1.05);
+        /* Slight zoom on hover */
     }
 
     .navbar-toggler {
         cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        /* Smooth transition for click effect */
+    }
+
+    .navbar-toggler:hover {
+        transform: rotate(90deg);
+        /* Rotate on hover */
     }
 
     @media (max-width: 768px) {
@@ -426,8 +442,8 @@
             flex-direction: row;
             align-items: center;
         }
-
     }
+
 
     /* button effect  */
     .btn {

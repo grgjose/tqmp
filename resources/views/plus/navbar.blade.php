@@ -7,7 +7,7 @@
     <div class="container text-center">
         <div class="row justify-content-center align-items-center py-2">
             <!-- Logo and Text for larger screens -->
-            <div class="col-auto d-flex align-items-center d-none d-md-flex">
+            <div class="col-auto d-flex align-items-center d-none d-md-flex justify-content-center">
                 <!-- Logo -->
                 <a href="/" class="navbar-brand d-inline-flex link-body-emphasis text-decoration-none">
                     <img src="{{ asset('storage/logos/TQMPLogo-White.png') }}" alt="Header Image" width="80">
@@ -86,7 +86,6 @@
                     </li>
                 </ul>
 
-
                 <div class="container">
                     <!-- Cart and Login Buttons -->
                     <div class="d-flex align-items-center">
@@ -111,5 +110,4 @@
             </div>
         </div>
     </nav>
-
 </div>
