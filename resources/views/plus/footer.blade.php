@@ -1,7 +1,6 @@
    <!-- Font Awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
    <!-- Footer -->
    <footer class="py-5" style="background-color: #7E1416;">
        <div class="container">
