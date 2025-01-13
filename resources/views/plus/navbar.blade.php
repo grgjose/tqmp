@@ -1,7 +1,3 @@
-<!-- Style -->
-@include('plus.style')
-<!-- End of Style -->
-
 <div class="fade-in sticky-top" style="background-color: #7E1416;">
     <!-- Logo and Header Text -->
     <div class="container text-center">

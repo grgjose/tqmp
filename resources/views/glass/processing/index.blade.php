@@ -20,23 +20,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
     <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="main.css">
-
-    <!-- Scripts -->
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 </head>
 
 <body>
-    <!-- Style -->
-    @include('plus.style')
-    <!-- End of Style -->
-
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
 
-    <!-- landing  -->
-    <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
+    <section id="landing-glass-processing" class="d-flex align-items-center justify-content-center text-center min-vh-100"
         style="background: linear-gradient(rgba(23, 38, 71, 0.3), rgba(126, 20, 22, 0.4)),
                     url('https://images.pexels.com/photos/3736110/pexels-photo-3736110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
         <div class="container">
@@ -55,22 +47,16 @@
             </div>
         </div>
     </section>
-    <!-- End of landing  -->
 
-    <!-- Glass Processing Section -->
-    <section class="fade-in">
-        <div class="container mt-5 text-center">
-            <!-- <h2 class="fw-bold" style="color: #7E1416;">Aluminum Manufacturing</h2>
-            <p></p> -->
-        </div>
+    <section id="about-glass-processing" class="fade-in">
         <div class="card mb-3 mx-auto mt-5" style="max-width: 1300px;">
             <div class="row g-0 justify-content-center">
-                <!-- Image Column -->
+
                 <div class="col-md-4 d-flex justify-content-center align-items-center">
                     <img src="{{ asset('storage/logos/pgpsi-logo.png') }}"
                         alt="Aluminum Manufacturing" class="img-fluid rounded lg" style="padding: 20px;">
                 </div>
-                <!-- Text Column -->
+
                 <div class="col-md-8">
                     <div class="card-body py-5">
                         <h2 class="fw-bold" style="color: #7E1416;">About Glass Processing</h2>
@@ -83,24 +69,18 @@
             </div>
         </div>
     </section>
-    <!-- Glass Processing Section -->
 
-    <div class="container mt-5 text-center">
-        <!-- Badge -->
-        <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Services</span> -->
-        <!-- Heading -->
-        <h2 class="fw-bold" style="color: #7E1416;">Glass Processing Services</h2>
-        <p>
-            <b>PGPSI offers the following glass processing services</b>
-        </p>
-    </div>
-
-    <!-- Services -->
-    <section id="services" class="container py-4">
+    <section id="services-glass-processing" class="container py-4">
+        <div class="container mt-5 text-center">
+            <h2 class="fw-bold" style="color: #7E1416;">Glass Processing Services</h2>
+            <p>
+                <b>PGPSI offers the following glass processing services</b>
+            </p>
+        </div>
         <div class="row">
             <div class="col-md-3 mb-4 d-flex align-items-stretch">
                 <div class="card border-0 shadow-lg d-flex flex-column">
-                    <img src="{{ asset('storage/glass-processing/tempered.png') }}" alt="Tempered Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <img src="{{ asset('storage/glass-processing/tempered.png') }}" alt="TQMP Tempered Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold">Tempered Glass</h6>
                         <p class="card-text flex-grow-1">Fully tempered glass is a unique glazing material. It is about 3 to 5 times stronger than an ordinary or annealed glass of the same thickness and configuration.</p>
@@ -111,7 +91,7 @@
 
             <div class="col-md-3 mb-4 d-flex align-items-stretch">
                 <div class="card border-0 shadow-lg d-flex flex-column">
-                    <img src="{{ asset('storage/glass-processing/laminated.png') }}" alt="Laminated Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <img src="{{ asset('storage/glass-processing/laminated.png') }}" alt="TQMP Laminated Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold">Laminated Glass</h6>
                         <p class="card-text flex-grow-1">Laminated glass is a multi-functional glazing material that can be used in a variety of applications. It is manufactured by permanently bonding two or more glass panes with layers of polyvinyl butyral (PVB) interlayer, under heat and pressure to produce a single product.</p>
@@ -122,7 +102,7 @@
 
             <div class="col-md-3 mb-4 d-flex align-items-stretch">
                 <div class="card border-0 shadow-lg d-flex flex-column">
-                    <img src="{{ asset('storage/glass-processing/curved.jpg') }}" alt="Curved Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <img src="{{ asset('storage/glass-processing/curved.jpg') }}" alt="TQMP Curved Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold">Curved Tempered Glass</h6>
                         <p class="card-text flex-grow-1">In the same manner with flat tempered glass, curved tempered glass is also resistant to mechanical stresses (bending, impact, etc.) and thermal stresses (temperature difference), without altering the properties of the basic product.</p>
@@ -133,7 +113,7 @@
 
             <div class="col-md-3 mb-4 d-flex align-items-stretch">
                 <div class="card border-0 shadow-lg d-flex flex-column">
-                    <img src="{{ asset('storage/glass-processing/igu.png') }}" alt="IGU" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <img src="{{ asset('storage/glass-processing/igu.png') }}" alt="TQMP IGU" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold">Insulating Glass Unit (IGU)</h6>
                         <p class="card-text flex-grow-1">Insulating glass unit is a set of two or more lites of glass separated by air space and hermetically sealed to form a single unit. Its most important function is to improve the thermal performance of glass when used in architectural applications.</p>
@@ -144,8 +124,6 @@
         </div>
 
     </section>
-
-
     <!-- End of Services -->
 
     <!-- Accordion Section -->

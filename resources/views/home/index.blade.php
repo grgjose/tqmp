@@ -20,35 +20,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
     <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 
-    <!-- Scripts -->
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
 
 <body>
-    <!-- Style -->
-    @include('plus.style')
-    <!-- End of Style -->
-
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
-
-    <!-- <style>
-        .landing-text {
-            color: rgb(253, 253, 253);
-            text-shadow: 2px 2px 4px rgba(235, 69, 69, 0.9);
-            display: inline-block;
-            -webkit-text-stroke: 1px white;
-            text-stroke: 0.5px white;
-        }
-    </style> -->
-
-    <style>
-
-    </style>
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.5), rgba(30, 26, 26, 0.6)),
@@ -238,17 +218,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-            <!-- Browse See More Button -->
-            <!-- <div class="mt-4">
-                <button type="button" class="btn btn-primary ">See More</button>
-            </div> -->
     </section>
     <!-- End of Services -->
 
@@ -303,13 +272,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <!-- Browse More Button -->
-            <!-- <div class="">
-                <button type="button" class="btn btn-outline-danger ">Order Now</button>
-            </div> -->
-
     </section>
     <!-- End of Category -->
 

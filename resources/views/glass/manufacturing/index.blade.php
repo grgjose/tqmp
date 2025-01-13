@@ -20,44 +20,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
     <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="main.css">
-
-    <!-- Scripts -->
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 </head>
 
 <body>
-    <!-- Style -->
-    @include('plus.style')
-    <!-- End of Style -->
-
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
 
-    <!-- Trial -->
-    <!-- <section class="">
-        <div class="image-aboutus-banner position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary" style="margin-top:70px">
-            <div class="container">
-                <div class="row col-md-6 p-lg-5 mx-auto my-5">
-                    <div class="col-md-12">
-                        <h2 class="fw-bold">Glass Manufacturing</h2>
-                        <h5 class="fw-normal text-light mb-3">With over 60 years of experience in flat glass manufacturing in the country, PFGMI produces quality flat glass such as Clear Float and Tinted Float.</h5>
-                        <button href="" type="button" class="btn btn-danger">
-                            Find out more
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End of Trial -->
-
-    <!-- landing  -->
-
-
-
-    <section class="d-flex align-items-center justify-content-center text-center min-vh-100"
+    <section id="landing-glass-manufacturing" class="d-flex align-items-center justify-content-center text-center min-vh-100"
         style="background: linear-gradient(rgba(23, 38, 71, 0.4), rgba(126, 20, 22, 0.3)),
                     url('https://www.pfg.com.ph/images/slider/01.jpg') no-repeat center center/cover;">
         <div class="container">
@@ -76,28 +47,16 @@
             </div>
         </div>
     </section>
-    <!-- End of landing  -->
 
-    <!-- Glass Manufacturing Section -->
-
-    <section class="">
-
-        <div class="container mt-5 text-center">
-            <!-- Badge -->
-            <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">About Bullet Proofing</span> -->
-            <!-- Heading -->
-
-
-        </div>
+    <section id="about-glass-manufacturing">
         <div class="card mb-3 mx-auto mt-5 fade-in" style="max-width: 1300px;">
             <div class="row g-0 justify-content-center">
-                <!-- Image Column -->
+
                 <div class="col-md-4 d-flex justify-content-center align-items-center">
                     <img src="{{ asset('storage/logos/pioneer_logo.png') }}"
                         alt="Philippines" class="img-fluid rounded lg" style="padding: 20px;">
                 </div>
 
-                <!-- Text Column -->
                 <div class="col-md-8">
                     <div class="card-body py-5">
                         <h2 class="fw-bold" style="color: #7E1416;">Glass Manufacturing</h2>
@@ -105,40 +64,29 @@
                         <p class="text-muted">Pioneer Float Glass Manufacturing Inc. (PFGMI) is the leading flat glass manufacturer in the Philippines.</p>
                         <p class="text-muted">Established in 1958 under the former name of Republic Glass Corporation, and eventually became a wholly owned subsidiary of AGC in 2001 adopting the company name AGC Flat Glass Philippines Inc.
                             In 2017, TQMP Glass Manufacturing Corp. acquired 100% of the AGPH shares thus becoming the torch bearer for the flat glass industry in the Philippines.</p>
-                        <!-- <p class="card-text"><small class="text-muted">Last updated just now</small></p> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Glass Manufacturing Section -->
-
-
-
-    <!-- Products -->
-    <section id="category" class="py-3 mt-5 fade-in-up">
+    <section id="products-glass-manufacturing" class="py-3 mt-5 fade-in-up">
         <div class="container ">
             <div class="container text-center">
-                <!-- Heading -->
                 <h2 class="fw-bold" style="color: #7E1416;">Products</h2>
-                <!-- Paragraph -->
                 <p class="mt-3">
                     With over six decades of expertise in the national flat glass manufacturing industry, PFGMI specializes in producing high-quality flat glass, including Clear Float and Tinted Float. Our dedication extends beyond the glass industry, reflecting a broader commitment to excellence.
                 </p>
-
             </div>
-            <!-- Pagination  -->
 
             <div class="container py-5 ">
                 <!-- Card Content -->
                 <div class="tab-content" id="pagination-content">
+
                     <!-- Page 1 -->
                     <div class="tab-pane fade show active" id="page-1" role="tabpanel" aria-labelledby="page-1-tab">
-
-
                         <div class="row">
-                            <!-- Card 7 -->
+
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/floatglass.jpg') }}" class="card-img-top" alt="Card 1" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -166,7 +114,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card 8 -->
+
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/tintedfloat.jpg') }}" class="card-img-top" alt="Card 2" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -195,7 +143,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card 9 -->
+
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/ultraclear.jpg') }}" class="card-img-top" alt="Card 3" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -224,7 +172,7 @@
                                 </div>
                             </div>
 
-                            <!-- Card 10 -->
+
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/lowe.jpg') }}" class="card-img-top" alt="Card 4" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -252,7 +200,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card 11 -->
+
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/reflective.jpg') }}" class="card-img-top" alt="Card 5" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -282,7 +230,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card 12 -->
+
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/mirror.jpg') }}" class="card-img-top" alt="Card 6" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -317,7 +265,6 @@
                     <div class="tab-pane fade" id="page-2" role="tabpanel" aria-labelledby="page-2-tab">
                         <div class="row">
 
-                            <!-- Card 10 -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/patternedglass.jpg') }}" class="card-img-top" alt="Card 10" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -346,7 +293,7 @@
                                 </div>
                             </div>
 
-                            <!-- Card 11 -->
+
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/wiredglass.jpg') }}" class="card-img-top" alt="Card 11" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -374,8 +321,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -393,18 +338,8 @@
                         </button>
                     </li>
                 </ul>
-
             </div>
-
-
-
     </section>
-    <!-- End of Products -->
-
-
-
-    <!-- Awards Section -->
-
 
     <section id="awards" class="container">
         <div class=" card container py-5 mt-5 fade-in-up">
@@ -434,15 +369,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-    <!-- End of Awards Section -->
 
     <!-- Accordion Section -->
     @include ('plus.accordion')
