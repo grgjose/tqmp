@@ -41,11 +41,8 @@
             color: rgb(253, 253, 253);
             text-shadow: 2px 2px 4px rgba(235, 69, 69, 0.9);
             display: inline-block;
-        
             -webkit-text-stroke: 1px white;
-          
             text-stroke: 0.5px white;
-        
         }
     </style> -->
 
@@ -78,9 +75,6 @@
                 </div>
             </div>
         </div>
-
-
-
         <!-- <div class="container">
             <div class="row justify-content-center text-center text-light">
                 <div class="col-xl-9 col-lg-8">
@@ -103,8 +97,6 @@
             </div>
         </div> -->
     </section>
-
-
     <!-- /Hero Section -->
 
     <!-- Albums (Company Logos) -->
