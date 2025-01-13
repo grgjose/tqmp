@@ -20,7 +20,7 @@
             <!-- Logo for smaller screens -->
             <div class="col-auto d-md-none">
                 <a href="/" class="navbar-brand d-inline-flex link-body-emphasis text-decoration-none">
-                    <img src="{{ asset('storage/logos/TQMPLogo-White.png') }}" alt="Header Image" width="60">
+                    <img src="{{ asset('storage/logos/TQMPLogo-Yellow.png') }}" alt="Header Image" width="60">
                 </a>
             </div>
         </div>
