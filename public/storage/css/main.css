@@ -1,5 +1,6 @@
-/* text styles  */
-/* Add this in your CSS file or within a <style> tag */
+/*--------------------------------------------------------------
+# Text Styles
+--------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 .heading {
@@ -22,7 +23,13 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* Base styles for word animations */
+.text-danger {
+    color: #7E1416 !important;
+}
+
+/*--------------------------------------------------------------
+# Text Animations
+--------------------------------------------------------------*/
 .word-fade-in span {
     display: inline-block;
     opacity: 0;
@@ -96,7 +103,6 @@
     animation-delay: 1.6s;
 }
 
-/* Keyframes for the fade-in effect */
 @keyframes wordFadeIn {
     0% {
         opacity: 0;
@@ -109,7 +115,6 @@
     }
 }
 
-/* fade in up effect */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -122,12 +127,14 @@
     }
 }
 
+/*--------------------------------------------------------------
+# Fade Effects
+--------------------------------------------------------------*/
 .fade-in-up {
     animation: fadeInUp 1s ease-out forwards;
     /* Adjust the duration and easing as needed */
 }
 
-/* fade up effect  */
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -257,24 +264,9 @@
     }
 }
 
-/* body,
-    html {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    #hero {
-        height: 100vh;
-        margin-top: -80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: url('storage/logos/tqmpnew-edited.jpg') center/cover no-repeat, rgba(0, 0, 0, 0.4);
-        background-blend-mode: overlay;
-    } */
-
-/* video playback */
+/*--------------------------------------------------------------
+# Video Playback
+--------------------------------------------------------------*/
 .hover-video {
     width: 100%;
     transition: opacity 0.3s ease;
@@ -295,7 +287,9 @@
     animation-play-state: paused;
 }
 
-/* Font */
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
     font-family: "Poppins", sans-serif;
     font-size: small;
@@ -304,9 +298,9 @@ body {
     font-style: normal;
 }
 
-/* General Button Styling */
-
-/* Card Animation */
+/*--------------------------------------------------------------
+# Card Animation
+--------------------------------------------------------------*/
 .card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -329,7 +323,6 @@ body {
     /* Add shadow for emphasis */
 }
 
-/* Button Styles */
 .card-button {
     display: flex;
     justify-content: center;
@@ -359,11 +352,9 @@ body {
     /* Move the button up slightly */
 }
 
-.btn {
-    width: 120px;
-}
-
-/* navbar effects  */
+/*--------------------------------------------------------------
+# Navigation Bar Styles
+--------------------------------------------------------------*/
 
 .nav-link {
     color: #1c2033;
@@ -384,30 +375,25 @@ body {
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1020;
-    /* Ensure it stays on top */
 }
 
 .header {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
-    /* Smooth transition for hover effect */
 }
 
 .header:hover {
     transform: scale(1.05);
-    /* Slight zoom on hover */
 }
 
 .navbar-toggler {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-    /* Smooth transition for click effect */
 }
 
 .navbar-toggler:hover {
     transform: rotate(90deg);
-    /* Rotate on hover */
 }
 
 @media (max-width: 768px) {
@@ -444,59 +430,38 @@ body {
     }
 }
 
-/* button effect  */
+/*--------------------------------------------------------------
+# Button Styles
+--------------------------------------------------------------*/
 .btn {
+    width: 120px;
     border: none;
     border-radius: 4px;
-    /* Slightly rounded corners */
     text-decoration: none;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease,
         box-shadow 0.2s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow */
 }
 
 .btn:hover {
     transform: translateY(-2px);
-    /* Subtle lift on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    /* Enhanced shadow */
 }
 
 .btn:active {
     transform: translateY(1px);
-    /* Press effect */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Reduced shadow */
 }
 
 .btn:focus {
     outline: none;
-    /* Remove default outline */
     box-shadow: 0 0 8px rgba(23, 38, 71, 0.8);
-    /* Focus glow */
-}
-
-/* End of header */
-
-/* Landing Page Scrolling Animation */
-.custom-section {
-    background-color: rgb(255, 255, 255);
-    /* Light grey background */
-    font-family: "Roboto", sans-serif;
-    /* Modern, clean font */
-}
-
-.text-danger {
-    color: #7e1416 !important;
-    /* Consistent color branding */
 }
 
 button.btn-danger {
     background-color: #7e1416;
-    /* Match primary brand color */
     color: white;
     border: none;
     font-size: smaller;
@@ -511,7 +476,6 @@ button.btn-danger:hover {
 
 button.btn-primary {
     background-color: #1e325c;
-    /* Match primary brand color */
     color: white;
     border: none;
     font-size: smaller;
@@ -526,7 +490,6 @@ button.btn-primary:hover {
 
 button.btn-warning {
     background-color: #eacf68;
-    /* Match primary brand color */
     color: #172647;
     border: none;
     font-size: smaller;
@@ -541,7 +504,6 @@ button.btn-warning:hover {
 
 button.btn-light {
     background-color: #ffffff;
-    /* Match primary brand color */
     color: #172647;
     border: rgb(48, 53, 65);
     font-size: smaller;
@@ -556,7 +518,6 @@ button.btn-light:hover {
 
 button.btn-outline-light {
     background-color: none;
-    /* Match primary brand color */
     color: #ffffff;
     border: 1px solid #ffffff;
     font-size: smaller;
@@ -572,7 +533,6 @@ button.btn-outline-light:hover {
 
 button.btn-outline-warning {
     background-color: none;
-    /* Match primary brand color */
     color: #eacf68;
     border: #eacf68;
     font-size: smaller;
@@ -587,10 +547,8 @@ button.btn-outline-warning:hover {
 
 button.btn-outline-danger {
     background-color: transparent;
-    /* Fix 'none' to 'transparent' */
     color: #7e1416;
     border: 1px solid #7e1416;
-    /* Specify solid border style */
     font-size: smaller;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -600,7 +558,6 @@ button.btn-outline-danger:hover {
     background-color: #7e1416;
     color: #ffffff;
     font-weight: bold;
-    /* Optional: Change text color on hover */
     transform: translateY(-2px);
 }
 
@@ -622,10 +579,8 @@ button.btn-outline-primary:hover {
 
 a.btn-outline-danger {
     background-color: #7e1416;
-    /* Fix 'none' to 'transparent' */
     color: #fff;
     border: 0.5px solid #7e1416;
-    /* Specify solid border style */
     font-size: smaller;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -639,7 +594,6 @@ a.btn-outline-danger:hover {
 
 a.btn-danger {
     background-color: #7e1416;
-    /* Match primary brand color */
     color: #ffffff;
     border: none;
     font-size: smaller;
@@ -655,7 +609,6 @@ a.btn-danger:hover {
 
 a.btn-primary {
     background-color: #1e325c;
-    /* Match primary brand color */
     color: white;
     border: none;
     font-size: smaller;
@@ -670,7 +623,6 @@ a.btn-primary:hover {
 
 a.btn-light {
     background-color: #ffffff;
-    /* Match primary brand color */
     color: #172647;
     border: #172647;
     font-size: smaller;
@@ -688,7 +640,6 @@ a.btn-outline-primary {
     color: #fff;
     border: 0.5px solid #1e325c;
     font-size: smaller;
-
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -701,11 +652,9 @@ a.btn-outline-primary:hover {
 
 a.btn-outline-light {
     background-color: none;
-    /* Match primary brand color */
     color: #ffffff;
     border: 1px solid #ffffff;
     font-size: smaller;
-
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -715,6 +664,10 @@ a.btn-outline-light:hover {
     font-size: smaller;
     font-weight: bold;
 }
+
+/*--------------------------------------------------------------
+# Image Styles
+--------------------------------------------------------------*/
 
 .img-fluid {
     border-radius: 10px;
@@ -780,7 +733,9 @@ a.btn-outline-light:hover {
     border-color: #7e1416;
 }
 
-/* Company Logos Animation  */
+/*--------------------------------------------------------------
+# Company Logos Styles
+--------------------------------------------------------------*/
 .logo-scroller {
     overflow: hidden;
     position: relative;
@@ -799,7 +754,6 @@ a.btn-outline-light:hover {
     aspect-ratio: auto;
 }
 
-/* Keyframes for infinite sliding */
 @keyframes slide {
     from {
         transform: translateX(0%);
@@ -810,20 +764,9 @@ a.btn-outline-light:hover {
     }
 }
 
-/* End of Company Logos Animation  */
-.image-aboutus-banner {
-    background: linear-gradient(rgba(129, 38, 38, 0.7), rgba(71, 69, 69, 0.7)),
-        url("https://images.pexels.com/photos/7219187/pexels-photo-7219187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    padding-top: 110px;
-    padding-bottom: 110px;
-}
-
-/* Dropdown hover effects!! */
-/* General Styles for Dropdown */
+/*--------------------------------------------------------------
+# Dropdown Styles
+--------------------------------------------------------------*/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -841,13 +784,10 @@ a.btn-outline-light:hover {
     z-index: 1000;
 }
 
-/* Show menu on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
-    /* Show the dropdown */
 }
 
-/* Style dropdown links */
 .dropdown-menu li a {
     color: #000;
     text-decoration: none;
@@ -865,17 +805,10 @@ a.btn-outline-light:hover {
     padding: 0.5rem;
 }
 
-/* Pagination button styles */
+/*--------------------------------------------------------------
+# Pagination Styles
+--------------------------------------------------------------*/
 .pagination-button {
-    /* background-color: #172647;
-        color: #fff;
-        font-size: smaller;
-        padding: 5px 10px;
-        margin-right: 10px;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        transition: all 0.3s ease; */
-
     background-color: transparent;
     color: #7e1416;
     border: 1px solid #7e1416;

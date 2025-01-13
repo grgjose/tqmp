@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -124,7 +124,6 @@
         </div>
 
     </section>
-    <!-- End of Services -->
 
     <!-- Accordion Section -->
     @include ('plus.accordion')

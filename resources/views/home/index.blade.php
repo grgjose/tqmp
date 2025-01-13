@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -24,29 +24,20 @@
 
 </head>
 
-
 <body>
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.5), rgba(30, 26, 26, 0.6)),
-    url('storage/logos/tqmpnew-edited.jpg') no-repeat center center/cover;">
-
+    <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.5), rgba(30, 26, 26, 0.6)), url('storage/logos/tqmpnew-edited.jpg') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center text-center text-light">
                 <div class="col-xl-9 col-lg-8">
-                    <!-- Heading with highlighted text -->
-                    <!-- <p class="lead mt-3 mb-3 fade-in-up heading highlight" style="font-weight: bold;">
-                        <b>TOTAL QUALITY MANUFACTURING PRODUCTS PHILIPPINES CORPORATION</b>
-                    </p> -->
                     <h2 class="word-fade-in landing-text sub-heading">
                         <span>Your</span> <span>Partner</span> <span>in</span> <span>Progress:</span>
                         <br><span>The</span> <span>Marketing</span> <span>Arm</span> <span>of</span>
                         <br><span>Philippines</span> <span>Glass</span> <span>and</span> <span>Aluminum</span> <span>Conglomerate</span>
                     </h2>
-                    <!-- Modernized Button area -->
                     <div class="text-center mb-5 mt-3">
                         <a type="button" class="btn btn-danger fade-in-up">Register
                             <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i>
@@ -55,32 +46,9 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="container">
-            <div class="row justify-content-center text-center text-light">
-                <div class="col-xl-9 col-lg-8">
-                 
-
-                    <h2 class="word-fade-in landing-text">
-                        <span>TOTAL</span> <span>QUALITY</span> <span>MANUFACTURING</span> <span>PRODUCTS</span>
-                        <br><span>PHILIPPINES</span> <span>CORPORATION</span>
-                    </h2>
-                    <p class="lead mt-3 mb-3 fade-in-up" style="color: white;">
-                        Your Partner in Progress: The Marketing Arm of Philippines Glass and Aluminum Conglomerate
-                    </p>
-                  
-                    <div class="text-center mb-5 mt-3">
-                        <a type="button" class="btn btn-outline-light btn-lg px-4 me-sm-3">Register
-                            <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </section>
-    <!-- /Hero Section -->
 
-    <!-- Albums (Company Logos) -->
-    <section id="companies" class="container py-5 fade-in text-center">
+    <section id="company-logos" class="container py-5 fade-in text-center">
         <div class="w-100">
             <div class="py-5">
                 <marquee behavior="scroll" direction="left" scrollamount="7">
@@ -111,91 +79,16 @@
         </div>
     </section>
 
-
-    <!-- End of Albums -->
-
-
-
-    <!-- Landing -->
-    <!-- <section class="custom-section fade-in py-3">
-        <div class="container text-center">
-
-            <div class="row align-items-center">
-            
-                <div class="col-md-6 text-center text-md-start">
-                    <h2 class="display-5 fw-bold mb-0"></h2>
-                    <h2 class="display-5 fw-bold mb-0">TOTAL </h2>
-                    <h2 class="display-5 fw-bold mb-0"> QUALITY </h2>
-                    <h2 class="display-5 fw-bold mb-0"> MANUFACTURING </h2>
-                    <h2 class="display-5 fw-bold mb-0"> PRODUCTS</h2>
-                    <h2 class=" fw-bold text-danger mb-0">PHILIPPINES CORPORATION</h2>
-                    <p class="text-muted mb-4">
-                        Transforming industries with cutting-edge solutions and unwavering commitment to excellence. <br>
-                        Join us on our journey to redefine quality and innovation.
-                    </p>
-                    <button type="button" class="btn btn-outline-danger btn-lg px-4 py-2">
-                        Register
-                    </button>
-                </div>
-
-                <div class="col-md-6 text-center py-3">
-                    <div class="position-relative">
-                        <img src="{{ asset('storage/logos/TQMPBuilding.jpg') }}" alt="Philippines"
-                            class="img-fluid rounded shadow-lg">
-                        <div
-                            class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End of Landing -->
-
-    <!-- <div class="px-4 text-center border-bottom text-center">
-        <h1 class="display-4 fw-bold">We are the marketing arm of glass <br> and aluminum conglomerate</h1>
-        <div class="col-lg-6 mx-auto">
-            <h4 class="text-muted">TOTAL QUALITY MANUFACTURING PRODUCTS PHILIPPINES CORPORATION</h4>
-        
-            <div class="text-center mb-5">
-                <a type="button" class="btn btn-danger btn-lg px-4 me-sm-3">Register <i class="fa-solid fa-arrow-right" style="font-size: 9px;"></i></a>
-            </div>
-        </div>
-        <div style="max-height: 40vh;">
-            <div class="container px-5">
-                <img src="{{ asset('storage/logos/TQMPBuilding.jpg') }}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="800" height="500" loading="lazy">
-            </div>
-        </div>
-    </div> -->
-
-
-
-    <!-- Line -->
-    <!-- <div class="container text-center">
-        <hr style="width: 30%;  margin: 20px auto;">
-    </div> -->
-    <!-- End of Line -->
-
-
-
-    <!-- Services -->
     <section id="services" class="py-3">
         <div class="container ">
             <div class="text-center">
-                <!-- Badge -->
-                <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Our Services</span> -->
-                <!-- Heading -->
                 <h2 class="fw-bold" style="color: #7E1416;">What We Offer</h2>
-                <!-- Paragraph -->
                 <p class="mt-3">
                     Committed to providing superior products and services that uphold the highest industry benchmarks. Our advanced techniques and state-of-the-art equipment ensure that every project is completed with precision and excellence.
                 </p>
             </div>
 
-            <!-- Cards -->
-
             <div class="row mt-4">
-                <!-- Card 1 -->
                 <div class="col-md-6 py-3">
                     <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -206,7 +99,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 2 -->
                 <div class="col-md-6 py-3">
                     <div class="card border-0 shadow-lg">
                         <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -219,24 +111,17 @@
                 </div>
             </div>
     </section>
-    <!-- End of Services -->
 
-    <!-- Category -->
     <section id="category" class="py-3 mt-5">
         <div class="container  ">
             <div class="text-center">
-                <!-- Badge -->
-                <!-- <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Category</span> -->
-                <!-- Heading -->
                 <h2 class="fw-bold" style="color: #7E1416;">Shop by Category</h2>
-                <!-- Paragraph -->
                 <p class="mt-3">
                     We are now offering our valued customers the ability to shop online and have our services delivered right to your door. Please feel free to use our new online services.
                 </p>
             </div>
-            <!-- Category Cards -->
+
             <div class="row">
-                <!-- Category 1 -->
                 <div class="col-md-4 py-3 d-flex align-items-stretch">
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/glass-processing/cool silver only.jpg') }}" alt="Bulletproof" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -248,7 +133,6 @@
                     </div>
                 </div>
 
-                <!-- Category 2 -->
                 <div class="col-md-4 py-3 d-flex align-items-stretch">
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/home/aluminum.jpg') }}" alt="Category 2" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -260,7 +144,6 @@
                     </div>
                 </div>
 
-                <!-- Category 3 -->
                 <div class="col-md-4 py-3 d-flex align-items-stretch">
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/home/gen-trade.jpg') }}" alt="Gen Trade" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -273,7 +156,6 @@
                 </div>
             </div>
     </section>
-    <!-- End of Category -->
 
     <!-- Accordion Section -->
     @include ('plus.accordion')
@@ -289,8 +171,6 @@
 
     <!-- Bootstrap JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
-
 </body>
-
 
 </html>

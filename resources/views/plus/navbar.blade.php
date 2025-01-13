@@ -1,4 +1,4 @@
-<div class="fade-in sticky-top" style="background-color: #7E1416;">
+<div class="sticky-top" style="background-color: #7E1416;">
     <!-- Logo and Header Text -->
     <div class="container text-center">
         <div class="row justify-content-center align-items-center py-2">
