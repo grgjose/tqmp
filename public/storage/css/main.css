@@ -744,8 +744,11 @@ a.btn-outline-light:hover {
 }
 
 .logo-track {
+    display: -webkit-box; /* Fallback for older browsers */
+    display: -ms-flexbox; /* Fallback for IE10 */
     display: flex;
     animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 30s linear infinite; /* Safari */
 }
 
 .logo-track img {
@@ -765,15 +768,13 @@ a.btn-outline-light:hover {
     }
 }
 
-/* Apply the scroll animation to the logo container */
-.logo-container::before,
-.logo-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 50%;
-    z-index: 1;
+@-webkit-keyframes scroll { /* Safari */
+    0% {
+        -webkit-transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-50%);
+    }
 }
 
 /* Responsive adjustments */
