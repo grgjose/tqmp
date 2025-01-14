@@ -738,34 +738,34 @@ a.btn-outline-light:hover {
 --------------------------------------------------------------*/
 /* Styling for the logo track */
 .logo-container {
-    overflow: hidden; /* Ensures content stays within bounds */
+    overflow: hidden; /* Ensure content stays within bounds */
     width: 100%;
     position: relative;
 }
 
 .logo-track {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    animation: scroll-logos 15s linear infinite; /* Smooth scrolling animation */
+    animation: scroll-logos 20s linear infinite; /* Smooth scrolling animation */
+    will-change: transform;
 }
 
 .logo-track img {
     height: 100px; /* Adjust height as needed */
     width: auto;
+    margin: 0 15px;
 }
 
+/* Keyframes for animation */
 @keyframes scroll-logos {
     0% {
         transform: translateX(0); /* Start at initial position */
     }
     100% {
-        transform: translateX(-100%); /* Move left by the width of the track */
+        transform: translateX(-100%); /* Scroll the entire width */
     }
 }
 
-/* Duplicate content styling for seamless loop */
+/* Duplicate the content for seamless loop */
 .logo-track::after {
     content: "";
     flex-shrink: 0;
