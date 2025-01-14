@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    <section id="about-company">
+    <section id="timeline-company">
         <div class="container py-5">
             <div class="container text-center fade-in-up">
                 <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Timeline</span>
@@ -57,7 +57,7 @@
                                                 TQMP PHILIPPINES handles importations and trading of flat glass and other related products such as engineering adhesives, silicone sealants, abrasives, hardware for glass and aluminum installations, and the like.</p>
                                         </div>
                                         <div class="col-md-6 order-md-2 mb-3">
-                                            <img src="https://images.pexels.com/photos/5411674/pexels-photo-5411674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="1998" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                            <img src="{{ asset('storage/about-us/alcophil.png') }}" alt="1998" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
                                         </div>
                                     </div>
                                     <!-- Timeline Item 2 -->
@@ -67,7 +67,7 @@
                                             <p>Armed with strong determination to meet the demand of the customers for high-end architectural and industrial glass requirements, the company formed its first subsidiary company in 2005, the Philippine Glass Processing Specialist, Inc. (PGPSI), and invested in several state-of-the-art processing machines.</p>
                                         </div>
                                         <div class="col-md-6 order-md-1 text-md-end mb-3">
-                                            <img src="https://www.pfg.com.ph/images/slider/01.jpg" alt="2005" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                            <img src="{{ asset('storage/about-us/glassp.png') }}" alt="2005" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
                                         </div>
                                     </div>
                                     <!-- Timeline Item 3 -->
@@ -77,7 +77,7 @@
                                             <p>In the third quarter of 2010, Assure Insurance Agency Corporation (AIAC), another subsidiary company of TQMP PHILIPPINES, was established. Assure Insurance Agency Corporation is the insurance arm of the company representing various insurance companies for non-life coverages.</p>
                                         </div>
                                         <div class="col-md-6 order-md-2 mb-3">
-                                            <img src="{{ asset('storage/about-us/aiac.jpg') }}" alt="2010 Q3" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                            <img src="{{ asset('storage/about-us/aiac.png') }}" alt="2010 Q3" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
                                         </div>
                                     </div>
                                     <!-- Timeline Item 4 -->
@@ -87,7 +87,7 @@
                                             <p>In the fourth quarter of 2010, another subsidiary company, TQMC Marketing, was established. TQMC Marketing imports and distributes a wide variety of chemicals and raw ingredients for numerous industrial and food processing applications.</p>
                                         </div>
                                         <div class="col-md-6 order-md-1 text-md-end mb-3">
-                                            <img src="https://images.pexels.com/photos/2889347/pexels-photo-2889347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="2010 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                            <img src="{{ asset('storage/about-us/tqmc.png') }}" alt="2010 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
                                         </div>
                                     </div>
                                     <!-- Timeline Item 5 -->
@@ -97,7 +97,7 @@
                                             <p>In the fourth quarter of 2013, TQMP-Cebu was established. It houses the glass processing facilities that cater to the demands of Cebu and nearby provinces (Visayan Region).</p>
                                         </div>
                                         <div class="col-md-6 order-md-2 mb-3">
-                                            <img src="https://images.pexels.com/photos/26443232/pexels-photo-26443232/free-photo-of-silos-in-factory-near-river.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="2013 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                            <img src="{{ asset('storage/about-us/wdg.png') }}" alt="2013 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
                                         </div>
                                     </div>
                                     <!-- Timeline Item 6 -->

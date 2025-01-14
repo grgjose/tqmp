@@ -29,8 +29,9 @@
     <!-- End of Header -->
 
     <section id="landing-bulletproofing" class="d-flex align-items-center justify-content-center text-center min-vh-100"
-        style="background: linear-gradient(rgba(23, 38, 71, 0.3), rgba(126, 20, 22, 0.4)),
-                    url('https://images.pexels.com/photos/10981370/pexels-photo-10981370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;">
+        style="background: linear-gradient(rgba(23, 38, 71, 0.3), rgba(45, 20, 20, 0.5)),
+                    url('storage/logos/bulletproof-10.jpg') no-repeat center center/cover;">
+
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -286,7 +287,11 @@
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                     data-bs-parent="#faqAccordionLeft">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        N/A
+                                        Any cars can be armoured.
+                                        <br>1.1 SUV
+                                        <br>1.2 Pick-up
+                                        <br>1.3 Van
+                                        <br>1.4 Heavy Equipment
                                     </div>
                                 </div>
                             </div>
@@ -301,7 +306,9 @@
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#faqAccordionLeft">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        N/A
+                                        Bulletproofing increases the weight of the vehicle due to the ballistic plates and bullet resistant glass (BRG).
+                                        Thus, changes in acceleration, maneuverability, braking, and, fuel efficiency maybe experienced.
+                                        The driver must be mindful of these changes to ensure safe and optimal vehicle driving.
                                     </div>
                                 </div>
                             </div>
@@ -316,7 +323,7 @@
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#faqAccordionLeft">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        N/A
+                                        Bulletproofing is generally customized to meet specific needs in terms of protection level, while maintaining the car's appearance, luxury, and style.
                                     </div>
                                 </div>
                             </div>
@@ -331,7 +338,7 @@
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#faqAccordionLeft">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        N/A
+                                        Bulletproofing process can take from few weeks up to several months, depending on the complexity or armoring level package selected by the customer.
                                     </div>
                                 </div>
                             </div>
@@ -346,13 +353,17 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
                                         style="color: #000;">
-                                        <b>Difference between light-weight and traditional armor?</b>
+                                        <b>What is light-weight armor?</b>
                                     </button>
                                 </h2>
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                     data-bs-parent="#faqAccordionRight">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        N/A
+                                        Light weight armor offers effective protection while being easier to wear for extended periods.
+                                        Made from advanced materials, it balances safety and comport, allowing for greater mobility without the bulk of traditional armor.
+                                        This makes it ideal for both personal and professional use.
+                                        Lightweight armor start from BR level 4 and lower.
+                                        It offers effective protection while being easier to wear for extended periods.
                                     </div>
                                 </div>
                             </div>
@@ -367,7 +378,7 @@
                                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                     data-bs-parent="#faqAccordionRight">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        N/A
+                                        It is a complete process of making a vehicle robust to stay intact in bad circumstances.
                                     </div>
                                 </div>
                             </div>
@@ -382,7 +393,9 @@
                                 <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                                     data-bs-parent="#faqAccordionRight">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        N/A
+                                        The cost of bulletproofing varies based on the specific customization needs of each client.
+                                        Factors such as the level of ballistic protection, materials used, and design complexities all influence the final pricing.
+                                        Therefore, each bulletproofing project is priced individually.
                                     </div>
                                 </div>
                             </div>
@@ -397,7 +410,8 @@
                                 <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
                                     data-bs-parent="#faqAccordionRight">
                                     <div class="accordion-body" style="color: #6c757d;">
-                                        N/A
+                                        Maintaining a fully armoured vehicle is vital.
+                                        Regular cleaning, tire care, mechanical inspections and armoured upgraded parts check can ensure the optimal functionality and protection of armoured car.
                                     </div>
                                 </div>
                             </div>
