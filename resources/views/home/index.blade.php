@@ -54,21 +54,21 @@
                 <div class="logo-container">
                     <!-- Logos -->
                     <div class="logo-track">
-                        <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="header-img img-fluid mx-2 my-1">
-                        <!-- Repeat logos for a smooth loop -->
-                        <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="header-img img-fluid mx-2 my-1">
-                        <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="header-img img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="img-fluid mx-2 my-1">
+                        <!-- Repeat for a smooth loop -->
+                        <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="img-fluid mx-2 my-1">
                     </div>
                 </div>
             </div>
