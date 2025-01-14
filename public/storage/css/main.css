@@ -24,7 +24,7 @@
 }
 
 .text-danger {
-    color: #7E1416 !important;
+    color: #7e1416 !important;
 }
 
 /*--------------------------------------------------------------
@@ -765,6 +765,17 @@ a.btn-outline-light:hover {
     }
 }
 
+/* Apply the scroll animation to the logo container */
+.logo-container::before,
+.logo-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .logo-track img {
@@ -777,7 +788,6 @@ a.btn-outline-light:hover {
         max-height: 60px;
     }
 }
-
 
 /*--------------------------------------------------------------
 # Dropdown Styles
