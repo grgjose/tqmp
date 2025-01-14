@@ -75,7 +75,6 @@
         </div>
     </section>
 
-
     <section id="services" class="py-3">
         <div class="container ">
             <div class="text-center">
@@ -87,7 +86,7 @@
 
             <div class="row mt-4">
                 <div class="col-md-6 py-3">
-                    <div class="card border-0 shadow-lg">
+                    <div class="card border-0 shadow-lg" style="height: 500px;">
                         <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold mb-3">Bullet Proofing</h5>
@@ -98,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 py-3">
-                    <div class="card border-0 shadow-lg">
+                    <div class="card border-0 shadow-lg" style="height: 500px;">
                         <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold mb-3">Glass Processing</h5>

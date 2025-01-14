@@ -22,15 +22,12 @@
         </div>
     </div>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md sticky-top" aria-label="Navbar example">
+    <nav class="navbar navbar-expand-md sticky-top py-3" aria-label="Navbar example">
         <div class="container">
-            <!-- Toggle Button for Small Screens -->
             <button class="navbar-toggler mb-2 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Collapsible Menu -->
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -82,27 +79,22 @@
                     </li>
                 </ul>
 
-                <div class="container">
-                    <!-- Cart and Login Buttons -->
-                    <div class="d-flex align-items-center">
-                        <a href="/cart" class="btn btn-danger me-2 d-none d-sm-block">
+                <div class="d-flex align-items-center">
+                    <a href="/cart" class="btn btn-danger me-2 d-none d-sm-block">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                    </a>
+                    <a href="/login" class="btn btn-primary d-none d-sm-block">
+                        <i class="fas fa-user"></i> Login
+                    </a>
+                    <div class="d-flex flex-column w-100 d-sm-none">
+                        <a href="/cart" class="btn btn-danger mb-2 w-100">
                             <i class="fas fa-shopping-cart"></i> Cart
                         </a>
-                        <a href="/login" class="btn btn-primary d-none d-sm-block">
+                        <a href="/login" class="btn btn-primary w-100">
                             <i class="fas fa-user"></i> Login
                         </a>
-                        <!-- Buttons for Mobile View -->
-                        <div class="d-flex flex-column w-100 d-sm-none">
-                            <a href="/cart" class="btn btn-danger mb-2 w-100">
-                                <i class="fas fa-shopping-cart"></i> Cart
-                            </a>
-                            <a href="/login" class="btn btn-primary w-100">
-                                <i class="fas fa-user"></i> Login
-                            </a>
-                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </nav>
