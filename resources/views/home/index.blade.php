@@ -23,11 +23,31 @@
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 
 </head>
+<script type="text/javascript">
+    navigator.sayswho= (function(){
+        var ua= navigator.userAgent;
+        var tem; 
+        var M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+        if(/trident/i.test(M[1])){
+            tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+            return 'IE '+(tem[1] || '');
+        }
+        if(M[1]=== 'Chrome'){
+            tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+            if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+        }
+        M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+        if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+        return M.join(' ');
+    })();
+
+    window.alert(navigator.sayswho);
+</script>
 <body>
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
-
+    <h6 id="debug"></h6>
     <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.2), rgba(30, 26, 26, 0.2)), url('storage/logos/tqmpnew-edited.jpg') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center text-center text-light">
@@ -168,25 +188,6 @@
     <!-- Bootstrap JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
-<script>
-    navigator.sayswho= (function(){
-        var ua= navigator.userAgent;
-        var tem; 
-        var M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
-        if(/trident/i.test(M[1])){
-            tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
-            return 'IE '+(tem[1] || '');
-        }
-        if(M[1]=== 'Chrome'){
-            tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
-            if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
-        }
-        M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
-        if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
-        return M.join(' ');
-    })();
 
-    window.alert(navigator.sayswho); // outputs: `Chrome 62`
-</script>
 
 </html>
