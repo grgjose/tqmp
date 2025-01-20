@@ -5,17 +5,16 @@
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Frequently Asked Questions</title>
+    <meta name="description" content="Total Quality Management Products Philippines">
+    <meta name="author" content="TQMP">
+
+    <!-- Title and Favicon -->
+    <title>FAQs | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
-    <!-- Preconnect for External Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -24,10 +23,9 @@
     <link rel="stylesheet" href="main.css">
 
     <!-- Scripts -->
-    <script src="../assets/js/color-modes.js" defer></script>
-    <!-- Optional: Move this to the bottom of the body if it's not critical for rendering -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 
 <body>
     <!-- Style -->
@@ -48,10 +46,7 @@
                     <span class="badge text-white mb-2" style="background-color: #950101;">FAQs</span>
                     <h2 class="fw-bold">Any Questions? Look Here</h2>
                     <p class="text-muted">
-                        There are many variations of passages of Lorem Ipsum available but the majority have suffered
-                        alteration
-                        in some
-                        form.
+                        We have sorted out your frequently asked questions. You can select the one that best meets your needs by clicking below.
                     </p>
                 </div>
                 <div class="accordion" id="faqAccordion">
@@ -65,9 +60,7 @@
                         <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                sit
-                                amet blandit leo lobortis eget.
+                                Yes, we can. Kindly attach the Drawing in order for our Processing Department to assess and analyze your requirement/ sample.
                             </div>
                         </div>
                     </div>
@@ -81,8 +74,7 @@
                         <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
-                                dictum interdum, nisi lorem egestas odio.
+                                Depending on the application or use, for example, a primary door with 12mm glass for a frameless or patch door may use 6mm or 8mm, depending on the aluminum profile frame being used.
                             </div>
                         </div>
                     </div>
@@ -96,8 +88,7 @@
                         <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis consectetur
-                                nulla, non ultrices libero malesuada eu.
+                                It depends on where you plan to use or apply it. For example, the main door height will be between 2.1 and 2.4 meters and width between 0.9 and 1.0 meters.
                             </div>
                         </div>
                     </div>
@@ -111,9 +102,7 @@
                         <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vivamus a arcu
-                                at
-                                odio viverra ornare.
+                                The pricing may vary or change depending on the day you received the quotation.
                             </div>
                         </div>
                     </div>
@@ -127,8 +116,7 @@
                         <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies orci sed
-                                efficitur tincidunt.
+                                Please attach a clear picture to make item verification easier.
                             </div>
                         </div>
                     </div>
@@ -142,8 +130,7 @@
                         <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut quam vel turpis feugiat
-                                tincidunt in in ligula.
+                                When you order our products, we can send it right away. You can pick from a variety of couriers or even pick it up right away. The quantity of your order will determine how long it takes to process or produce.
                             </div>
                         </div>
                     </div>

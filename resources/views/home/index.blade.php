@@ -1,221 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Total Quality Management Products Philippines">
+    <meta name="author" content="TQMP">
+
+    <!-- Title and Favicon -->
     <title>Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
-    <!-- Preconnect for External Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
     <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 
-    <!-- Scripts -->
-    <script src="../assets/js/color-modes.js" defer></script>
-    <!-- Optional: Move this to the bottom of the body if it's not critical for rendering -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <!-- Style -->
-    @include('plus.style')
-    <!-- End of Style -->
-
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
 
-    <!-- Albums (Company Logos) -->
-    <section id="companies" class=" container d-flex gap-2 justify-content-center py-5">
-        <div align="center" valign="middle">
-            <div class="logo-scroller">
-                <!-- <p class="link-secondary">Companies teamed with</p><br> -->
-                <div class="logos">
-                    <!-- Logos -->
-                    <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img">
-                    <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured"
-                        class="header-img">
-                    <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="header-img">
-                    <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="header-img">
-                    <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="header-img">
-                    <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="header-img">
-                    <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="header-img">
-                    <!-- Duplicate logos for seamless scrolling -->
-                    <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="header-img">
-                    <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured"
-                        class="header-img">
-                    <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="header-img">
-                    <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="header-img">
-                    <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="header-img">
-                    <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="header-img">
-                    <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="header-img">
-                </div>
-            </div>
-            <br>
-            <br>
-        </div>
-    </section>
-    <!-- End of Albums -->
-
-    <!-- Landing -->
-    <section class="custom-section fade-in py-3">
+    <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.2), rgba(30, 26, 26, 0.2)), url('storage/logos/tqmpnew-edited.jpg') no-repeat center center/cover;">
         <div class="container">
-            <div class="row align-items-center">
-                <!-- Text Column -->
-                <div class="col-md-6 text-center text-md-start">
-                    <h2 class="display-5 fw-bold mb-0">TOTAL QUALITY</h2>
-                    <h2 class="display-5 fw-bold mb-0">MANUFACTURING</h2>
-                    <h2 class="display-5 fw-bold mb-0">PRODUCTS</h2>
-                    <h2 class="display-5 fw-bold text-danger mb-0">PHILIPPINES CORPORATION</h2>
-                    <p class="text-muted mb-4">
-                        Transforming industries with cutting-edge solutions and unwavering commitment to excellence.
-                        Join us on our
-                        journey to redefine quality and innovation.
-                    </p>
-                    <button type="button" class="btn btn-danger btn-lg px-4 py-2">
-                        Get Started
-                    </button>
-                </div>
-
-                <!-- Image Column -->
-                <div class="col-md-6 text-center py-3">
-                    <div class="position-relative">
-                        <img src="{{ asset('storage/logos/TQMPBuilding.jpg') }}" alt="Philippines"
-                            class="img-fluid rounded shadow-lg">
-                        <div
-                            class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
-                        </div>
+            <div class="row justify-content-center text-center text-light">
+                <div class="col-xl-9 col-lg-8">
+                    <h2 class="word-fade-in landing-text sub-heading">
+                        <span>Your</span> <span>Partner</span> <span>in</span> <span>Progress:</span>
+                        <br><span>The</span> <span>Marketing</span> <span>Arm</span> <span>of</span>
+                        <br><span>Philippines</span> <span>Glass</span> <span>and</span> <span>Aluminum</span> <span>Conglomerate</span>
+                    </h2>
+                    <div class="text-center mb-5 mt-3">
+                        <a type="button" class="btn btn-danger fade-in-up">Register
+                            <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of Landing -->
 
-    <!-- Line -->
-    <div class="container text-center">
-        <hr style="width: 30%;  margin: 20px auto;">
-    </div>
-    <!-- End of Line -->
+    <section id="company-logos" class="container py-5 fade-in text-center">
+        <div class="w-100">
+            <div class="py-5">
+                <div class="logo-container">
+                    <!-- Logos -->
+                    <div class="logo-track">
+                        <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="img-fluid mx-2 my-1">
+                        <!-- Repeat for a smooth loop -->
+                        <img src="{{ asset('storage/logos/assa-abloy-logo.png') }}" alt="Assa Abloy" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/master_armoured_vehicle-logo.png') }}" alt="Master Armoured" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/pgpsi-logo.png') }}" alt="PGPSI" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Pioneer" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/thore-logo.png') }}" alt="Thore" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/wacker-logo.png') }}" alt="Wacker" class="img-fluid mx-2 my-1">
+                        <img src="{{ asset('storage/logos/yale-logo.png') }}" alt="Yale" class="img-fluid mx-2 my-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Services -->
     <section id="services" class="py-3">
-        <div class="container text-center">
-            <!-- Badge -->
-            <span class="badge text-white mb-2" style="background-color: #950101;">Our Services</span>
-            <!-- Heading -->
-            <h2 class="fw-bold">What We Offer</h2>
-            <!-- Paragraph -->
-            <p class="mt-3">
-                We are offering a Bulletproofing Vehicle with a benefits of very good option for your additional security, 
-                the bullets literally “bounce off” to the vehicle, it has thick and heavy body, like a tank for protection, 
-                it has special tires and glass, literally it saves lives.
-                We do process glass also such as: tempered glass, curve glass, laminated glass and insulating glass unit (IGU).
-            </p>
-            <!-- Cards -->
-            <div class="row mt-6">
-                <!-- Card 1 -->
-                <div class="col-md-6">
-                    <div class="card border-0">
-                        <img src="https://scontent.fmnl11-1.fna.fbcdn.net/v/t39.30808-6/468985122_122125057418380974_4059153245440699735_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGcsMyMyLSviP2rX-8l4-jYehWf2pF00gB6FZ_akXTSADXe7JSjTPvcf19COhT6vojzZEZpMs27lUR5J-5HB-JG&_nc_ohc=RupZod6R30UQ7kNvgG3hy-N&_nc_zt=23&_nc_ht=scontent.fmnl11-1.fna&_nc_gid=Aeqh0xEfnJuy8fRYave7AoC&oh=00_AYCPXm9qv71x7s0_q2tZPflAWRa86dsJAzs_gsRYiXMyzA&oe=676529AB"
-                            alt="Category 1" class="card-img-top rounded" height="425">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Bullet Proofing</h5>
-                            <p class="text-muted">8 Products Available</p>
+        <div class="container ">
+            <div class="text-center">
+                <h2 class="fw-bold" style="color: #7E1416;">What We Offer</h2>
+                <p class="mt-3">
+                    Committed to providing superior products and services that uphold the highest industry benchmarks. Our advanced techniques and state-of-the-art equipment ensure that every project is completed with precision and excellence.
+                </p>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6 py-3">
+                    <div class="card border-0 shadow-lg" style="height: 500px;">
+                        <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold mb-3">Bullet Proofing</h5>
+                            <p>Equip your vehicle with unparalleled protection that rivals the strength of a tank.
+                                Our advanced armor ensures superior safety, providing peace of mind and safeguarding lives on every journey.</p>
+                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
                         </div>
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="col-md-6">
-                    <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/3736110/pexels-photo-3736110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 1" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Glass Processing</h5>
-                            <p class="text-muted">8 Products Available</p>
+                <div class="col-md-6 py-3">
+                    <div class="card border-0 shadow-lg" style="height: 500px;">
+                        <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold mb-3">Glass Processing</h5>
+                            <p>Our advanced glass processing techniques ensure durability and quality, catering to a wide range of architectural and industrial needs.</p>
+                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Browse See More Button -->
-            <!-- <div class="mt-4">
-                <button type="button" class="btn btn-danger">See More</button>
-            </div> -->
     </section>
-    <!-- End of Services -->
 
-    <!-- Category -->
-    <section id="category" class="py-3">
-        <div class="container text-center">
-            <!-- Badge -->
-            <span class="badge text-white mb-2" style="background-color: #950101;">Category</span>
-            <!-- Heading -->
-            <h2 class="fw-bold">Shop by Category</h2>
-            <!-- Paragraph -->
-            <p class="mt-3">
-                For our valued customer we are now extending our services thru online shopping to be next on your door. 
-                Now feel ease to our new online services we are providing.
-            </p>
-            <!-- Category Cards -->
-            <div class="row mt-5">
-                <!-- Category 1 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 1" class="card-img-top rounded">
-                        <div class="card-body">
+    <section id="category" class="py-3 mt-5">
+        <div class="container  ">
+            <div class="text-center">
+                <h2 class="fw-bold" style="color: #7E1416;">Shop by Category</h2>
+                <p class="mt-3">
+                    We are now offering our valued customers the ability to shop online and have our services delivered right to your door. Please feel free to use our new online services.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 py-3 d-flex align-items-stretch">
+                    <div class="card border-0 shadow-lg d-flex flex-column">
+                        <img src="{{ asset('storage/glass-processing/cool silver only.jpg') }}" alt="Bulletproof" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold">Glass</h5>
-                            <p class="text-muted">8 Products Available</p>
+                            <p class="flex-grow-1">We offer a wide range of glass products for different applications, ensuring quality and durability.</p>
+                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Category 2 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Category 2" class="card-img-top rounded">
-                        <div class="card-body">
+                <div class="col-md-4 py-3 d-flex align-items-stretch">
+                    <div class="card border-0 shadow-lg d-flex flex-column">
+                        <img src="{{ asset('storage/home/aluminum.jpg') }}" alt="Category 2" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold">Aluminum</h5>
-                            <p class="text-muted">8 Products Available</p>
+                            <p class="flex-grow-1">A versatile and lightweight metal used in a variety of applications due to its strength, corrosion resistance, and aesthetic appeal.</p>
+                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Category 3 -->
-                <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://images.pexels.com/photos/454499/pexels-photo-454499.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="Category 3" class="card-img-top rounded">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Gen Trade</h5>
-                            <p class="text-muted">8 Products Available</p>
+                <div class="col-md-4 py-3 d-flex align-items-stretch">
+                    <div class="card border-0 shadow-lg d-flex flex-column">
+                        <img src="{{ asset('storage/home/gen-trade.jpg') }}" alt="Gen Trade" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold">Other Products</h5>
+                            <p class="flex-grow-1">In addition to aluminum and glass, we offer a variety of hardware products essential for construction and installation.</p>
+                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Browse More Button -->
-            <div class="">
-                <button type="button" class="btn btn-danger">See More</button>
-            </div>
-
     </section>
-    <!-- End of Category -->
 
     <!-- Accordion Section -->
     @include ('plus.accordion')
@@ -228,6 +165,9 @@
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
+
+    <!-- Bootstrap JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 
 </html>

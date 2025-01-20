@@ -1,225 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Us</title>
+    <meta name="description" content="Total Quality Management Products Philippines">
+    <meta name="author" content="TQMP">
+
+    <!-- Title and Favicon -->
+    <title>About Us | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
-    <!-- Preconnect for External Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
     <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="main.css">
-
-    <!-- Scripts -->
-    <script src="../assets/js/color-modes.js" defer></script>
-    <!-- Optional: Move this to the bottom of the body if it's not critical for rendering -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 </head>
 
 <body>
-    <!-- Style -->
-    @include('plus.style')
-    <!-- End of Style -->
-
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
 
-    <!-- About Us Section -->
-    <div class="container py-4">
-        <section class="custom-section fade-in py-5 p-4 p-md-5 mb-4 rounded text-body-emphasis bg-light">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Text Column -->
-                    <div class="col-md-6 text-center text-md-start">
-                        <h2 class="fw-bold">About Us</h2>
-                        <p class="text-muted">TQMP PHILIPPINES is engaged in the marketing and selling of a wide range of glass products and aluminum sections instead for the construction industry. Established in 1998, an emerging leader in the aluminum and glass industries. TQMP PHILIPPINES handles importations and trading of flat glass and other related products such as engineering adhesives, silicone sealants, abrasives, hardware's for glass and aluminum installations, and the like.</p>
-                        <P class="text-muted">Armed with strong determination to meet the demand of the customers for high end architectural and industrial glass requirements, the company formed its first subsidiary company in 2005, the Philippine Glass Processing Specialist, Inc. (PGPSI), and invested several state-of-the-art processing machines.</P>
-                        <P class="text-muted"> In the third quarter of 2010, Assure Insurance Agency Corporation (AIAC), another subsidiary company of TQMP PHILIPPINES, was established. Assure Insurance Agency Corporation is the insurance arm of the company representing various insurance companies for non-life coverage's.</P>
-                        <button type="button" class="btn btn-danger">
-                            Get Started
-                        </button>
-                    </div>
+    <section id="landing-company">
+        <div class="dark-background text-light" style="background: url('storage/logos/tqmpnew-edited.jpg') center/cover no-repeat, rgba(0, 0, 0, 0.4); background-blend-mode: overlay; padding: 160px 0 60px 0; text-align: center; position: relative;">
+            <div class="container position-relative">
+                <h2 class="fade-in" style="font-size: 56px; font-weight: 700; font-family: var(--nav-font);">Company History</h2>
+                <p class="lead mb-4 fade-in">TQMP PHILIPPINES specializes in marketing and selling an extensive range of glass products and aluminum sections, serving the construction industry and beyond.</p>
+            </div>
+        </div>
+    </section>
 
-                    <!-- Image Column -->
-                    <div class="col-md-6 text-center">
-                        <div class="position-relative">
-                            <img src="https://images.pexels.com/photos/942540/pexels-photo-942540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="Philippines" class="img-fluid rounded shadow-lg">
-                            <div
-                                class="image-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-opacity">
+    <section id="timeline-company">
+        <div class="container py-5">
+            <div class="container text-center fade-in-up">
+                <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Timeline</span>
+            </div>
+            <div id="timeline" class="container fade-in-up">
+                <div class="section section-md">
+                    <div class="container">
+                        <div class="row mt-4 justify-content-center">
+                            <div class="col-md-10 mx-auto">
+                                <!-- Timeline -->
+                                <div class="timeline">
+                                    <!-- Timeline Item 1 -->
+                                    <div class="timeline-item row align-items-center justify-content-center">
+                                        <div class="col-md-6 order-md-1 text-md-end mb-3">
+                                            <h2 class="my-3" style="color: #920B12;"><b>1998</b></h2>
+                                            <p>Established in 1998, an emerging leader in the aluminum and glass industries.
+                                                TQMP PHILIPPINES handles importations and trading of flat glass and other related products such as engineering adhesives, silicone sealants, abrasives, hardware for glass and aluminum installations, and the like.</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-2 mb-3">
+                                            <img src="{{ asset('storage/about-us/alcophil.png') }}" alt="1998" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Item 2 -->
+                                    <div class="timeline-item row align-items-center justify-content-center">
+                                        <div class="col-md-6 order-md-2 mb-3">
+                                            <h2 class="my-3" style="color: #920B12;"><b>2005</b></h2>
+                                            <p>Armed with strong determination to meet the demand of the customers for high-end architectural and industrial glass requirements, the company formed its first subsidiary company in 2005, the Philippine Glass Processing Specialist, Inc. (PGPSI), and invested in several state-of-the-art processing machines.</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-1 text-md-end mb-3">
+                                            <img src="{{ asset('storage/about-us/glassp.png') }}" alt="2005" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Item 3 -->
+                                    <div class="timeline-item row align-items-center justify-content-center">
+                                        <div class="col-md-6 order-md-1 text-md-end mb-3">
+                                            <h2 class="my-3" style="color: #920B12;"><b>Third Quarter of 2010</b></h2>
+                                            <p>In the third quarter of 2010, Assure Insurance Agency Corporation (AIAC), another subsidiary company of TQMP PHILIPPINES, was established. Assure Insurance Agency Corporation is the insurance arm of the company representing various insurance companies for non-life coverages.</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-2 mb-3">
+                                            <img src="{{ asset('storage/about-us/aiac.png') }}" alt="2010 Q3" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Item 4 -->
+                                    <div class="timeline-item row align-items-center justify-content-center">
+                                        <div class="col-md-6 order-md-2 mb-3">
+                                            <h2 class="my-3" style="color: #920B12;"><b>Fourth Quarter of 2010</b></h2>
+                                            <p>In the fourth quarter of 2010, another subsidiary company, TQMC Marketing, was established. TQMC Marketing imports and distributes a wide variety of chemicals and raw ingredients for numerous industrial and food processing applications.</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-1 text-md-end mb-3">
+                                            <img src="{{ asset('storage/about-us/tqmc.png') }}" alt="2010 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Item 5 -->
+                                    <div class="timeline-item row align-items-center justify-content-center">
+                                        <div class="col-md-6 order-md-1 text-md-end mb-3">
+                                            <h2 class="my-3" style="color: #920B12;"><b>Fourth Quarter of 2013</b></h2>
+                                            <p>In the fourth quarter of 2013, TQMP-Cebu was established. It houses the glass processing facilities that cater to the demands of Cebu and nearby provinces (Visayan Region).</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-2 mb-3">
+                                            <img src="{{ asset('storage/about-us/wdg.png') }}" alt="2013 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Item 6 -->
+                                    <div class="timeline-item row align-items-center justify-content-center">
+                                        <div class="col-md-6 order-md-2 mb-3">
+                                            <h2 class="my-3" style="color: #920B12;"><b>Second Quarter of 2014</b></h2>
+                                            <p>Southern Philippines Glass (SPG) started its operations in the second quarter of 2014 with the same facilities of TQMP-Cebu. It serves the growing demand of the Mindanao Region.</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-1 text-md-end mb-3">
+                                            <img src="https://th.bing.com/th/id/OLC.d45VbMr0TG1XzQ480x360?&rs=1&pid=ImgDetMain" alt="2014 Q2" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Item 7 -->
+                                    <div class="timeline-item row align-items-center justify-content-center">
+                                        <div class="col-md-6 order-md-1 text-md-end mb-3">
+                                            <h2 class="my-3" style="color: #920B12;"><b>Fourth Quarter of 2014</b></h2>
+                                            <p>In the fourth quarter of 2014, the new plant in Lawang Bato started its maiden operation. It houses one of the biggest tempering and modern glass processing facilities in Southeast Asia.</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-2 mb-3">
+                                            <img src="{{ asset('storage/logos/tqmpnew-edited.jpg') }}" alt="2014 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                </div> <!-- End of Timeline -->
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Details -->
-        <section id="services" class="py-5">
-            <div class="container text-center">
-                <!-- Heading -->
-                <h2 class="fw-bold">Learn More From Us</h2>
-                <!-- Paragraph -->
-                <p class="mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                    vestibulum.
-                    Cras venenatis euismod malesuada. Nulla facilisi. Phasellus euismod purus non nisi cursus, sit
-                    amet
-                    elementum
-                    lorem egestas. Quisque accumsan lacus at eros gravida, in ultricies mi fermentum.
-                </p>
-                <!-- Cards -->
-                <div class="row mt-4">
-                    <!-- Card 1 -->
-                    <div class="col-md-4">
-                        <div class="card border-0">
-                            <img src="https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="Category 1" class="card-img-top rounded">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Category 1</h5>
-                                <p class="text-muted">In the third quarter of 2010, Assure Insurance Agency Corporation (AIAC), another subsidiary company of TQMP PHILIPPINES, was established. Assure Insurance Agency Corporation is the insurance arm of the company representing various insurance companies for non-life coverage's.</p>
-                                <P class="text-muted"> In the fourth quarter of 2010, another subsidiary company, TQMC Marketing, was established. TQMC Marketing imports and distributes a wide variety of chemicals and raw ingredients for numerous industrial and food processing applications.</P>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="col-md-4">
-                        <div class="card border-0">
-                            <img src="https://images.pexels.com/photos/8159/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="Category 1" class="card-img-top rounded">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Category 1</h5>
-                                <p class="text-muted">In the forth quarter of 2013, TQMP-Cebu was established. It houses the glass processing facilities that cater to the demands of Cebu and nearby provinces (Visayan Region).</p>
-                                <p class="text-muted">Southern Philippines Glass (SPG) started operations at the second quarter of the 2014 with the same facilities of TQMP-Cebu. It serves the growing demand of the Mindanao Region.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="col-md-4">
-                        <div class="card border-0">
-                            <img src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="Category 1" class="card-img-top rounded">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Category 1</h5>
-                                <p class="text-muted">In the forth quarter of 2014, the new plant in Lawang Bato started its maiden operation. Its houses one of the biggest tempering and modern glass processing facilities in Southeast Asia.</p>
-                                <p class="text-muted">From humble beginnings, TQMP became a byword among key industries players. Its phenomenal success and growth made it to become one of the Philippines' major players in the glass and aluminum industry.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-        </section>
-        <!-- End of Services -->
-
-        <!-- START THE FEATURETTES -->
-        <div class="container">
-            <hr class="featurette-divider">
-
-            <div class="row featurette align-items-center">
-                <div class="col-md-7">
-                    <h2 class="fw-bold">MISSION</h2>
-                    <p class="text-muted">​Strongly committed to quality and continuous innovation in order to provide excellent products and services to our growing clientele.
-                        Sustain business growth, develop employee pride and gain community respect.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                        width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
-                        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
-                            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-                    </svg>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette align-items-center">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="fw-bold">VISION</h2>
-                    <p class="text-muted">To become a key player in the regional arena through innovative creativity and fierce devotion to quality, style and value in products and services while advocating social responsibility and business ethics.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                        width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
-                        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
-                            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-                    </svg>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette align-items-center">
-                <div class="col-md-7">
-                    <h2 class="fw-bold">OUR VALUES</h2>
-                    <p class="text-muted">Our services are dynamic and are geared towards total customer satisfaction. Continuous improvement, coupled with highly technical and reliable process equipment, are keys in becoming the leader in the glass and aluminum industry.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                        width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
-                        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
-                            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-                    </svg>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette align-items-center">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="fw-bold">TEAM WORK</h2>
-                    <p class="text-muted">Our belief is that our people is the source of our strength, and that success can only be achieved through involvement and full commitment of each member of the organization.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                        width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
-                        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
-                            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-                    </svg>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette align-items-center">
-                <div class="col-md-7">
-                    <h2 class="fw-bold">SOCIAL RESPONSIBILITY</h2>
-                    <p class="text-muted">Our intention is not only financial gains but also to be responsible for the welfare of society, community, employees, and customers. We share in their concern for safety and the protection of the environment.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                        width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
-                        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
-                            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-                    </svg>
                 </div>
             </div>
         </div>
-        <!-- /END THE FEATURETTES -->
-    </div>
+    </section>
+
+    <section id="values-company" class="mt-5 py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold">Company Values</h2>
+            <p class="mt-3">
+            <p>Our belief is that our employees are the source of our strength, and that success can only be achieved through involvement and full commitment of every TQMP employee.</p>
+            <div class="row mt-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="https://images.pexels.com/photos/7414284/pexels-photo-7414284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Category 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <h5 class="fw-bold">MISSION</h5>
+                            <p class="text-muted">Steadfastly dedicated to quality and ongoing innovation to deliver top-notch products and services to our valued customer base. Maintain company expansion, foster staff pride, and gain community respect.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="{{ asset('storage/about-us/about-2.jpg') }}"
+                            alt="Category 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <h5 class="fw-bold">VISION</h5>
+                            <p class="text-muted">To become a major force in the regional market by promoting social responsibility and ethical business practices, as well as by demonstrating a strong commitment to quality, style, and value in products and services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="{{ asset('storage/about-us/about-1.jpg') }}"
+                            alt="Category 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <h5 class="fw-bold">OUR VALUES</h5>
+                            <p class="text-muted">The goal is complete client satisfaction through innovative services.
+                                Becoming the market leader in glass and aluminum requires constant
+                                improvement and the use of highly specialized, dependable process equipment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
 
     <!-- Accordion Section -->
     @include ('plus.accordion')

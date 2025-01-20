@@ -8,6 +8,10 @@
   <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
+
 </head>
 
 <body class="bg-body-secondary d-flex align-items-center" style="height: 100vh;">
@@ -17,7 +21,7 @@
       <div class="col-md-6 col-lg-5">
         <div class="card shadow-lg rounded-4">
           <div class="card-body p-5">
-            <h2 class="text-center fw-bold mb-4 text-primary">Login</h2>
+            <h2 class="text-center fw-bold mb-4 text-danger">Login</h2>
             <p class="text-center text-muted mb-4">Access your account</p>
 
             <!-- Login Form -->
@@ -39,15 +43,15 @@
                   <input type="checkbox" class="form-check-input" id="rememberMe" />
                   <label class="form-check-label" for="rememberMe">Remember me</label>
                 </div>
-                <a href="#" class="text-decoration-none text-primary">Forgot password?</a>
+                <a href="#" class="text-decoration-none text-danger">Forgot password?</a>
               </div>
 
               <!-- Submit Button -->
-              <input type="submit" class="btn btn-primary btn-block w-100 mb-3" value="Login">
+              <input type="submit" class="btn btn-danger btn-block w-100 mb-3" value="Login">
 
               <!-- Register Link -->
               <p class="text-center small">
-                Don't have an account? <a href="#" class="text-primary text-decoration-none">Register</a>
+                Don't have an account? <a href="#" class="text-danger text-decoration-none">Register</a>
               </p>
             </form>
 
@@ -60,9 +64,9 @@
 
             <!-- Social Login Buttons -->
             <div class="d-flex justify-content-center gap-3">
-              <button class="btn btn-outline-primary btn-floating"><i class="fab fa-facebook-f"></i></button>
-              <button class="btn btn-outline-primary btn-floating"><i class="fab fa-google"></i></button>
-              <button class="btn btn-outline-primary btn-floating"><i class="fab fa-twitter"></i></button>
+              <button class="btn btn-outline-danger btn-floating"><i class="fab fa-facebook-f"></i></button>
+              <button class="btn btn-outline-danger btn-floating"><i class="fab fa-google"></i></button>
+              <button class="btn btn-outline-danger btn-floating"><i class="fab fa-twitter"></i></button>
             </div>
           </div>
         </div>
