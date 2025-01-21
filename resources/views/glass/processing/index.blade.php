@@ -39,7 +39,7 @@
                         Utilizing state-of-the-art technology and machinery, we are capable of producing an extensive range of tempered glass products.
                     </p>
                     <div class="d-flex align-items-center justify-content-center">
-                        <a href="" class="btn btn-outline-light text-decoration-none fade-in" style="font-size: smaller;">
+                        <a href="https://www.facebook.com/share/14g3o8X6qi/" class="btn btn-outline-light text-decoration-none fade-in" style="font-size: smaller;">
                             <span><b>Find out more</b></span>
                         </a>
                     </div>

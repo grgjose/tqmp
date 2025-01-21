@@ -33,10 +33,14 @@
 
                <!-- Quick Links -->
                <div class="col-md-2 mb-4">
-                   <h5 style="color: #FFFFFF;">Quick Links</h5>
+                   <h5 style="color: #FFFFFF;">Our Services</h5>
                    <ul class="list-unstyled">
                        <!-- <li><a href="#" class="text-decoration-none small" style="color: #FFFFFF;">Premium Support</a></li> -->
-                       <li><a href="#" class="text-decoration-none small" style="color: #FFFFFF;">Our Services</a></li>
+                       <li><a href="/bulletproofing" class="text-decoration-none small" style="color: #FFFFFF;">Bullet Proofing</a></li>
+                       <li><a href="/glassmanufacturing" class="text-decoration-none small" style="color: #FFFFFF;">Glass Manufacturing</a></li>
+                       <li><a href="/aluminummanufacturing" class="text-decoration-none small" style="color: #FFFFFF;">Aluminum Manufacturing</a></li>
+                       <li><a href="/glassprocessing" class="text-decoration-none small" style="color: #FFFFFF;">Glass Processing</a></li>
+                       <li><a href="/gentrade" class="text-decoration-none small" style="color: #FFFFFF;">Other Products</a></li>
                        <!-- <li><a href="#" class="text-decoration-none small" style="color: #FFFFFF;">Know Our Team</a></li> -->
                    </ul>
                </div>
