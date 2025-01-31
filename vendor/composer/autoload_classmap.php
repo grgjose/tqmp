@@ -6,8 +6,20 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Http\\Controllers\\AdminController' => $baseDir . '/app/Http/Controllers/AdminController.php',
+    'App\\Http\\Controllers\\AluminumManufacturingController' => $baseDir . '/app/Http/Controllers/AluminumManufacturingController.php',
+    'App\\Http\\Controllers\\BulletProofingController' => $baseDir . '/app/Http/Controllers/BulletProofingController.php',
+    'App\\Http\\Controllers\\CatalogController' => $baseDir . '/app/Http/Controllers/CatalogController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\GenTradeController' => $baseDir . '/app/Http/Controllers/GenTradeController.php',
+    'App\\Http\\Controllers\\GlassManufacturingController' => $baseDir . '/app/Http/Controllers/GlassManufacturingController.php',
+    'App\\Http\\Controllers\\GlassProcessingController' => $baseDir . '/app/Http/Controllers/GlassProcessingController.php',
+    'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
+    'App\\Http\\Controllers\\ServicesController' => $baseDir . '/app/Http/Controllers/ServicesController.php',
+    'App\\Http\\Controllers\\UserController' => $baseDir . '/app/Http/Controllers/UserController.php',
+    'App\\Models\\Inventory' => $baseDir . '/app/Models/Inventory.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
+    'App\\Models\\Usertype' => $baseDir . '/app/Models/Usertype.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Brick\\Math\\BigDecimal' => $vendorDir . '/brick/math/src/BigDecimal.php',

@@ -8,6 +8,7 @@ use App\Http\Controllers\GlassManufacturingController;
 use App\Http\Controllers\AluminumManufacturingController;
 use App\Http\Controllers\GlassProcessingController;
 use App\Http\Controllers\GenTradeController;
+use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\UserController;
 
 // Home Pages
@@ -23,6 +24,7 @@ Route::get('/glassmanufacturing', [GlassManufacturingController::class, 'index']
 Route::get('/aluminummanufacturing', [AluminumManufacturingController::class, 'index'])->name('aluminum.manufacturing.index');
 Route::get('/glassprocessing', [GlassProcessingController::class, 'index'])->name('glass.processing.index');
 Route::get('/gentrade', [GenTradeController::class, 'index'])->name('gentrade.index');
+Route::get('/catalog', [CatalogController::class, 'catalog'])->name('gentrade.catalog');
 
 // Product Pages
 Route::get('/login', [UserController::class, 'login'])->name('home.login');
