@@ -37,7 +37,7 @@
                     <h2 class="fw-bold display-3 fade-in-up" style="color: white;">Architectural Hardwares</h2>
                     <p class="lead mt-3 fade-in-up" style="color: white;">With THORE Brand, we are not only seeking a wide range of architectural hardware but also prioritizing strength, endurance, and resistance in our products.</p>
                     <div class="d-flex align-items-center justify-content-center">
-                        <a href="" class="btn btn-outline-light text-decoration-none fade-in" style="font-size: smaller;">
+                        <a href="/catalog" class="btn btn-outline-light text-decoration-none fade-in" style="font-size: smaller;">
                             <span><b>Find out more</b></span>
                         </a>
                     </div>
