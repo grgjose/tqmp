@@ -41,7 +41,7 @@
         </div>
     </section>
 
-    <section id="about-aluminum-profiles">
+    <!-- <section id="about-aluminum-profiles">
         <div class="card mb-3 mx-auto mt-5" style="max-width: 1300px;">
             <div class="row g-0 justify-content-center">
 
@@ -61,27 +61,28 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="services-aluminum-profiles" class="py-3 mt-5 fade-in-up">
         <div class="container">
-            <div class="text-center">
-                <h2 class="fw-bold" style="color: #7E1416;">Door Hardwares</h2>
-                <p class="">
-                    <!-- Raw Material Procurement > Mold Design and Processing > Extrusion Processing > Quality Inspection > Finished Product Packaging -->
-                    <img src="{{ asset('storage/aluminum/desc.jpg') }}" alt="Philippines" class="img-fluid rounded lg">
-                </p>
-            </div>
 
             <div class="container">
                 <div class="tab-content" id="pagination-content">
                     <!-- Page 1 -->
                     <div class="tab-pane fade show active" id="page-1" role="tabpanel" aria-labelledby="page-1-tab">
-                        <div class="row">
+
+                        <div class="text-center">
+                            <h2 class="fw-bold" style="color: #7E1416;">Door Closers and Floor Hinges</h2>
+                            <p class="mt-3">
+                                <b>Door closers and floor hinges are hardware that is used for all doors with a self-closing feature.</b>
+                            </p>
+                        </div>
+
+                        <div class="row mt-3">
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/01.jpg') }}" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog//door-floor/21.jpg') }}" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Angle Sections</h5>
 
@@ -91,7 +92,7 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/02.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog//door-floor/10.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
 
@@ -101,7 +102,7 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/03.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog//door-floor/12.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
 
@@ -111,7 +112,7 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/04.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog//door-floor/13.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
 
@@ -121,7 +122,7 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/05.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog//door-floor/14.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Storefront Components</h5>
 
@@ -131,24 +132,181 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/06.jpg') }}" class="card-img-top" alt="TQMP Screen Door and Windows" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog//door-floor/20.jpg') }}" class="card-img-top" alt="TQMP Screen Door and Windows" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Screen Door and Windows</h5>
 
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/22.jpg') }}" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Angle Sections</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/24.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/25.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/33.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/34.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/35.jpg') }}" class="card-img-top" alt="TQMP Screen Door and Windows" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Screen Door and Windows</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/36.jpg') }}" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Angle Sections</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/37.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/38.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/39.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/40.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/41.jpg') }}" class="card-img-top" alt="TQMP Screen Door and Windows" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Screen Door and Windows</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/42.jpg') }}" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Angle Sections</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/43.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog//door-floor/44.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Storefront Components</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-
                     <!-- Page 2 -->
                     <div class="tab-pane fade" id="page-2" role="tabpanel" aria-labelledby="page-2-tab">
+                        <div class="text-center">
+                            <h2 class="fw-bold" style="color: #7E1416;">Patch Fittings</h2>
+                            <p class="mt-3">
+                                <b>Patch Fittings is a accessories to make a frameless door that is usually seen at all facilities like malls.</b>
+                            </p>
+                        </div>
+
                         <div class="row">
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/07.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog/patch-fittings/19.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
 
@@ -158,7 +316,7 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/08.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog/patch-fittings/23.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
 
@@ -168,7 +326,7 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/09.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog/patch-fittings/26.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
 
@@ -178,7 +336,7 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/10.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog/patch-fittings/27.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door Sections</h5>
 
@@ -188,7 +346,7 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/11.jpg') }}" class="card-img-top" alt="TQMP Miscellaneous Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog/patch-fittings/28.jpg') }}" class="card-img-top" alt="TQMP Miscellaneous Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Miscellaneous Sections</h5>
 
@@ -198,7 +356,37 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/12.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog/patch-fittings/29.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Swing Door Sections</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog/patch-fittings/30.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sliding Door Sections</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog/patch-fittings/31.jpg') }}" class="card-img-top" alt="TQMP Miscellaneous Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Miscellaneous Sections</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog/patch-fittings/32.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
 
@@ -208,14 +396,19 @@
                         </div>
                     </div>
 
-
                     <!-- Page 3 -->
                     <div class="tab-pane fade" id="page-3" role="tabpanel" aria-labelledby="page-3-tab">
+                        <div class="text-center">
+                            <h2 class="fw-bold" style="color: #7E1416;">Windows</h2>
+                            <p class="mt-3">
+                                <b>Patch Fittings is a accessories to make a frameless door that is usually seen at all facilities like malls.</b>
+                            </p>
+                        </div>
                         <div class="row">
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/13.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog/window/11.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
 
@@ -225,7 +418,7 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/14.jpg') }}" class="card-img-top" alt="TQMP Counter Trim Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog/window/15.jpg') }}" class="card-img-top" alt="TQMP Counter Trim Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Counter Trim Sections</h5>
 
@@ -233,41 +426,24 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 mb-4">
-                                <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/15.jpg') }}" class="card-img-top" alt="TQMP YC Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">YC Sections</h5>
+                        </div>
+                    </div>
 
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-4">
-                                <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/16.jpg') }}" class="card-img-top" alt="TQMP Vent Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Vent Sections</h5>
-
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- Page 4 -->
+                    <div class="tab-pane fade" id="page-4" role="tabpanel" aria-labelledby="page-4-tab">
+                        <div class="text-center">
+                            <h2 class="fw-bold" style="color: #7E1416;">Glass</h2>
+                            <p class="mt-3">
+                                <b>Patch Fittings is a accessories to make a frameless door that is usually seen at all facilities like malls.</b>
+                            </p>
+                        </div>
+                        <div class="row">
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/17.jpg') }}" class="card-img-top" alt="TQMP Flat Bar Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog/glass/16.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Flat Bar Sections</h5>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-4">
-                                <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/18.jpg') }}" class="card-img-top" alt="TQMP Counter Nosing Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Counter Nosing Sections</h5>
+                                        <h5 class="card-title">Swing Door Sections</h5>
 
                                     </div>
                                 </div>
@@ -275,14 +451,59 @@
                         </div>
                     </div>
 
-
-                    <!-- Page 4 -->
-                    <div class="tab-pane fade" id="page-4" role="tabpanel" aria-labelledby="page-4-tab">
+                    <!-- Page 5 -->
+                    <div class="tab-pane fade" id="page-5" role="tabpanel" aria-labelledby="page-5-tab">
+                        <div class="text-center">
+                            <h2 class="fw-bold" style="color: #7E1416;">Other Accessories</h2>
+                            <p class="mt-3">
+                                <b>Patch Fittings is a accessories to make a frameless door that is usually seen at all facilities like malls.</b>
+                            </p>
+                        </div>
                         <div class="row">
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <img src="{{ asset('storage/aluminum/19.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <img src="{{ asset('storage/catalog/other/8.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Swing Door Sections</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog/other/9.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Swing Door Sections</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog/other/17.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Swing Door Sections</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog/other/18.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Swing Door Sections</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow-lg">
+                                    <img src="{{ asset('storage/catalog/other/45.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h5 class="card-title">Swing Door Sections</h5>
 
@@ -314,6 +535,11 @@
                     <li class="nav-item" role="presentation">
                         <button class="pagination-button" id="page-4-tab" data-bs-toggle="pill" data-bs-target="#page-4" type="button" role="tab" aria-controls="page-4" aria-selected="false">
                             4
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="pagination-button" id="page-5-tab" data-bs-toggle="pill" data-bs-target="#page-5" type="button" role="tab" aria-controls="page-5" aria-selected="false">
+                            5
                         </button>
                     </li>
                 </ul>

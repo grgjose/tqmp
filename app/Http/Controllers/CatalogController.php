@@ -8,6 +8,6 @@ class CatalogController extends Controller
 {
     public function show()
     {
-        return view('catalog');
+        return view('gentrade.catalog');
     }
 }

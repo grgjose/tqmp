@@ -24,7 +24,7 @@ Route::get('/glassmanufacturing', [GlassManufacturingController::class, 'index']
 Route::get('/aluminummanufacturing', [AluminumManufacturingController::class, 'index'])->name('aluminum.manufacturing.index');
 Route::get('/glassprocessing', [GlassProcessingController::class, 'index'])->name('glass.processing.index');
 Route::get('/gentrade', [GenTradeController::class, 'index'])->name('gentrade.index');
-Route::get('/catalog', [CatalogController::class, 'catalog'])->name('gentrade.catalog');
+Route::get('/catalog', [CatalogController::class, 'show'])->name('gentrade.catalog');
 
 // Product Pages
 Route::get('/login', [UserController::class, 'login'])->name('home.login');
