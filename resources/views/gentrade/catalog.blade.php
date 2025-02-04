@@ -42,6 +42,7 @@
     </section>
 
     <section id="services-aluminum-profiles" class="py-3 mt-5 fade-in-up">
+
         <div class="container">
             <div class="container">
                 <div class="tab-content" id="pagination-content">
@@ -59,44 +60,43 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/21.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/21-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/21.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/21.jpg') }}" class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Single Sliding Door</h5>
-
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/10.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/10-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/10.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/10.jpg') }}" class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door / Window</h5>
-
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/12.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/12-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/12.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/12.jpg') }}" class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Frame Door Hardware</h5>
-
                                     </div>
                                 </div>
                             </div>
 
+
+
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/13.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/13-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/13.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/13.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Screen Door Hardware</h5>
@@ -107,8 +107,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/14.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/14-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/14.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/14.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door / Window</h5>
@@ -119,8 +119,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/20.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/20-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/20.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/20.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -131,8 +131,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/22.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/22-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/22.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/22.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Sliding Door</h5>
@@ -143,8 +143,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/24.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/24-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/24.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/24.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -155,8 +155,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/25.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/25-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/25.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/25.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Overhead Door Closer</h5>
@@ -167,8 +167,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/33.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/33-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/33.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/33.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -179,8 +179,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/34.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/34-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/34.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/34.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -191,8 +191,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/35.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/35-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/35.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/35.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -203,8 +203,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/36.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/36-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/36.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/36.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -215,8 +215,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/37.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/37-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/37.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/37.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -227,8 +227,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/38.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/38-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/38.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/38.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -239,8 +239,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/39.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/39-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/39.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/39.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -251,8 +251,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/40.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/40-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/40.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/40.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -263,8 +263,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/41.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/41-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/41.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/41.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -275,8 +275,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/42.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/42-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/42.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/42.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -287,11 +287,11 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/43.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/43-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/43.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/43.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
-                                        <<h5 class="card-title">Floor Check</h5>
+                                        <h5 class="card-title">Floor Check</h5>
 
                                     </div>
                                 </div>
@@ -299,8 +299,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/door-floor/44.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/door-floor/44-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/door-floor/44.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/door-floor/44.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Floor Check</h5>
@@ -325,8 +325,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/patch-fittings/19.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/patch-fittings/19-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/patch-fittings/19.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/patch-fittings/19.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Patch Fittings</h5>
@@ -337,8 +337,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/patch-fittings/23.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/patch-fittings/23-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/patch-fittings/23.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/patch-fittings/23.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <<h5 class="card-title">Patch Fittings</h5>
@@ -349,8 +349,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/patch-fittings/26.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/patch-fittings/26-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/patch-fittings/26.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/patch-fittings/26.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Patch Fittings</h5>
@@ -361,8 +361,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/patch-fittings/27.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/patch-fittings/27-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/patch-fittings/27.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/patch-fittings/27.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <<h5 class="card-title">Patch Fittings</h5>
@@ -373,8 +373,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/patch-fittings/28.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/patch-fittings/28-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/patch-fittings/28.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/patch-fittings/28.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Patch Fittings</h5>
@@ -385,8 +385,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/patch-fittings/29.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/patch-fittings/29-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/patch-fittings/29.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/patch-fittings/29.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Patch Fittings</h5>
@@ -397,8 +397,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/patch-fittings/30.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/patch-fittings/30-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/patch-fittings/30.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/patch-fittings/30.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Patch Fittings</h5>
@@ -409,8 +409,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/patch-fittings/31.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/patch-fittings/19-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/patch-fittings/31.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/patch-fittings/19.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Patch Fittings</h5>
@@ -421,8 +421,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/patch-fittings/32.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/patch-fittings/32-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/patch-fittings/32.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/patch-fittings/32.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Patch Fittings</h5>
@@ -446,8 +446,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/window/11.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/window/11-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/window/11.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/window/11.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Casement / Awning Window</h5>
@@ -458,8 +458,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/window/15.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/window/15-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/window/15.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/window/15.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Window Louvers</h5>
@@ -483,8 +483,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/glass/16.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/glass/16-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/glass/16.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/glass/16.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Glass Clips</h5>
@@ -508,8 +508,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/other/8.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/other/8-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/other/8.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/other/8.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Wackers GP - General Purpose</h5>
@@ -520,11 +520,11 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/other/9.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/other/9-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/other/9.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/other/9.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
-                                    <h5 class="card-title">Wackers GP - General Purpose</h5>
+                                        <h5 class="card-title">Wackers GP - General Purpose</h5>
 
                                     </div>
                                 </div>
@@ -532,8 +532,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/other/17.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/other/17-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/other/17.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/other/17.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Shower Hinges</h5>
@@ -544,8 +544,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/other/18.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/other/18-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/other/18.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/other/18.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Glass Door Handles</h5>
@@ -556,8 +556,8 @@
 
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-lg">
-                                    <a class="col-md-12 col-lg-4 img-fluid py-2" href="{{ asset('storage/catalog/other/45.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <img src="{{ asset('storage/catalog copy/other/45-min.jpg') }}" alt="TQMP Angle Sections" class="img-fluid">
+                                    <a href="{{ asset('storage/catalog/other/45.jpg') }}" data-toggle="lightbox" data-gallery="photo_gallery">
+                                        <img src="{{ asset('storage/catalog/other/45.jpg') }}"  class="img-fluid" style="object-fit: cover; width: 100%; height: 450px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">A - Type Ladder</h5>
