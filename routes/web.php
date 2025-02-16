@@ -10,6 +10,11 @@ use App\Http\Controllers\GlassProcessingController;
 use App\Http\Controllers\GenTradeController;
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\ConsumerController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\UserProfileController;
+
 use App\Http\Controllers\UserController;
 
 // Home Pages
@@ -33,3 +38,7 @@ Route::post('/login', [UserController::class, 'logon'])->name('home.signin');
 
 //Dashboard Pages
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+Route::get('/consumer', [ConsumerController::class, 'index'])->name('dashboard.consumer');
+Route::get('/inventory', [InventoryController::class, 'index'])->name('dashboard.inventory');
+Route::get('/order', [OrderController::class, 'index'])->name('dashboard.order');
+Route::get('/userprofiles', [UserProfileController::class, 'index'])->name('dashboard.userprofiles');
