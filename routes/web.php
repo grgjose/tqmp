@@ -9,6 +9,7 @@ use App\Http\Controllers\AluminumManufacturingController;
 use App\Http\Controllers\GlassProcessingController;
 use App\Http\Controllers\GenTradeController;
 use App\Http\Controllers\CatalogController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
 
 // Home Pages
@@ -29,3 +30,6 @@ Route::get('/catalog', [CatalogController::class, 'show'])->name('gentrade.catal
 // Product Pages
 Route::get('/login', [UserController::class, 'login'])->name('home.login');
 Route::post('/login', [UserController::class, 'logon'])->name('home.signin');
+
+//Dashboard Pages
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
