@@ -79,7 +79,7 @@
                                     <div class="flex-shrink-0">
                                         <img
                                             src="../../../dist/assets/img/user1-128x128.jpg"
-                                            
+                                            alt="User Avatar"
                                             class="img-size-50 rounded-circle me-3" />
                                     </div>
                                     <div class="flex-grow-1">
@@ -102,7 +102,7 @@
                                     <div class="flex-shrink-0">
                                         <img
                                             src="../../../dist/assets/img/user8-128x128.jpg"
-                                            
+                                            alt="User Avatar"
                                             class="img-size-50 rounded-circle me-3" />
                                     </div>
                                     <div class="flex-grow-1">
@@ -127,7 +127,7 @@
                                     <div class="flex-shrink-0">
                                         <img
                                             src="../../../dist/assets/img/user3-128x128.jpg"
-                                            
+                                            alt="User Avatar"
                                             class="img-size-50 rounded-circle me-3" />
                                     </div>
                                     <div class="flex-grow-1">
@@ -178,14 +178,14 @@
                         </div>
                     </li>
                     <!--end::Notifications Dropdown Menu-->
-               
+                   
                     <!--begin::User Menu Dropdown-->
                     <li class="nav-item dropdown user-menu">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img
                                 src="../../../dist/assets/img/user2-160x160.jpg"
                                 class="user-image rounded-circle shadow"
-                                 />
+                                alt="User Image" />
                             <span class="d-none d-md-inline">Geneva Garcia</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
@@ -194,7 +194,7 @@
                                 <img
                                     src="../../../dist/assets/img/user2-160x160.jpg"
                                     class="rounded-circle shadow"
-                                     />
+                                    alt="User Image" />
                                 <p>
                                     Geneva Garcia - Web Developer
                                     <small>Member since Nov. 2023</small>
@@ -205,9 +205,9 @@
                             <li class="user-body">
                                 <!--begin::Row-->
                                 <div class="row">
-                                    
+                                    <div class="col-4 text-center"><a href="#">Followers</a></div>
                                     <div class="col-4 text-center"><a href="#">Sales</a></div>
-                                    
+                                    <div class="col-4 text-center"><a href="#">Friends</a></div>
                                 </div>
                                 <!--end::Row-->
                             </li>
@@ -228,7 +228,7 @@
         </nav>
         <!--end::Header-->
         <!--begin::Sidebar-->
-        <aside class="app-sidebar bg-dark shadow" data-bs-theme="dark">
+        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
             <!--begin::Sidebar Brand-->
             <div class="sidebar-brand">
                 <!--begin::Brand Link-->
@@ -263,12 +263,12 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/order" class="nav-link">
+                                    <a href="/order" class="nav-link active">
                                         <p> <i class="fa-solid fa-store" style="margin-right: 10px;"></i>Orders</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/consumer" class="nav-link active">
+                                    <a href="/consumer" class="nav-link">
                                         <p><i class="fa-solid fa-users" style="margin-right: 10px;"></i>Consumers</p>
                                     </a>
                                 </li>
@@ -294,12 +294,12 @@
                     <!--Row-->
                     <div class="row">
                         <div class="col-sm-6">
-                            <h3 class="mb-0">Consumer</h3>
+                            <h3 class="mb-0">Orders</h3>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-end">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Consumer</li>
+                                <li class="breadcrumb-item active" aria-current="page">Orders</li>
                             </ol>
                         </div>
                     </div>
@@ -318,83 +318,149 @@
                         <table id="example" class="table is-striped" style="width:100%; text-align: left;">
                             <thead>
                                 <tr>
+                                    <th>Order ID</th>
+                                    <th>Product ID</th>
                                     <th>Customer ID</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Address</th>
+                                    <th>Customer Name</th>
+                                    <th>Shipping Address</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
                                     <th>Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><a href="">CID96YC5</a></td>
-                                    <td>Shelton </td>
-                                    <td>Green</td>
+                                    <td><a href="">OIDB80E7</a></td>
+                                    <td>PID63WA3</td>
+                                    <td>CID96YC5</td>
+                                    <td>Shelton Green</td>
                                     <td>Quezon City</td>
+                                    <td>PHP 1000</td>
+                                    <td># 60</td>
                                     <td>
                                         <div class="btn-group-sm">
                                             <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Status
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Active</a></li>
-                                                <li><a class="dropdown-item" href="#">Inactive</a></li>
-
+                                                <li><a class="dropdown-item" href="#">Pending</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Payment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Fulfillment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Completed</a></li>
+                                                <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Cancelled</a></li>
+                                                <li><a class="dropdown-item" href="#">Declined</a></li>
+                                                <li><a class="dropdown-item" href="#">Refunded</a></li>
+                                                <li><a class="dropdown-item" href="#">Disputed</a></li>
+                                                <li><a class="dropdown-item" href="#">Manual Verification Required</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Refunded</a></li>
                                             </ul>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><a href="">CIDZ9G44</a></td>
-                                    <td>Francisco </td>
-                                    <td>Brown</td>
+                                    <td><a href="">OID1BI66</a></td>
+                                    <td>PIDX6D21</td>
+                                    <td>CIDZ9G44</td>
+                                    <td>Francisco Brown</td>
                                     <td>Baguio City</td>
+                                    <td>PHP 100000</td>
+                                    <td># 60</td>
                                     <td>
                                         <div class="btn-group-sm">
                                             <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Status
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Available</a></li>
-                                                <li><a class="dropdown-item" href="#">Inactive</a></li>
-
+                                                <li><a class="dropdown-item" href="#">Pending</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Payment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Fulfillment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Completed</a></li>
+                                                <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Cancelled</a></li>
+                                                <li><a class="dropdown-item" href="#">Declined</a></li>
+                                                <li><a class="dropdown-item" href="#">Refunded</a></li>
+                                                <li><a class="dropdown-item" href="#">Disputed</a></li>
+                                                <li><a class="dropdown-item" href="#">Manual Verification Required</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Refunded</a></li>
                                             </ul>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><a href="">CIDVL4KS</a></td>
-                                    <td>Patti </td>
-                                    <td>Stewart</td>
+                                    <td><a href="">OIDXN6MU</a></td>
+                                    <td>PIDSJ2HQ</td>
+                                    <td>CIDVL4KS</td>
+                                    <td>Patti Stewart</td>
                                     <td>Valenzuela City</td>
-
+                                    <td>PHP 250000</td>
+                                    <td># 60</td>
                                     <td>
                                         <div class="btn-group-sm">
                                             <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Status
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Available</a></li>
-                                                <li><a class="dropdown-item" href="#">Inactive</a></li>
-
+                                                <li><a class="dropdown-item" href="#">Pending</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Payment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Fulfillment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Completed</a></li>
+                                                <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Cancelled</a></li>
+                                                <li><a class="dropdown-item" href="#">Declined</a></li>
+                                                <li><a class="dropdown-item" href="#">Refunded</a></li>
+                                                <li><a class="dropdown-item" href="#">Disputed</a></li>
+                                                <li><a class="dropdown-item" href="#">Manual Verification Required</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Refunded</a></li>
                                             </ul>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><a href="">CID2P1SV</a></td>
-                                    <td>Jamaal </td>
-                                    <td>Lozano</td>
+                                    <td><a href="">OID4R3UW</a></td>
+                                    <td>PID0NZPS</td>
+                                    <td>CID2P1SV</td>
+                                    <td>Jamaal Lozano</td>
                                     <td>Quezon City</td>
+                                    <td>PHP 600000</td>
+                                    <td># 60</td>
                                     <td>
                                         <div class="btn-group-sm">
                                             <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Status
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Active</a></li>
-                                                <li><a class="dropdown-item" href="#">Inactive</a></li>
-
+                                                <li><a class="dropdown-item" href="#">Pending</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Payment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Fulfillment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Completed</a></li>
+                                                <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Cancelled</a></li>
+                                                <li><a class="dropdown-item" href="#">Declined</a></li>
+                                                <li><a class="dropdown-item" href="#">Refunded</a></li>
+                                                <li><a class="dropdown-item" href="#">Disputed</a></li>
+                                                <li><a class="dropdown-item" href="#">Manual Verification Required</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Refunded</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -409,6 +475,7 @@
             <!--end::App Content-->
         </main>
         <!--end::App Main-->
+     
     </div>
     <!--end::App Wrapper-->
     <!--begin::Script-->

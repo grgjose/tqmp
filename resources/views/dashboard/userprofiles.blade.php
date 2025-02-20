@@ -31,6 +31,12 @@
 
     <!-- apexcharts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css" integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0=" crossorigin="anonymous" />
+
+    <!-- Datatables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
@@ -172,14 +178,7 @@
                         </div>
                     </li>
                     <!--end::Notifications Dropdown Menu-->
-                    <!--begin::Fullscreen Toggle-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-lte-toggle="fullscreen">
-                            <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
-                            <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none"></i>
-                        </a>
-                    </li>
-                    <!--end::Fullscreen Toggle-->
+                  
                     <!--begin::User Menu Dropdown-->
                     <li class="nav-item dropdown user-menu">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -187,7 +186,7 @@
                                 src="../../../dist/assets/img/user2-160x160.jpg"
                                 class="user-image rounded-circle shadow"
                                 alt="User Image" />
-                            <span class="d-none d-md-inline">Alexander Pierce</span>
+                            <span class="d-none d-md-inline">Geneva Garcia</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <!--begin::User Image-->
@@ -197,7 +196,7 @@
                                     class="rounded-circle shadow"
                                     alt="User Image" />
                                 <p>
-                                    Alexander Pierce - Web Developer
+                                    Geneva Garcia - Web Developer
                                     <small>Member since Nov. 2023</small>
                                 </p>
                             </li>
@@ -206,9 +205,9 @@
                             <li class="user-body">
                                 <!--begin::Row-->
                                 <div class="row">
-                                    <div class="col-4 text-center"><a href="#">Followers</a></div>
+                                    
                                     <div class="col-4 text-center"><a href="#">Sales</a></div>
-                                    <div class="col-4 text-center"><a href="#">Friends</a></div>
+                                  
                                 </div>
                                 <!--end::Row-->
                             </li>
@@ -229,7 +228,7 @@
         </nav>
         <!--end::Header-->
         <!--begin::Sidebar-->
-        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+        <aside class="app-sidebar bg-dark shadow" data-bs-theme="dark">
             <!--begin::Sidebar Brand-->
             <div class="sidebar-brand">
                 <!--begin::Brand Link-->
@@ -238,7 +237,7 @@
                     <img src="{{ asset('storage/logos/TQMPLogo.png') }}" alt="TQMP Logo" width="60" class="brand-image opacity-75 shadow">
                     <!--end::Brand Image-->
                     <!--begin::Brand Text-->
-                    <span class="brand-text fw-light">Admin</span>
+                    <span class="brand-text fw-light">TQMPAdmin</span>
                     <!--end::Brand Text-->
                 </a>
                 <!--end::Brand Link-->
@@ -247,45 +246,40 @@
             <!--begin::Sidebar Wrapper-->
             <div class="sidebar-wrapper">
                 <nav class="mt-2">
-                    <!--begin::Sidebar Menu-->
-                    <ul
-                        class="nav sidebar-menu flex-column"
-                        data-lte-toggle="treeview"
-                        role="menu"
-                        data-accordion="false">
+                    <!--Sidebar Menu-->
+                    <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
                         <li class="nav-item menu-open">
                             <ul class="nav nav-treeview">
                                 <li class="nav-header">Menu</li>
                                 <li class="nav-item">
                                     <a href="/dashboard" class="nav-link">
-                                        <p>Dashboard</p>
+                                        <p><i class="fa-solid fa-chart-line" style="margin-right: 10px;"></i>Dashboard</p>
+                                    </a>
+                                </li>
+                                <li class="nav-header">Tables</li>
+                                <li class="nav-item">
+                                    <a href="/inventory" class="nav-link active">
+                                        <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Inventory</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/order" class="nav-link">
+                                        <p> <i class="fa-solid fa-store" style="margin-right: 10px;"></i>Orders</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/consumer" class="nav-link">
+                                        <p><i class="fa-solid fa-users" style="margin-right: 10px;"></i>Consumers</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-header">Tables</li>
-                        <li class="nav-item">
-                            <a href="/inventory" class="nav-link">
-                                <p>Inventory</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/order" class="nav-link">
-                                <p>Orders</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/consumer" class="nav-link">
-                                <p>Consumers</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/userprofiles" class="nav-link active">
+                        <!-- <li class="nav-item">
+                            <a href="/userprofiles" class="nav-link">
                                 <p>User Profiles</p>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
-                    <!--end::Sidebar Menu-->
                 </nav>
             </div>
             <!--end::Sidebar Wrapper-->

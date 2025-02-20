@@ -31,6 +31,12 @@
 
     <!-- apexcharts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css" integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0=" crossorigin="anonymous" />
+
+    <!-- Datatables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
@@ -172,22 +178,15 @@
                         </div>
                     </li>
                     <!--end::Notifications Dropdown Menu-->
-                    <!--begin::Fullscreen Toggle-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-lte-toggle="fullscreen">
-                            <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
-                            <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none"></i>
-                        </a>
-                    </li>
-                    <!--end::Fullscreen Toggle-->
+                  
                     <!--begin::User Menu Dropdown-->
                     <li class="nav-item dropdown user-menu">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img
                                 src="../../dist/assets/img/user2-160x160.jpg"
                                 class="user-image rounded-circle shadow"
-                                alt="User Image" />
-                            <span class="d-none d-md-inline">Alexander Pierce</span>
+                                />
+                            <span class="d-none d-md-inline">Geneva Garcia</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <!--begin::User Image-->
@@ -197,7 +196,7 @@
                                     class="rounded-circle shadow"
                                     alt="User Image" />
                                 <p>
-                                    Alexander Pierce - Web Developer
+                                    Geneva Garcia - Web Developer
                                     <small>Member since Nov. 2023</small>
                                 </p>
                             </li>
@@ -229,7 +228,7 @@
         </nav>
         <!--end::Header-->
         <!--begin::Sidebar-->
-        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+        <aside class="app-sidebar bg-dark shadow" data-bs-theme="dark">
             <!--begin::Sidebar Brand-->
             <div class="sidebar-brand">
                 <!--begin::Brand Link-->
@@ -238,7 +237,7 @@
                     <img src="{{ asset('storage/logos/TQMPLogo.png') }}" alt="TQMP Logo" width="60" class="brand-image opacity-75 shadow">
                     <!--end::Brand Image-->
                     <!--begin::Brand Text-->
-                    <span class="brand-text fw-light">TQMP</span>
+                    <span class="brand-text fw-light">TQMPAdmin</span>
                     <!--end::Brand Text-->
                 </a>
                 <!--end::Brand Link-->
@@ -247,37 +246,33 @@
             <!--begin::Sidebar Wrapper-->
             <div class="sidebar-wrapper">
                 <nav class="mt-2">
-                    <!--begin::Sidebar Menu-->
-                    <ul
-                        class="nav sidebar-menu flex-column"
-                        data-lte-toggle="treeview"
-                        role="menu"
-                        data-accordion="false">
+                    <!--Sidebar Menu-->
+                    <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
                         <li class="nav-item menu-open">
                             <ul class="nav nav-treeview">
                                 <li class="nav-header">Menu</li>
                                 <li class="nav-item">
-                                    <a href="./index3.html" class="nav-link active">
-                                        <p>Dashboard</p>
+                                    <a href="/dashboard" class="nav-link active">
+                                        <p><i class="fa-solid fa-chart-line" style="margin-right: 10px;"></i>Dashboard</p>
+                                    </a>
+                                </li>
+                                <li class="nav-header">Tables</li>
+                                <li class="nav-item">
+                                    <a href="/inventory" class="nav-link">
+                                        <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Inventory</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/order" class="nav-link">
+                                        <p> <i class="fa-solid fa-store" style="margin-right: 10px;"></i>Orders</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/consumer" class="nav-link">
+                                        <p><i class="fa-solid fa-users" style="margin-right: 10px;"></i>Consumers</p>
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-header">Tables</li>
-                        <li class="nav-item">
-                            <a href="/inventory" class="nav-link">
-                                <p>Inventory</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/order" class="nav-link">
-                                <p>Orders</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/consumer" class="nav-link">
-                                <p>Consumers</p>
-                            </a>
                         </li>
                         <!-- <li class="nav-item">
                             <a href="/userprofiles" class="nav-link">
@@ -285,7 +280,6 @@
                             </a>
                         </li> -->
                     </ul>
-                    <!--end::Sidebar Menu-->
                 </nav>
             </div>
             <!--end::Sidebar Wrapper-->
@@ -300,7 +294,7 @@
                     <!--begin::Row-->
                     <div class="row">
                         <div class="col-sm-6">
-                            <h3 class="mb-0">Dashboard v3</h3>
+                            <h3 class="mb-0">Dashboard</h3>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-end">
@@ -587,41 +581,32 @@
             <!--end::App Content-->
         </main>
         <!--end::App Main-->
-        <!--begin::Footer-->
-        <footer class="app-footer">
-            <!--begin::To the end-->
-            <div class="float-end d-none d-sm-inline">Anything you want</div>
-            <!--end::To the end-->
-            <!--begin::Copyright-->
-            <strong>
-                Copyright &copy; 2014-2024&nbsp;
-                <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.
-            </strong>
-            All rights reserved.
-            <!--end::Copyright-->
-        </footer>
-        <!--end::Footer-->
+
     </div>
     <!--end::App Wrapper-->
     <!--begin::Script-->
-    <!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <!--Third Party Plugin(OverlayScrollbars)-->
     <script
         src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
         integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ="
         crossorigin="anonymous"></script>
-    <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
+
+    <!--Required Plugin(popperjs for Bootstrap 5)-->
     <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
+
+    <!--Required Plugin(Bootstrap 5)-->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-    <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
-    <script src="../../dist/js/adminlte.js"></script>
-    <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
+
+    <!--Required Plugin(AdminLTE)-->
+    <script href="{{ asset('storage/dist/js/adminlte.js') }}"></script>
+
+    <!--OverlayScrollbars Configure-->
     <script>
         const SELECTOR_SIDEBAR_WRAPPER = '.sidebar-wrapper';
         const Default = {
@@ -642,7 +627,6 @@
             }
         });
     </script>
-    <!--end::OverlayScrollbars Configure-->
     <!-- OPTIONAL SCRIPTS -->
     <!-- apexcharts -->
     <script

@@ -31,6 +31,12 @@
 
     <!-- apexcharts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css" integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0=" crossorigin="anonymous" />
+
+    <!-- Datatables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
@@ -172,22 +178,15 @@
                         </div>
                     </li>
                     <!--end::Notifications Dropdown Menu-->
-                    <!--begin::Fullscreen Toggle-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-lte-toggle="fullscreen">
-                            <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
-                            <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none"></i>
-                        </a>
-                    </li>
-                    <!--end::Fullscreen Toggle-->
+              
                     <!--begin::User Menu Dropdown-->
                     <li class="nav-item dropdown user-menu">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img
                                 src="../../../dist/assets/img/user2-160x160.jpg"
                                 class="user-image rounded-circle shadow"
-                                alt="User Image" />
-                            <span class="d-none d-md-inline">Alexander Pierce</span>
+                                 />
+                            <span class="d-none d-md-inline">Geneva Garcia</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <!--begin::User Image-->
@@ -195,9 +194,9 @@
                                 <img
                                     src="../../../dist/assets/img/user2-160x160.jpg"
                                     class="rounded-circle shadow"
-                                    alt="User Image" />
+                                    />
                                 <p>
-                                    Alexander Pierce - Web Developer
+                                    Geneva Garcia - Web Developer
                                     <small>Member since Nov. 2023</small>
                                 </p>
                             </li>
@@ -229,7 +228,7 @@
         </nav>
         <!--end::Header-->
         <!--begin::Sidebar-->
-        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+        <aside class="app-sidebar bg-dark shadow" data-bs-theme="dark">
             <!--begin::Sidebar Brand-->
             <div class="sidebar-brand">
                 <!--begin::Brand Link-->
@@ -238,7 +237,7 @@
                     <img src="{{ asset('storage/logos/TQMPLogo.png') }}" alt="TQMP Logo" width="60" class="brand-image opacity-75 shadow">
                     <!--end::Brand Image-->
                     <!--begin::Brand Text-->
-                    <span class="brand-text fw-light">Admin</span>
+                    <span class="brand-text fw-light">TQMPAdmin</span>
                     <!--end::Brand Text-->
                 </a>
                 <!--end::Brand Link-->
@@ -247,37 +246,33 @@
             <!--begin::Sidebar Wrapper-->
             <div class="sidebar-wrapper">
                 <nav class="mt-2">
-                    <!--begin::Sidebar Menu-->
-                    <ul
-                        class="nav sidebar-menu flex-column"
-                        data-lte-toggle="treeview"
-                        role="menu"
-                        data-accordion="false">
+                    <!--Sidebar Menu-->
+                    <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
                         <li class="nav-item menu-open">
                             <ul class="nav nav-treeview">
                                 <li class="nav-header">Menu</li>
                                 <li class="nav-item">
                                     <a href="/dashboard" class="nav-link">
-                                        <p>Dashboard</p>
+                                        <p><i class="fa-solid fa-chart-line" style="margin-right: 10px;"></i>Dashboard</p>
+                                    </a>
+                                </li>
+                                <li class="nav-header">Tables</li>
+                                <li class="nav-item">
+                                    <a href="/inventory" class="nav-link ">
+                                        <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Inventory</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/order" class="nav-link active">
+                                        <p> <i class="fa-solid fa-store" style="margin-right: 10px;"></i>Orders</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/consumer" class="nav-link">
+                                        <p><i class="fa-solid fa-users" style="margin-right: 10px;"></i>Consumers</p>
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-header">Tables</li>
-                        <li class="nav-item">
-                            <a href="/inventory" class="nav-link">
-                                <p>Inventory</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/order" class="nav-link active">
-                                <p>Orders</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/consumer" class="nav-link">
-                                <p>Consumers</p>
-                            </a>
                         </li>
                         <!-- <li class="nav-item">
                             <a href="/userprofiles" class="nav-link">
@@ -285,7 +280,6 @@
                             </a>
                         </li> -->
                     </ul>
-                    <!--end::Sidebar Menu-->
                 </nav>
             </div>
             <!--end::Sidebar Wrapper-->
@@ -293,250 +287,220 @@
         <!--end::Sidebar-->
         <!--begin::App Main-->
         <main class="app-main">
-            <!--begin::App Content Header-->
+            <!--App Content Header-->
             <div class="app-content-header">
-                <!--begin::Container-->
+                <!--Container-->
                 <div class="container-fluid">
-                    <!--begin::Row-->
+                    <!--Row-->
                     <div class="row">
-        <div class="col-12">
-          <div class="card my-4">
-            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-              <div class="bg-gradient-dark shadow-dark border-radius-lg pt-4 pb-3">
-                <h6 class="text-white text-capitalize ps-3">Authors table</h6>
-              </div>
-            </div>
-            <div class="card-body px-0 pb-2">
-              <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0">
-                  <thead>
-                    <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employed</th>
-                      <th class="text-secondary opacity-7"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">John Michael</h6>
-                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                          </div>
+                        <div class="col-sm-6">
+                            <h3 class="mb-0">Orders</h3>
                         </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Manager</p>
-                        <p class="text-xs text-secondary mb-0">Organization</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user2">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Alexa Liras</h6>
-                            <p class="text-xs text-secondary mb-0">alexa@creative-tim.com</p>
-                          </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-end">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Orders</li>
+                            </ol>
                         </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">11/01/19</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user3">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Laurent Perrier</h6>
-                            <p class="text-xs text-secondary mb-0">laurent@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Executive</p>
-                        <p class="text-xs text-secondary mb-0">Projects</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">19/09/17</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user4">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Michael Levi</h6>
-                            <p class="text-xs text-secondary mb-0">michael@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">24/12/08</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user5">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Richard Gran</h6>
-                            <p class="text-xs text-secondary mb-0">richard@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Manager</p>
-                        <p class="text-xs text-secondary mb-0">Executive</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">04/10/21</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user6">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Miriam Eric</h6>
-                            <p class="text-xs text-secondary mb-0">miriam@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                    </div>
                     <!--end::Row-->
                 </div>
                 <!--end::Container-->
             </div>
             <!--end::App Content Header-->
-           
+            <!--App Content-->
+            <div class="app-content">
+                <!--Container-->
+                <div class="container-fluid">
+                    <!--Row-->
+                    <div class="row">
+
+                        <table id="example" class="table is-striped" style="width:100%; text-align: left;">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Product ID</th>
+                                    <th>Customer ID</th>
+                                    <th>Customer Name</th>
+                                    <th>Shipping Address</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="">OIDB80E7</a></td>
+                                    <td>PID63WA3</td>
+                                    <td>CID96YC5</td>
+                                    <td>Shelton Green</td>
+                                    <td>Quezon City</td>
+                                    <td>PHP 1000</td>
+                                    <td># 60</td>
+                                    <td>
+                                        <div class="btn-group-sm">
+                                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Status
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Pending</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Payment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Fulfillment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Completed</a></li>
+                                                <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Cancelled</a></li>
+                                                <li><a class="dropdown-item" href="#">Declined</a></li>
+                                                <li><a class="dropdown-item" href="#">Refunded</a></li>
+                                                <li><a class="dropdown-item" href="#">Disputed</a></li>
+                                                <li><a class="dropdown-item" href="#">Manual Verification Required</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Refunded</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">OID1BI66</a></td>
+                                    <td>PIDX6D21</td>
+                                    <td>CIDZ9G44</td>
+                                    <td>Francisco Brown</td>
+                                    <td>Baguio City</td>
+                                    <td>PHP 100000</td>
+                                    <td># 60</td>
+                                    <td>
+                                        <div class="btn-group-sm">
+                                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Status
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Pending</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Payment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Fulfillment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Completed</a></li>
+                                                <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Cancelled</a></li>
+                                                <li><a class="dropdown-item" href="#">Declined</a></li>
+                                                <li><a class="dropdown-item" href="#">Refunded</a></li>
+                                                <li><a class="dropdown-item" href="#">Disputed</a></li>
+                                                <li><a class="dropdown-item" href="#">Manual Verification Required</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Refunded</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">OIDXN6MU</a></td>
+                                    <td>PIDSJ2HQ</td>
+                                    <td>CIDVL4KS</td>
+                                    <td>Patti Stewart</td>
+                                    <td>Valenzuela City</td>
+                                    <td>PHP 250000</td>
+                                    <td># 60</td>
+                                    <td>
+                                        <div class="btn-group-sm">
+                                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Status
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Pending</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Payment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Fulfillment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Completed</a></li>
+                                                <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Cancelled</a></li>
+                                                <li><a class="dropdown-item" href="#">Declined</a></li>
+                                                <li><a class="dropdown-item" href="#">Refunded</a></li>
+                                                <li><a class="dropdown-item" href="#">Disputed</a></li>
+                                                <li><a class="dropdown-item" href="#">Manual Verification Required</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Refunded</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">OID4R3UW</a></td>
+                                    <td>PID0NZPS</td>
+                                    <td>CID2P1SV</td>
+                                    <td>Jamaal Lozano</td>
+                                    <td>Quezon City</td>
+                                    <td>PHP 600000</td>
+                                    <td># 60</td>
+                                    <td>
+                                        <div class="btn-group-sm">
+                                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Status
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Pending</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Payment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Fulfillment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipment</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
+                                                <li><a class="dropdown-item" href="#">Completed</a></li>
+                                                <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                                <li><a class="dropdown-item" href="#">Cancelled</a></li>
+                                                <li><a class="dropdown-item" href="#">Declined</a></li>
+                                                <li><a class="dropdown-item" href="#">Refunded</a></li>
+                                                <li><a class="dropdown-item" href="#">Disputed</a></li>
+                                                <li><a class="dropdown-item" href="#">Manual Verification Required</a></li>
+                                                <li><a class="dropdown-item" href="#">Partially Refunded</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!--end::Container-->
+            </div>
+            <!--end::App Content-->
         </main>
         <!--end::App Main-->
-        <!--begin::Footer-->
-        <footer class="app-footer">
-            <!--begin::To the end-->
-            <div class="float-end d-none d-sm-inline">Anything you want</div>
-            <!--end::To the end-->
-            <!--begin::Copyright-->
-            <strong>
-                Copyright &copy; 2014-2024&nbsp;
-                <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.
-            </strong>
-            All rights reserved.
-            <!--end::Copyright-->
-        </footer>
-        <!--end::Footer-->
+     
     </div>
     <!--end::App Wrapper-->
     <!--begin::Script-->
-    <!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <!--Third Party Plugin(OverlayScrollbars)-->
     <script
         src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
         integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ="
         crossorigin="anonymous"></script>
-    <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
+
+    <!--Required Plugin(popperjs for Bootstrap 5)-->
     <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
+
+    <!--Required Plugin(Bootstrap 5)-->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-    <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
-    <script src="../../../dist/js/adminlte.js"></script>
-    <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
+
+    <!--Required Plugin(AdminLTE)-->
+    <script href="{{ asset('storage/dist/js/adminlte.js') }}"></script>
+
+    <!--OverlayScrollbars Configure-->
     <script>
         const SELECTOR_SIDEBAR_WRAPPER = '.sidebar-wrapper';
         const Default = {
@@ -557,7 +521,14 @@
             }
         });
     </script>
-    <!--end::OverlayScrollbars Configure-->
+
+    <!-- Datatable Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script>
+        new DataTable('#example');
+    </script>
     <!--end::Script-->
 </body>
 <!--end::Body-->
