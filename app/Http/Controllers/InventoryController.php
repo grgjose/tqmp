@@ -16,4 +16,20 @@ class InventoryController extends Controller
             'my_user' => $my_user,
         ]);
     }
+
+    public function store(Request $request)
+    {
+        $validated = $request->validate([
+            'brand' => ['required'],
+            'product' => ['required'],
+            'model' => ['required'],
+            'details' => ['required'],
+            'quantity' => ['required'],
+        ]);
+
+    }
+
+    
+
+
 }

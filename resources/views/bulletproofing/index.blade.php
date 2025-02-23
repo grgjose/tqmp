@@ -212,7 +212,6 @@
                 </div>
             </div>
 
-
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-lg">
                     <img src="{{ asset('storage/logos/leather.png') }}" alt="Premium Leather Seats" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">

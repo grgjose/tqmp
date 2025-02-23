@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('inventories', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('brand')->nullable();
-            $table->string('name')->nullable();
-            $table->string('model')->nullable();
-            $table->string('details')->nullable();
+            $table->string('order_id')->nullable();
+            $table->string('product_id')->nullable();
+            $table->string('customer_id')->nullable();
+            $table->string('shipping_address')->nullable();
+            $table->double('price')->nullable();
             $table->double('quantity')->nullable();
-            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('inventories');
+        Schema::dropIfExists('orders');
     }
 };

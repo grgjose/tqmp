@@ -15,8 +15,13 @@ class AdminController extends Controller
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
-        if($auth->check()){
-            return view("admin.dashboard");
+
+        dd($auth->user());
+
+        if($auth->check() && $auth->user()->usertype == 1){
+            return view('admin.dashboard');
+        } elseif($auth->check() && $auth->user()->usertype == 2){
+            return redirect('/');
         } else {
             return redirect('/');
         }

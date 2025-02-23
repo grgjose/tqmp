@@ -19,6 +19,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
+    <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
+    <!-- Chatbot JS -->
+    <script src="{{ asset('js/chatbot.js') }}"></script>
+
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 
@@ -28,130 +33,6 @@
 
 
 <body>
-
-    <!-- Chatbot CSS -->
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f5f5;
-        }
-
-        .chatbot-container {
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            width: 350px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-            display: none;
-            z-index: 1000;
-        }
-
-        .chatbot-header {
-            background: #7E1416;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .chatbot-header .close-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .chatbot-body {
-            padding: 15px;
-            height: 300px;
-            overflow-y: auto;
-            background: #fafafa;
-            border: 1px solid #ddd;
-            border-left: none;
-            border-right: none;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .chat-message {
-            padding: 10px;
-            border-radius: 10px;
-            max-width: 80%;
-            word-wrap: break-word;
-        }
-
-        .chat-message.user {
-            background: #7E1416;
-            align-self: flex-end;
-            color: #f1f1f1;
-            /* border: 1px solid #7E1416; */
-        }
-
-        .chat-message.bot {
-            background: #172647;
-            align-self: flex-start;
-            color: #f1f1f1;
-            /* border: 1px solid #1e88e5; */
-        }
-
-        .chatbot-footer {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background: white;
-            border-top: 1px solid #ddd;
-        }
-
-        .chatbot-footer input {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            border-radius: 20px;
-            background: #f1f1f1;
-            outline: none;
-        }
-
-        .chatbot-footer button,
-        .chatbot-footer label {
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-            color: #7E1416;
-            font-size: 24px;
-        }
-
-        .chatbot-footer input[type="file"] {
-            display: none;
-        }
-
-        .chatbot-icon {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #7E1416;
-            color: white;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            cursor: pointer;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-            z-index: 1001;
-        }
-    </style>
-    <!-- End of Chatbot CSS -->
 
     <!-- Header -->
     @include('plus.navbar')
@@ -265,60 +146,14 @@
     @include ('plus.cta')
     <!-- End of Call to Action -->
 
+    <!-- Chatbot -->
+    @include('plus.chatbot')
+    <!-- End of Chatbot -->
+
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
 
-    <!-- Chatbot -->
-    <section>
-        <div class="chatbot-container" id="chatbot">
-            <div class="chatbot-header text-start">TQMP Chatbot <button class="close-btn" onclick="closeChat()">&times;</button></div>
-            <div class="chatbot-body" id="chatbot-body">
-                <div class="chat-message bot">Welcome! How can I help you?</div>
-            </div>
-            <div class="chatbot-footer">
-                <input type="text" id="chat-input" placeholder="Type a message...">
-                <label for="file-upload"><i class="fas fa-paperclip"></i></label>
-                <input type="file" id="file-upload">
-                <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
-            </div>
-        </div>
-        <div class="chatbot-icon" onclick="toggleChat()">
-            <i class="fas fa-comment"></i>
-        </div>
-    </section>
-    <!-- End of Chatbot -->
-
-    <!-- Chatbot Script  -->
-    <script>
-        function toggleChat() {
-            var chatbox = document.getElementById("chatbot");
-            if (chatbox.style.display === "none" || chatbox.style.display === "") {
-                chatbox.style.display = "block";
-            } else {
-                chatbox.style.display = "none";
-            }
-        }
-
-        function closeChat() {
-            document.getElementById("chatbot").style.display = "none";
-        }
-
-        function sendMessage() {
-            var input = document.getElementById("chat-input");
-            var message = input.value.trim();
-            if (message !== "") {
-                var chatBody = document.getElementById("chatbot-body");
-                var userMessage = document.createElement("div");
-                userMessage.classList.add("chat-message", "user");
-                userMessage.textContent = message;
-                chatBody.appendChild(userMessage);
-                input.value = "";
-                chatBody.scrollTop = chatBody.scrollHeight;
-            }
-        }
-    </script>
-    <!-- End of Chatbot Script  -->
 </body>
 
 </html>

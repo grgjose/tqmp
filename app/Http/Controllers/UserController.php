@@ -32,7 +32,13 @@ class UserController extends Controller
         
         if($auth->attempt($validated, $remember) || $auth->viaRemember()){
             $request->session()->regenerate();
-            return redirect('/');
+
+            if($auth->check() && $auth->user()->usertype == 1){
+                return redirect('/dashboard');
+            } else {
+                return redirect('/');
+            }
+
         } else {
             return redirect('/')->with('error_msg', 'Invalid Credentials!');
         }
