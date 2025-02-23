@@ -36,11 +36,13 @@
                         <br><span>The</span> <span>Marketing</span> <span>Arm</span> <span>of</span>
                         <br><span>Philippines</span> <span>Glass</span> <span>and</span> <span>Aluminum</span> <span>Conglomerate</span>
                     </h2>
+                    @if($my_user == null)
                     <div class="text-center mb-5 mt-3">
                         <a type="button" class="btn btn-danger fade-in-up">Register
                             <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i>
                         </a>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>

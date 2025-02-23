@@ -8,6 +8,12 @@ class InventoryController extends Controller
 {
     public function index()
     {
-        return view('dashboard.inventory');
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('dashboard.inventory', [
+            'my_user' => $my_user,
+        ]);
     }
 }

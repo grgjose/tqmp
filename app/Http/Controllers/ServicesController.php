@@ -11,7 +11,13 @@ class ServicesController extends Controller
      */
     public function index()
     {
-        return view('services.index');
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('services.index', [
+            'my_user' => $my_user,
+        ]);
     }
 
     /**

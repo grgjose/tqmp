@@ -11,7 +11,13 @@ class GenTradeController extends Controller
      */
     public function index()
     {
-        return view('gentrade.index');
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('gentrade.index', [
+            'my_user' => $my_user,
+        ]);
     }
 
     /**
