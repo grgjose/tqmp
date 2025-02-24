@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             'lname' => 'Jose',
             'ext' => '',
             'email' => 'georgelouisjose@gmail.com',
+            'user_pic' => '2x2-Circle.png',
             'password' => Hash::make('password')
         ]);
 
@@ -33,6 +34,7 @@ class DatabaseSeeder extends Seeder
             'lname' => 'Garcia',
             'ext' => '',
             'email' => 'genevagarcia0704@gmail.com',
+            'user_pic' => 'default.png',
             'password' => Hash::make('password')
         ]);
 

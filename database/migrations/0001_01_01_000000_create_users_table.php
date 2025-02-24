@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('ext')->nullable();
             $table->string('address')->nullable();
             $table->string('contact_num')->nullable();
+            $table->string('user_pic')->nullable()->default('default.png');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

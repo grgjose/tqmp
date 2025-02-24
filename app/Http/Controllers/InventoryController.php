@@ -12,9 +12,23 @@ class InventoryController extends Controller
         $auth = auth();
         $my_user = $auth->user();
 
-        return view('dashboard.inventory', [
+        if($my_user == null){
+            return redirect('/')->with('error_msg', 'Invalid Access!');
+        }
+
+        if($my_user->usertype > 2){
+            return redirect('/')->with('error_msg', 'Invalid Access!');
+        }
+
+        //return view('dashboard.inventory');
+
+        
+        return view('dashboard.index', [
             'my_user' => $my_user,
-        ]);
+        ])
+        ->with('title', 'Inventory')
+        ->with('main_content', 'dashboard.modules.inventory');
+        
     }
 
     public function store(Request $request)
