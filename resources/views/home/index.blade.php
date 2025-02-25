@@ -31,7 +31,6 @@
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
-    <h6 id="debug"></h6>
     <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.2), rgba(30, 26, 26, 0.2)), url('storage/logos/tqmpnew-edited.jpg') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center text-center text-light">
