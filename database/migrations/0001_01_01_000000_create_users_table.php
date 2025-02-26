@@ -19,11 +19,15 @@ return new class extends Migration
             $table->string('lname')->nullable();
             $table->string('ext')->nullable();
             $table->string('address')->nullable();
+            $table->dateTime('birthdate')->nullable();
+            $table->string('email')->unique();
             $table->string('contact_num')->nullable();
             $table->string('user_pic')->nullable()->default('default.png');
-            $table->string('email')->unique();
+            $table->string('upload_file')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('status');
+            $table->boolean('isDeleted')->nullable()->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -44,11 +45,71 @@ class UserController extends Controller
         }
     }
 
+    public function signup(Request $request)
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null){
+            return redirect('/')->with('error_msg', 'Invalid Access!');
+        }
+
+        if($my_user->usertype > 2){
+            return redirect('/')->with('error_msg', 'Invalid Access!');
+        }
+        
+        $validated = $request->validate([
+            'fname' => ['required', 'min:3'],
+            'mname' => ['nullable'],
+            'lname' => ['required'],
+            'email' => ['required'],
+            'birthdate' => ['required'],
+            'contact_num' => ['required'],
+            'password' => ['required'],
+            'confirm_password' => ['required'],
+            'upload_file' => ['required|file|mimes:jpg,jpeg,png,pdf|max:2048'],
+        ]);
+
+
+        // Handle file upload
+        if ($request->hasFile('upload_file')) {
+            $file = $request->file('upload_file');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $file->storeAs('uploads', $filename, 'public');
+        } else {
+            return response()->json(['error' => 'File upload failed'], 400);
+        }
+
+
+        $user = new User();
+
+        $user->fname = $validated['fname'];
+        $user->mname = $validated['mname'];
+        $user->lname = $validated['lname'];
+        $user->email = $validated['email'];
+        $user->birthdate = $validated['birthdate'];
+        $user->contact_num = $validated['contact_num'];
+        $user->password = $validated['password'];
+        $user->upload_file = $filename;
+
+        $user->save();
+
+        return view('home.register', [
+            'my_user' => $my_user,
+        ])->with('success_msg', 'Successfully Registered');
+
+    }
+
     /**
      * Login a User
      */    
     public function login(Request $request){
         return view("home.login");
+    }
+
+    public function register(){
+        return view("home.register");
     }
 
     /**
