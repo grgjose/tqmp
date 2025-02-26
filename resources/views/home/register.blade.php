@@ -33,63 +33,63 @@
                                 <!-- First Name Input -->
                                 <div class="col-md-4">
                                     <div class="form-outline">
-                                        <label for="registerFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
-                                        <input type="text" id="registerFirstName" name="first_name" class="form-control" placeholder="Input First Name" required />
+                                        <label for="fname" class="form-label">First Name <span class="text-danger">*</span></label>
+                                        <input type="text" id="fname" name="first_name" class="form-control" placeholder="Input First Name" required />
                                     </div>
                                 </div>
 
                                 <!-- Middle Name Input -->
                                 <div class="col-md-4">
                                     <div class="form-outline">
-                                        <label for="registerMiddleName" class="form-label">Middle Name</label>
-                                        <input type="text" id="registerMiddleName" name="middle_name" class="form-control" placeholder="Input Middle Name" />
+                                        <label for="mname" class="form-label">Middle Name</label>
+                                        <input type="text" id="mname" name="middle_name" class="form-control" placeholder="Input Middle Name" />
                                     </div>
                                 </div>
 
                                 <!-- Last Name Input -->
                                 <div class="col-md-4">
                                     <div class="form-outline">
-                                        <label for="registerLastName" class="form-label">Last Name <span class="text-danger">*</span></label>
-                                        <input type="text" id="registerLastName" name="last_name" class="form-control" placeholder="Input Last Name" required />
+                                        <label for="lname" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                        <input type="text" id="lname" name="last_name" class="form-control" placeholder="Input Last Name" required />
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Email Input -->
                             <div class="form-outline mb-4">
-                                <label for="fullName" class="form-label">Email Address <span class="text-danger">*</span></label>
-                                <input type="email" id="registerEmail" name="email" class="form-control" placeholder="Input your Email address" required />
+                                <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Input your Email address" required />
                             </div>
 
                             <!-- Contact Number Input -->
                             <div class="form-outline mb-4">
-                                <label for="fullName" class="form-label">Contact Number <span class="text-danger">*</span></label>
-                                <input type="text" id="registerContact" name="contact_number" class="form-control" placeholder="Enter Contact Number" required />
+                                <label for="contact_num" class="form-label">Contact Number <span class="text-danger">*</span></label>
+                                <input type="text" id="contact_num" name="contact_number" class="form-control" placeholder="Enter Contact Number" required />
                             </div>
 
                             <!-- Birthday Input -->
                             <div class="form-outline mb-4">
-                                <label for="fullName" class="form-label">Birthday <span class="text-danger">*</span></label>
-                                <input type="date" id="registerBirthday" name="birthday" class="form-control" placeholder="Birthday" required />
+                                <label for="birthdate" class="form-label">Birthday <span class="text-danger">*</span></label>
+                                <input type="date" id="birthdate" name="birthday" class="form-control" placeholder="Birthday" required />
                             </div>
 
                             <!-- Password Input -->
                             <div class="form-outline mb-4">
-                                <label for="registerPassword" class="form-label">Password <span class="text-danger">*</span></label>
-                                <input type="password" id="registerPassword" name="password" class="form-control" placeholder="Enter your Password" required />
+                                <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Enter your Password" required />
                             </div>
 
                             <!-- Repeat Password Input -->
                             <div class="form-outline mb-4">
-                                <label for="registerRepeatPassword" class="form-label">Confirm your Password <span class="text-danger">*</span></label>
-                                <input type="password" id="registerRepeatPassword" name="password_confirmation" class="form-control" placeholder="Repeat your Password" required />
+                                <label for="confirm_password" class="form-label">Confirm your Password <span class="text-danger">*</span></label>
+                                <input type="password" id="confirm_password" name="password_confirmation" class="form-control" placeholder="Repeat your Password" required />
                                 <div id="passwordError" class="text-danger mt-2" style="display: none;">Passwords do not match.</div>
                             </div>
 
                             <script>
                                 document.addEventListener('DOMContentLoaded', function () {
-                                    const password = document.getElementById('registerPassword');
-                                    const confirmPassword = document.getElementById('registerRepeatPassword');
+                                    const password = document.getElementById('password');
+                                    const confirmPassword = document.getElementById('confirm_password');
                                     const passwordError = document.getElementById('passwordError');
 
                                     confirmPassword.addEventListener('input', function () {
@@ -104,8 +104,8 @@
 
                             <!-- File Upload Input -->
                             <div class="form-outline mb-4">
-                                <label for="formFileSm" class="form-label">Please upload your government ID and/or Business Registration if you're a business owner. Be Our Partner to enjoy our Best Price Offers. <span class="text-danger">*</span></label>
-                                <input type="file" id="registerFile" name="file" class="form-control" required />
+                                <label for="upload_file" class="form-label">Please upload your government ID and/or Business Registration if you're a business owner. Be Our Partner to enjoy our Best Price Offers. <span class="text-danger">*</span></label>
+                                <input type="file" id="upload_file" name="file" class="form-control" required />
                             </div>
 
                             <!-- Submit Button -->
