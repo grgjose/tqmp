@@ -14,7 +14,7 @@ use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\ConsumerController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserProfileController;
-
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserController;
 
 // Home Pages
@@ -36,6 +36,8 @@ Route::get('/catalog', [CatalogController::class, 'show'])->name('gentrade.catal
 Route::get('/login', [UserController::class, 'login'])->name('home.login');
 Route::post('/login', [UserController::class, 'logon'])->name('home.signin');
 Route::get('/logout', [UserController::class, 'logout'])->name('home.logout');
+// Register Page
+Route::get('/register', [RegisterController::class, 'index'])->name('home.register');
 
 //Dashboard Pages
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');

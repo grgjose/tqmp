@@ -55,19 +55,6 @@
               </p>
             </form>
 
-            <!-- Divider -->
-            <div class="d-flex align-items-center my-3">
-              <div class="border-top w-100"></div>
-              <span class="px-2 text-muted">or</span>
-              <div class="border-top w-100"></div>
-            </div>
-
-            <!-- Social Login Buttons -->
-            <div class="d-flex justify-content-center gap-3">
-              <button class="btn btn-outline-danger btn-floating"><i class="fab fa-facebook-f"></i></button>
-              <button class="btn btn-outline-danger btn-floating"><i class="fab fa-google"></i></button>
-              <button class="btn btn-outline-danger btn-floating"><i class="fab fa-twitter"></i></button>
-            </div>
           </div>
         </div>
       </div>
