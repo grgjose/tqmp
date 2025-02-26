@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="bg-body-secondary d-flex align-items-center" style="height: 100vh;">
+<body class="bg-body-secondary d-flex align-items-center" >
 
     <div class="container pt-5 pb-5">
         <div class="row justify-content-center">
