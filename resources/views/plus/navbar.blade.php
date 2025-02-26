@@ -80,19 +80,32 @@
                 </ul>
 
                 <div class="d-flex align-items-center">
-                    <a href="/cart" class="btn btn-danger me-2 d-none d-sm-block">
-                        <i class="fas fa-shopping-cart"></i> Cart
-                    </a>
-                    <a href="/login" class="btn btn-primary d-none d-sm-block">
-                        <i class="fas fa-user"></i> Login
-                    </a>
-                    <div class="d-flex flex-column w-100 d-sm-none">
-                        <a href="/cart" class="btn btn-danger mb-2 w-100">
+                    @if($my_user == null)
+                        <a href="/login" class="btn btn-primary d-none d-sm-block">
+                            <i class="fas fa-user"></i> Login
+                        </a>
+                    @else
+                        <a href="/cart" class="btn btn-danger me-2 d-none d-sm-block">
                             <i class="fas fa-shopping-cart"></i> Cart
                         </a>
+                        <a href="/logout" class="btn btn-primary d-none d-sm-block">
+                            <i class="fas fa-user"></i> Logout
+                        </a>
+                    @endif
+
+                    <div class="d-flex flex-column w-100 d-sm-none">
+                        @if($my_user == null)
                         <a href="/login" class="btn btn-primary w-100">
                             <i class="fas fa-user"></i> Login
                         </a>
+                        @else
+                        <a href="/cart" class="btn btn-danger mb-2 w-100">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                        </a>
+                        <a href="/logout" class="btn btn-primary w-100">
+                            <i class="fas fa-user"></i> Logout
+                        </a>
+                        @endif
                     </div>
                 </div>
             </div>

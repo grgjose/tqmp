@@ -18,6 +18,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
+    <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
+    <!-- Chatbot JS -->
+    <script src="{{ asset('js/chatbot.js') }}"></script>
+    
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 
@@ -26,7 +31,6 @@
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
-    <h6 id="debug"></h6>
     <section id="hero" class="hero section dark-background" style="background: linear-gradient(rgba(23, 38, 71, 0.2), rgba(30, 26, 26, 0.2)), url('storage/logos/tqmpnew-edited.jpg') no-repeat center center/cover;">
         <div class="container">
             <div class="row justify-content-center text-center text-light">
@@ -36,11 +40,13 @@
                         <br><span>The</span> <span>Marketing</span> <span>Arm</span> <span>of</span>
                         <br><span>Philippines</span> <span>Glass</span> <span>and</span> <span>Aluminum</span> <span>Conglomerate</span>
                     </h2>
+                    @if($my_user == null)
                     <div class="text-center mb-5 mt-3">
                         <a type="button" class="btn btn-danger fade-in-up">Register
                             <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i>
                         </a>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>
@@ -160,11 +166,11 @@
     @include ('plus.cta')
     <!-- End of Call to Action -->
 
+    @include('plus.chatbot')
+
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
-
-    @include('plus.chatbot')
 
     <!-- Bootstrap JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->

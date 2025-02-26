@@ -13,8 +13,15 @@ class AdminController extends Controller
      */
     public function index()
     {
-        if(auth()->check()){
-            return view("admin.dashboard");
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+
+        dd($auth->user());
+
+        if($auth->check() && $auth->user()->usertype == 1){
+            return view('admin.dashboard');
+        } elseif($auth->check() && $auth->user()->usertype == 2){
+            return redirect('/');
         } else {
             return redirect('/');
         }

@@ -11,7 +11,13 @@ class GlassManufacturingController extends Controller
      */
     public function index()
     {
-        return view('glass.manufacturing.index');
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('glass.manufacturing.index', [
+            'my_user' => $my_user,
+        ]);
     }
 
     /**

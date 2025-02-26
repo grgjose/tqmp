@@ -23,7 +23,20 @@ class DatabaseSeeder extends Seeder
             'lname' => 'Jose',
             'ext' => '',
             'email' => 'georgelouisjose@gmail.com',
+            'user_pic' => '2x2-Circle.png',
             'password' => Hash::make('password')
         ]);
+
+        User::factory()->create([
+            'usertype' => 1,
+            'fname' => 'Geneva May',
+            'mname' => '',
+            'lname' => 'Garcia',
+            'ext' => '',
+            'email' => 'genevagarcia0704@gmail.com',
+            'user_pic' => 'default.png',
+            'password' => Hash::make('password')
+        ]);
+
     }
 }

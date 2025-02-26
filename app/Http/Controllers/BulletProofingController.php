@@ -11,7 +11,13 @@ class BulletProofingController extends Controller
      */
     public function index()
     {
-        return view('bulletproofing.index');
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('bulletproofing.index', [
+            'my_user' => $my_user,
+        ]);
     }
 
     /**

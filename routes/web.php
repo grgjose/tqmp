@@ -35,6 +35,7 @@ Route::get('/catalog', [CatalogController::class, 'show'])->name('gentrade.catal
 // Product Pages
 Route::get('/login', [UserController::class, 'login'])->name('home.login');
 Route::post('/login', [UserController::class, 'logon'])->name('home.signin');
+Route::get('/logout', [UserController::class, 'logout'])->name('home.logout');
 // Register Page
 Route::get('/register', [RegisterController::class, 'index'])->name('home.register');
 

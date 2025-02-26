@@ -19,6 +19,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
+    <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
+    <!-- Chatbot JS -->
+    <script src="{{ asset('js/chatbot.js') }}"></script>
+
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 </head>
@@ -211,7 +216,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-lg">
@@ -431,6 +435,10 @@
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
+
+    <!-- Chatbot -->
+    @include ('plus.chatbot')
+    <!-- End of Chatbot -->
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {

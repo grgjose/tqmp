@@ -259,7 +259,20 @@
                 <div class="container-fluid" style="border: 1px solid #ddd; padding: 15px; border-radius: 5px; background-color: white;">
                     <!--Row-->
                     <div class="row">
-
+                        <div class="col-6">
+                        </div>
+                        <div class="col-4">
+                        </div>
+                        <div class="col-1">
+                            <button class="btn btn-success" onclick="showForm()">
+                                <span class="fas fa-plus"></span> Export CSV
+                            </button>
+                        </div>
+                        <div class="col-1">
+                            <button class="btn btn-success" onclick="showForm()">
+                                <span class="fas fa-plus"></span> Add Inventory
+                            </button>
+                        </div>
                         <table id="example" class="table is-striped" style="width:100%; text-align: left;">
                             <thead>
                                 <tr>

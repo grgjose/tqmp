@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -23,14 +24,23 @@ class UserController extends Controller
             "password" => ['required', 'min:2']
         ]);
         
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+
         $remember = $request->input("remember_me");
 
-        if(auth()->attempt($validated, $remember) || auth()->viaRemember()){
+        
+        if($auth->attempt($validated, $remember) || $auth->viaRemember()){
             $request->session()->regenerate();
-            return "LOGIN";
+
+            if($auth->check() && $auth->user()->usertype == 1){
+                return redirect('/dashboard');
+            } else {
+                return redirect('/');
+            }
+
         } else {
-            return "INVALID CREDENTIALS";
-            //return redirect('/')->with('error_msg', 'Invalid Credentials!');
+            return redirect('/')->with('error_msg', 'Invalid Credentials!');
         }
     }
 
@@ -45,8 +55,10 @@ class UserController extends Controller
      * Logout a User
      */    
     public function logout(Request $request){   
-        auth()->logout();
-        return "LOGOUT";
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $auth->logout();
+        return redirect('/');
     }
 
     /**

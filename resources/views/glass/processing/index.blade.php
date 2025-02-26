@@ -19,6 +19,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
+    <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
+    <!-- Chatbot JS -->
+    <script src="{{ asset('js/chatbot.js') }}"></script>
+
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 </head>
@@ -132,6 +137,10 @@
     <!-- Call to Action -->
     @include ('plus.cta')
     <!-- End of Call to Action -->
+
+    <!-- Chatbot -->
+    @include ('plus.chatbot')
+    <!-- End of Chatbot -->
 
     <!-- Footer -->
     @include ('plus.footer')
