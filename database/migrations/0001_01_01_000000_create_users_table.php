@@ -23,10 +23,10 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('contact_num')->nullable();
             $table->string('user_pic')->nullable()->default('default.png');
-            $table->string('upload_file')->unique();
+            $table->string('upload_file')->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('status');
+            $table->string('password')->nullable();
+            $table->string('status')->nullable()->default('registered');
             $table->boolean('isDeleted')->nullable()->default(false);
             $table->rememberToken();
             $table->timestamps();
