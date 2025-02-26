@@ -54,23 +54,18 @@
                         </a>
                     </li>
                     <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Dashboard</a></li>
                 </ul>
                 <!--end::Start Navbar Links-->
                 <!--begin::End Navbar Links-->
                 <ul class="navbar-nav ms-auto">
                     <!--begin::Navbar Search-->
-                    <li class="nav-item">
-                        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-                            <i class="bi bi-search"></i>
-                        </a>
-                    </li>
+
                     <!--end::Navbar Search-->
                     <!--begin::Messages Dropdown Menu-->
                     <li class="nav-item dropdown">
                         <a class="nav-link" data-bs-toggle="dropdown" href="#">
                             <i class="bi bi-chat-text"></i>
-                            <span class="navbar-badge badge text-bg-danger">3</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <a href="#" class="dropdown-item">
@@ -78,13 +73,12 @@
                                 <div class="d-flex">
                                     <div class="flex-shrink-0">
                                         <img
-                                            src="../../../dist/assets/img/user1-128x128.jpg"
-                                            alt="User Avatar"
+                                            src="https://th.bing.com/th/id/OIP.aNuVPko-fipxD4-hwuKSTQHaHl?rs=1&pid=ImgDetMain"
                                             class="img-size-50 rounded-circle me-3" />
                                     </div>
                                     <div class="flex-grow-1">
                                         <h3 class="dropdown-item-title">
-                                            Brad Diesel
+                                            Geneva Garcia
                                             <span class="float-end fs-7 text-danger"><i class="bi bi-star-fill"></i></span>
                                         </h3>
                                         <p class="fs-7">Call me whenever you can...</p>
@@ -95,57 +89,6 @@
                                 </div>
                                 <!--end::Message-->
                             </a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                <!--begin::Message-->
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0">
-                                        <img
-                                            src="../../../dist/assets/img/user8-128x128.jpg"
-                                            alt="User Avatar"
-                                            class="img-size-50 rounded-circle me-3" />
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <h3 class="dropdown-item-title">
-                                            John Pierce
-                                            <span class="float-end fs-7 text-secondary">
-                                                <i class="bi bi-star-fill"></i>
-                                            </span>
-                                        </h3>
-                                        <p class="fs-7">I got your message bro</p>
-                                        <p class="fs-7 text-secondary">
-                                            <i class="bi bi-clock-fill me-1"></i> 4 Hours Ago
-                                        </p>
-                                    </div>
-                                </div>
-                                <!--end::Message-->
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                <!--begin::Message-->
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0">
-                                        <img
-                                            src="../../../dist/assets/img/user3-128x128.jpg"
-                                            alt="User Avatar"
-                                            class="img-size-50 rounded-circle me-3" />
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <h3 class="dropdown-item-title">
-                                            Nora Silvester
-                                            <span class="float-end fs-7 text-warning">
-                                                <i class="bi bi-star-fill"></i>
-                                            </span>
-                                        </h3>
-                                        <p class="fs-7">The subject goes here</p>
-                                        <p class="fs-7 text-secondary">
-                                            <i class="bi bi-clock-fill me-1"></i> 4 Hours Ago
-                                        </p>
-                                    </div>
-                                </div>
-                                <!--end::Message-->
-                            </a>
-                            <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
                         </div>
                     </li>
@@ -154,38 +97,26 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" data-bs-toggle="dropdown" href="#">
                             <i class="bi bi-bell-fill"></i>
-                            <span class="navbar-badge badge text-bg-warning">15</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
-                            <span class="dropdown-item dropdown-header">15 Notifications</span>
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item">
                                 <i class="bi bi-envelope me-2"></i> 4 new messages
                                 <span class="float-end text-secondary fs-7">3 mins</span>
                             </a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                <i class="bi bi-people-fill me-2"></i> 8 friend requests
-                                <span class="float-end text-secondary fs-7">12 hours</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                <i class="bi bi-file-earmark-fill me-2"></i> 3 new reports
-                                <span class="float-end text-secondary fs-7">2 days</span>
-                            </a>
+
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item dropdown-footer"> See All Notifications </a>
                         </div>
                     </li>
                     <!--end::Notifications Dropdown Menu-->
-              
+
                     <!--begin::User Menu Dropdown-->
                     <li class="nav-item dropdown user-menu">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img
                                 src="../../../dist/assets/img/user2-160x160.jpg"
-                                class="user-image rounded-circle shadow"
-                                 />
+                                class="user-image rounded-circle shadow" />
                             <span class="d-none d-md-inline">Geneva Garcia</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
@@ -193,25 +124,13 @@
                             <li class="user-header text-bg-primary">
                                 <img
                                     src="../../../dist/assets/img/user2-160x160.jpg"
-                                    class="rounded-circle shadow"
-                                    />
+                                    class="rounded-circle shadow" />
                                 <p>
                                     Geneva Garcia - Web Developer
                                     <small>Member since Nov. 2023</small>
                                 </p>
                             </li>
                             <!--end::User Image-->
-                            <!--begin::Menu Body-->
-                            <li class="user-body">
-                                <!--begin::Row-->
-                                <div class="row">
-                                    <div class="col-4 text-center"><a href="#">Followers</a></div>
-                                    <div class="col-4 text-center"><a href="#">Sales</a></div>
-                                    <div class="col-4 text-center"><a href="#">Friends</a></div>
-                                </div>
-                                <!--end::Row-->
-                            </li>
-                            <!--end::Menu Body-->
                             <!--begin::Menu Footer-->
                             <li class="user-footer">
                                 <a href="#" class="btn btn-default btn-flat">Profile</a>
@@ -240,6 +159,7 @@
                     <span class="brand-text fw-light">TQMPAdmin</span>
                     <!--end::Brand Text-->
                 </a>
+
                 <!--end::Brand Link-->
             </div>
             <!--end::Sidebar Brand-->
@@ -247,6 +167,14 @@
             <div class="sidebar-wrapper">
                 <nav class="mt-2">
                     <!--Sidebar Menu-->
+                    <div class="user-panel mt-3 pb-3 d-flex align-items-center">
+                        <div class="image">
+                            <a href="#"><img src="https://th.bing.com/th/id/OIP.aNuVPko-fipxD4-hwuKSTQHaHl?rs=1&pid=ImgDetMain" class="img-circle elevation-2" alt="User Image" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px;"></a>
+                        </div>
+                        <div class="info ms-3">
+                            <a href="#" class="d-block" style="text-decoration: none;">Geneva Garcia</a>
+                        </div>
+                    </div>
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
                         <li class="nav-item menu-open">
                             <ul class="nav nav-treeview">
@@ -256,25 +184,52 @@
                                         <p><i class="fa-solid fa-chart-line" style="margin-right: 10px;"></i>Dashboard</p>
                                     </a>
                                 </li>
-                                <li class="nav-header">Tables</li>
+                                <li class="nav-header">Information</li>
+                                <li class="nav-item menu-open">
+                                    <a href="#" class="nav-link active">
+                                        <i class="nav-icon bi bi-speedometer"></i>
+                                        <p>
+                                            Tables
+                                            <i class="nav-arrow bi bi-chevron-right"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="/inventory" class="nav-link">
+                                                <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Inventory</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/order" class="nav-link active">
+                                                <p><i class="fa-solid fa-store" style="margin-right: 10px;"></i>Orders</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/consumer" class="nav-link">
+                                                <p><i class="fa-solid fa-users" style="margin-right: 10px;"></i>Consumers</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                <li class="nav-header">Settings</li>
                                 <li class="nav-item">
-                                    <a href="/inventory" class="nav-link ">
-                                        <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Inventory</p>
+                                    <a href="" class="nav-link">
+                                        <p><i class="fa-solid fa-user-tie" style="margin-right: 10px;"></i>Profile</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/order" class="nav-link active">
-                                        <p> <i class="fa-solid fa-store" style="margin-right: 10px;"></i>Orders</p>
+                                    <a href="" class="nav-link">
+                                        <p><i class="fa-solid fa-gear" style="margin-right: 10px;"></i>Settings</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/consumer" class="nav-link">
-                                        <p><i class="fa-solid fa-users" style="margin-right: 10px;"></i>Consumers</p>
+                                    <a href="" class="nav-link">
+                                        <p><i class="fa-solid fa-arrow-right-from-bracket" style="margin-right: 10px;"></i>Logout</p>
                                     </a>
                                 </li>
-                            </ul>
                         </li>
-                        <!-- <li class="nav-item">
+                    </ul>
+                    </li>
+                    <!-- <li class="nav-item">
                             <a href="/userprofiles" class="nav-link">
                                 <p>User Profiles</p>
                             </a>
@@ -311,7 +266,7 @@
             <!--App Content-->
             <div class="app-content">
                 <!--Container-->
-                <div class="container-fluid">
+                <div class="container-fluid" style="border: 1px solid #ddd; padding: 15px; border-radius: 5px; background-color: white;">
                     <!--Row-->
                     <div class="row">
 
@@ -326,6 +281,7 @@
                                     <th>Price</th>
                                     <th>Quantity</th>
                                     <th>Status</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -362,6 +318,12 @@
                                             </ul>
                                         </div>
                                     </td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">Add</button>
+                                        <button class="btn btn-warning btn-sm">Edit</button>
+                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-info btn-sm">View</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><a href="">OID1BI66</a></td>
@@ -395,6 +357,12 @@
                                                 <li><a class="dropdown-item" href="#">Partially Refunded</a></li>
                                             </ul>
                                         </div>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">Add</button>
+                                        <button class="btn btn-warning btn-sm">Edit</button>
+                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-info btn-sm">View</button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -430,6 +398,12 @@
                                             </ul>
                                         </div>
                                     </td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">Add</button>
+                                        <button class="btn btn-warning btn-sm">Edit</button>
+                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-info btn-sm">View</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><a href="">OID4R3UW</a></td>
@@ -464,6 +438,12 @@
                                             </ul>
                                         </div>
                                     </td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">Add</button>
+                                        <button class="btn btn-warning btn-sm">Edit</button>
+                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-info btn-sm">View</button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -475,7 +455,7 @@
             <!--end::App Content-->
         </main>
         <!--end::App Main-->
-     
+
     </div>
     <!--end::App Wrapper-->
     <!--begin::Script-->
@@ -486,19 +466,13 @@
         crossorigin="anonymous"></script>
 
     <!--Required Plugin(popperjs for Bootstrap 5)-->
-    <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
     <!--Required Plugin(Bootstrap 5)-->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
     <!--Required Plugin(AdminLTE)-->
-    <script href="{{ asset('storage/dist/js/adminlte.js') }}"></script>
+    <script src="{{ asset('storage/dist/js/adminlte.js') }}"></script>
 
     <!--OverlayScrollbars Configure-->
     <script>
