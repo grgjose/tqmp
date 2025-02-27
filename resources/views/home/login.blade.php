@@ -51,7 +51,7 @@
 
               <!-- Register Link -->
               <p class="text-center small">
-                Don't have an account? <a href="#" class="text-danger text-decoration-none">Register</a>
+                Don't have an account? <a href="/register" class="text-danger text-decoration-none">Register</a>
               </p>
             </form>
 

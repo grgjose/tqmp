@@ -50,14 +50,6 @@ class UserController extends Controller
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
         $my_user = $auth->user();
-
-        if($my_user == null){
-            return redirect('/')->with('error_msg', 'Invalid Access!');
-        }
-
-        if($my_user->usertype > 2){
-            return redirect('/')->with('error_msg', 'Invalid Access!');
-        }
         
         $validated = $request->validate([
             'fname' => ['required', 'min:3'],
@@ -67,10 +59,8 @@ class UserController extends Controller
             'birthdate' => ['required'],
             'contact_num' => ['required'],
             'password' => ['required'],
-            'confirm_password' => ['required'],
-            'upload_file' => ['required|file|mimes:jpg,jpeg,png,pdf|max:2048'],
+            'upload_file' => ['required', 'file', 'mimes:jpg,jpeg,png,pdf', 'max:2048'],
         ]);
-
 
         // Handle file upload
         if ($request->hasFile('upload_file')) {
