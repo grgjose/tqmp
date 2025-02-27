@@ -114,19 +114,19 @@
                     <!--begin::User Menu Dropdown-->
                     <li class="nav-item dropdown user-menu">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img
-                                src="../../../dist/assets/img/user2-160x160.jpg"
+                            <img src="{{ asset('storage/user-pics/'.$my_user->user_pic) }}"
                                 class="user-image rounded-circle shadow" />
-                            <span class="d-none d-md-inline">Geneva Garcia</span>
+                            <span class="d-none d-md-inline">{{ $my_user->fname.' '.$my_user->lname }}</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <!--begin::User Image-->
                             <li class="user-header text-bg-primary">
                                 <img
-                                    src="../../../dist/assets/img/user2-160x160.jpg"
-                                    class="rounded-circle shadow" />
+                                    src="{{ asset('storage/user-pics/'.$my_user->user_pic) }}"
+                                    class="rounded-circle shadow"
+                                    alt="User Image" />
                                 <p>
-                                    Geneva Garcia - Web Developer
+                                    {{ $my_user->fname.' '.$my_user->lname }} - Web Developer
                                     <small>Member since Nov. 2023</small>
                                 </p>
                             </li>
@@ -134,7 +134,7 @@
                             <!--begin::Menu Footer-->
                             <li class="user-footer">
                                 <a href="#" class="btn btn-default btn-flat">Profile</a>
-                                <a href="#" class="btn btn-default btn-flat float-end">Sign out</a>
+                                <a href="/logout" class="btn btn-default btn-flat float-end">Sign out</a>
                             </li>
                             <!--end::Menu Footer-->
                         </ul>
@@ -169,10 +169,10 @@
                     <!--Sidebar Menu-->
                     <div class="user-panel mt-3 pb-3 d-flex align-items-center">
                         <div class="image">
-                            <a href="#"><img src="https://th.bing.com/th/id/OIP.aNuVPko-fipxD4-hwuKSTQHaHl?rs=1&pid=ImgDetMain" class="img-circle elevation-2" alt="User Image" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px;"></a>
+                            <a href="#"><img src="{{ asset('storage/user-pics/'.$my_user->user_pic) }}" class="rounded-circle shadow" alt="User Image" /></a>
                         </div>
                         <div class="info ms-3">
-                            <a href="#" class="d-block" style="text-decoration: none;">Geneva Garcia</a>
+                            <a href="#" class="d-block" style="text-decoration: none;">{{ $my_user->fname.' '.$my_user->lname }}</a>
                         </div>
                     </div>
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">

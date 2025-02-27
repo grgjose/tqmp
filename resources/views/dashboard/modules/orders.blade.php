@@ -24,8 +24,7 @@
             <!--App Content-->
             <div class="app-content">
                 <!--Container-->
-                <div class="container-fluid">
-                    <!--Row-->
+                <div class="container-fluid" style="border: 1px solid #ddd; padding: 15px; border-radius: 5px; background-color: white;"> <!--Row-->
                     <div class="row">
 
                         <table id="example" class="table is-striped" style="width:100%; text-align: left;">
@@ -39,6 +38,7 @@
                                     <th>Price</th>
                                     <th>Quantity</th>
                                     <th>Status</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -75,6 +75,38 @@
                                             </ul>
                                         </div>
                                     </td>
+                                    <td>
+                                        <div class="btn-group-sm">
+                                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Actions
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Add</a></li>
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</a></li>
+                                            </ul>
+
+                                            <!-- Delete Confirmation Modal -->
+                                            <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Are you sure you want to delete this?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><a href="">OID1BI66</a></td>
@@ -109,75 +141,40 @@
                                             </ul>
                                         </div>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="">OIDXN6MU</a></td>
-                                    <td>PIDSJ2HQ</td>
-                                    <td>CIDVL4KS</td>
-                                    <td>Patti Stewart</td>
-                                    <td>Valenzuela City</td>
-                                    <td>PHP 250000</td>
-                                    <td># 60</td>
                                     <td>
                                         <div class="btn-group-sm">
                                             <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Status
+                                                Actions
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Pending</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Payment</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Fulfillment</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Shipment</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Shipped</a></li>
-                                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
-                                                <li><a class="dropdown-item" href="#">Completed</a></li>
-                                                <li><a class="dropdown-item" href="#">Shipped</a></li>
-                                                <li><a class="dropdown-item" href="#">Cancelled</a></li>
-                                                <li><a class="dropdown-item" href="#">Declined</a></li>
-                                                <li><a class="dropdown-item" href="#">Refunded</a></li>
-                                                <li><a class="dropdown-item" href="#">Disputed</a></li>
-                                                <li><a class="dropdown-item" href="#">Manual Verification Required</a></li>
-                                                <li><a class="dropdown-item" href="#">Partially Refunded</a></li>
+                                                <li><a class="dropdown-item" href="#">Add</a></li>
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</a></li>
                                             </ul>
+
+                                            <!-- Delete Confirmation Modal -->
+                                            <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Are you sure you want to delete this?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td><a href="">OID4R3UW</a></td>
-                                    <td>PID0NZPS</td>
-                                    <td>CID2P1SV</td>
-                                    <td>Jamaal Lozano</td>
-                                    <td>Quezon City</td>
-                                    <td>PHP 600000</td>
-                                    <td># 60</td>
-                                    <td>
-                                        <div class="btn-group-sm">
-                                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Status
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Pending</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Payment</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Fulfillment</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Shipment</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Shipped</a></li>
-                                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
-                                                <li><a class="dropdown-item" href="#">Awaiting Pickup</a></li>
-                                                <li><a class="dropdown-item" href="#">Completed</a></li>
-                                                <li><a class="dropdown-item" href="#">Shipped</a></li>
-                                                <li><a class="dropdown-item" href="#">Cancelled</a></li>
-                                                <li><a class="dropdown-item" href="#">Declined</a></li>
-                                                <li><a class="dropdown-item" href="#">Refunded</a></li>
-                                                <li><a class="dropdown-item" href="#">Disputed</a></li>
-                                                <li><a class="dropdown-item" href="#">Manual Verification Required</a></li>
-                                                <li><a class="dropdown-item" href="#">Partially Refunded</a></li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
+
                             </tbody>
                         </table>
                     </div>
