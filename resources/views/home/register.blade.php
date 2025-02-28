@@ -14,15 +14,25 @@
 
 </head>
 
-<body class="bg-body-secondary d-flex align-items-center" >
+<body class="bg-body-secondary d-flex align-items-center" style="height: 100vh; margin-top: 60px;">
 
-    <div class="container pt-5 pb-5">
+    <div class="container pt-6 pb-5">
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card shadow-lg rounded-4">
                     <div class="card-body p-5">
                         <h2 class="text-center fw-bold mb-4 text-danger">Register</h2>
                         <p class="text-center text-muted mb-4">Access your account</p>
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
 
                         <!-- Login Form -->
                         <form action="/register" method="post" enctype='multipart/form-data'>
@@ -34,7 +44,7 @@
                                 <div class="col-md-4">
                                     <div class="form-outline">
                                         <label for="fname" class="form-label">First Name <span class="text-danger">*</span></label>
-                                        <input type="text" id="fname" name="first_name" class="form-control" placeholder="Input First Name" required />
+                                        <input type="text" id="fname" name="fname" class="form-control" placeholder="Input First Name" required />
                                     </div>
                                 </div>
 
@@ -42,7 +52,7 @@
                                 <div class="col-md-4">
                                     <div class="form-outline">
                                         <label for="mname" class="form-label">Middle Name</label>
-                                        <input type="text" id="mname" name="middle_name" class="form-control" placeholder="Input Middle Name" />
+                                        <input type="text" id="mname" name="mname" class="form-control" placeholder="Input Middle Name" />
                                     </div>
                                 </div>
 
@@ -50,7 +60,7 @@
                                 <div class="col-md-4">
                                     <div class="form-outline">
                                         <label for="lname" class="form-label">Last Name <span class="text-danger">*</span></label>
-                                        <input type="text" id="lname" name="last_name" class="form-control" placeholder="Input Last Name" required />
+                                        <input type="text" id="lname" name="lname" class="form-control" placeholder="Input Last Name" required />
                                     </div>
                                 </div>
                             </div>
@@ -64,13 +74,13 @@
                             <!-- Contact Number Input -->
                             <div class="form-outline mb-4">
                                 <label for="contact_num" class="form-label">Contact Number <span class="text-danger">*</span></label>
-                                <input type="text" id="contact_num" name="contact_number" class="form-control" placeholder="Enter Contact Number" required />
+                                <input type="text" id="contact_num" name="contact_num" class="form-control" placeholder="Enter Contact Number" required />
                             </div>
 
                             <!-- Birthday Input -->
                             <div class="form-outline mb-4">
-                                <label for="birthdate" class="form-label">Birthday <span class="text-danger">*</span></label>
-                                <input type="date" id="birthdate" name="birthday" class="form-control" placeholder="Birthday" required />
+                                <label for="birthdate" class="form-label">Birthdate <span class="text-danger">*</span></label>
+                                <input type="date" id="birthdate" name="birthdate" class="form-control" placeholder="Birthday" required />
                             </div>
 
                             <!-- Password Input -->
@@ -95,8 +105,11 @@
                                     confirmPassword.addEventListener('input', function () {
                                         if (password.value !== confirmPassword.value) {
                                             passwordError.style.display = 'block';
+                                            document.getElementById("registerButton").disabled = true;
+
                                         } else {
                                             passwordError.style.display = 'none';
+                                            document.getElementById("registerButton").disabled = false;
                                         }
                                     });
                                 });
@@ -105,11 +118,11 @@
                             <!-- File Upload Input -->
                             <div class="form-outline mb-4">
                                 <label for="upload_file" class="form-label">Please upload your government ID and/or Business Registration if you're a business owner. Be Our Partner to enjoy our Best Price Offers. <span class="text-danger">*</span></label>
-                                <input type="file" id="upload_file" name="file" class="form-control" required />
+                                <input type="file" id="upload_file" name="upload_file" class="form-control" required />
                             </div>
 
                             <!-- Submit Button -->
-                            <input type="submit" class="btn btn-danger btn-block w-100 mb-3" value="Register">
+                            <input type="submit" id="registerButton" class="btn btn-danger btn-block w-100 mb-3" value="Register">
 
                             <!-- Login Link -->
                             <p class="text-center">
