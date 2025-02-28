@@ -6,13 +6,13 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\MyTestMail;
+use App\Mail\RegistrationMail;
 
 
 class UserController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Default Display of Users Table
      */
     public function index()
     {
@@ -20,9 +20,26 @@ class UserController extends Controller
     }
 
     /**
+     * View Login
+     */    
+    public function login(Request $request)
+    {
+        return view("home.login");
+    }
+
+    /**
+     * View Register
+     */   
+    public function register()
+    {
+        return view("home.register");
+    }
+
+    /**
      * Sign-in Process
      */    
-    public function logon(Request $request){
+    public function logon(Request $request)
+    {
         $validated = $request->validate([
             "email" => ['required', 'min:2'],
             "password" => ['required', 'min:2']
@@ -48,6 +65,9 @@ class UserController extends Controller
         }
     }
 
+    /**
+     * Sign-up Process
+     */    
     public function signup(Request $request)
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */
@@ -94,29 +114,22 @@ class UserController extends Controller
             'message' => 'This is a test email from TQMP.'
         ];
     
-        Mail::to($validated['email'])->send(new MyTestMail($data));
+        Mail::to($validated['email'])->send(new RegistrationMail($data));
 
         return redirect('/')->with('success_msg', 'Please check your email!');
 
     }
 
     /**
-     * Login a User
-     */    
-    public function login(Request $request){
-        return view("home.login");
-    }
-
-    public function register(){
-        return view("home.register");
-    }
-
-    /**
      * Logout a User
      */    
-    public function logout(Request $request){   
+    public function logout(Request $request)
+    {   
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) { return redirect('/'); }
         $auth->logout();
         return redirect('/');
     }
@@ -142,7 +155,10 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $user = DB::table('users')
+        ->where('usertype', '=', 3)
+        ->where('status', 'registered')->get();
+
     }
 
     /**

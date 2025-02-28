@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class MyTestMail extends Mailable
+class RegistrationMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -25,7 +25,7 @@ class MyTestMail extends Mailable
     public function build()
     {
         return $this->from(env('MAIL_FROM_ADDRESS'))
-                    ->subject('Test Email from TQMP')
+                    ->subject('TQMP - Email Confirmation')
                     ->view('emails.test_email') // Blade template for email
                     ->with('data', $this->data);
     }
