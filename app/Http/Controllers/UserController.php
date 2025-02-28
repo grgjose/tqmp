@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\MyTestMail;
+
 
 class UserController extends Controller
 {
@@ -86,10 +89,14 @@ class UserController extends Controller
 
         $user->save();
 
+        $data = [
+            'name' => $validated['fname'].' '.$validated['lname'],
+            'message' => 'This is a test email from TQMP.'
+        ];
+    
+        Mail::to($validated['email'])->send(new MyTestMail($data));
 
-
-
-        return redirect('/')->with('success_msg', 'Please check email validation');
+        return redirect('/')->with('success_msg', 'Please check your email!');
 
     }
 

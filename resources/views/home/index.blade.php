@@ -17,6 +17,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Toast -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    
+    <!-- Toast -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
     <!-- Chatbot CSS -->
     <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
@@ -171,6 +176,34 @@
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
+
+    @if(session()->has('error_msg'))
+      <script>
+          toastr.options.preventDuplicates = true;
+          toastr.error("{{ session('error_msg') }}");
+      </script>
+    @endif
+
+    @error('code')
+      <script>
+        toastr.options.preventDuplicates = true;
+        toastr.error('Code already exists');
+      </script>
+    @enderror
+
+    @if(session()->has('success_msg'))
+      <script>
+          toastr.options.preventDuplicates = true;
+          toastr.success("{{ session('success_msg') }}");
+      </script>
+    @endif
+
+    @if(session()->has('download_file'))
+      <script>
+          $("#download_filename").val("{{ session('download_file') }}");
+          $("#downloadForm").submit();
+      </script>
+    @endif
 
     <!-- Bootstrap JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
