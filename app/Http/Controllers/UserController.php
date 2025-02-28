@@ -78,6 +78,7 @@ class UserController extends Controller
         $user->mname = $validated['mname'];
         $user->lname = $validated['lname'];
         $user->email = $validated['email'];
+        $user->usertype = 3;
         $user->birthdate = $validated['birthdate'];
         $user->contact_num = $validated['contact_num'];
         $user->password = $validated['password'];
@@ -85,9 +86,10 @@ class UserController extends Controller
 
         $user->save();
 
-        return view('home.register', [
-            'my_user' => $my_user,
-        ])->with('success_msg', 'Successfully Registered');
+
+
+
+        return redirect('/')->with('success_msg', 'Please check email validation');
 
     }
 

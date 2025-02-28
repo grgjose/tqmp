@@ -22,7 +22,6 @@ class InventoryController extends Controller
 
         //return view('dashboard.inventory');
 
-        
         return view('dashboard.inventory', [
             'my_user' => $my_user,
         ])

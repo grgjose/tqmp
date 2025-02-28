@@ -16,6 +16,8 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\MyTestMail;
 
 // Home Pages
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
@@ -47,3 +49,15 @@ Route::get('/consumer', [ConsumerController::class, 'index'])->name('dashboard.c
 Route::get('/inventory', [InventoryController::class, 'index'])->name('dashboard.inventory');
 Route::get('/order', [OrderController::class, 'index'])->name('dashboard.order');
 Route::get('/userprofiles', [UserProfileController::class, 'index'])->name('dashboard.userprofiles');
+
+//TEST
+Route::get('/send-email', function() {
+    $data = [
+        'name' => 'George Jose',
+        'message' => 'This is a test email from Tamii mong mahal.'
+    ];
+
+    Mail::to('avienachreeze@gmail.com')->send(new MyTestMail($data));
+
+    return 'Email Sent Successfully!';
+});

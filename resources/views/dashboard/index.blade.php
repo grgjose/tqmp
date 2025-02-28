@@ -70,12 +70,12 @@
                                 <div class="d-flex">
                                     <div class="flex-shrink-0">
                                         <img
-                                            src="https://th.bing.com/th/id/OIP.aNuVPko-fipxD4-hwuKSTQHaHl?rs=1&pid=ImgDetMain"
+                                            src="{{ asset('storage/user-pics/'.$my_user->user_pic) }}"
                                             class="img-size-50 rounded-circle me-3" />
                                     </div>
                                     <div class="flex-grow-1">
                                         <h3 class="dropdown-item-title">
-                                            Geneva Garcia
+                                            {{ $my_user->fname.' '.$my_user->lname }}
                                             <span class="float-end fs-7 text-danger"><i class="bi bi-star-fill"></i></span>
                                         </h3>
                                         <p class="fs-7">Call me whenever you can...</p>
@@ -164,10 +164,10 @@
                 <nav class="mt-2">
                     <div class="user-panel mt-3 pb-3 d-flex align-items-center">
                         <div class="image">
-                            <a href="#"><img src="https://th.bing.com/th/id/OIP.aNuVPko-fipxD4-hwuKSTQHaHl?rs=1&pid=ImgDetMain" class="img-circle elevation-2" alt="User Image" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px;"></a>
+                            <a href="#"><img src="{{ asset('storage/user-pics/'.$my_user->user_pic) }}" class="img-circle elevation-2" alt="User Image" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px;"></a>
                         </div>
                         <div class="info ms-3">
-                            <a href="#" class="d-block" style="text-decoration: none;">Geneva Garcia</a>
+                            <a href="#" class="d-block" style="text-decoration: none;">{{ $my_user->fname.' '.$my_user->lname }}</a>
                         </div>
                     </div>
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
