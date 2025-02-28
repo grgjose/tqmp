@@ -16,6 +16,9 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\OrderSummaryController;
+use App\Http\Controllers\ProductDetailsController;
 
 // Home Pages
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
@@ -47,3 +50,6 @@ Route::get('/consumer', [ConsumerController::class, 'index'])->name('dashboard.c
 Route::get('/inventory', [InventoryController::class, 'index'])->name('dashboard.inventory');
 Route::get('/order', [OrderController::class, 'index'])->name('dashboard.order');
 Route::get('/userprofiles', [UserProfileController::class, 'index'])->name('dashboard.userprofiles');
+Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
+Route::get('/order-summary', [OrderSummaryController::class, 'index']);
+Route::get('/product-details', [ProductDetailsController::class, 'index'])->name('product-details');

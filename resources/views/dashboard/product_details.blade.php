@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>TQMP | Order Summary</title>
+    <title>TQMP | Product Details</title>
 
     <!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -98,16 +98,14 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img
                                 src="../../../dist/assets/img/user2-160x160.jpg"
-                                class="user-image rounded-circle shadow"
-                                 />
+                                class="user-image rounded-circle shadow" />
                             <span class="d-none d-md-inline">Geneva Garcia</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <li class="user-header text-bg-primary">
                                 <img
                                     src="../../../dist/assets/img/user2-160x160.jpg"
-                                    class="rounded-circle shadow"
-                                     />
+                                    class="rounded-circle shadow" />
                                 <p>
                                     Geneva Garcia - Web Developer
                                     <small>Member since Nov. 2023</small>
@@ -133,7 +131,7 @@
                 <nav class="mt-2">
                     <div class="user-panel mt-3 pb-3 d-flex align-items-center">
                         <div class="image">
-                            <a href="#"><img src="https://th.bing.com/th/id/OIP.aNuVPko-fipxD4-hwuKSTQHaHl?rs=1&pid=ImgDetMain" class="img-circle elevation-2"  style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px;"></a>
+                            <a href="#"><img src="https://th.bing.com/th/id/OIP.aNuVPko-fipxD4-hwuKSTQHaHl?rs=1&pid=ImgDetMain" class="img-circle elevation-2" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px;"></a>
                         </div>
                         <div class="info ms-3">
                             <a href="#" class="d-block" style="text-decoration: none;">Geneva Garcia</a>
@@ -199,104 +197,65 @@
         </aside>
         <main class="app-main">
             <div class="app-content-header">
-                <div class="container-fluid">
-                    <div class="container py-5">
-                        <div class="row">
-                            <div class="col-lg-8 mb-4">
-                                <div class="card p-4 order-summary-card">
-                                    <h5 class="fw-bold">Order #15478</h5>
-                                    <p class="text-muted">21st March 2021 at 10:34 PM</p>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr class="text-muted">
-                                                    <th>Product Details</th>
-                                                    <th>Quantity</th>
-                                                    <th>Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="https://via.placeholder.com/50" class="product-image me-3" style="width: 50px; height: 50px;">
-                                                            <div>
-                                                                <p class="mb-0 fw-bold">Aluminum Glass</p>
-                                                                <small class="text-muted">Color: White | Size: Medium</small>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-center">01</td>
-                                                    <td>$36.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="https://via.placeholder.com/50" class="product-image me-3" style="width: 50px; height: 50px;">
-                                                            <div>
-                                                                <p class="mb-0 fw-bold">Windows</p>
-                                                                <small class="text-muted">Color: Pest | Size: Large</small>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-center">01</td>
-                                                    <td>$25.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="https://via.placeholder.com/50" class="product-image me-3" style="width: 50px; height: 50px;">
-                                                            <div>
-                                                                <p class="mb-0 fw-bold">Sliding Door</p>
-                                                                <small class="text-muted">Color: Yellow | Size: Medium</small>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-center">01</td>
-                                                    <td>$45.00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-muted">Subtotal</p>
-                                        <p>$106</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-muted">Shipping Cost (+)</p>
-                                        <p>$10.85</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-muted">Discount (-)</p>
-                                        <p>$9.00</p>
-                                    </div>
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="total-payable">Total Payable</p>
-                                        <p class="total-payable">$107.85</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card p-4 order-summary-card">
-                                    <h5 class="fw-bold">Customer</h5>
-                                    <div class="d-flex align-items-center mb-3">
-                                        <img src="https://via.placeholder.com/60" class="rounded-circle me-3" width="60">
-                                        <div>
-                                            <p class="mb-0 fw-bold">Willium Deno</p>
-                                            <small class="text-muted">10 Previous Orders</small>
-                                        </div>
-                                    </div>
-                                    <p class="mb-1"><i class="bi bi-geo-alt-fill text-danger me-2"></i><strong>Shipping Address:</strong> Quezon City, Philippines</p>
-                                    <p class="mb-1"><i class="bi bi-house-door-fill text-danger me-2"></i><strong>Billing Address:</strong> Quezon City, Philippines</p>
-                                    <p class="mb-3"><i class="bi bi-envelope-fill text-danger me-2"></i><strong>Email Address:</strong> contact@yourmail.com</p>
-                                    <button class="btn edit-btn w-100">Edit Details</button>
-                                </div>
-                            </div>
+            <div class="container-fluid">
+                <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-6">
+                    <img src="https://images.pexels.com/photos/12515071/pexels-photo-12515071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Main Product" class="product-image mb-3" style="height: 400px; width: 100%; object-fit: cover;">
+                    <div class="d-flex justify-content-between">
+                        <img src="https://images.pexels.com/photos/12515071/pexels-photo-12515071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 1" class="thumbnail">
+                        <img src="https://images.pexels.com/photos/12515071/pexels-photo-12515071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 2" class="thumbnail">
+                        <img src="https://images.pexels.com/photos/12515071/pexels-photo-12515071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3" class="thumbnail">
+                        <img src="https://images.pexels.com/photos/12515071/pexels-photo-12515071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 4" class="thumbnail">
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <h2 class="fw-bold">Aluminum Installation</h2>
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="me-2 text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted me-3">5.00 Rating</span>
+                        <span class="text-success">In Stock</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non erat quam. Vestibulum aliquam nibh dui, et aliquet nibh euismod quis.</p>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="input-group me-3" style="width: 120px;">
+                        <button class="btn btn-outline-secondary">-</button>
+                        <input type="text" class="form-control text-center" value="1">
+                        <button class="btn btn-outline-secondary">+</button>
+                        </div>
+                        <div>
+                        <h4 class="fw-bold mb-0">$29.00</h4>
+                        <small class="text-muted">+12% VAT Added</small>
                         </div>
                     </div>
+                    <button class="btn btn-red btn-lg w-100 mb-4">Add to Cart</button>
+                    <h5>Product Details</h5>
+                    <table class="table table-borderless">
+                        <tbody>
+                        <tr>
+                            <th class="text-muted">Size</th>
+                            <td>Small, Medium, Large</td>
+                        </tr>
+                        <tr>
+                            <th class="text-muted">Color</th>
+                            <td>White, Black, Gray</td>
+                        </tr>
+                        <tr>
+                            <th class="text-muted">Brand</th>
+                            <td>Shirt Flex</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <h5>Select Size</h5>
+                    <div class="btn-group" role="group" aria-label="Select Size">
+                        <button type="button" class="btn btn-outline-secondary">Small</button>
+                        <button type="button" class="btn btn-red">Medium</button>
+                        <button type="button" class="btn btn-outline-secondary">Large</button>
+                    </div>
+                    </div>
                 </div>
+                </div>
+            </div>
             </div>
         </main>
     </div>

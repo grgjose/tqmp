@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>TQMP | Order Summary</title>
+    <title>TQMP | Checkout</title>
 
     <!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,9 +61,7 @@
                             <a href="#" class="dropdown-item">
                                 <div class="d-flex">
                                     <div class="flex-shrink-0">
-                                        <img
-                                            src="https://th.bing.com/th/id/OIP.aNuVPko-fipxD4-hwuKSTQHaHl?rs=1&pid=ImgDetMain"
-                                            class="img-size-50 rounded-circle me-3" />
+                                        <img src="https://th.bing.com/th/id/OIP.aNuVPko-fipxD4-hwuKSTQHaHl?rs=1&pid=ImgDetMain" class="img-size-50 rounded-circle me-3" />
                                     </div>
                                     <div class="flex-grow-1">
                                         <h3 class="dropdown-item-title">
@@ -96,18 +94,12 @@
                     </li>
                     <li class="nav-item dropdown user-menu">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img
-                                src="../../../dist/assets/img/user2-160x160.jpg"
-                                class="user-image rounded-circle shadow"
-                                 />
+                            <img src="../../../dist/assets/img/user2-160x160.jpg" class="user-image rounded-circle shadow"  />
                             <span class="d-none d-md-inline">Geneva Garcia</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <li class="user-header text-bg-primary">
-                                <img
-                                    src="../../../dist/assets/img/user2-160x160.jpg"
-                                    class="rounded-circle shadow"
-                                     />
+                                <img src="../../../dist/assets/img/user2-160x160.jpg" class="rounded-circle shadow"  />
                                 <p>
                                     Geneva Garcia - Web Developer
                                     <small>Member since Nov. 2023</small>
@@ -200,98 +192,165 @@
         <main class="app-main">
             <div class="app-content-header">
                 <div class="container-fluid">
-                    <div class="container py-5">
+                    <div class="container my-5">
+                        <h1 class="mb-4 checkout-title fw-bold">Checkout</h1>
                         <div class="row">
-                            <div class="col-lg-8 mb-4">
-                                <div class="card p-4 order-summary-card">
-                                    <h5 class="fw-bold">Order #15478</h5>
-                                    <p class="text-muted">21st March 2021 at 10:34 PM</p>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr class="text-muted">
-                                                    <th>Product Details</th>
-                                                    <th>Quantity</th>
-                                                    <th>Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="https://via.placeholder.com/50" class="product-image me-3" style="width: 50px; height: 50px;">
-                                                            <div>
-                                                                <p class="mb-0 fw-bold">Aluminum Glass</p>
-                                                                <small class="text-muted">Color: White | Size: Medium</small>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-center">01</td>
-                                                    <td>$36.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="https://via.placeholder.com/50" class="product-image me-3" style="width: 50px; height: 50px;">
-                                                            <div>
-                                                                <p class="mb-0 fw-bold">Windows</p>
-                                                                <small class="text-muted">Color: Pest | Size: Large</small>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-center">01</td>
-                                                    <td>$25.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="https://via.placeholder.com/50" class="product-image me-3" style="width: 50px; height: 50px;">
-                                                            <div>
-                                                                <p class="mb-0 fw-bold">Sliding Door</p>
-                                                                <small class="text-muted">Color: Yellow | Size: Medium</small>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-center">01</td>
-                                                    <td>$45.00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-muted">Subtotal</p>
-                                        <p>$106</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-muted">Shipping Cost (+)</p>
-                                        <p>$10.85</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-muted">Discount (-)</p>
-                                        <p>$9.00</p>
-                                    </div>
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="total-payable">Total Payable</p>
-                                        <p class="total-payable">$107.85</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card p-4 order-summary-card">
-                                    <h5 class="fw-bold">Customer</h5>
-                                    <div class="d-flex align-items-center mb-3">
-                                        <img src="https://via.placeholder.com/60" class="rounded-circle me-3" width="60">
-                                        <div>
-                                            <p class="mb-0 fw-bold">Willium Deno</p>
-                                            <small class="text-muted">10 Previous Orders</small>
+                            <div class="col-lg-7">
+                                <h4 class="mb-3">Billing Details</h4>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label">First name*</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label">Last name*</label>
+                                            <input type="text" class="form-control" id="lastName" required>
                                         </div>
                                     </div>
-                                    <p class="mb-1"><i class="bi bi-geo-alt-fill text-danger me-2"></i><strong>Shipping Address:</strong> Quezon City, Philippines</p>
-                                    <p class="mb-1"><i class="bi bi-house-door-fill text-danger me-2"></i><strong>Billing Address:</strong> Quezon City, Philippines</p>
-                                    <p class="mb-3"><i class="bi bi-envelope-fill text-danger me-2"></i><strong>Email Address:</strong> contact@yourmail.com</p>
-                                    <button class="btn edit-btn w-100">Edit Details</button>
+                                    <div class="mb-3">
+                                        <label for="address" class="form-label">Address*</label>
+                                        <input type="text" class="form-control" id="address" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="address2" class="form-label">Address line 2</label>
+                                        <input type="text" class="form-control" id="address2">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="country" class="form-label">Country*</label>
+                                            <select id="country" class="form-select" required>
+                                                <option selected>Choose...</option>
+                                                <option>Philippines</option>
+                                                <option>United States</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="city" class="form-label">City/Town*</label>
+                                            <input type="text" class="form-control" id="city" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="postcode" class="form-label">Postcode / ZIP*</label>
+                                            <input type="text" class="form-control" id="postcode" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="phone" class="form-label">Phone*</label>
+                                            <input type="tel" class="form-control" id="phone" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="additionalInfo" class="form-label">Additional Information</label>
+                                        <textarea id="additionalInfo" class="form-control" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="createAccount">
+                                        <label class="form-check-label" for="createAccount">
+                                            Create Account
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="differentAddress">
+                                        <label class="form-check-label" for="differentAddress">
+                                            Ship to a different address?
+                                        </label>
+                                    </div>
+                                    <h6 class="coupon-text">Apply Coupon to get discount!</h6>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Coupon code">
+                                        <button class="btn btn-custom">Apply Code</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-5">
+                                <h4 class="mb-3">Your Order</h4>
+                                <div class="card mb-4">
+                                    <div class="card-header bg-white">
+                                        <strong>Product</strong>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <img src="https://via.placeholder.com/50" class="product-image me-3">
+                                                <div>
+                                                    <span>Aluminum Glass</span><br>
+                                                    <small>Brown XL x 1</small>
+                                                </div>
+                                            </div>
+                                            <span>$36.00</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <img src="https://via.placeholder.com/50" class="product-image me-3">
+                                                <div>
+                                                    <span>Windows</span><br>
+                                                    <small>Brown XL x 1</small>
+                                                </div>
+                                            </div>
+                                            <span>$36.00</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <img src="https://via.placeholder.com/50" class="product-image me-3">
+                                                <div>
+                                                    <span>Sliding Door</span><br>
+                                                    <small>Brown XL x 1</small>
+                                                </div>
+                                            </div>
+                                            <span>$36.00</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <strong>Subtotal</strong>
+                                            <strong>$108.00</strong>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <span>Shipping Cost (+)</span>
+                                            <span>$10.85</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <span>Discount (-)</span>
+                                            <span>$9.00</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <strong>Total Payable</strong>
+                                            <strong>$88.15</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-white">
+                                        <strong>Payment</strong>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer" checked>
+                                                <label class="form-check-label" for="bankTransfer">
+                                                    Direct Bank Transfer
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="cod">
+                                                <label class="form-check-label" for="cod">
+                                                    Cash on delivery
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="onlinePayment">
+                                                <label class="form-check-label" for="onlinePayment">
+                                                    Online Gateway
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <button class="btn btn-custom w-100">Place Order</button>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -303,10 +362,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
-        integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ="
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js" integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="{{ asset('storage/dist/js/adminlte.js') }}"></script>
