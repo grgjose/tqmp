@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class InventoryController extends Controller
 {
@@ -20,10 +21,17 @@ class InventoryController extends Controller
             return redirect('/')->with('error_msg', 'Invalid Access!');
         }
 
-        //return view('dashboard.inventory');
+        $inventories = DB::table('inventories')->get();
+        $products = DB::table('products')->get();
+        $brands = DB::table('brands')->get();
+        $users = DB::table('users')->where('usertype', '=', 3)->get();
 
-        return view('dashboard.inventory', [
+        return view('dashboard.index', [
             'my_user' => $my_user,
+            'inventories' => $inventories,
+            'products' => $products,
+            'brands' => $brands,
+            'users' => $users,
         ])
         ->with('title', 'Inventory')
         ->with('main_content', 'dashboard.modules.inventory');
@@ -41,7 +49,6 @@ class InventoryController extends Controller
         ]);
 
     }
-
     
 
 
