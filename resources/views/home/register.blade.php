@@ -2,21 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Total Quality Management Products Philippines">
+    <meta name="author" content="TQMP">
+
+    <!-- Title and Favicon -->
+    <title>About Us | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
+    <!-- Chatbot JS -->
+    <script src="{{ asset('js/chatbot.js') }}"></script>
 
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
-
 </head>
 
-<body class="bg-body-secondary d-flex align-items-center" style="height: 100vh; margin-top: 60px;">
+<body>
+    <!-- Header -->
+    @include('plus.navbar')
+    <!-- End of Header -->
 
-    <div class="container pt-6 pb-5">
+    <div class="container pt-6 pb-5 mt-5 py-5">
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card shadow-lg rounded-4">
@@ -25,13 +42,13 @@
                         <p class="text-center text-muted mb-4">Access your account</p>
 
                         @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
                         @endif
 
                         <!-- Login Form -->
@@ -97,12 +114,12 @@
                             </div>
 
                             <script>
-                                document.addEventListener('DOMContentLoaded', function () {
+                                document.addEventListener('DOMContentLoaded', function() {
                                     const password = document.getElementById('password');
                                     const confirmPassword = document.getElementById('confirm_password');
                                     const passwordError = document.getElementById('passwordError');
 
-                                    confirmPassword.addEventListener('input', function () {
+                                    confirmPassword.addEventListener('input', function() {
                                         if (password.value !== confirmPassword.value) {
                                             passwordError.style.display = 'block';
                                             document.getElementById("registerButton").disabled = true;
@@ -136,7 +153,17 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Accordion Section -->
+    @include ('plus.accordion')
+    <!-- End of Accordion -->
+
+    <!-- Call to Action -->
+    @include ('plus.cta')
+    <!-- End of Call to Action -->
+
+    <!-- Footer -->
+    @include ('plus.footer')
+    <!-- End of Footer -->
 </body>
 
 </html>
