@@ -296,6 +296,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-color: white;
 }
 
 /*--------------------------------------------------------------
@@ -329,26 +330,20 @@ body {
     align-items: center;
     padding: 10px 0;
     width: 100%;
-    background-color: #7e1416;
-    color: #fff;
     border-radius: 0 0 8px 8px;
     text-decoration: none;
     opacity: 1;
     /* Ensure the button is fully visible initially */
     transform: translateY(0);
     /* Set the starting position */
-    transition: background-color 0.3s ease, opacity 0.3s ease,
-        transform 0.3s ease;
+
     /* Smooth transition */
 }
 
 .card-button:hover {
     text-decoration: none;
-    background-color: #7e1416;
-    color: #fff;
     opacity: 0.9;
     /* Slightly fade the button on hover */
-    transform: translateY(-5px);
     /* Move the button up slightly */
 }
 
@@ -435,18 +430,17 @@ body {
 --------------------------------------------------------------*/
 .btn {
     width: 120px;
+    padding: 10px 0;
     border: none;
     border-radius: 4px;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease,
-        box-shadow 0.2s ease;
+
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-    transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -465,12 +459,10 @@ button.btn-danger {
     color: white;
     border: none;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button.btn-danger:hover {
     background-color: #7e1416;
-    transform: translateY(-2px);
     font-size: smaller;
 }
 
@@ -479,12 +471,11 @@ button.btn-primary {
     color: white;
     border: none;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button.btn-primary:hover {
     background-color: #172647;
-    transform: translateY(-2px);
+
     font-size: smaller;
 }
 
@@ -493,12 +484,11 @@ button.btn-warning {
     color: #172647;
     border: none;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button.btn-warning:hover {
     background-color: #eacf68;
-    transform: translateY(-2px);
+
     font-size: smaller;
 }
 
@@ -507,13 +497,25 @@ button.btn-light {
     color: #172647;
     border: rgb(48, 53, 65);
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button.btn-light:hover {
     background-color: #ffffff;
-    transform: translateY(-2px);
+
     font-size: smaller;
+}
+
+button.btn-outline-secondary {
+    background-color: none;
+    color: #383838;
+    border: 1px solid #6C757D;
+    font-size: smaller;
+}
+
+button.btn-outline-secondary:hover {
+    background-color: #4B5258;
+    font-size: smaller;
+    font-weight: bold;
 }
 
 button.btn-outline-light {
@@ -521,12 +523,11 @@ button.btn-outline-light {
     color: #ffffff;
     border: 1px solid #ffffff;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button.btn-outline-light:hover {
     background-color: #ffffff;
-    transform: translateY(-2px);
+
     font-size: smaller;
     font-weight: bold;
 }
@@ -536,12 +537,11 @@ button.btn-outline-warning {
     color: #eacf68;
     border: #eacf68;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button.btn-outline-warning:hover {
     background-color: #eacf68;
-    transform: translateY(-2px);
+
     font-size: smaller;
 }
 
@@ -551,14 +551,12 @@ button.btn-outline-danger {
     border: 1px solid #7e1416;
     font-size: smaller;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button.btn-outline-danger:hover {
     background-color: #7e1416;
     color: #ffffff;
     font-weight: bold;
-    transform: translateY(-2px);
 }
 
 button.btn-outline-primary {
@@ -567,14 +565,12 @@ button.btn-outline-primary {
     border: 1px solid #1e325c;
     font-size: smaller;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button.btn-outline-primary:hover {
     background-color: #172647;
     color: #ffffff;
     font-weight: bold;
-    transform: translateY(-2px);
 }
 
 a.btn-outline-danger {
@@ -582,14 +578,12 @@ a.btn-outline-danger {
     color: #fff;
     border: 0.5px solid #7e1416;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 a.btn-outline-danger:hover {
     background-color: #fff;
     color: #7e1416;
     font-weight: bold;
-    transform: translateY(-2px);
 }
 
 input.btn-danger {
@@ -597,12 +591,11 @@ input.btn-danger {
     color: white;
     border: none;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 input.btn-danger:hover {
     background-color: #7e1416;
-    transform: translateY(-2px);
+
     font-size: smaller;
 }
 
@@ -611,12 +604,11 @@ a.btn-danger {
     color: #ffffff;
     border: none;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 a.btn-danger:hover {
     background-color: rgb(155, 39, 41);
-    transform: translateY(-2px);
+
     font-weight: bold;
     font-size: smaller;
 }
@@ -626,12 +618,11 @@ a.btn-primary {
     color: white;
     border: none;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 a.btn-primary:hover {
     background-color: #172647;
-    transform: translateY(-2px);
+
     font-size: smaller;
 }
 
@@ -640,12 +631,11 @@ a.btn-light {
     color: #172647;
     border: #172647;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 a.btn-light:hover {
     background-color: #ffffff;
-    transform: translateY(-2px);
+
     font-size: smaller;
 }
 
@@ -654,14 +644,12 @@ a.btn-outline-primary {
     color: #fff;
     border: 0.5px solid #1e325c;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 a.btn-outline-primary:hover {
     background-color: #fff;
     color: #172647;
     font-weight: bold;
-    transform: translateY(-2px);
 }
 
 a.btn-outline-light {
@@ -669,12 +657,11 @@ a.btn-outline-light {
     color: #ffffff;
     border: 1px solid #ffffff;
     font-size: smaller;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 a.btn-outline-light:hover {
     background-color: #ffffff;
-    transform: translateY(-2px);
+
     font-size: smaller;
     font-weight: bold;
 }
@@ -740,6 +727,8 @@ a.btn-outline-light:hover {
     cursor: pointer;
     border: 1px solid #ddd;
     border-radius: 8px;
+    width: 100%;
+    max-width: 100px;
     width: 100px;
 }
 
@@ -752,19 +741,19 @@ a.btn-outline-light:hover {
 --------------------------------------------------------------*/
 /* Styling for the logo track */
 .logo-container {
-    overflow: hidden; /* Ensure content stays within bounds */
+    overflow: hidden;
     width: 100%;
     position: relative;
 }
 
 .logo-track {
     display: flex;
-    animation: scroll-logos 20s linear infinite; /* Smooth scrolling animation */
+    animation: scroll-logos 20s linear infinite;
     will-change: transform;
 }
 
 .logo-track img {
-    height: 100px; /* Adjust height as needed */
+    height: 100px;
     width: auto;
     margin: 0 15px;
 }
@@ -836,7 +825,6 @@ a.btn-outline-light:hover {
     font-size: smaller;
     padding: 5px 10px;
     margin-right: 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .pagination-button.active {
@@ -852,7 +840,7 @@ a.btn-outline-light:hover {
     background-color: rgb(188, 36, 38);
     border-radius: 4px;
     color: #ffffff;
-    transform: translateY(-2px);
+
     cursor: pointer;
 }
 
@@ -891,4 +879,42 @@ a.btn-outline-light:hover {
 
 .text-danger {
     color: #950101 !important;
+}
+
+/*--------------------------------------------------------------
+#  Checkuot Page
+--------------------------------------------------------------*/
+
+/* Custom Button Style */
+
+/* Product Image */
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Custom Colors for Headers and Text */
+.checkout-title {
+    color: #950101;
+}
+
+.coupon-text {
+    color: #950101;
+}
+
+/* Change Radio Buttons and Checkboxes */
+.form-check-input:checked {
+    background-color: #950101;
+    border-color: #950101;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(149, 1, 1, 0.25);
+}
+
+/* Textbox Border Color Change on Focus */
+.form-control:focus {
+    border-color: #950101;
+    box-shadow: 0 0 0 0.2rem rgba(149, 1, 1, 0.25);
 }

@@ -12,7 +12,7 @@
                      </div>
 
                      <div class="col-md-4 text-md-end">
-                         <a href="/contact" type="button" class="btn" style="font-size: smaller; background: #FFFFFF;"><b>Contact Us</b></a>
+                         <a href="/contact" type="button" class="btn" style="font-size: smaller; background: #FFFFFF; padding: 10px 0;"><b>Contact Us</b></a>
                      </div>
                  </div>
              </div>

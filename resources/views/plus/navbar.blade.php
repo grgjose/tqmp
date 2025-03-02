@@ -82,28 +82,28 @@
                 <div class="d-flex align-items-center">
                     @if($my_user == null)
                     <button type="button" class="card-button btn btn-danger mt-auto d-none d-sm-block" data-bs-toggle="modal" data-bs-target="#loginModal">
-                        <i class="fas fa-user"></i> Login
+                        <i class="fas fa-user me-2"></i> Login
                     </button>
                     @else
                     <a href="/cart" class="card-button btn btn-primary mt-auto me-2 d-none d-sm-block">
-                        <i class="fas fa-shopping-cart"></i> Cart
+                        <i class="fas fa-shopping-cart me-2"></i> Cart
                     </a>
                     <a href="/logout" class="card-button btn btn-danger mt-auto d-none d-sm-block">
-                        <i class="fas fa-user"></i> Logout
+                        <i class="fas fa-user me-2"></i> Logout
                     </a>
                     @endif
 
                     <div class="d-flex flex-column w-100 d-sm-none">
                         @if($my_user == null)
                         <button type="button" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">
-                            <i class="fas fa-user"></i> Login
+                            <i class="fas fa-user me-2"></i> Login
                         </button>
                         @else
                         <a href="/cart" class="card-button btn btn-primary mt-auto mb-2 w-100">
-                            <i class="fas fa-shopping-cart"></i> Cart
+                            <i class="fas fa-shopping-cart me-2"></i> Cart
                         </a>
                         <a href="/logout" class="card-button btn btn-danger mt-auto w-100">
-                            <i class="fas fa-user"></i> Logout
+                            <i class="fas fa-user me-2"></i> Logout
                         </a>
                         @endif
                     </div>
