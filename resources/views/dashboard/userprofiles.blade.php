@@ -291,13 +291,12 @@
                 <div class="row">
                     <div class="col-md-3 text-center">
                         <img src="https://via.placeholder.com/100" class="rounded-circle mb-2" alt="Profile Picture">
-                        <h5>Nina Mcintire</h5>
+                        <h5>{{ $my_user->fname.' '.$my_user->lname }}</h5>
                         <p class="text-muted">Software Engineer</p>
                         <button class="btn btn-primary btn-sm">Follow</button>
                         <div class="mt-3 text-start">
-                            <p><strong>Education:</strong> B.S. in CS</p>
-                            <p><strong>Location:</strong> Malibu, CA</p>
-                            <p><strong>Skills:</strong> UI, JavaScript, PHP, Node.js</p>
+                            <p><strong>Contact #:</strong> B.S. in CS</p>
+                            <p><strong>Branch:</strong> Malibu, CA</p>
                         </div>
                     </div>
                     <div class="col-md-9">
