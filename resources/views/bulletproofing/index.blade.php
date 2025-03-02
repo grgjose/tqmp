@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="col-lg-5">
-                    <div class="card d-flex justify-content-center align-items-center h-100">
+                    <div class=" d-flex justify-content-center align-items-center h-100">
                         <video controls class="img-fluid rounded-lg hover-video" muted loop style="padding: 10px; max-width: 100%;">
                             <source src="{{ asset('storage/vid/bulletproofvid-1.mp4') }}" type="video/mp4">
                             Your browser does not support the video tag.
@@ -238,25 +238,27 @@
             </p>
         </div>
 
-        <div class="container row mt-5">
-            <!-- Card 1 -->
-            <div class="col-md-6 py-3">
-                <div class="card border-0 shadow-lg">
-                    <video controls class="img-fluid rounded-lg hover-video" muted loop style="height: 400px; padding: 10px; max-width: 100%;">
+        <div class="container row">
+            <div class="col-md-6">
+                <div class="p-3">
+                    <video controls class="img-fluid rounded-lg hover-video" muted loop style="padding: 10px; max-width: 100%; height: 400px;">
                         <source src="{{ asset('storage/vid/bulletproofvid-2.mp4') }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <a class="card-button">Armoured Toyota Fortuner</a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Armoured Toyota Fortuner</h5>
+                    </div>
                 </div>
             </div>
-            <!-- Card 2 -->
             <div class="col-md-6 py-3">
-                <div class="card border-0 shadow-lg">
-                    <video controls class="img-fluid rounded-lg hover-video" muted loop style="height: 400px; padding: 10px; max-width: 100%;">
+                <div class="p-3">
+                    <video controls class="img-fluid rounded-lg hover-video" muted loop style="padding: 10px; max-width: 100%; height: 400px;">
                         <source src="{{ asset('storage/vid/bulletproofvid-3.mp4') }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <a class="card-button">Armoured Land Cruiser 300 Series</a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Armoured Land Cruiser 300 Series</h5>
+                    </div>
                 </div>
             </div>
         </div>
