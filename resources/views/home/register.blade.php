@@ -147,7 +147,7 @@
                             </div>
 
                             <!-- Submit Button -->
-                            <input type="submit" id="registerButton" class="btn btn-danger btn-block w-100 mb-3" value="Register">
+                            <input type="submit" id="registerButton" class="card-button btn btn-danger mt-auto btn-block w-100 mb-3" value="Register">
 
                             <!-- Login Link -->
                             <p class="text-center">
