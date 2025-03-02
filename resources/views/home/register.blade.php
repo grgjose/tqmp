@@ -9,7 +9,7 @@
     <meta name="author" content="TQMP">
 
     <!-- Title and Favicon -->
-    <title>About Us | Total Quality Management Products Philippines</title>
+    <title>Registration | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
