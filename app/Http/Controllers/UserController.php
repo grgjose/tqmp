@@ -24,7 +24,13 @@ class UserController extends Controller
      */    
     public function login(Request $request)
     {
-        return view("home.login");
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view("home.login", [
+          'my_user' => $my_user  
+        ]);
     }
 
     /**
