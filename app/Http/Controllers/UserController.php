@@ -32,7 +32,14 @@ class UserController extends Controller
      */   
     public function register()
     {
-        return view("home.register");
+
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view("home.register", [
+          'my_user' => $my_user  
+        ]);
     }
 
     /**
