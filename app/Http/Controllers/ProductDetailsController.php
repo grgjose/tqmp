@@ -6,7 +6,13 @@
     {
          public function index()
          {
-              // You can pass data to the view if needed
-              return view('dashboard.product_details');
+
+          /** @var \Illuminate\Auth\SessionGuard $auth */
+          $auth = auth();
+          $my_user = $auth->user();
+
+          return view("dashboard.product_details", [
+               'my_user' => $my_user  
+          ]);
          }
     }
