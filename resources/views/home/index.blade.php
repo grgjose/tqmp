@@ -47,7 +47,7 @@
                     </h2>
                     @if($my_user == null)
                     <div class="text-center mb-5 mt-3">
-                        <a type="button" class="btn btn-danger fade-in-up" href="/register">Register
+                        <a class="card-button btn btn-danger mt-auto fade-in-up d-inline-block" href="/register">Register
                             <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i>
                         </a>
                     </div>

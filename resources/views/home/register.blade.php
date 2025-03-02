@@ -33,14 +33,22 @@
     @include('plus.navbar')
     <!-- End of Header -->
 
-    <div class="container pt-6 pb-5 mt-5 py-5">
+    <section id="title">
+        <div class="container text-center py-5 fade-in-up">
+            <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Register</span>
+            <h2 class="fw-bold">Create your own account</h2>
+            <!-- Paragraph -->
+            <p class="mt-3">
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+    </section>
+
+    <div class="container py-2 fade-in-up">
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <div class="card rounded-4">
-                    <div class="card-body p-5">
-                        <h2 class="text-center fw-bold text-danger">Register</h2>
-                        <p class="text-center text-muted mb-4">Access your account</p>
-
+                <div class="rounded-4 border border-1 p-5">
+                        <h3 class="fw-bold mb-4">Fill out the form</h3>
                         @if ($errors->any())
                         <div class="alert alert-danger">
                             <ul>

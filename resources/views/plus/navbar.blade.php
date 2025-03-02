@@ -81,28 +81,28 @@
 
                 <div class="d-flex align-items-center">
                     @if($my_user == null)
-                        <a href="/login" class="btn btn-primary d-none d-sm-block">
-                            <i class="fas fa-user"></i> Login
-                        </a>
+                    <button type="button" class="card-button btn btn-danger mt-auto d-none d-sm-block" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fas fa-user"></i> Login
+                    </button>
                     @else
-                        <a href="/cart" class="btn btn-danger me-2 d-none d-sm-block">
-                            <i class="fas fa-shopping-cart"></i> Cart
-                        </a>
-                        <a href="/logout" class="btn btn-primary d-none d-sm-block">
-                            <i class="fas fa-user"></i> Logout
-                        </a>
+                    <a href="/cart" class="card-button btn btn-primary mt-auto me-2 d-none d-sm-block">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                    </a>
+                    <a href="/logout" class="card-button btn btn-danger mt-auto d-none d-sm-block">
+                        <i class="fas fa-user"></i> Logout
+                    </a>
                     @endif
 
                     <div class="d-flex flex-column w-100 d-sm-none">
                         @if($my_user == null)
-                        <a href="/login" class="btn btn-primary w-100">
+                        <button type="button" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">
                             <i class="fas fa-user"></i> Login
-                        </a>
+                        </button>
                         @else
-                        <a href="/cart" class="btn btn-danger mb-2 w-100">
+                        <a href="/cart" class="card-button btn btn-primary mt-auto mb-2 w-100">
                             <i class="fas fa-shopping-cart"></i> Cart
                         </a>
-                        <a href="/logout" class="btn btn-primary w-100">
+                        <a href="/logout" class="card-button btn btn-danger mt-auto w-100">
                             <i class="fas fa-user"></i> Logout
                         </a>
                         @endif
@@ -111,4 +111,46 @@
             </div>
         </div>
     </nav>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="text-center fw-bold py-3 text-danger">Login</h2>
+                <p class="text-center text-muted mb-4">Access your account</p>
+                <!-- Login Form -->
+                <form action="/login" method="post">
+                    @csrf
+                    <!-- Email Input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="loginEmail" name="email" class="form-control" placeholder="Email address" required />
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="form-outline mb-4">
+                        <input type="password" id="loginPassword" name="password" class="form-control" placeholder="Password" required />
+                    </div>
+
+                    <!-- Remember Me and Forgot Password -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe" />
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <a href="#" class="text-decoration-none text-danger">Forgot password?</a>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <input type="submit" class="card-button btn btn-danger mt-auto btn-block w-100 mb-3" value="Login">
+
+                    <!-- Register Link -->
+                    <p class="text-center small">
+                        Don't have an account? <a href="/register" class="text-danger text-decoration-none">Register</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
