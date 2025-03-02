@@ -36,9 +36,9 @@
     <div class="container pt-6 pb-5 mt-5 py-5">
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <div class="card shadow-lg rounded-4">
+                <div class="card rounded-4">
                     <div class="card-body p-5">
-                        <h2 class="text-center fw-bold mb-4 text-danger">Register</h2>
+                        <h2 class="text-center fw-bold text-danger">Register</h2>
                         <p class="text-center text-muted mb-4">Access your account</p>
 
                         @if ($errors->any())
