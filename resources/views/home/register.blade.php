@@ -24,6 +24,8 @@
     <!-- Chatbot JS -->
     <script src="{{ asset('js/chatbot.js') }}"></script>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 </head>
@@ -39,7 +41,7 @@
             <h2 class="fw-bold">Create your own account</h2>
             <!-- Paragraph -->
             <p class="mt-3">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Create your Account to avail more features likes online deliveries and fast transaction. 
             </p>
         </div>
     </section>
@@ -122,22 +124,22 @@
                             </div>
 
                             <script>
-                                document.addEventListener('DOMContentLoaded', function() {
-                                    const password = document.getElementById('password');
-                                    const confirmPassword = document.getElementById('confirm_password');
-                                    const passwordError = document.getElementById('passwordError');
 
-                                    confirmPassword.addEventListener('input', function() {
-                                        if (password.value !== confirmPassword.value) {
-                                            passwordError.style.display = 'block';
-                                            document.getElementById("registerButton").disabled = true;
-
+                                $(document).ready(function () {
+                                    $('#password, #confirm_password').on('keyup', function () {
+                                        let password = $('#password').val();
+                                        let confirmPassword = $('#confirm_password').val();
+                                        
+                                        if (password !== confirmPassword && password !== "") {
+                                            $('#passwordError').attr("style", "display: block;");
+                                            $('#registerButton').prop('disabled', true);
                                         } else {
-                                            passwordError.style.display = 'none';
-                                            document.getElementById("registerButton").disabled = false;
+                                            $('#passwordError').attr("style", "display: none;");
+                                            $('#registerButton').prop('disabled', false);
                                         }
                                     });
                                 });
+
                             </script>
 
                             <!-- File Upload Input -->
@@ -151,7 +153,7 @@
 
                             <!-- Login Link -->
                             <p class="text-center">
-                                Already have an account? <a href="/login" class="text-danger text-decoration-none">Login</a>
+                                Already have an account? <a href="#" class="text-danger text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
                             </p>
                         </form>
 

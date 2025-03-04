@@ -36,7 +36,7 @@ class RegistrationMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'My Test Mail',
+            subject: 'TQMP - Email Confirmation',
         );
     }
 

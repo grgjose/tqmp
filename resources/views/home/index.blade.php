@@ -47,7 +47,7 @@
                     </h2>
                     @if($my_user == null)
                     <div class="text-center mb-5 mt-3">
-                        <a class="card-button btn btn-danger mt-auto fade-in-up d-inline-block" href="/register">Register
+                        <a class="card-button btn btn-danger mt-auto fade-in-up d-inline-block" href="/register">Create Account
                             <i class="fa-solid fa-arrow-right" style="font-size: 9px; margin-left:5px;"></i>
                         </a>
                     </div>
@@ -211,6 +211,5 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 
 </html>
