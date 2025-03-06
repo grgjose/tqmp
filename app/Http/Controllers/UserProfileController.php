@@ -8,6 +8,12 @@ class UserProfileController extends Controller
 {
     public function index()
     {
-        return view('dashboard.userprofiles');
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('dashboard.userprofiles', [
+            'my_user' => $my_user,
+        ]);
     }
 }

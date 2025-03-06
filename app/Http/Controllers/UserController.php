@@ -67,9 +67,14 @@ class UserController extends Controller
         if($auth->attempt($validated, $remember) || $auth->viaRemember()){
             $request->session()->regenerate();
 
-            if($auth->check() && $auth->user()->usertype == 1){
+
+
+            if($auth->check() && $auth->user()->usertype <= 2){
                 return redirect('/dashboard');
-            } else {
+            } elseif($auth->user()->status == "registered"){
+                $auth->logout();
+                return redirect('/')->with('error_msg', 'Your user is not yet verified, Please wait for Email Confirmation from our Team!');
+            }  else {
                 return redirect('/');
             }
 
@@ -124,7 +129,7 @@ class UserController extends Controller
 
         $data = [
             'name' => $validated['fname'].' '.$validated['lname'],
-            'message' => 'This is a test email from TQMP.'
+            'message' => ''
         ];
     
         Mail::to($validated['email'])->send(new RegistrationMail($data));
@@ -172,6 +177,140 @@ class UserController extends Controller
         ->where('usertype', '=', 3)
         ->where('status', 'registered')->get();
 
+    }
+
+    /**
+     * Display pending approvals (Customer)
+     */
+    public function approvals()
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $users = DB::table('users')
+        ->where('usertype', '=', 3)
+        ->where('status', 'registered')->get();
+
+        return view('dashboard.index', [
+            'my_user' => $my_user,
+            'users' => $users,
+        ])
+        ->with('title', 'Approvals')
+        ->with('main_content', 'dashboard.modules.approvals');
+
+    }
+
+    /**
+     * Display specific approval (Customer)
+     */
+    public function approvals_show($id)
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $users = DB::table('users')
+        ->where('usertype', '=', 3)
+        ->where('status', 'registered')
+        ->where('id', '=', $id)->get();
+
+        if($users == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if(count($users) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+
+        return view('dashboard.modules.approvals-view', [
+            'my_user' => $my_user,
+            'user' => $users[0],
+        ]);
+    }
+
+    /**
+     * Download specific file (Customer)
+     */
+    public function approvals_download($id)
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $users = DB::table('users')
+        ->where('usertype', '=', 3)
+        ->where('status', 'registered')
+        ->where('id', '=', $id)->get();
+
+        if($users == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if(count($users) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+
+        $path = storage_path("app/public/uploads/".$users[0]->upload_file);
+
+        if (!file_exists($path)) {
+            abort(404, 'File not found.');
+        }
+
+        return response()->download($path);
+    }
+
+    /**
+     * Approve a registered user (Customer)
+     */
+    public function approvals_approve($id)
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $users = DB::table('users')
+        ->where('usertype', '=', 3)
+        ->where('status', 'registered')
+        ->where('id', '=', $id)->get();
+
+        if($users == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if(count($users) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+
+        $user = User::find($id);
+        $user->status = "active";
+        $user->save();
+
+        return redirect('/approvals')->with('success_msg', $user->email.' is now an Active Customer!');
+    }
+
+    /**
+     * Rejects a registered user (Customer)
+     */
+    public function approvals_reject($id)
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $users = DB::table('users')
+        ->where('usertype', '=', 3)
+        ->where('status', 'registered')
+        ->where('id', '=', $id)->get();
+
+        if($users == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if(count($users) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+
+        $user = User::find($id);
+        $user->status = "rejected";
+        $user->save();
+
+        return redirect('/approvals')->with('success_msg', $user->email.' is now a Rejected Customer!');
     }
 
     /**

@@ -24,6 +24,8 @@ class DatabaseSeeder extends Seeder
 
         //
 
+            //Admins
+
             User::factory()->create([
                 'usertype' => 1,
                 'fname' => 'George Louis',
@@ -47,6 +49,47 @@ class DatabaseSeeder extends Seeder
                 'status' => 'active',
                 'password' => Hash::make('password')
             ]);
+
+            // Sales Rep
+
+            User::factory()->create([
+                'usertype' => 2,
+                'fname' => 'John',
+                'mname' => 'Richard',
+                'lname' => 'Lopez',
+                'ext' => '',
+                'email' => 'johnrichardlopez@gmail.com',
+                'user_pic' => 'default.png',
+                'status' => 'active',
+                'password' => Hash::make('password')
+            ]);
+
+            // Customers
+
+            User::factory()->create([
+                'usertype' => 3,
+                'fname' => 'John',
+                'mname' => '',
+                'lname' => 'Doe',
+                'ext' => '',
+                'email' => 'johndoe@gmail.com',
+                'user_pic' => 'default.png',
+                'status' => 'active',
+                'password' => Hash::make('password')
+            ]);
+
+            User::factory()->create([
+                'usertype' => 3,
+                'fname' => 'Sam',
+                'mname' => '',
+                'lname' => 'Pah',
+                'ext' => '',
+                'email' => 'sampah@gmail.com',
+                'user_pic' => 'default.png',
+                'status' => 'registered',
+                'password' => Hash::make('password')
+            ]);
+
 
         //
 

@@ -22,7 +22,6 @@ class OrderController extends Controller
 
         //return view('dashboard.order');
 
-        
         return view('dashboard.index', [
             'my_user' => $my_user,
         ])

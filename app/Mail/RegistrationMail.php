@@ -26,7 +26,7 @@ class RegistrationMail extends Mailable
     {
         return $this->from(env('MAIL_FROM_ADDRESS'))
                     ->subject('TQMP - Email Confirmation')
-                    ->view('emails.test_email') // Blade template for email
+                    ->view('emails.confirm_email') // Blade template for email
                     ->with('data', $this->data);
     }
 
@@ -46,7 +46,7 @@ class RegistrationMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.test_email',
+            view: 'emails.confirm_email',
         );
     }
 

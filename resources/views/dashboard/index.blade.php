@@ -32,6 +32,10 @@
     <!-- apexcharts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css" integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0=" crossorigin="anonymous" />
 
+
+    <!-- Toast -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -171,8 +175,8 @@
                             <a href="#" class="d-block" style="text-decoration: none;">{{ $my_user->fname.' '.$my_user->lname }}</a>
                         </div>
                     </div>
-                    <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
-                        <li class="nav-item menu-open">
+                    <ul class="nav sidebar-menu nav-sidebar flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+                        <li class="nav-sidebar menu-open">
                             <ul class="nav nav-treeview">
                                 <li class="nav-header">Menu</li>
                                 <li class="nav-item">
@@ -180,51 +184,65 @@
                                         <p><i class="fa-solid fa-chart-line" style="margin-right: 10px;"></i>Dashboard</p>
                                     </a>
                                 </li>
-                                <li class="nav-header">Information</li>
+                                <li class="nav-item">
+                                    <a href="/inventory" class="nav-link">
+                                        <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Inventory</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/order" class="nav-link">
+                                        <p><i class="fa-solid fa-store" style="margin-right: 10px;"></i>Orders</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/consumer" class="nav-link">
+                                        <p><i class="fa-solid fa-users" style="margin-right: 10px;"></i>Consumers</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/approvals" class="nav-link">
+                                        <p><i class="fa-solid fa-user-check" style="margin-right: 10px;"></i>Approvals</p>
+                                    </a>
+                                </li>
+                                <li class="nav-header">Settings</li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="nav-icon bi bi-speedometer"></i>
                                         <p>
-                                            Tables
+                                            Settings
                                             <i class="nav-arrow bi bi-chevron-right"></i>
                                         </p>
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
                                             <a href="/inventory" class="nav-link">
-                                                <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Inventory</p>
+                                                <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Active Users</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="/order" class="nav-link">
-                                                <p><i class="fa-solid fa-store" style="margin-right: 10px;"></i>Orders</p>
+                                            <a href="/inventory" class="nav-link">
+                                                <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Products</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="/consumer" class="nav-link">
-                                                <p><i class="fa-solid fa-users" style="margin-right: 10px;"></i>Consumers</p>
+                                            <a href="/inventory" class="nav-link">
+                                                <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Brands</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/inventory" class="nav-link">
+                                                <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Branches</p>
                                             </a>
                                         </li>
                                     </ul>
-                                <li class="nav-header">Settings</li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <p><i class="fa-solid fa-user-tie" style="margin-right: 10px;"></i>Profile</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <p><i class="fa-solid fa-gear" style="margin-right: 10px;"></i>Settings</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="/logout" class="nav-link">
                                         <p><i class="fa-solid fa-arrow-right-from-bracket" style="margin-right: 10px;"></i>Logout</p>
                                     </a>
                                 </li>
+
+                            </ul>
                         </li>
-                    </ul>
-                    </li>
                     <!-- <li class="nav-item">
                             <a href="/userprofiles" class="nav-link">
                                 <p>User Profiles</p>
@@ -242,8 +260,6 @@
     <!--end::App Wrapper-->
     <!--begin::Script-->
     <!--Third Party Plugin(OverlayScrollbars)-->
-
-
 
     <script
         src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
@@ -265,8 +281,10 @@
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
     <script>
         new DataTable('#example');
+        new DataTable('#tbl_approvals');
     </script>
     <!--end::Script-->
+    
     <!--OverlayScrollbars Configure-->
     <script>
         const SELECTOR_SIDEBAR_WRAPPER = '.sidebar-wrapper';
@@ -288,12 +306,24 @@
             }
         });
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Toast -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="{{ asset('js/dashboard.js') }}"></script>
+
     <!-- OPTIONAL SCRIPTS -->
     <!-- apexcharts -->
     <script
         src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js"
         integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8="
         crossorigin="anonymous"></script>
+
+
+
     <script>
         // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
         // IT'S ALL JUST JUNK FOR DEMO
@@ -400,9 +430,24 @@
             document.querySelector('#sales-chart'),
             sales_chart_options,
         );
+
         sales_chart.render();
     </script>
     <!--end::Script-->
+    @if(session()->has('error_msg'))
+      <script>
+          toastr.options.preventDuplicates = true;
+          toastr.error("{{ session('error_msg') }}");
+      </script>
+    @endif
+
+    @if(session()->has('success_msg'))
+      <script>
+          toastr.options.preventDuplicates = true;
+          toastr.success("{{ session('success_msg') }}");
+      </script>
+    @endif
+    
 </body>
 <!--end::Body-->
 
