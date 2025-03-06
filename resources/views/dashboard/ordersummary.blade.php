@@ -97,57 +97,57 @@
                                 </tr>
                             </tbody>
                         </table>
-                </div>
-                <hr>
-                <div class="d-flex justify-content-between">
-                    <p class="text-muted">Subtotal</p>
-                    <p>$106</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="text-muted">Shipping Cost (+)</p>
-                    <p>$10.85</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="text-muted">Discount (-)</p>
-                    <p>$9.00</p>
-                </div>
-                <hr>
-                <div class="d-flex justify-content-between">
-                    <p class="total-payable">Total Payable</p>
-                    <p class="total-payable">$107.85</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <p class="text-muted">Subtotal</p>
+                        <p>$106</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="text-muted">Shipping Cost (+)</p>
+                        <p>$10.85</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="text-muted">Discount (-)</p>
+                        <p>$9.00</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <p class="total-payable">Total Payable</p>
+                        <p class="total-payable">$107.85</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Customer Details Section -->
-        <div class="col-lg-4">
-            <div class="border p-3">
-                <h5 class="fw-bold">Customer's Details</h5>
-                <div class="d-flex align-items-center mb-3">
-                    <img src="https://via.placeholder.com/60" alt="Customer" class="rounded-circle me-3" width="60">
-                    <div>
-                        <p class="mb-0 fw-bold">Willium Deno</p>
-                        <small class="text-muted">10 Previous Orders</small>
+            <!-- Customer Details Section -->
+            <div class="col-lg-4">
+                <div class="border p-3">
+                    <h5 class="fw-bold">Customer's Details</h5>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://via.placeholder.com/60" alt="Customer" class="rounded-circle me-3" width="60">
+                        <div>
+                            <p class="mb-0 fw-bold">Willium Deno</p>
+                            <small class="text-muted">10 Previous Orders</small>
+                        </div>
                     </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="shippingAddress" class="form-label"><strong>Shipping Address:</strong></label>
+                            <input type="text" class="form-control" id="shippingAddress" value="Quezon City, Philippines">
+                        </div>
+                        <div class="mb-3">
+                            <label for="billingAddress" class="form-label"><strong>Billing Address:</strong></label>
+                            <input type="text" class="form-control" id="billingAddress" value="Quezon City, Philippines">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label"><strong>Email Address:</strong></label>
+                            <input type="email" class="form-control" id="emailAddress" value="contact@yourmail.com">
+                        </div>
+                        <button type="submit" class="card-button btn btn-danger w-100">Save Details</button>
+                    </form>
                 </div>
-                <form>
-                    <div class="mb-3">
-                        <label for="shippingAddress" class="form-label"><strong>Shipping Address:</strong></label>
-                        <input type="text" class="form-control" id="shippingAddress" value="Quezon City, Philippines">
-                    </div>
-                    <div class="mb-3">
-                        <label for="billingAddress" class="form-label"><strong>Billing Address:</strong></label>
-                        <input type="text" class="form-control" id="billingAddress" value="Quezon City, Philippines">
-                    </div>
-                    <div class="mb-3">
-                        <label for="emailAddress" class="form-label"><strong>Email Address:</strong></label>
-                        <input type="email" class="form-control" id="emailAddress" value="contact@yourmail.com">
-                    </div>
-                    <button type="submit" class="card-button btn btn-danger w-100">Save Details</button>
-                </form>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="container">
@@ -195,31 +195,33 @@
             <!-- Additional Service Section -->
             <div class="col-lg-4">
                 <h5 class="fw-bold">Additional Service</h5>
-                <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                    <div>
-                        <p class="mb-0 fw-bold">Service 1</p>
-                        <small class="text-muted">Description of Service 1</small>
+                <div class="row p-3">
+                    <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
+                        <div>
+                            <p class="mb-0 fw-bold">Service 1</p>
+                            <small class="text-muted">Description of Service 1</small>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="service1">
+                        </div>
                     </div>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="service1">
+                    <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
+                        <div>
+                            <p class="mb-0 fw-bold">Service 2</p>
+                            <small class="text-muted">Description of Service 2</small>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="service2">
+                        </div>
                     </div>
-                </div>
-                <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                    <div>
-                        <p class="mb-0 fw-bold">Service 2</p>
-                        <small class="text-muted">Description of Service 2</small>
-                    </div>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="service2">
-                    </div>
-                </div>
-                <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                    <div>
-                        <p class="mb-0 fw-bold">Service 3</p>
-                        <small class="text-muted">Description of Service 3</small>
-                    </div>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="service3">
+                    <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
+                        <div>
+                            <p class="mb-0 fw-bold">Service 3</p>
+                            <small class="text-muted">Description of Service 3</small>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="service3">
+                        </div>
                     </div>
                 </div>
             </div>
