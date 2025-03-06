@@ -26,6 +26,12 @@ class InventoryController extends Controller
         $brands = DB::table('brands')->get();
         $users = DB::table('users')->where('usertype', '=', 3)->get();
 
+
+        
+        // return view('dashboard.inventory', [
+        //     'my_user' => $my_user,
+        // ]);
+        
         return view('dashboard.index', [
             'my_user' => $my_user,
             'inventories' => $inventories,
@@ -35,6 +41,7 @@ class InventoryController extends Controller
         ])
         ->with('title', 'Inventory')
         ->with('main_content', 'dashboard.modules.inventory');
+
         
     }
 

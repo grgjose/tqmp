@@ -49,6 +49,13 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 Route::get('/consumer', [ConsumerController::class, 'index'])->name('dashboard.consumer');
 Route::get('/inventory', [InventoryController::class, 'index'])->name('dashboard.inventory');
 Route::get('/order', [OrderController::class, 'index'])->name('dashboard.order');
+
+Route::get('/approvals', [UserController::class, 'approvals'])->name('dashboard.approvals');
+Route::get('/approvals-view/{id}', [UserController::class, 'approvals_show'])->name('dashboard.approvals-view');
+Route::get('/approvals-download/{id}', [UserController::class, 'approvals_download']);
+Route::get('/approvals-approve/{id}', [UserController::class, 'approvals_approve']);
+Route::get('/approvals-reject/{id}', [UserController::class, 'approvals_reject']);
+
 Route::get('/userprofiles', [UserProfileController::class, 'index'])->name('dashboard.userprofiles');
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
 Route::get('/order-summary', [OrderSummaryController::class, 'index']);
