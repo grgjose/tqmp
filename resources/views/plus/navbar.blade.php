@@ -118,7 +118,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body">
-                <h2 class="text-center fw-bold py-3 text-danger">Login</h2>
+                <h2 class="text-center fw-bold text-danger pt-3">Login</h2>
                 <p class="text-center text-muted mb-4">Access your account</p>
                 <!-- Login Form -->
                 <form action="/login" method="post">
@@ -147,7 +147,7 @@
 
                     <!-- Register Link -->
                     <p class="text-center small">
-                        Don't have an account? <a href="/register" class="text-danger text-decoration-none">Create Account Now!</a>
+                        Don't have an account? <a href="/register" class="text-danger text-decoration-none">Register Now!</a>
                     </p>
                 </form>
             </div>

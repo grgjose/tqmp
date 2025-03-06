@@ -117,21 +117,22 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <!--begin::User Image-->
-                            <li class="user-header text-bg-primary">
+                            <li class="user-header ">
                                 <img
                                     src="{{ asset('storage/user-pics/'.$my_user->user_pic) }}"
                                     class="rounded-circle shadow"
                                     alt="User Image" />
-                                <p>
-                                    {{ $my_user->fname.' '.$my_user->lname }} - Web Developer
-                                    <small>Member since Nov. 2023</small>
-                                </p>
+                                <div class="container">
+                                    <h4 class="mb-0">{{ $my_user->fname.' '.$my_user->lname }}</h4>
+                                    <p class="mb-0">Sales Agent</p>
+                                </div>
                             </li>
                             <!--end::User Image-->
                             <!--begin::Menu Footer-->
-                            <li class="user-footer">
-                                <a href="#" class="btn btn-default btn-flat">Profile</a>
-                                <a href="/logout" class="btn btn-default btn-flat float-end">Sign out</a>
+                            <li class="user-footer d-flex flex-column">
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="btn btn-default mb-2">Profile</a>
+                                <a href="/logout" class="btn btn-default">Sign out</a>
                             </li>
                             <!--end::Menu Footer-->
                         </ul>
