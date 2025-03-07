@@ -15377,4 +15377,25 @@ html.maximized-card {
 }
 
 /*# sourceMappingURL=adminlte.css.map */
+.card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 8px 8px 8px 8px;
+  text-decoration: none;
+  opacity: 1;
+  /* Ensure the button is fully visible initially */
+  transform: translateY(0);
+  /* Set the starting position */
 
+  /* Smooth transition */
+}
+
+.card-button:hover {
+  text-decoration: none;
+  opacity: 0.9;
+  /* Slightly fade the button on hover */
+  /* Move the button up slightly */
+}

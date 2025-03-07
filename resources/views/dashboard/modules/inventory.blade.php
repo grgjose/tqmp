@@ -6,7 +6,7 @@
                 <div class="container-fluid">
                     <!--Row-->
                     <div class="row">
-                        <div class="col-sm-6">
+                        <!-- <div class="col-sm-6">
                             <h3 class="mb-0">Inventory</h3>
                         </div>
                         <div class="col-sm-6">
@@ -14,7 +14,7 @@
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Inventory</li>
                             </ol>
-                        </div>
+                        </div> -->
                     </div>
                     <!--end::Row-->
                 </div>
@@ -28,16 +28,15 @@
                     <!--Row-->
                     <div class="row">
                         <div class="col-6">
+                            <h3 class="mb-0">Inventory</h3>
                         </div>
                         <div class="col-4">
                         </div>
-                        <div class="col-1">
-                            <button class="btn btn-success" onclick="showForm()">
+                        <div class="col-2 text-end">
+                            <button class=" btn btn-sm btn-success" onclick="showForm()">
                                 <span class="fas fa-plus"></span> Export CSV
                             </button>
-                        </div>
-                        <div class="col-1">
-                            <button class="btn btn-success" onclick="showForm()">
+                            <button class="btn btn-sm btn-success" style="width: 116px;" onclick="showForm()">
                                 <span class="fas fa-plus"></span> Add Inventory
                             </button>
                         </div>
@@ -62,7 +61,7 @@
                                     <td># 60</td>
                                     <td>
                                         <div class="btn-group-sm">
-                                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Status
                                             </button>
                                             <ul class="dropdown-menu">
@@ -89,7 +88,7 @@
                                     <td># 30</td>
                                     <td>
                                         <div class="btn-group-sm">
-                                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Status
                                             </button>
                                             <ul class="dropdown-menu">
