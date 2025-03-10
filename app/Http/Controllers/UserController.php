@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\RegistrationMail;
+use DateTime;
 
 
 class UserController extends Controller
@@ -100,7 +101,7 @@ class UserController extends Controller
             'birthdate' => ['required'],
             'contact_num' => ['required'],
             'password' => ['required'],
-            'upload_file' => ['required', 'file', 'mimes:jpg,jpeg,png,pdf', 'max:2048'],
+            'upload_file' => ['required', 'file', 'mimes:jpg,jpeg,png,pdf', 'max:4096'],
         ]);
 
         // Handle file upload
@@ -122,6 +123,8 @@ class UserController extends Controller
         $user->usertype = 3;
         $user->birthdate = $validated['birthdate'];
         $user->contact_num = $validated['contact_num'];
+        $user->email_verification_token = $this->generateGUID();
+        $user->email_verification_sent = date("Y-m-d H:i:s");
         $user->password = $validated['password'];
         $user->upload_file = $filename;
 
@@ -129,12 +132,47 @@ class UserController extends Controller
 
         $data = [
             'name' => $validated['fname'].' '.$validated['lname'],
-            'message' => ''
+            'message' => '',
+            'email_token' => $user->email_verification_token
         ];
     
         Mail::to($validated['email'])->send(new RegistrationMail($data));
 
         return redirect('/')->with('success_msg', 'Please check your email!');
+
+    }
+
+    /**
+     * Email Confirmation Process
+     */    
+    public function confirmation($token)
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+        
+        if($my_user != null) return redirect('/')->with('error_msg', 'You are already signed in!');
+        if($token == null) return redirect('/')->with('error_msg', 'Invalid Token!');
+
+        $users = DB::table('users')->where('email_verification_token', '=', $token)->get();
+
+        if($users == null) return redirect('/')->with('error_msg', 'Invalid Token!');
+        if(count($users) == 0 || count($users) > 1) return redirect('/')->with('error_msg', 'Invalid Token!');
+
+        $user = User::find($users[0]->id);
+
+        $datetime = new DateTime($user->email_verification_sent);
+        $sevenDaysAgo = new DateTime("-7 days");
+        
+        if ($datetime < $sevenDaysAgo) return redirect('/')->with('error_msg', 'Expired Token!');
+
+        $user->email_verification_token = "";
+        $user->email_verified_at = date("Y-m-d H:i:s");
+        $user->email_verification_sent = null;
+
+        $user->save();
+
+        return redirect('/')->with('success_msg', 'Email Verified, Please wait for the TQMP Sales Representative Email for the Validation of your Documents!');
 
     }
 
@@ -336,4 +374,24 @@ class UserController extends Controller
     {
         //
     }
+
+    /**
+     * Generates a GUID
+     */
+    public function generateGUID() 
+    {
+        if (function_exists('com_create_guid')) {
+            return trim(com_create_guid(), '{}');
+        }
+    
+        return sprintf(
+            '%04X%04X-%04X-%04X-%04X-%04X%04X%04X',
+            mt_rand(0, 0xFFFF), mt_rand(0, 0xFFFF),
+            mt_rand(0, 0xFFFF),
+            mt_rand(0, 0x0FFF) | 0x4000, // 4XXX - Version 4 UUID
+            mt_rand(0, 0x3FFF) | 0x8000, // 8XXX, 9XXX, AXXX, or BXXX - Variant 1 UUID
+            mt_rand(0, 0xFFFF), mt_rand(0, 0xFFFF), mt_rand(0, 0xFFFF)
+        );
+    }
+
 }
