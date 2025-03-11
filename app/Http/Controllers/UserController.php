@@ -166,7 +166,7 @@ class UserController extends Controller
         
         if ($datetime < $sevenDaysAgo) return redirect('/')->with('error_msg', 'Expired Token!');
 
-        $user->email_verification_token = "";
+        $user->email_verification_token = null;
         $user->email_verified_at = date("Y-m-d H:i:s");
         $user->email_verification_sent = null;
 
