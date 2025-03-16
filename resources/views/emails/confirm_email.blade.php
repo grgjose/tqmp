@@ -11,7 +11,7 @@
 
     <p>Thank you for signing up with TQMP! To complete your registration, please confirm your email address by clicking the link below:</p>
 
-    <a href="/confirmation/{{ $data['email_token'] }}">Email Verification<a> 
+    <a href="{{ config('app.url') }}/confirmation/{{ $data['email_token'] }}">Email Verification<a> 
 
     <p>{{ $data['message'] }}</p>
     

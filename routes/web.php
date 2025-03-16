@@ -43,6 +43,7 @@ Route::get('/logout', [UserController::class, 'logout'])->name('home.logout');
 // Register Page
 Route::get('/register', [UserController::class, 'register'])->name('home.register');
 Route::post('/register', [UserController::class, 'signup'])->name('home.signup');
+Route::get('/confirmation/{token}', [UserController::class, 'confirmation']);
 
 //Dashboard Pages
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');

@@ -25,6 +25,8 @@ return new class extends Migration
             $table->string('user_pic')->nullable()->default('default.png');
             $table->string('upload_file')->nullable();
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('email_verification_token')->nullable();
+            $table->timestamp('email_verification_sent')->nullable();
             $table->string('password')->nullable();
             $table->string('status')->nullable()->default('registered');
             $table->boolean('isDeleted')->nullable()->default(false);
