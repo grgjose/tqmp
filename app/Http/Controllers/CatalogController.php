@@ -12,7 +12,7 @@ class CatalogController extends Controller
         $auth = auth();
         $my_user = $auth->user();
 
-        return view('gentrade.catalogue', [
+        return view('gentrade.catalog', [
             'my_user' => $my_user,
         ]);
     }
