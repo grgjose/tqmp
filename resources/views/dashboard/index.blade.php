@@ -180,7 +180,7 @@
                             <ul class="nav nav-treeview">
                                 <li class="nav-header">Menu</li>
                                 <li class="nav-item">
-                                    <a href="/dashboard" class="nav-link active">
+                                    <a href="/dashboard" class="nav-link">
                                         <p><i class="fa-solid fa-chart-line" style="margin-right: 10px;"></i>Dashboard</p>
                                     </a>
                                 </li>
@@ -215,23 +215,13 @@
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="/inventory" class="nav-link">
-                                                <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Active Users</p>
+                                            <a href="/users" class="nav-link">
+                                                <p><i class="fa-solid fa-users" style="margin-right: 10px;"></i>Active Users</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="/inventory" class="nav-link">
-                                                <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Products</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="/inventory" class="nav-link">
-                                                <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Brands</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="/inventory" class="nav-link">
-                                                <p><i class="fa-solid fa-warehouse" style="margin-right: 10px;"></i>Branches</p>
+                                            <a href="/products" class="nav-link">
+                                                <p><i class="fa-solid fa-tags" style="margin-right: 10px;"></i>Products</p>
                                             </a>
                                         </li>
                                     </ul>

@@ -19,3 +19,28 @@ function approve(id){
 function reject(id){
     window.location.href = "/approvals-reject/" + id;
 }
+
+// Active Navbar UI
+$(document).ready(function(){
+    var pathname = window.location.pathname;
+    pathname = pathname.substring(1, pathname.length);
+
+    $("a[href='/"+ pathname +"']").parent().addClass(" menu-open");
+    $("a[href='/"+ pathname +"']").addClass(" active");
+
+    switch(pathname){
+        case "dashboard":
+        case "inventory":
+        case "order":
+        case "consumer":
+        case "approvals":
+        $("a[href='/"+ pathname +"']").parent().parent().parent().addClass("menu-is-opening");
+        $("a[href='/"+ pathname +"']").parent().parent().parent().addClass("menu-open");
+        $("a[href='/"+ pathname +"']").attr("style", "width: 93%;")
+        break;
+    }
+
+
+
+    $(".wrapper").removeAttr("style");
+});

@@ -57,6 +57,9 @@ Route::get('/approvals-download/{id}', [UserController::class, 'approvals_downlo
 Route::get('/approvals-approve/{id}', [UserController::class, 'approvals_approve']);
 Route::get('/approvals-reject/{id}', [UserController::class, 'approvals_reject']);
 
+
+Route::get('/cart', [UserController::class, 'approvals']);
+
 Route::get('/userprofiles', [UserProfileController::class, 'index'])->name('dashboard.userprofiles');
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
 Route::get('/order-summary', [OrderSummaryController::class, 'index']);

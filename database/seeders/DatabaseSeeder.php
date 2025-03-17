@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Product;
+use App\Models\ProductImage;
 use App\Models\User;
 use App\Models\Usertype;
 use Database\Factories\UsertypeFactory;
@@ -115,6 +117,30 @@ class DatabaseSeeder extends Seeder
             ]);
 
         //
+
+        /**
+         * Sample Products
+         */
+
+        //
+
+            Product::factory()->create([
+                'name' => 'GSM-0060',
+                'display_name' => 'Thore Door Closer Model GSM-0060',
+                'description' => 'Thore Door Closer Model GSM-0060',
+                'category_id' => 1,
+                'brand' => 'Thore',
+                'status' => 'active',
+                'price' => '1500.00',
+            ]);
+
+            ProductImage::factory()->create([
+                'product_id' => 1,
+                'filename' => 'gsm-0060.jpg',
+            ]);
+
+        //
+
 
     }
 }
