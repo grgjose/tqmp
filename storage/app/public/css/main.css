@@ -320,7 +320,7 @@ body {
     /* Slightly fade the card on hover */
     transform: translateY(-10px);
     /* Move the card up */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); */
     /* Add shadow for emphasis */
 }
 
@@ -574,10 +574,11 @@ button.btn-outline-primary:hover {
 }
 
 a.btn-outline-danger {
-    background-color: #7e1416;
-    color: #fff;
-    border: 0.5px solid #7e1416;
+    background-color: transparent;
+    color: #7e1416;
+    border: 1px solid #7e1416;
     font-size: smaller;
+    font-weight: bold;
 }
 
 a.btn-outline-danger:hover {
