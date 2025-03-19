@@ -227,7 +227,7 @@
                     <b>Patch Fittings is a accessories to make a frameless door that is usually seen at all facilities like malls.</b>
                 </p>
 
-                <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel2">
+                <div id="carouselExample2" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row mt-4 g-3">
