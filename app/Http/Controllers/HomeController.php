@@ -8,7 +8,8 @@ class HomeController extends Controller
 {
     //
 
-    public function index(){
+    public function index()
+    {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
         $my_user = $auth->user();
@@ -18,7 +19,8 @@ class HomeController extends Controller
         ]);
     }
 
-    public function about(){
+    public function about()
+    {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
         $my_user = $auth->user();
@@ -28,7 +30,8 @@ class HomeController extends Controller
         ]);
     }
 
-    public function contact(){
+    public function contact()
+    {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
         $my_user = $auth->user();
@@ -38,7 +41,8 @@ class HomeController extends Controller
         ]);
     }
 
-    public function faqs(){
+    public function faqs()
+    {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
         $my_user = $auth->user();
@@ -48,12 +52,24 @@ class HomeController extends Controller
         ]);
     }
 
-    public function services(){
+    public function services()
+    {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
         $my_user = $auth->user();
 
         return view('home.services', [
+            'my_user' => $my_user,
+        ]);
+    }
+
+    public function userprofiles()
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('dashboard.userprofiles', [
             'my_user' => $my_user,
         ]);
     }
