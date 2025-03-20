@@ -12,7 +12,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-end">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Approvals</li>
+                        <li class="breadcrumb-item active" aria-current="page">Active Users</li>
                     </ol>
                 </div>
             </div>
@@ -26,7 +26,7 @@
 
         <div class="card tbl">
             <div class="card-header">
-                <h4 class="card-title">Onboarding Users</h4>
+                <h4 class="card-title">List of Active Users</h4>
             </div>
             <div class="card-body">
                 <table id="tbl_approvals" class="table is-striped" style="width:100%; text-align: left;">
@@ -35,10 +35,10 @@
                             <th style="width: 15%">Registration Date</th>
                             <th style="width: 15%">First Name</th>
                             <th style="width: 10%">Last Name</th>
-                            <th style="width: 10%">Contact #</th>
+                            <th style="width: 10%">Usertype</th>
                             <th style="width: 20%">Email</th>
                             {{-- <th>Status</th> --}}
-                            <th style="width: 50%">Actions</th>
+                            <th style="width: 30%">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -47,7 +47,7 @@
                                 <td>{{ $user->created_at }}</td>
                                 <td>{{ $user->fname }}</td>
                                 <td>{{ $user->lname }}</td>
-                                <td>{{ $user->contact_num }}</td>
+                                <td>{{ $user->usertype_title }}</td>
                                 <td>{{ $user->email }}</td>
                                 {{-- <td>
                                     <div class="btn-group-sm">
@@ -63,10 +63,12 @@
                                 </td> --}}
                                 <td>
                                     <div class="btn-group-sm">
-                                        <button class="btn btn-warning btn-sm" onclick="showDetails({{ $user->id }})"> <i class="fa-solid fa-eye"></i> View</button>
+                                        <button class="btn btn-warning btn-sm" onclick="userShow({{ $user->id }})"> <i class="fa-solid fa-eye"></i> View</button>
+                                        @if($user->usertype == 3)
                                         <button class="btn btn-info btn-sm" onclick="downloadFile({{ $user->id }})"> <i class="fa-solid fa-file-arrow-down"></i> Download File</button>
-                                        <button class="btn btn-success btn-sm" onclick="approve({{ $user->id }})"> <i class="fa-solid fa-circle-check"></i> Approve</button>
-                                        <button class="btn btn-danger btn-sm" onclick="reject({{ $user->id }})"> <i class="fa-solid fa-thumbs-down"></i> Reject</button>
+                                        @endif
+                                        <button class="btn btn-success btn-sm" onclick="userUpdate({{ $user->id }})"> <i class="fa-solid fa-pen"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm" onclick="userDelete({{ $user->id }})"> <i class="fa-solid fa-trash"></i> Delete</button>
                                         {{-- <button class="btn btn-success btn-sm">Add</button>
                                         <button class="btn btn-warning btn-sm">Edit</button>
                                         <button class="btn btn-danger btn-sm">Delete</button>

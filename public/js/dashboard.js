@@ -1,3 +1,5 @@
+// Approvals
+
 function showDetails(id){
     $('.tbl').attr('style', 'display: none;');
     $('#view').load('/approvals-view/'+id);
@@ -18,6 +20,27 @@ function approve(id){
 
 function reject(id){
     window.location.href = "/approvals-reject/" + id;
+}
+
+// Users
+function userShow(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/users-view/'+id);
+}
+
+function userHide(id){
+    $('.tbl').removeAttr('style');
+    $('#view').html('');
+}
+
+function userUpdate(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/users-update/'+id);
+}
+
+function userDelete(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/users-delete/'+id);
 }
 
 // Active Navbar UI

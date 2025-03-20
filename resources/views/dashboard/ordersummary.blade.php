@@ -167,6 +167,7 @@
                             </label>
                         </div>
                     </div>
+                    {{--                     
                     <div class="col-md-6 mb-4">
                         <div class="border rounded p-3 w-100 d-flex align-items-center">
                             <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option2">
@@ -188,7 +189,8 @@
                                 <p class="mt-2">$45.00</p>
                             </label>
                         </div>
-                    </div>
+                    </div> 
+                    --}}
                 </div>
             </div>
 

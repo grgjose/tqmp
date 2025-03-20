@@ -33,7 +33,6 @@
                     <thead>
                         <tr>
                             <th style="width: 15%">Brand</th>
-                            <th style="width: 15%">Category</th>
                             <th style="width: 10%">Display Name</th>
                             <th style="width: 10%">Production Name</th>
                             <th style="width: 20%">Price</th>
@@ -41,13 +40,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($users as $user)
+                        @foreach($products as $product)
                             <tr>
-                                <td>{{ $user->created_at }}</td>
-                                <td>{{ $user->fname }}</td>
-                                <td>{{ $user->lname }}</td>
-                                <td>{{ $user->contact_num }}</td>
-                                <td>{{ $user->email }}</td>
+                                <td>{{ $product->brand }}</td>
+                                <td>{{ $product->display_name }}</td>
+                                <td>{{ $product->name }}</td>
+                                <td>{{ $product->price }}</td>
                                 {{-- <td>
                                     <div class="btn-group-sm">
                                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -62,10 +60,10 @@
                                 </td> --}}
                                 <td>
                                     <div class="btn-group-sm">
-                                        <button class="btn btn-warning btn-sm" onclick="showDetails({{ $user->id }})"> <i class="fa-solid fa-eye"></i> View</button>
-                                        <button class="btn btn-info btn-sm" onclick="downloadFile({{ $user->id }})"> <i class="fa-solid fa-file-arrow-down"></i> Download File</button>
-                                        <button class="btn btn-success btn-sm" onclick="approve({{ $user->id }})"> <i class="fa-solid fa-circle-check"></i> Approve</button>
-                                        <button class="btn btn-danger btn-sm" onclick="reject({{ $user->id }})"> <i class="fa-solid fa-thumbs-down"></i> Reject</button>
+                                        <button class="btn btn-warning btn-sm" onclick="showDetails({{ $product->id }})"> <i class="fa-solid fa-eye"></i> View</button>
+                                        <button class="btn btn-info btn-sm" onclick="downloadFile({{ $product->id }})"> <i class="fa-solid fa-file-arrow-down"></i> Download File</button>
+                                        <button class="btn btn-success btn-sm" onclick="approve({{ $product->id }})"> <i class="fa-solid fa-circle-check"></i> Approve</button>
+                                        <button class="btn btn-danger btn-sm" onclick="reject({{ $product->id }})"> <i class="fa-solid fa-thumbs-down"></i> Reject</button>
                                         {{-- <button class="btn btn-success btn-sm">Add</button>
                                         <button class="btn btn-warning btn-sm">Edit</button>
                                         <button class="btn btn-danger btn-sm">Delete</button>
