@@ -43,13 +43,13 @@ function userDelete(id){
     $('#view').load('/users-delete/'+id);
 }
 
-$(document).ready(function() {
-    $('#userChangeProfilePic').on('change', function() {
-        if (this.files.length > 0) {
-            $('#uploadForm').submit();
-        }
-    });
-});
+// $(document).ready(function() {
+//     $('#userChangeProfilePic').on('change', function() {
+//         if (this.files.length > 0) {
+//             $('#uploadForm').submit();
+//         }
+//     });
+// });
 
 
 // Active Navbar UI

@@ -410,9 +410,80 @@ class UserController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update($id, Request $request)
     {
-        //
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 1) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        
+        $user = User::find($id);
+        if($user == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+
+        $validated = $request->validate([
+            'fname' => ['required', 'min:3'],
+            'mname' => ['nullable'],
+            'lname' => ['required'],
+            'email' => ['required'],
+            'birthdate' => ['required'],
+            'contact_num' => ['required'],
+        ]);
+
+        $user->fname = $validated['fname'];
+        $user->mname = $validated['fname'];
+        $user->lname = $validated['fname'];
+        $user->email = $validated['fname'];
+        $user->birthdate = $validated['fname'];
+        $user->contact_num = $validated['fname'];
+
+        $user->save();
+
+        return $this->index();
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function changepic($id, Request $request)
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 1) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $users = DB::table('users')
+        ->join('usertypes', 'users.usertype', '=', 'usertypes.id')
+        ->select('users.*', 'usertypes.title as usertype_title')
+        ->where('users.isDeleted', '=', false)
+        ->get();
+
+        if($users == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if(count($users) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+
+        // Handle file upload
+        if ($request->hasFile('upload_file')) {
+            $file = $request->file('upload_file');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $file->storeAs('user-pics', $filename, 'public');
+        } else {
+            return response()->json(['error' => 'File upload failed'], 400);
+        }
+
+        $user = User::find($id);
+        $user->user_pic = $filename;
+        $user->save();
+
+        return view('dashboard.index', [
+            'my_user' => $my_user,
+            'users' => $users,
+        ])
+        ->with('title', 'Active Users')
+        ->with('main_content', 'dashboard.settings.users');
     }
 
     /**

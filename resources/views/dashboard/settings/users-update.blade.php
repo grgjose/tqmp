@@ -27,55 +27,58 @@
     </div>
 
     <div class="card-body">
-        <div class="row mb-3">
-            <div class="form-group col-2">
-                <label for="user_pic">Profile Picture</label>
-                <div class="text-center">
-                    <img class="profile-user-img img-fluid img-circle" src="{{ asset('storage/user-pics/'.$user->user_pic) }}" alt="User profile picture">
-                    <br> <a href="#" onclick="clickInputFile()">[Change Profile Picture]</a>
-                    <form id="uploadForm" action="/userpic_change/{{ $user->id }}" method="POST" enctype="multipart/form-data">
-                        @csrf
-                        <input id="userChangeProfilePic" type="file" class="form-control" style="display: none;" accept="image/png, image/jpeg">
-                    </form>
-                </div>
+        <div class="form-group col-2">
+            <label for="user_pic">Profile Picture</label>
+            <div class="text-center">
+                <img class="profile-user-img img-fluid img-circle" src="{{ asset('storage/user-pics/'.$user->user_pic) }}" alt="User profile picture">
+                <br> <a href="#" onclick="clickInputFile()">[Change Profile Picture]</a>
+                <form id="uploadForm" action="/users-changepic/{{ $user->id }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <input id="userChangeProfilePic" name="upload_file" type="file" class="form-control" style="display: none;" accept="image/png, image/jpeg">
+                </form>
             </div>
+        </div>
+        <form action="/users-update/{{ $user->id }}" method="POST">
+            @csrf
+            @method('PUT')
+        <div class="row mb-3">
             <div class="form-group col-3">
                 <label for="fname">First Name</label>
-                <input type="text" class="form-control" id="fname" value="{{ $user->fname }}" required>
+                <input type="text" class="form-control" id="fname" name="fname" value="{{ $user->fname }}" required>
             </div>
             <div class="form-group col-3">
                 <label for="mname">Middle Name</label>
-                <input type="text" class="form-control" id="mname" value="{{ $user->mname }}" >
+                <input type="text" class="form-control" id="mname" name="mname" value="{{ $user->mname }}" >
             </div>
             <div class="form-group col-3">
                 <label for="lname">Last Name</label>
-                <input type="text" class="form-control" id="lname" value="{{ $user->lname }}" required>
+                <input type="text" class="form-control" id="lname" name="lname" value="{{ $user->lname }}" required>
             </div>
             <div class="form-group col-1">
                 <label for="ext">Ext</label>
-                <input type="text" class="form-control" id="ext" value="{{ $user->ext }}" >
+                <input type="text" class="form-control" id="ext" name="ext" value="{{ $user->ext }}" >
             </div>
         </div> 
         
         <div class="row mb-3">
             <div class="form-group col-4">
                 <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" value="{{ $user->email }}" required>
+                <input type="email" class="form-control" id="email" name="email" value="{{ $user->email }}" required>
             </div>
             <div class="form-group col-4">
                 <label for="contact_num">Contact Number</label>
-                <input type="text" class="form-control" id="contact_num" value="{{ $user->contact_num }}" required>
+                <input type="text" class="form-control" id="contact_num" name="contact_num" value="{{ $user->contact_num }}" required>
             </div>
             <div class="form-group col-4">
                 <label for="birthdate">Birth Date</label>
-                <input type="date" class="form-control" id="date" value="{{ $user->birthdate }}" >
+                <input type="date" class="form-control" id="date" name="birthdate" value="{{ $user->birthdate }}" >
             </div>
         </div>
 
         <div class="row mb-3">
             <div class="form-group col-12">
                 <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" value="{{ $user->address }}" required>
+                <input type="text" class="form-control" id="address" name="address" value="{{ $user->address }}" required>
             </div>
         </div> 
 
@@ -91,12 +94,21 @@
     </div>
 
     <div class="card-footer">
-        <button class="btn btn-primary" onclick="hideDetails();">Save</button>
+        <button class="btn btn-primary" type="submit">Save</button>
         <button class="btn btn-secondary" onclick="hideDetails();">Close</button>
     </div>
+    </form>
 </div>
 <script>
     function clickInputFile(){
         $('#userChangeProfilePic').click();
     }
+
+    $(document).ready(function() {
+        $('#userChangeProfilePic').on('change', function() {
+            if (this.files.length > 0) {
+                $('#uploadForm').submit();
+            }
+        });
+    });
 </script>

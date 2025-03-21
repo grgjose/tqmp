@@ -66,6 +66,7 @@ Route::get('/users-view/{id}', [UserController::class, 'show']);
 Route::get('/users-update/{id}', [UserController::class, 'edit']);
 Route::post('/users-update/{id}', [UserController::class, 'update']);
 Route::post('/users-delete/{id}', [UserController::class, 'destroy']);
+Route::post('/users-changepic/{id}', [UserController::class, 'changepic']);
 
 // Dashboard - Settings - Products
 Route::get('/products', [ProductController::class, 'index']);
