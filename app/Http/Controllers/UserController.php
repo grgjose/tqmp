@@ -17,7 +17,28 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        //$users = DB::table('users')->where('isDeleted', '=', false)->get();
+
+        $users = DB::table('users')
+        ->join('usertypes', 'users.usertype', '=', 'usertypes.id')
+        ->select('users.*', 'usertypes.title as usertype_title')
+        ->where('users.isDeleted', '=', false)
+        ->get();
+
+
+        return view('dashboard.index', [
+            'my_user' => $my_user,
+            'users' => $users,
+        ])
+        ->with('title', 'Active Users')
+        ->with('main_content', 'dashboard.settings.users');
     }
 
     /**
@@ -211,10 +232,22 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        $user = DB::table('users')
-        ->where('usertype', '=', 3)
-        ->where('status', 'registered')->get();
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
 
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $users = DB::table('users')->where('isDeleted', '=', false)->where('id', '=', $id)->get();
+
+        if($users == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if(count($users) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+
+        return view('dashboard.settings.users-view', [
+            'my_user' => $my_user,
+            'user' => $users[0],
+        ]);
     }
 
     /**
