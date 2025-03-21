@@ -43,6 +43,15 @@ function userDelete(id){
     $('#view').load('/users-delete/'+id);
 }
 
+$(document).ready(function() {
+    $('#userChangeProfilePic').on('change', function() {
+        if (this.files.length > 0) {
+            $('#uploadForm').submit();
+        }
+    });
+});
+
+
 // Active Navbar UI
 $(document).ready(function(){
     var pathname = window.location.pathname;
@@ -57,13 +66,15 @@ $(document).ready(function(){
         case "order":
         case "consumer":
         case "approvals":
+        case "users":
+        case "products":
+        case "product-categories":
         $("a[href='/"+ pathname +"']").parent().parent().parent().addClass("menu-is-opening");
         $("a[href='/"+ pathname +"']").parent().parent().parent().addClass("menu-open");
         $("a[href='/"+ pathname +"']").attr("style", "width: 93%;")
         break;
     }
-
-
-
     $(".wrapper").removeAttr("style");
+    
 });
+

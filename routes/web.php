@@ -62,7 +62,8 @@ Route::get('/approvals-reject/{id}', [UserController::class, 'approvals_reject']
 // Dashboard - Settings - Users
 Route::get('/users', [UserController::class, 'index']);
 Route::get('/users-view/{id}', [UserController::class, 'show']);
-Route::post('/users-update/{id}', [UserController::class, 'edit']);
+Route::get('/users-update/{id}', [UserController::class, 'edit']);
+Route::post('/users-update/{id}', [UserController::class, 'update']);
 Route::post('/users-delete/{id}', [UserController::class, 'destroy']);
 
 // Dashboard - Settings - Products

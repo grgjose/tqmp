@@ -224,6 +224,11 @@
                                                 <p><i class="fa-solid fa-tags" style="margin-right: 10px;"></i>Products</p>
                                             </a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a href="/product-categories" class="nav-link">
+                                                <p><i class="fa-solid fa-icons" style="margin-right: 10px;"></i>Product Categories</p>
+                                            </a>
+                                        </li>
                                     </ul>
                                 <li class="nav-item">
                                     <a href="/logout" class="nav-link">

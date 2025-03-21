@@ -389,7 +389,22 @@ class UserController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $users = DB::table('users')->where('isDeleted', '=', false)->where('id', '=', $id)->get();
+
+        if($users == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if(count($users) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+
+        return view('dashboard.settings.users-update', [
+            'my_user' => $my_user,
+            'user' => $users[0],
+        ]);
     }
 
     /**

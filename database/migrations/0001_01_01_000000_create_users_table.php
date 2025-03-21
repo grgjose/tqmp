@@ -29,6 +29,7 @@ return new class extends Migration
             $table->timestamp('email_verification_sent')->nullable();
             $table->string('password')->nullable();
             $table->string('status')->nullable()->default('registered');
+            $table->string('remarks')->nullable();
             $table->boolean('isDeleted')->nullable()->default(false);
             $table->rememberToken();
             $table->timestamps();
