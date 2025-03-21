@@ -26,6 +26,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/about', [HomeController::class, 'about'])->name('home.about');
 Route::get('/contact', [HomeController::class, 'contact'])->name('home.contact');
 Route::get('/faqs', [HomeController::class, 'FAQs'])->name('home.faqs');
+Route::get('/userprofiles', [HomeController::class, 'userprofiles'])->name('dashboard.userprofiles');
 
 // Product Pages
 Route::get('/services', [ServicesController::class, 'index'])->name('services.index');
@@ -73,7 +74,6 @@ Route::get('/products-view/{id}', [ProductController::class, 'show']);
 
 Route::get('/cart', [OrderSummaryController::class, 'index']);
 
-Route::get('/userprofiles', [UserProfileController::class, 'index'])->name('dashboard.userprofiles');
 Route::get('/checkout', [CheckoutController::class, 'index']);
 Route::get('/order-summary', [OrderSummaryController::class, 'index']);
 Route::get('/product-details', [ProductDetailsController::class, 'index'])->name('product-details');

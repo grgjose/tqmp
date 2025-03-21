@@ -15382,15 +15382,15 @@ html.maximized-card {
   justify-content: center;
   align-items: center;
   padding: 10px 0;
-  width: 100%;
+  width: 150px;
   border-radius: 8px 8px 8px 8px;
   text-decoration: none;
   opacity: 1;
   /* Ensure the button is fully visible initially */
   transform: translateY(0);
   /* Set the starting position */
-
   /* Smooth transition */
+  font-size: smaller;
 }
 
 .card-button:hover {
