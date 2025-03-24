@@ -780,46 +780,103 @@
                     <b>Glass doors with a specific handle to a specific door to be using.</b>
                 </p>
 
-                <div class="row mt-4 g-3">
-                    <div class="col-md-3">
-                        <div class="card" style="height: 450px;">
-                            <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}" alt="THORE C-TYPE HANDLE" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                            <div class="card-body">
-                                <h6 class="card-title text-start">THORE C-TYPE HANDLE</h6>
-                                <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                <div class="d-flex justify-content-between">
-                                    <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                <div id="carouselExampleHandles" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row mt-4 g-3">
+                                <div class="col-md-3">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}" alt="THORE C-TYPE HANDLE" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">THORE C-TYPE HANDLE</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/archi-hardware/handles/THORE H-TYPE HANDLE.jpg') }}" alt="THORE H-TYPE HANDLE" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">THORE H-TYPE HANDLE</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}" alt="THORE TOWEL HANDLE" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">THORE TOWEL HANDLE</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row mt-4 g-3">
+                                <div class="col-md-3">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}" alt="THORE C-TYPE HANDLE" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">THORE C-TYPE HANDLE</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/archi-hardware/handles/THORE H-TYPE HANDLE.jpg') }}" alt="THORE H-TYPE HANDLE" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">THORE H-TYPE HANDLE</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}" alt="THORE TOWEL HANDLE" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">THORE TOWEL HANDLE</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card" style="height: 450px;">
-                            <img src="{{ asset('storage/archi-hardware/handles/THORE H-TYPE HANDLE.jpg') }}" alt="THORE H-TYPE HANDLE" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                            <div class="card-body">
-                                <h6 class="card-title text-start">THORE H-TYPE HANDLE</h6>
-                                <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                <div class="d-flex justify-content-between">
-                                    <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card" style="height: 450px;">
-                            <img src="{{ asset('storage/archi-hardware/handles/THORE TOWEL HANDLE.jpg') }}" alt="THORE TOWEL HANDLE" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                            <div class="card-body">
-                                <h6 class="card-title text-start">THORE TOWEL HANDLE</h6>
-                                <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                <div class="d-flex justify-content-between">
-                                    <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleHandles" data-bs-slide="prev" style="left: -180px; color: #7E1416;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class=""><i class="fa-solid fa-circle-chevron-left"></i></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleHandles" data-bs-slide="next" style="right: -180px; color: #7E1416;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class=""><i class="fa-solid fa-circle-chevron-right"></i></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -1164,33 +1221,77 @@
                 <p class="mt-3">
                     <b>Shower enclosure usually seen in swing, we also have sliding function to space value to a minimal places.</b>
                 </p>
-                <div class="row mt-4 g-3">
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 450px;">
-                            <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0102.jpg') }}" alt="THORE GSM-0102" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                            <div class="card-body">
-                                <h6 class="card-title text-start">THORE GSM-0102</h6>
-                                <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                <div class="d-flex justify-content-between">
-                                    <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                <div id="carouselExampleSlidingShower" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row mt-4 g-3">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0102.jpg') }}" alt="THORE GSM-0102" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">THORE GSM-0102</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0103.jpg') }}" alt="THORE GSM-0103" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">THORE GSM-0103</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row mt-4 g-3">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0102.jpg') }}" alt="THORE GSM-0102" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">THORE GSM-0104</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0103.jpg') }}" alt="THORE GSM-0103" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">THORE GSM-0105</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 450px;">
-                            <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0103.jpg') }}" alt="THORE GSM-0102" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                            <div class="card-body">
-                                <h6 class="card-title text-start">THORE GSM-0103</h6>
-                                <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                <div class="d-flex justify-content-between">
-                                    <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidingShower" data-bs-slide="prev" style="left: -180px; color: #7E1416;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class=""><i class="fa-solid fa-circle-chevron-left"></i></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidingShower" data-bs-slide="next" style="right: -180px; color: #7E1416;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class=""><i class="fa-solid fa-circle-chevron-right"></i></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -1203,18 +1304,51 @@
                 <p class="mt-3">
                     <b>Ladder safety begins with the selection of the proper ladder for the job includes inspection, setup, proper climbing and standing, proper use, care and storage.</b>
                 </p>
-                <div class="col-md-3 mb-4">
-                    <div class="card" style="height: 450px;">
-                        <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="A - Type Ladder" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                        <div class="card-body">
-                            <h6 class="card-title text-start">A - Type Ladder</h6>
-                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                <div id="carouselExampleLadder" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row mt-4 g-3">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="A - Type Ladder" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">A - Type Ladder</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row mt-4 g-3">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="A - Type Ladder" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">A - Type Ladder</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleLadder" data-bs-slide="prev" style="left: -180px; color: #7E1416;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class=""><i class="fa-solid fa-circle-chevron-left"></i></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleLadder" data-bs-slide="next" style="right: -180px; color: #7E1416;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class=""><i class="fa-solid fa-circle-chevron-right"></i></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -1227,18 +1361,51 @@
                 <p class="mt-3">
                     <b>Jalouplus offers style and functionality. Water penetration resistance, can be used in air conditioned area. Provides the benefits of a glass louver window but now with impenetrable security.</b>
                 </p>
-                <div class="col-md-3 mb-4">
-                    <div class="card" style="height: 450px;">
-                        <img src="{{ asset('storage/jalouplus/jalouplus.jpg') }}" alt="Jalouplus" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                        <div class="card-body">
-                            <h6 class="card-title text-start">Jalouplus</h6>
-                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                <div id="carouselExampleJalouplus" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row mt-4 g-3">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/jalouplus/jalouplus.jpg') }}" alt="Jalouplus" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">Jalouplus</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row mt-4 g-3">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 450px;">
+                                        <img src="{{ asset('storage/jalouplus/jalouplus.jpg') }}" alt="Jalouplus" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-start">Jalouplus</h6>
+                                            <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleJalouplus" data-bs-slide="prev" style="left: -180px; color: #7E1416;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class=""><i class="fa-solid fa-circle-chevron-left"></i></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleJalouplus" data-bs-slide="next" style="right: -180px; color: #7E1416;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class=""><i class="fa-solid fa-circle-chevron-right"></i></span>
+                    </button>
                 </div>
             </div>
         </div>
