@@ -43,13 +43,23 @@ function userDelete(id){
     $('#view').load('/users-delete/'+id);
 }
 
-// $(document).ready(function() {
-//     $('#userChangeProfilePic').on('change', function() {
-//         if (this.files.length > 0) {
-//             $('#uploadForm').submit();
-//         }
-//     });
-// });
+// Products
+function productShow(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/product-view/'+id);
+}
+
+function productHide(id){
+
+}
+
+function productUpdate(id){
+
+}
+
+function productDelete(id){
+
+}
 
 
 // Active Navbar UI

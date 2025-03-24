@@ -222,7 +222,6 @@
             <div class="container text-center">
 
                 <h2 class="fw-bold">Patch Fittings</h2>
-
                 <p class="mt-3">
                     <b>Patch Fittings is a accessories to make a frameless door that is usually seen at all facilities like malls.</b>
                 </p>

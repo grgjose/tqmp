@@ -21,7 +21,9 @@ class ProductController extends Controller
         if($my_user->usertype > 1) return redirect('/')->with('error_msg', 'Invalid Access!');
 
         $products = DB::table('products')
-        ->where('isDeleted', '=', false)->get();
+        ->join('product_categories', 'products.category_id', '=', 'product_categories.id')
+        ->select('products.*', 'product_categories.category as category')
+        ->where('products.isDeleted', '=', false)->get();
 
         $productImages = DB::table('product_images')->get();
 

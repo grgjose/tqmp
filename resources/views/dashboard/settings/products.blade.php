@@ -33,6 +33,7 @@
                     <thead>
                         <tr>
                             <th style="width: 15%">Brand</th>
+                            <th style="width: 15%">Category</th>
                             <th style="width: 10%">Display Name</th>
                             <th style="width: 10%">Production Name</th>
                             <th style="width: 20%">Price</th>
@@ -43,6 +44,7 @@
                         @foreach($products as $product)
                             <tr>
                                 <td>{{ $product->brand }}</td>
+                                <td>{{ $product->category }}</td>
                                 <td>{{ $product->display_name }}</td>
                                 <td>{{ $product->name }}</td>
                                 <td>{{ $product->price }}</td>
@@ -61,9 +63,8 @@
                                 <td>
                                     <div class="btn-group-sm">
                                         <button class="btn btn-warning btn-sm" onclick="showDetails({{ $product->id }})"> <i class="fa-solid fa-eye"></i> View</button>
-                                        <button class="btn btn-info btn-sm" onclick="downloadFile({{ $product->id }})"> <i class="fa-solid fa-file-arrow-down"></i> Download File</button>
-                                        <button class="btn btn-success btn-sm" onclick="approve({{ $product->id }})"> <i class="fa-solid fa-circle-check"></i> Approve</button>
-                                        <button class="btn btn-danger btn-sm" onclick="reject({{ $product->id }})"> <i class="fa-solid fa-thumbs-down"></i> Reject</button>
+                                        <button class="btn btn-success btn-sm" onclick="approve({{ $product->id }})"> <i class="fa-solid fa-pen"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm" onclick="reject({{ $product->id }})"> <i class="fa-solid fa-trash"></i> Delete</button>
                                         {{-- <button class="btn btn-success btn-sm">Add</button>
                                         <button class="btn btn-warning btn-sm">Edit</button>
                                         <button class="btn btn-danger btn-sm">Delete</button>
