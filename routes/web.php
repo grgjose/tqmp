@@ -71,9 +71,8 @@ Route::post('/users-changepic/{id}', [UserController::class, 'changepic']);
 // Dashboard - Settings - Products
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products-view/{id}', [ProductController::class, 'show']);
-
-
-Route::get('/cart', [OrderSummaryController::class, 'index']);
+Route::get('/addtocart/{id}', [ProductController::class, 'addtocart']);
+Route::get('/cart', [ProductController::class, 'cart']);
 
 Route::get('/checkout', [CheckoutController::class, 'index']);
 Route::get('/order-summary', [OrderSummaryController::class, 'index']);

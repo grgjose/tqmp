@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class GenTradeController extends Controller
 {
@@ -15,8 +16,26 @@ class GenTradeController extends Controller
         $auth = auth();
         $my_user = $auth->user();
 
+        $products = DB::table('products')
+        ->join('product_categories', 'products.category_id', '=', 'product_categories.id')
+        ->select('products.*', 'product_categories.category as category')
+        ->where('products.isDeleted', '=', false)->get();
+
+        $productCategories = DB::table('product_categories')
+        ->leftJoin('products', 'products.category_id', '=', 'product_categories.id')
+        ->select('product_categories.id', 'product_categories.description', 'product_categories.category', DB::raw('COUNT(products.id) as product_count'))
+        ->groupBy('product_categories.id', 'product_categories.description', 'product_categories.category')
+        ->get();
+
+        $productImages = DB::table('product_images')->get();
+
+
+
         return view('gentrade.index', [
             'my_user' => $my_user,
+            'products' => $products,
+            'productCategories' => $productCategories,
+            'productImages' => $productImages,
         ]);
     }
 

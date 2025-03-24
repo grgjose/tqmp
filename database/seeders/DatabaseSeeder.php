@@ -219,21 +219,6 @@ class DatabaseSeeder extends Seeder
             ]);
 
             Product::factory()->create([
-                'name' => 'GSM-0038',
-                'display_name' => 'Thore Door Closer Model GSM-0038',
-                'description' => 'Thore Door Closer Model GSM-0038',
-                'category_id' => 1,
-                'brand' => 'Thore',
-                'status' => 'active',
-                'price' => '1500.00',
-            ]);
-
-            ProductImage::factory()->create([
-                'product_id' => 3,
-                'filename' => 'gsm-0038.jpg',
-            ]);
-
-            Product::factory()->create([
                 'name' => 'ABLOY-DC420',
                 'display_name' => 'Abloy Door Closer Model DC420',
                 'description' => 'Abloy Door Closer Model DC420',
