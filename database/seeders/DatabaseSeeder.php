@@ -173,6 +173,7 @@ class DatabaseSeeder extends Seeder
 
         //
 
+            // Door Closers and Floor Hinges
             Product::factory()->create([
                 'name' => 'GSM-0060',
                 'display_name' => 'Thore Door Closer Model GSM-0060',
@@ -248,7 +249,6 @@ class DatabaseSeeder extends Seeder
                 'filename' => 'abloy dc477.jpg',
             ]);
 
-            
             Product::factory()->create([
                 'name' => 'YFS-923',
                 'display_name' => 'Yale Door Closer Model YFS-923',

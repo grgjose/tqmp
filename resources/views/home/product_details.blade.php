@@ -33,25 +33,46 @@
     @include('plus.navbar')
     <!-- End of Header -->
 
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+    </style>
+
     <div class="container py-5">
         <div class="row">
             <!-- Left Column: Main Image and Thumbnails -->
             <div class="col-md-6">
                 <!-- Main Image -->
-                <img src="https://images.pexels.com/photos/12515071/pexels-photo-12515071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Main Product" class="mb-3 rounded" style="height: 400px; width: 100%;">
+                @foreach($productImages as $image)
+                    @if($image->product_id == $product->id)
+                        <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Main Product" class="mb-3 rounded" style="height: 400px; width: 60%;">
+                        @continue
+                    @endif
+                @endforeach
+                
                 <!-- Thumbnails -->
                 <div class="d-flex justify-content-between">
-                    <img src="https://images.pexels.com/photos/12515071/pexels-photo-12515071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 1" class="thumbnail">
-                    <img src="https://images.pexels.com/photos/12515071/pexels-photo-12515071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 2" class="thumbnail">
-                    <img src="https://images.pexels.com/photos/12515071/pexels-photo-12515071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3" class="thumbnail">
-                    <img src="https://images.pexels.com/photos/12515071/pexels-photo-12515071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 4" class="thumbnail">
+                    @foreach($productImages as $image)
+                        @if($image->product_id == $product->id)
+                            <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Thumbnail" class="thumbnail">
+                        @endif
+                    @endforeach
                 </div>
             </div>
 
             <!-- Right Column: Product Details -->
-            <form action="/addtocart" method="POST">
-                @csrf
-                <div class="col-md-6">
+            <div class="col-md-6">
+                <form action="/add-to-cart/{{ $product->id }}" method="POST">
+                    @csrf
                     <h2 class="fw-bold">{{ $product->display_name }}</h2>
                     <!-- Rating and Stock -->
                     <div class="d-flex align-items-center mb-2">
@@ -76,7 +97,7 @@
                         </div>
                     </div>
                     <!-- Add to Cart Button -->
-                    <button type="submit" class="card-button btn btn-danger btn-lg w-100 mb-4">Add to Cart</button>
+                    <button class="card-button btn btn-danger btn-lg w-100 mb-4">Add to Cart</button>
                     <!-- Product Details -->
                     <h5>Product Details</h5>
                     <table class="table table-borderless">
@@ -102,8 +123,8 @@
                         <button type="button" class="btn btn-danger">Medium</button>
                         <button type="button" class="btn btn-outline-danger">Large</button>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </body>

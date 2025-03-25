@@ -32,7 +32,6 @@ class UserController extends Controller
         ->where('users.isDeleted', '=', false)
         ->get();
 
-
         return view('dashboard.index', [
             'my_user' => $my_user,
             'users' => $users,

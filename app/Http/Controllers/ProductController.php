@@ -37,25 +37,47 @@ class ProductController extends Controller
         ->with('main_content', 'dashboard.settings.products');
     }
 
-    public function addtocart($id)
+    public function before_add_to_cart($id)
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
         $my_user = $auth->user();
 
         $product = Product::Find($id);
-        
+        $productImages = DB::table('product_images')->get();
+
+        return view("home.product_details", [
+            'my_user' => $my_user,
+            'product' => $product,
+            'productImages' => $productImages,
+       ]);
+
+    }
+
+    public function after_add_to_cart($id, Request $request)
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        $validated = $request->validate([
+            'quantity' => ['required', 'min:1'],
+            'price' => ['required', 'min:1'],
+        ]);
+
+        $product = Product::Find($id);
+
         $cart = new Cart();
         $cart->user_id = $my_user->id;
         $cart->product_id = $product->id;
         $cart->product_category_id = $product->category_id;
-        $cart->quantity = 1;
-        $cart->price = $product->price;
+        $cart->quantity = $validated['quantity'];
+        $cart->price = $validated['price'];
         $cart->remarks = "";
 
         $cart->save();
 
-        return redirect('/');
+        return redirect('/cart')->with('success_msg', 'Redirected to Cart');
 
     }
 

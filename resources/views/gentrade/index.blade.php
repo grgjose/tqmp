@@ -105,7 +105,7 @@
                                             @endif
                                             <div class="d-flex justify-content-between">
                                                 @if($my_user != null)
-                                                <a href="/addtocart/{{ $product->id }}" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
                                                 @else
                                                 <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
                                                 @endif

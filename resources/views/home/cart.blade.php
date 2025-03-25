@@ -38,47 +38,55 @@
             <!-- Order Details Section -->
             <div class="col-lg-8 mb-4">
                 <div class="border p-3">
-                    <h5 class="fw-bold">Order #15478</h5>
+                    <h5 class="fw-bold">Order #{{ $my_user->id.date('ymdHis') }}</h5>
                     <p class="text-muted">21st March 2021 at 10:34 PM</p>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                                 <tr class="text-muted">
+                                    <th></th>
                                     <th>Product Details</th>
                                     <th>Quantity</th>
                                     <th>Price</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($carts as $cart)
-                                    
-                                <tr>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            @foreach($productImages as $image)
-                                                @if($image->product_id == $cart->product_id)
-                                                    <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Product" class="product-image me-3">
-                                                    @continue
-                                                @endif
-                                            @endforeach
-                                            
-                                            @foreach($products as $product)
-                                                @if($product->id == $cart->product_id)
-                                                <div>
-                                                    <p class="mb-0 fw-bold">{{ $product->display_name }}</p>
-                                                    <small class="text-muted">Color: White | Size: Medium</small>
-                                                    <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $product->price }}</small>
-                                                </div>
-                                                    @continue
-                                                @endif
-                                            @endforeach
-                                        </div>
-                                    </td>
-                                    <td class="text-center" style="width: 60px;">
-                                        <input type="number" class="form-control form-control-sm text-center" value="1" min="1">
-                                    </td>
-                                    <td>₱{{ $product->price; }}</td>
-                                </tr>
+                                @if(count($carts) == 0)
+                                    <tr>
+                                        <td colspan="4">No Products Selected</td>
+                                    </tr>
+                                @endif
+                                @foreach($carts as $cart) 
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="form-check-input">
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                @foreach($productImages as $image)
+                                                    @if($image->product_id == $cart->product_id)
+                                                        <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Product" class="product-image me-3">
+                                                        @continue
+                                                    @endif
+                                                @endforeach
+                                                
+                                                @foreach($products as $product)
+                                                    @if($product->id == $cart->product_id)
+                                                    <div>
+                                                        <p class="mb-0 fw-bold">{{ $product->display_name }}</p>
+                                                        <small class="text-muted">Color: White | Size: Medium</small>
+                                                        <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted prices">{{ $product->price }}</small>
+                                                    </div>
+                                                        @continue
+                                                    @endif
+                                                @endforeach
+                                            </div>
+                                        </td>
+                                        <td class="text-center" style="width: 60px;">
+                                            <input type="number" class="form-control form-control-sm text-center" value="1" min="1">
+                                        </td>
+                                        <td>₱{{ $product->price; }}</td>
+                                    </tr>
                                 @endforeach
                             </tbody>
                         </table>
@@ -86,21 +94,22 @@
                     <hr>
                     <div class="d-flex justify-content-between">
                         <p class="text-muted">Subtotal</p>
-                        <p>$106</p>
+                        <p>₱0.00</p>
                     </div>
                     <div class="d-flex justify-content-between">
                         <p class="text-muted">Shipping Cost (+)</p>
-                        <p>$10.85</p>
+                        <p>₱0.00</p>
                     </div>
                     <div class="d-flex justify-content-between">
                         <p class="text-muted">Discount (-)</p>
-                        <p>$9.00</p>
+                        <p>₱0.00</p>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
                         <p class="total-payable">Total Payable</p>
-                        <p class="total-payable">$107.85</p>
+                        <p class="total-payable">₱0.00</p>
                     </div>
+                    <button type="submit" class="card-button btn btn-danger w-100">Checkout</button>
                 </div>
             </div>
 
@@ -109,39 +118,33 @@
                 <div class="border p-3">
                     <h5 class="fw-bold">Customer's Details</h5>
                     <div class="d-flex align-items-center mb-3">
-                        <img src="https://via.placeholder.com/60" alt="Customer" class="rounded-circle me-3" width="60">
+                        <img src="{{ asset('storage/user-pics/'.$my_user->user_pic) }}" alt="Customer" class="rounded-circle me-3" width="60">
                         <div>
-                            <p class="mb-0 fw-bold">Willium Deno</p>
+                            <p class="mb-0 fw-bold">{{ $my_user->fname . ' ' . $my_user->lname }}</p>
                             <small class="text-muted">10 Previous Orders</small>
                         </div>
                     </div>
                     <form>
                         <div class="mb-3">
                             <label for="shippingAddress" class="form-label"><strong>Shipping Address:</strong></label>
-                            <input type="text" class="form-control" id="shippingAddress" value="Quezon City, Philippines">
+                            <input type="text" class="form-control" id="shippingAddress" value="{{ $my_user->address }}">
                         </div>
                         <div class="mb-3">
                             <label for="billingAddress" class="form-label"><strong>Billing Address:</strong></label>
-                            <input type="text" class="form-control" id="billingAddress" value="Quezon City, Philippines">
+                            <input type="text" class="form-control" id="billingAddress" value="{{ $my_user->address }}">
                         </div>
                         <div class="mb-3">
                             <label for="emailAddress" class="form-label"><strong>Email Address:</strong></label>
-                            <input type="email" class="form-control" id="emailAddress" value="contact@yourmail.com">
+                            <input type="email" class="form-control" id="emailAddress" value="{{ $my_user->email }}">
                         </div>
                         <button type="submit" class="card-button btn btn-danger w-100">Save Details</button>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <!-- Delivery Details Section -->
-            <div class="col-lg-8 mb-4">
+                <br>
                 <h5 class="fw-bold">Delivery Details</h5>
                 <div class="row pt-3">
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-12 mb-4">
                         <div class="border rounded p-3 w-100 d-flex align-items-center">
                             <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option1">
                             <img src="https://th.bing.com/th/id/OIP.Dl-WiroGReI7sZ13Bp5U1gHaHa?rs=1&pid=ImgDetMain" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
@@ -177,10 +180,8 @@
                     </div> 
                     --}}
                 </div>
-            </div>
 
-            <!-- Additional Service Section -->
-            <div class="col-lg-4">
+                <br>
                 <h5 class="fw-bold">Additional Service</h5>
                 <div class="row p-3">
                     <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
@@ -211,9 +212,12 @@
                         </div>
                     </div>
                 </div>
+
             </div>
+            
         </div>
     </div>
+
 </body>
 <!--end::Body-->
 

@@ -12,7 +12,7 @@ class UserProfileController extends Controller
         $auth = auth();
         $my_user = $auth->user();
 
-        return view('dashboard.userprofiles', [
+        return view('home.userprofiles', [
             'my_user' => $my_user,
         ]);
     }

@@ -22,40 +22,40 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductDetailsController;
 
 // Home Pages
-Route::get('/', [HomeController::class, 'index'])->name('home.index');
-Route::get('/about', [HomeController::class, 'about'])->name('home.about');
-Route::get('/contact', [HomeController::class, 'contact'])->name('home.contact');
-Route::get('/faqs', [HomeController::class, 'FAQs'])->name('home.faqs');
-Route::get('/userprofiles', [HomeController::class, 'userprofiles'])->name('dashboard.userprofiles');
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/about', [HomeController::class, 'about']);
+Route::get('/contact', [HomeController::class, 'contact']);
+Route::get('/faqs', [HomeController::class, 'FAQs']);
+Route::get('/userprofiles', [HomeController::class, 'userprofiles']);
 
 // Product Pages
-Route::get('/services', [ServicesController::class, 'index'])->name('services.index');
-Route::get('/bulletproofing', [BulletProofingController::class, 'index'])->name('bulletproofing.index');
-Route::get('/glassmanufacturing', [GlassManufacturingController::class, 'index'])->name('glass.manufacturing.index');
-Route::get('/aluminummanufacturing', [AluminumManufacturingController::class, 'index'])->name('aluminum.manufacturing.index');
-Route::get('/glassprocessing', [GlassProcessingController::class, 'index'])->name('glass.processing.index');
-Route::get('/gentrade', [GenTradeController::class, 'index'])->name('gentrade.index');
-Route::get('/catalog', [CatalogController::class, 'show'])->name('gentrade.catalog');
+Route::get('/services', [ServicesController::class, 'index']);
+Route::get('/bulletproofing', [BulletProofingController::class, 'index']);
+Route::get('/glassmanufacturing', [GlassManufacturingController::class, 'index']);
+Route::get('/aluminummanufacturing', [AluminumManufacturingController::class, 'index']);
+Route::get('/glassprocessing', [GlassProcessingController::class, 'index']);
+Route::get('/gentrade', [GenTradeController::class, 'index']);
+Route::get('/catalog', [CatalogController::class, 'show']);
 
 // Product Pages
-Route::get('/login', [UserController::class, 'login'])->name('home.login');
-Route::post('/login', [UserController::class, 'logon'])->name('home.signin');
-Route::get('/logout', [UserController::class, 'logout'])->name('home.logout');
+Route::get('/login', [UserController::class, 'login']);
+Route::post('/login', [UserController::class, 'logon']);
+Route::get('/logout', [UserController::class, 'logout']);
 
 // Register Page
-Route::get('/register', [UserController::class, 'register'])->name('home.register');
-Route::post('/register', [UserController::class, 'signup'])->name('home.signup');
+Route::get('/register', [UserController::class, 'register']);
+Route::post('/register', [UserController::class, 'signup']);
 Route::get('/confirmation/{token}', [UserController::class, 'confirmation']);
 
 // Dashboard Pages
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
-Route::get('/consumer', [ConsumerController::class, 'index'])->name('dashboard.consumer');
-Route::get('/inventory', [InventoryController::class, 'index'])->name('dashboard.inventory');
-Route::get('/order', [OrderController::class, 'index'])->name('dashboard.order');
+Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/consumer', [ConsumerController::class, 'index']);
+Route::get('/inventory', [InventoryController::class, 'index']);
+Route::get('/order', [OrderController::class, 'index']);
 
 // Dashboard - Modules - Approvals
-Route::get('/approvals', [UserController::class, 'approvals'])->name('dashboard.approvals');
-Route::get('/approvals-view/{id}', [UserController::class, 'approvals_show'])->name('dashboard.approvals-view');
+Route::get('/approvals', [UserController::class, 'approvals']);
+Route::get('/approvals-view/{id}', [UserController::class, 'approvals_show']);
 Route::get('/approvals-download/{id}', [UserController::class, 'approvals_download']);
 Route::get('/approvals-approve/{id}', [UserController::class, 'approvals_approve']);
 Route::get('/approvals-reject/{id}', [UserController::class, 'approvals_reject']);
@@ -71,9 +71,11 @@ Route::post('/users-changepic/{id}', [UserController::class, 'changepic']);
 // Dashboard - Settings - Products
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products-view/{id}', [ProductController::class, 'show']);
-Route::get('/addtocart/{id}', [ProductController::class, 'addtocart']);
+Route::get('/add-to-cart/{id}', [ProductController::class, 'before_add_to_cart']);
+Route::post('/add-to-cart/{id}', [ProductController::class, 'after_add_to_cart']);
 Route::get('/cart', [ProductController::class, 'cart']);
+Route::get('/product-details', [ProductDetailsController::class, 'index']);
 
 Route::get('/checkout', [CheckoutController::class, 'index']);
 Route::get('/order-summary', [OrderSummaryController::class, 'index']);
-Route::get('/product-details', [ProductDetailsController::class, 'index'])->name('product-details');
+//Route::get('/product-details', [ProductDetailsController::class, 'index']);
