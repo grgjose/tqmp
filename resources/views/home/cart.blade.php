@@ -39,7 +39,7 @@
             <div class="col-lg-8 mb-4">
                 <div class="border p-3">
                     <h5 class="fw-bold">Order #{{ $my_user->id.date('ymdHis') }}</h5>
-                    <p class="text-muted">21st March 2021 at 10:34 PM</p>
+                    <p class="text-muted">{{ date('jS F Y', strtotime('now')) }} at {{ date('h:i A') }}</p>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
