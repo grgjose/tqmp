@@ -52,6 +52,7 @@ Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/consumer', [ConsumerController::class, 'index']);
 Route::get('/inventory', [InventoryController::class, 'index']);
 Route::get('/order', [OrderController::class, 'index']);
+Route::get('/ticketing', [OrderController::class, 'ticketing']);
 
 // Dashboard - Modules - Approvals
 Route::get('/approvals', [UserController::class, 'approvals']);
@@ -78,6 +79,8 @@ Route::post('/add-to-cart/{id}', [ProductController::class, 'after_add_to_cart']
 Route::get('/cart', [ProductController::class, 'cart']);
 Route::get('/product-details', [ProductDetailsController::class, 'index']);
 
+Route::get('/get_quotation', [UserProfileController::class, 'get_quotation']);
+Route::get('/process_order', [UserProfileController::class, 'process_order']);
 Route::get('/checkout', [CheckoutController::class, 'index']);
 Route::get('/order-summary', [OrderSummaryController::class, 'index']);
 //Route::get('/product-details', [ProductDetailsController::class, 'index']);

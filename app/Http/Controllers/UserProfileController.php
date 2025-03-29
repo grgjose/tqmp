@@ -16,4 +16,26 @@ class UserProfileController extends Controller
             'my_user' => $my_user,
         ]);
     }
+
+    public function get_quotation()
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('glass.processing.get_quotation', [
+            'my_user' => $my_user,
+        ]);
+    }
+
+    public function process_order()
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('home.process_order', [
+            'my_user' => $my_user,
+        ]);
+    }
 }
