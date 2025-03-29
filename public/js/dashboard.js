@@ -19,7 +19,7 @@ function approve(id){
 }
 
 function reject(id){
-    window.location.href = "/approvals-reject/" + id;
+    $('#rejectForm').attr('action', '/approvals-reject/'+id);
 }
 
 // Users
@@ -33,14 +33,18 @@ function userHide(id){
     $('#view').html('');
 }
 
+function userCreate(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/users-create/');
+}
+
 function userUpdate(id){
     $('.tbl').attr('style', 'display: none;');
     $('#view').load('/users-update/'+id);
 }
 
 function userDelete(id){
-    $('.tbl').attr('style', 'display: none;');
-    $('#view').load('/users-delete/'+id);
+    $('#deleteForm').attr('action', '/users-destroy/'+id);
 }
 
 // Products

@@ -58,14 +58,16 @@ Route::get('/approvals', [UserController::class, 'approvals']);
 Route::get('/approvals-view/{id}', [UserController::class, 'approvals_show']);
 Route::get('/approvals-download/{id}', [UserController::class, 'approvals_download']);
 Route::get('/approvals-approve/{id}', [UserController::class, 'approvals_approve']);
-Route::get('/approvals-reject/{id}', [UserController::class, 'approvals_reject']);
+Route::post('/approvals-reject/{id}', [UserController::class, 'approvals_reject']);
 
 // Dashboard - Settings - Users
 Route::get('/users', [UserController::class, 'index']);
 Route::get('/users-view/{id}', [UserController::class, 'show']);
+Route::get('/users-create', [UserController::class, 'create']);
+Route::post('/users-store', [UserController::class, 'store']);
 Route::get('/users-update/{id}', [UserController::class, 'edit']);
 Route::post('/users-update/{id}', [UserController::class, 'update']);
-Route::post('/users-delete/{id}', [UserController::class, 'destroy']);
+Route::post('/users-destroy/{id}', [UserController::class, 'destroy']);
 Route::post('/users-changepic/{id}', [UserController::class, 'changepic']);
 
 // Dashboard - Settings - Products

@@ -66,7 +66,7 @@
                                         <button class="btn btn-warning btn-sm" onclick="showDetails({{ $user->id }})"> <i class="fa-solid fa-eye"></i> View</button>
                                         <button class="btn btn-info btn-sm" onclick="downloadFile({{ $user->id }})"> <i class="fa-solid fa-file-arrow-down"></i> Download File</button>
                                         <button class="btn btn-success btn-sm" onclick="approve({{ $user->id }})"> <i class="fa-solid fa-circle-check"></i> Approve</button>
-                                        <button class="btn btn-danger btn-sm" onclick="reject({{ $user->id }})"> <i class="fa-solid fa-thumbs-down"></i> Reject</button>
+                                        <button class="btn btn-danger btn-sm" onclick="reject({{ $user->id }})" data-bs-toggle="modal" data-bs-target="#rejectModal"> <i class="fa-solid fa-thumbs-down"></i> Reject</button>
                                         {{-- <button class="btn btn-success btn-sm">Add</button>
                                         <button class="btn btn-warning btn-sm">Edit</button>
                                         <button class="btn btn-danger btn-sm">Delete</button>
@@ -84,6 +84,34 @@
         </div>
 
     </div>
+
+    <div class="modal fade" id="rejectModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title border-0 text-white" id="modalLabel">Reject User Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="rejectForm" action="/approvals-reject/" method="POST">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="reason">Reason</label>
+                                {{-- <input type="textarea" class="form-control" name="reason" id="reason"> --}}
+                                <textarea cols="10" rows="5" class="form-control" style="resize: none;" id="reason" name="reason"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger">Reject</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!--end::App Content-->
 </main>
 <!--end::App Main-->

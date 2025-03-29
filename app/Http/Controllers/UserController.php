@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\RegistrationMail;
+use App\Mail\UserCreationMail;
 use DateTime;
 
 
@@ -215,7 +216,19 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $usertypes = DB::table('usertypes')->get();
+
+        return view('dashboard.settings.users-create', [
+            'my_user' => $my_user,
+            'usertypes' => $usertypes,
+        ]);
     }
 
     /**
@@ -223,7 +236,60 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       /** @var \Illuminate\Auth\SessionGuard $auth */
+       $auth = auth();
+       $my_user = $auth->user();
+       
+       $validated = $request->validate([
+           'fname' => ['required', 'min:3'],
+           'mname' => ['nullable'],
+           'lname' => ['required'],
+           'ext' => ['nullable'],
+           'usertype' => ['required'],
+           'email' => ['required'],
+           'birthdate' => ['required'],
+           'contact_num' => ['required'],
+           'upload_file' => ['nullable', 'file', 'mimes:jpg,jpeg,png', 'max:4096'],
+       ]);
+
+       // Handle file upload
+       if ($request->hasFile('upload_file')) {
+           $file = $request->file('upload_file');
+           $filename = time() . '_' . $file->getClientOriginalName();
+           $file->storeAs('user-pics', $filename, 'public');
+       } else {
+           $filename = "default.png"; 
+       }
+
+       $password = $this->generatePassword();
+
+       $user = new User();
+
+       $user->fname = $validated['fname'];
+       $user->mname = $validated['mname'];
+       $user->lname = $validated['lname'];
+       $user->email = $validated['email'];
+       $user->usertype = $validated['usertype'];
+       $user->birthdate = $validated['birthdate'];
+       $user->contact_num = $validated['contact_num'];
+       $user->email_verification_token = $this->generateGUID();
+       $user->email_verification_sent = date("Y-m-d H:i:s");
+       $user->password = $password;
+       $user->upload_file = $filename;
+
+       $user->save();
+
+       $data = [
+           'name' => $validated['fname'].' '.$validated['lname'],
+           'message' => '',
+           'password' => $password,
+           'email_token' => $user->email_verification_token
+       ];
+   
+       Mail::to($validated['email'])->send(new UserCreationMail($data));
+
+       return redirect('/users')->with('success_msg', 'Please tell the User to check their Email!');
+
     }
 
     /**
@@ -359,7 +425,7 @@ class UserController extends Controller
     /**
      * Rejects a registered user (Customer)
      */
-    public function approvals_reject($id)
+    public function approvals_reject($id, Request $request)
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
@@ -379,6 +445,14 @@ class UserController extends Controller
         $user = User::find($id);
         $user->status = "rejected";
         $user->save();
+
+        $data = [
+            'name' => $user->fname.' '.$user->lname,
+            'message' => 'Hi! Your user is rejected due to',
+            'email_token' => $user->email_verification_token
+        ];
+    
+        Mail::to($user->email)->send(new RegistrationMail($data));
 
         return redirect('/approvals')->with('success_msg', $user->email.' is now a Rejected Customer!');
     }
@@ -490,7 +564,11 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $user = User::find($id);
+        $user->isDeleted = true;
+        $user->save();
+
+        return redirect('/users')->with('success_msg', 'User Successfully Deleted');
     }
 
     /**
@@ -510,6 +588,22 @@ class UserController extends Controller
             mt_rand(0, 0x3FFF) | 0x8000, // 8XXX, 9XXX, AXXX, or BXXX - Variant 1 UUID
             mt_rand(0, 0xFFFF), mt_rand(0, 0xFFFF), mt_rand(0, 0xFFFF)
         );
+    }
+
+    /**
+     * Generates a Random Password
+     */
+    public function generatePassword($length = 8) 
+    {
+        $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        $charactersLength = strlen($characters);
+        $randomPassword = '';
+    
+        for ($i = 0; $i < $length; $i++) {
+            $randomPassword .= $characters[random_int(0, $charactersLength - 1)];
+        }
+    
+        return $randomPassword;
     }
 
 }
