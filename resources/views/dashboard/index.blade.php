@@ -204,6 +204,7 @@
                                         <p><i class="fa-solid fa-user-check" style="margin-right: 10px;"></i>Approvals</p>
                                     </a>
                                 </li>
+                                @if($my_user->usertype == 1)
                                 <li class="nav-header">Settings</li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
@@ -229,7 +230,14 @@
                                                 <p><i class="fa-solid fa-icons" style="margin-right: 10px;"></i>Product Categories</p>
                                             </a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a href="/product-variants" class="nav-link">
+                                                <p><i class="fa-solid fa-palette" style="margin-right: 10px;"></i>Product Variants</p>
+                                            </a>
+                                        </li>
                                     </ul>
+                                </li>
+                                @endif
                                 <li class="nav-item">
                                     <a href="/logout" class="nav-link">
                                         <p><i class="fa-solid fa-arrow-right-from-bracket" style="margin-right: 10px;"></i>Logout</p>
