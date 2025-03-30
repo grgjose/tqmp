@@ -50,7 +50,7 @@
                     <div class="card-body p-0">
                         <!-- Note 1 -->
                         <div class="border-start border-primary border-4 mb-3 bg-white p-3">
-                            <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
+                            <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
                                     <div class="ms-2">
@@ -70,7 +70,7 @@
 
                         <!-- Note 2 -->
                         <div class="border-end border-danger border-4 mb-3 bg-white p-3">
-                            <div class="d-flex justify-content-between align-items-center bg-danger bg-opacity-10 p-2 mb-2 border-bottom">
+                            <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
                                     <div class="ms-2">
@@ -91,7 +91,7 @@
 
                         <!-- Note 3 -->
                         <div class="border-start border-primary border-4 mb-3 bg-white p-3">
-                            <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
+                            <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
                                     <div class="ms-2">
