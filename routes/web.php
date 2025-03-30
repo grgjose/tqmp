@@ -79,6 +79,7 @@ Route::post('/add-to-cart/{id}', [ProductController::class, 'after_add_to_cart']
 Route::get('/cart', [ProductController::class, 'cart']);
 Route::get('/product-details', [ProductDetailsController::class, 'index']);
 
+Route::get('/messages', [UserProfileController::class, 'messages']);
 Route::get('/get_quotation', [UserProfileController::class, 'get_quotation']);
 Route::get('/process_order', [UserProfileController::class, 'process_order']);
 Route::get('/checkout', [CheckoutController::class, 'index']);

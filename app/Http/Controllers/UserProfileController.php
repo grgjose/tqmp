@@ -38,4 +38,15 @@ class UserProfileController extends Controller
             'my_user' => $my_user,
         ]);
     }
+
+    public function messages()
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('dashboard.messages', [
+            'my_user' => $my_user,
+        ]);
+    }
 }
