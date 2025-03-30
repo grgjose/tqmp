@@ -23,17 +23,18 @@ function reject(id){
 }
 
 // Users
+
 function userShow(id){
     $('.tbl').attr('style', 'display: none;');
     $('#view').load('/users-view/'+id);
 }
 
-function userHide(id){
+function userHide(){
     $('.tbl').removeAttr('style');
     $('#view').html('');
 }
 
-function userCreate(id){
+function userCreate(){
     $('.tbl').attr('style', 'display: none;');
     $('#view').load('/users-create/');
 }
@@ -53,16 +54,23 @@ function productShow(id){
     $('#view').load('/product-view/'+id);
 }
 
-function productHide(id){
+function productHide(){
+    $('.tbl').removeAttr('style');
+    $('#view').html('');
+}
 
+function productCreate(){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/product-create/');
 }
 
 function productUpdate(id){
-
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/product-update/'+id);
 }
 
 function productDelete(id){
-
+    $('#deleteForm').attr('action', '/product-destroy/'+id);
 }
 
 

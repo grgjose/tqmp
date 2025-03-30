@@ -25,8 +25,11 @@
     <div class="app-content">
 
         <div class="card tbl">
-            <div class="card-header">
+            <div class="card-header d-flex justify-content-between align-items-center">
                 <h4 class="card-title">List of Products</h4>
+                <div class="ms-auto">
+                    <button class="btn btn-success px-4" onclick="productCreate()"><i class="fa-solid fa-cart-plus"></i> &nbsp; Add Product</button>
+                </div>
             </div>
             <div class="card-body">
                 <table id="tbl_approvals" class="table is-striped" style="width:100%; text-align: left;">

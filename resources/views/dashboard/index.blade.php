@@ -195,6 +195,11 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
+                                    <a href="/quotation" class="nav-link">
+                                        <p><i class="fa-solid fa-pen-ruler" style="margin-right: 10px;"></i>Quotations</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a href="/consumer" class="nav-link">
                                         <p><i class="fa-solid fa-users" style="margin-right: 10px;"></i>Consumers</p>
                                     </a>
@@ -233,6 +238,11 @@
                                         <li class="nav-item">
                                             <a href="/product-variants" class="nav-link">
                                                 <p><i class="fa-solid fa-palette" style="margin-right: 10px;"></i>Product Variants</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/catalogue" class="nav-link">
+                                                <p><i class="fa-solid fa-book-open" style="margin-right: 10px;"></i>Catalogue</p>
                                             </a>
                                         </li>
                                     </ul>
