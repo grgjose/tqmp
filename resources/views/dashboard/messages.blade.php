@@ -430,7 +430,7 @@
                             if ($('#privateNote').is(':checked')) {
                                 editor.next('.note-editor').css('border-left', '4px solid #dc3545');
                             } else {
-                                editor.next('.note-editor').css('border-left', '4px solid #0d6efd');
+                                editor.next('.note-editor').css('border-right', '4px solid #0d6efd');
                             }
                         }
                     }
