@@ -18,13 +18,13 @@ class ProductController extends Controller
         $auth = auth();
         $my_user = $auth->user();
 
-        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
-        if($my_user->usertype > 1) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if ($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if ($my_user->usertype > 1) return redirect('/')->with('error_msg', 'Invalid Access!');
 
         $products = DB::table('products')
-        ->join('product_categories', 'products.category_id', '=', 'product_categories.id')
-        ->select('products.*', 'product_categories.category as category')
-        ->where('products.isDeleted', '=', false)->get();
+            ->join('product_categories', 'products.category_id', '=', 'product_categories.id')
+            ->select('products.*', 'product_categories.category as category')
+            ->where('products.isDeleted', '=', false)->get();
 
         $productImages = DB::table('product_images')->get();
 
@@ -33,8 +33,8 @@ class ProductController extends Controller
             'products' => $products,
             'product_images' => $productImages,
         ])
-        ->with('title', 'Products')
-        ->with('main_content', 'dashboard.settings.products');
+            ->with('title', 'Products')
+            ->with('main_content', 'dashboard.settings.products');
     }
 
     public function before_add_to_cart($id)
@@ -50,8 +50,7 @@ class ProductController extends Controller
             'my_user' => $my_user,
             'product' => $product,
             'productImages' => $productImages,
-       ]);
-
+        ]);
     }
 
     public function after_add_to_cart($id, Request $request)
@@ -78,29 +77,28 @@ class ProductController extends Controller
         $cart->save();
 
         return redirect('/cart')->with('success_msg', 'Redirected to Cart');
-
     }
 
-    public function cart()         
+    public function cart()
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
         $my_user = $auth->user();
 
-        $carts = DB::table('carts')->where('user_id' , '=', $my_user->id)->get();
+        $carts = DB::table('carts')->where('user_id', '=', $my_user->id)->get();
         $products = DB::table('products')
-        ->join('product_categories', 'products.category_id', '=', 'product_categories.id')
-        ->select('products.*', 'product_categories.category as category')
-        ->where('products.isDeleted', '=', false)->get();
+            ->join('product_categories', 'products.category_id', '=', 'product_categories.id')
+            ->select('products.*', 'product_categories.category as category')
+            ->where('products.isDeleted', '=', false)->get();
 
         $productImages = DB::table('product_images')->get();
 
 
         return view("home.cart", [
-             'my_user' => $my_user,
-             'carts' => $carts,
-             'products' => $products,
-             'productImages' => $productImages,
+            'my_user' => $my_user,
+            'carts' => $carts,
+            'products' => $products,
+            'productImages' => $productImages,
         ]);
     }
 
@@ -129,19 +127,20 @@ class ProductController extends Controller
         $auth = auth();
         $my_user = $auth->user();
 
-        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
-        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if ($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if ($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
 
         $users = DB::table('users')->where('isDeleted', '=', false)->where('id', '=', $id)->get();
 
-        if($users == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
-        if(count($users) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if ($users == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if (count($users) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
 
         return view('dashboard.settings.users-view', [
             'my_user' => $my_user,
             'user' => $users[0],
         ]);
     }
+
 
     /**
      * Show the form for editing the specified resource.

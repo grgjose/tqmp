@@ -28,4 +28,16 @@ class OrderController extends Controller
         ->with('title', 'Orders')
         ->with('main_content', 'dashboard.modules.orders');
     }
+
+    public function ticketing()
+    {
+
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view("dashboard.ticketing", [
+            'my_user' => $my_user
+        ]);
+    }
 }

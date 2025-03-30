@@ -37,13 +37,13 @@
         /* Chrome, Safari, Edge, Opera */
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+            -webkit-appearance: none;
+            margin: 0;
         }
 
         /* Firefox */
         input[type=number] {
-        -moz-appearance: textfield;
+            -moz-appearance: textfield;
         }
     </style>
 
@@ -53,18 +53,18 @@
             <div class="col-md-6">
                 <!-- Main Image -->
                 @foreach($productImages as $image)
-                    @if($image->product_id == $product->id)
-                        <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Main Product" class="mb-3 rounded" style="height: 400px; width: 60%;">
-                        @continue
-                    @endif
+                @if($image->product_id == $product->id)
+                <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Main Product" class="mb-3 rounded" style="height: 400px; width: 60%;">
+                @continue
+                @endif
                 @endforeach
-                
+
                 <!-- Thumbnails -->
                 <div class="d-flex justify-content-between">
                     @foreach($productImages as $image)
-                        @if($image->product_id == $product->id)
-                            <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Thumbnail" class="thumbnail">
-                        @endif
+                    @if($image->product_id == $product->id)
+                    <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Thumbnail" class="thumbnail">
+                    @endif
                     @endforeach
                 </div>
             </div>
@@ -96,33 +96,43 @@
                             <small class="text-muted">+12% VAT Added</small>
                         </div>
                     </div>
-                    <!-- Add to Cart Button -->
-                    <button class="card-button btn btn-danger btn-lg w-100 mb-4">Add to Cart</button>
+
                     <!-- Product Details -->
                     <h5>Product Details</h5>
-                    <table class="table table-borderless">
-                        <tbody>
-                            <tr>
-                                <th class="text-muted">Size</th>
-                                <td>Small, Medium, Large</td>
-                            </tr>
-                            <tr>
-                                <th class="text-muted">Color</th>
-                                <td>White, Black, Gray</td>
-                            </tr>
-                            <tr>
-                                <th class="text-muted">Brand</th>
-                                <td>Shirt Flex</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                    <div class="col mt-3">
+                        <label for="size" class="form-label text-muted">Size</label>
+                        <select id="size" name="size" class="form-select form-select-sm">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="col mt-3">
+                        <label for="color" class="form-label text-muted">Color</label>
+                        <select id="color" name="color" class="form-select form-select-sm">
+                            <option value="white">White</option>
+                            <option value="black">Black</option>
+                            <option value="gray">Gray</option>
+                        </select>
+                    </div>
+                    <div class="col mt-3">
+                        <label for="brand" class="form-label text-muted">Brand</label>
+                        <select id="brand" name="brand" class="form-select form-select-sm">
+                            <option value="shirt-flex">Shirt Flex</option>
+                        </select>
+                    </div>
+
                     <!-- Select Size -->
-                    <h5>Select Size</h5>
-                    <div class="btn-group" role="group" aria-label="Select Size">
+                    <!-- <h5>Select Size</h5>
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Select Size">
                         <button type="button" class="btn btn-outline-danger">Small</button>
                         <button type="button" class="btn btn-danger">Medium</button>
                         <button type="button" class="btn btn-outline-danger">Large</button>
-                    </div>
+                    </div> -->
+
+                    <!-- Add to Cart Button -->
+                    <button class="card-button btn btn-danger btn-lg w-100 mb-4 mt-3">Add to Cart</button>
                 </form>
             </div>
         </div>
