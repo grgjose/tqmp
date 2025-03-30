@@ -93,7 +93,6 @@ class ProductController extends Controller
 
         $productImages = DB::table('product_images')->get();
 
-
         return view("home.cart", [
             'my_user' => $my_user,
             'carts' => $carts,
@@ -107,7 +106,19 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $productCategories = DB::table('product_categories')->get();
+
+        return view('dashboard.settings.products-create', [
+            'my_user' => $my_user,
+            'productCategories' => $productCategories,
+        ]);
     }
 
     /**
@@ -115,7 +126,42 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       /** @var \Illuminate\Auth\SessionGuard $auth */
+       $auth = auth();
+       $my_user = $auth->user();
+       
+       $validated = $request->validate([
+           'name' => ['required', 'min:3'],
+           'display_name' => ['required'],
+           'description' => ['nullable'],
+           'category_id' => ['required'],
+           'brand' => ['nullable'],
+           'price' => ['required'],
+           'upload_file' => ['nullable', 'file', 'mimes:jpg,jpeg,png', 'max:4096'],
+       ]);
+
+       // Handle file upload
+       if ($request->hasFile('upload_file')) {
+           $file = $request->file('upload_file');
+           $filename = time() . '_' . $file->getClientOriginalName();
+           $file->storeAs('all-items', $filename, 'public');
+       } else {
+           $filename = "default.png"; 
+       }
+
+       $product = new Product();
+       $product->name = $validated['name'];
+       $product->display_name = $validated['display_name'];
+       $product->description = $validated['description'];
+       $product->category_id = $validated['category_id'];
+       $product->brand = $validated['brand'];
+       $product->price = $validated['price'];
+       $product->status = "active";
+       $product->isDeleted = false;
+       $product->save();
+
+       return redirect('/products')->with('success_msg', $product->name.' is Created!');
+
     }
 
     /**
@@ -130,14 +176,16 @@ class ProductController extends Controller
         if ($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
         if ($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
 
-        $users = DB::table('users')->where('isDeleted', '=', false)->where('id', '=', $id)->get();
+        $products = DB::table('products')->where('isDeleted', '=', false)->where('id', '=', $id)->get();
+        $productCategories = DB::table('product_categories')->get();
+        $productImages = DB::table('product_images')->get();
 
-        if ($users == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
-        if (count($users) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if ($products == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if (count($products) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
 
-        return view('dashboard.settings.users-view', [
+        return view('dashboard.settings.products-view', [
             'my_user' => $my_user,
-            'user' => $users[0],
+            'product' => $products[0],
         ]);
     }
 
@@ -145,7 +193,7 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Product $product)
+    public function edit($id)
     {
         //
     }
