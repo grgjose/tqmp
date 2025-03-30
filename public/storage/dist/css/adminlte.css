@@ -15399,3 +15399,21 @@ html.maximized-card {
   /* Slightly fade the button on hover */
   /* Move the button up slightly */
 }
+
+/* Summernotes */
+
+.note-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-toolbar .note-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.private-note-switch {
+  margin-left: auto;
+  padding-right: 10px;
+}

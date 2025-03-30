@@ -37,6 +37,9 @@
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- summernotes -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.css" rel="stylesheet">
 </head>
 
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
@@ -229,11 +232,6 @@
 
                     </ul>
                     </li>
-                    <!-- <li class="nav-item">
-                            <a href="/userprofiles" class="nav-link">
-                                <p>User Profiles</p>
-                            </a>
-                        </li> -->
                     </ul>
                 </nav>
             </div>
@@ -245,205 +243,114 @@
             <!--App Content Header-->
             <div class="app-content-header">
                 <!--Container-->
-                <!-- <style>
-                    .work-notes-container {
-                        border: 1px solid #dee2e6;
-                        border-radius: 5px;
-                        background-color: #f8f9fa;
-                    }
-
-                    .note-card {
-                        border-left: 4px solid #0d6efd;
-                        transition: all 0.2s;
-                    }
-
-                    .note-card:hover {
-                        background-color: #f1f8ff;
-                    }
-
-                    .note-header {
-                        background-color: #e9ecef;
-                        border-bottom: 1px solid #dee2e6;
-                    }
-
-                    .note-private {
-                        border-left-color: #dc3545;
-                    }
-
-                    .note-private .note-header {
-                        background-color: #f8d7da;
-                    }
-
-                    .editor-toolbar {
-                        background-color: #e9ecef;
-                        border-radius: 5px 5px 0 0;
-                        padding: 5px;
-                    }
-
-                    .editor-toolbar button {
-                        border: none;
-                        background: none;
-                        padding: 5px 8px;
-                    }
-
-                    .editor-toolbar button:hover {
-                        background-color: #d1e7ff;
-                    }
-
-                    .note-textarea {
-                        border-radius: 0 0 5px 5px;
-                        min-height: 100px;
-                    }
-
-                    .timestamp {
-                        font-size: 0.8rem;
-                        color: #6c757d;
-                    }
-
-                    .user-avatar {
-                        width: 32px;
-                        height: 32px;
-                        border-radius: 50%;
-                        background-color: #0d6efd;
-                        color: white;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-weight: bold;
-                    }
-                </style> -->
-
 
                 <div class="container-fluid py-4">
                     <div class="row">
                         <div class="mx-auto">
-                            <div class="card mb-4">
-                                <div class="card-header bg-white">
-                                    <h3 class="mb-0">Messages</h3>
-                                </div>
 
-                                <!-- Work Notes List -->
-                                <div class="card-body p-0">
-                                    <!-- Note 1 -->
-                                    <div class="border-start border-primary border-4 mb-3 bg-white p-3">
-                                        <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
-                                            <div class="d-flex align-items-center">
-                                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
-                                                <div class="ms-2">
-                                                    <strong>John Doe</strong>
-                                                    <div class="text-muted small">Today, 10:30 AM</div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <span class="badge bg-primary me-1">Public</span>
-                                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-ellipsis-v"></i></button>
+                            <div class="card-header bg-white">
+                                <h3 class="mb-0">Messages</h3>
+                            </div>
+
+                            <!-- Work Notes List -->
+                            <div class="card-body p-0">
+                                <!-- Note 1 -->
+                                <div class="border-end border-primary border-4 mb-3 bg-white p-3">
+                                    <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
+                                            <div class="ms-2">
+                                                <strong>John Doe</strong>
+                                                <div class="text-muted small">Today, 10:30 AM</div>
                                             </div>
                                         </div>
                                         <div>
-                                            <p class="mb-0">Contacted the user and walked them through the password reset process. User confirmed they can now log in successfully.</p>
+                                            <span class="badge bg-primary me-1">Public</span>
+                                            <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-ellipsis-v"></i></button>
                                         </div>
                                     </div>
-
-                                    <!-- Note 2 -->
-                                    <div class="border-start border-danger border-4 mb-3 bg-white p-3">
-                                        <div class="d-flex justify-content-between align-items-center bg-danger bg-opacity-10 p-2 mb-2 border-bottom">
-                                            <div class="d-flex align-items-center">
-                                                <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
-                                                <div class="ms-2">
-                                                    <strong>Sales Representative</strong>
-                                                    <div class="text-muted small">Yesterday, 3:45 PM</div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <span class="badge bg-danger me-1">Private</span>
-                                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-ellipsis-v"></i></button>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="mb-0">[Internal Note] This appears to be related to the ongoing authentication system issues. Escalating to L2 support.</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Note 3 -->
-                                    <div class="border-start border-primary border-4 mb-3 bg-white p-3">
-                                        <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
-                                            <div class="d-flex align-items-center">
-                                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
-                                                <div class="ms-2">
-                                                    <strong>John Doe</strong>
-                                                    <div class="text-muted small">Yesterday, 11:15 AM</div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <span class="badge bg-primary me-1">Public</span>
-                                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-ellipsis-v"></i></button>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="mb-0">User reported being unable to reset password. Verified account status is active. Reset link was sent but user reports not receiving it.</p>
-                                            <p class="mt-2 mb-0"><strong>Next Steps:</strong> Check email logs for the reset request.</p>
-                                        </div>
+                                    <div>
+                                        <p class="mb-0">Contacted the user and walked them through the password reset process. User confirmed they can now log in successfully.</p>
                                     </div>
                                 </div>
 
-                                <!-- Add New Work Note -->
-                                <div class="card-footer p-0">
-                                    <div class="bg-light p-2 d-flex justify-content-between align-items-center border-bottom">
-                                        <div>
-                                            <button type="button" class="btn btn-sm btn-light" title="Bold"><i class="fas fa-bold"></i></button>
-                                            <button type="button" class="btn btn-sm btn-light" title="Italic"><i class="fas fa-italic"></i></button>
-                                            <button type="button" class="btn btn-sm btn-light" title="Underline"><i class="fas fa-underline"></i></button>
-                                            <button type="button" class="btn btn-sm btn-light" title="Bullet List"><i class="fas fa-list-ul"></i></button>
-                                            <button type="button" class="btn btn-sm btn-light" title="Numbered List"><i class="fas fa-list-ol"></i></button>
-                                            <button type="button" class="btn btn-sm btn-light" title="Link"><i class="fas fa-link"></i></button>
-                                            <button type="button" class="btn btn-sm btn-light" title="Insert Image"><i class="fas fa-image"></i></button>
+                                <!-- Note 2 -->
+                                <div class="border-start border-danger border-4 mb-3 bg-white p-3">
+                                    <div class="d-flex justify-content-between align-items-center bg-danger bg-opacity-10 p-2 mb-2 border-bottom">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
+                                            <div class="ms-2">
+                                                <strong>Sales Representative</strong>
+                                                <div class="text-muted small">Yesterday, 3:45 PM</div>
+                                            </div>
                                         </div>
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" id="privateNote">
-                                            <label class="form-check-label" for="privateNote">Private Note</label>
+                                        <div>
+                                            <span class="badge bg-danger me-1">Private</span>
+                                            <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-ellipsis-v"></i></button>
                                         </div>
                                     </div>
-                                    <textarea class="form-control rounded-0 border-0" rows="4" placeholder="Add a work note..."></textarea>
-                                    <div class="p-3 bg-light d-flex justify-content-end">
-                                        <button class="btn btn-primary"><i class="fas fa-plus me-2"></i>Add Note</button>
+                                    <div>
+                                        <p class="mb-0">[Internal Note] This appears to be related to the ongoing authentication system issues. Escalating to L2 support.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Note 3 -->
+                                <div class="border-end border-primary border-4 mb-3 bg-white p-3">
+                                    <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
+                                            <div class="ms-2">
+                                                <strong>John Doe</strong>
+                                                <div class="text-muted small">Yesterday, 11:15 AM</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="badge bg-primary me-1">Public</span>
+                                            <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-ellipsis-v"></i></button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0">User reported being unable to reset password. Verified account status is active. Reset link was sent but user reports not receiving it.</p>
+                                        <p class="mt-2 mb-0"><strong>Next Steps:</strong> Check email logs for the reset request.</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Additional Options -->
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <button class="btn btn-sm btn-outline-secondary me-2">
-                                        <i class="fas fa-paperclip me-1"></i>Attach File
-                                    </button>
-                                    <button class="btn btn-sm btn-outline-secondary">
-                                        <i class="fas fa-history me-1"></i>View History
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="btn btn-sm btn-outline-secondary">
-                                        <i class="fas fa-print me-1"></i>Print Notes
-                                    </button>
+                            <div class="card-footer p-0">
+                                <div id="summernote"></div>
+                                <div class="p-3 bg-light d-flex justify-content-between">
+                                    <div>
+                                        <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-paperclip me-1"></i>Attach File </button>
+                                        <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-history me-1"></i>View History </button>
+                                        <button class="btn btn-sm btn-outline-secondary"> <i class="fas fa-print me-1"></i>Print Notes </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-sm btn-primary"><i class="fas fa-plus me-2"></i>Send Message</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+                    <!--end::Container-->
                 </div>
-
-
-                <!--end::Container-->
-            </div>
-            <!--end::App Content-->
+                <!--end::App Content-->
         </main>
         <!--end::App Main-->
     </div>
     <!--end::App Wrapper-->
     <!--begin::Script-->
 
+
+
     <!-- Datatable Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+
+    <!-- Summernotes Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.js"></script>
 
     <!--Third Party Plugin(OverlayScrollbars)-->
     <script
@@ -482,6 +389,55 @@
         });
     </script>
 
+    <!-- Summernotes JS -->
+    <script>
+        $(document).ready(function() {
+            $('#summernote').summernote({
+                placeholder: 'Add a message...',
+                tabsize: 2,
+                height: 200,
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['insert', ['link', 'picture']],
+                    ['view', ['codeview', 'help']]
+                ],
+                callbacks: {
+                    onInit: function() {
+                        // Add private note switch to the right side of the toolbar
+                        const toolbar = $('.note-toolbar');
+                        const switchHtml = `
+                        <div class="private-note-switch d-flex align-items-center me-2 mt-2 mb-2">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="privateNote">
+                                <label class="form-check-label ms-2" for="privateNote">Private Note</label>
+                            </div>
+                        </div>
+                    `;
+                        toolbar.append(switchHtml);
+
+                        // Set initial border
+                        updateNoteBorder();
+
+                        // Handle private note toggle
+                        $('#privateNote').change(function() {
+                            updateNoteBorder();
+                        });
+
+                        function updateNoteBorder() {
+                            const editor = $('#summernote');
+                            if ($('#privateNote').is(':checked')) {
+                                editor.next('.note-editor').css('border-left', '4px solid #dc3545');
+                            } else {
+                                editor.next('.note-editor').css('border-left', '4px solid #0d6efd');
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
     <script>
         new DataTable('#example');
     </script>
