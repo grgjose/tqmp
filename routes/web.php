@@ -74,13 +74,19 @@ Route::post('/users-changepic/{id}', [UserController::class, 'changepic']);
 // Dashboard - Settings - Products
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products-view/{id}', [ProductController::class, 'show']);
+Route::get('/products-create', [ProductController::class, 'create']);
+Route::post('/products-store', [ProductController::class, 'store']);
+Route::get('/products-edit/{id}', [ProductController::class, 'edit']);
+Route::post('/products-update/{id}', [ProductController::class, 'update']);
+Route::post('/products-destroy/{id}', [ProductController::class, 'destroy']);
 Route::get('/add-to-cart/{id}', [ProductController::class, 'before_add_to_cart']);
 Route::post('/add-to-cart/{id}', [ProductController::class, 'after_add_to_cart']);
 Route::get('/cart', [ProductController::class, 'cart']);
+
+
+
 Route::get('/product-details', [ProductDetailsController::class, 'index']);
 
-Route::get('/user_messages', [UserProfileController::class, 'user_messages']);
-Route::get('/messages', [UserProfileController::class, 'messages']);
 Route::get('/get_quotation', [UserProfileController::class, 'get_quotation']);
 Route::get('/process_order', [UserProfileController::class, 'process_order']);
 Route::get('/checkout', [CheckoutController::class, 'index']);

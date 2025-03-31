@@ -51,7 +51,7 @@ function userDelete(id){
 // Products
 function productShow(id){
     $('.tbl').attr('style', 'display: none;');
-    $('#view').load('/product-view/'+id);
+    $('#view').load('/products-view/'+id);
 }
 
 function productHide(){
@@ -61,16 +61,16 @@ function productHide(){
 
 function productCreate(){
     $('.tbl').attr('style', 'display: none;');
-    $('#view').load('/product-create/');
+    $('#view').load('/products-create/');
 }
 
 function productUpdate(id){
     $('.tbl').attr('style', 'display: none;');
-    $('#view').load('/product-update/'+id);
+    $('#view').load('/products-update/'+id);
 }
 
 function productDelete(id){
-    $('#deleteForm').attr('action', '/product-destroy/'+id);
+    $('#deleteForm').attr('action', '/products-destroy/'+id);
 }
 
 
