@@ -549,13 +549,13 @@ button.btn-outline-danger {
     color: #7e1416;
     border: 1px solid #7e1416;
     font-size: smaller;
-    font-weight: bold;
+    
 }
 
 button.btn-outline-danger:hover {
     background-color: #7e1416;
     color: #ffffff;
-    font-weight: bold;
+    
 }
 
 button.btn-outline-primary {
