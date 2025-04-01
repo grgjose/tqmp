@@ -1,3 +1,17 @@
+<style>
+    .dropdown-toggle::after {
+        display: none; /* Removes the default dropdown arrow */
+    }
+
+    img.rounded-circle {
+        border: 2px solid #fff;
+        transition: 0.3s ease-in-out;
+    }
+
+    img.rounded-circle:hover {
+        transform: scale(1.1);
+    }
+</style>
 <div class="sticky-top" style="background-color: #7E1416;">
     <!-- Logo and Header Text -->
     <div class="container text-center">
@@ -85,15 +99,24 @@
                         <i class="fas fa-user me-2"></i> Login
                     </button>
                     @else
+                    <!-- Profile Dropdown -->
                     <div class="dropdown">
-                        <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="{{ $my_user->profile_picture ? asset('storage/user-pics/' . $my_user->profile_picture) : asset('storage/user-pics/default.png') }}" 
-                                 alt="Profile Picture" class="rounded-circle" width="40" height="40">
+                        <!-- Desktop View: Profile Picture -->
+                        <a href="#" class="d-none d-md-flex align-items-center text-decoration-none dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="{{ $my_user->profile_picture ? asset('storage/user-pics/' . $my_user->user_pic) : asset('storage/user-pics/default.png') }}" 
+                                alt="Profile Picture" class="rounded-circle" width="40" height="40">
                         </a>
+
+                        <!-- Mobile View: "My Profile" Text -->
+                        <a href="#" class="nav-link d-md-none dropdown-toggle" id="mobileProfileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Profile
+                        </a>
+
+                        <!-- Dropdown Menu -->
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
                             <li class="dropdown-header fw-bold text-center">{{ $my_user->name }}</li>
                             <li><a class="dropdown-item" href="/cart"><i class="fas fa-shopping-cart me-2"></i> My Cart</a></li>
-                            <li><a class="dropdown-item" href="/userprofile"><i class="fas fa-user-circle me-2"></i> View My Profile</a></li>
+                            <li><a class="dropdown-item" href="/profile"><i class="fas fa-user-circle me-2"></i> View My Profile</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
                                 <form action="/logout" method="POST">

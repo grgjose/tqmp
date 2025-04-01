@@ -66,13 +66,32 @@ function productCreate(){
 
 function productUpdate(id){
     $('.tbl').attr('style', 'display: none;');
-    $('#view').load('/products-update/'+id);
+    $('#view').load('/products-edit/'+id);
 }
 
 function productDelete(id){
     $('#deleteForm').attr('action', '/products-destroy/'+id);
 }
 
+function toggleProductCheckbox(imageId) {
+    var checkbox = document.getElementById("img-checkbox-" + imageId);
+    var image = document.getElementById("img-" + imageId);
+    var checkmark = document.getElementById("checkmark-" + imageId);
+
+    // Toggle checkbox state
+    checkbox.checked = !checkbox.checked;
+
+    // Adjust image opacity and checkmark visibility based on the checkbox state
+    if (checkbox.checked) {
+        image.classList.add("selected");
+        checkmark.style.opacity = '1';  // Show checkmark
+        image.style.opacity = '0.5';   // Make image semi-transparent
+    } else {
+        image.classList.remove("selected");
+        checkmark.style.opacity = '0';  // Hide checkmark
+        image.style.opacity = '1';     // Reset image opacity
+    }
+}
 
 // Active Navbar UI
 $(document).ready(function(){

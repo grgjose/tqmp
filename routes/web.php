@@ -38,7 +38,7 @@ Route::get('/gentrade', [GenTradeController::class, 'index']);
 Route::get('/catalog', [CatalogController::class, 'show']);
 
 // Product Pages
-Route::get('/login', [UserController::class, 'login']);
+//Route::get('/login', [UserController::class, 'login']);
 Route::post('/login', [UserController::class, 'logon']);
 Route::get('/logout', [UserController::class, 'logout']);
 Route::post('/logout', [UserController::class, 'logout']);
@@ -79,7 +79,7 @@ Route::get('/products-view/{id}', [ProductController::class, 'show']);
 Route::get('/products-create', [ProductController::class, 'create']);
 Route::post('/products-store', [ProductController::class, 'store']);
 Route::get('/products-edit/{id}', [ProductController::class, 'edit']);
-Route::post('/products-update/{id}', [ProductController::class, 'update']);
+Route::put('/products-update/{id}', [ProductController::class, 'update']);
 Route::post('/products-destroy/{id}', [ProductController::class, 'destroy']);
 Route::get('/add-to-cart/{id}', [ProductController::class, 'before_add_to_cart']);
 Route::post('/add-to-cart/{id}', [ProductController::class, 'after_add_to_cart']);

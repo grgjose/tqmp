@@ -163,8 +163,6 @@ class ProductController extends Controller
             $filename = "default.png"; 
         }
 
-        $product_id = 0;
-
         $product = new Product();
         $product->name = $validated['name'];
         $product->display_name = $validated['display_name'];
@@ -179,7 +177,7 @@ class ProductController extends Controller
         if(count($filenames) > 0){
             foreach($filenames as $name){
                 $productImage = new ProductImage();
-                $productImage->product_id = $product_id;
+                $productImage->product_id = $product->id;
                 $productImage->filename = $name;
                 $productImage->save();
             }
@@ -245,9 +243,77 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Product $product)
+    public function update($id, Request $request)
     {
-        //
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 1) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $product = Product::find($id);
+        if($product == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+
+        $validated = $request->validate([
+            'name' => ['required', 'min:3'],
+            'display_name' => ['required'],
+            'description' => ['nullable'],
+            'category_id' => ['required'],
+            'brand' => ['nullable'],
+            'price' => ['required'],
+            'upload_files.*' => ['nullable', 'file', 'mimes:jpg,jpeg,png', 'max:4096'],
+            'images_to_delete.*' => ['nullable'],
+        ]);
+
+        // Handle image deletion
+        if ($request->has('images_to_delete')) {
+            foreach ($validated['images_to_delete'] as $imageId) {
+                // Find the image by its ID and delete it
+                $image = ProductImage::find($imageId); // Assuming the product has a relationship with images
+                if ($image) {
+                    // Delete the image from the filesystem
+                    if (file_exists(public_path('storage/all-items/' . $image->filename))) {
+                        unlink(public_path('storage/all-items/' . $image->filename));
+                    }
+                    // Delete the image record from the database
+                    $image->delete();
+                }
+            }
+        }
+
+        $filenames = array();
+
+        // Handle file upload
+        if ($request->hasFile('upload_files')) {
+            foreach($request->file('upload_files') as $file){
+                $filename = time() . '_' . $file->getClientOriginalName();
+                $file->storeAs('all-items', $filename, 'public');
+                array_push($filenames, $filename);
+            }  
+        } else {
+            $filename = "default.png"; 
+        }
+
+        if(count($filenames) > 0){
+            foreach($filenames as $name){
+                $productImage = new ProductImage();
+                $productImage->product_id = $id;
+                $productImage->filename = $name;
+                $productImage->save();
+            }
+        }
+
+        $product->name = $validated['name'];
+        $product->display_name = $validated['display_name'];
+        $product->description = $validated['description'];
+        $product->category_id = $validated['category_id'];
+        $product->brand = $validated['brand'];
+        $product->price = $validated['price'];
+
+        $product->save();
+
+        return redirect('/products')->with('success_msg', $product->name.' is Updated');
     }
 
     /**
