@@ -32,7 +32,7 @@
             <div class="row mb-3">
                 <div class="form-group col-2">
                     <label for="userpic">Product Pictures</label>
-                    <input type="file" class="form-control" id="upload_file" name="upload_file" accept="image/png, image/jpeg" multiple>
+                    <input type="file" class="form-control" id="upload_file" name="upload_files[]" accept="image/png, image/jpeg" multiple>
                 </div>
                 <div class="form-group col-3">
                     <label for="name">Name</label>

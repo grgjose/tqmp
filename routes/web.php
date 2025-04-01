@@ -26,7 +26,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/faqs', [HomeController::class, 'FAQs']);
-Route::get('/userprofiles', [HomeController::class, 'userprofiles']);
+Route::get('/userprofile', [HomeController::class, 'userprofiles']);
 
 // Product Pages
 Route::get('/services', [ServicesController::class, 'index']);
@@ -41,6 +41,8 @@ Route::get('/catalog', [CatalogController::class, 'show']);
 Route::get('/login', [UserController::class, 'login']);
 Route::post('/login', [UserController::class, 'logon']);
 Route::get('/logout', [UserController::class, 'logout']);
+Route::post('/logout', [UserController::class, 'logout']);
+
 
 // Register Page
 Route::get('/register', [UserController::class, 'register']);
