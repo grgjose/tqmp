@@ -26,6 +26,10 @@
 
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
+
+    <!-- Homepage JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/homepage.js') }}"></script>
 </head>
 
 <body>
@@ -94,20 +98,20 @@
                     <hr>
                     <div class="d-flex justify-content-between">
                         <p class="text-muted">Subtotal</p>
-                        <p>₱0.00</p>
+                        <p class="subtotal">₱0.00</p>  <!-- Added class for subtotal -->
                     </div>
                     <div class="d-flex justify-content-between">
                         <p class="text-muted">Shipping Cost (+)</p>
-                        <p>₱0.00</p>
+                        <p class="shipping-cost">₱0.00</p>  <!-- Added class for shipping cost -->
                     </div>
                     <div class="d-flex justify-content-between">
                         <p class="text-muted">Discount (-)</p>
-                        <p>₱0.00</p>
+                        <p class="discount">₱0.00</p>  <!-- Added class for discount -->
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
                         <p class="total-payable">Total Payable</p>
-                        <p class="total-payable">₱0.00</p>
+                        <p class="total-payable2">₱0.00</p>  <!-- Added class for total payable -->
                     </div>
                     <button type="submit" class="card-button btn btn-danger w-100">Checkout</button>
                 </div>
@@ -151,7 +155,7 @@
                             <label class="form-check-label" for="option1">
                                 <p class="mb-0 fw-bold">Sample Delivery Company</p>
                                 <small class="text-muted">Expected Delivery: March 3, 2025</small>
-                                <p class="mt-2">$36.00</p>
+                                <p class="mt-2">₱100.00</p>
                             </label>
                         </div>
                     </div>

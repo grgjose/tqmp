@@ -26,7 +26,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/faqs', [HomeController::class, 'FAQs']);
-Route::get('/userprofile', [HomeController::class, 'userprofiles']);
+Route::get('/profile', [HomeController::class, 'userprofiles']);
 
 // Product Pages
 Route::get('/services', [ServicesController::class, 'index']);
@@ -37,7 +37,7 @@ Route::get('/glassprocessing', [GlassProcessingController::class, 'index']);
 Route::get('/gentrade', [GenTradeController::class, 'index']);
 Route::get('/catalog', [CatalogController::class, 'show']);
 
-// Product Pages
+// User Authentication
 //Route::get('/login', [UserController::class, 'login']);
 Route::post('/login', [UserController::class, 'logon']);
 Route::get('/logout', [UserController::class, 'logout']);
