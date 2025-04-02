@@ -42,7 +42,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="text-center">
-                    <img src="https://th.bing.com/th/id/OIP.MAGyL3kQm3GYlLroszc3sgHaEK?rs=1&pid=ImgDetMain" alt="Profile" class="img-fluid rounded mb-2" style="height: 225px; width: 100%;">
+                    <img src="{{ asset('storage/user-pics/'.$my_user->user_pic) }}" alt="Profile" class="img-fluid rounded mb-2" style="height: 50%; width: 50%;">
 
                 </div>
 
@@ -60,15 +60,15 @@
                 <div class="row g-2">
                     <div class="col-md-6">
                         <label class="form-label">Username</label>
-                        <input type="text" class="form-control" value="john.doe">
+                        <input type="text" class="form-control" value="john.doe"  placeholder="User Name">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">First Name</label>
-                        <input type="text" class="form-control" value="John">
+                        <input type="text" class="form-control" value="{{ $my_user->fname }}" placeholder="First Name">
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label">Nickname</label>
-                        <input type="text" class="form-control" value="Johnny">
+                        <label class="form-label">Middle Name</label>
+                        <input type="text" class="form-control" value="{{ $my_user->mname }}" placeholder="Middle Name">
                     </div>
                     <!-- <div class="col-md-6">
                         <label class="form-label">Role</label>
@@ -78,32 +78,28 @@
                     </div> -->
                     <div class="col-md-6">
                         <label class="form-label">Last Name</label>
-                        <input type="text" class="form-control" value="Doe">
+                        <input type="text" class="form-control" value="{{ $my_user->lname }}"  placeholder="Last Name">
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label">Display Name Publicly as</label>
-                        <input type="text" class="form-control" value="John Doe">
+                        <label class="form-label">Extension</label>
+                        <input type="text" class="form-control" value="{{ $my_user->ext }}" placeholder="Jr., Sr., III., etc">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Email (required)</label>
-                        <input type="email" class="form-control" value="john.doe@example.com">
+                        <input type="email" class="form-control" value="{{ $my_user->email }}" placeholder="Your Email Address">
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label">WhatsApp</label>
-                        <input type="text" class="form-control" value="@john-doe">
+                        <label class="form-label">Birthdate</label>
+                        <input type="date" class="form-control" value="{{ $my_user->birthdate }}">
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label">Website</label>
-                        <input type="text" class="form-control" value="john-doe.com">
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label">Telegram</label>
-                        <input type="text" class="form-control" value="@john-doe">
+                        <label class="form-label">Contact #</label>
+                        <input type="number" class="form-control" value="{{ $my_user->contact_num }}" placeholder="Contact Number">
                     </div>
                 </div>
                 <div class="mt-3">
-                    <label class="form-label">Biographical Info</label>
-                    <textarea class="form-control" rows="5">John Doe is a software engineer with over 10 years of experience...</textarea>
+                    <label class="form-label">Address</label>
+                    <textarea class="form-control" rows="5">{{ $my_user->address }}</textarea>
                 </div>
             </div>
         </div>
@@ -204,6 +200,44 @@
                         <td>2023-04-01</td>
                         <td><span class="text-success">Shipped</span></td>
                         <td>$250.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                Pending Quotations
+                </div>
+                <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Quotation ID</th>
+                        <th>Date Submitted</th>
+                        <th>Status</th>
+                        <th>Total Pricing</th>
+                        <th>Valid Until</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="#">12347</a></td>
+                        <td>2023-03-01</td>
+                        <td><span class="text-success">Pending</span></td>
+                        <td>Pending</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">12348</a></td>
+                        <td>2023-04-01</td>
+                        <td><span class="text-success">Approved</span></td>
+                        <td>₱2500.00</td>
+                        <td>2023-04-16</td>
                     </tr>
                     </tbody>
                 </table>

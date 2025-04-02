@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('quotation_convo', function (Blueprint $table) {
+        Schema::create('quotations', function (Blueprint $table) {
             $table->id();
-            $table->integer('quotation_id');
-            $table->integer('from_user_id');
-            $table->integer('to_user_id');
+            $table->integer('user_id');
+            $table->string('filename');
             $table->string('message');
+            $table->string('status');
+            $table->datetime('valid_until');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('quotation_convo');
+        Schema::dropIfExists('quotations');
     }
 };

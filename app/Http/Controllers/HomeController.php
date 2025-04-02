@@ -63,13 +63,24 @@ class HomeController extends Controller
         ]);
     }
 
-    public function userprofiles()
+    public function profile()
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
         $my_user = $auth->user();
 
-        return view('dashboard.userprofiles', [
+        return view('home.profile', [
+            'my_user' => $my_user,
+        ]);
+    }
+
+    public function quotation()
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('glass.processing.get_quotation', [
             'my_user' => $my_user,
         ]);
     }

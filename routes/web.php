@@ -20,13 +20,19 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\OrderSummaryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductDetailsController;
+use App\Http\Controllers\QuotationController;
 
 // Home Pages
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/faqs', [HomeController::class, 'FAQs']);
-Route::get('/profile', [HomeController::class, 'userprofiles']);
+Route::get('/profile', [HomeController::class, 'profile']);
+Route::get('/add-to-cart/{id}', [ProductController::class, 'before_add_to_cart']);
+Route::post('/add-to-cart/{id}', [ProductController::class, 'after_add_to_cart']);
+Route::get('/cart', [ProductController::class, 'cart']);
+Route::get('/get-quotation', [QuotationController::class, 'getQuotation']);
+
 
 // Product Pages
 Route::get('/services', [ServicesController::class, 'index']);
@@ -81,9 +87,7 @@ Route::post('/products-store', [ProductController::class, 'store']);
 Route::get('/products-edit/{id}', [ProductController::class, 'edit']);
 Route::put('/products-update/{id}', [ProductController::class, 'update']);
 Route::post('/products-destroy/{id}', [ProductController::class, 'destroy']);
-Route::get('/add-to-cart/{id}', [ProductController::class, 'before_add_to_cart']);
-Route::post('/add-to-cart/{id}', [ProductController::class, 'after_add_to_cart']);
-Route::get('/cart', [ProductController::class, 'cart']);
+
 
 
 
