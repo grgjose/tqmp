@@ -37,14 +37,14 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-md sticky-top py-3" aria-label="Navbar example">
+    <nav class="navbar navbar-expand-xl sticky-top py-3" aria-label="Navbar example">
         <div class="container">
             <button class="navbar-toggler mb-2 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0">
                     <li class="nav-item">
                         <a class="nav-link px-3 active" aria-current="page" href="/">Home</a>
                     </li>
@@ -191,3 +191,4 @@
         </div>
     </div>
 </div>
+
