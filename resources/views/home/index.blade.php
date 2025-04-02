@@ -23,6 +23,7 @@
 
     <!-- Chatbot CSS -->
     <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
+    
     <!-- Chatbot JS -->
     <script src="{{ asset('js/chatbot.js') }}"></script>
     
