@@ -26,7 +26,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/faqs', [HomeController::class, 'FAQs']);
-Route::get('/userprofiles', [HomeController::class, 'userprofiles']);
+Route::get('/profile', [HomeController::class, 'userprofiles']);
 
 // Product Pages
 Route::get('/services', [ServicesController::class, 'index']);
@@ -37,10 +37,12 @@ Route::get('/glassprocessing', [GlassProcessingController::class, 'index']);
 Route::get('/gentrade', [GenTradeController::class, 'index']);
 Route::get('/catalog', [CatalogController::class, 'show']);
 
-// Product Pages
-Route::get('/login', [UserController::class, 'login']);
+// User Authentication
+//Route::get('/login', [UserController::class, 'login']);
 Route::post('/login', [UserController::class, 'logon']);
 Route::get('/logout', [UserController::class, 'logout']);
+Route::post('/logout', [UserController::class, 'logout']);
+
 
 // Register Page
 Route::get('/register', [UserController::class, 'register']);
@@ -77,7 +79,7 @@ Route::get('/products-view/{id}', [ProductController::class, 'show']);
 Route::get('/products-create', [ProductController::class, 'create']);
 Route::post('/products-store', [ProductController::class, 'store']);
 Route::get('/products-edit/{id}', [ProductController::class, 'edit']);
-Route::post('/products-update/{id}', [ProductController::class, 'update']);
+Route::put('/products-update/{id}', [ProductController::class, 'update']);
 Route::post('/products-destroy/{id}', [ProductController::class, 'destroy']);
 Route::get('/add-to-cart/{id}', [ProductController::class, 'before_add_to_cart']);
 Route::post('/add-to-cart/{id}', [ProductController::class, 'after_add_to_cart']);

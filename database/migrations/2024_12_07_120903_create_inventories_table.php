@@ -13,12 +13,9 @@ return new class extends Migration
     {
         Schema::create('inventories', function (Blueprint $table) {
             $table->id();
-            $table->string('brand')->nullable();
-            $table->string('name')->nullable();
-            $table->string('model')->nullable();
-            $table->string('details')->nullable();
-            $table->double('quantity')->nullable();
-            $table->string('status')->nullable();
+            $table->integer('product_id');
+            $table->integer('stock')->default(0);
+            $table->string('status')->default('inactive');
             $table->timestamps();
         });
     }

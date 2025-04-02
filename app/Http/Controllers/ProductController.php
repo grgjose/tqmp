@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use App\Models\Cart;
+use App\Models\ProductImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -37,6 +38,9 @@ class ProductController extends Controller
             ->with('main_content', 'dashboard.settings.products');
     }
 
+    /**
+     * Show the cart of a User
+     */
     public function before_add_to_cart($id)
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */
@@ -53,6 +57,9 @@ class ProductController extends Controller
         ]);
     }
 
+    /**
+     * Show the cart of a User
+     */
     public function after_add_to_cart($id, Request $request)
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */
@@ -79,6 +86,9 @@ class ProductController extends Controller
         return redirect('/cart')->with('success_msg', 'Redirected to Cart');
     }
 
+    /**
+     * Show the cart of a User
+     */
     public function cart()
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */
@@ -137,31 +147,43 @@ class ProductController extends Controller
            'category_id' => ['required'],
            'brand' => ['nullable'],
            'price' => ['required'],
-           'upload_file' => ['nullable', 'file', 'mimes:jpg,jpeg,png', 'max:4096'],
+           'upload_files.*' => ['nullable', 'file', 'mimes:jpg,jpeg,png', 'max:4096'],
        ]);
 
-       // Handle file upload
-       if ($request->hasFile('upload_file')) {
-           $file = $request->file('upload_file');
-           $filename = time() . '_' . $file->getClientOriginalName();
-           $file->storeAs('all-items', $filename, 'public');
-       } else {
-           $filename = "default.png"; 
-       }
+       $filenames = array();
 
-       $product = new Product();
-       $product->name = $validated['name'];
-       $product->display_name = $validated['display_name'];
-       $product->description = $validated['description'];
-       $product->category_id = $validated['category_id'];
-       $product->brand = $validated['brand'];
-       $product->price = $validated['price'];
-       $product->status = "active";
-       $product->isDeleted = false;
-       $product->save();
+        // Handle file upload
+        if ($request->hasFile('upload_files')) {
+            foreach($request->file('upload_files') as $file){
+                $filename = time() . '_' . $file->getClientOriginalName();
+                $file->storeAs('all-items', $filename, 'public');
+                array_push($filenames, $filename);
+            }  
+        } else {
+            $filename = "default.png"; 
+        }
 
-       return redirect('/products')->with('success_msg', $product->name.' is Created!');
+        $product = new Product();
+        $product->name = $validated['name'];
+        $product->display_name = $validated['display_name'];
+        $product->description = $validated['description'];
+        $product->category_id = $validated['category_id'];
+        $product->brand = $validated['brand'];
+        $product->price = $validated['price'];
+        $product->status = "active";
+        $product->isDeleted = false;
+        $product->save();
 
+        if(count($filenames) > 0){
+            foreach($filenames as $name){
+                $productImage = new ProductImage();
+                $productImage->product_id = $product->id;
+                $productImage->filename = $name;
+                $productImage->save();
+            }
+        }
+
+        return redirect('/products')->with('success_msg', $product->name.' is Created!');
     }
 
     /**
@@ -186,31 +208,123 @@ class ProductController extends Controller
         return view('dashboard.settings.products-view', [
             'my_user' => $my_user,
             'product' => $products[0],
+            'productCategories' => $productCategories,
+            'productImages' => $productImages,
         ]);
     }
-
 
     /**
      * Show the form for editing the specified resource.
      */
     public function edit($id)
     {
-        //
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if ($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if ($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $products = DB::table('products')->where('isDeleted', '=', false)->where('id', '=', $id)->get();
+        $productCategories = DB::table('product_categories')->get();
+        $productImages = DB::table('product_images')->get();
+
+        if ($products == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+        if (count($products) == 0) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+
+        return view('dashboard.settings.products-update', [
+            'my_user' => $my_user,
+            'product' => $products[0],
+            'productCategories' => $productCategories,
+            'productImages' => $productImages,
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Product $product)
+    public function update($id, Request $request)
     {
-        //
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 1) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $product = Product::find($id);
+        if($product == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
+
+        $validated = $request->validate([
+            'name' => ['required', 'min:3'],
+            'display_name' => ['required'],
+            'description' => ['nullable'],
+            'category_id' => ['required'],
+            'brand' => ['nullable'],
+            'price' => ['required'],
+            'upload_files.*' => ['nullable', 'file', 'mimes:jpg,jpeg,png', 'max:4096'],
+            'images_to_delete.*' => ['nullable'],
+        ]);
+
+        // Handle image deletion
+        if ($request->has('images_to_delete')) {
+            foreach ($validated['images_to_delete'] as $imageId) {
+                // Find the image by its ID and delete it
+                $image = ProductImage::find($imageId); // Assuming the product has a relationship with images
+                if ($image) {
+                    // Delete the image from the filesystem
+                    if (file_exists(public_path('storage/all-items/' . $image->filename))) {
+                        unlink(public_path('storage/all-items/' . $image->filename));
+                    }
+                    // Delete the image record from the database
+                    $image->delete();
+                }
+            }
+        }
+
+        $filenames = array();
+
+        // Handle file upload
+        if ($request->hasFile('upload_files')) {
+            foreach($request->file('upload_files') as $file){
+                $filename = time() . '_' . $file->getClientOriginalName();
+                $file->storeAs('all-items', $filename, 'public');
+                array_push($filenames, $filename);
+            }  
+        } else {
+            $filename = "default.png"; 
+        }
+
+        if(count($filenames) > 0){
+            foreach($filenames as $name){
+                $productImage = new ProductImage();
+                $productImage->product_id = $id;
+                $productImage->filename = $name;
+                $productImage->save();
+            }
+        }
+
+        $product->name = $validated['name'];
+        $product->display_name = $validated['display_name'];
+        $product->description = $validated['description'];
+        $product->category_id = $validated['category_id'];
+        $product->brand = $validated['brand'];
+        $product->price = $validated['price'];
+
+        $product->save();
+
+        return redirect('/products')->with('success_msg', $product->name.' is Updated');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Product $product)
+    public function destroy($id)
     {
-        //
+        $product = Product::find($id);
+        $product->isDeleted = true;
+        $product->save();
+
+        return redirect('/products')->with('success_msg', 'Product Successfully Deleted');
     }
 }

@@ -1,4 +1,19 @@
 <div class="sticky-top">
+<style>
+    .dropdown-toggle::after {
+        display: none; /* Removes the default dropdown arrow */
+    }
+
+    img.rounded-circle {
+        border: 2px solid #fff;
+        transition: 0.3s ease-in-out;
+    }
+
+    img.rounded-circle:hover {
+        transform: scale(1.1);
+    }
+</style>
+<div class="sticky-top" style="background-color: #7E1416;">
     <!-- Logo and Header Text -->
     <div class="text-center" style="background-color: #7E1416;">
         <div class="row justify-content-center align-items-center py-2">
@@ -85,12 +100,33 @@
                         <i class="fas fa-user me-2"></i> Login
                     </button>
                     @else
-                    <a href="/cart" class="card-button btn btn-primary mt-auto me-2 d-none d-sm-block">
-                        <i class="fas fa-shopping-cart me-2"></i> Cart
-                    </a>
-                    <a href="/logout" class="card-button btn btn-danger mt-auto d-none d-sm-block">
-                        <i class="fas fa-user me-2"></i> Logout
-                    </a>
+                    <!-- Profile Dropdown -->
+                    <div class="dropdown">
+                        <!-- Desktop View: Profile Picture -->
+                        <a href="#" class="d-none d-md-flex align-items-center text-decoration-none dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="{{ $my_user->profile_picture ? asset('storage/user-pics/' . $my_user->user_pic) : asset('storage/user-pics/default.png') }}" 
+                                alt="Profile Picture" class="rounded-circle" width="40" height="40">
+                        </a>
+
+                        <!-- Mobile View: "My Profile" Text -->
+                        <a href="#" class="nav-link d-md-none dropdown-toggle" id="mobileProfileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Profile
+                        </a>
+
+                        <!-- Dropdown Menu -->
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li class="dropdown-header fw-bold text-center">{{ $my_user->name }}</li>
+                            <li><a class="dropdown-item" href="/cart"><i class="fas fa-shopping-cart me-2"></i> My Cart</a></li>
+                            <li><a class="dropdown-item" href="/profile"><i class="fas fa-user-circle me-2"></i> View My Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <form action="/logout" method="POST">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item text-danger"><i class="fas fa-sign-out-alt me-2"></i> Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
                     @endif
 
                     <div class="d-flex flex-column w-100 d-sm-none">
