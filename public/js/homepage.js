@@ -1,47 +1,51 @@
 $(document).ready(function () {
-
-    window.alert(1);
-
-    // Function to check if the URL ends with "/carts"
-    function isCartPage() {
-        return window.location.pathname.endsWith("/cart");
-    }
-
-    // Function to compute subtotal and total
     function computeTotal() {
         let subtotal = 0;
-        let shippingCost = 100; // Example shipping cost, change dynamically if needed
-        let discount = 0; // Example discount, change dynamically if needed
+        let shippingCost = 100; // Example shipping cost
+        let discount = 0; // Example discount
+        let checkedItems = 0;
 
-        // Loop through all products in the cart
+        // Loop through only checked items
         $("tbody tr").each(function () {
-            let priceText = $(this).find("td:nth-child(4)").text().replace("₱", "").trim();
-            let quantity = $(this).find("input[type='number']").val();
+            let isChecked = $(this).find("input[type='checkbox']").prop("checked");
+            if (isChecked) {
+                let priceText = $(this).find(".prices").text().replace("₱", "").trim();
+                let quantity = $(this).find("input[type='number']").val();
 
-            if (priceText && quantity) {
-                let price = parseFloat(priceText) || 0;
-                let qty = parseInt(quantity, 10) || 1;
-                subtotal += price * qty;
+                if (priceText && quantity) {
+                    let price = parseFloat(priceText) || 0;
+                    let qty = parseInt(quantity, 10) || 1;
+                    subtotal += price * qty;
+                    checkedItems++; // Count checked items
+                }
             }
         });
 
-        // Calculate total
+        // If no items are checked, reset everything to ₱0.00
+        if (checkedItems === 0) {
+            subtotal = 0;
+            shippingCost = 0;
+            discount = 0;
+        }
+
         let total = subtotal + shippingCost - discount;
 
-        // Update the UI with computed values
+        // Update UI with computed values
         $(".subtotal").text("₱" + subtotal.toFixed(2));
         $(".shipping-cost").text("₱" + shippingCost.toFixed(2));
         $(".discount").text("₱" + discount.toFixed(2));
         $(".total-payable2").text("₱" + total.toFixed(2));
     }
 
-    // Check if we're on the /carts page before running computeTotal()
-    if (isCartPage()) {
-        computeTotal(); // Compute total on page load
+    // Compute total on page load
+    computeTotal();
 
-        // Recompute when quantity input changes
-        $("input[type='number']").on("input", function () {
-            computeTotal();
-        });
-    }
+    // Recompute when quantity changes or checkbox is toggled
+    $(document).on("input", "input[type='number']", function () {
+        computeTotal();
+    });
+
+    $(document).on("change", "input[type='checkbox']", function () {
+        computeTotal();
+    });
 });

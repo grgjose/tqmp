@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 /*--------------------------------------------------------------
 # Text Styles
 --------------------------------------------------------------*/
@@ -353,8 +356,7 @@ body {
 
 .nav-link {
     color: #1c2033;
-    font-weight: normal;
-    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
 .navbar .nav-link:hover,
@@ -362,14 +364,17 @@ body {
 .navbar .nav-link.active {
     color: #7e1416;
     font-weight: bold;
+    transition: opacity 0.3s ease;
 }
 
 .sticky-top {
     position: sticky;
     top: 0;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     z-index: 1020;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+
 }
 
 .header {
@@ -507,12 +512,12 @@ button.btn-light:hover {
 button.btn-outline-secondary {
     background-color: none;
     color: #383838;
-    border: 1px solid #6C757D;
+    border: 1px solid #6c757d;
     font-size: smaller;
 }
 
 button.btn-outline-secondary:hover {
-    background-color: #4B5258;
+    background-color: #4b5258;
     font-size: smaller;
     font-weight: bold;
 }
@@ -549,13 +554,11 @@ button.btn-outline-danger {
     color: #7e1416;
     border: 1px solid #7e1416;
     font-size: smaller;
-    
 }
 
 button.btn-outline-danger:hover {
     background-color: #7e1416;
     color: #ffffff;
-    
 }
 
 button.btn-outline-primary {
