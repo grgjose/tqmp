@@ -13,7 +13,7 @@
         transform: scale(1.1);
     }
 </style>
-<div class="sticky-top" style="background-color: #7E1416;">
+<div class="sticky-top">
     <!-- Logo and Header Text -->
     <div class="text-center" style="background-color: #7E1416;">
         <div class="row justify-content-center align-items-center py-2">
