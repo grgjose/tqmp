@@ -1,3 +1,4 @@
+<div class="sticky-top">
 <style>
     .dropdown-toggle::after {
         display: none; /* Removes the default dropdown arrow */
@@ -12,9 +13,9 @@
         transform: scale(1.1);
     }
 </style>
-<div class="sticky-top" style="background-color: #7E1416;">
+<div class="sticky-top">
     <!-- Logo and Header Text -->
-    <div class="container text-center">
+    <div class="text-center" style="background-color: #7E1416;">
         <div class="row justify-content-center align-items-center py-2">
             <!-- Logo and Text for larger screens -->
             <div class="col-auto d-flex align-items-center d-none d-md-flex justify-content-center">
@@ -36,14 +37,14 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-md sticky-top py-3" aria-label="Navbar example">
+    <nav class="navbar navbar-expand-xl sticky-top py-3" aria-label="Navbar example">
         <div class="container">
             <button class="navbar-toggler mb-2 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0">
                     <li class="nav-item">
                         <a class="nav-link px-3 active" aria-current="page" href="/">Home</a>
                     </li>
@@ -148,6 +149,7 @@
     </nav>
 </div>
 
+
 <!-- Login Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -189,3 +191,4 @@
         </div>
     </div>
 </div>
+

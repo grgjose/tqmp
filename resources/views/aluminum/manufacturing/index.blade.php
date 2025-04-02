@@ -54,20 +54,17 @@
         </div>
     </section>
 
-    <section id="about-aluminum-profiles">
-        <div class="card mb-3 mx-auto mt-5" style="max-width: 1300px;">
-            <div class="row g-0 justify-content-center">
-
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <img src="{{ asset('storage/logos/master_qui-logo.png') }}"
-                        alt="Aluminum Manufacturing" class="img-fluid rounded lg" style="padding: 20px;">
+    <section id="about-aluminum-profiles" class="fade-in-up">
+        <div class="container py-5 mt-5">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('storage/logos/master_qui-logo.png') }}" alt="Bullet Proofing" class="img-fluid rounded-lg" style="padding: 20px;">
                 </div>
-
-                <div class="col-md-8">
+                <div class="col-lg-6">
                     <div class="card-body py-5">
-                        <h2 class="fw-bold" style="color: #7E1416;">About aluminum</h2>
+                        <h2 class="fw-bold" style="color: #7E1416;">About us</h2>
                         <hr style="border-top: 3px solid #920B12; width: 150px; ">
-                        <p> Aluminum manufacturing involves refining bauxite ore into alumina, followed by smelting to produce high-quality aluminum.
+                        <p>Aluminum manufacturing involves refining bauxite ore into alumina, followed by smelting to produce high-quality aluminum.
                             This process yields a lightweight, durable, and versatile metal, essential for construction, transportation, packaging, and various industrial applications.
                             We are not just developing aluminum profiles, we are also structuring integrity, professionalism and excellence to make win-win circumstances to all of us.</p>
                     </div>
