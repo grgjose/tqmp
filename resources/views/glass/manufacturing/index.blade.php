@@ -53,22 +53,19 @@
         </div>
     </section>
 
-    <section id="about-glass-manufacturing">
-        <div class="card mb-3 mx-auto mt-5 fade-in" style="max-width: 1300px;">
-            <div class="row g-0 justify-content-center">
-
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <img src="{{ asset('storage/logos/pioneer_logo.png') }}"
-                        alt="Philippines" class="img-fluid rounded lg" style="padding: 20px;">
+    <section id="about-glass-manufacturing" class="fade-in-up">
+        <div class="container py-5 mt-5">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('storage/logos/pioneer_logo.png') }}" alt="Bullet Proofing" class="img-fluid rounded-lg" style="padding: 20px;">
                 </div>
-
-                <div class="col-md-8">
+                <div class="col-lg-6">
                     <div class="card-body py-5">
-                        <h2 class="fw-bold" style="color: #7E1416;">Glass Manufacturing</h2>
+                        <h2 class="fw-bold" style="color: #7E1416;">About us</h2>
                         <hr style="border-top: 3px solid #920B12; width: 150px; ">
-                        <p class="text-muted">Pioneer Float Glass Manufacturing Inc. (PFGMI) is the leading flat glass manufacturer in the Philippines.</p>
-                        <p class="text-muted">Established in 1958 under the former name of Republic Glass Corporation, and eventually became a wholly owned subsidiary of AGC in 2001 adopting the company name AGC Flat Glass Philippines Inc.
-                            In 2017, TQMP Glass Manufacturing Corp. acquired 100% of the AGPH shares thus becoming the torch bearer for the flat glass industry in the Philippines.</p>
+                        <p>Pioneer Float Glass Manufacturing Inc. (PFGMI) is the leading flat glass manufacturer in the Philippines.</p>
+                        <p>Established in 1958 under the former name of Republic Glass Corporation, and eventually became a wholly owned subsidiary of AGC in 2001 adopting the company name AGC Flat Glass Philippines Inc.
+                        In 2017, TQMP Glass Manufacturing Corp. acquired 100% of the AGPH shares thus becoming the torch bearer for the flat glass industry in the Philippines.</p>
                     </div>
                 </div>
             </div>

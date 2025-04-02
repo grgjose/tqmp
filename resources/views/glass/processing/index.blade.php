@@ -53,7 +53,7 @@
         </div>
     </section>
 
-    <section id="about-glass-processing" class="fade-in">
+    <!-- <section id="about-glass-processing" class="fade-in">
         <div class="card mb-3 mx-auto mt-5" style="max-width: 1300px;">
             <div class="row g-0 justify-content-center">
 
@@ -73,16 +73,33 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="about-glass-processing" class="fade-in-up">
+        <div class="container py-5 mt-5">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('storage/logos/pgpsi-logo.png') }}"" alt="Bullet Proofing" class="img-fluid rounded-lg" style="padding: 20px;">
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-body py-5">
+                        <h2 class="fw-bold" style="color: #7E1416;">About us</h2>
+                        <hr style="border-top: 3px solid #920B12; width: 150px; ">
+                        <p>With extensive experience in the glass industry, we take pride in our commitment to delivering exceptional products and services to our clients.
+                            Our factory is equipped with state-of-the-art technology and machinery, enabling us to produce a diverse range of tempered glass products, including glass doors, windows, shower enclosures, and more.
+                            At Philippine Glass Processing Specialist, we prioritize customer satisfaction and consistently aim to exceed our clients' expectations with every project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="services-glass-processing" class="container py-4">
         <div class="container mt-5 text-center">
             <h2 class="fw-bold" style="color: #7E1416;">Glass Processing Services</h2>
-            <p>
-                <b>PGPSI offers the following glass processing services</b>
-            </p>
+            <p>PGPSI offers the following glass processing services</p>
         </div>
-        <div class="row">
+        <div class="row py-3">
             <div class="col-md-3 mb-4 d-flex align-items-stretch">
                 <div class="card border-0 shadow-lg d-flex flex-column">
                     <img src="{{ asset('storage/glass-processing/tempered.png') }}" alt="TQMP Tempered Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">

@@ -1,6 +1,6 @@
-<div class="sticky-top" style="background-color: #7E1416;">
+<div class="sticky-top">
     <!-- Logo and Header Text -->
-    <div class="container text-center">
+    <div class="text-center" style="background-color: #7E1416;">
         <div class="row justify-content-center align-items-center py-2">
             <!-- Logo and Text for larger screens -->
             <div class="col-auto d-flex align-items-center d-none d-md-flex justify-content-center">
@@ -112,6 +112,7 @@
         </div>
     </nav>
 </div>
+
 
 <!-- Login Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
