@@ -94,7 +94,7 @@ Route::post('/products-destroy/{id}', [ProductController::class, 'destroy']);
 
 
 Route::get('/product-details', [ProductDetailsController::class, 'index']);
-
+Route::get('/user_messages', [UserProfileController::class, 'user_messages']);
 Route::get('/get_quotation', [UserProfileController::class, 'get_quotation']);
 Route::get('/process_order', [UserProfileController::class, 'process_order']);
 Route::get('/checkout', [CheckoutController::class, 'index']);

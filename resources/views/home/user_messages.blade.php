@@ -47,9 +47,9 @@
                     </div>
 
                     <!-- Work Notes List -->
-                    <div class="card-body p-0">
+                    <div class="card-body p-0" style="position: relative; height: 400px; overflow-y: auto;" data-bs-spy="scroll" data-bs-target="#notes-nav" data-bs-offset="20">
                         <!-- Note 1 -->
-                        <div class="border-start border-primary border-4 mb-3 bg-white p-3">
+                        <div id="note-1" class="border-start border-primary border-4 mb-3 bg-white p-3">
                             <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
@@ -69,7 +69,7 @@
                         </div>
 
                         <!-- Note 2 -->
-                        <div class="border-end border-danger border-4 mb-3 bg-white p-3">
+                        <div id="note-2" class="border-end border-danger border-4 mb-3 bg-white p-3">
                             <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
@@ -82,7 +82,6 @@
                                     <span class="badge bg-danger me-1">Private</span>
                                     <span><i class="fas fa-ellipsis-v"></i></span>
                                 </div>
-
                             </div>
                             <div>
                                 <p class="mb-0">[Internal Note] This appears to be related to the ongoing authentication system issues. Escalating to L2 support.</p>
@@ -90,7 +89,7 @@
                         </div>
 
                         <!-- Note 3 -->
-                        <div class="border-start border-primary border-4 mb-3 bg-white p-3">
+                        <div id="note-3" class="border-start border-primary border-4 mb-3 bg-white p-3">
                             <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
                                 <div class="d-flex align-items-center">
                                     <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
@@ -126,11 +125,28 @@
                     </div>
                 </div>
             </div>
-
-
             <!--end::Container-->
         </div>
     </section>
+
+    <!-- JS for Scrollspy -->
+    <script>
+        // Initialize ScrollSpy
+        var scrollSpy = new bootstrap.ScrollSpy(document.querySelector('.card-body'), {
+            target: '#notes-nav'
+        });
+
+        // Optional: Smooth scrolling for the navigation links
+        document.querySelectorAll('#notes-nav .nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
 
     <!-- Summernotes Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
