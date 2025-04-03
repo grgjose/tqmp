@@ -1,7 +1,8 @@
-
+<div class="sticky-top">
 <style>
     .dropdown-toggle::after {
-        display: none; /* Removes the default dropdown arrow */
+        display: none;
+        /* Removes the default dropdown arrow */
     }
 
     img.rounded-circle {
@@ -104,7 +105,7 @@
                     <div class="dropdown">
                         <!-- Desktop View: Profile Picture -->
                         <a href="#" class="d-none d-md-flex align-items-center text-decoration-none dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="{{ $my_user->profile_picture ? asset('storage/user-pics/' . $my_user->user_pic) : asset('storage/user-pics/default.png') }}" 
+                            <img src="{{ $my_user->profile_picture ? asset('storage/user-pics/' . $my_user->user_pic) : asset('storage/user-pics/default.png') }}"
                                 alt="Profile Picture" class="rounded-circle" width="40" height="40">
                         </a>
 
@@ -118,7 +119,9 @@
                             <li class="dropdown-header fw-bold text-center">{{ $my_user->name }}</li>
                             <li><a class="dropdown-item" href="/cart"><i class="fas fa-shopping-cart me-2"></i> My Cart</a></li>
                             <li><a class="dropdown-item" href="/profile"><i class="fas fa-user-circle me-2"></i> View My Profile</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li>
                                 <form action="/logout" method="POST">
                                     @csrf
@@ -191,4 +194,3 @@
         </div>
     </div>
 </div>
-
