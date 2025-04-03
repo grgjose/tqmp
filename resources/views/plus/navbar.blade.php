@@ -1,4 +1,3 @@
-<div class="sticky-top">
 <style>
     .dropdown-toggle::after {
         display: none;
