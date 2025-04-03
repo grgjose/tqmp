@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -69,8 +70,11 @@ class HomeController extends Controller
         $auth = auth();
         $my_user = $auth->user();
 
+        $quotations = DB::table('quotations')->where('user_id', '=', $my_user->id)->get();
+
         return view('home.profile', [
             'my_user' => $my_user,
+            'quotations' => $quotations,
         ]);
     }
 

@@ -1,4 +1,4 @@
-<div class="sticky-top">
+
 <style>
     .dropdown-toggle::after {
         display: none; /* Removes the default dropdown arrow */

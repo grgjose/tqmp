@@ -14,10 +14,15 @@ return new class extends Migration
         Schema::create('quotations', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
-            $table->string('filename');
+            $table->string('reference')->nullable();
+            $table->string('type')->nullable();
+            $table->string('size')->nullable();
+            $table->string('color')->nullable();
+            $table->string('filename')->nullable();
             $table->string('message');
-            $table->string('status');
-            $table->datetime('valid_until');
+            $table->string('status')->nullable();
+            $table->double('final_price')->nullable()->default(0.0);
+            $table->datetime('valid_until')->nullable();
             $table->timestamps();
         });
     }

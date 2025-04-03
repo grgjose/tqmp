@@ -39,11 +39,20 @@
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h5 class="fw-bold">Get Quotation</h5>
                 <!-- <h5 class="fw-bold">Glass Processing</h5> -->
-
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
                 
             </div>
-            <form action="/create-quotation" method="POST" class="py-3">
+            <form action="/create-quotation" method="POST" class="py-3" enctype="multipart/form-data">
                 @csrf
+                <input type="hidden" name="process" value="{{ $process }}">
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="fullName" class="form-label fw-bold">Size <span class="text-danger">*</span></label>
@@ -60,7 +69,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="formFileSm" class="form-label fw-bold">Add Image Attachment <span class="text-danger">*</span></label>
-                    <input class="form-control form-control-sm" name="upload_file" id="formFileSm" type="file">
+                    <input class="form-control form-control-sm" name="upload_file" id="formFileSm" type="file" accept="image/*">
                 </div>
                 <div>
                     <button type="submit" class="btn btn-danger w-100">Get Quotation</button>

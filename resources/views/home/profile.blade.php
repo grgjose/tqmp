@@ -225,20 +225,20 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td><a href="#">12347</a></td>
-                        <td>2023-03-01</td>
-                        <td><span class="text-success">Pending</span></td>
-                        <td>Pending</td>
-                        <td>Pending</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">12348</a></td>
-                        <td>2023-04-01</td>
-                        <td><span class="text-success">Approved</span></td>
-                        <td>₱2500.00</td>
-                        <td>2023-04-16</td>
-                    </tr>
+                        @if(count($quotations) == 0)
+                        <tr>
+                            <td colspan="5">No available data</td>
+                        </tr>
+                        @endif
+                        @foreach($quotations as $quote)
+                        <tr>
+                            <td><a href="/show-quotation/{{ $quote->reference }}">{{ $quote->reference }}</a></td>
+                            <td>{{ $quote->created_at }}</td>
+                            <td><span class="text-success">{{ $quote->status }}</span></td>
+                            <td>{{ $quote->final_price }}</td>
+                            <td>{{ $quote->valid_until }}</td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
                 </div>
