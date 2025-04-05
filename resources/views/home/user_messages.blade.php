@@ -47,65 +47,182 @@
                     </div>
 
                     <!-- Work Notes List -->
-                    <div class="card-body p-0" style="position: relative; height: 400px; overflow-y: auto;" data-bs-spy="scroll" data-bs-target="#notes-nav" data-bs-offset="20">
-                        <!-- Note 1 -->
-                        <div id="note-1" class="border-start border-primary border-4 mb-3 bg-white p-3">
-                            <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
-                                <div class="d-flex align-items-center">
-                                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
-                                    <div class="ms-2">
-                                        <strong>John Doe</strong>
-                                        <div class="text-muted small">Today, 10:30 AM</div>
+                    <div class="row mt-3">
+                        <!-- Left Column -->
+                        <div class="col-md-3">
+                            <!-- Basic Information Section -->
+                            <div class="mb-3">
+                                <div class="row g-2">
+                                    <div class="col-md-12">
+                                        <div class="row g-2">
+                                            <div class="col-md-6">
+                                                <label class="form-label small">Ticket ID</label>
+                                                <input type="text" class="form-control form-control-sm" value="TKT-2023-001" readonly>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label small">Created Date</label>
+                                                <input type="datetime-local" class="form-control form-control-sm" readonly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label small">Status</label>
+                                        <input type="text" class="form-control form-control-sm" placeholder="Shipped" readonly>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label small">Last Updated</label>
+                                        <input type="datetime-local" class="form-control form-control-sm" readonly>
                                     </div>
                                 </div>
-                                <div>
-                                    <span class="badge bg-primary me-1">Public</span>
-                                    <span><i class="fas fa-ellipsis-v"></i></span>
-                                </div>
                             </div>
-                            <div>
-                                <p class="mb-0">Contacted the user and walked them through the password reset process. User confirmed they can now log in successfully.</p>
+
+                            <!-- Title and Description -->
+                            <div class="mb-3">
+                                <label class="form-label small">Title/Subject</label>
+                                <input type="text" class="form-control form-control-sm" placeholder="Order Tracking Issue" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small">Description</label>
+                                <textarea class="form-control form-control-sm" rows="2" placeholder="It has been months since my order got shipped but.." readonly></textarea>
+                            </div>
+
+                            <!-- Priority and Severity -->
+                            <div class="row g-2 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small">Priority</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder="High Priority" readonly>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small">Severity</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder="1 - Critical" readonly>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Note 2 -->
-                        <div id="note-2" class="border-end border-danger border-4 mb-3 bg-white p-3">
-                            <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
-                                <div class="d-flex align-items-center">
-                                    <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
-                                    <div class="ms-2">
-                                        <strong>Sales Representative</strong>
-                                        <div class="text-muted small">Yesterday, 3:45 PM</div>
+                        <!-- Right Column -->
+                        <div class="col-md-9">
+                            <div class="card-body p-0" style="position: relative; height: 450px; overflow-y: auto;" data-bs-spy="scroll" data-bs-target="#notes-nav" data-bs-offset="20">
+                                <!-- Note 1 -->
+                                <div id="note-1" class="border-start border-primary border-4 mb-3 bg-white p-3">
+                                    <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
+                                            <div class="ms-2">
+                                                <strong>John Doe</strong>
+                                                <div class="text-muted small">Today, 10:30 AM</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="badge bg-primary me-1">Public</span>
+                                            <span><i class="fas fa-ellipsis-v"></i></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0">Contacted the user and walked them through the password reset process. User confirmed they can now log in successfully.</p>
                                     </div>
                                 </div>
-                                <div>
-                                    <span class="badge bg-danger me-1">Private</span>
-                                    <span><i class="fas fa-ellipsis-v"></i></span>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="mb-0">[Internal Note] This appears to be related to the ongoing authentication system issues. Escalating to L2 support.</p>
-                            </div>
-                        </div>
 
-                        <!-- Note 3 -->
-                        <div id="note-3" class="border-start border-primary border-4 mb-3 bg-white p-3">
-                            <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
-                                <div class="d-flex align-items-center">
-                                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
-                                    <div class="ms-2">
-                                        <strong>John Doe</strong>
-                                        <div class="text-muted small">Yesterday, 11:15 AM</div>
+                                <!-- Note 2 -->
+                                <div id="note-2" class="border-end border-danger border-4 mb-3 bg-white p-3">
+                                    <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
+                                            <div class="ms-2">
+                                                <strong>Sales Representative</strong>
+                                                <div class="text-muted small">Yesterday, 3:45 PM</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="badge bg-danger me-1">Private</span>
+                                            <span><i class="fas fa-ellipsis-v"></i></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0">[Internal Note] This appears to be related to the ongoing authentication system issues. Escalating to L2 support.</p>
                                     </div>
                                 </div>
-                                <div>
-                                    <span class="badge bg-primary me-1">Public</span>
-                                    <span><i class="fas fa-ellipsis-v"></i></span>
+
+                                <!-- Note 3 -->
+                                <div id="note-3" class="border-start border-primary border-4 mb-3 bg-white p-3">
+                                    <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
+                                            <div class="ms-2">
+                                                <strong>John Doe</strong>
+                                                <div class="text-muted small">Yesterday, 11:15 AM</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="badge bg-primary me-1">Public</span>
+                                            <span><i class="fas fa-ellipsis-v"></i></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0">User reported being unable to reset password. Verified account status is active. Reset link was sent but user reports not receiving it.</p>
+                                        <p class="mt-2 mb-0"><strong>Next Steps:</strong> Check email logs for the reset request.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <p class="mb-0">User reported being unable to reset password. Verified account status is active. Reset link was sent but user reports not receiving it.</p>
-                                <p class="mt-2 mb-0"><strong>Next Steps:</strong> Check email logs for the reset request.</p>
+
+                                  <!-- Note 4 -->
+                                  <div id="note-4" class="border-end border-danger border-4 mb-3 bg-white p-3">
+                                    <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
+                                            <div class="ms-2">
+                                                <strong>Sales Representative</strong>
+                                                <div class="text-muted small">Yesterday, 3:45 PM</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="badge bg-danger me-1">Private</span>
+                                            <span><i class="fas fa-ellipsis-v"></i></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0">[Internal Note] This appears to be related to the ongoing authentication system issues. Escalating to L2 support.</p>
+                                    </div>
+                                </div>
+
+                                 <!-- Note 5 -->
+                                 <div id="note-3" class="border-start border-primary border-4 mb-3 bg-white p-3">
+                                    <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
+                                            <div class="ms-2">
+                                                <strong>John Doe</strong>
+                                                <div class="text-muted small">Yesterday, 11:15 AM</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="badge bg-primary me-1">Public</span>
+                                            <span><i class="fas fa-ellipsis-v"></i></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0">User reported being unable to reset password. Verified account status is active. Reset link was sent but user reports not receiving it.</p>
+                                        <p class="mt-2 mb-0"><strong>Next Steps:</strong> Check email logs for the reset request.</p>
+                                    </div>
+                                </div>
+
+                                  <!-- Note 6 -->
+                                  <div id="note-4" class="border-end border-danger border-4 mb-3 bg-white p-3">
+                                    <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
+                                            <div class="ms-2">
+                                                <strong>Sales Representative</strong>
+                                                <div class="text-muted small">Yesterday, 3:45 PM</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="badge bg-danger me-1">Private</span>
+                                            <span><i class="fas fa-ellipsis-v"></i></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0">[Internal Note] This appears to be related to the ongoing authentication system issues. Escalating to L2 support.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
