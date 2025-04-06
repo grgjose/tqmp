@@ -76,11 +76,11 @@
                                                 
                                                 @foreach($products as $product)
                                                     @if($product->id == $cart->product_id)
-                                                    <div>
-                                                        <p class="mb-0 fw-bold">{{ $product->display_name }}</p>
-                                                        <small class="text-muted">Color: White | Size: Medium</small>
-                                                        <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $product->price }}</small>
-                                                    </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-bold">{{ $product->display_name }}</p>
+                                                            <small class="text-muted">Color: White | Size: Medium</small>
+                                                            <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $product->price }}</small>
+                                                        </div>
                                                         @continue
                                                     @endif
                                                 @endforeach
@@ -89,7 +89,12 @@
                                         <td class="text-center" style="width: 60px;">
                                             <input type="number" class="form-control form-control-sm text-center" value="1" min="1">
                                         </td>
-                                        <td class="prices">₱{{ $product->price; }}</td>
+                                        @foreach($products as $product)
+                                            @if($product->id == $cart->product_id)
+                                                <td class="prices">₱{{ $product->price; }}</td>
+                                                @continue
+                                            @endif
+                                        @endforeach
                                     </tr>
                                 @endforeach
                             </tbody>
