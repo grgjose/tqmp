@@ -26,9 +26,9 @@
 
         <div class="card tbl">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <h4 class="card-title">List of Products</h4>
+                <h4 class="card-title">List of Catalogue Images</h4>
                 <div class="ms-auto">
-                    <button class="btn btn-success px-4" onclick="productCreate()"><i class="fa-solid fa-cart-plus"></i> &nbsp; Add Product</button>
+                    <button class="btn btn-success px-4" onclick="catalogueCreate()"><i class="fa-solid fa-cart-plus"></i> &nbsp; Add Catalogue</button>
                 </div>
             </div>
             <div class="card-body">
@@ -41,25 +41,19 @@
                     </ul>
                 </div>
                 @endif
-                <table id="tbl_approvals" class="table is-striped" style="width:100%; text-align: left;">
+                <table id="tbl_approvals" class="table is-striped" style="width:100%; text-align: left; vertical-align: middle;">
                     <thead>
                         <tr>
-                            <th style="width: 15%">Brand</th>
-                            <th style="width: 15%">Category</th>
-                            <th style="width: 10%">Display Name</th>
-                            <th style="width: 10%">Production Name</th>
-                            <th style="width: 20%">Price</th>
-                            <th style="width: 50%">Actions</th>
+                            <th style="width: 30%">Title</th>
+                            <th style="width: 50%">Image</th>
+                            <th style="width: 20%">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($products as $product)
+                        @foreach($catalogues as $catalogue)
                             <tr>
-                                <td>{{ $product->brand }}</td>
-                                <td>{{ $product->category }}</td>
-                                <td>{{ $product->display_name }}</td>
-                                <td>{{ $product->name }}</td>
-                                <td>{{ $product->price }}</td>
+                                <td>{{ $catalogue->title }}</td>
+                                <td><img src="{{ asset('storage/catalogue/'.$catalogue->upload_file) }}" width="50%" height="50%"></td>
                                 {{-- <td>
                                     <div class="btn-group-sm">
                                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -74,9 +68,9 @@
                                 </td> --}}
                                 <td>
                                     <div class="btn-group-sm">
-                                        <button class="btn btn-warning btn-sm" onclick="productShow({{ $product->id }})"> <i class="fa-solid fa-eye"></i> View</button>
-                                        <button class="btn btn-success btn-sm" onclick="productUpdate({{ $product->id }})"> <i class="fa-solid fa-pen"></i> Update</button>
-                                        <button class="btn btn-danger btn-sm" onclick="productDelete({{ $product->id }})" data-bs-toggle="modal" data-bs-target="#deleteModal"> <i class="fa-solid fa-trash"></i> Delete</button>
+                                        {{-- <button class="btn btn-warning btn-sm" onclick="productShow({{ $product->id }})"> <i class="fa-solid fa-eye"></i> View</button> --}}
+                                        <button class="btn btn-success btn-sm" onclick="catalogueUpdate({{ $catalogue->id }})"> <i class="fa-solid fa-pen"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm" onclick="catalogueDelete({{ $catalogue->id }})" data-bs-toggle="modal" data-bs-target="#deleteModal"> <i class="fa-solid fa-trash"></i> Delete</button>
                                         {{-- <button class="btn btn-success btn-sm">Add</button>
                                         <button class="btn btn-warning btn-sm">Edit</button>
                                         <button class="btn btn-danger btn-sm">Delete</button>
@@ -97,7 +91,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header bg-danger">
-                        <h5 class="modal-title border-0 text-white" id="modalLabel">Delete Product</h5>
+                        <h5 class="modal-title border-0 text-white" id="modalLabel">Delete Catalogue</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <form id="deleteForm" action="/products-destroy/" method="POST">
@@ -107,7 +101,7 @@
                                 <div class="form-group col-12">
                                     <label for="reason">Reason</label>
                                     {{-- <input type="textarea" class="form-control" name="reason" id="reason"> --}}
-                                    <textarea cols="10" rows="5" class="form-control" style="resize: none;" id="reason" name="reason">Item is no longer available</textarea>
+                                    <textarea cols="10" rows="5" class="form-control" style="resize: none;" id="reason" name="reason">Catalogue is no longer available</textarea>
                                 </div>
                             </div>
                         </div>

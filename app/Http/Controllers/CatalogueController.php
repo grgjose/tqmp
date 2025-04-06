@@ -23,9 +23,10 @@ class CatalogueController extends Controller
         $catalogues = DB::table('catalogues')
             ->where('isDeleted', '=', false)->get();
 
-        return view('dashboard.settings.catalogue', [
+        return view('dashboard.index', [
             'my_user' => $my_user,
             'title' => 'Catalogue',
+            'main_content' => 'dashboard.settings.catalogue',
             'catalogues' => $catalogues,
         ]);
     }
@@ -74,7 +75,7 @@ class CatalogueController extends Controller
         }
 
         $catalogue = new Catalogue();
-        $catalogue->title = $validated['product_id'];
+        $catalogue->title = $validated['title'];
         $catalogue->upload_file = $filename;
         $catalogue->save();
 
@@ -111,7 +112,7 @@ class CatalogueController extends Controller
  
         return view('dashboard.settings.catalogue-update', [
             'my_user' => $my_user,
-            'catalogue' => $catalogue,
+            'catalogue' => $catalogue[0],
         ]);
     }
 
@@ -132,22 +133,21 @@ class CatalogueController extends Controller
             'upload_file' => ['required', 'file', 'mimes:jpg,jpeg,png', 'max:4096'],
         ]);
 
+        $catalogue = Catalogue::find($id);
+        $catalogue->title = $validated['title'];
+        $filename =  $catalogue->upload_file;
+
         // Handle file upload
         if ($request->hasFile('upload_file')) {
             $file = $request->file('upload_file');
             $filename = time() . '_' . $file->getClientOriginalName();
             $file->storeAs('catalogue', $filename, 'public');
-        } else {
-            $filename = "default.png"; 
-        }
 
-        $catalogue = Catalogue::find($id);
-        $catalogue->title = $validated['product_id'];
-
-        if ($catalogue->upload_file != 'default.png') {
-            // Delete the image from the filesystem
-            if (file_exists(public_path('storage/catalogue/' . $catalogue->upload_file))) {
-                unlink(public_path('storage/catalogue/' . $catalogue->upload_file));
+            if ($catalogue->upload_file != 'default.png') {
+                // Delete the image from the filesystem
+                if (file_exists(public_path('storage/catalogue/' . $catalogue->upload_file))) {
+                    unlink(public_path('storage/catalogue/' . $catalogue->upload_file));
+                }
             }
         }
 
