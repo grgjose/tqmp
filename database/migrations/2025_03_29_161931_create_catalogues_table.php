@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('catalogue', function (Blueprint $table) {
+        Schema::create('catalogues', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('filename');
+            $table->string('title')->nullable();
+            $table->string('upload_file')->nullable();
+            $table->boolean('isDeleted')->default(false);
             $table->timestamps();
         });
     }
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('catalogue');
+        Schema::dropIfExists('catalogues');
     }
 };

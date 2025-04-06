@@ -1,4 +1,3 @@
-
 <style>
     .image-container {
         position: relative;
@@ -7,8 +6,8 @@
     }
 
     .product-image {
-        width: 120px;
-        height: 120px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 10px;
         cursor: pointer;
@@ -106,7 +105,7 @@
                 <div class="product-images d-flex flex-wrap">
                     @foreach($productImages as $image)
                         @if($image->product_id == $product->id)
-                            <div class="col-md-3 col-sm-6 col-6 text-center image-container">
+                            <div class="col-md-3 col-sm-6 col-6 text-center image-container border border-dark">
                                 <input type="checkbox" class="image-checkbox" id="img-checkbox-{{ $image->id }}" name="images_to_delete[]" value="{{ $image->id }}">
                                 <img id="img-{{ $image->id }}" src="{{ asset('storage/all-items/' . $image->filename) }}" 
                                 class="product-image" alt="Product Image" onclick="toggleProductCheckbox({{ $image->id }})">
