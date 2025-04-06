@@ -1,71 +1,33 @@
-
-<style>
-    .img-circle{
-        border-radius: 50%;
-    }
-
-    .profile-user-img{
-        border: 3px solid #adb5bd;
-        margin: 0 auto;
-        padding: 3px;
-        width: 100px;
-    }
-
-    .img-fluid{
-        max-width: 100%;
-        height: auto;
-    }
-
-    img{
-        vertical-align: middle;
-        border-style: none;
-    }
-</style>
 <div class="card card-info">
     <div class="card-header">
         <h3 class="card-title">Product Details</h3>
     </div>
 
-    <form action="/products-store" method="POST" enctype="multipart/form-data">
+    <form action="/product-variants-store" method="POST">
         @csrf
         <div class="card-body">
             <div class="row mb-3">
-                <div class="form-group col-2">
-                    <label for="userpic">Product Pictures</label>
-                    <input type="file" class="form-control" id="upload_file" name="upload_files[]" accept="image/png, image/jpeg" multiple>
-                </div>
-                <div class="form-group col-3">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="form-group col-3">
-                    <label for="display_name">Display Name</label>
-                    <input type="text" class="form-control" id="display_name" name="display_name">
-                </div>
-                <div class="form-group col-3">
-                    <label for="description">Description</label>
-                    <input type="text" class="form-control" id="description" name="description" required>
-                </div>
-            </div> 
-            
-            <div class="row mb-3">
-                <div class="form-group col-3">
-                    <label for="category_id">Category</label>
-                    <select class="form-control" name="category_id">
-                        @foreach($productCategories as $category)
-                            <option value="{{ $category->id }}">{{ $category->category }}</option>
+                <div class="form-group col-4">
+                    <label for="product_id">Product</label>
+                    <select class="form-control" name="product_id" required>
+                        @foreach($products as $product)
+                            <option value="{{ $product->id }}">{{ $product->name }}</option>
                         @endforeach
                     </select>
                 </div>
-                <div class="form-group col-3">
-                    <label for="brand">Brand</label>
-                    <input type="text" class="form-control" id="brand" name="brand" required>
+                <div class="form-group col-4">
+                    <label for="key">Variant</label>
+                    <select class="form-control" name="key" required>
+                        <option value="Size">Size</option>
+                        <option value="Color">Color</option>
+                        <option value="Brand">Brand</option>
+                    </select>
                 </div>
-                <div class="form-group col-3">
-                    <label for="price">Price</label>
-                    ₱<input type="number" class="form-control" id="price" name="price" required>
+                <div class="form-group col-4">
+                    <label for="value">Value</label>
+                    <input type="text" class="form-control" id="value" name="value" required>
                 </div>
-            </div>
+            </div> 
         </div>
 
         <div class="card-footer">

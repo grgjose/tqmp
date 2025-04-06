@@ -1,5 +1,4 @@
 // Approvals
-
 function showDetails(id){
     $('.tbl').attr('style', 'display: none;');
     $('#view').load('/approvals-view/'+id);
@@ -23,7 +22,6 @@ function reject(id){
 }
 
 // Users
-
 function userShow(id){
     $('.tbl').attr('style', 'display: none;');
     $('#view').load('/users-view/'+id);
@@ -91,6 +89,82 @@ function toggleProductCheckbox(imageId) {
         checkmark.style.opacity = '0';  // Hide checkmark
         image.style.opacity = '1';     // Reset image opacity
     }
+}
+
+
+// Products Category
+function productCategoryShow(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/product-categories-view/'+id);
+}
+
+function productCategoryHide(){
+    $('.tbl').removeAttr('style');
+    $('#view').html('');
+}
+
+function productCategoryCreate(){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/product-categories-create/');
+}
+
+function productCategoryUpdate(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/product-categories-edit/'+id);
+}
+
+function productCategoryDelete(id){
+    $('#deleteForm').attr('action', '/product-categories-destroy/'+id);
+}
+
+// Products Variants
+function productVariantShow(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/product-variants-view/'+id);
+}
+
+function productVariantHide(){
+    $('.tbl').removeAttr('style');
+    $('#view').html('');
+}
+
+function productVariantCreate(){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/product-variants-create/');
+}
+
+function productVariantUpdate(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/product-variants-edit/'+id);
+}
+
+function productVariantDelete(id){
+    $('#deleteForm').attr('action', '/product-variants-destroy/'+id);
+}
+
+// Catalogue
+function catalogueShow(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/catalogue-view/'+id);
+}
+
+function catalogueHide(){
+    $('.tbl').removeAttr('style');
+    $('#view').html('');
+}
+
+function catalogueCreate(){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/catalogue-create/');
+}
+
+function catalogueUpdate(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/catalogue-edit/'+id);
+}
+
+function catalogueDelete(id){
+    $('#deleteForm').attr('action', '/catalogue-destroy/'+id);
 }
 
 // Active Navbar UI

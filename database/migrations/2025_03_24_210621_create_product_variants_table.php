@@ -16,6 +16,7 @@ return new class extends Migration
             $table->integer('product_id');
             $table->string('key');
             $table->string('value');
+            $table->boolean('isDeleted')->default(false);
             $table->timestamps();
         });
     }

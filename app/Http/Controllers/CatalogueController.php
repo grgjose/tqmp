@@ -25,6 +25,7 @@ class CatalogueController extends Controller
 
         return view('dashboard.settings.catalogue', [
             'my_user' => $my_user,
+            'title' => 'Catalogue',
             'catalogues' => $catalogues,
         ]);
     }

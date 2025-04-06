@@ -28,8 +28,10 @@ class ProductVariantController extends Controller
         $productVariants = DB::table('product_variants')
             ->where('isDeleted', '=', false)->get();
 
-        return view('dashboard.settings.product-variants', [
+        return view('dashboard.index', [
             'my_user' => $my_user,
+            'title' => 'Product Variants',
+            'main_content' => 'dashboard.settings.product-variants',
             'products' => $products,
             'productVariants' => $productVariants,
         ]);
@@ -52,21 +54,13 @@ class ProductVariantController extends Controller
         ->select('products.*', 'product_categories.category as category')
         ->where('products.isDeleted', '=', false)->get();
 
-        $productVariants = DB::table('product_variants')
-            ->where('isDeleted', '=', false)->get();
-
         if($products == null || count($products) == 0){
-            return redirect('/product-variants')->with('error_msg', 'Unexpected Error!');
-        }
-
-        if($productVariants == null || count($productVariants) == 0){
             return redirect('/product-variants')->with('error_msg', 'Unexpected Error!');
         }
             
         return view('dashboard.settings.product-variants-create', [
             'my_user' => $my_user,
             'products' => $products,
-            'productVariants' => $productVariants,
         ]);
     }
 
@@ -137,7 +131,7 @@ class ProductVariantController extends Controller
         return view('dashboard.settings.product-variants-update', [
             'my_user' => $my_user,
             'products' => $products,
-            'productVariants' => $productVariants,
+            'productVariants' => $productVariants[0],
         ]);
     }
 

@@ -12,7 +12,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-end">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Products</li>
+                        <li class="breadcrumb-item active" aria-current="page">Product Categories</li>
                     </ol>
                 </div>
             </div>
@@ -28,7 +28,7 @@
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h4 class="card-title">List of Products</h4>
                 <div class="ms-auto">
-                    <button class="btn btn-success px-4" onclick="productCreate()"><i class="fa-solid fa-cart-plus"></i> &nbsp; Add Product</button>
+                    <button class="btn btn-success px-4" onclick="productCategoryCreate()"><i class="fa-solid fa-cart-plus"></i> &nbsp; Add Product Category</button>
                 </div>
             </div>
             <div class="card-body">
@@ -44,22 +44,18 @@
                 <table id="tbl_approvals" class="table is-striped" style="width:100%; text-align: left;">
                     <thead>
                         <tr>
-                            <th style="width: 15%">Brand</th>
-                            <th style="width: 15%">Category</th>
-                            <th style="width: 10%">Display Name</th>
-                            <th style="width: 10%">Production Name</th>
-                            <th style="width: 20%">Price</th>
-                            <th style="width: 50%">Actions</th>
+                            <th style="width: 10%">ID</th>
+                            <th style="width: 20%">Category</th>
+                            <th style="width: 40%">Description</th>
+                            <th style="width: 30%">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($products as $product)
+                        @foreach($productCategories as $category)
                             <tr>
-                                <td>{{ $product->brand }}</td>
-                                <td>{{ $product->category }}</td>
-                                <td>{{ $product->display_name }}</td>
-                                <td>{{ $product->name }}</td>
-                                <td>{{ $product->price }}</td>
+                                <td>{{ $category->id }}</td>
+                                <td>{{ $category->category }}</td>
+                                <td>{{ $category->description }}</td>
                                 {{-- <td>
                                     <div class="btn-group-sm">
                                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -74,9 +70,9 @@
                                 </td> --}}
                                 <td>
                                     <div class="btn-group-sm">
-                                        <button class="btn btn-warning btn-sm" onclick="productShow({{ $product->id }})"> <i class="fa-solid fa-eye"></i> View</button>
-                                        <button class="btn btn-success btn-sm" onclick="productUpdate({{ $product->id }})"> <i class="fa-solid fa-pen"></i> Update</button>
-                                        <button class="btn btn-danger btn-sm" onclick="productDelete({{ $product->id }})" data-bs-toggle="modal" data-bs-target="#deleteModal"> <i class="fa-solid fa-trash"></i> Delete</button>
+                                        {{-- <button class="btn btn-warning btn-sm" onclick="productShow({{ $product->id }})"> <i class="fa-solid fa-eye"></i> View</button> --}}
+                                        <button class="btn btn-success btn-sm" onclick="productCategoryUpdate({{ $category->id }})"> <i class="fa-solid fa-pen"></i> Update</button>
+                                        <button class="btn btn-danger btn-sm" onclick="productCategoryDelete({{ $category->id }})" data-bs-toggle="modal" data-bs-target="#deleteModal"> <i class="fa-solid fa-trash"></i> Delete</button>
                                         {{-- <button class="btn btn-success btn-sm">Add</button>
                                         <button class="btn btn-warning btn-sm">Edit</button>
                                         <button class="btn btn-danger btn-sm">Delete</button>
@@ -97,17 +93,17 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header bg-danger">
-                        <h5 class="modal-title border-0 text-white" id="modalLabel">Delete Product</h5>
+                        <h5 class="modal-title border-0 text-white" id="modalLabel">Delete Product Category</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form id="deleteForm" action="/products-destroy/" method="POST">
+                    <form id="deleteForm" action="/product-categories-destroy/" method="POST">
                         @csrf
                         <div class="modal-body">
                             <div class="row">
                                 <div class="form-group col-12">
                                     <label for="reason">Reason</label>
                                     {{-- <input type="textarea" class="form-control" name="reason" id="reason"> --}}
-                                    <textarea cols="10" rows="5" class="form-control" style="resize: none;" id="reason" name="reason">Item is no longer available</textarea>
+                                    <textarea cols="10" rows="5" class="form-control" style="resize: none;" id="reason" name="reason">Category is no longer available</textarea>
                                 </div>
                             </div>
                         </div>

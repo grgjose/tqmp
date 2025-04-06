@@ -21,6 +21,9 @@ use App\Http\Controllers\OrderSummaryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductDetailsController;
 use App\Http\Controllers\QuotationController;
+use App\Http\Controllers\ProductCategoryController;
+use App\Http\Controllers\ProductVariantController;
+use App\Http\Controllers\CatalogueController;
 
 // Home Pages
 Route::get('/', [HomeController::class, 'index']);
@@ -90,7 +93,32 @@ Route::get('/products-edit/{id}', [ProductController::class, 'edit']);
 Route::put('/products-update/{id}', [ProductController::class, 'update']);
 Route::post('/products-destroy/{id}', [ProductController::class, 'destroy']);
 
+// Dashboard - Settings - Product Categories
+Route::get('/product-categories', [ProductCategoryController::class, 'index']);
+Route::get('/product-categories-view/{id}', [ProductCategoryController::class, 'show']);
+Route::get('/product-categories-create', [ProductCategoryController::class, 'create']);
+Route::post('/product-categories-store', [ProductCategoryController::class, 'store']);
+Route::get('/product-categories-edit/{id}', [ProductCategoryController::class, 'edit']);
+Route::put('/product-categories-update/{id}', [ProductCategoryController::class, 'update']);
+Route::post('/product-categories-destroy/{id}', [ProductCategoryController::class, 'destroy']);
 
+// Dashboard - Settings - Product Variants
+Route::get('/product-variants', [ProductVariantController::class, 'index']);
+Route::get('/product-variants-view/{id}', [ProductVariantController::class, 'show']);
+Route::get('/product-variants-create', [ProductVariantController::class, 'create']);
+Route::post('/product-variants-store', [ProductVariantController::class, 'store']);
+Route::get('/product-variants-edit/{id}', [ProductVariantController::class, 'edit']);
+Route::put('/product-variants-update/{id}', [ProductVariantController::class, 'update']);
+Route::post('/product-variants-destroy/{id}', [ProductVariantController::class, 'destroy']);
+
+// Dashboard - Settings - Catalogue
+Route::get('/catalogue', [CatalogueController::class, 'index']);
+Route::get('/catalogue-view/{id}', [CatalogueController::class, 'show']);
+Route::get('/catalogue-create', [CatalogueController::class, 'create']);
+Route::post('/catalogue-store', [CatalogueController::class, 'store']);
+Route::get('/catalogue-edit/{id}', [CatalogueController::class, 'edit']);
+Route::put('/catalogue-update/{id}', [CatalogueController::class, 'update']);
+Route::post('/catalogue-destroy/{id}', [CatalogueController::class, 'destroy']);
 
 
 Route::get('/product-details', [ProductDetailsController::class, 'index']);

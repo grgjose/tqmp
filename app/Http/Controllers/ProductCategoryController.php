@@ -23,8 +23,10 @@ class ProductCategoryController extends Controller
         $productCategories = DB::table('product_categories')
             ->where('isDeleted', '=', false)->get();
 
-        return view('dashboard.settings.product-categories', [
+        return view('dashboard.index', [
             'my_user' => $my_user,
+            'title' => 'Product Categories',
+            'main_content' => 'dashboard.settings.product-categories',
             'productCategories' => $productCategories,
         ]);
     }
@@ -108,7 +110,7 @@ class ProductCategoryController extends Controller
 
         return view('dashboard.settings.product-categories-update', [
             'my_user' => $my_user,
-            'productCategories' => $productCategories,
+            'productCategories' => $productCategories[0],
         ]);
     }
 
@@ -143,6 +145,13 @@ class ProductCategoryController extends Controller
      */
     public function destroy($id)
     {
+
+        $products = DB::table('products')->where('category_id', '=', $id)->where('isDeleted', '=', false)->get();
+        
+        if($products != null || count($products) > 0){
+            return redirect('/product-categories')->with('error_msg', 'Product Category is currently being used hence cannot be deleted.');
+        }
+
         $productsCategory = ProductCategory::find($id);
         $productsCategory->isDeleted = true;
         $productsCategory->save();
