@@ -45,7 +45,7 @@
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
     <!--begin::App Wrapper-->
     <div class="app-wrapper">
-    
+
         <!--begin::App Main-->
         <main class="app-main">
             <!--App Content Header-->
@@ -60,11 +60,11 @@
                             </div>
 
                             <!-- Work Notes List -->
-                            <div class="row mt-3">
+                            <div class="row mt-3 mb-4">
                                 <!-- Left Column -->
-                                <div class="col-md-4">
+                                <div class="border col-md-4">
                                     <!-- Basic Information Section -->
-                                    <div class="mb-3">
+                                    <div class="mt-3 mb-3">
                                         <div class="row g-2">
                                             <div class="col-md-12">
                                                 <div class="row g-2">
@@ -110,11 +110,17 @@
                                             <input type="text" class="form-control form-control-sm">
                                         </div>
                                     </div>
+
+                                    <!-- Action Buttons -->
+                                    <div class="d-flex justify-content-end gap-2 mb-3">
+                                        <button class="btn btn-sm btn-success w-100">Approve</button>
+                                        <button class="btn btn-sm btn-danger w-100">Reject</button>
+                                    </div>
                                 </div>
 
-                                <!-- Right Column -->
-                                <div class="col-md-8">
-                                    <div class="card-body p-0" style="position: relative; height: 450px; overflow-y: auto;" data-bs-spy="scroll" data-bs-target="#scrollspy-nav" data-bs-offset="20">
+                                <!-- Middle Column -->
+                                <div class="border col-md-6">
+                                    <div class="card-body p-0" style="position: relative; height: 500px; overflow-y: auto;" data-bs-spy="scroll" data-bs-target="#scrollspy-nav" data-bs-offset="20">
 
                                         <!-- Note 0 -->
                                         <div id="note-0" class="border-end border-secondary border-4 mb-3 bg-white p-3">
@@ -135,7 +141,6 @@
                                                 <p class="mb-0">[Internal Note] Please wait for the Sales Representative's Verification. The Representative will message here in a bit. It is possible that the Representative will call you on your designated number for clarification.</p>
                                             </div>
                                         </div>
-
 
                                         <!-- Note 1 -->
                                         <div id="note-1" class="border-start border-primary border-4 mb-3 bg-white p-3">
@@ -178,90 +183,52 @@
                                         </div>
 
                                         <!-- Note 3 -->
-                                         <div id="note-3" class="border-start border-primary border-4 mb-3 bg-white p-3">
-                                    <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
-                                        <div class="d-flex align-items-center">
-                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
-                                            <div class="ms-2">
-                                                <strong>John Doe</strong>
-                                                <div class="text-muted small">Yesterday, 11:15 AM</div>
+                                        <div id="note-3" class="border-start border-primary border-4 mb-3 bg-white p-3">
+                                            <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
+                                                    <div class="ms-2">
+                                                        <strong>John Doe</strong>
+                                                        <div class="text-muted small">Yesterday, 11:15 AM</div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-primary me-1">Public</span>
+                                                    <span><i class="fas fa-ellipsis-v"></i></span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-0">User reported being unable to reset password. Verified account status is active. Reset link was sent but user reports not receiving it.</p>
+                                                <p class="mt-2 mb-0"><strong>Next Steps:</strong> Check email logs for the reset request.</p>
                                             </div>
                                         </div>
-                                        <div>
-                                            <span class="badge bg-primary me-1">Public</span>
-                                            <span><i class="fas fa-ellipsis-v"></i></span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="mb-0">User reported being unable to reset password. Verified account status is active. Reset link was sent but user reports not receiving it.</p>
-                                        <p class="mt-2 mb-0"><strong>Next Steps:</strong> Check email logs for the reset request.</p>
-                                    </div>
-                                </div> 
-
-                                        <!-- Note 4 -->
-                                        <!-- {{-- <div id="note-4" class="border-end border-danger border-4 mb-3 bg-white p-3">
-                                    <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
-                                        <div class="d-flex align-items-center">
-                                            <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
-                                            <div class="ms-2">
-                                                <strong>Sales Representative</strong>
-                                                <div class="text-muted small">Yesterday, 3:45 PM</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <span class="badge bg-danger me-1">Private</span>
-                                            <span><i class="fas fa-ellipsis-v"></i></span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="mb-0">[Internal Note] This appears to be related to the ongoing authentication system issues. Escalating to L2 support.</p>
-                                    </div>
-                                </div> --}} -->
-
-                                        <!-- Note 5 -->
-                                        <!-- {{-- <div id="note-3" class="border-start border-primary border-4 mb-3 bg-white p-3">
-                                    <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
-                                        <div class="d-flex align-items-center">
-                                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
-                                            <div class="ms-2">
-                                                <strong>John Doe</strong>
-                                                <div class="text-muted small">Yesterday, 11:15 AM</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <span class="badge bg-primary me-1">Public</span>
-                                            <span><i class="fas fa-ellipsis-v"></i></span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="mb-0">User reported being unable to reset password. Verified account status is active. Reset link was sent but user reports not receiving it.</p>
-                                        <p class="mt-2 mb-0"><strong>Next Steps:</strong> Check email logs for the reset request.</p>
-                                    </div>
-                                </div> --}} -->
-
-                                        <!-- Note 6 -->
-                                        <!-- {{-- <div id="note-4" class="border-end border-danger border-4 mb-3 bg-white p-3">
-                                    <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
-                                        <div class="d-flex align-items-center">
-                                            <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
-                                            <div class="ms-2">
-                                                <strong>Sales Representative</strong>
-                                                <div class="text-muted small">Yesterday, 3:45 PM</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <span class="badge bg-danger me-1">Private</span>
-                                            <span><i class="fas fa-ellipsis-v"></i></span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="mb-0">[Internal Note] This appears to be related to the ongoing authentication system issues. Escalating to L2 support.</p>
-                                    </div>
-                                </div> --}} -->
                                     </div>
                                 </div>
-                            </div>
 
+                                <!-- Right Column for Preview Image -->
+                                <div class="border col-md-2">
+                                    <div class="p-3">
+                                        <h6 class="text-center">Preview Image</h6>
+                                        <div class="d-flex justify-content-center align-items-center rounded border" style="height: 400px; border: 1px solid #ddd; position: relative;">
+                                            <img id="previewImage" src="https://gingercathouse.co.uk/wp-content/uploads/2020/09/tabby-grey-main-coon-cat-1024x577.jpeg" style="max-width: 100%; max-height: 100%; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content" style="width: auto;">
+                                                    <div class="modal-body">
+                                                        <img id="modalPreviewImage" src="https://gingercathouse.co.uk/wp-content/uploads/2020/09/tabby-grey-main-coon-cat-1024x577.jpeg" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
                             <div class="card-footer p-0">
                                 <div id="summernote"></div>
                                 <div class="p-3 bg-light d-flex justify-content-between">
@@ -275,18 +242,156 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-                    </div>
-
-
-                    <!--end::Container-->
-                </div>
-                <!--end::App Content-->
+                        <!--end::App Content-->
         </main>
         <!--end::App Main-->
     </div>
     <!--end::App Wrapper-->
     <!--begin::Script-->
+
+    <!-- JS for Photo Viewing -->
+    <script>
+        document.getElementById('imageInput')?.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const previewImage = document.getElementById('previewImage');
+                    const modalPreviewImage = document.getElementById('modalPreviewImage');
+                    previewImage.src = e.target.result;
+                    modalPreviewImage.src = e.target.result;
+                    previewImage.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+    <!-- JS for Zoom Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modalImage = document.getElementById('modalPreviewImage');
+            const zoomInBtn = document.querySelector('.zoom-in-btn');
+            const zoomOutBtn = document.querySelector('.zoom-out-btn');
+            const zoomResetBtn = document.querySelector('.zoom-reset-btn');
+
+            let currentScale = 1;
+            const zoomLevels = [1, 1.5, 2, 2.5, 3];
+            let currentZoomIndex = 0;
+
+            // Set initial transform origin
+            modalImage.style.transformOrigin = 'center center';
+
+            // Click to cycle through zoom levels
+            modalImage.addEventListener('click', function(e) {
+                // Calculate click position relative to image
+                const rect = this.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+
+                // Set transform origin to click position
+                this.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+
+                // Cycle to next zoom level
+                currentZoomIndex = (currentZoomIndex + 1) % zoomLevels.length;
+                currentScale = zoomLevels[currentZoomIndex];
+                applyZoom();
+            });
+
+            // Zoom in button
+            zoomInBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                if (currentZoomIndex < zoomLevels.length - 1) {
+                    currentZoomIndex++;
+                    currentScale = zoomLevels[currentZoomIndex];
+                    applyZoom();
+                }
+            });
+
+            // Zoom out button
+            zoomOutBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                if (currentZoomIndex > 0) {
+                    currentZoomIndex--;
+                    currentScale = zoomLevels[currentZoomIndex];
+                    applyZoom();
+                }
+            });
+
+            // Reset zoom
+            zoomResetBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                currentZoomIndex = 0;
+                currentScale = 1;
+                modalImage.style.transformOrigin = 'center center';
+                applyZoom();
+            });
+
+            // Apply the current zoom
+            function applyZoom() {
+                modalImage.style.transform = `scale(${currentScale})`;
+                modalImage.style.cursor = currentScale > 1 ? 'zoom-out' : 'zoom-in';
+            }
+
+            // Panning functionality when zoomed
+            let isDragging = false;
+            let startX, startY, translateX = 0,
+                translateY = 0;
+
+            modalImage.addEventListener('mousedown', function(e) {
+                if (currentScale > 1) {
+                    isDragging = true;
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                    this.style.cursor = 'grabbing';
+                    e.preventDefault();
+                }
+            });
+
+            document.addEventListener('mousemove', function(e) {
+                if (!isDragging) return;
+
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+
+                modalImage.style.transform = `scale(${currentScale}) translate(${translateX}px, ${translateY}px)`;
+            });
+
+            document.addEventListener('mouseup', function() {
+                isDragging = false;
+                if (currentScale > 1) {
+                    modalImage.style.cursor = 'zoom-out';
+                }
+            });
+
+            // Reset on modal close
+            $('#imageModal').on('hidden.bs.modal', function() {
+                currentZoomIndex = 0;
+                currentScale = 1;
+                translateX = 0;
+                translateY = 0;
+                modalImage.style.transform = 'scale(1)';
+                modalImage.style.transformOrigin = 'center center';
+                modalImage.style.cursor = 'zoom-in';
+            });
+        });
+    </script>
+
+    <!-- JS for Previwing the attachments -->
+    <script>
+        function uploadAndPreviewImage(file) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                // Insert the image directly into Summernote
+                $('#summernote').summernote('insertImage', e.target.result, file.name);
+            };
+
+            reader.readAsDataURL(file); // Preview without uploading
+        }
+    </script>
 
     <!-- JS for Scrollspy -->
     <script>
@@ -316,10 +421,7 @@
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.js"></script>
 
     <!--Third Party Plugin(OverlayScrollbars)-->
-    <script
-        src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
-        integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ="
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js" integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ=" crossorigin="anonymous"></script>
 
     <!--Required Plugin(popperjs for Bootstrap 5)-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -401,9 +503,11 @@
             });
         });
     </script>
+
     <script>
         new DataTable('#example');
     </script>
+
     <!--end::Script-->
 </body>
 <!--end::Body-->
