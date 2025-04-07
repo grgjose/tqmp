@@ -55,8 +55,11 @@
                     <div class="row">
                         <div class="mx-auto">
 
-                            <div class="">
+                            <div class="d-flex justify-content-between align-items-center">
                                 <h3 class="mb-0">Messages</h3>
+                                <div>
+                                    <button class="btn btn-sm btn-primary" onclick="saveInput()">Save</button>
+                                </div>
                             </div>
 
                             <!-- Work Notes List -->
@@ -121,6 +124,8 @@
                                         <textarea id="inputBox" class="form-control form-control-sm" rows="2" placeholder="Enter your input here..."></textarea>
                                     </div>
 
+                                   
+
                                     <script>
                                         function showInputBox(action) {
                                             const inputBoxContainer = document.getElementById('inputBoxContainer');
@@ -132,7 +137,21 @@
                                                 inputBoxLabel.innerHTML = 'Reason for Rejection: <span style="color: red;">*</span>';
                                             }
                                         }
+
+                                        function saveInput() {
+                                            const inputBox = document.getElementById('inputBox');
+                                            const inputValue = inputBox.value.trim();
+                                            if (inputValue) {
+                                                alert('Input saved: ' + inputValue);
+                                                inputBox.value = ''; // Clear the input box
+                                                document.getElementById('inputBoxContainer').style.display = 'none';
+                                            } else {
+                                                alert('Please provide a reason before saving.');
+                                            }
+                                        }
                                     </script>
+
+
                                 </div>
 
                                 <!-- Middle Column -->
