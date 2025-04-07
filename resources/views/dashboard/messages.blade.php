@@ -113,9 +113,26 @@
 
                                     <!-- Action Buttons -->
                                     <div class="d-flex justify-content-end gap-2 mb-3">
-                                        <button class="btn btn-sm btn-success w-100">Approve</button>
-                                        <button class="btn btn-sm btn-danger w-100">Reject</button>
+                                        <button class="btn btn-sm btn-success w-100" onclick="showInputBox('approve')">Approve</button>
+                                        <button class="btn btn-sm btn-danger w-100" onclick="showInputBox('reject')">Reject</button>
                                     </div>
+                                    <div id="inputBoxContainer" class="mt-3" style="display: none;">
+                                        <label id="inputBoxLabel" class="form-label small"></label>
+                                        <textarea id="inputBox" class="form-control form-control-sm" rows="2" placeholder="Enter your input here..."></textarea>
+                                    </div>
+
+                                    <script>
+                                        function showInputBox(action) {
+                                            const inputBoxContainer = document.getElementById('inputBoxContainer');
+                                            const inputBoxLabel = document.getElementById('inputBoxLabel');
+                                            inputBoxContainer.style.display = 'block';
+                                            if (action === 'approve') {
+                                                inputBoxLabel.innerHTML = 'Reason for Approval: <span style="color: red;">*</span>';
+                                            } else if (action === 'reject') {
+                                                inputBoxLabel.innerHTML = 'Reason for Rejection: <span style="color: red;">*</span>';
+                                            }
+                                        }
+                                    </script>
                                 </div>
 
                                 <!-- Middle Column -->
