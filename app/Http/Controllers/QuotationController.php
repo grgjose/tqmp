@@ -13,7 +13,29 @@ class QuotationController extends Controller
      */
     public function index()
     {
-        //
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if ($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if ($my_user->usertype > 1) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $quotations = DB::table('quotations')
+        ->where('isDeleted', '=', false)
+        ->orderBy('created_at', 'DESC')->get();
+
+        $quotationMessages = DB::table('quotation_messages')->get();
+
+        $users = DB::table('users')->where('usertype', '=', 3)->where('isDeleted', '=', false)->get();
+
+        return view('dashboard.index', [
+            'my_user' => $my_user,
+            'quotations' => $quotations,
+            'quotationMessages' => $quotationMessages,
+            'users' => $users,
+        ])
+        ->with('title', 'Quotations')
+        ->with('main_content', 'dashboard.modules.quotations');
     }
 
     /**
@@ -71,9 +93,32 @@ class QuotationController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if ($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if ($my_user->usertype > 1) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $quotations = DB::table('quotations')
+        ->where('id', '=', $id)
+        ->where('isDeleted', '=', false)->get();
+
+        $quotationMessages = DB::table('quotation_messages')
+        ->where('quotation_id', '=', $id)
+        ->orderBy('created_at', 'DESC')->get();
+
+        $users = DB::table('users')->where('usertype', '=', 3)->where('isDeleted', '=', false)->get();
+
+        return view('dashboard.modules.quotations-view', [
+            'my_user' => $my_user,
+            'quotations' => $quotations,
+            'quotationMessages' => $quotationMessages,
+            'users' => $users,
+        ])
+        ->with('title', 'Quotations');
     }
 
     /**

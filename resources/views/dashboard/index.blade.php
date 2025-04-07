@@ -195,7 +195,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/quotation" class="nav-link">
+                                    <a href="/quotations" class="nav-link">
                                         <p><i class="fa-solid fa-pen-ruler" style="margin-right: 10px;"></i>Quotations</p>
                                     </a>
                                 </li>
@@ -207,6 +207,11 @@
                                 <li class="nav-item">
                                     <a href="/approvals" class="nav-link">
                                         <p><i class="fa-solid fa-user-check" style="margin-right: 10px;"></i>Approvals</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/inquiries" class="nav-link">
+                                        <p><i class="fa-solid fa-circle-question" style="margin-right: 10px;"></i>Inquiries</p>
                                     </a>
                                 </li>
                                 @if($my_user->usertype == 1)

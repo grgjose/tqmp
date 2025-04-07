@@ -167,6 +167,31 @@ function catalogueDelete(id){
     $('#deleteForm').attr('action', '/catalogue-destroy/'+id);
 }
 
+// Quotations
+function quotationShow(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/quotations-view/'+id);
+}
+
+function quotationHide(){
+    $('.tbl').removeAttr('style');
+    $('#view').html('');
+}
+
+function quotationCreate(){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/quotations-create/');
+}
+
+function quotationUpdate(id){
+    $('.tbl').attr('style', 'display: none;');
+    $('#view').load('/quotations-edit/'+id);
+}
+
+function quotationDelete(id){
+    $('#deleteForm').attr('action', '/quotations-destroy/'+id);
+}
+
 // Active Navbar UI
 $(document).ready(function(){
     var pathname = window.location.pathname;

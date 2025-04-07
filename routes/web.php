@@ -67,6 +67,15 @@ Route::get('/inventory', [InventoryController::class, 'index']);
 Route::get('/order', [OrderController::class, 'index']);
 Route::get('/ticketing', [OrderController::class, 'ticketing']);
 
+// Dashboard - Modules - Quotations
+Route::get('/quotations', [QuotationController::class, 'index']);
+Route::get('/quotations-view/{id}', [QuotationController::class, 'show']);
+Route::get('/quotations-create', [QuotationController::class, 'create']);
+Route::post('/quotations-store', [QuotationController::class, 'store']);
+Route::get('/quotations-edit/{id}', [QuotationController::class, 'edit']);
+Route::put('/quotations-update/{id}', [QuotationController::class, 'update']);
+Route::post('/quotations-destroy/{id}', [QuotationController::class, 'destroy']);
+
 // Dashboard - Modules - Approvals
 Route::get('/approvals', [UserController::class, 'approvals']);
 Route::get('/approvals-view/{id}', [UserController::class, 'approvals_show']);
@@ -123,6 +132,7 @@ Route::post('/catalogue-destroy/{id}', [CatalogueController::class, 'destroy']);
 
 Route::get('/product-details', [ProductDetailsController::class, 'index']);
 Route::get('/user_messages', [UserProfileController::class, 'user_messages']);
+Route::get('/messages', [UserProfileController::class, 'messages']);
 Route::get('/get_quotation', [UserProfileController::class, 'get_quotation']);
 Route::get('/process_order', [UserProfileController::class, 'process_order']);
 Route::get('/checkout', [CheckoutController::class, 'index']);

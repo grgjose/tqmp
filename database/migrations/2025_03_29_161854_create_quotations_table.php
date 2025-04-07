@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('status')->nullable();
             $table->double('final_price')->nullable()->default(0.0);
             $table->datetime('valid_until')->nullable();
+            $table->boolean('isDeleted')->default(false);
             $table->timestamps();
         });
     }

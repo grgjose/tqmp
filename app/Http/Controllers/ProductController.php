@@ -34,8 +34,8 @@ class ProductController extends Controller
             'products' => $products,
             'product_images' => $productImages,
         ])
-            ->with('title', 'Products')
-            ->with('main_content', 'dashboard.settings.products');
+        ->with('title', 'Products')
+        ->with('main_content', 'dashboard.settings.products');
     }
 
     /**
