@@ -124,7 +124,7 @@
                                         <textarea id="inputBox" class="form-control form-control-sm" rows="2" placeholder="Enter your input here..."></textarea>
                                     </div>
 
-                                   
+
 
                                     <script>
                                         function showInputBox(action) {
@@ -245,8 +245,14 @@
                                 <div class="border col-md-2">
                                     <div class="p-3">
                                         <h6 class="text-center">Preview Image</h6>
-                                        <div class="d-flex justify-content-center align-items-center rounded border" style="height: 400px; border: 1px solid #ddd; position: relative;">
-                                            <img id="previewImage" src="https://gingercathouse.co.uk/wp-content/uploads/2020/09/tabby-grey-main-coon-cat-1024x577.jpeg" style="max-width: 100%; max-height: 100%; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        <div class="d-flex justify-content-center align-items-center bg-light rounded-3 overflow-hidden"
+                                            style="height: 400px; border: 1px solid rgba(0,0,0,0.08);">
+                                            <img id="previewImage"
+                                                src="https://gingercathouse.co.uk/wp-content/uploads/2020/09/tabby-grey-main-coon-cat-1024x577.jpeg"
+                                                class="img-fluid h-100 object-fit-contain p-3"
+                                                style="cursor: zoom-in;"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#imageModal">
                                         </div>
 
                                         <!-- Modal -->
