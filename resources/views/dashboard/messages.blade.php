@@ -67,83 +67,107 @@
                                 <!-- Left Column -->
                                 <div class="border col-md-4">
                                     <!-- Basic Information Section -->
-                                    <div class="mt-3 mb-3">
-                                        <div class="row g-2">
-                                            <div class="col-md-12">
+                                    <div class="row">
+
+                                        <!-- Form Content with Scrollspy Targets -->
+                                        <div class="" data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="100" style="overflow-y: auto; height: 500px;">
+                                            <!-- Basic Information -->
+                                            <div id="basic-info" class="mt-3 mb-3 pt-3">
+                                                <h5 class="border-bottom pb-2">Basic Information</h5>
                                                 <div class="row g-2">
-                                                    <div class="col-md-6">
-                                                        <label class="form-label small">Quotation ID</label>
-                                                        <input type="text" class="form-control form-control-sm">
+                                                    <div class="col-md-12">
+                                                        <div class="row g-2">
+                                                            <div class="col-md-6">
+                                                                <label class="form-label small">Quotation ID</label>
+                                                                <input type="text" class="form-control form-control-sm">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="form-label small">Status</label>
+                                                                <input type="text" class="form-control form-control-sm">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-md-6">
-                                                        <label class="form-label small">Status</label>
-                                                        <input type="text" class="form-control form-control-sm">
+                                                    <div class="col-md-12">
+                                                        <label class="form-label small">Created Date</label>
+                                                        <input type="datetime-local" class="form-control form-control-sm">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <label class="form-label small">Last Updated</label>
+                                                        <input type="datetime-local" class="form-control form-control-sm">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12">
-                                                <label class="form-label small">Created Date</label>
-                                                <input type="datetime-local" class="form-control form-control-sm">
+
+                                            <!-- Title and Description -->
+                                            <div id="title-desc" class="mb-3 pt-3">
+                                                <h5 class="border-bottom pb-2">Title & Description</h5>
+                                                <label class="form-label small">Title/Subject</label>
+                                                <input type="text" class="form-control form-control-sm">
+                                                <div class="mb-3">
+                                                    <label class="form-label small">Initial Message</label>
+                                                    <textarea class="form-control form-control-sm" rows="2"></textarea>
+                                                </div>
                                             </div>
-                                            <div class="col-md-12">
-                                                <label class="form-label small">Last Updated</label>
-                                                <input type="datetime-local" class="form-control form-control-sm">
+
+                                            <!-- Priority and Severity -->
+                                            <div id="specs" class="row g-2 mb-3 pt-3">
+                                                <h5 class="border-bottom pb-2">Specifications</h5>
+                                                <div class="col-md-6">
+                                                    <label class="form-label small">Size</label>
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label small">Color</label>
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
+
+                                            <!-- Preview Image -->
+                                            <div id="preview" class="pt-3">
+                                                <h5 class="border-bottom pb-2">Uploaded Image</h5>
+                                                <div class="d-flex justify-content-center align-items-center bg-light rounded-3 overflow-hidden"
+                                                    style="height: 400px; border: 1px solid rgba(0,0,0,0.08);">
+                                                    <img id="previewImage"
+                                                        src="https://gingercathouse.co.uk/wp-content/uploads/2020/09/tabby-grey-main-coon-cat-1024x577.jpeg"
+                                                        class="img-fluid h-100 object-fit-contain p-3"
+                                                        style="cursor: zoom-in;"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#imageModal">
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content" style="width: auto;">
+                                                            <div class="modal-body">
+                                                                <img id="modalPreviewImage" src="https://gingercathouse.co.uk/wp-content/uploads/2020/09/tabby-grey-main-coon-cat-1024x577.jpeg" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Action Buttons -->
+                                            <div id="actions" class="pt-3">
+                                                <div class="d-flex justify-content-end gap-2 mb-3">
+                                                    <button class="btn btn-sm btn-success w-100" onclick="showInputBox('approve')">Approve</button>
+                                                    <button class="btn btn-sm btn-danger w-100" onclick="showInputBox('reject')">Reject</button>
+                                                </div>
+                                                <div id="inputBoxContainer" class="mt-3" style="display: none;">
+                                                    <label id="inputBoxLabel" class="form-label small"></label>
+                                                    <textarea id="inputBox" class="form-control form-control-sm" rows="2" placeholder="Enter your input here..."></textarea>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- Title and Description -->
-                                    <div class="mb-3">
-                                        <label class="form-label small">Title/Subject</label>
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label small">Inital Message</label>
-                                        <textarea class="form-control form-control-sm" rows="2"></textarea>
-                                    </div>
-
-                                    <!-- Priority and Severity -->
-                                    <div class="row g-2 mb-3">
-                                        <div class="col-md-6">
-                                            <label class="form-label small">Size</label>
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form-label small">Color</label>
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-
-                                    <!-- Action Buttons -->
-                                    <div class="d-flex justify-content-end gap-2 mb-3">
-                                        <button class="btn btn-sm btn-success w-100" onclick="showInputBox('approve')">Approve</button>
-                                        <button class="btn btn-sm btn-danger w-100" onclick="showInputBox('reject')">Reject</button>
-                                    </div>
-                                    <div id="inputBoxContainer" class="mt-3" style="display: none;">
-                                        <label id="inputBoxLabel" class="form-label small"></label>
-                                        <textarea id="inputBox" class="form-control form-control-sm" rows="2" placeholder="Enter your input here..."></textarea>
-                                    </div>
-
-
 
                                     <script>
-                                        function showInputBox(action) {
-                                            const inputBoxContainer = document.getElementById('inputBoxContainer');
-                                            const inputBoxLabel = document.getElementById('inputBoxLabel');
-                                            inputBoxContainer.style.display = 'block';
-                                            if (action === 'approve') {
-                                                inputBoxLabel.innerHTML = 'Reason for Approval: <span style="color: red;">*</span>';
-                                            } else if (action === 'reject') {
-                                                inputBoxLabel.innerHTML = 'Reason for Rejection: <span style="color: red;">*</span>';
-                                            }
-                                        }
-
                                         function saveInput() {
                                             const inputBox = document.getElementById('inputBox');
                                             const inputValue = inputBox.value.trim();
                                             if (inputValue) {
                                                 alert('Input saved: ' + inputValue);
-                                                inputBox.value = ''; // Clear the input box
+                                                inputBox.value = '';
                                                 document.getElementById('inputBoxContainer').style.display = 'none';
                                             } else {
                                                 alert('Please provide a reason before saving.');
@@ -155,7 +179,7 @@
                                 </div>
 
                                 <!-- Middle Column -->
-                                <div class="border col-md-6">
+                                <div class="border col-md-8">
                                     <div class="card-body p-0" style="position: relative; height: 500px; overflow-y: auto;" data-bs-spy="scroll" data-bs-target="#scrollspy-nav" data-bs-offset="20">
 
                                         <!-- Note 0 -->
@@ -242,7 +266,7 @@
                                 </div>
 
                                 <!-- Right Column for Preview Image -->
-                                <div class="border col-md-2">
+                                <!-- <div class="border col-md-2">
                                     <div class="p-3">
                                         <h6 class="text-center">Preview Image</h6>
                                         <div class="d-flex justify-content-center align-items-center bg-light rounded-3 overflow-hidden"
@@ -255,7 +279,7 @@
                                                 data-bs-target="#imageModal">
                                         </div>
 
-                                        <!-- Modal -->
+                                       
                                         <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content" style="width: auto;">
@@ -265,10 +289,8 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
-                                </div>
+                                </div> -->
 
                             </div>
                             <div class="card-footer p-0">
@@ -452,6 +474,26 @@
                 });
             });
         });
+
+        // Initialize Scrollspy
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#scrollspy'
+        });
+
+        function showInputBox(action) {
+            const inputBoxContainer = document.getElementById('inputBoxContainer');
+            const inputBoxLabel = document.getElementById('inputBoxLabel');
+            inputBoxContainer.style.display = 'block';
+            if (action === 'approve') {
+                inputBoxLabel.innerHTML = 'Reason for Approval: <span style="color: red;">*</span>';
+            } else if (action === 'reject') {
+                inputBoxLabel.innerHTML = 'Reason for Rejection: <span style="color: red;">*</span>';
+            }
+            // Scroll to the input box
+            document.getElementById('actions').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     </script>
 
     <!-- Datatable Scripts -->
