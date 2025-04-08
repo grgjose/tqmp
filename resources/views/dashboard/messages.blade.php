@@ -161,20 +161,6 @@
                                         </div>
                                     </div>
 
-                                    <script>
-                                        function saveInput() {
-                                            const inputBox = document.getElementById('inputBox');
-                                            const inputValue = inputBox.value.trim();
-                                            if (inputValue) {
-                                                alert('Input saved: ' + inputValue);
-                                                inputBox.value = '';
-                                                document.getElementById('inputBoxContainer').style.display = 'none';
-                                            } else {
-                                                alert('Please provide a reason before saving.');
-                                            }
-                                        }
-                                    </script>
-
 
                                 </div>
 
@@ -314,6 +300,36 @@
     </div>
     <!--end::App Wrapper-->
     <!--begin::Script-->
+
+    <!-- JS for Buttons -->
+    <script>
+        function showInputBox(action) {
+            const inputBoxContainer = document.getElementById('inputBoxContainer');
+            const inputBoxLabel = document.getElementById('inputBoxLabel');
+            inputBoxContainer.style.display = 'block';
+            if (action === 'approve') {
+                inputBoxLabel.innerHTML = 'Reason for Approval: <span style="color: red;">*</span>';
+            } else if (action === 'reject') {
+                inputBoxLabel.innerHTML = 'Reason for Rejection: <span style="color: red;">*</span>';
+            }
+            // Scroll to the input box
+            document.getElementById('actions').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function saveInput() {
+            const inputBox = document.getElementById('inputBox');
+            const inputValue = inputBox.value.trim();
+            if (inputValue) {
+                alert('Input saved: ' + inputValue);
+                inputBox.value = '';
+                document.getElementById('inputBoxContainer').style.display = 'none';
+            } else {
+                alert('Please provide a reason before saving.');
+            }
+        }
+    </script>
 
     <!-- JS for Photo Viewing -->
     <script>
@@ -479,21 +495,6 @@
         var scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '#scrollspy'
         });
-
-        function showInputBox(action) {
-            const inputBoxContainer = document.getElementById('inputBoxContainer');
-            const inputBoxLabel = document.getElementById('inputBoxLabel');
-            inputBoxContainer.style.display = 'block';
-            if (action === 'approve') {
-                inputBoxLabel.innerHTML = 'Reason for Approval: <span style="color: red;">*</span>';
-            } else if (action === 'reject') {
-                inputBoxLabel.innerHTML = 'Reason for Rejection: <span style="color: red;">*</span>';
-            }
-            // Scroll to the input box
-            document.getElementById('actions').scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
     </script>
 
     <!-- Datatable Scripts -->
