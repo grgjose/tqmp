@@ -19,6 +19,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
+    <!-- Toast -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
     <!-- Chatbot CSS -->
     <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
     <!-- Chatbot JS -->
@@ -26,6 +29,9 @@
 
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -47,30 +53,31 @@
     <section id="form" class="fade-in-up container">
         <div class="col-md-12" style="border: 1px solid #ccc; padding: 20px; border-radius: 3px;">
             <h3 class="fw-bold">Fill out the form</h3>
-            <form class="py-3">
+            <form class="py-3" action="/inquiry-store" method="POST" enctype="multipart/form-data">
+                @csrf
                 <div class="mb-3">
                     <label for="fullName" class="form-label fw-bold">Full Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="fullName" placeholder="Your full name">
+                    <input type="text" class="form-control" id="fullName" name="fullname" placeholder="Your full name">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label fw-bold">Email <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" id="email" placeholder="Your email">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email">
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label fw-bold">Phone Number <span class="text-danger">*</span></label>
-                    <input type="tel" class="form-control" id="phone" placeholder="Your phone number">
+                    <input type="tel" class="form-control" id="phone" name="contact_num" placeholder="Your phone number">
                 </div>
                 <div class="mb-3">
                     <label for="subject" class="form-label fw-bold">Subject <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label fw-bold">Message <span class="text-danger">*</span></label>
-                    <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="formFileSm" class="form-label fw-bold">Please upload your government ID and/or Business Registration if you're a business owner. Be Our Partner to enjoy our Best Price Offers. <span class="text-danger">*</span></label>
-                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                    <input class="form-control form-control-sm" name="upload_file" id="formFileSm" type="file">
                 </div>
                 <div>
                     <button type="submit" class="btn btn-danger w-100">Send Message</button>
@@ -196,6 +203,38 @@
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
+
+
+    <!-- Toast -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    
+    @if(session()->has('error_msg'))
+      <script>
+          toastr.options.preventDuplicates = true;
+          toastr.error("{{ session('error_msg') }}");
+      </script>
+    @endif
+
+    @error('code')
+      <script>
+        toastr.options.preventDuplicates = true;
+        toastr.error('Code already exists');
+      </script>
+    @enderror
+
+    @if(session()->has('success_msg'))
+      <script>
+          toastr.options.preventDuplicates = true;
+          toastr.success("{{ session('success_msg') }}");
+      </script>
+    @endif
+
+    @if(session()->has('download_file'))
+      <script>
+          $("#download_filename").val("{{ session('download_file') }}");
+          $("#downloadForm").submit();
+      </script>
+    @endif    
 </body>
 
 </html>

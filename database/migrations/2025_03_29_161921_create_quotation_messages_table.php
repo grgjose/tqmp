@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('quotation_id');
             $table->integer('from_user_id');
-            $table->integer('to_user_id');
+            $table->integer('to_user_id')->nullable();
             $table->string('message');
             $table->timestamps();
         });

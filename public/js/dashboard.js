@@ -215,6 +215,5 @@ $(document).ready(function(){
         break;
     }
     $(".wrapper").removeAttr("style");
-    
-});
 
+});

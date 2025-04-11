@@ -32,12 +32,17 @@
     <!-- apexcharts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css" integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0=" crossorigin="anonymous" />
 
-
     <!-- Toast -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
 
+    <!-- Datatables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- summernotes -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.css" rel="stylesheet">    
 </head>
 
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
@@ -272,17 +277,220 @@
             <!--end::Sidebar Wrapper-->
         </aside>
         <!--end::Sidebar-->
+
         @include($main_content)
 
     </div>
     <!--end::App Wrapper-->
     <!--begin::Script-->
-    <!--Third Party Plugin(OverlayScrollbars)-->
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
-        integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ="
-        crossorigin="anonymous"></script>
+
+    <!-- Datatable Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+
+    <!-- JS for Buttons -->
+    <script>
+        function showInputBox(action) {
+            const inputBoxContainer = document.getElementById('inputBoxContainer');
+            const inputBoxLabel = document.getElementById('inputBoxLabel');
+            inputBoxContainer.style.display = 'block';
+            if (action === 'approve') {
+                inputBoxLabel.innerHTML = 'Reason for Approval: <span style="color: red;">*</span>';
+            } else if (action === 'reject') {
+                inputBoxLabel.innerHTML = 'Reason for Rejection: <span style="color: red;">*</span>';
+            }
+            // Scroll to the input box
+            document.getElementById('actions').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function saveInput() {
+            const inputBox = document.getElementById('inputBox');
+            const inputValue = inputBox.value.trim();
+            if (inputValue) {
+                alert('Input saved: ' + inputValue);
+                inputBox.value = '';
+                document.getElementById('inputBoxContainer').style.display = 'none';
+            } else {
+                alert('Please provide a reason before saving.');
+            }
+        }
+    </script>
+
+    <!-- JS for Photo Viewing -->
+    <script>
+        document.getElementById('imageInput')?.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const previewImage = document.getElementById('previewImage');
+                    const modalPreviewImage = document.getElementById('modalPreviewImage');
+                    previewImage.src = e.target.result;
+                    modalPreviewImage.src = e.target.result;
+                    previewImage.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+    <!-- JS for Zoom Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modalImage = document.getElementById('modalPreviewImage');
+            const zoomInBtn = document.querySelector('.zoom-in-btn');
+            const zoomOutBtn = document.querySelector('.zoom-out-btn');
+            const zoomResetBtn = document.querySelector('.zoom-reset-btn');
+
+            let currentScale = 1;
+            const zoomLevels = [1, 1.5, 2, 2.5, 3];
+            let currentZoomIndex = 0;
+
+            // Set initial transform origin
+            modalImage.style.transformOrigin = 'center center';
+
+            // Click to cycle through zoom levels
+            modalImage.addEventListener('click', function(e) {
+                // Calculate click position relative to image
+                const rect = this.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+
+                // Set transform origin to click position
+                this.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+
+                // Cycle to next zoom level
+                currentZoomIndex = (currentZoomIndex + 1) % zoomLevels.length;
+                currentScale = zoomLevels[currentZoomIndex];
+                applyZoom();
+            });
+
+            // Zoom in button
+            zoomInBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                if (currentZoomIndex < zoomLevels.length - 1) {
+                    currentZoomIndex++;
+                    currentScale = zoomLevels[currentZoomIndex];
+                    applyZoom();
+                }
+            });
+
+            // Zoom out button
+            zoomOutBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                if (currentZoomIndex > 0) {
+                    currentZoomIndex--;
+                    currentScale = zoomLevels[currentZoomIndex];
+                    applyZoom();
+                }
+            });
+
+            // Reset zoom
+            zoomResetBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                currentZoomIndex = 0;
+                currentScale = 1;
+                modalImage.style.transformOrigin = 'center center';
+                applyZoom();
+            });
+
+            // Apply the current zoom
+            function applyZoom() {
+                modalImage.style.transform = `scale(${currentScale})`;
+                modalImage.style.cursor = currentScale > 1 ? 'zoom-out' : 'zoom-in';
+            }
+
+            // Panning functionality when zoomed
+            let isDragging = false;
+            let startX, startY, translateX = 0,
+                translateY = 0;
+
+            modalImage.addEventListener('mousedown', function(e) {
+                if (currentScale > 1) {
+                    isDragging = true;
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                    this.style.cursor = 'grabbing';
+                    e.preventDefault();
+                }
+            });
+
+            document.addEventListener('mousemove', function(e) {
+                if (!isDragging) return;
+
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+
+                modalImage.style.transform = `scale(${currentScale}) translate(${translateX}px, ${translateY}px)`;
+            });
+
+            document.addEventListener('mouseup', function() {
+                isDragging = false;
+                if (currentScale > 1) {
+                    modalImage.style.cursor = 'zoom-out';
+                }
+            });
+
+            // Reset on modal close
+            $('#imageModal').on('hidden.bs.modal', function() {
+                currentZoomIndex = 0;
+                currentScale = 1;
+                translateX = 0;
+                translateY = 0;
+                modalImage.style.transform = 'scale(1)';
+                modalImage.style.transformOrigin = 'center center';
+                modalImage.style.cursor = 'zoom-in';
+            });
+        });
+    </script>
+
+    <!-- JS for Previwing the attachments -->
+    <script>
+        function uploadAndPreviewImage(file) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                // Insert the image directly into Summernote
+                $('#summernote').summernote('insertImage', e.target.result, file.name);
+            };
+
+            reader.readAsDataURL(file); // Preview without uploading
+        }
+    </script>
+
+    <!-- JS for Scrollspy -->
+    <script>
+        // Initialize ScrollSpy
+        var scrollSpy = new bootstrap.ScrollSpy(document.querySelector('.card-body'), {
+            target: '#scrollspy-nav'
+        });
+
+        // Optional: Smooth scrolling for the navigation links
+        document.querySelectorAll('#notes-admin .nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Initialize Scrollspy
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#scrollspy'
+        });
+    </script>
+
+    <!-- Summernotes Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.js"></script>
+
+    <!--Third Party Plugin(OverlayScrollbars)-->
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js" integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ=" crossorigin="anonymous"></script>
 
     <!--Required Plugin(popperjs for Bootstrap 5)-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -293,16 +501,6 @@
     <!--Required Plugin(AdminLTE)-->
     <script src="{{ asset('storage/dist/js/adminlte.js') }}"></script>
 
-    <!-- Datatable Scripts -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
-    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
-    <script>
-        new DataTable('#example');
-        new DataTable('#tbl_approvals');
-    </script>
-    <!--end::Script-->
-    
     <!--OverlayScrollbars Configure-->
     <script>
         const SELECTOR_SIDEBAR_WRAPPER = '.sidebar-wrapper';
@@ -325,7 +523,62 @@
         });
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Summernotes JS -->
+    <script>
+        $(document).ready(function() {
+            $('#summernote').summernote({
+                placeholder: 'Add a message...',
+                tabsize: 2,
+                height: 200,
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['insert', ['link', 'picture']],
+                    ['view', ['codeview', 'help']]
+                ],
+                callbacks: {
+                    onInit: function() {
+                        // Add private note switch to the right side of the toolbar
+                        const toolbar = $('.note-toolbar');
+                        const switchHtml = `
+                        <div class="private-note-switch d-flex align-items-center me-2 mt-2 mb-2">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="privateNote">
+                                <label class="form-check-label ms-2" for="privateNote">Private Note</label>
+                            </div>
+                        </div>
+                    `;
+                        toolbar.append(switchHtml);
+
+                        // Set initial border
+                        updateNoteBorder();
+
+                        // Handle private note toggle
+                        $('#privateNote').change(function() {
+                            updateNoteBorder();
+                        });
+
+                        function updateNoteBorder() {
+                            const editor = $('#summernote');
+                            if ($('#privateNote').is(':checked')) {
+                                editor.next('.note-editor').css('border-left', '4px solid #dc3545');
+                            } else {
+                                editor.next('.note-editor').css('border-right', '4px solid #0d6efd');
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        new DataTable('#example');
+        new DataTable('#tbl_approvals');
+    </script>
+    <!--end::Script-->
+    
 
     <!-- Toast -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
@@ -340,9 +593,7 @@
         integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8="
         crossorigin="anonymous"></script>
 
-
-
-    <script>
+    {{-- <script>
         // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
         // IT'S ALL JUST JUNK FOR DEMO
         // ++++++++++++++++++++++++++++++++++++++++++
@@ -450,8 +701,10 @@
         );
 
         sales_chart.render();
-    </script>
+    </script> --}}
     <!--end::Script-->
+
+    <!-- Prompt Message -->
     @if(session()->has('error_msg'))
       <script>
           toastr.options.preventDuplicates = true;

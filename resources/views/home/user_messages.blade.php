@@ -125,13 +125,18 @@
 
 
                                 <!-- Note 1 -->
+
+                                @foreach($quotationMessages as $message)
+
+
+                                @if($message->usertype == 3)
                                 <div id="note-1" class="border-start border-primary border-4 mb-3 bg-white p-3">
                                     <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
                                         <div class="d-flex align-items-center">
                                             <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
                                             <div class="ms-2">
-                                                <strong>John Doe</strong>
-                                                <div class="text-muted small">Today, 10:30 AM</div>
+                                                <strong>{{ $message->fname.' '.$message->lname }}</strong>
+                                                <div class="text-muted small">{{ $message->created_at }}</div>
                                             </div>
                                         </div>
                                         <div>
@@ -140,29 +145,33 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <p class="mb-0">Contacted the user and walked them through the password reset process. User confirmed they can now log in successfully.</p>
+                                        {!! $message->message !!}
                                     </div>
                                 </div>
 
+                                @else
                                 <!-- Note 2 -->
                                 <div id="note-2" class="border-end border-danger border-4 mb-3 bg-white p-3">
                                     <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
                                         <div class="d-flex align-items-center">
                                             <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
                                             <div class="ms-2">
-                                                <strong>Sales Representative</strong>
-                                                <div class="text-muted small">Yesterday, 3:45 PM</div>
+                                                <strong>{{ $message->fname.' '.$message->lname }}</strong>
+                                                <div class="text-muted small">{{ $message->created_at }}</div>
                                             </div>
                                         </div>
                                         <div>
-                                            <span class="badge bg-danger me-1">Representative</span>
+                                            <span class="badge bg-danger me-1">Sales Representative</span>
                                             <span><i class="fas fa-ellipsis-v"></i></span>
                                         </div>
                                     </div>
                                     <div>
-                                        <p class="mb-0">[Internal Note] This appears to be related to the ongoing authentication system issues. Escalating to L2 support.</p>
+                                        {!! $message->message !!}
                                     </div>
                                 </div>
+                                @endif
+
+                                @endforeach
 
                                 <!-- Note 3 -->
                                 {{-- <div id="note-3" class="border-start border-primary border-4 mb-3 bg-white p-3">
@@ -250,17 +259,21 @@
                     </div>
 
                     <div class="card-footer p-0">
-                        <div id="summernote"></div>
-                        <div class="p-3 bg-light d-flex justify-content-between">
-                            <div>
-                                {{-- <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-paperclip me-1"></i>Attach File </button>
-                                <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-history me-1"></i>View History </button>
-                                <button class="btn btn-sm btn-outline-secondary"> <i class="fas fa-print me-1"></i>Print Notes </button> --}}
+                        <form action="/user-send-message" method="POST" >
+                            @csrf
+                            <input type="hidden" name="quotation_id" value="{{ $quotation->id }}" >
+                            <textarea id="summernote" name="message"></textarea>
+                            <div class="p-3 bg-light d-flex justify-content-between">
+                                <div>
+                                    {{-- <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-paperclip me-1"></i>Attach File </button>
+                                    <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-history me-1"></i>View History </button>
+                                    <button class="btn btn-sm btn-outline-secondary"> <i class="fas fa-print me-1"></i>Print Notes </button> --}}
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-sm btn-primary">Send Message</button>
+                                </div>
                             </div>
-                            <div>
-                                <button class="btn btn-sm btn-primary">Send Message</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

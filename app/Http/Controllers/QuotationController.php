@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Quotation;
+use App\Models\QuotationMessage;
 use Illuminate\Support\Facades\DB;
 
 class QuotationController extends Controller
@@ -24,15 +25,21 @@ class QuotationController extends Controller
         ->where('isDeleted', '=', false)
         ->orderBy('created_at', 'DESC')->get();
 
-        $quotationMessages = DB::table('quotation_messages')->get();
 
-        $users = DB::table('users')->where('usertype', '=', 3)->where('isDeleted', '=', false)->get();
+        $quotationMessages = DB::table('quotation_messages')
+        ->join('users', 'quotation_messages.from_user_id', '=', 'users.id')
+        ->select('quotation_messages.*', 'users.usertype as usertype', 'users.fname as fname', 'users.lname as lname')
+        ->get();
+
+        $users = DB::table('users')->where('isDeleted', '=', false)->get();
+        $usertypes = DB::table('usertypes')->where('isDeleted', '=', false)->get();
 
         return view('dashboard.index', [
             'my_user' => $my_user,
             'quotations' => $quotations,
             'quotationMessages' => $quotationMessages,
             'users' => $users,
+            'usertypes' => $usertypes,
         ])
         ->with('title', 'Quotations')
         ->with('main_content', 'dashboard.modules.quotations');
@@ -107,14 +114,16 @@ class QuotationController extends Controller
         ->where('isDeleted', '=', false)->get();
 
         $quotationMessages = DB::table('quotation_messages')
-        ->where('quotation_id', '=', $id)
-        ->orderBy('created_at', 'DESC')->get();
+        ->join('users', 'quotation_messages.from_user_id', '=', 'users.id')
+        ->select('quotation_messages.*', 'users.usertype as usertype', 'users.fname as fname', 'users.lname as lname')
+        ->where('quotation_messages.quotation_id', '=', $id)
+        ->get();
 
         $users = DB::table('users')->where('usertype', '=', 3)->where('isDeleted', '=', false)->get();
 
         return view('dashboard.modules.quotations-view', [
             'my_user' => $my_user,
-            'quotations' => $quotations,
+            'quotation' => $quotations[0],
             'quotationMessages' => $quotationMessages,
             'users' => $users,
         ])
@@ -176,7 +185,11 @@ class QuotationController extends Controller
             return redirect('/profile')->with('error_msg', 'Invalid Quotation');
         }
 
-        $quotationMessages = DB::table('quotation_messages')->where('quotation_id', '=', $quotation[0]->id)->get();
+        $quotationMessages = DB::table('quotation_messages')
+        ->join('users', 'quotation_messages.from_user_id', '=', 'users.id')
+        ->select('quotation_messages.*', 'users.usertype as usertype', 'users.fname as fname', 'users.lname as lname')
+        ->where('quotation_messages.quotation_id', '=', $quotation[0]->id)
+        ->get();
 
         return view('home.user_messages', [
             'my_user' => $my_user,
@@ -186,8 +199,87 @@ class QuotationController extends Controller
 
     }
 
-    public function addMessage(Request $request)
-    {
+    public function sendMessage(Request $request){
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if ($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $validated = $request->validate([
+            'quotation_id' => ['required'],
+            'message' => ['required'],
+        ]);
+
+        $quotationMessage = new QuotationMessage();
+        $quotationMessage->quotation_id = $validated['quotation_id'];
+        $quotationMessage->from_user_id = $my_user->id;
+        $quotationMessage->message = $validated['message'];
+
+        $quotationMessage->save();
+
+
+        $quotations = DB::table('quotations')
+        ->where('id', '=', $validated['quotation_id'])
+        ->where('isDeleted', '=', false)
+        ->orderBy('created_at', 'DESC')->get();
+
+        $quotationMessages = DB::table('quotation_messages')
+        ->join('users', 'quotation_messages.from_user_id', '=', 'users.id')
+        ->select('quotation_messages.*', 'users.usertype as usertype', 'users.fname as fname', 'users.lname as lname')
+        ->where('quotation_messages.quotation_id', '=', $validated['quotation_id'])
+        ->get();
+
+        $users = DB::table('users')->where('isDeleted', '=', false)->get();
+        $usertypes = DB::table('usertypes')->where('isDeleted', '=', false)->get();
+
+        return view('dashboard.index', [
+            'my_user' => $my_user,
+            'quotation' => $quotations[0],
+            'quotationMessages' => $quotationMessages,
+            'users' => $users,
+            'usertypes' => $usertypes,
+        ])
+        ->with('title', 'Quotations')
+        ->with('main_content', 'dashboard.modules.quotations-view');
+
+    }
+
+    public function userSendMessage(Request $request){
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if ($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $validated = $request->validate([
+            'quotation_id' => ['required'],
+            'message' => ['required'],
+        ]);
+
+        $quotationMessage = new QuotationMessage();
+        $quotationMessage->quotation_id = $validated['quotation_id'];
+        $quotationMessage->from_user_id = $my_user->id;
+        $quotationMessage->message = $validated['message'];
+
+        $quotationMessage->save();
+
+
+        $quotations = DB::table('quotations')
+        ->where('id', '=', $validated['quotation_id'])
+        ->where('isDeleted', '=', false)
+        ->orderBy('created_at', 'DESC')->get();
+
+        $quotationMessages = DB::table('quotation_messages')
+        ->join('users', 'quotation_messages.from_user_id', '=', 'users.id')
+        ->select('quotation_messages.*', 'users.usertype as usertype', 'users.fname as fname', 'users.lname as lname')
+        ->where('quotation_messages.quotation_id', '=', $validated['quotation_id'])
+        ->get();
+
+        $users = DB::table('users')->where('isDeleted', '=', false)->get();
+        $usertypes = DB::table('usertypes')->where('isDeleted', '=', false)->get();
+
+        return redirect('/show-quotation/'.$quotations[0]->reference);
 
     }
 
