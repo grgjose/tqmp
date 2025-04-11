@@ -139,6 +139,7 @@ Route::get('/messages', [UserProfileController::class, 'messages']);
 Route::get('/get_quotation', [UserProfileController::class, 'get_quotation']);
 Route::get('/get_quotation_mfg', [UserProfileController::class, 'get_quotation_mfg']);
 Route::get('/get_quotation_aluminum_mfg', [UserProfileController::class, 'get_quotation_aluminum_mfg']);
+Route::get('/get_quotation_bulletproofing', [UserProfileController::class, 'get_quotation_bulletproofing']);
 Route::get('/process_order', [UserProfileController::class, 'process_order']);
 Route::get('/checkout', [CheckoutController::class, 'index']);
 Route::get('/order-summary', [OrderSummaryController::class, 'index']);
