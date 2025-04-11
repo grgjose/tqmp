@@ -52,7 +52,7 @@
             <!-- Right Column: Product Details -->
 
             <div class="col-md-6">
-                <h2 class="fw-bold">Sample Product</h2>
+                <h2 class="fw-bold">Sample Product for Glass Processing</h2>
                 <!-- Rating and Stock -->
                 <div class="d-flex align-items-center mb-2">
                     <span class="me-2 text-warning">★ ★ ★ ★ ★</span>
