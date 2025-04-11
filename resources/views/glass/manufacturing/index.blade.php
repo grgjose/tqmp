@@ -96,8 +96,8 @@
                                         <h5 class="card-title">CLEAR FLOAT GLASS</h5>
                                         <p class="card-text">A Colourless and transparent glass that offers a very high level of light transmittance...</p>
                                         <!-- Accordion button -->
-                                        <a class="btn btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#accordionExample" aria-expanded="false" aria-controls="accordionExample">
-                                            More Details <i class="fa-solid fa-chevron-down ml-3" style="font-size: 10px;"></i>
+                                        <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordionExample" aria-expanded="false" aria-controls="accordionExample">
+                                            More Details 
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordionExample" class="collapse mt-3">
@@ -108,8 +108,8 @@
                                                 <p><b>Ultra Thick:</b><br> 15.00mm to 19.0mm</p>
                                                 <p><b>Standard Size:</b><br> 120" x 390"</p>
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="button" class="btn btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#accordionExample" aria-expanded="false" aria-controls="accordionExample">Close</button>
-                                                    <button type="button" class="btn btn-outline-danger">Order Now</button>
+                                                    <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordionExample" aria-expanded="false" aria-controls="accordionExample">Close</button>
+                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -124,8 +124,8 @@
                                         <h5 class="card-title">TINTED FLOAT GLASS</h5>
                                         <p class="card-text">A heat absorbing, transparent glass colored by adding such metals like cobalt...</p>
                                         <!-- Accordion button -->
-                                        <a class="btn btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="false" aria-controls="accordion2">
-                                            More Details <i class="fa-solid fa-chevron-down ml-3" style="font-size: 10px;"></i>
+                                        <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="false" aria-controls="accordion2">
+                                            More Details 
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion2" class="collapse mt-3">
@@ -137,8 +137,8 @@
                                                 <p><b>Dark Green:</b><br> 6.0mm to 12.0mm Thickness</p>
                                                 <p><b>Dark Blue:</b><br> 6.0mm to 12.0mm Thickness</p>
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="button" class="btn btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="false" aria-controls="accordion2">Close</button>
-                                                    <button type="button" class="btn btn-outline-danger">Order Now</button>
+                                                    <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="false" aria-controls="accordion2">Close</button>
+                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -153,8 +153,8 @@
                                         <h5 class="card-title">ULTRA CLEAR FLOAT GLASS</h5>
                                         <p class="card-text">This kind of glass provides extreme clarity for glazing applications requiring minimum impurities...</p>
                                         <!-- Accordion button -->
-                                        <a class="btn btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-expanded="false" aria-controls="accordion3">
-                                            More Details <i class="fa-solid fa-chevron-down ml-3" style="font-size: 10px;"></i>
+                                        <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-expanded="false" aria-controls="accordion3">
+                                            More Details 
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion3" class="collapse mt-3">
@@ -165,8 +165,8 @@
                                                 <p><b>Ultra Thick:</b><br> 15.00mm to 19.0mm</p>
                                                 <p><b>Standard Size:</b><br> 120" x 236"</p>
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="button" class="btn btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-expanded="false" aria-controls="accordion3">Close</button>
-                                                    <button type="button" class="btn btn-outline-danger">Order Now</button>
+                                                    <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-expanded="false" aria-controls="accordion3">Close</button>
+                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -182,8 +182,8 @@
                                         <h5 class="card-title">LOW-E COATED GLASS</h5>
                                         <p class="card-text">Low-e glass stands for low emissivity glass. One side of the glass has a special metal coating...</p>
                                         <!-- Accordion button -->
-                                        <a class="btn btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4" aria-expanded="false" aria-controls="accordion4">
-                                            More Details <i class="fa-solid fa-chevron-down ml-3" style="font-size: 10px;"></i>
+                                        <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4" aria-expanded="false" aria-controls="accordion4">
+                                            More Details 
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion4" class="collapse mt-3">
@@ -194,8 +194,8 @@
                                                 <p><b>Clear:</b><br> 6.0mm to 10.0mm Thickness</p>
                                                 <p><b>Euro Gray Float:</b><br> 6.0mm to 10.0mm Thickness</p>
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="button" class="btn btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#accordion4" aria-expanded="false" aria-controls="accordion4">Close</button>
-                                                    <button type="button" class="btn btn-outline-danger">Order Now</button>
+                                                    <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion4" aria-expanded="false" aria-controls="accordion4">Close</button>
+                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -210,8 +210,8 @@
                                         <h5 class="card-title">REFLECTIVE COATED GLASS</h5>
                                         <p class="card-text">Reflective glass is essentially an ordinary float glass with a metallic coating that helps...</p>
                                         <!-- Accordion button -->
-                                        <a class="btn btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#accordion5" aria-expanded="false" aria-controls="accordion5">
-                                            More Details <i class="fa-solid fa-chevron-down ml-3" style="font-size: 10px;"></i>
+                                        <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion5" aria-expanded="false" aria-controls="accordion5">
+                                            More Details 
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion5" class="collapse mt-3">
@@ -224,8 +224,8 @@
                                                 <p><b>Euro Gray:</b><br> 6.0mm to 10.0mm Thickness</p>
                                                 <p><b>Clear:</b><br> 6.0mm to 10.0mm Thickness</p>
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="button" class="btn btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#accordion5" aria-expanded="false" aria-controls="accordion5">Close</button>
-                                                    <button type="button" class="btn btn-outline-danger">Order Now</button>
+                                                    <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion5" aria-expanded="false" aria-controls="accordion5">Close</button>
+                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -240,8 +240,8 @@
                                         <h5 class="card-title">MIRROR</h5>
                                         <p class="card-text">Mirror are made from top of the line clear or tinted float glass...</p>
                                         <!-- Accordion button -->
-                                        <a class="btn btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#accordion6" aria-expanded="false" aria-controls="accordion6">
-                                            More Details <i class="fa-solid fa-chevron-down ml-3" style="font-size: 10px;"></i>
+                                        <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion6" aria-expanded="false" aria-controls="accordion6">
+                                            More Details 
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion6" class="collapse mt-3">
@@ -251,8 +251,8 @@
                                                 <p><b>Thickness:</b><br> 3.0mm to 6.0mm</p>
                                                 <p><b>Standard Size:</b><br> 48" x 72" to 84" x 120"</p>
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="button" class="btn btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#accordion6" aria-expanded="false" aria-controls="accordion6">Close</button>
-                                                    <button type="button" class="btn btn-outline-danger">Order Now</button>
+                                                    <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion6" aria-expanded="false" aria-controls="accordion6">Close</button>
+                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -274,8 +274,8 @@
                                         <h5 class="card-title">PATTERNED GLASS</h5>
                                         <p class="card-text">Patterned Glass is a kind of decorative translucent glass with embossed pattern on one surface...</p>
                                         <!-- Accordion button -->
-                                        <a class="btn btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#accordion7" aria-expanded="false" aria-controls="accordion7">
-                                            More Details <i class="fa-solid fa-chevron-down ml-3" style="font-size: 10px;"></i>
+                                        <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion7" aria-expanded="false" aria-controls="accordion7">
+                                            More Details 
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion7" class="collapse mt-3">
@@ -286,8 +286,8 @@
                                                 <p><b>Thickness:</b><br></p>
                                                 <p><b>Standard Size:</b><br></p>
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="button" class="btn btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#accordion7" aria-expanded="false" aria-controls="accordion7">Close</button>
-                                                    <button type="button" class="btn btn-outline-danger">Order Now</button>
+                                                    <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion7" aria-expanded="false" aria-controls="accordion7">Close</button>
+                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -303,8 +303,8 @@
                                         <h5 class="card-title">WIRED GLASS</h5>
                                         <p class="card-text">Wired glass is a type of glass wherein a wire mesh is inserted during production...</p>
                                         <!-- Accordion button -->
-                                        <a class="btn btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#accordion8" aria-expanded="false" aria-controls="accordion8">
-                                            More Details <i class="fa-solid fa-chevron-down ml-3" style="font-size: 10px;"></i>
+                                        <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion8" aria-expanded="false" aria-controls="accordion8">
+                                            More Details 
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion8" class="collapse mt-3">
@@ -315,8 +315,8 @@
                                                 <p><b>Thickness:</b><br></p>
                                                 <p><b>Standard Size:</b><br></p>
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="button" class="btn btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#accordion8" aria-expanded="false" aria-controls="accordion8">Close</button>
-                                                    <button type="button" class="btn btn-outline-danger">Order Now</button>
+                                                    <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion8" aria-expanded="false" aria-controls="accordion8">Close</button>
+                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>

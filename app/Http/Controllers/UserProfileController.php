@@ -28,6 +28,17 @@ class UserProfileController extends Controller
         ]);
     }
 
+    public function get_quotation_mfg()
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('glass.manufacturing.get_quotation_mfg', [
+            'my_user' => $my_user,
+        ]);
+    }
+
     public function process_order()
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */

@@ -9,7 +9,7 @@
     <meta name="author" content="TQMP">
 
     <!-- Title and Favicon -->
-    <title>Get Quotaion - Glass Processing | Total Quality Management Products Philippines</title>
+    <title>Get Quoatation - Glass Manufacturing | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,6 @@
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
-
 
     <div class="container py-5">
         <div class="row">
@@ -119,10 +118,11 @@
 
         </div>
     </div>
-
-    <!-- Footer -->
-    @include ('plus.footer')
-    <!-- End of Footer -->
 </body>
+<!--end::Body-->
+
+<!-- Footer -->
+@include ('plus.footer')
+<!-- End of Footer -->
 
 </html>
