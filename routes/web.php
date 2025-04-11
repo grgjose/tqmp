@@ -29,6 +29,7 @@ use App\Http\Controllers\CatalogueController;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/contact', [HomeController::class, 'contact']);
+Route::post('/inquiry-store', [HomeController::class, 'addInquiry']);
 Route::get('/faqs', [HomeController::class, 'FAQs']);
 Route::get('/profile', [HomeController::class, 'profile']);
 Route::get('/add-to-cart/{id}', [ProductController::class, 'before_add_to_cart']);
@@ -37,6 +38,7 @@ Route::get('/cart', [ProductController::class, 'cart']);
 Route::get('/get-quotation', [QuotationController::class, 'getQuotation']);
 Route::post('/create-quotation', [QuotationController::class, 'store']);
 Route::get('/show-quotation/{reference}', [QuotationController::class, 'showQuotation']);
+Route::post('/user-send-message', [QuotationController::class, 'userSendMessage']);
 
 
 // Product Pages
@@ -75,6 +77,7 @@ Route::post('/quotations-store', [QuotationController::class, 'store']);
 Route::get('/quotations-edit/{id}', [QuotationController::class, 'edit']);
 Route::put('/quotations-update/{id}', [QuotationController::class, 'update']);
 Route::post('/quotations-destroy/{id}', [QuotationController::class, 'destroy']);
+Route::post('/send-message', [QuotationController::class, 'sendMessage']);
 
 // Dashboard - Modules - Approvals
 Route::get('/approvals', [UserController::class, 'approvals']);
