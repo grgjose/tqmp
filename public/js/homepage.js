@@ -49,3 +49,11 @@ $(document).ready(function () {
         computeTotal();
     });
 });
+
+function removeItem(element) {
+    // Find the closest row and remove it
+    const row = element.closest('tr');
+    if (row) {
+        row.remove();
+    }
+}

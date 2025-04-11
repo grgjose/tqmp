@@ -41,85 +41,93 @@
         <div class="row">
             <!-- Order Details Section -->
             <div class="col-lg-8 mb-4">
-                <div class="border p-3">
-                    <h5 class="fw-bold">Order #{{ $my_user->id.date('ymdHis') }}</h5>
-                    <p class="text-muted">{{ date('jS F Y', strtotime('now')) }} at {{ date('h:i A') }}</p>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr class="text-muted">
-                                    <th></th>
-                                    <th>Product Details</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @if(count($carts) == 0)
-                                    <tr>
-                                        <td colspan="4">No Products Selected</td>
+                <form action="/checkout" method="POST">
+                    @csrf
+                    <div class="border p-3">
+                        <h5 class="fw-bold">Order #{{ $my_user->id.date('ymdHis') }}</h5>
+                        <p class="text-muted">{{ date('jS F Y', strtotime('now')) }} at {{ date('h:i A') }}</p>
+                        <div class="table-responsive">
+                            
+                            <table class="table">
+                                <thead>
+                                    <tr class="text-muted">
+                                        <th></th>
+                                        <th>Product Details</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th></th>
                                     </tr>
-                                @endif
-                                @foreach($carts as $cart) 
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" class="form-check-input">
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                @foreach($productImages as $image)
-                                                    @if($image->product_id == $cart->product_id)
-                                                        <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Product" class="product-image me-3">
-                                                        @continue
-                                                    @endif
-                                                @endforeach
-                                                
-                                                @foreach($products as $product)
-                                                    @if($product->id == $cart->product_id)
-                                                        <div>
-                                                            <p class="mb-0 fw-bold">{{ $product->display_name }}</p>
-                                                            <small class="text-muted">Color: White | Size: Medium</small>
-                                                            <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $product->price }}</small>
-                                                        </div>
-                                                        @continue
-                                                    @endif
-                                                @endforeach
-                                            </div>
-                                        </td>
-                                        <td class="text-center" style="width: 60px;">
-                                            <input type="number" class="form-control form-control-sm text-center" value="1" min="1">
-                                        </td>
-                                        @foreach($products as $product)
-                                            @if($product->id == $cart->product_id)
-                                                <td class="prices">₱{{ $product->price; }}</td>
-                                                @continue
-                                            @endif
-                                        @endforeach
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    @if(count($carts) == 0)
+                                        <tr>
+                                            <td colspan="4">No Products Selected</td>
+                                        </tr>
+                                    @endif
+                                    @foreach($carts as $cart)
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkboxes[]" value="{{$cart->id}}" class="form-check-input">
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    @foreach($productImages as $image)
+                                                        @if($image->product_id == $cart->product_id)
+                                                            <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Product" class="product-image me-3">
+                                                            @continue
+                                                        @endif
+                                                    @endforeach
+                                                    
+                                                    @foreach($products as $product)
+                                                        @if($product->id == $cart->product_id)
+                                                            <div>
+                                                                <p class="mb-0 fw-bold">{{ $product->display_name }}</p>
+                                                                <small class="text-muted">Color: White | Size: Medium</small>
+                                                                <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $product->price }}</small>
+                                                            </div>
+                                                            @continue
+                                                        @endif
+                                                    @endforeach
+                                                </div>
+                                            </td>
+                                            <td class="text-center" style="width: 60px;">
+                                                <input type="number" name="quantity_{{$cart->id}}" class="form-control form-control-sm text-center" value="1" min="1">
+                                            </td>
+                                            @foreach($products as $product)
+                                                @if($product->id == $cart->product_id)
+                                                    <td class="prices">₱{{ $product->price; }}</td>
+                                                    @continue
+                                                @endif
+                                            @endforeach
+                                            <td class="text-end">
+                                                <span class="btn-close" style="cursor: pointer;" onclick="removeItem(this)">&times;</span>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <p class="text-muted">Subtotal</p>
+                            <p class="subtotal">₱0.00</p>  <!-- Added class for subtotal -->
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="text-muted">Shipping Cost (+)</p>
+                            <p class="shipping-cost">₱0.00</p>  <!-- Added class for shipping cost -->
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="text-muted">Discount (-)</p>
+                            <p class="discount">₱0.00</p>  <!-- Added class for discount -->
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <p class="total-payable">Total Payable</p>
+                            <p class="total-payable2">₱0.00</p>  <!-- Added class for total payable -->
+                        </div>
+                        <button type="submit" class="card-button btn btn-danger w-100">Checkout</button>
                     </div>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <p class="text-muted">Subtotal</p>
-                        <p class="subtotal">₱0.00</p>  <!-- Added class for subtotal -->
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <p class="text-muted">Shipping Cost (+)</p>
-                        <p class="shipping-cost">₱0.00</p>  <!-- Added class for shipping cost -->
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <p class="text-muted">Discount (-)</p>
-                        <p class="discount">₱0.00</p>  <!-- Added class for discount -->
-                    </div>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <p class="total-payable">Total Payable</p>
-                        <p class="total-payable2">₱0.00</p>  <!-- Added class for total payable -->
-                    </div>
-                    <button type="submit" class="card-button btn btn-danger w-100">Checkout</button>
-                </div>
+                </form>
             </div>
 
             <!-- Customer Details Section -->
@@ -164,6 +172,17 @@
                             </label>
                         </div>
                     </div>
+                    {{-- <div class="col-md-12 mb-4">
+                        <div class="border rounded p-3 w-100 d-flex align-items-center">
+                            <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option1">
+                            <img src="https://th.bing.com/th/id/OIP.Dl-WiroGReI7sZ13Bp5U1gHaHa?rs=1&pid=ImgDetMain" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
+                            <label class="form-check-label" for="option1">
+                                <p class="mb-0 fw-bold">Sample Delivery Company</p>
+                                <small class="text-muted">Expected Delivery: March 3, 2025</small>
+                                <p class="mt-2">₱100.00</p>
+                            </label>
+                        </div>
+                    </div> --}}
                     {{--                     
                     <div class="col-md-6 mb-4">
                         <div class="border rounded p-3 w-100 d-flex align-items-center">
