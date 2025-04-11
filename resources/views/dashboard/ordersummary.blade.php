@@ -46,7 +46,8 @@
                                 <tr class="text-muted">
                                     <th>Product Details</th>
                                     <th>Quantity</th>
-                                    <th>Price</th>
+                                    <th class="text-end">Price</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -63,7 +64,8 @@
                                     <td class="text-center" style="width: 60px;">
                                         <input type="number" class="form-control form-control-sm text-center" value="1" min="1">
                                     </td>
-                                    <td>$36.00</td>
+                                    <td class="text-end">$36.00</td>
+                                    <td class="text-end"> <span class="btn-close" style="cursor: pointer;" onclick="removeItem(this)">&times;</span></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -78,9 +80,10 @@
                                     <td class="text-center" style="width: 60px;">
                                         <input type="number" class="form-control form-control-sm text-center" value="1" min="1">
                                     </td>
-                                    <td>$25.00</td>
+                                    <td class="text-end">$25.00</td>
+                                    <td class="text-end"> <span class="btn-close" style="cursor: pointer;" onclick="removeItem(this)">&times;</span></td>
                                 </tr>
-                                <tr>
+                                <tr class="item">
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <img src="https://th.bing.com/th/id/R.bd7ec57205f5f8bea1aa148c3f44583d?rik=jxr7IaKBvhlUZw&riu=http%3a%2f%2fwww.richmondtopglass.com%2fwp-content%2fuploads%2f2018%2f05%2falum.png&ehk=iTUYxOJWwRo9yxGvVzyto5FcqTcl8EZlLmNF7Hix0FA%3d&risl=&pid=ImgRaw&r=0" alt="Product" class="product-image me-3">
@@ -93,7 +96,12 @@
                                     <td class="text-center" style="width: 60px;">
                                         <input type="number" class="form-control form-control-sm text-center" value="1" min="1">
                                     </td>
-                                    <td>$45.00</td>
+                                    <td class="text-end">$25.00</td>
+                                    <td class="text-end">
+                                        <span class="btn-close" style="cursor: pointer;" onclick="removeItem(this)">&times;</span>
+                                    </td>
+
+
                                 </tr>
                             </tbody>
                         </table>
@@ -167,7 +175,7 @@
                             </label>
                         </div>
                     </div>
-                    {{--                     
+                    {{--
                     <div class="col-md-6 mb-4">
                         <div class="border rounded p-3 w-100 d-flex align-items-center">
                             <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option2">
@@ -229,6 +237,18 @@
             </div>
         </div>
     </div>
+
+    <!-- JS for Removal of Items -->
+    <script>
+        function removeItem(element) {
+            // Find the closest row and remove it
+            const row = element.closest('tr');
+            if (row) {
+                row.remove();
+            }
+        }
+    </script>
+
 </body>
 <!--end::Body-->
 
