@@ -86,6 +86,10 @@ Route::get('/approvals-download/{id}', [UserController::class, 'approvals_downlo
 Route::get('/approvals-approve/{id}', [UserController::class, 'approvals_approve']);
 Route::post('/approvals-reject/{id}', [UserController::class, 'approvals_reject']);
 
+// Dashboard - Modules - Inquiries
+Route::get('/inquiries', [UserController::class, 'approvals']);
+Route::get('/inquiries-view/{id}', [UserController::class, 'approvals_show']);
+
 // Dashboard - Settings - Users
 Route::get('/users', [UserController::class, 'index']);
 Route::get('/users-view/{id}', [UserController::class, 'show']);
