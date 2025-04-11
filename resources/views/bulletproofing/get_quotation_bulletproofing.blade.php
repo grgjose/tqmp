@@ -9,7 +9,7 @@
     <meta name="author" content="TQMP">
 
     <!-- Title and Favicon -->
-    <title>Get Quotaion - Glass Processing | Total Quality Management Products Philippines</title>
+    <title>Get Quoatation - Bullet Proofing | Total Quality Management Products Philippines</title>
     <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,6 @@
     @include('plus.navbar')
     <!-- End of Header -->
 
-
     <div class="container py-5">
         <div class="row">
             <!-- Left Column: Main Image and Thumbnails -->
@@ -52,7 +51,7 @@
             <!-- Right Column: Product Details -->
 
             <div class="col-md-6">
-                <h2 class="fw-bold">Sample Product for Glass Processing</h2>
+                <h2 class="fw-bold">Sample Product for bullet proofing</h2>
                 <!-- Rating and Stock -->
                 <div class="d-flex align-items-center mb-2">
                     <span class="me-2 text-warning">★ ★ ★ ★ ★</span>
@@ -79,24 +78,13 @@
                 <!-- Product Details -->
                 <h5>Product Details</h5>
                 <div class="mb-3">
-
                     <label for="size" class="form-label text-muted">Size</label>
                     <select id="size" class="form-select form-select-sm" aria-label="Select Size">
                         <option value="" disabled selected>Select size</option>
                         <option value="Small">Small</option>
                         <option value="Medium">Medium</option>
                         <option value="Large">Large</option>
-                    </select>
-
-                </div>
-                <div class="mb-3">
-                    <label for="color" class="form-label text-muted">Color</label>
-                    <select id="color" class="form-select form-select-sm" aria-label="Select Color">
-                        <option value="" disabled selected>Select color</option>
-                        <option value="White">White</option>
-                        <option value="Black">Black</option>
-                        <option value="Gray">Gray</option>
-                    </select>
+                    </select>   
                 </div>
                 <div class="mb-3">
                     <label for="brand" class="form-label text-muted">Thickness</label>
@@ -119,10 +107,11 @@
 
         </div>
     </div>
-
-    <!-- Footer -->
-    @include ('plus.footer')
-    <!-- End of Footer -->
 </body>
+<!--end::Body-->
+
+<!-- Footer -->
+@include ('plus.footer')
+<!-- End of Footer -->
 
 </html>
