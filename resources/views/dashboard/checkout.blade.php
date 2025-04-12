@@ -164,41 +164,7 @@
                         <strong>Payment</strong>
                     </div>
 
-                    <h5 class="fw-bold mt-3">Payment Methods</h5>
-                    <div class="container">
-                        <div class="row">
-                            <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                                <div>
-                                    <p class="mb-0 fw-bold">Direct Bank Transfer</p>
-                                    <small class="text-muted">Transfer directly to our bank account.</small>
-                                </div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer" checked>
-                                </div>
-                            </div>
-                            <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                                <div>
-                                    <p class="mb-0 fw-bold">Cash on Delivery</p>
-                                    <small class="text-muted">Pay when you receive the product.</small>
-                                </div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="radio" name="paymentMethod" id="cod">
-                                </div>
-                            </div>
-                            <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                                <div>
-                                    <p class="mb-0 fw-bold">Online Gateway</p>
-                                    <small class="text-muted">Pay securely through our online payment gateway.</small>
-                                </div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="radio" name="paymentMethod" id="onlinePayment">
-                                </div>
-                            </div>
-                            <div class="border rounded-3 p-3 mt-3">
-                                <button class="card-button btn btn-danger mt-auto w-100">Place Order</button>
-                            </div>
-                        </div>
-                    </div>
+                   
 
                 </div>
             </div>
