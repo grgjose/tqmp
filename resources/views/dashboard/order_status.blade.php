@@ -70,6 +70,7 @@
                             <tr class="text-muted">
                                 <th>Product</th>
                                 <th>Quantity</th>
+                                <th class="text-center">Status</th>
                                 <th class="text-end">Price</th>
                             </tr>
                         </thead>
@@ -77,22 +78,25 @@
                             <tr>
                                 <td>Aluminum Glass</td>
                                 <td class="text-center">1</td>
+                                <td class="text-center">Shipped</td>
                                 <td class="text-end">₱36.00</td>
                             </tr>
                             <tr>
                                 <td>Windows</td>
                                 <td class="text-center">1</td>
+                                <td class="text-center">Processing</td>
                                 <td class="text-end">₱25.00</td>
                             </tr>
                             <tr>
                                 <td>Sliding Door</td>
                                 <td class="text-center">1</td>
+                                <td class="text-center">Delivered</td>
                                 <td class="text-end">₱25.00</td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="2" class="text-end fw-bold">Total</td>
+                                <td colspan="3" class="text-end fw-bold">Total</td>
                                 <td class="text-end fw-bold">₱86.00</td>
                             </tr>
                         </tfoot>
