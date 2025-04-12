@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
     <!-- Chatbot JS -->
     <script src="{{ asset('js/chatbot.js') }}"></script>
-    
+
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 </head>
@@ -65,7 +65,7 @@
                         <hr style="border-top: 3px solid #920B12; width: 150px; ">
                         <p>Pioneer Float Glass Manufacturing Inc. (PFGMI) is the leading flat glass manufacturer in the Philippines.</p>
                         <p>Established in 1958 under the former name of Republic Glass Corporation, and eventually became a wholly owned subsidiary of AGC in 2001 adopting the company name AGC Flat Glass Philippines Inc.
-                        In 2017, TQMP Glass Manufacturing Corp. acquired 100% of the AGPH shares thus becoming the torch bearer for the flat glass industry in the Philippines.</p>
+                            In 2017, TQMP Glass Manufacturing Corp. acquired 100% of the AGPH shares thus becoming the torch bearer for the flat glass industry in the Philippines.</p>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                                         <p class="card-text">A Colourless and transparent glass that offers a very high level of light transmittance...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordionExample" aria-expanded="false" aria-controls="accordionExample">
-                                            More Details 
+                                            More Details
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordionExample" class="collapse mt-3">
@@ -125,7 +125,7 @@
                                         <p class="card-text">A heat absorbing, transparent glass colored by adding such metals like cobalt...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="false" aria-controls="accordion2">
-                                            More Details 
+                                            More Details
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion2" class="collapse mt-3">
@@ -154,7 +154,7 @@
                                         <p class="card-text">This kind of glass provides extreme clarity for glazing applications requiring minimum impurities...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-expanded="false" aria-controls="accordion3">
-                                            More Details 
+                                            More Details
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion3" class="collapse mt-3">
@@ -183,7 +183,7 @@
                                         <p class="card-text">Low-e glass stands for low emissivity glass. One side of the glass has a special metal coating...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4" aria-expanded="false" aria-controls="accordion4">
-                                            More Details 
+                                            More Details
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion4" class="collapse mt-3">
@@ -211,7 +211,7 @@
                                         <p class="card-text">Reflective glass is essentially an ordinary float glass with a metallic coating that helps...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion5" aria-expanded="false" aria-controls="accordion5">
-                                            More Details 
+                                            More Details
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion5" class="collapse mt-3">
@@ -241,7 +241,7 @@
                                         <p class="card-text">Mirror are made from top of the line clear or tinted float glass...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion6" aria-expanded="false" aria-controls="accordion6">
-                                            More Details 
+                                            More Details
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion6" class="collapse mt-3">
@@ -275,7 +275,7 @@
                                         <p class="card-text">Patterned Glass is a kind of decorative translucent glass with embossed pattern on one surface...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion7" aria-expanded="false" aria-controls="accordion7">
-                                            More Details 
+                                            More Details
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion7" class="collapse mt-3">
@@ -304,7 +304,7 @@
                                         <p class="card-text">Wired glass is a type of glass wherein a wire mesh is inserted during production...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion8" aria-expanded="false" aria-controls="accordion8">
-                                            More Details 
+                                            More Details
                                         </a>
                                         <!-- Accordion content -->
                                         <div id="accordion8" class="collapse mt-3">

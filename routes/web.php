@@ -149,4 +149,5 @@ Route::post('/checkout', [ProductController::class, 'checkout']);
 Route::get('/order-status/{reference}', [ProductController::class, 'order_status']);
 Route::get('/order-summary', [OrderSummaryController::class, 'index']);
 Route::get('/order_status', [ProductController::class, 'order_status']);
+Route::get('/hidden_store', [UserProfileController::class, 'hidden_store']);
 //Route::get('/product-details', [ProductDetailsController::class, 'index']);

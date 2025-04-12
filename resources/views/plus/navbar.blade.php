@@ -116,6 +116,7 @@
                         <!-- Dropdown Menu -->
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
                             <li class="dropdown-header fw-bold text-center">{{ $my_user->name }}</li>
+                            <li><a class="dropdown-item" href="/hidden_store"><i class="fa-solid fa-box-open me-2"></i>Shop</a></li>
                             <li><a class="dropdown-item" href="/cart"><i class="fas fa-shopping-cart me-2"></i> My Cart</a></li>
                             <li><a class="dropdown-item" href="/profile"><i class="fas fa-user-circle me-2"></i> View My Profile</a></li>
                             <li>
