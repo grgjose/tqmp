@@ -100,8 +100,6 @@
                                     <td class="text-end">
                                         <span class="btn-close" style="cursor: pointer;" onclick="removeItem(this)">&times;</span>
                                     </td>
-
-
                                 </tr>
                             </tbody>
                         </table>
@@ -124,66 +122,76 @@
                         <p class="total-payable">Total Payable</p>
                         <p class="total-payable">₱107.85</p>
                     </div>
+                    <h6 class="coupon-text">Apply Coupon to get discount!</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Coupon code">
+                        <button class="card-button btn btn-danger">Apply Code</button>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-5 mb-4">
                 <h5 class="fw-bold">Delivery Details</h5>
                 <p class="text-muted">Delivery mode in your convenience</p>
-                <div class="row">
-                    <div class="border rounded-3 p-3 d-flex align-items-center">
-                        <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option1">
-                        <img src="https://th.bing.com/th/id/OIP.Dl-WiroGReI7sZ13Bp5U1gHaHa?rs=1&pid=ImgDetMain" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
-                        <label class="form-check-label" for="option1">
-                            <p class="mb-0 fw-bold">Sample Delivery Company</p>
-                            <small class="text-muted">Expected Delivery: March 3, 2025</small>
-                            <p class="mt-2">₱36.00</p>
-                        </label>
+                <div class="container">
+                    <div class="row">
+                        <div class="border rounded-3 p-3 d-flex align-items-center">
+                            <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option1">
+                            <img src="https://th.bing.com/th/id/OIP.Dl-WiroGReI7sZ13Bp5U1gHaHa?rs=1&pid=ImgDetMain" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
+                            <label class="form-check-label" for="option1">
+                                <p class="mb-0 fw-bold">Sample Delivery Company</p>
+                                <small class="text-muted">Expected Delivery: March 3, 2025</small>
+                                <p class="mt-2">₱36.00</p>
+                            </label>
+                        </div>
+                        <div class="border rounded-3 p-3 mt-3 d-flex align-items-center">
+                            <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option1">
+                            <img src="https://th.bing.com/th/id/R.ceca21e2c4adf86765ad827513550427?rik=MHwhFqcmy9sM8Q&pid=ImgRaw&r=0" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
+                            <label class="form-check-label" for="option1">
+                                <p class="mb-0 fw-bold">Pick Up (Main Branch)</p>
+                                <small class="text-muted">Expected Delivery: March 3, 2025</small>
+                                <p class="mt-2">₱36.00</p>
+                            </label>
+                        </div>
                     </div>
-                    <div class="border rounded-3 p-3 mt-3 d-flex align-items-center">
-                        <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option1">
-                        <img src="https://th.bing.com/th/id/R.ceca21e2c4adf86765ad827513550427?rik=MHwhFqcmy9sM8Q&pid=ImgRaw&r=0" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
-                        <label class="form-check-label" for="option1">
-                            <p class="mb-0 fw-bold">Pick Up (Main Branch)</p>
-                            <small class="text-muted">Expected Delivery: March 3, 2025</small>
-                            <p class="mt-2">₱36.00</p>
-                        </label>
-                    </div>
-                    <!-- Add to Cart Button -->
-                    <button type="submit" class="card-button btn btn-danger btn-lg w-100 mb-4 mt-3">Add to Cart</button>
                 </div>
 
 
-                <!-- <h5 class="fw-bold mt-3">Additional Service</h5>
-                <div class="row">
-                    <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                        <div>
-                            <p class="mb-0 fw-bold">Service 1</p>
-                            <small class="text-muted">Description of Service 1</small>
+                <h5 class="fw-bold mt-3">Payment Methods</h5>
+                <p class="text-muted">Choose a payment method in your convenience</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="mb-0 fw-bold">Direct Bank Transfer</p>
+                                <small class="text-muted">Transfer directly to our bank account.</small>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer" checked>
+                            </div>
                         </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="service1">
+                        <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="mb-0 fw-bold">Cash on Delivery</p>
+                                <small class="text-muted">Pay when you receive the product.</small>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="cod">
+                            </div>
                         </div>
+                        <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="mb-0 fw-bold">Online Gateway</p>
+                                <small class="text-muted">Pay securely through our online payment gateway.</small>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="onlinePayment">
+                            </div>
+                        </div>
+                            <!-- Add to Cart Button -->
+                    <button type="submit" class="card-button btn btn-danger btn-lg w-100 mb-4 mt-3">Add to Cart</button>
                     </div>
-                    <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                        <div>
-                            <p class="mb-0 fw-bold">Service 2</p>
-                            <small class="text-muted">Description of Service 2</small>
-                        </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="service2">
-                        </div>
-                    </div>
-                    <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                        <div>
-                            <p class="mb-0 fw-bold">Service 3</p>
-                            <small class="text-muted">Description of Service 3</small>
-                        </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="service3">
-                        </div>
-                    </div>
-                </div> -->
+                </div>
             </div>
 
 
