@@ -91,7 +91,7 @@
                                                 </div>
                                             </td>
                                             <td class="text-center" style="width: 60px;">
-                                                <input type="number" name="quantity_{{$cart->id}}" class="form-control form-control-sm text-center" value="1" min="1">
+                                                <input type="number" name="quantity_{{$cart->id}}" class="form-control form-control-sm text-center" value="{{ $cart->quantity }}" min="1">
                                             </td>
                                             @foreach($products as $product)
                                                 @if($product->id == $cart->product_id)
@@ -164,11 +164,10 @@
                     <div class="col-md-12 mb-4">
                         <div class="border rounded p-3 w-100 d-flex align-items-center">
                             <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option1">
-                            <img src="https://th.bing.com/th/id/OIP.Dl-WiroGReI7sZ13Bp5U1gHaHa?rs=1&pid=ImgDetMain" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
+                            <img src="https://c1.klipartz.com/pngpicture/758/687/sticker-png-sales-symbol-pickup-truck-car-cash-on-delivery-courier-customer-industry-logo.png" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
                             <label class="form-check-label" for="option1">
-                                <p class="mb-0 fw-bold">Sample Delivery Company</p>
-                                <small class="text-muted">Expected Delivery: March 3, 2025</small>
-                                <p class="mt-2">₱100.00</p>
+                                <p class="mb-0 fw-bold">Pick Up</p>
+                                <p class="mt-2">FREE</p>
                             </label>
                         </div>
                     </div>

@@ -71,17 +71,38 @@ class ProductController extends Controller
             'price' => ['required', 'min:1'],
         ]);
 
-        $product = Product::Find($id);
+        $checkItems = DB::table('carts')
+        ->where('user_id', '=', $my_user->id)
+        ->where('product_id', '=', $id)
+        ->get();
 
-        $cart = new Cart();
-        $cart->user_id = $my_user->id;
-        $cart->product_id = $product->id;
-        $cart->product_category_id = $product->category_id;
-        $cart->quantity = $validated['quantity'];
-        $cart->price = $validated['price'];
-        $cart->remarks = "";
+        if(count($checkItems) > 0){
 
-        $cart->save();
+            $product = Product::Find($id);
+
+            $cart = Cart::find($checkItems[0]->id);
+            $cart->user_id = $my_user->id;
+            $cart->product_id = $product->id;
+            $cart->product_category_id = $product->category_id;
+            $cart->quantity = $cart->quantity + intval($validated['quantity']);
+            $cart->price = $validated['price'];
+            
+            $cart->save();
+
+        } else {
+            $product = Product::Find($id);
+
+            $cart = new Cart();
+            $cart->user_id = $my_user->id;
+            $cart->product_id = $product->id;
+            $cart->product_category_id = $product->category_id;
+            $cart->quantity = $validated['quantity'];
+            $cart->price = $validated['price'];
+            $cart->remarks = "";
+    
+            $cart->save();
+        }
+
 
         return redirect('/cart')->with('success_msg', 'Redirected to Cart');
     }
