@@ -7,8 +7,8 @@
             </p>
         </div>
 
-        <div class="container py-5 ">
-            <div class="row">
+        <div class="container">
+            <div class="row py-3">
 
                  <div class="col-md-3 mb-4 d-flex ">
                     <div class="card border-0 shadow-lg d-flex flex-column">

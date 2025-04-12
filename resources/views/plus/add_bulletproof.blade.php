@@ -6,7 +6,7 @@
         </p>
     </div>
 
-    <div class="row mt-5">
+    <div class="row py-3">
         <div class="col-md-3 mb-4 d-flex align-items-stretch">
             <div class="card border-0 shadow-lg d-flex flex-column">
                 <img src="{{ asset('storage/logos/bulletproof-1.jpg') }}" alt="Armoured Car" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
