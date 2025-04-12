@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\Cart;
 use App\Models\ProductImage;
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -348,4 +349,37 @@ class ProductController extends Controller
 
         return redirect('/products')->with('success_msg', 'Product Successfully Deleted');
     }
+
+    /**
+     * Checkout Items of User
+     */
+    public function checkout(Request $request){
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        $validated = $request->validate([
+            'checkboxes[]' => ['required'],
+            'reference_num' => ['required']
+        ]);
+
+        foreach($validated['checkboxes'] as $cartId){
+            $cart = Cart::find($cartId);
+            
+            $order = new Order();
+            $order->order_id = 1;
+            $order->reference_num = $validated['reference_num'];
+            $order->product_id = $cart->product_id;
+            $order->customer_id = $cart->user_id;
+            $order->sales_rep_id = 0;
+            $order->shipping_address = $my_user->address;
+            $order->price = $request->input('price_'.$cartId);
+            $order->quantity = $request->input('quantity_'.$cartId);
+            
+            $order->save();
+        }
+
+        return redirect('/order-status')->with('success_msg', 'Redirected to Cart');
+    }
+
 }

@@ -45,6 +45,7 @@
                     @csrf
                     <div class="border p-3">
                         <h5 class="fw-bold">Order #{{ $my_user->id.date('ymdHis') }}</h5>
+                        <input type="hidden" name="reference_num" value="{{ $my_user->id.date('ymdHis') }}">
                         <p class="text-muted">{{ date('jS F Y', strtotime('now')) }} at {{ date('h:i A') }}</p>
                         <div class="table-responsive">
                             
