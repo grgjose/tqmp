@@ -47,30 +47,35 @@
 
     <section class="container text-center fade-in-up">
 
-        <ul class="nav nav-underline justify-content-center" id="servicesNav">
-            <li class="nav-item">
+        <ul class="nav nav-underline justify-content-center flex-nowrap overflow-x-auto pb-2" id="servicesNav">
+            <li class="nav-item flex-shrink-0">
                 <a class="nav-link active" aria-current="page" href="#bullet-proofing" data-bs-toggle="tab">
-                    <i class="fas fa-shield-alt me-2"></i>Bullet Proofing
+                    <i class="fas fa-shield-alt me-1 me-md-2"></i>
+                    <span class="d-none d-md-inline">Bullet</span> Proofing
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item flex-shrink-0">
                 <a class="nav-link" href="#glass-manufacturing" data-bs-toggle="tab">
-                    <i class="fas fa-industry me-2"></i>Glass Manufacturing
+                    <i class="fas fa-industry me-1 me-md-2"></i>
+                    <span class="d-none d-md-inline">Glass</span> Manufacturing
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item flex-shrink-0">
                 <a class="nav-link" href="#glass-processing" data-bs-toggle="tab">
-                    <i class="fas fa-cut me-2"></i>Glass Processing
+                    <i class="fas fa-cut me-1 me-md-2"></i>
+                    <span class="d-none d-md-inline">Glass</span> Processing
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item flex-shrink-0">
                 <a class="nav-link" href="#aluminum-manufacturing" data-bs-toggle="tab">
-                    <i class="fas fa-cogs me-2"></i>Aluminum Manufacturing
+                    <i class="fas fa-cogs me-1 me-md-2"></i>
+                    <span class="d-none d-md-inline">Aluminum</span> Manufacturing
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item flex-shrink-0">
                 <a class="nav-link" href="#other-products" data-bs-toggle="tab">
-                <i class="fa-solid fa-box-open me-2"></i>Other Products
+                    <i class="fa-solid fa-box-open me-1 me-md-2"></i>
+                    Other Products
                 </a>
             </li>
         </ul>
@@ -103,6 +108,7 @@
             color: #495057;
             padding: 0.75rem 1.5rem;
             transition: all 0.3s ease;
+            border-bottom: 2px solid #dee2e6;
         }
 
         .nav-underline .nav-link:hover,
@@ -174,7 +180,7 @@
     </script>
 
     <!-- JS for searchbar functionality -->
- 
+
 
     <!-- -----Footers----- -->
 
