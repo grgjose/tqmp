@@ -1,7 +1,7 @@
 $(document).ready(function () {
     function computeTotal() {
         let subtotal = 0;
-        let shippingCost = 100; // Example shipping cost
+        let shippingCost = 0; // Example shipping cost
         let discount = 0; // Example discount
         let checkedItems = 0;
 
@@ -16,6 +16,8 @@ $(document).ready(function () {
                     let price = parseFloat(priceText) || 0;
                     let qty = parseInt(quantity, 10) || 1;
                     subtotal += price * qty;
+
+                    $(this).find(".hiddenPrice").val(price * qty);
                     checkedItems++; // Count checked items
                 }
             }

@@ -359,7 +359,7 @@ class ProductController extends Controller
         $my_user = $auth->user();
 
         $validated = $request->validate([
-            'checkboxes[]' => ['required'],
+            'checkboxes.*' => ['required'],
             'reference_num' => ['required']
         ]);
 
@@ -377,9 +377,30 @@ class ProductController extends Controller
             $order->quantity = $request->input('quantity_'.$cartId);
             
             $order->save();
+            $cart->delete();
         }
 
-        return redirect('/order-status')->with('success_msg', 'Redirected to Cart');
+        return redirect('/order-status/'.$validated['reference_num']);
+    }
+
+    /**
+     * Order Status
+     */
+    public function order_status($reference){
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        $orders = DB::table('orders')
+        ->join('products', 'orders.product_id', '=', 'products.id')
+        ->select('orders.*', 'products.name as name')
+        ->where('orders.reference_num', '=', $reference)
+        ->get();
+
+        return view('home.order_status', [
+            'my_user' => $my_user,
+            'orders' => $orders,
+        ]);
     }
 
 }

@@ -39,6 +39,16 @@
 
     <div class="container py-5">
         <div class="row">
+            @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
+
             <!-- Order Details Section -->
             <div class="col-lg-8 mb-4">
                 <form action="/checkout" method="POST">
@@ -85,6 +95,7 @@
                                                                 <p class="mb-0 fw-bold">{{ $product->display_name }}</p>
                                                                 <small class="text-muted">Color: White | Size: Medium</small>
                                                                 <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $product->price }}</small>
+                                                                <input type="hidden" name="price_{{$cart->id}}" class="hiddenPrice" value="">
                                                             </div>
                                                             @continue
                                                         @endif
@@ -126,6 +137,11 @@
                             <p class="total-payable">Total Payable</p>
                             <p class="total-payable2">₱0.00</p>  <!-- Added class for total payable -->
                         </div>
+                        <h6 class="coupon-text">Apply Coupon to get discount!</h6>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Coupon code">
+                            <button class="card-button btn btn-danger">Apply Code</button>
+                        </div>
                         <button type="submit" class="card-button btn btn-danger w-100">Checkout</button>
                     </div>
                 </form>
@@ -133,7 +149,7 @@
 
             <!-- Customer Details Section -->
             <div class="col-lg-4">
-                <div class="border p-3">
+                {{-- <div class="border p-3">
                     <h5 class="fw-bold">Customer's Details</h5>
                     <div class="d-flex align-items-center mb-3">
                         <img src="{{ asset('storage/user-pics/'.$my_user->user_pic) }}" alt="Customer" class="rounded-circle me-3" width="60">
@@ -157,7 +173,7 @@
                         </div>
                         <button type="submit" class="card-button btn btn-danger w-100">Save Details</button>
                     </form>
-                </div>
+                </div> --}}
 
                 <br>
                 <h5 class="fw-bold">Delivery Details</h5>
@@ -210,34 +226,40 @@
                 </div>
 
                 <br>
-                <h5 class="fw-bold">Additional Service</h5>
-                <div class="row p-3">
-                    <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                        <div>
-                            <p class="mb-0 fw-bold">Service 1</p>
-                            <small class="text-muted">Description of Service 1</small>
+                <h5 class="fw-bold mt-3">Payment Methods</h5>
+                <p class="text-muted">Choose a payment method in your convenience</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="mb-0 fw-bold">Direct Bank Transfer</p>
+                                <small class="text-muted">Transfer directly to our bank account.</small> <br>
+                                <small class="text-muted">Show Proof of Transaction upon Pickup.</small>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer" checked>
+                            </div>
                         </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="service1">
+                        <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="mb-0 fw-bold">Cash on Delivery</p>
+                                <small class="text-muted">Pay when you receive the product.</small>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="cod" disabled>
+                            </div>
                         </div>
-                    </div>
-                    <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                        <div>
-                            <p class="mb-0 fw-bold">Service 2</p>
-                            <small class="text-muted">Description of Service 2</small>
+                        <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="mb-0 fw-bold">Online Gateway</p>
+                                <small class="text-muted">Pay securely through our online payment gateway.</small>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="onlinePayment" disabled>
+                            </div>
                         </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="service2">
-                        </div>
-                    </div>
-                    <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
-                        <div>
-                            <p class="mb-0 fw-bold">Service 3</p>
-                            <small class="text-muted">Description of Service 3</small>
-                        </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="service3">
-                        </div>
+                            <!-- Add to Cart Button -->
+                    <button type="submit" class="card-button btn btn-danger btn-lg w-100 mb-4 mt-3">Add to Cart</button>
                     </div>
                 </div>
 
