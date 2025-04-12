@@ -9,7 +9,7 @@
                 <div id="carouselExample" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/doors/gsm-0060.jpg') }}" alt="Thore Door Closer Model GSM-0060" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/doors/abloy dc420.jpg') }}" alt="Abloy Door Closer Model DC420" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/doors/yale yfs-8003.jpg') }}" alt="Yale Door Closer Model YFS-9003" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -176,7 +176,7 @@
                 <div id="carouselExample2" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/patch-fittings/thore gsm0039.jpg') }}" alt="Thore Patch Fitting Model GSM-0039" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -235,7 +235,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/patch-fittings/GSM-0056.jpg') }}" alt="Thore Patch Fitting Model GSM-0056" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -296,7 +296,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/patch-fittings/abloy 985-35.jpg') }}" alt="Abloy Patch Fitting Model 985-35" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -356,7 +356,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/patch-fittings/abloy adcs020.jpg') }}" alt="Abloy Patch Fitting Model ADCS020" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -416,7 +416,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/patch-fittings/abloy atlg502-15.jpg') }}" alt="Abloy Patch Fitting Model ATLG502-15" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -477,7 +477,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/patch-fittings/abloy atps040.jpg') }}" alt="Abloy Patch Fitting Model ATPS040" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -537,7 +537,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/patch-fittings/yale 985-35.jpg') }}" alt="Yale Patch Fitting Model 985-35" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -597,7 +597,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/patch-fittings/yale p022.jpg') }}" alt="Yale Patch Fitting Model P022" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -658,7 +658,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/patch-fittings/yale s020.jpg') }}" alt="Yale Patch Fitting Model S020" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -730,7 +730,7 @@
                 <div id="carouselExampleHandles" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}" alt="THORE C-TYPE HANDLE" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -773,7 +773,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/handles/THORE C-TYPE HANDLE.jpg') }}" alt="THORE C-TYPE HANDLE" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -842,7 +842,7 @@
                 <div id="carouselExample3" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0011.jpg') }}" alt="THORE GSM0011" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -902,7 +902,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/shower-hinges/thore gsm0018.jpg') }}" alt="THORE GSM0018" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -992,7 +992,7 @@
                     <div id="carouselExample4" class="carousel slide" data-bs-ride="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="row mt-4 g-3">
+                                <div class="row py-3 g-3">
                                     <div class="col-md-3">
                                         <div class="card" style="height: 450px;">
                                             <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0001.jpg') }}" alt="THORE GSM0001" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -1052,7 +1052,7 @@
 
                             </div>
                             <div class="carousel-item">
-                                <div class="row mt-4 g-3">
+                                <div class="row py-3 g-3">
                                     <div class="col-md-3">
                                         <div class="card" style="height: 450px;">
                                             <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0005.jpg') }}" alt="THORE GSM0005" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -1113,7 +1113,7 @@
                             </div>
 
                             <div class="carousel-item">
-                                <div class="row mt-4 g-3">
+                                <div class="row py-3 g-3">
                                     <div class="col-md-3">
                                         <div class="card" style="height: 450px;">
                                             <img src="{{ asset('storage/archi-hardware/glass-clips/thore gsm0009.jpg') }}" alt="THORE GSM0009" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -1171,7 +1171,7 @@
                 <div id="carouselExampleSlidingShower" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3 mb-4">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0102.jpg') }}" alt="THORE GSM-0102" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -1201,7 +1201,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3 mb-4">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/archi-hardware/sliding-shower/GSM-0102.jpg') }}" alt="THORE GSM-0102" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -1254,7 +1254,7 @@
                 <div id="carouselExampleLadder" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3 mb-4">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="A - Type Ladder" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -1271,7 +1271,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3 mb-4">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/ladder/ladder.jpg') }}" alt="A - Type Ladder" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -1311,7 +1311,7 @@
                 <div id="carouselExampleJalouplus" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3 mb-4">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/jalouplus/jalouplus.jpg') }}" alt="Jalouplus" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -1328,7 +1328,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row mt-4 g-3">
+                            <div class="row py-3 g-3">
                                 <div class="col-md-3 mb-4">
                                     <div class="card" style="height: 450px;">
                                         <img src="{{ asset('storage/jalouplus/jalouplus.jpg') }}" alt="Jalouplus" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
