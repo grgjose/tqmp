@@ -104,7 +104,7 @@
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header bg-dark text-white">
                         Default Shipping Address
@@ -120,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            {{-- <div class="col-md-6">
                 <div class="card">
                     <div class="card-header bg-dark text-white">
                         Bank Details
@@ -135,7 +135,7 @@
                         <button class="card-button btn btn-danger">Edit Bank Details</button>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <div class="row mt-4">
             <div class="col-md-12">
@@ -154,18 +154,14 @@
                     </tr>
                     </thead>
                     <tbody>
+                    @foreach($groupedOrders as $order)
                     <tr>
-                        <td>12345</td>
-                        <td>2023-01-01</td>
-                        <td><span class="text-success">Completed</span></td>
-                        <td>$100.00</td>
+                        <td><a href="/order-status/{{ $order->reference_num }}">{{ $order->reference_num }}</a></td>
+                        <td>{{ $order->nearest_created_at }}</td>
+                        <td><span class="text-success">{{ ucfirst($order->group_status) }}</span></td>
+                        <td>₱{{ $order->total_price }}</td>
                     </tr>
-                    <tr>
-                        <td>12346</td>
-                        <td>2023-02-01</td>
-                        <td><span class="text-success">Pending</span></td>
-                        <td>$150.00</td>
-                    </tr>
+                    @endforeach
                     </tbody>
                 </table>
                 </div>
