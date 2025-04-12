@@ -36,10 +36,10 @@
     <div class="container py-5">
         <div class="row">
             <!-- Order Details Section -->
-            <div class="col-lg-8 mb-4">
-                <div class="border p-3">
-                    <h5 class="fw-bold">Order #15478</h5>
-                    <p class="text-muted">21st March 2021 at 10:34 PM</p>
+            <div class="col-md-7 mb-4">
+                <h5 class="fw-bold">Order #15478</h5>
+                <p class="text-muted">21st March 2021 at 10:34 PM</p>
+                <div class="border rounded-3 p-3">
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -64,7 +64,7 @@
                                     <td class="text-center" style="width: 60px;">
                                         <input type="number" class="form-control form-control-sm text-center" value="1" min="1">
                                     </td>
-                                    <td class="text-end">$36.00</td>
+                                    <td class="text-end">₱36.00</td>
                                     <td class="text-end"> <span class="btn-close" style="cursor: pointer;" onclick="removeItem(this)">&times;</span></td>
                                 </tr>
                                 <tr>
@@ -80,7 +80,7 @@
                                     <td class="text-center" style="width: 60px;">
                                         <input type="number" class="form-control form-control-sm text-center" value="1" min="1">
                                     </td>
-                                    <td class="text-end">$25.00</td>
+                                    <td class="text-end">₱25.00</td>
                                     <td class="text-end"> <span class="btn-close" style="cursor: pointer;" onclick="removeItem(this)">&times;</span></td>
                                 </tr>
                                 <tr class="item">
@@ -96,7 +96,7 @@
                                     <td class="text-center" style="width: 60px;">
                                         <input type="number" class="form-control form-control-sm text-center" value="1" min="1">
                                     </td>
-                                    <td class="text-end">$25.00</td>
+                                    <td class="text-end">₱25.00</td>
                                     <td class="text-end">
                                         <span class="btn-close" style="cursor: pointer;" onclick="removeItem(this)">&times;</span>
                                     </td>
@@ -109,103 +109,53 @@
                     <hr>
                     <div class="d-flex justify-content-between">
                         <p class="text-muted">Subtotal</p>
-                        <p>$106</p>
+                        <p>₱106</p>
                     </div>
                     <div class="d-flex justify-content-between">
                         <p class="text-muted">Shipping Cost (+)</p>
-                        <p>$10.85</p>
+                        <p>₱10.85</p>
                     </div>
                     <div class="d-flex justify-content-between">
                         <p class="text-muted">Discount (-)</p>
-                        <p>$9.00</p>
+                        <p>₱9.00</p>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
                         <p class="total-payable">Total Payable</p>
-                        <p class="total-payable">$107.85</p>
+                        <p class="total-payable">₱107.85</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Customer Details Section -->
-            <div class="col-lg-4">
-                <div class="border p-3">
-                    <h5 class="fw-bold">Customer's Details</h5>
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="https://via.placeholder.com/60" alt="Customer" class="rounded-circle me-3" width="60">
-                        <div>
-                            <p class="mb-0 fw-bold">Willium Deno</p>
-                            <small class="text-muted">10 Previous Orders</small>
-                        </div>
-                    </div>
-                    <form>
-                        <div class="mb-3">
-                            <label for="shippingAddress" class="form-label"><strong>Shipping Address:</strong></label>
-                            <input type="text" class="form-control" id="shippingAddress" value="Quezon City, Philippines">
-                        </div>
-                        <div class="mb-3">
-                            <label for="billingAddress" class="form-label"><strong>Billing Address:</strong></label>
-                            <input type="text" class="form-control" id="billingAddress" value="Quezon City, Philippines">
-                        </div>
-                        <div class="mb-3">
-                            <label for="emailAddress" class="form-label"><strong>Email Address:</strong></label>
-                            <input type="email" class="form-control" id="emailAddress" value="contact@yourmail.com">
-                        </div>
-                        <button type="submit" class="card-button btn btn-danger w-100">Save Details</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <!-- Delivery Details Section -->
-            <div class="col-lg-8 mb-4">
+            <div class="col-md-5 mb-4">
                 <h5 class="fw-bold">Delivery Details</h5>
-                <div class="row pt-3">
-                    <div class="col-md-6 mb-4">
-                        <div class="border rounded p-3 w-100 d-flex align-items-center">
-                            <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option1">
-                            <img src="https://th.bing.com/th/id/OIP.Dl-WiroGReI7sZ13Bp5U1gHaHa?rs=1&pid=ImgDetMain" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
-                            <label class="form-check-label" for="option1">
-                                <p class="mb-0 fw-bold">Sample Delivery Company</p>
-                                <small class="text-muted">Expected Delivery: March 3, 2025</small>
-                                <p class="mt-2">$36.00</p>
-                            </label>
-                        </div>
+                <p class="text-muted">Delivery mode in your convenience</p>
+                <div class="row">
+                    <div class="border rounded-3 p-3 d-flex align-items-center">
+                        <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option1">
+                        <img src="https://th.bing.com/th/id/OIP.Dl-WiroGReI7sZ13Bp5U1gHaHa?rs=1&pid=ImgDetMain" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
+                        <label class="form-check-label" for="option1">
+                            <p class="mb-0 fw-bold">Sample Delivery Company</p>
+                            <small class="text-muted">Expected Delivery: March 3, 2025</small>
+                            <p class="mt-2">₱36.00</p>
+                        </label>
                     </div>
-                    {{--
-                    <div class="col-md-6 mb-4">
-                        <div class="border rounded p-3 w-100 d-flex align-items-center">
-                            <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option2">
-                            <img src="https://th.bing.com/th/id/OIP.Pp0yBjr7Qr1TB7oRM9vLIgHaHa?rs=1&pid=ImgDetMain" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
-                            <label class="form-check-label" for="option2">
-                                <p class="mb-0 fw-bold">Sample Delivery Company</p>
-                                <small class="text-muted">Expected Delivery: March 3, 2025</small>
-                                <p class="mt-2">$25.00</p>
-                            </label>
-                        </div>
+                    <div class="border rounded-3 p-3 mt-3 d-flex align-items-center">
+                        <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option1">
+                        <img src="https://th.bing.com/th/id/R.ceca21e2c4adf86765ad827513550427?rik=MHwhFqcmy9sM8Q&pid=ImgRaw&r=0" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
+                        <label class="form-check-label" for="option1">
+                            <p class="mb-0 fw-bold">Pick Up (Main Branch)</p>
+                            <small class="text-muted">Expected Delivery: March 3, 2025</small>
+                            <p class="mt-2">₱36.00</p>
+                        </label>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="border rounded p-3 w-100 d-flex align-items-center">
-                            <input class="form-check-input me-3" type="radio" name="deliveryOption" id="option3">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Logo_J%26T_Merah_Square.jpg/330px-Logo_J%26T_Merah_Square.jpg" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
-                            <label class="form-check-label" for="option3">
-                                <p class="mb-0 fw-bold">Sample Delivery Company</p>
-                                <small class="text-muted">Expected Delivery: March 3, 2025</small>
-                                <p class="mt-2">$45.00</p>
-                            </label>
-                        </div>
-                    </div> 
-                    --}}
+                    <!-- Add to Cart Button -->
+                    <button type="submit" class="card-button btn btn-danger btn-lg w-100 mb-4 mt-3">Add to Cart</button>
                 </div>
-            </div>
 
-            <!-- Additional Service Section -->
-            <div class="col-lg-4">
-                <h5 class="fw-bold">Additional Service</h5>
-                <div class="row p-3">
+
+                <!-- <h5 class="fw-bold mt-3">Additional Service</h5>
+                <div class="row">
                     <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
                         <div>
                             <p class="mb-0 fw-bold">Service 1</p>
@@ -233,10 +183,13 @@
                             <input class="form-check-input" type="checkbox" id="service3">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
+
+
         </div>
     </div>
+
 
     <!-- JS for Removal of Items -->
     <script>

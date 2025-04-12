@@ -92,4 +92,15 @@ class UserProfileController extends Controller
             'my_user' => $my_user,
         ]);
     }
+
+    public function order_status()
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('dashboard.order_status', [
+            'my_user' => $my_user,
+        ]);
+    }
 }
