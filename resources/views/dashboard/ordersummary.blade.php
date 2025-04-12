@@ -149,9 +149,12 @@
                             <p class="mt-2">₱36.00</p>
                         </label>
                     </div>
+                    <!-- Add to Cart Button -->
+                    <button type="submit" class="card-button btn btn-danger btn-lg w-100 mb-4 mt-3">Add to Cart</button>
                 </div>
 
-                <h5 class="fw-bold mt-3">Additional Service</h5>
+
+                <!-- <h5 class="fw-bold mt-3">Additional Service</h5>
                 <div class="row">
                     <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
                         <div>
@@ -180,7 +183,7 @@
                             <input class="form-check-input" type="checkbox" id="service3">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
 
