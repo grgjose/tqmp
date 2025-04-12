@@ -103,4 +103,15 @@ class UserProfileController extends Controller
             'my_user' => $my_user,
         ]);
     }
+
+    public function hidden_store()
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('home.hidden_store', [
+            'my_user' => $my_user,
+        ]);
+    }
 }
