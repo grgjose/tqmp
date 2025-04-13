@@ -3,14 +3,16 @@
         <div class="chatbot-header">TQMP Chatbot <button class="close-btn" onclick="closeChat()">&times;</button></div>
 
         <div class="chatbot-body" id="chatbot-body">
-            <div class="d-flex align-items-start" style="gap: 10px;">
+
+            <!-- Old content -->
+            <!-- <div class="d-flex align-items-start" style="gap: 10px;">
                 <div class="agent-profile rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center">TQ</div>
                 <div class="agent-message">
                     Welcome! Let's get started. What do you need? <br><br> Select a topic:
                 </div>
             </div>
 
-            <!-- <div class="text-center chat-topics">
+            <div class="text-center chat-topics">
                 <button class="btn btn-sm btn-outline-danger" style="width: 100%;" onclick="showRegistrationPrompt()"> I want to register as a user</button>
                 <button class="btn btn-sm btn-outline-danger" style="width: 100%;" onclick="showStoreLocator()"> Store Locator</button>
                 <button class="btn btn-sm btn-outline-danger" style="width: 100%;" onclick="showTrackingPrompt()"> I want to track an order</button>
@@ -27,7 +29,6 @@
             <input type="file" id="file-upload">
             <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
         </div>
-
     </div>
     <div class="chatbot-icon" onclick="toggleChat()">
         <i class="fas fa-comment"></i>
@@ -36,20 +37,6 @@
 
 <!-- js for workflows -->
 <script>
-
-    function toggleChat() {
-        const chatbotContainer = document.getElementById('chatbot');
-        if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
-            chatbotContainer.style.display = 'block';
-            showLoadingEffect(() => {
-                goBack(); // Show the main menu after the loading effect
-            });
-        } else {
-            chatbotContainer.style.display = 'none';
-        }
-    }
-
-    //Menu Settings 
     // Main chat functions
     function showRegistrationPrompt() {
         addUserMessage("I want to register as a user");
@@ -442,6 +429,18 @@
     // }
 
     // Helper functions
+    function toggleChat() {
+        const chatbotContainer = document.getElementById('chatbot');
+        if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
+            chatbotContainer.style.display = 'block';
+            showLoadingEffect(() => {
+                goBack(); // Show the main menu after the loading effect
+            });
+        } else {
+            chatbotContainer.style.display = 'none';
+        }
+    }
+
     function addUserMessage(message) {
         const chatbotBody = document.getElementById('chatbot-body');
         const messageDiv = document.createElement('div');
@@ -471,13 +470,13 @@
             const buttonsDiv = document.createElement('div');
             buttonsDiv.className = 'chat-topics';
             buttons.forEach(btn => {
-            const button = document.createElement('button');
-            button.className = 'btn btn-outline-danger mb-2 w-100';
-            button.textContent = btn.text;
-            button.onclick = function() {
-                eval(btn.action);
-            };
-            buttonsDiv.appendChild(button);
+                const button = document.createElement('button');
+                button.className = 'btn btn-outline-danger mb-2 w-100';
+                button.textContent = btn.text;
+                button.onclick = function() {
+                    eval(btn.action);
+                };
+                buttonsDiv.appendChild(button);
             });
             chatbotBody.appendChild(buttonsDiv);
         }
@@ -489,6 +488,8 @@
         const chatbotBody = document.getElementById('chatbot-body');
         const loader = document.createElement('div');
         loader.className = 'd-flex align-items-start mb-3';
+        loader.style.opacity = '0'; // Start with opacity 0 for animation
+        loader.style.transition = 'opacity 0.5s ease'; // Smooth transition for opacity
         loader.innerHTML = `
                 <div class="agent-profile rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center">TQ</div>
                 <div class="typing-indicator">
@@ -498,11 +499,20 @@
                 </div>
             `;
         chatbotBody.appendChild(loader);
+
+        // Trigger the animation
+        setTimeout(() => {
+            loader.style.opacity = '1'; // Fade in
+        }, 10);
+
         scrollToBottom();
 
         setTimeout(() => {
-            chatbotBody.removeChild(loader);
-            callback();
+            loader.style.opacity = '0'; // Fade out before removal
+            setTimeout(() => {
+                chatbotBody.removeChild(loader);
+                callback();
+            }, 500); // Match the fade-out duration
         }, 1500);
     }
 
@@ -545,5 +555,4 @@
     }
 
     // Start the chat when page loads
-    window.onload = initChatbot;
 </script>
