@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('display_name')->nullable();
             $table->string('description')->nullable();
             $table->integer('category_id')->nullable();
+            $table->integer('sub_category_id')->nullable();
             $table->string('brand')->nullable();
             $table->string('status')->nullable();
             $table->string('dimensions')->nullable();
