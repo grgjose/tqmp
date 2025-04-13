@@ -23,16 +23,17 @@
 
     <!-- Chatbot CSS -->
     <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
-    
+
     <!-- Chatbot JS -->
     <script src="{{ asset('js/chatbot.js') }}"></script>
-    
+
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <!-- Header -->
     @include('plus.navbar')
@@ -182,31 +183,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
     @if(session()->has('error_msg'))
-      <script>
-          toastr.options.preventDuplicates = true;
-          toastr.error("{{ session('error_msg') }}");
-      </script>
+    <script>
+        toastr.options.preventDuplicates = true;
+        toastr.error("{{ session('error_msg') }}");
+    </script>
     @endif
 
     @error('code')
-      <script>
+    <script>
         toastr.options.preventDuplicates = true;
         toastr.error('Code already exists');
-      </script>
+    </script>
     @enderror
 
     @if(session()->has('success_msg'))
-      <script>
-          toastr.options.preventDuplicates = true;
-          toastr.success("{{ session('success_msg') }}");
-      </script>
+    <script>
+        toastr.options.preventDuplicates = true;
+        toastr.success("{{ session('success_msg') }}");
+    </script>
     @endif
 
     @if(session()->has('download_file'))
-      <script>
-          $("#download_filename").val("{{ session('download_file') }}");
-          $("#downloadForm").submit();
-      </script>
+    <script>
+        $("#download_filename").val("{{ session('download_file') }}");
+        $("#downloadForm").submit();
+    </script>
     @endif
 
     <!-- Bootstrap JS -->

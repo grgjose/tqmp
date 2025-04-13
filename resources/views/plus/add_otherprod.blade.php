@@ -46,7 +46,7 @@
     }
 </style>
 
-<div class="mt-5">
+<div class="py-5">
     <div class="row">
         <div class="col-md-3 col-lg-2 pe-0">
             <div class="nav flex-column nav-pills me-3 border-end" id="productTabs" role="tablist"
