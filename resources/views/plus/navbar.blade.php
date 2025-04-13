@@ -12,6 +12,12 @@
     img.rounded-circle:hover {
         transform: scale(1.1);
     }
+
+    .custom-left-dropdown {
+        left: auto !important;
+        right: 0 !important; /* Forces it to appear aligned from the right of the trigger */
+        transform: none !important; /* Shift to the left of the button */
+    }
 </style>
 <div class="sticky-top">
     <!-- Logo and Header Text -->
@@ -92,6 +98,11 @@
                     <li class="nav-item">
                         <a class="nav-link px-3" href="/contact">Contact</a>
                     </li>
+                    @if($my_user != null)
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="/hidden_store">Shop</a>
+                    </li>
+                    @endif
                 </ul>
 
                 <div class="d-flex align-items-center">
@@ -100,12 +111,13 @@
                         <i class="fas fa-user me-2"></i> Login
                     </button>
                     @else
+
                     <!-- Profile Dropdown -->
                     <div class="dropdown">
                         <!-- Desktop View: Profile Picture -->
                         <a href="#" class="d-none d-md-flex align-items-center text-decoration-none dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="{{ $my_user->profile_picture ? asset('storage/user-pics/' . $my_user->user_pic) : asset('storage/user-pics/default.png') }}"
-                                alt="Profile Picture" class="rounded-circle" width="40" height="40">
+                            <img src="{{ $my_user->user_pic ? asset('storage/user-pics/' . $my_user->user_pic) : asset('storage/user-pics/default.png') }}"
+                                alt="Profile Picture" class="rounded-circle" width="40" height="40">                                
                         </a>
 
                         <!-- Mobile View: "My Profile" Text -->
@@ -114,9 +126,9 @@
                         </a>
 
                         <!-- Dropdown Menu -->
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                        <ul class="dropdown-menu custom-left-dropdown" aria-labelledby="profileDropdown">
                             <li class="dropdown-header fw-bold text-center">{{ $my_user->name }}</li>
-                            <li><a class="dropdown-item" href="/hidden_store"><i class="fa-solid fa-box-open me-2"></i>Shop</a></li>
+                            {{-- <li><a class="dropdown-item" href="/hidden_store"><i class="fa-solid fa-box-open me-2"></i>Shop</a></li> --}}
                             <li><a class="dropdown-item" href="/cart"><i class="fas fa-shopping-cart me-2"></i> My Cart</a></li>
                             <li><a class="dropdown-item" href="/profile"><i class="fas fa-user-circle me-2"></i> View My Profile</a></li>
                             <li>
