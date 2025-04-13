@@ -259,7 +259,7 @@
                             </div>
                         </div>
                             <!-- Add to Cart Button -->
-                    <button type="submit" class="card-button btn btn-danger btn-lg w-100 mb-4 mt-3">Add to Cart</button>
+                    {{-- <button type="submit" class="card-button btn btn-danger btn-lg w-100 mb-4 mt-3">Add to Cart</button> --}}
                     </div>
                 </div>
 

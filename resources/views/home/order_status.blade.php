@@ -73,19 +73,35 @@
                                 <th class="text-end">Price</th>
                             </tr>
                         </thead>
+                        @php
+                            $subtotal = 0;
+                        @endphp
                         <tbody>
                             @foreach($orders as $order)
                             <tr>
                                 <td>{{ $order->name }}</td>
                                 <td class="text-center">{{ $order->quantity }}</td>
                                 <td class="text-end">₱{{ $order->price }}</td>
+                                <span style="display: none;">
+                                    @php
+                                        $subtotal += $order->price;
+                                    @endphp
+                                </span>
                             </tr>
                             @endforeach
                         </tbody>
                         <tfoot>
                             <tr>
+                                <td colspan="2" class="text-end fw-bold">SubTotal</td>
+                                <td class="text-end fw-bold">₱{{ $subtotal }}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-end fw-bold">Shipping Cost</td>
+                                <td class="text-end fw-bold">₱0.00</td>
+                            </tr>
+                            <tr>
                                 <td colspan="2" class="text-end fw-bold">Total</td>
-                                <td class="text-end fw-bold">₱86.00</td>
+                                <td class="text-end fw-bold">₱{{ $subtotal }}</td>
                             </tr>
                         </tfoot>
                     </table>

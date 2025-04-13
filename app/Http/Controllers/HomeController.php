@@ -73,9 +73,26 @@ class HomeController extends Controller
 
         $quotations = DB::table('quotations')->where('user_id', '=', $my_user->id)->get();
 
+        $groupedOrders = DB::table('orders')
+        ->select(
+            'reference_num',
+            DB::raw("
+                CASE 
+                    WHEN SUM(CASE WHEN status != 'completed' THEN 1 ELSE 0 END) = 0 
+                    THEN 'completed' 
+                    ELSE 'pending' 
+                END as group_status
+            "),
+            DB::raw('SUM(price) as total_price'),
+            DB::raw('MIN(created_at) as nearest_created_at')
+        )
+        ->groupBy('reference_num')
+        ->get();
+
         return view('home.profile', [
             'my_user' => $my_user,
             'quotations' => $quotations,
+            'groupedOrders' => $groupedOrders,
         ]);
     }
 
