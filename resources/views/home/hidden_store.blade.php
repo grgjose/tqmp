@@ -100,8 +100,7 @@
         </div>
     </section>
 
-
-    <!-- CSS Enhancements -->
+    <!-- JS and CSS for Tabs -->
     <style>
         .nav-underline .nav-link {
             font-weight: 500;
@@ -144,7 +143,6 @@
         }
     </style>
 
-    <!-- JavaScript for Enhanced Functionality -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize Bootstrap tabs
@@ -180,6 +178,10 @@
     </script>
 
     <!-- -----Footers----- -->
+
+    <!-- Chatbot  -->
+    @include('plus.chatbot')
+    <!-- End of Chatbot -->
 
     <!-- Footer -->
     @include ('plus.footer')
