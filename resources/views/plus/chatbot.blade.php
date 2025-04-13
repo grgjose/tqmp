@@ -349,23 +349,32 @@
         addUserMessage("Show me popular products");
         showLoadingEffect(() => {
             addAgentMessage(
-                "Here are our current most popular products:<br>" +
-                "1. Premium Glass Solutions (25% off)<br>" +
-                "2. Aluminum Framing Systems<br>" +
-                "3. Security Glass Packages<br>" +
-                "4. Custom Glass Installations<br><br>" +
+                "Here are our current most popular services/products:<br>" +
+                "1. Aluminum Manufacturing<br>" +
+                "2. Glass Manufacturing<br>" +
+                "3. Glass Processing<br>" +
+                "4. Bullet Proofing<br>" +
+                "5. Other Products<br><br>" +
                 "Would you like to browse any of these categories?",
                 [{
-                        text: "View Premium Glass Solutions",
-                        action: "window.open('/products/premium-glass', '_blank')"
+                        text: "View Aluminum Manufacturing",
+                        action: "window.open('/aluminummanufacturing', '_blank')"
                     },
                     {
-                        text: "View Aluminum Framing",
-                        action: "window.open('/products/aluminum-frames', '_blank')"
+                        text: "View Glass Manufacturing",
+                        action: "window.open('/glassmanufacturing', '_blank')"
                     },
                     {
-                        text: "View Security Glass",
-                        action: "window.open('/products/security-glass', '_blank')"
+                        text: "View Glass Processing",
+                        action: "window.open('/glassprocessing', '_blank')"
+                    },
+                    {
+                        text: "View Bullet Proofing",
+                        action: "window.open('/bulletproofing', '_blank')"
+                    },
+                    {
+                        text: "View Other Products",
+                        action: "window.open('/gentrade', '_blank')"
                     },
                     {
                         text: "Go back to main menu",
