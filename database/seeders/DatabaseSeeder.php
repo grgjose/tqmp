@@ -487,7 +487,25 @@ class DatabaseSeeder extends Seeder
 
             //
 
-            // Aluminum Manufacturing
+            // Aluminum Manufacturing (18-22)
+
+                Product::factory()->create([
+                    'name' => 'CLEAR-FLOAT-GLASS',
+                    'display_name' => 'Clear Float Glass',
+                    'description' => 'A Colourless and transparent glass that offers a very high level of light transmittance. Its edge displays a slight green tint and is available from 2mm to 19mm thick.',
+                    'category_id' => 2,
+                    'brand' => 'PIONEER',
+                    'status' => 'active',
+                    'price' => '121000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '18',
+                    'filename' => 'CLEAR-FLOAT-GLASS.jpg',
+                    'isDeleted' => false,
+                ]);
+
+
             //
 
             // Glass Processing
