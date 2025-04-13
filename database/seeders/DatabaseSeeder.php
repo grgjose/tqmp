@@ -487,28 +487,294 @@ class DatabaseSeeder extends Seeder
 
             //
 
-            // Aluminum Manufacturing (18-22)
+            // Aluminum Manufacturing (18-28)
 
                 Product::factory()->create([
-                    'name' => 'CLEAR-FLOAT-GLASS',
-                    'display_name' => 'Clear Float Glass',
-                    'description' => 'A Colourless and transparent glass that offers a very high level of light transmittance. Its edge displays a slight green tint and is available from 2mm to 19mm thick.',
-                    'category_id' => 2,
-                    'brand' => 'PIONEER',
+                    'name' => 'ANGLE-SECTION',
+                    'display_name' => 'Angle Sections',
+                    'description' => '',
+                    'category_id' => 3,
+                    'brand' => 'MASTER',
                     'status' => 'active',
-                    'price' => '121000',
+                    'price' => '90000',
                 ]);
 
                 ProductImage::factory()->create([
                     'product_id' => '18',
-                    'filename' => 'CLEAR-FLOAT-GLASS.jpg',
+                    'filename' => 'ANGLE-SECTOIN-01.jpg',
                     'isDeleted' => false,
                 ]);
 
+                Product::factory()->create([
+                    'name' => 'STORE-FRONT-COMPONENTS',
+                    'display_name' => 'Store Front Components',
+                    'description' => '',
+                    'category_id' => 3,
+                    'brand' => 'MASTER',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '19',
+                    'filename' => 'STORE-FRONT-COMPONENTS-01.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '19',
+                    'filename' => 'STORE-FRONT-COMPONENTS-02.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '19',
+                    'filename' => 'STORE-FRONT-COMPONENTS-03.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '19',
+                    'filename' => 'STORE-FRONT-COMPONENTS-04.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'SLIDING-DOOR-SECTIONS',
+                    'display_name' => 'Sliding Door Sections',
+                    'description' => '',
+                    'category_id' => 3,
+                    'brand' => 'MASTER',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '20',
+                    'filename' => 'SLIDING-DOOR-SECTIONS-01.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '20',
+                    'filename' => 'SLIDING-DOOR-SECTIONS-02.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '20',
+                    'filename' => 'SLIDING-DOOR-SECTIONS-03.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '20',
+                    'filename' => 'SLIDING-DOOR-SECTIONS-04.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'MISCELLANEOUS-SECTIONS',
+                    'display_name' => 'Miscellaneous Sections',
+                    'description' => '',
+                    'category_id' => 3,
+                    'brand' => 'MASTER',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '21',
+                    'filename' => 'MISCELLANEOUS-SECTIONS.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'SWING-DOOR-SECTIONS',
+                    'display_name' => 'Swing Door Sections',
+                    'description' => '',
+                    'category_id' => 3,
+                    'brand' => 'MASTER',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '22',
+                    'filename' => 'SWING-DOOR-SECTIONS-01.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '22',
+                    'filename' => 'SWING-DOOR-SECTIONS-02.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'COUNTER-TRIM-SECTIONS',
+                    'display_name' => 'Counter Trim Sections',
+                    'description' => '',
+                    'category_id' => 3,
+                    'brand' => 'MASTER',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '23',
+                    'filename' => 'COUNTER-TRIM-SECTIONS.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'YC-SECTIONS',
+                    'display_name' => 'YC Sections',
+                    'description' => '',
+                    'category_id' => 3,
+                    'brand' => 'MASTER',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '24',
+                    'filename' => 'YC-SECTIONS.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'VENT-SECTIONS',
+                    'display_name' => 'Vent Sections',
+                    'description' => '',
+                    'category_id' => 3,
+                    'brand' => 'MASTER',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '25',
+                    'filename' => 'VENT-SECTIONS.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'FLAT-BAR-SECTIONS',
+                    'display_name' => 'Flat Bar Sections',
+                    'description' => '',
+                    'category_id' => 3,
+                    'brand' => 'MASTER',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '26',
+                    'filename' => 'FLAT-BAR-SECTIONS.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'COUNTER-NOSING-SECTION',
+                    'display_name' => 'Counter Nosing Section',
+                    'description' => '',
+                    'category_id' => 3,
+                    'brand' => 'MASTER',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '27',
+                    'filename' => 'COUNTER-NOSING-SECTION.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'MODEL898',
+                    'display_name' => 'Model 898',
+                    'description' => '',
+                    'category_id' => 3,
+                    'brand' => 'MASTER',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '28',
+                    'filename' => 'MODEL898.jpg',
+                    'isDeleted' => false,
+                ]);
 
             //
 
-            // Glass Processing
+            // Glass Processing (29-32)
+
+                Product::factory()->create([
+                    'name' => 'TEMPERED-GLASS',
+                    'display_name' => 'Tempered Glass',
+                    'description' => 'Fully tempered glass is a unique glazing material. It is about 3 to 5 times stronger than an ordinary or annealed glass of the same thickness and configuration.',
+                    'category_id' => 4,
+                    'brand' => 'PGPsi',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '29',
+                    'filename' => 'TEMPERED-GLASS.png',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'LAMINATED-GLASS',
+                    'display_name' => 'Laminated Glass',
+                    'description' => 'Laminated glass is a multi-functional glazing material that can be used in a variety of applications. It is manufactured by permanently bonding two or more glass panes with layers of polyvinyl butyral (PVB) interlayer, under heat and pressure to produce a single product.',
+                    'category_id' => 4,
+                    'brand' => 'PGPsi',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '30',
+                    'filename' => 'LAMINATED-GLASS.png',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'CURVED-TEMPERED-GLASS',
+                    'display_name' => 'Curved Tempered Glass',
+                    'description' => 'In the same manner with flat tempered glass, curved tempered glass is also resistant to mechanical stresses (bending, impact, etc.) and thermal stresses (temperature difference), without altering the properties of the basic product.',
+                    'category_id' => 4,
+                    'brand' => 'PGPsi',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '31',
+                    'filename' => 'CURVED-TEMPERED-GLASS.jpg',
+                    'isDeleted' => false,
+                ]);
+
+                Product::factory()->create([
+                    'name' => 'INSULATING-GLASS-UNIT',
+                    'display_name' => 'Insulating Glass Unit (IGU)',
+                    'description' => 'Insulating glass unit is a set of two or more lites of glass separated by air space and hermetically sealed to form a single unit. Its most important function is to improve the thermal performance of glass when used in architectural applications.',
+                    'category_id' => 4,
+                    'brand' => 'PGPsi',
+                    'status' => 'active',
+                    'price' => '90000',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => '32',
+                    'filename' => 'INSULATING-GLASS-UNIT.png',
+                    'isDeleted' => false,
+                ]);
+
             //
 
             // Other Products - Door Closers and Floor Hinges
