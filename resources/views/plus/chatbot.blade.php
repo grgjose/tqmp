@@ -45,8 +45,20 @@
                 </div>
             </div>
         `;
-        setTimeout(callback, 1000);
+        setTimeout(callback, 600);
     }
+
+    function toggleChat() {
+        const chatbotContainer = document.getElementById('chatbot');
+        if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
+            chatbotContainer.style.display = 'block';
+            showLoadingEffect(() => {
+            goBack(); // Show the main menu after the loading effect
+            });
+        } else {
+            chatbotContainer.style.display = 'none';
+        }
+        }
 
     function showRegistrationPrompt() {
         showLoadingEffect(() => {
