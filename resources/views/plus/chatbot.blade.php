@@ -36,17 +36,6 @@
 
 <!-- js for workflows -->
 <script>
-    function showLoadingEffect(callback) {
-        const chatbotBody = document.getElementById('chatbot-body');
-        chatbotBody.innerHTML = `
-            <div class="d-flex align-items-center justify-content-center" style="height: 100vh;">
-                <div class="spinner-border text-danger" style="width: 3rem; height: 3rem;" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-            </div>
-        `;
-        setTimeout(callback, 600);
-    }
 
     function toggleChat() {
         const chatbotContainer = document.getElementById('chatbot');
