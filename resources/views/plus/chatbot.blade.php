@@ -39,13 +39,13 @@
     function showLoadingEffect(callback) {
         const chatbotBody = document.getElementById('chatbot-body');
         chatbotBody.innerHTML = `
-            <div class="d-flex align-items-center justify-content-center" style="height: 100px;">
-                <div class="spinner-border text-danger" role="status">
-                    <span class="sr-only">Loading...</span>
+            <div class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+                <div class="spinner-border text-danger" style="width: 3rem; height: 3rem;" role="status">
+                  <span class="visually-hidden">Loading...</span>
                 </div>
             </div>
         `;
-        setTimeout(callback, 1000); // Simulate loading effect for 1 second
+        setTimeout(callback, 1000);
     }
 
     function showRegistrationPrompt() {
