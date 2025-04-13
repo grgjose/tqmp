@@ -395,38 +395,38 @@
         });
     }
 
-    // function goBack() {
-    //     showLoadingEffect(() => {
-    //         addAgentMessage(
-    //             "What would you like help with today?",
-    //             [{
-    //                     text: "Register as user",
-    //                     action: "showRegistrationPrompt()"
-    //                 },
-    //                 {
-    //                     text: "Find a store",
-    //                     action: "showStoreLocator()"
-    //                 },
-    //                 {
-    //                     text: "Track an order",
-    //                     action: "showTrackingPrompt()"
-    //                 },
-    //                 {
-    //                     text: "Cancel order",
-    //                     action: "showCancelPrompt()"
-    //                 },
-    //                 {
-    //                     text: "Popular products",
-    //                     action: "showMostViewedPrompt()"
-    //                 },
-    //                 {
-    //                     text: "Chat with agent",
-    //                     action: "startLiveChat()"
-    //                 }
-    //             ]
-    //         );
-    //     });
-    // }
+    function goBack() {
+        showLoadingEffect(() => {
+            addAgentMessage(
+                "What would you like help with today?",
+                [{
+                        text: "Register as user",
+                        action: "showRegistrationPrompt()"
+                    },
+                    {
+                        text: "Find a store",
+                        action: "showStoreLocator()"
+                    },
+                    {
+                        text: "Track an order",
+                        action: "showTrackingPrompt()"
+                    },
+                    {
+                        text: "Cancel order",
+                        action: "showCancelPrompt()"
+                    },
+                    {
+                        text: "Popular products",
+                        action: "showMostViewedPrompt()"
+                    },
+                    {
+                        text: "Chat with agent",
+                        action: "startLiveChat()"
+                    }
+                ]
+            );
+        });
+    }
 
     // Helper functions
     function toggleChat() {
