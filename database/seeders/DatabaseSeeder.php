@@ -1317,12 +1317,12 @@ class DatabaseSeeder extends Seeder
 
             //
 
-            // Other Products - Shower Hinges (66-72)
+            // Other Products - Shower Hinges (66-69)
 
                 Product::factory()->create([
-                    'name' => 'GSM-0001',
-                    'display_name' => 'THORE GSM0011',
-                    'description' => 'THORE GSM0011',
+                    'name' => 'GSM-0011',
+                    'display_name' => 'THORE GSM-0011',
+                    'description' => 'THORE GSM-0011',
                     'category_id' => 5,
                     'sub_category_id' => 4,
                     'brand' => 'Thore',
@@ -1332,184 +1332,201 @@ class DatabaseSeeder extends Seeder
 
                 ProductImage::factory()->create([
                     'product_id' => 66,
-                    'filename' => 'GSM-0001.jpg',
+                    'filename' => 'GSM-0011.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'GSM-0012',
-                    'display_name' => 'THORE GSM0012',
-                    'description' => 'THORE GSM0012',
-                    'category_id' => 4,
+                    'display_name' => 'THORE GSM-0012',
+                    'description' => 'THORE GSM-0012',
+                    'category_id' => 5,
+                    'sub_category_id' => 4,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1599.00',
                 ]);
 
                 ProductImage::factory()->create([
                     'product_id' => 67,
-                    'filename' => 'thore gsm0012.jpg',
+                    'filename' => 'GSM-0012.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'GSM0013',
-                    'display_name' => 'THORE GSM0013',
-                    'description' => 'THORE GSM0013',
-                    'category_id' => 4,
-                    'brand' => 'Thore',
-                    'status' => 'active',
-                    'price' => '1500.00',
-                ]);
-
-                ProductImage::factory()->create([
-                    'product_id' => 36,
-                    'filename' => 'thore gsm0013.jpg',
-                ]);
-
-                Product::factory()->create([
-                    'name' => 'GSM0014',
-                    'display_name' => 'THORE GSM0014',
-                    'description' => 'THORE GSM0014',
-                    'category_id' => 4,
-                    'brand' => 'Thore',
-                    'status' => 'active',
-                    'price' => '1500.00',
-                ]);
-
-                ProductImage::factory()->create([
-                    'product_id' => 37,
-                    'filename' => 'thore gsm0014.jpg',
-                ]);
-
-                Product::factory()->create([
-                    'name' => 'GSM0001',
-                    'display_name' => 'THORE GSM0001',
-                    'description' => 'THORE GSM0001',
+                    'name' => 'GSM-0013',
+                    'display_name' => 'THORE GSM-0013',
+                    'description' => 'THORE GSM-0013',
                     'category_id' => 5,
+                    'sub_category_id' => 4,
                     'brand' => 'Thore',
                     'status' => 'active',
                     'price' => '1500.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 38,
-                    'filename' => 'thore gsm0001.jpg',
+                    'product_id' => 68,
+                    'filename' => 'GSM-0013.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'GSM0002',
-                    'display_name' => 'THORE GSM0002',
-                    'description' => 'THORE GSM0002',
+                    'name' => 'GSM-0014',
+                    'display_name' => 'THORE GSM-0014',
+                    'description' => 'THORE GSM-0014',
                     'category_id' => 5,
+                    'sub_category_id' => 4,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1599.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 39,
-                    'filename' => 'thore gsm0002.jpg',
+                    'product_id' => 69,
+                    'filename' => 'GSM-0014.jpg',
+                ]);
+
+            //
+
+            // Other Products - Shower Hinges (70-73)
+
+                Product::factory()->create([
+                    'name' => 'GSM-0001',
+                    'display_name' => 'THORE GSM-0001',
+                    'description' => 'THORE GSM-0001',
+                    'category_id' => 5,
+                    'sub_category_id' => 5,
+                    'brand' => 'Thore',
+                    'status' => 'active',
+                    'price' => '1699.00',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => 70,
+                    'filename' => 'GSM-0001.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'GSM0003',
-                    'display_name' => 'THORE GSM0003',
-                    'description' => 'THORE GSM0003',
+                    'name' => 'GSM-0002',
+                    'display_name' => 'THORE GSM-0002',
+                    'description' => 'THORE GSM-0002',
                     'category_id' => 5,
+                    'sub_category_id' => 5,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1259.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 40,
-                    'filename' => 'thore gsm0003.jpg',
+                    'product_id' => 71,
+                    'filename' => 'GSM-0002.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'GSM0004',
-                    'display_name' => 'THORE GSM0004',
-                    'description' => 'THORE GSM0004',
+                    'name' => 'GSM-0003',
+                    'display_name' => 'THORE GSM-0003',
+                    'description' => 'THORE GSM-0003',
                     'category_id' => 5,
+                    'sub_category_id' => 5,
                     'brand' => 'Thore',
                     'status' => 'active',
                     'price' => '1500.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 41,
-                    'filename' => 'thore gsm0004.jpg',
+                    'product_id' => 72,
+                    'filename' => 'GSM-0003.jpg',
                 ]);
+
+                Product::factory()->create([
+                    'name' => 'GSM-0004',
+                    'display_name' => 'THORE GSM-0004',
+                    'description' => 'THORE GSM-0004',
+                    'category_id' => 5,
+                    'sub_category_id' => 5,
+                    'brand' => 'Thore',
+                    'status' => 'active',
+                    'price' => '1500.00',
+                ]);
+
+                ProductImage::factory()->create([
+                    'product_id' => 73,
+                    'filename' => 'GSM-0004.jpg',
+                ]);
+
+            //
+
+            // Other Products - Shower Glass Clips (74-75)
 
                 Product::factory()->create([
                     'name' => 'GSM-0102',
                     'display_name' => 'THORE GSM-0102',
                     'description' => 'THORE GSM-0102',
-                    'category_id' => 6,
+                    'category_id' => 5,
+                    'sub_category_id' => 6,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1299.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 42,
+                    'product_id' => 74,
                     'filename' => 'GSM-0102.jpg',
                 ]);
-
-            //
-
-            // Other Products - Shower Glass Clips
 
                 Product::factory()->create([
                     'name' => 'GSM-0103',
                     'display_name' => 'THORE GSM-0103',
                     'description' => 'THORE GSM-0103',
-                    'category_id' => 6,
+                    'category_id' => 5,
+                    'sub_category_id' => 6,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1599.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 43,
+                    'product_id' => 75,
                     'filename' => 'GSM-0103.jpg',
                 ]);
 
             //
 
-            // Other Products - Ladder
+            // Other Products - Ladder (76)
 
                 Product::factory()->create([
                     'name' => 'A - Type Ladder',
                     'display_name' => 'A - Type Ladder',
                     'description' => 'A - Type Ladder',
-                    'category_id' => 7,
+                    'category_id' => 5,
+                    'sub_category_id' => 7,
                     'brand' => 'Generic',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1699.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 44,
+                    'product_id' => 76,
                     'filename' => 'ladder.jpg',
                 ]);
 
             //
 
-            // Other Products - Jalouplus
+            // Other Products - Jalouplus (77)
+
                 Product::factory()->create([
                     'name' => 'Jalouplus',
                     'display_name' => 'Jalouplus',
                     'description' => 'Jalouplus',
-                    'category_id' => 8,
+                    'category_id' => 5,
+                    'sub_category_id' => 8,
                     'brand' => 'Generic',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1999.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 45,
+                    'product_id' => 77,
                     'filename' => 'jalouplus.jpg',
                 ]);
+
             //
 
         //
