@@ -777,7 +777,8 @@ class DatabaseSeeder extends Seeder
 
             //
 
-            // Other Products - Door Closers and Floor Hinges
+            // Other Products - Door Closers and Floor Hinges (33-41)
+
                 Product::factory()->create([
                     'name' => 'GSM-0060',
                     'display_name' => 'Thore Door Closer Model GSM-0060',
@@ -786,461 +787,499 @@ class DatabaseSeeder extends Seeder
                     'sub_category_id' => 1,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '958.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 1,
-                    'filename' => 'gsm-0060.jpg',
+                    'product_id' => 33,
+                    'filename' => 'GSM-0060.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'GSM-0052',
                     'display_name' => 'Thore Door Closer Model GSM-0052',
                     'description' => 'Thore Door Closer Model GSM-0052',
-                    'category_id' => 1,
+                    'category_id' => 5,
+                    'sub_category_id' => 1,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1210.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 2,
-                    'filename' => 'gsm-0052.jpg',
+                    'product_id' => 34,
+                    'filename' => 'GSM-0052.jpg',
                 ]);
                 
                 Product::factory()->create([
                     'name' => 'GSM-0038',
                     'display_name' => 'Thore Door Closer Model GSM-0038',
                     'description' => 'Thore Door Closer Model GSM-0038',
-                    'category_id' => 1,
+                    'category_id' => 5,
+                    'sub_category_id' => 1,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1300.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 3,
-                    'filename' => 'gsm-0038.jpg',
+                    'product_id' => 35,
+                    'filename' => 'GSM-0038.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'ABLOY-DC420',
                     'display_name' => 'Abloy Door Closer Model DC420',
                     'description' => 'Abloy Door Closer Model DC420',
-                    'category_id' => 1,
+                    'category_id' => 5,
+                    'sub_category_id' => 1,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '2111.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 4,
-                    'filename' => 'abloy dc420.jpg',
+                    'product_id' => 36,
+                    'filename' => 'ABLOY-DC420.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'ABLOY-DC477',
                     'display_name' => 'Abloy Door Closer Model DC477',
                     'description' => 'Abloy Door Closer Model DC477',
-                    'category_id' => 1,
+                    'category_id' => 5,
+                    'sub_category_id' => 1,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1860.09',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 5,
-                    'filename' => 'abloy dc477.jpg',
+                    'product_id' => 37,
+                    'filename' => 'ABLOY-DC477.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'YFS-923',
                     'display_name' => 'Yale Door Closer Model YFS-923',
                     'description' => 'Yale Door Closer Model YFS-923',
-                    'category_id' => 1,
+                    'category_id' => 5,
+                    'sub_category_id' => 1,
                     'brand' => 'Yale',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '3100.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 6,
-                    'filename' => 'yfs923.jpg',
+                    'product_id' => 38,
+                    'filename' => 'YFS-923.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'YFS-9334',
-                    'display_name' => 'Yale Door Closer Model YFS-9334',
-                    'description' => 'Yale Door Closer Model YFS-9334',
-                    'category_id' => 1,
+                    'name' => 'YFS-934',
+                    'display_name' => 'Yale Door Closer Model YFS-934',
+                    'description' => 'Yale Door Closer Model YFS-934',
+                    'category_id' => 5,
+                    'sub_category_id' => 1,
                     'brand' => 'Yale',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1899.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 7,
-                    'filename' => 'yfs9334.jpg',
+                    'product_id' => 39,
+                    'filename' => 'YFS-934.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'YFS-9003',
-                    'display_name' => 'Yale Door Closer Model YFS-9003',
-                    'description' => 'Yale Door Closer Model YFS-9003',
-                    'category_id' => 1,
+                    'name' => 'YFS-8003',
+                    'display_name' => 'Yale Door Closer Model YFS-8003',
+                    'description' => 'Yale Door Closer Model YFS-8003',
+                    'category_id' => 5,
+                    'sub_category_id' => 1,
                     'brand' => 'Yale',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1499.50',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 8,
-                    'filename' => 'yfs9003.jpg',
+                    'product_id' => 40,
+                    'filename' => 'YFS-8003.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'YTDC854',
-                    'display_name' => 'Yale Door Closer Model YTDC854',
-                    'description' => 'Yale Door Closer Model YTDC854',
-                    'category_id' => 1,
+                    'display_name' => 'Yale Overhead Door Closer Model YTDC854',
+                    'description' => 'Yale Overhead Door Closer Model YTDC854',
+                    'category_id' => 5,
+                    'sub_category_id' => 1,
                     'brand' => 'Yale',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1499.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 9,
-                    'filename' => 'ytdc854.jpg',
+                    'product_id' => 41,
+                    'filename' => 'YTDC854.jpg',
                 ]);
+
+            //
+
+            // Other Products - Patch Fittings (42-62)
 
                 Product::factory()->create([
                     'name' => 'GSM-0039',
                     'display_name' => 'Thore Patch Fitting Model GSM-0039',
                     'description' => 'Thore Patch Fitting Model GSM-0039',
-                    'category_id' => 2,
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1279.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 10,
-                    'filename' => 'gsm-0039.jpg',
+                    'product_id' => 42,
+                    'filename' => 'GSM-0039.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'GSM-0050',
                     'display_name' => 'Thore Patch Fitting Model GSM-0050',
                     'description' => 'Thore Patch Fitting Model GSM-0050',
-                    'category_id' => 2,
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1599.50',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 11,
-                    'filename' => 'gsm-0050.jpg',
+                    'product_id' => 43,
+                    'filename' => 'GSM-0050.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'GSM-0054',
                     'display_name' => 'Thore Patch Fitting Model GSM-0054',
                     'description' => 'Thore Patch Fitting Model GSM-0054',
-                    'category_id' => 2,
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Thore',
                     'status' => 'active',
                     'price' => '1500.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 12,
-                    'filename' => 'gsm-0054.jpg',
+                    'product_id' => 44,
+                    'filename' => 'GSM-0054.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'GSM-0055',
                     'display_name' => 'Thore Patch Fitting Model GSM-0055',
                     'description' => 'Thore Patch Fitting Model GSM-0055',
-                    'category_id' => 2,
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1699.50',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 13,
-                    'filename' => 'gsm-0055.jpg',
+                    'product_id' => 45,
+                    'filename' => 'GSM-0055.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'GSM-0056',
                     'display_name' => 'Thore Patch Fitting Model GSM-0056',
                     'description' => 'Thore Patch Fitting Model GSM-0056',
-                    'category_id' => 2,
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1520.99',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 14,
-                    'filename' => 'gsm-0056.jpg',
+                    'product_id' => 46,
+                    'filename' => 'GSM-0056.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'GSM-0057',
                     'display_name' => 'Thore Patch Fitting Model GSM-0057',
                     'description' => 'Thore Patch Fitting Model GSM-0057',
-                    'category_id' => 2,
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1699.01',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 15,
-                    'filename' => 'gsm-0057.jpg',
+                    'product_id' => 47,
+                    'filename' => 'GSM-0057.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'GSM-0058',
                     'display_name' => 'Thore Patch Fitting Model GSM-0058',
                     'description' => 'Thore Patch Fitting Model GSM-0058',
-                    'category_id' => 2,
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Thore',
                     'status' => 'active',
                     'price' => '1500.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 16,
-                    'filename' => 'gsm-0058.jpg',
+                    'product_id' => 48,
+                    'filename' => 'GSM-0058.jpg',
                 ]);
 
                 Product::factory()->create([
                     'name' => 'GSM-0059',
                     'display_name' => 'Thore Patch Fitting Model GSM-0059',
                     'description' => 'Thore Patch Fitting Model GSM-0059',
-                    'category_id' => 2,
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1299.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 17,
-                    'filename' => 'gsm-0059.jpg',
+                    'product_id' => 49,
+                    'filename' => 'GSM-0059.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-985-35',
+                    'name' => 'ABLOY-985-35',
                     'display_name' => 'Abloy Patch Fitting Model 985-35',
                     'description' => 'Abloy Patch Fitting Model 985-35',
-                    'category_id' => 2,
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '2699.50',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 18,
-                    'filename' => 'abloy-985-35.jpg',
+                    'product_id' => 50,
+                    'filename' => 'ABLOY-985-35.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-ABP010',
-                    'display_name' => 'Abloy Patch Fitting Model ABP010',
-                    'description' => 'Abloy Patch Fitting Model ABP010',
-                    'category_id' => 2,
+                    'name' => 'ABLOY-ABP-010',
+                    'display_name' => 'Abloy Patch Fitting Model ABP-010',
+                    'description' => 'Abloy Patch Fitting Model ABP-010',
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '3999.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 19,
-                    'filename' => 'abloy-abp010.jpg',
+                    'product_id' => 51,
+                    'filename' => 'ABLOY-ABP-010.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-ACL010',
-                    'display_name' => 'Abloy Patch Fitting Model ACL010',
-                    'description' => 'Abloy Patch Fitting Model ACL010',
-                    'category_id' => 2,
+                    'name' => 'ABLOY-ACL-010',
+                    'display_name' => 'Abloy Patch Fitting Model ACL-010',
+                    'description' => 'Abloy Patch Fitting Model ACL-010',
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '3899.50',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 20,
-                    'filename' => 'abloy-acl010.jpg',
+                    'product_id' => 52,
+                    'filename' => 'ABLOY-ACL-010.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-ACL020',
-                    'display_name' => 'Abloy Patch Fitting Model ACL020',
-                    'description' => 'Abloy Patch Fitting Model ACL020',
-                    'category_id' => 2,
+                    'name' => 'ABLOY-ACL-020',
+                    'display_name' => 'Abloy Patch Fitting Model ACL-020',
+                    'description' => 'Abloy Patch Fitting Model ACL-020',
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1699.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 21,
-                    'filename' => 'abloy-acl020.jpg',
+                    'product_id' => 53,
+                    'filename' => 'ABLOY-ACL-020.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-ADCS020',
-                    'display_name' => 'Abloy Patch Fitting Model ADCS020',
-                    'description' => 'Abloy Patch Fitting Model ADCS020',
-                    'category_id' => 2,
+                    'name' => 'ABLOY-ADCS-020',
+                    'display_name' => 'Abloy Patch Fitting Model ADCS-020',
+                    'description' => 'Abloy Patch Fitting Model ADCS-020',
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1699.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 22,
-                    'filename' => 'abloy-adcs020.jpg',
+                    'product_id' => 54,
+                    'filename' => 'ABLOY-ADCS-020.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-ADCS040',
-                    'display_name' => 'Abloy Patch Fitting Model ADCS040',
-                    'description' => 'Abloy Patch Fitting Model ADCS040',
-                    'category_id' => 2,
+                    'name' => 'ABLOY-AOCS-040',
+                    'display_name' => 'Abloy Patch Fitting Model AOCS-040',
+                    'description' => 'Abloy Patch Fitting Model AOCS-040',
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1599.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 23,
-                    'filename' => 'abloy-adcs040.jpg',
+                    'product_id' => 55,
+                    'filename' => 'ABLOY-AOCS-040.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-AOPS041L-R',
+                    'name' => 'ABLOY-AOPS-041L-R',
                     'display_name' => 'Abloy Patch Fitting Model AOPS041L-R',
                     'description' => 'Abloy Patch Fitting Model AOPS041L-R',
-                    'category_id' => 2,
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1422.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 24,
-                    'filename' => 'abloy-aops041l-r.jpg',
+                    'product_id' => 56,
+                    'filename' => 'ABLOY-AOPS-041L-R.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-ASCS030',
-                    'display_name' => 'Abloy Patch Fitting Model ASCS030',
-                    'description' => 'Abloy Patch Fitting Model ASCS030',
-                    'category_id' => 2,
+                    'name' => 'ABLOY-ASCS-030',
+                    'display_name' => 'Abloy Patch Fitting Model ASCS-030',
+                    'description' => 'Abloy Patch Fitting Model ASCS-030',
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '4999.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 25,
-                    'filename' => 'abloy-ascs030.jpg',
+                    'product_id' => 57,
+                    'filename' => 'ABLOY-ASCS-030.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-ATLG502-15',
-                    'display_name' => 'Abloy Patch Fitting Model ATLG502-15',
-                    'description' => 'Abloy Patch Fitting Model ATLG502-15',
-                    'category_id' => 2,
+                    'name' => 'ABLOY-ATLG-502-15',
+                    'display_name' => 'Abloy Patch Fitting Model ATLG-502-15',
+                    'description' => 'Abloy Patch Fitting Model ATLG-502-15',
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '3599.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 26,
-                    'filename' => 'abloy-atlg502-15.jpg',
+                    'product_id' => 58,
+                    'filename' => 'ABLOY-ATLG-502-15.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-ATP020',
-                    'display_name' => 'Abloy Patch Fitting Model ATP020',
-                    'description' => 'Abloy Patch Fitting Model ATP020',
-                    'category_id' => 2,
+                    'name' => 'ABLOY-ATP-020',
+                    'display_name' => 'Abloy Patch Fitting Model ATP-020',
+                    'description' => 'Abloy Patch Fitting Model ATP-020',
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1259.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 27,
-                    'filename' => 'abloy-atp020.jpg',
+                    'product_id' => 59,
+                    'filename' => 'ABLOY-ATP-020.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-ATPO030',
-                    'display_name' => 'Abloy Patch Fitting Model ATPO030',
-                    'description' => 'Abloy Patch Fitting Model ATPO030',
-                    'category_id' => 2,
+                    'name' => 'ABLOY-ATPO-030',
+                    'display_name' => 'Abloy Patch Fitting Model ATPO-030',
+                    'description' => 'Abloy Patch Fitting Model ATPO-030',
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
                     'price' => '1500.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 28,
-                    'filename' => 'abloy-atpo030.jpg',
+                    'product_id' => 60,
+                    'filename' => 'ABLOY-ATPO-030.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-ATPS035',
-                    'display_name' => 'Abloy Patch Fitting Model ATPS035',
-                    'description' => 'Abloy Patch Fitting Model ATPS035',
-                    'category_id' => 2,
+                    'name' => 'ABLOY-ATPS-035',
+                    'display_name' => 'Abloy Patch Fitting Model ATPS-035',
+                    'description' => 'Abloy Patch Fitting Model ATPS-035',
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1699.99',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 29,
-                    'filename' => 'abloy-atpo035.jpg',
+                    'product_id' => 61,
+                    'filename' => 'ABLOY-ATPS-035.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'Abloy-ATPS040',
-                    'display_name' => 'Abloy Patch Fitting Model ATPS040',
-                    'description' => 'Abloy Patch Fitting Model ATPS040',
-                    'category_id' => 2,
+                    'name' => 'ABLOY-ATPS-040',
+                    'display_name' => 'Abloy Patch Fitting Model ATPS-040',
+                    'description' => 'Abloy Patch Fitting Model ATPS-040',
+                    'category_id' => 5,
+                    'sub_category_id' => 2,
                     'brand' => 'Abloy',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1299.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 30,
-                    'filename' => 'abloy-ATPS040.jpg',
+                    'product_id' => 62,
+                    'filename' => 'ABLOY-ATPS-040.jpg',
                 ]);
+
+            //
+            
+            // Other Products - Handles (63-65)
 
                 Product::factory()->create([
                     'name' => 'THORE C-TYPE HANDLE',
                     'display_name' => 'THORE C-TYPE HANDLE',
                     'description' => 'THORE C-TYPE HANDLE',
-                    'category_id' => 3,
+                    'category_id' => 5,
+                    'sub_category_id' => 3,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1699.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 31,
+                    'product_id' => 63,
                     'filename' => 'THORE C-TYPE HANDLE.jpg',
                 ]);
 
@@ -1248,14 +1287,15 @@ class DatabaseSeeder extends Seeder
                     'name' => 'THORE H-TYPE HANDLE',
                     'display_name' => 'THORE H-TYPE HANDLE',
                     'description' => 'THORE H-TYPE HANDLE',
-                    'category_id' => 3,
+                    'category_id' => 5,
+                    'sub_category_id' => 3,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1599.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 32,
+                    'product_id' => 64,
                     'filename' => 'THORE H-TYPE HANDLE.jpg',
                 ]);
 
@@ -1263,34 +1303,40 @@ class DatabaseSeeder extends Seeder
                     'name' => 'THORE TOWEL BAR HANDLE',
                     'display_name' => 'THORE TOWEL BAR HANDLE',
                     'description' => 'THORE TOWEL BAR HANDLE',
-                    'category_id' => 3,
+                    'category_id' => 5,
+                    'sub_category_id' => 3,
                     'brand' => 'Thore',
                     'status' => 'active',
                     'price' => '1500.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 33,
+                    'product_id' => 65,
                     'filename' => 'THORE TOWEL BAR HANDLE.jpg',
                 ]);
 
+            //
+
+            // Other Products - Shower Hinges (66-72)
+
                 Product::factory()->create([
-                    'name' => 'GSM0011',
+                    'name' => 'GSM-0001',
                     'display_name' => 'THORE GSM0011',
                     'description' => 'THORE GSM0011',
-                    'category_id' => 4,
+                    'category_id' => 5,
+                    'sub_category_id' => 4,
                     'brand' => 'Thore',
                     'status' => 'active',
-                    'price' => '1500.00',
+                    'price' => '1299.00',
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 34,
-                    'filename' => 'thore gsm0011.jpg',
+                    'product_id' => 66,
+                    'filename' => 'GSM-0001.jpg',
                 ]);
 
                 Product::factory()->create([
-                    'name' => 'GSM0012',
+                    'name' => 'GSM-0012',
                     'display_name' => 'THORE GSM0012',
                     'description' => 'THORE GSM0012',
                     'category_id' => 4,
@@ -1300,7 +1346,7 @@ class DatabaseSeeder extends Seeder
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => 35,
+                    'product_id' => 67,
                     'filename' => 'thore gsm0012.jpg',
                 ]);
 
@@ -1409,6 +1455,10 @@ class DatabaseSeeder extends Seeder
                     'filename' => 'GSM-0102.jpg',
                 ]);
 
+            //
+
+            // Other Products - Shower Glass Clips
+
                 Product::factory()->create([
                     'name' => 'GSM-0103',
                     'display_name' => 'THORE GSM-0103',
@@ -1423,6 +1473,10 @@ class DatabaseSeeder extends Seeder
                     'product_id' => 43,
                     'filename' => 'GSM-0103.jpg',
                 ]);
+
+            //
+
+            // Other Products - Ladder
 
                 Product::factory()->create([
                     'name' => 'A - Type Ladder',
@@ -1439,6 +1493,9 @@ class DatabaseSeeder extends Seeder
                     'filename' => 'ladder.jpg',
                 ]);
 
+            //
+
+            // Other Products - Jalouplus
                 Product::factory()->create([
                     'name' => 'Jalouplus',
                     'display_name' => 'Jalouplus',

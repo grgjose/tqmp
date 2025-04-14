@@ -2,30 +2,9 @@
 <html lang="en">
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Total Quality Management Products Philippines">
-    <meta name="author" content="TQMP">
-
-    <!-- Title and Favicon -->
-    <title>Architectural Hardwares | Other Products | Total Quality Management Products Philippines</title>
-    <link rel="icon" href="{{ asset('storage/logos/TQMPLogo.png') }}" type="image/x-icon">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
-    <!-- Chatbot CSS -->
-    <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
-    <!-- Chatbot JS -->
-    <script src="{{ asset('js/chatbot.js') }}"></script>
-
-    <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
+    <!-- Head Section -->
+    @include ('plus.head')
+    <!-- End of Head -->
 </head>
 
 <body>
@@ -64,7 +43,7 @@
                     <b>{{ $category->description }}</b>
                 </p>
 
-                <div id="carouselExample{{$category->id}}" class="carousel slide" data-bs-ride="false">
+                <div id="carouselExamsple{{$category->id}}" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
 
                         @php 
@@ -129,11 +108,11 @@
                         @endforeach
 
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample{{$category->id}}" data-bs-slide="prev" style="left: -180px; color: #7E1416;">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExamsple{{$category->id}}" data-bs-slide="prev" style="left: -180px; color: #7E1416;">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class=""><i class="fa-solid fa-circle-chevron-left"></i></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample{{$category->id}}" data-bs-slide="next" style="right: -180px; color: #7E1416;">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExamsple{{$category->id}}" data-bs-slide="next" style="right: -180px; color: #7E1416;">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class=""><i class="fa-solid fa-circle-chevron-right"></i></span>
                     </button>
@@ -859,7 +838,6 @@
                     </button>
                 </div>
 
-
             </div>
         </div>
     </section>
@@ -1519,6 +1497,9 @@
     @include ('plus.footer')
     <!-- End of Footer -->
 
+    <!-- Scripts -->
+    @include ('plus.scripts')
+    <!-- Scripts -->
 
 </body>
 
