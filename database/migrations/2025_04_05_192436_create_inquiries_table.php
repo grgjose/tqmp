@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('fullname');
             $table->string('email');
             $table->string('contact_num');
-            $table->string('subject');
-            $table->string('message');
+            $table->text('subject');
+            $table->text('message');
             $table->string('upload_file');
             $table->timestamps();
         });

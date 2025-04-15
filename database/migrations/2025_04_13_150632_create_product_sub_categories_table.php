@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('category_id');
             $table->string('category');
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->boolean('isDeleted')->nullable()->default(false);
             $table->timestamps();
         });

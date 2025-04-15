@@ -228,7 +228,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'RADIATOR-GRILL',
                     'display_name' => 'Radiator Grill',
-                    'description' => `An armored vehicle's radiator grill is protected by a bumper or guard, reinforcing edges, safeguarding the radiator, and clearing debris or road-blocking vehicles.`,
+                    'description' => "An armored vehicle's radiator grill is protected by a bumper or guard, reinforcing edges, safeguarding the radiator, and clearing debris or road-blocking vehicles.",
                     'category_id' => 1,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -244,7 +244,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'GAS-TANK-COVER',
                     'display_name' => 'Gas Tank Cover',
-                    'description' => `A thick gas tank cover is applied to ensure protection, preventing direct penetration of fragments and enhancing the safety and durability of the vehicle.`,
+                    'description' => "A thick gas tank cover is applied to ensure protection, preventing direct penetration of fragments and enhancing the safety and durability of the vehicle.",
                     'category_id' => 1,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -260,7 +260,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'UPGRADED-SUSPENSION',
                     'display_name' => 'Upgraded Suspension',
-                    'description' => `Armored vehicles require upgraded suspension and brakes to manage weight, ensuring reliable control, enhanced performance, and safe stopping.`,
+                    'description' => "Armored vehicles require upgraded suspension and brakes to manage weight, ensuring reliable control, enhanced performance, and safe stopping.",
                     'category_id' => 1,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -276,7 +276,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'BATTERY-FUSE-BOX-COVER',
                     'display_name' => 'Battery & Fuse Box Cover',
-                    'description' => `To ensure added durability, robust covers are available for the battery, fuse box, and gas tank, providing enhanced protection for critical vehicle components.`,
+                    'description' => "To ensure added durability, robust covers are available for the battery, fuse box, and gas tank, providing enhanced protection for critical vehicle components.",
                     'category_id' => 1,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -292,7 +292,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'RUN-FLAT-INSERT',
                     'display_name' => 'Run Flat Insert',
-                    'description' => `Run-flat insert systems ensure mobility and safety in challenging situations, providing uncompromised performance, reliability, and peace of mind.`,
+                    'description' => "Run-flat insert systems ensure mobility and safety in challenging situations, providing uncompromised performance, reliability, and peace of mind.",
                     'category_id' => 1,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -308,7 +308,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'BACK-DOOR-PARTITION',
                     'display_name' => 'Back Door Partition',
-                    'description' => `A bulletproof rear door partition provides extra security, reinforcing the back of your vehicle for enhanced defense and ensuring added protection for passengers and cargo.`,
+                    'description' => "A bulletproof rear door partition provides extra security, reinforcing the back of your vehicle for enhanced defense and ensuring added protection for passengers and cargo.",
                     'category_id' => 1,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -324,7 +324,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'BULLET-CATCHER',
                     'display_name' => 'Bullet Catcher',
-                    'description' => `Ensures any penetrating fragments are contained, preventing them from passing through and enhancing overall vehicle safety and protection.`,
+                    'description' => "Ensures any penetrating fragments are contained, preventing them from passing through and enhancing overall vehicle safety and protection.",
                     'category_id' => 1,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -340,7 +340,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'PREMIUM-LEATHER-SEATS',
                     'display_name' => 'Premium Leather Seats',
-                    'description' => `Offering protection and satisfaction with premium leather seats through exceptional engineering, ensuring comfort inside your vehicle.`,
+                    'description' => "Offering protection and satisfaction with premium leather seats through exceptional engineering, ensuring comfort inside your vehicle.",
                     'category_id' => 1,
                     'brand' => 'MASTER',
                     'status' => 'active',
