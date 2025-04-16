@@ -221,7 +221,7 @@
                 "Would you like to:",
                 [{
                         text: "Open store locator",
-                        action: "window.open('/contact', '_blank')"
+                        action: "openLocationMenu()"
                     },
                     {
                         text: "See store hours",
@@ -242,7 +242,7 @@
             addAgentMessage(
                 "Our standard store hours are:<br>" +
                 "Monday-Saturday: 8:00 AM - 5:00 PM<br>" +
-                "Sunday: Closed<br><br>",
+                "Sunday: Closed<br>",
                 [{
                         text: "Open store locator",
                         action: "window.open('/Contact', '_blank')"
@@ -250,6 +250,46 @@
                     {
                         text: "Go back to main menu",
                         action: "goBack()"
+                    }
+                ]
+            );
+        });
+    }
+
+    function showStoreHours() {
+        addUserMessage("What are your store hours?");
+        showLoadingEffect(() => {
+            addAgentMessage(
+                "Our standard store hours are:<br>" +
+                "Monday-Saturday: 8:00 AM - 5:00 PM<br>" +
+                "Sunday: Closed<br>",
+                [{
+                        text: "Open store locator",
+                        action: "openLocationMenu()"
+                    },
+                    {
+                        text: "Go back to main menu",
+                        action: "goBack()"
+                    }
+                ]
+            );
+        });
+    }
+
+    function openLocationMenu() {
+        window.open('/contact', '_blank');
+        addUserMessage("I'll open the Contact page and browse the locations");
+        showLoadingEffect(() => {
+            addAgentMessage(
+                "I've opened the contact us page in a new tab. <br><br>" +
+                "Is there anything else I can help you with?",
+                [{
+                        text: "Yes, I need other help",
+                        action: "goBack()"
+                    },
+                    {
+                        text: "No, I'm done",
+                        action: "endChat()"
                     }
                 ]
             );
@@ -442,11 +482,37 @@
                 "Have a great day!",
                 [{
                     text: "Start new conversation",
-                    action: "goBack()"
+                    action: "resetAndCollapseChat()" // Changed to new function
                 }]
             );
         });
     }
+
+    // New function to handle reset and collapse
+    function resetAndCollapseChat() {
+        // 1. Clear the chat history
+        const chatBody = document.getElementById('chatbot-body');
+        if (chatBody) {
+            chatBody.innerHTML = '';
+        }
+
+        // 2. Collapse the chat window
+        const chatbotContainer = document.getElementById('chatbot');
+        if (chatbotContainer) {
+            chatbotContainer.style.opacity = '0';
+            setTimeout(() => {
+                chatbotContainer.style.display = 'none';
+                // Update toggle button if exists
+                const toggleButton = document.getElementById('chatbot-toggle-button');
+                if (toggleButton) {
+                    toggleButton.textContent = '💬 Open Chat';
+                    toggleButton.classList.remove('active');
+                }
+            }, 300);
+        }
+    }
+
+  
 
     // Keyword detection for all functions
     document.getElementById('chat-input').addEventListener('keydown', function(e) {
@@ -579,13 +645,43 @@
     // Helper functions
     function toggleChat() {
         const chatbotContainer = document.getElementById('chatbot');
+        const chatBody = document.getElementById('chatbot-body');
+        const toggleButton = document.getElementById('chatbot-toggle-button'); // Optional toggle button
+
         if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
+            // Show the chat
+            chatbotContainer.style.opacity = '0';
             chatbotContainer.style.display = 'block';
-            showLoadingEffect(() => {
-                initChatbot(); // Show the main menu after the loading effect
-            });
+            chatbotContainer.style.transition = 'opacity 0.3s ease';
+
+            setTimeout(() => {
+                chatbotContainer.style.opacity = '1';
+            }, 10);
+
+            // Only initialize if this is the first time opening
+            if (chatBody && chatBody.children.length === 0) {
+                showLoadingEffect(() => {
+                    initChatbot(); // Show main menu only if chat is empty
+                });
+            }
+
+            // Update button state if toggle button exists
+            if (toggleButton) {
+                toggleButton.textContent = '× Close Chat';
+                toggleButton.classList.add('active');
+            }
         } else {
-            chatbotContainer.style.display = 'none';
+            // Hide the chat
+            chatbotContainer.style.opacity = '0';
+
+            setTimeout(() => {
+                chatbotContainer.style.display = 'none';
+                // Update button state if toggle button exists
+                if (toggleButton) {
+                    toggleButton.textContent = '💬 Open Chat';
+                    toggleButton.classList.remove('active');
+                }
+            }, 300);
         }
     }
 
