@@ -37,6 +37,39 @@
 
 <!-- js for workflows -->
 <script>
+    // Initialize chat
+    function initChatbot() {
+        document.getElementById('chatbot-body').innerHTML = '';
+        addAgentMessage(
+            "Hello! I'm TQ, your virtual assistant. How can I help you today?",
+            [{
+                    text: "Register as user",
+                    action: "showRegistrationPrompt()"
+                },
+                {
+                    text: "Find a store",
+                    action: "showStoreLocator()"
+                },
+                {
+                    text: "Track an order",
+                    action: "showTrackingPrompt()"
+                },
+                {
+                    text: "Cancel order",
+                    action: "showCancelPrompt()"
+                },
+                {
+                    text: "Popular products",
+                    action: "showMostViewedPrompt()"
+                },
+                {
+                    text: "Chat with agent",
+                    action: "startLiveChat()"
+                }
+            ]
+        );
+    }
+
     // Main chat functions
     function showRegistrationPrompt() {
         addUserMessage("I want to register as a user");
@@ -81,8 +114,8 @@
     }
 
     function goBack() {
+        addUserMessage("Go back to main menu");
         showLoadingEffect(() => {
-            document.getElementById('chatbot-body').innerHTML = '';
             addAgentMessage(
                 "Welcome back! How can I assist you today?",
                 [{
@@ -111,6 +144,7 @@
                     }
                 ]
             );
+
         });
     }
 
@@ -395,38 +429,7 @@
         });
     }
 
-    function goBack() {
-        showLoadingEffect(() => {
-            addAgentMessage(
-                "What would you like help with today?",
-                [{
-                        text: "Register as user",
-                        action: "showRegistrationPrompt()"
-                    },
-                    {
-                        text: "Find a store",
-                        action: "showStoreLocator()"
-                    },
-                    {
-                        text: "Track an order",
-                        action: "showTrackingPrompt()"
-                    },
-                    {
-                        text: "Cancel order",
-                        action: "showCancelPrompt()"
-                    },
-                    {
-                        text: "Popular products",
-                        action: "showMostViewedPrompt()"
-                    },
-                    {
-                        text: "Chat with agent",
-                        action: "startLiveChat()"
-                    }
-                ]
-            );
-        });
-    }
+
 
     // Helper functions
     function toggleChat() {
@@ -434,7 +437,7 @@
         if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
             chatbotContainer.style.display = 'block';
             showLoadingEffect(() => {
-                goBack(); // Show the main menu after the loading effect
+                initChatbot(); // Show the main menu after the loading effect
             });
         } else {
             chatbotContainer.style.display = 'none';
@@ -467,17 +470,68 @@
         chatbotBody.appendChild(messageDiv);
 
         if (buttons && buttons.length > 0) {
+            // Remove any existing button groups first
+            const existingButtons = document.querySelectorAll('.chat-topics');
+            existingButtons.forEach(btnGroup => {
+                btnGroup.remove();
+            });
+
+            // Create button group container
+            const buttonGroup = document.createElement('div');
+            buttonGroup.className = 'btn-group-vertical w-100';
+            buttonGroup.setAttribute('role', 'group');
+            buttonGroup.setAttribute('aria-label', 'Chat options');
+
+            // Create each button
+            buttons.forEach((btn, index) => {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'btn btn-outline-danger';
+
+                // Special styling for first/last buttons to maintain rounded corners
+                if (index === 0) {
+                    button.className += ' rounded-0';
+                } else if (index === buttons.length - 1) {
+                    button.className += ' rounded-0';
+                } else {
+                    button.className += ' rounded-0';
+                }
+
+                button.textContent = btn.text;
+
+                // Handle button click actions
+                button.onclick = function() {
+                    // Hide all existing button groups when a new one is clicked
+                    const allButtons = document.querySelectorAll('.chat-topics');
+                    allButtons.forEach(btnGroup => {
+                        btnGroup.remove();
+                    });
+
+                    if (btn.action === 'goBack()') {
+                        goBack();
+                    } else if (btn.action === 'showRegistrationPrompt()') {
+                        showRegistrationPrompt();
+                    } else if (btn.action.startsWith('window.open')) {
+                        const urlMatch = btn.action.match(/window.open\('([^']+)'/);
+                        if (urlMatch && urlMatch[1]) {
+                            window.open(urlMatch[1], '_blank');
+                        }
+                    } else {
+                        try {
+                            eval(btn.action);
+                        } catch (e) {
+                            console.error('Error executing action:', e);
+                        }
+                    }
+                };
+
+                buttonGroup.appendChild(button);
+            });
+
+            // Create wrapper div for proper spacing
             const buttonsDiv = document.createElement('div');
             buttonsDiv.className = 'chat-topics';
-            buttons.forEach(btn => {
-                const button = document.createElement('button');
-                button.className = 'btn btn-outline-danger mb-2 w-100';
-                button.textContent = btn.text;
-                button.onclick = function() {
-                    eval(btn.action);
-                };
-                buttonsDiv.appendChild(button);
-            });
+            buttonsDiv.appendChild(buttonGroup);
             chatbotBody.appendChild(buttonsDiv);
         }
 
@@ -521,38 +575,7 @@
         chatbotBody.scrollTop = chatbotBody.scrollHeight;
     }
 
-    // Initialize chat
-    function initChatbot() {
-        document.getElementById('chatbot-body').innerHTML = '';
-        addAgentMessage(
-            "Hello! I'm TQ, your virtual assistant. How can I help you today?",
-            [{
-                    text: "Register as user",
-                    action: "showRegistrationPrompt()"
-                },
-                {
-                    text: "Find a store",
-                    action: "showStoreLocator()"
-                },
-                {
-                    text: "Track an order",
-                    action: "showTrackingPrompt()"
-                },
-                {
-                    text: "Cancel order",
-                    action: "showCancelPrompt()"
-                },
-                {
-                    text: "Popular products",
-                    action: "showMostViewedPrompt()"
-                },
-                {
-                    text: "Chat with agent",
-                    action: "startLiveChat()"
-                }
-            ]
-        );
-    }
+
 
     // Start the chat when page loads
 </script>
