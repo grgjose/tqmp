@@ -3,10 +3,9 @@
         <div class="chatbot-header">TQMP Chatbot <button class="close-btn" onclick="closeChat()">&times;</button></div>
 
         <div class="chatbot-body" id="chatbot-body">
-
             <!-- Old content -->
             <!-- <div class="d-flex align-items-start" style="gap: 10px;">
-                <div class="agent-profile rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center">TQ</div>
+                <div class="agent-profile rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center" style="background-color: #7E1416;">TQ</div>
                 <div class="agent-message">
                     Welcome! Let's get started. What do you need? <br><br> Select a topic:
                 </div>
@@ -20,22 +19,22 @@
                 <button class="btn btn-sm btn-outline-danger" style="width: 100%;"> Chat with a Sales Representative</button>
                 <button class="btn btn-sm btn-outline-danger" style="width: 100%;" onclick="showMostViewedPrompt()"> Most viewed products</button>
             </div> -->
-
         </div>
 
         <div class="chatbot-footer">
             <input type="text" id="chat-input" placeholder="Type a message...">
-            <label for="file-upload"><i class="fas fa-paperclip"></i></label>
-            <input type="file" id="file-upload">
-            <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+            <label for="file-upload"><i class="fas fa-paperclip fa-xs"></i>
+                <input type="file" id="file-upload"></label>
+            <button onclick="sendMessage()"><i class="fas fa-paper-plane fa-xs"></i></button>
         </div>
     </div>
+
     <div class="chatbot-icon" onclick="toggleChat()">
         <i class="fas fa-comment"></i>
     </div>
 </section>
 
-<!-- js for workflows -->
+<!-- JS for workflows -->
 <script>
     // Initialize chat
     function initChatbot() {
@@ -183,11 +182,31 @@
                 "Would you like to register now?",
                 [{
                         text: "Yes, take me to registration",
-                        action: "window.open('/register', '_blank')"
+                        action: "openBenifitsMenu()"
                     },
                     {
                         text: "No, go back to main menu",
                         action: "goBack()"
+                    }
+                ]
+            );
+        });
+    }
+
+    function openBenifitsMenu() {
+        window.open('/register', '_blank');
+        addUserMessage("I'll open the registration page");
+        showLoadingEffect(() => {
+            addAgentMessage(
+                "I've opened the order registration page in a new tab. <br><br>" +
+                "Is there anything else I can help you with?",
+                [{
+                        text: "Yes, I need other help",
+                        action: "goBack()"
+                    },
+                    {
+                        text: "No, I'm done",
+                        action: "endChat()"
                     }
                 ]
             );
@@ -429,7 +448,133 @@
         });
     }
 
+    // Keyword detection for all functions
+    document.getElementById('chat-input').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            const userInput = this.value.toLowerCase().trim();
 
+            // Check for registration keywords
+            const registrationKeywords = [
+                "register", "registration", "sign up", "create account",
+                "new account", "how to join", "i want to register",
+                "become member", "user registration", "make account"
+            ];
+            if (registrationKeywords.some(keyword => userInput.includes(keyword))) {
+                showRegistrationPrompt();
+                this.value = '';
+                return;
+            }
+
+            // Check for benefits keywords
+            const benefitsKeywords = [
+                "benefits", "perks", "advantages", "what do i get",
+                "why register", "user benefits"
+            ];
+            if (benefitsKeywords.some(keyword => userInput.includes(keyword))) {
+                showBenefits();
+                this.value = '';
+                return;
+            }
+
+            // Check for store locator keywords
+            const storeLocatorKeywords = [
+                "find store", "store near me", "locations",
+                "where are you", "physical store", "store"
+            ];
+            if (storeLocatorKeywords.some(keyword => userInput.includes(keyword))) {
+                showStoreLocator();
+                this.value = '';
+                return;
+            }
+
+            // Check for store hours keywords
+            const storeHoursKeywords = [
+                "store hours", "opening times", "when are you open",
+                "what time do you close", "business hours"
+            ];
+            if (storeHoursKeywords.some(keyword => userInput.includes(keyword))) {
+                showStoreHours();
+                this.value = '';
+                return;
+            }
+
+            // Check for order tracking keywords
+            const trackingKeywords = [
+                "track", "track order", "track package", "where is my order",
+                "order status", "delivery status"
+            ];
+            if (trackingKeywords.some(keyword => userInput.includes(keyword))) {
+                showTrackingPrompt();
+                this.value = '';
+                return;
+            }
+
+            // Check for cancellation keywords
+            const cancelKeywords = [
+                "cancel", "cancel order", "stop my order", "refund",
+                "return item", "want to cancel"
+            ];
+            if (cancelKeywords.some(keyword => userInput.includes(keyword))) {
+                showCancelPrompt();
+                this.value = '';
+                return;
+            }
+
+            // Check for popular products keywords
+            const popularKeywords = [
+                "popular items", "best sellers", "trending products",
+                "what's popular", "recommended products"
+            ];
+            if (popularKeywords.some(keyword => userInput.includes(keyword))) {
+                showMostViewedPrompt();
+                this.value = '';
+                return;
+            }
+
+            // Check for live chat keywords
+            const liveChatKeywords = [
+                "live agent", "talk to human", "customer service",
+                "representative", "real person"
+            ];
+            if (liveChatKeywords.some(keyword => userInput.includes(keyword))) {
+                startLiveChat();
+                this.value = '';
+                return;
+            }
+
+            // Go back to main menu
+            const goBackKeywords = [
+                "go back", "main menu", "back to main",
+                "return to menu", "home"
+            ];
+            if (goBackKeywords.some(keyword => userInput.includes(keyword))) {
+                goBack();
+                this.value = '';
+                return;
+            }
+
+            // If no keywords matched, send as normal message
+            sendMessage();
+            this.value = '';
+        }
+    });
+
+    function addUserMessage(msg) {
+        /*...*/
+    }
+
+    function addAgentMessage(msg, buttons) {
+        /*...*/
+    }
+
+    function showLoadingEffect(callback) {
+        /*...*/
+    }
+
+    function sendMessage() {
+        /*...*/
+    }
 
     // Helper functions
     function toggleChat() {
@@ -462,7 +607,7 @@
         const messageDiv = document.createElement('div');
         messageDiv.className = 'd-flex align-items-start';
         messageDiv.innerHTML = `
-                <div class="agent-profile rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center">TQ</div>
+                <div class="agent-profile rounded-circle text-white d-flex align-items-center justify-content-center" style="background-color: #7E1416;">TQ</div>
                 <div class="agent-message">
                     ${message}
                 </div>
@@ -545,7 +690,7 @@
         loader.style.opacity = '0'; // Start with opacity 0 for animation
         loader.style.transition = 'opacity 0.5s ease'; // Smooth transition for opacity
         loader.innerHTML = `
-                <div class="agent-profile rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center">TQ</div>
+                <div class="agent-profile rounded-circle text-white d-flex align-items-center justify-content-center" style="background-color: #7E1416;">TQ</div>
                 <div class="typing-indicator">
                     <div class="typing-dot"></div>
                     <div class="typing-dot"></div>
@@ -574,8 +719,6 @@
         const chatbotBody = document.getElementById('chatbot-body');
         chatbotBody.scrollTop = chatbotBody.scrollHeight;
     }
-
-
 
     // Start the chat when page loads
 </script>
