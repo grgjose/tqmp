@@ -198,7 +198,7 @@
         addUserMessage("I'll open the registration page");
         showLoadingEffect(() => {
             addAgentMessage(
-                "I've opened the order registration page in a new tab. <br><br>" +
+                "I've opened the registration page in a new tab. <br><br>" +
                 "Is there anything else I can help you with?",
                 [{
                         text: "Yes, I need other help",
