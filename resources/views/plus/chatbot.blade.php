@@ -22,7 +22,7 @@
         </div>
 
         <div class="chatbot-footer">
-            <input type="text" id="chat-input" placeholder="Type a message...">
+            <input type="text" id="chat-input" style="font-size: smaller;" placeholder="Type a message...">
             <label for="file-upload"><i class="fas fa-paperclip fa-xs"></i>
                 <input type="file" id="file-upload"></label>
             <button onclick="sendMessage()"><i class="fas fa-paper-plane fa-xs"></i></button>
@@ -69,7 +69,7 @@
         );
     }
 
-    // Main chat functions
+    // Chat Menus
     function showRegistrationPrompt() {
         addUserMessage("I want to register as a user");
         showLoadingEffect(() => {
@@ -90,65 +90,6 @@
         });
     }
 
-    function showBenefits() {
-        addUserMessage("What are the benefits of being a user?");
-        showLoadingEffect(() => {
-            addAgentMessage(
-                "Being a registered user comes with many perks! You can enjoy:<br>" +
-                "• Multiple delivery options<br>" +
-                "• Exclusive offers<br>" +
-                "• Door-to-door delivery services<br><br>" +
-                "Does that sound good to you?",
-                [{
-                        text: "Yes, I want to register",
-                        action: "showRegistrationPrompt()"
-                    },
-                    {
-                        text: "Go back",
-                        action: "goBack()"
-                    }
-                ]
-            );
-        });
-    }
-
-    function goBack() {
-        addUserMessage("Go back to main menu");
-        showLoadingEffect(() => {
-            addAgentMessage(
-                "Welcome back! How can I assist you today?",
-                [{
-                        text: "Register as user",
-                        action: "showRegistrationPrompt()"
-                    },
-                    {
-                        text: "Store Locator",
-                        action: "showStoreLocator()"
-                    },
-                    {
-                        text: "Track an order",
-                        action: "showTrackingPrompt()"
-                    },
-                    {
-                        text: "Cancel order",
-                        action: "showCancelPrompt()"
-                    },
-                    {
-                        text: "Popular products",
-                        action: "showMostViewedPrompt()"
-                    },
-                    {
-                        text: "Chat with agent",
-                        action: "startLiveChat()"
-                    }
-                ]
-            );
-
-        });
-    }
-
-
-    // Main chat functions
     function showRegistrationPrompt() {
         addUserMessage("I want to register as a user");
         showLoadingEffect(() => {
@@ -474,6 +415,41 @@
         });
     }
 
+    function goBack() {
+        addUserMessage("Go back to main menu");
+        showLoadingEffect(() => {
+            addAgentMessage(
+                "Welcome back! How can I assist you today?",
+                [{
+                        text: "Register as user",
+                        action: "showRegistrationPrompt()"
+                    },
+                    {
+                        text: "Store Locator",
+                        action: "showStoreLocator()"
+                    },
+                    {
+                        text: "Track an order",
+                        action: "showTrackingPrompt()"
+                    },
+                    {
+                        text: "Cancel order",
+                        action: "showCancelPrompt()"
+                    },
+                    {
+                        text: "Popular products",
+                        action: "showMostViewedPrompt()"
+                    },
+                    {
+                        text: "Chat with agent",
+                        action: "startLiveChat()"
+                    }
+                ]
+            );
+
+        });
+    }
+
     function endChat() {
         addUserMessage("No, I'm done");
         showLoadingEffect(() => {
@@ -512,7 +488,6 @@
         }
     }
 
-  
 
     // Keyword detection for all functions
     document.getElementById('chat-input').addEventListener('keydown', function(e) {
@@ -815,6 +790,4 @@
         const chatbotBody = document.getElementById('chatbot-body');
         chatbotBody.scrollTop = chatbotBody.scrollHeight;
     }
-
-    // Start the chat when page loads
 </script>
