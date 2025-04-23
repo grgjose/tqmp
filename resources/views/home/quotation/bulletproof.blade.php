@@ -44,9 +44,7 @@
                 <option value="2">Bullet Proofing</option>
             </select>
         </div>
-        <div class="container">
 
-    <div class="row">
         <!-- Plate Number and Model -->
         <div class="col-md-12">
             <div class="row mb-3">
@@ -142,14 +140,14 @@
         <!-- Remarks -->
         <div class="col-md-12 mb-3">
             <label for="remarks" class="form-label text-muted">Remarks <span class="text-danger">*</span></label>
-            <textarea id="remarks" name="remarks" rows="3" placeholder="Enter special instructions or remarks here" 
+            <textarea id="remarks" name="remarks" rows="3" placeholder="Enter special instructions or remarks here"
                 class="form-control form-control-sm" required></textarea>
         </div>
 
         <!-- File Upload -->
         <div class="col-md-12 mb-3">
             <label for="fileUpload" class="form-label text-muted">Upload Sample</label>
-            <input class="form-control form-control-sm" id="fileUpload" type="file" 
+            <input class="form-control form-control-sm" id="fileUpload" type="file"
                 accept=".pdf, .doc, .docx, .jpg, .jpeg, .png">
             <div id="file-name" class="file-name mt-3 text-muted">No file chosen</div>
         </div>
@@ -165,8 +163,6 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
     </div>
 
     <!-- Footer -->
