@@ -167,7 +167,7 @@
                                 <small class="text-muted">Transfer directly to our bank account.</small>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer" checked>
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer">
                             </div>
                         </div>
                         <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
