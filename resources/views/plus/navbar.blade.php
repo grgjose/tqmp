@@ -100,7 +100,7 @@
                     </li>
                     @if($my_user != null)
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="/hidden_store">Shop</a>
+                        <a class="nav-link px-3" href="/shop">Shop</a>
                     </li>
                     @endif
                 </ul>

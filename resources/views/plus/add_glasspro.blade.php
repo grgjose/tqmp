@@ -4,22 +4,26 @@
         <p>PGPSI offers the following glass processing services</p>
     </div>
     <div class="row py-3">
-        <div class="col-md-3 mb-4 d-flex align-items-stretch">
-            <div class="card border-0 shadow-lg d-flex flex-column">
-                <img src="{{ asset('storage/glass-processing/tempered.png') }}" alt="TQMP Tempered Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                <div class="card-body d-flex flex-column">
-                    <h6 class="card-title fw-bold">Tempered Glass</h6>
-                    <p class="card-text flex-grow-1">Fully tempered glass is a unique glazing material. It is about 3 to 5 times stronger than an ordinary or annealed glass of the same thickness and configuration.</p>
-                    <a href="/#" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+        @foreach($products as $product)
+            @if($product->category_id == 4)
+                <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                    <div class="card border-0 shadow-lg d-flex flex-column">
+                        <img src="{{ asset('storage/all-items/'.$product->image) }}" alt="{{$product->display_name}}" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title fw-bold">{{$product->display_name}}</h6>
+                            <p class="card-text flex-grow-1">{{$product->description}}</p>
+                            <a href="/#" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
 
-                        @if($my_user==null)
-                        data-bs-toggle="modal" data-bs-target="#loginModal"
-                        @endif>Get Quotation</a>
+                                @if($my_user==null)
+                                data-bs-toggle="modal" data-bs-target="#loginModal"
+                                @endif>Get Quotation</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            @endif
+        @endforeach
 
-        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+        {{-- <div class="col-md-3 mb-4 d-flex align-items-stretch">
             <div class="card border-0 shadow-lg d-flex flex-column">
                 <img src="{{ asset('storage/glass-processing/laminated.png') }}" alt="TQMP Laminated Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                 <div class="card-body d-flex flex-column">
@@ -62,7 +66,7 @@
                         @endif>Get Quotation</a>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 
 </section>

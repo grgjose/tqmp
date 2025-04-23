@@ -43,42 +43,46 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-3 mb-4 d-flex ">
-                    <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/aluminum/19.jpg') }}" alt="TQMP Swing Door Sections" class="card-img-top preview-image" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;" data-bs-toggle="modal" data-bs-target="#imageModal19">
-                        <div class="card-body d-flex flex-column">
-                            <h6 class="card-title fw-bold">Swing Door Sections</h6>
-                            <p class="card-text flex-grow-1">Angle sections are versatile aluminum profiles used in various structural and architectural applications.</p>
-                            <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
-                                    @if($my_user==null)
-                                    data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Get Quotation</a>
+                @foreach($products as $product)
+                    @if($product->category_id == 3)
+                        <div class="col-md-3 mb-4 d-flex ">
+                            <div class="card border-0 shadow-lg d-flex flex-column">
+                                <img src="{{ asset('storage/all-items/'.$product->image) }}" alt="{{$product->display_name}}" class="card-img-top preview-image" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;" data-bs-toggle="modal" data-bs-target="#{{$product->name}}">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title fw-bold">{{$product->display_name}}</h6>
+                                    <p class="card-text flex-grow-1">{{$product->description}}</p>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                            @if($my_user==null)
+                                            data-bs-toggle="modal" data-bs-target="#loginModal"
+                                            @endif>Get Quotation</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Modal for Image Zoom -->
-                <div class="modal fade" id="imageModal19" tabindex="-1" aria-labelledby="imageModalLabel19" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content border-0 bg-transparent">
-                            <!-- Optional header with close button -->
-                            <div class="modal-header border-0">
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
+                        <!-- Modal for Image Zoom -->
+                        <div class="modal fade" id="{{$product->name}}" tabindex="-1" aria-labelledby="{{$product->name}}" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content border-0 bg-transparent">
+                                    <!-- Optional header with close button -->
+                                    <div class="modal-header border-0">
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
 
-                            <div class="modal-body p-0 d-flex align-items-center justify-content-center" style="min-height: 80vh;">
-                                <img src="{{ asset('storage/aluminum/19.jpg') }}"
-                                    alt="TQMP Swing Door Sections"
-                                    class="img-fluid"
-                                    style="max-height: 70vh; width: auto; object-fit: contain;">
+                                    <div class="modal-body p-0 d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+                                        <img src="{{ asset('storage/all-items/'.$product->image) }}"
+                                            alt="{{$product->display_name}}"
+                                            class="img-fluid"
+                                            style="max-height: 70vh; width: auto; object-fit: contain;">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    @endif
+                @endforeach
 
-                <div class="col-md-3 mb-4 d-flex ">
+                {{-- <div class="col-md-3 mb-4 d-flex ">
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/aluminum/19.jpg') }}" alt="TQMP Swing Door Sections" class="card-img-top preview-image" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;" data-bs-toggle="modal" data-bs-target="#imageModal19">
                         <div class="card-body d-flex flex-column">
@@ -706,7 +710,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
 

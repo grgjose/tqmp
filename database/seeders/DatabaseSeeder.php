@@ -94,7 +94,6 @@ class DatabaseSeeder extends Seeder
                 'password' => Hash::make('password')
             ]);
 
-
         //
 
         /**
@@ -492,7 +491,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'ANGLE-SECTION',
                     'display_name' => 'Angle Sections',
-                    'description' => '',
+                    'description' => 'Angle sections are versatile aluminum profiles used in various structural and architectural applications.',
                     'category_id' => 3,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -508,7 +507,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'STORE-FRONT-COMPONENTS',
                     'display_name' => 'Store Front Components',
-                    'description' => '',
+                    'description' => 'Angle sections are versatile aluminum profiles used in various structural and architectural applications.',
                     'category_id' => 3,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -542,7 +541,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'SLIDING-DOOR-SECTIONS',
                     'display_name' => 'Sliding Door Sections',
-                    'description' => '',
+                    'description' => 'Sliding door sections are designed for smooth operation and modern aesthetics.',
                     'category_id' => 3,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -576,7 +575,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'MISCELLANEOUS-SECTIONS',
                     'display_name' => 'Miscellaneous Sections',
-                    'description' => '',
+                    'description' => 'Miscellaneous sections cater to unique and specialized aluminum profile needs.',
                     'category_id' => 3,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -592,7 +591,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'SWING-DOOR-SECTIONS',
                     'display_name' => 'Swing Door Sections',
-                    'description' => '',
+                    'description' => 'Swing door sections provide durability and style for residential and commercial spaces.',
                     'category_id' => 3,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -614,7 +613,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'COUNTER-TRIM-SECTIONS',
                     'display_name' => 'Counter Trim Sections',
-                    'description' => '',
+                    'description' => 'Counter trim sections are designed for enhancing the aesthetics and functionality of counters.',
                     'category_id' => 3,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -630,7 +629,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'YC-SECTIONS',
                     'display_name' => 'YC Sections',
-                    'description' => '',
+                    'description' => 'YC sections are versatile profiles used in various structural and decorative applications.',
                     'category_id' => 3,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -646,7 +645,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'VENT-SECTIONS',
                     'display_name' => 'Vent Sections',
-                    'description' => '',
+                    'description' => 'Vent sections are designed for efficient airflow and ventilation in various applications.',
                     'category_id' => 3,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -662,7 +661,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'FLAT-BAR-SECTIONS',
                     'display_name' => 'Flat Bar Sections',
-                    'description' => '',
+                    'description' => 'Flat bar sections are ideal for structural and decorative purposes in various industries.',
                     'category_id' => 3,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -678,7 +677,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'COUNTER-NOSING-SECTION',
                     'display_name' => 'Counter Nosing Section',
-                    'description' => '',
+                    'description' => 'Counter nosing sections provide a sleek finish and durability for counter edges.',
                     'category_id' => 3,
                     'brand' => 'MASTER',
                     'status' => 'active',
@@ -694,7 +693,7 @@ class DatabaseSeeder extends Seeder
                 Product::factory()->create([
                     'name' => 'MODEL898',
                     'display_name' => 'Model 898',
-                    'description' => '',
+                    'description' => 'Angle sections are versatile aluminum profiles used in various structural and architectural applications.',
                     'category_id' => 3,
                     'brand' => 'MASTER',
                     'status' => 'active',
