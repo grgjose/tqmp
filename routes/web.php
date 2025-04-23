@@ -49,6 +49,7 @@ Route::get('/aluminummanufacturing', [AluminumManufacturingController::class, 'i
 Route::get('/glassprocessing', [GlassProcessingController::class, 'index']);
 Route::get('/gentrade', [GenTradeController::class, 'index']);
 Route::get('/catalog', [CatalogController::class, 'show']);
+Route::get('/shop', [HomeController::class, 'shop']);
 
 // User Authentication
 //Route::get('/login', [UserController::class, 'login']);

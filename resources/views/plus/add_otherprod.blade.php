@@ -48,10 +48,25 @@
 
 <div class="py-5">
     <div class="row">
-        <div class="col-md-3 col-lg-2 pe-0">
+        <div class="col-md-3 col-lg-3 pe-0">
             <div class="nav flex-column nav-pills me-3 border-end" id="productTabs" role="tablist"
                 style="border-right-width: 2px; border-right-color: #7E1416; height: 100%;">
-                <a class="nav-link active mt-2" href="#door-&-floor" data-bs-toggle="pill" role="tab">
+
+                @foreach($productSubCategories as $sub_category)
+                    @if($sub_category->category_id == 5)
+                        @if($sub_category->id == 1)
+                            <a class="nav-link active mt-2" href="#panel{{$sub_category->id}}" data-bs-toggle="pill" role="tab">
+                                {{$sub_category->category}}
+                            </a>
+                        @else
+                            <a class="nav-link mt-2" href="#panel{{$sub_category->id}}" data-bs-toggle="pill" role="tab">
+                                {{$sub_category->category}}
+                            </a>
+                        @endif
+                    @endif
+                @endforeach
+
+                {{-- <a class="nav-link active mt-2" href="#door-&-floor" data-bs-toggle="pill" role="tab">
                     Door & Floor
                 </a>
                 <a class="nav-link mt-2" href="#patch-fittings" data-bs-toggle="pill" role="tab">
@@ -74,14 +89,49 @@
                 </a>
                 <a class="nav-link mt-2" href="#jalouplus" data-bs-toggle="pill" role="tab">
                     Jalouplus
-                </a>
+                </a> --}}
             </div>
         </div>
 
         <!-- Tab Content -->
-        <div class="col-md-9 col-lg-10">
+        <div class="col-md-9 col-lg-9">
             <div class="tab-content" id="productTabsContent">
-                <!-- Door & Floor Section -->
+
+                @foreach($productSubCategories as $sub_category)
+                    @if($sub_category->category_id == 5)
+                        <div class="tab-pane fade show active" id="panel{{$sub_category->id}}">
+                            <div class="container mt-2" style="border-radius: .25rem;">
+                                <div class="container text-center">
+                                    <!-- <h2 class="fw-bold" style="color: #7E1416;">Door Closers and Floor Hinges</h2>
+                                    <p class="mt-3">
+                                        Door closers and floor hinges are hardware that is used for all doors with a self-closing feature.
+                                    </p> -->
+
+                                    <div class="row py-3 g-3">
+
+                                        @foreach($products as $product)
+                                            @if($product->sub_category_id == $sub_category->id)
+                                                <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                                                    <div class="card border-1 d-flex flex-column w-100">
+                                                        <img src="{{ asset('storage/all-items/'.$product->image) }}" alt="{{$product->display_name}}" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                                        <div class="card-body d-flex flex-column">
+                                                            <h6 class="card-title text-start fw-bold">{{$product->display_name}}</h6>
+                                                            <h6 class="card-text text-start" style="color: #7E1416;">₱{{ $product->price }}</h6>
+                                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endif
+                                        @endforeach
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                @endforeach
+
+                {{-- <!-- Door & Floor Section -->
                 <div class="tab-pane fade show active" id="door-&-floor">
                     <div class="container mt-2" style="border-radius: .25rem;">
                         <div class="container text-center">
@@ -352,7 +402,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

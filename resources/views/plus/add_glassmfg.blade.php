@@ -10,24 +10,28 @@
         <div class="container">
             <div class="row py-3">
 
-                 <div class="col-md-3 mb-4 d-flex ">
-                    <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/glass-mfg/floatglass.jpg') }}" alt="TQMP Tempered Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                        <div class="card-body d-flex flex-column">
-                            <h6 class="card-title fw-bold">Clear Float Glass</h6>
-                            <p class="card-text flex-grow-1">A Colourless and transparent glass that offers a very high level of light transmittance. Its edge displays a slight green tint and is available from 2mm to 19mm thick.</p>
-                            <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
-                                    @if($my_user==null)
-                                    data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Get Quotation</a>
+                @foreach($products as $product)
+                    @if($product->category_id == 2)
+                        <div class="col-md-3 mb-4 d-flex ">
+                            <div class="card border-0 shadow-lg d-flex flex-column">
+                                <img src="{{ asset('storage/all-items/'.$product->image) }}" alt="{{$product->display_name}}" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title fw-bold">{{$product->display_name}}</h6>
+                                    <p class="card-text flex-grow-1">{{$product->description}}</p>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="/get_quotation_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                            @if($my_user==null)
+                                            data-bs-toggle="modal" data-bs-target="#loginModal"
+                                            @endif>Get Quotation</a>
+                                    </div>
+
+                                </div>
                             </div>
-
                         </div>
-                    </div>
-                </div>
+                    @endif
+                @endforeach
 
-                 <div class="col-md-3 mb-4 d-flex ">
+                {{-- <div class="col-md-3 mb-4 d-flex ">
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/glass-mfg/tintedfloat.jpg') }}" alt="TQMP Tempered Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
@@ -44,7 +48,7 @@
                     </div>
                 </div>
 
-                 <div class="col-md-3 mb-4 d-flex ">
+                <div class="col-md-3 mb-4 d-flex ">
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/glass-mfg/ultraclear.jpg') }}" alt="ULTRA CLEAR FLOAT GLASS" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
@@ -61,8 +65,7 @@
                     </div>
                 </div>
 
-
-                 <div class="col-md-3 mb-4 d-flex ">
+                <div class="col-md-3 mb-4 d-flex ">
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/glass-mfg/lowe.jpg') }}" alt="LOW-E COATED GLASS" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
@@ -81,7 +84,7 @@
                     </div>
                 </div>
 
-                 <div class="col-md-3 mb-4 d-flex ">
+                <div class="col-md-3 mb-4 d-flex ">
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/glass-mfg/reflective.jpg') }}" alt="REFLECTIVE COATED GLASS" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
@@ -98,7 +101,7 @@
                     </div>
                 </div>
 
-                 <div class="col-md-3 mb-4 d-flex ">
+                <div class="col-md-3 mb-4 d-flex ">
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/glass-mfg/mirror.jpg') }}" alt="MIRROR" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
@@ -115,7 +118,7 @@
                     </div>
                 </div>
 
-                 <div class="col-md-3 mb-4 d-flex ">
+                <div class="col-md-3 mb-4 d-flex ">
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/glass-mfg/patternedglass.jpg') }}" alt="PATTERNED GLASS" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
@@ -133,7 +136,6 @@
                     </div>
                 </div>
 
-
                 <div class="col-md-3 mb-4 d-flex ">
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/glass-mfg/wiredglass.jpg') }}" alt="WIRED GLASS" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
@@ -150,7 +152,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
 </section>

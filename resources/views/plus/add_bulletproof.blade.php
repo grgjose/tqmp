@@ -7,21 +7,26 @@
     </div>
 
     <div class="row py-3">
-        <div class="col-md-3 mb-4 d-flex align-items-stretch">
-            <div class="card border-0 shadow-lg d-flex flex-column">
-                <img src="{{ asset('storage/logos/bulletproof-1.jpg') }}" alt="Armoured Car" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                <div class="card-body d-flex flex-column">
-                    <h6 class="card-title fw-bold">Armoured Car</h6>
-                    <p class="card-text flex-grow-1">Explore the key attributes that redefine what it means to travel securely without compromising on luxury, featuring our armoured Toyota Land Cruiser Series 300</p>
-                    <a href="/get_quotation_bulletproofing" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
-                        @if($my_user==null)
-                        data-bs-toggle="modal" data-bs-target="#loginModal"
-                        @endif>Get Quotation</a>
+        
+        @foreach($products as $product)
+            @if($product->category_id == 1)
+                <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                    <div class="card border-0 shadow-lg d-flex flex-column">
+                        <img src="{{ asset('storage/all-items/'.$product->image) }}" alt="{{$product->display_name}}" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title fw-bold">{{$product->display_name}}</h6>
+                            <p class="card-text flex-grow-1">{{$product->description}}</p>
+                            <a href="/get_quotation_bulletproofing" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                @if($my_user == null)
+                                    data-bs-toggle="modal" data-bs-target="#loginModal"
+                                @endif>Get Quotation</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            @endif
+        @endforeach
 
-        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+        {{-- <div class="col-md-3 mb-4 d-flex align-items-stretch">
             <div class="card border-0 shadow-lg d-flex flex-column">
                 <img src="{{ asset('storage/logos/radiator.png') }}" alt="Radiator Grill" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                 <div class="card-body d-flex flex-column">
@@ -131,6 +136,6 @@
                         @endif>Get Quotation</a>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </section>
