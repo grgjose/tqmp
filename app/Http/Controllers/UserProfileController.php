@@ -17,45 +17,25 @@ class UserProfileController extends Controller
         ]);
     }
 
-    public function get_quotation()
+
+    public function quotation_bulletproof()
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
         $my_user = $auth->user();
 
-        return view('glass.processing.get_quotation', [
+        return view('home.quotation.bulletproof', [
             'my_user' => $my_user,
         ]);
     }
 
-    public function get_quotation_mfg()
+    public function quotation_glasspro()
     {
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
         $my_user = $auth->user();
 
-        return view('glass.manufacturing.get_quotation_mfg', [
-            'my_user' => $my_user,
-        ]);
-    }
-    public function get_quotation_aluminum_mfg()
-    {
-        /** @var \Illuminate\Auth\SessionGuard $auth */
-        $auth = auth();
-        $my_user = $auth->user();
-
-        return view('aluminum.manufacturing.get_quotation_aluminum_mfg', [
-            'my_user' => $my_user,
-        ]);
-    }
-
-    public function get_quotation_bulletproofing()
-    {
-        /** @var \Illuminate\Auth\SessionGuard $auth */
-        $auth = auth();
-        $my_user = $auth->user();
-
-        return view('bulletproofing.get_quotation_bulletproofing', [
+        return view('home.quotation.glasspro', [
             'my_user' => $my_user,
         ]);
     }

@@ -25,6 +25,7 @@ use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\ProductVariantController;
 use App\Http\Controllers\CatalogueController;
 
+
 // Home Pages
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
@@ -141,10 +142,6 @@ Route::post('/catalogue-destroy/{id}', [CatalogueController::class, 'destroy']);
 Route::get('/product-details', [ProductDetailsController::class, 'index']);
 Route::get('/user_messages', [UserProfileController::class, 'user_messages']);
 Route::get('/messages', [UserProfileController::class, 'messages']);
-Route::get('/get_quotation', [UserProfileController::class, 'get_quotation']);
-Route::get('/get_quotation_mfg', [UserProfileController::class, 'get_quotation_mfg']);
-Route::get('/get_quotation_aluminum_mfg', [UserProfileController::class, 'get_quotation_aluminum_mfg']);
-Route::get('/get_quotation_bulletproofing', [UserProfileController::class, 'get_quotation_bulletproofing']);
 Route::get('/process_order', [UserProfileController::class, 'process_order']);
 Route::post('/checkout', [ProductController::class, 'checkout']);
 Route::get('/order-status/{reference}', [ProductController::class, 'order_status']);
@@ -152,4 +149,6 @@ Route::get('/order-summary', [OrderSummaryController::class, 'index']);
 Route::get('/order_status', [ProductController::class, 'order_status']);
 Route::get('/hidden_store', [UserProfileController::class, 'hidden_store']);
 Route::get('/main_quote', [UserProfileController::class, 'main_quote']);
+Route::get('/quotation_bulletproof', [UserProfileController::class, 'quotation_bulletproof']);
+Route::get('/quotation_glasspro', [UserProfileController::class, 'quotation_glasspro']);
 //Route::get('/product-details', [ProductDetailsController::class, 'index']);
