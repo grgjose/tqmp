@@ -131,7 +131,7 @@
     </section> -->
 
     <div class="container py-5">
-        <h3 class="mb-4 text-muted">Get a quotation for aluminum</h3>
+        <h2 class="mb-4">Get a quotation</h2>
         <div class="row">
 
             <div class="col-md-6">
@@ -144,7 +144,29 @@
                 <div class="container">
                     <form action="/submit" method="post">
                         <div class="row">
-                           
+                            <div class="mb-3">
+                                <div class="mb-3">
+                                    <label for="type" class="form-label text-muted">Full Name <span class="text-danger">*</span></label>
+                                    <input class="form-control form-control-sm" type="text" placeholder="Input name" aria-label=".form-control-sm example">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="type" class="form-label text-muted">Email Address <span class="text-danger">*</span></label>
+                                    <input class="form-control form-control-sm" type="text" placeholder="johndoe@example.com" aria-label=".form-control-sm example">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="type" class="form-label text-muted">Phone Number <span class="text-danger">*</span></label>
+                                    <input class="form-control form-control-sm" type="text" placeholder="+639xxxxxxxxx" aria-label=".form-control-sm example">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="type" class="form-label text-muted">Product <span class="text-danger">*</span></label>
+                                    <select id="type" name="type" class="form-select form-select-sm">
+                                        <option value="" disabled selected>Select Product</option>
+                                        <option value="tempered">Tempered</option>
+                                        <option value="laminated">Laminated</option>
+                                        <option value="frosted">Frosted</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div class="mb-3">
                                 <p class="text-muted">Color <span class="text-danger">*</span></p>
                                 <div class="form-check">
@@ -174,13 +196,23 @@
                                 <input type="number" id="quantity" name="quantity" class="form-control form-control-sm" placeholder="Input quantity" required>
                             </div>
                             <div class="mb-3">
-                                <label for="address" class="form-label text-muted">Cutting Details <span class="text-danger">*</span></label>
+                                <label for="address" class="form-label text-muted">Cutting Details</label>
                                 <textarea id="address" name="address" rows="3" placeholder="Enter cutting details"
                                     class="form-control form-control-sm"></textarea>
                             </div>
                         </div>
                         <div class="row mt-3">
-                            
+                            <div class="col-12">
+                                <!-- File Upload -->
+                                <div class="mb-3">
+                                    <label for="file" class="form-label text-muted">Upload Project Plans</label>
+                                    <input type="file" id="file" name="file" class="form-control form-control-sm">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label text-muted">More Details</label>
+                                    <textarea id="address" name="address" rows="3" placeholder="Enter remarks or special instructions"
+                                        class="form-control form-control-sm"></textarea>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <button type="submit" class="btn btn-danger btn-lg w-100">Add more items</button>

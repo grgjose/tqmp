@@ -114,4 +114,15 @@ class UserProfileController extends Controller
             'my_user' => $my_user,
         ]);
     }
+
+    public function main_quote()
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        return view('home.main_quote', [
+            'my_user' => $my_user,
+        ]);
+    }
 }
