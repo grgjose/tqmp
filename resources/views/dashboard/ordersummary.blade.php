@@ -140,7 +140,7 @@
                             <img src="https://th.bing.com/th/id/OIP.Dl-WiroGReI7sZ13Bp5U1gHaHa?rs=1&pid=ImgDetMain" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
                             <label class="form-check-label" for="option1">
                                 <p class="mb-0 fw-bold">Sample Delivery Company</p>
-                                <small class="text-muted">Expected Delivery: March 3, 2025</small>
+                                <small class="text-muted">Expected Delivery: *insert date*</small>
                                 <p class="mt-2">₱36.00</p>
                             </label>
                         </div>
@@ -149,15 +149,15 @@
                             <img src="https://th.bing.com/th/id/R.ceca21e2c4adf86765ad827513550427?rik=MHwhFqcmy9sM8Q&pid=ImgRaw&r=0" alt="Product" class="product-image me-3" style="height: 50px; width: auto;">
                             <label class="form-check-label" for="option1">
                                 <p class="mb-0 fw-bold">Pick Up (Main Branch)</p>
-                                <small class="text-muted">Expected Delivery: March 3, 2025</small>
-                                <p class="mt-2">₱36.00</p>
+                                <small class="text-muted">Expected Delivery: *insert date*</small>
+                                <p class="mt-2">Free</p>
                             </label>
                         </div>
                     </div>
                 </div>
 
 
-                <h5 class="fw-bold mt-3">Payment Methods</h5>
+                <h5 class="fw-bold mt-4">Payment Methods</h5>
                 <p class="text-muted">Choose a payment method in your convenience</p>
                 <div class="container">
                     <div class="row">

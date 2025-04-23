@@ -237,7 +237,7 @@
                                 <small class="text-muted">Show Proof of Transaction upon Pickup.</small>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer" checked>
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer">
                             </div>
                         </div>
                         <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
@@ -246,7 +246,7 @@
                                 <small class="text-muted">Pay when you receive the product.</small>
                             </div>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="radio" name="paymentMethod" id="cod" disabled>
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="cod">
                             </div>
                         </div>
                         <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
