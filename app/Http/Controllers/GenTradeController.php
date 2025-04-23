@@ -17,14 +17,21 @@ class GenTradeController extends Controller
         $my_user = $auth->user();
 
         $products = DB::table('products')
-        ->join('product_categories', 'products.category_id', '=', 'product_categories.id')
-        ->select('products.*', 'product_categories.category as category')
-        ->where('products.isDeleted', '=', false)->get();
+            ->join('product_categories', 'products.category_id', '=', 'product_categories.id')
+            ->leftJoin('product_sub_categories', 'products.sub_category_id', '=', 'product_sub_categories.id')
+            ->leftJoin(DB::raw('(SELECT product_id, MIN(filename) as filename FROM product_images GROUP BY product_id) as pi'), 'products.id', '=', 'pi.product_id')
+            ->select(
+                'products.*', 
+                'product_categories.category as category',
+                'product_sub_categories.category as sub_category',
+                'pi.filename as image')
+            ->where('products.isDeleted', '=', false)->get();
 
-        $productCategories = DB::table('product_categories')
-        ->leftJoin('products', 'products.category_id', '=', 'product_categories.id')
-        ->select('product_categories.id', 'product_categories.description', 'product_categories.category', DB::raw('COUNT(products.id) as product_count'))
-        ->groupBy('product_categories.id', 'product_categories.description', 'product_categories.category')
+
+        $productSubCategories = DB::table('product_sub_categories')
+        ->leftJoin('products', 'products.sub_category_id', '=', 'product_sub_categories.id')
+        ->select('product_sub_categories.id', 'product_sub_categories.category_id', 'product_sub_categories.description', 'product_sub_categories.category', DB::raw('COUNT(products.id) as product_count'))
+        ->groupBy('product_sub_categories.id', 'product_sub_categories.category_id', 'product_sub_categories.description', 'product_sub_categories.category')
         ->get();
 
         $productImages = DB::table('product_images')->get();
@@ -34,7 +41,7 @@ class GenTradeController extends Controller
         return view('gentrade.index', [
             'my_user' => $my_user,
             'products' => $products,
-            'productCategories' => $productCategories,
+            'productSubCategories' => $productSubCategories,
             'productImages' => $productImages,
         ]);
     }

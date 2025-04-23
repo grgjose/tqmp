@@ -30,99 +30,92 @@
         </div>
     </section>
 
-    @foreach($productCategories as $category)
-    <section class="py-5">
-        <div class="container py-5" 
-        @if($category->id % 2 == 1)
-        style="background-color: #EFEFEF; border-radius: .25rem;"
-        @endif
-        >
-            <div class="container text-center">
-                <h2 class="fw-bold">{{ $category->category }}</h2>
-                <p class="mt-3">
-                    <b>{{ $category->description }}</b>
-                </p>
+    @foreach($productSubCategories as $sub_category)
+        @if($sub_category->category_id == 5)
+            <section class="py-5">
+                <div class="container py-5" 
+                @if($sub_category->id % 2 == 1)
+                style="background-color: #EFEFEF; border-radius: .25rem;"
+                @endif
+                >
+                    <div class="container text-center">
+                        <h2 class="fw-bold">{{ $sub_category->category }}</h2>
+                        <p class="mt-3">
+                            <b>{{ $sub_category->description }}</b>
+                        </p>
 
-                <div id="carouselExamsple{{$category->id}}" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-inner">
+                        <div id="carouselOtherProduct{{$sub_category->id}}" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-inner">
 
-                        @php 
-                            $cnt = 0;
-                        @endphp
-
-                        @foreach($products as $product)
-                        @if($product->category_id == $category->id)
-
-                        @php 
-                        if($cnt == 0){
-                            $active = 'active';
-                        } else {
-                            $active = '';
-                        }
-                        @endphp
-
-                        @if($cnt % 4 == 0)
-                        <div class="{{ $cnt }} carousel-item {{ $active }}">
-                            <div class="row mt-4 g-3">
-                        @endif
-                            
-
-                                @php
-                                    foreach($productImages as $images){
-                                        if($images->product_id == $product->id){
-                                            $image = $images->filename;
-                                        }
-                                    }
+                                @php 
+                                    $cnt = 0;
                                 @endphp
-                                <div class="col-md-3">
-                                    <div class="card" style="height: 450px;">
-                                        <img src="{{ asset('storage/all-items/'.$image) }}" alt="{{ $product->display_name }}" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <div class="card-body">
-                                            <h6 class="card-title text-start">{{ $product->display_name }}</h6>
-                                            @if($my_user != null)
-                                            <h6 class="card-text text-start" style="color: #7E1416;">₱{{ $product->price }}</h6>
-                                            @endif
-                                            <div class="d-flex justify-content-between">
-                                                @if($my_user != null)
-                                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                @else
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
-                                                @endif
+
+                                @foreach($products as $product)
+                                @if($product->sub_category_id == $sub_category->id)
+
+                                @php 
+                                if($cnt == 0){
+                                    $active = 'active';
+                                } else {
+                                    $active = '';
+                                }
+                                @endphp
+
+                                @if($cnt % 4 == 0)
+                                <div class="carousel-item {{ $active }}">
+                                    <div class="row mt-4 g-3">
+                                @endif
+                                    
+                                        <div class="col-md-3">
+                                            <div class="card" style="height: 450px;">
+                                                <img src="{{ asset('storage/all-items/'.$product->image) }}" alt="{{ $product->display_name }}" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title text-start">{{ $product->display_name }}</h6>
+                                                    @if($my_user != null)
+                                                    <h6 class="card-text text-start" style="color: #7E1416;">₱{{ $product->price }}</h6>
+                                                    @endif
+                                                    <div class="d-flex justify-content-between">
+                                                        @if($my_user != null)
+                                                        <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
+                                                        @else
+                                                        <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                        @endif
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+
+                                @if($cnt % 4 == 3 || $sub_category->product_count - 1 == $cnt)
+                                    <!-- Ending -->
                                     </div>
                                 </div>
+                                @endif
 
-                            
+                                @php 
+                                    $cnt = $cnt + 1;
+                                @endphp
 
-                        @if($cnt % 4 == 3 || $category->product_count - 1 == $cnt)
+                                @endif
+                                @endforeach
+
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOtherProduct{{$sub_category->id}}" data-bs-slide="prev" style="left: -180px; color: #7E1416;">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class=""><i class="fa-solid fa-circle-chevron-left"></i></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselOtherProduct{{$sub_category->id}}" data-bs-slide="next" style="right: -180px; color: #7E1416;">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class=""><i class="fa-solid fa-circle-chevron-right"></i></span>
+                            </button>
                         </div>
-                        @endif
-
-                        @php 
-                            $cnt = $cnt + 1;
-                        @endphp
-
-                        @endif
-                        @endforeach
-
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExamsple{{$category->id}}" data-bs-slide="prev" style="left: -180px; color: #7E1416;">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class=""><i class="fa-solid fa-circle-chevron-left"></i></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExamsple{{$category->id}}" data-bs-slide="next" style="right: -180px; color: #7E1416;">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class=""><i class="fa-solid fa-circle-chevron-right"></i></span>
-                    </button>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        @endif
     @endforeach
 
-    <section id="door-&-floor" class="py-5">
+    {{-- <section id="door-&-floor" class="py-5">
         <div class="container py-5" style="background-color: #EFEFEF; border-radius: .25rem;">
             <div class="container text-center">
                 <h2 class="fw-bold">Door Closers and Floor Hinges</h2>
@@ -1479,7 +1472,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- Accordion Section -->
     @include ('plus.accordion')
