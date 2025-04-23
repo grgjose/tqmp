@@ -99,7 +99,11 @@
 
                 @foreach($productSubCategories as $sub_category)
                     @if($sub_category->category_id == 5)
+                        @if($sub_category->id == 1)
                         <div class="tab-pane fade show active" id="panel{{$sub_category->id}}">
+                        @else
+                        <div class="tab-pane fade" id="panel{{$sub_category->id}}">
+                        @endif
                             <div class="container mt-2" style="border-radius: .25rem;">
                                 <div class="container text-center">
                                     <!-- <h2 class="fw-bold" style="color: #7E1416;">Door Closers and Floor Hinges</h2>

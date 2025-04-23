@@ -48,24 +48,24 @@
     <section class="container text-center fade-in-up">
 
         <ul class="nav nav-underline justify-content-center flex-nowrap overflow-x-auto pb-2" id="servicesNav">
-            <li class="nav-item flex-shrink-0">
+            {{-- <li class="nav-item flex-shrink-0">
                 <a class="nav-link active" aria-current="page" href="#bullet-proofing" data-bs-toggle="tab">
                     <i class="fas fa-shield-alt me-1 me-md-2"></i>
                     <span class="d-none d-md-inline">Bullet</span> Proofing
                 </a>
-            </li>
+            </li> --}}
             <li class="nav-item flex-shrink-0">
-                <a class="nav-link" href="#glass-manufacturing" data-bs-toggle="tab">
+                <a class="nav-link active" aria-current="page" href="#glass-manufacturing" data-bs-toggle="tab">
                     <i class="fas fa-industry me-1 me-md-2"></i>
                     <span class="d-none d-md-inline">Glass</span> Manufacturing
                 </a>
             </li>
-            <li class="nav-item flex-shrink-0">
+            {{-- <li class="nav-item flex-shrink-0">
                 <a class="nav-link" href="#glass-processing" data-bs-toggle="tab">
                     <i class="fas fa-cut me-1 me-md-2"></i>
                     <span class="d-none d-md-inline">Glass</span> Processing
                 </a>
-            </li>
+            </li> --}}
             <li class="nav-item flex-shrink-0">
                 <a class="nav-link" href="#aluminum-manufacturing" data-bs-toggle="tab">
                     <i class="fas fa-cogs me-1 me-md-2"></i>
@@ -82,15 +82,15 @@
 
         <!-- Tab Content -->
         <div class="tab-content" id="servicesTabContent">
-            <div class="tab-pane fade show active" id="bullet-proofing">
+            {{-- <div class="tab-pane fade show active" id="bullet-proofing">
                 @include('plus.add_bulletproof')
-            </div>
-            <div class="tab-pane fade" id="glass-manufacturing">
+            </div> --}}
+            <div class="tab-pane fade show active" id="glass-manufacturing">
                 @include('plus.add_glassmfg')
             </div>
-            <div class="tab-pane fade" id="glass-processing">
+            {{-- <div class="tab-pane fade" id="glass-processing">
                 @include('plus.add_glasspro')
-            </div>
+            </div> --}}
             <div class="tab-pane fade" id="aluminum-manufacturing">
                 @include('plus.add_alummfg')
             </div>
