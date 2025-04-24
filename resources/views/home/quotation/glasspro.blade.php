@@ -34,7 +34,7 @@
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
-    <div class="container py-5">
+    <div class=" me-5 ms-5 py-5">
         <h3 class="mb-4 text-muted">Get a quotation for:</h3>
         <div class="mb-3">
             <label for="type" class="form-label text-muted">Type <span class="text-danger">*</span></label>
@@ -46,89 +46,94 @@
             </select>
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="details-grid">
-                    <!-- First row - Size and Thickness -->
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="size" class="form-label text-muted">Size <span class="text-danger">*</span></label>
-                            <select id="size" class="form-select form-select-sm" aria-label="Size selection" required>
-                                <option disabled selected value="">Select Size</option>
-                                <option value="1">Small</option>
-                                <option value="2">Medium</option>
-                                <option value="3">Large</option>
-                                <option value="4">Custom</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="thickness" class="form-label text-muted">Thickness (mm) <span class="text-danger">*</span></label>
-                            <select id="thickness" class="form-select form-select-sm" aria-label="Thickness selection" required>
-                                <option disabled selected value="">Select Thickness</option>
-                                <option value="1">10mm</option>
-                                <option value="2">15mm</option>
-                                <option value="3">20mm</option>
-                                <option value="4">25mm</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Second row - Height and Width -->
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="height" class="form-label text-muted">Height (mm) <span class="text-danger">*</span></label>
-                            <input id="height" class="form-control form-control-sm" type="number" placeholder="Enter height in mm" aria-label="Height" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="width" class="form-label text-muted">Width (mm) <span class="text-danger">*</span></label>
-                            <input id="width" class="form-control form-control-sm" type="number" placeholder="Enter width in mm" aria-label="Width" required>
-                        </div>
-                    </div>
+        <div id="item-rows-container">
+            <!-- Initial row -->
+            <div class="row mb-3 item-row" data-row="1">
+                <!-- Glass Type -->
+                <div class="col-md-2">
+                    <label class="form-label text-muted">Glass Type <span class="text-danger">*</span></label>
+                    <select name="type[]" class="form-select form-select-sm" required>
+                        <option disabled selected value>Select Glass Type</option>
+                        <option value="1">Tempered Glass</option>
+                        <option value="2">Laminated Glass</option>
+                        <option value="3">Curved Tempered Glass</option>
+                        <option value="4">Insulating Glass Unit (IGU)</option>
+                    </select>
                 </div>
-            </div>
 
-            <!-- Third row - Color and Quantity/Remarks -->
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <p class="text-muted">Color <span class="text-danger">*</span></p>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="color" id="colorBlack" value="black">
-                        <label class="form-check-label" for="colorBlack">
-                            Black
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="color" id="colorWhite" value="white">
-                        <label class="form-check-label" for="colorWhite">
-                            White
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="color" id="colorSilver" value="silver">
-                        <label class="form-check-label" for="colorSilver">
-                            Silver
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="color" id="colorGray" value="gray">
-                        <label class="form-check-label" for="colorGray">
-                            Gray
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="color" id="colorCustom" value="custom">
-                        <label class="form-check-label" for="colorCustom">
-                            Custom
-                        </label>
-                    </div>
+                <!-- Size -->
+                <div class="col-md-1">
+                    <label class="form-label text-muted">Size <span class="text-danger">*</span></label>
+                    <select name="size[]" class="form-select form-select-sm" required>
+                        <option disabled selected value="">Select Size</option>
+                        <option value="1">Small</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Large</option>
+                        <option value="4">Custom</option>
+                    </select>
                 </div>
-                <div class="col-md-6">
-                    <label for="qty" class="form-label text-muted">Quantity <span class="text-danger">*</span></label>
-                    <input id="qty" class="form-control form-control-sm" type="number" min="1" value="1" required>
 
-                    <label for="remarks" class="form-label text-muted mt-3">Remarks</label>
+                <!-- Thickness -->
+                <div class="col-md-2">
+                    <label class="form-label text-muted">Thickness <span class="text-danger">*</span></label>
+                    <select name="thickness[]" class="form-select form-select-sm" required>
+                        <option disabled selected value="">Select Thickness</option>
+                        <option value="1">10mm</option>
+                        <option value="2">15mm</option>
+                        <option value="3">20mm</option>
+                        <option value="4">25mm</option>
+                    </select>
+                </div>
+
+                <!-- Height -->
+                <div class="col-md-1">
+                    <label class="form-label text-muted">Height 1 <span class="text-danger">*</span></label>
+                    <input name="height1[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
+                </div>
+                <div class="col-md-1">
+                    <label class="form-label text-muted">Height 2 <span class="text-danger">*</span></label>
+                    <input name="height2[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
+                </div>
+
+                <!-- Width -->
+                <div class="col-md-1">
+                    <label class="form-label text-muted">Width 1 <span class="text-danger">*</span></label>
+                    <input name="width1[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
+                </div>
+                <div class="col-md-1">
+                    <label class="form-label text-muted">Width 2 <span class="text-danger">*</span></label>
+                    <input name="width2[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
+                </div>
+
+                <!-- Color -->
+                <div class="col-md-2">
+                    <label class="form-label text-muted">Color <span class="text-danger">*</span></label>
+                    <select name="color[]" class="form-select form-select-sm" required>
+                        <option disabled selected value="">Select Color</option>
+                        <option value="1">Black</option>
+                        <option value="2">White</option>
+                        <option value="3">Silver</option>
+                        <option value="4">Gray</option>
+                        <option value="5">Custom</option>
+                    </select>
+                </div>
+
+                <!-- Quantity -->
+                <div class="col-md-1">
+                    <label class="form-label text-muted">Qty <span class="text-danger">*</span></label>
+                    <input name="qty[]" class="form-control form-control-sm" type="number" min="1" value="1" required>
+                </div>
+
+                <!-- Remarks -->
+                <div class=" mt-3 mb-3">
+                    <label for="remarks" class="form-label text-muted">Remarks <span class="text-danger">*</span></label>
                     <textarea id="remarks" name="remarks" rows="3" placeholder="Enter special instructions or remarks here"
-                        class="form-control form-control-sm"></textarea>
+                        class="form-control form-control-sm" required></textarea>
+                </div>
+
+                <!-- Remove button (hidden for first row) -->
+                <div class="col-md-12 mt-2 text-end">
+                    <button type="button" class="btn btn-sm btn-danger remove-row-btn" style="display: none;">Remove Row</button>
                 </div>
             </div>
         </div>
@@ -141,15 +146,84 @@
         </div>
 
         <div class="row">
-            <div class="col-md-6">
-                <button type="submit" class="btn btn-danger btn-lg w-100">Add more items</button>
-            </div>
-            <div class="col-md-6">
-                <button type="submit" class="btn btn-primary btn-lg w-100">Get quotation</button>
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary" id="add-item-row-btn">Add item row</button>
+                <button type="submit" class="btn btn-primary btn-lg ">Get quotation</button>
             </div>
         </div>
+    </div>
+
 
     </div>
+    <!-- Add this alert div at the top of your form (initially hidden) -->
+    <!-- Alert Container (initially empty) -->
+    <div id="alertContainer" class="ms-5 me-5"></div>
+
+
+    <!-- Your existing container and button -->
+    <div id="item-rows-container">
+        <!-- Your initial row here -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('item-rows-container');
+            const addButton = document.getElementById('add-item-row-btn');
+            const alertContainer = document.getElementById('alertContainer');
+            let rowCount = 1;
+            const MAX_ROWS = 10;
+
+            // Function to show Bootstrap alert
+            function showMaxItemsAlert() {
+                alertContainer.innerHTML = `
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                Maximum limit reached: You can only add up to 10 items
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        `;
+
+                // Initialize Bootstrap alert
+                new bootstrap.Alert(alertContainer.querySelector('.alert'));
+            }
+
+            // Add new row
+            addButton.addEventListener('click', function() {
+                if (rowCount >= MAX_ROWS) {
+                    showMaxItemsAlert();
+                    return;
+                }
+
+                rowCount++;
+                const template = document.querySelector('.item-row');
+                const newRow = template.cloneNode(true);
+
+                newRow.setAttribute('data-row', rowCount);
+                newRow.querySelector('.remove-row-btn').style.display = 'inline-block';
+
+                const inputs = newRow.querySelectorAll('input, select, textarea');
+                inputs.forEach(input => {
+                    if (input.name !== 'qty[]') input.value = '';
+                });
+
+                container.appendChild(newRow);
+            });
+
+            // Remove row
+            container.addEventListener('click', function(e) {
+                if (e.target.classList.contains('remove-row-btn')) {
+                    const rows = document.querySelectorAll('.item-row');
+                    if (rows.length > 1) {
+                        e.target.closest('.item-row').remove();
+                        rowCount--;
+                    } else {
+                        alert("You need to keep at least one row");
+                    }
+                }
+            });
+        });
+    </script>
+
 
     <!-- Footer -->
     @include ('plus.footer')
