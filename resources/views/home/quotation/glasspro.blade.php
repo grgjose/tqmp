@@ -124,6 +124,13 @@
                     <input name="qty[]" class="form-control form-control-sm" type="number" min="1" value="1" required>
                 </div>
 
+                <!-- Remarks -->
+                <div class=" mt-3 mb-3">
+                    <label for="remarks" class="form-label text-muted">Remarks <span class="text-danger">*</span></label>
+                    <textarea id="remarks" name="remarks" rows="3" placeholder="Enter special instructions or remarks here"
+                        class="form-control form-control-sm" required></textarea>
+                </div>
+
                 <!-- Remove button (hidden for first row) -->
                 <div class="col-md-12 mt-2 text-end">
                     <button type="button" class="btn btn-sm btn-danger remove-row-btn" style="display: none;">Remove Row</button>
@@ -145,7 +152,7 @@
             </div>
         </div>
     </div>
-   
+
 
     </div>
     <!-- Add this alert div at the top of your form (initially hidden) -->
