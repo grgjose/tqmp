@@ -246,6 +246,7 @@
                                     <th>Status</th>
                                     <th>Total Pricing</th>
                                     <th>Valid Until</th>
+                                    <th class="text-center">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -268,6 +269,7 @@
                                     <td><span class="text-success">{{ $quote->status }}</span></td>
                                     <td>{{ $quote->final_price }}</td>
                                     <td>{{ $quote->valid_until }}</td>
+                                    <td class="text-center"><button type="button" class="btn btn-sm btn-primary py-1 px-2" style="font-size: 0.7rem;">Add to Cart</button></td>
                                 </tr>
                                 @endforeach
                             </tbody>

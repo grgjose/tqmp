@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
     <!-- Chatbot JS -->
     <script src="{{ asset('js/chatbot.js') }}"></script>
-    
+
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="{{ asset('storage/css/main.css') }}">
 </head>
@@ -77,10 +77,60 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="fw-bold" style="color: #7E1416;">Aluminum Profiles</h2>
-                <p class="">
-                    <!-- Raw Material Procurement > Mold Design and Processing > Extrusion Processing > Quality Inspection > Finished Product Packaging -->
-                    <img src="{{ asset('storage/aluminum/desc.jpg') }}" alt="Philippines" class="img-fluid rounded lg">
-                </p>
+                <div class="d-flex justify-content-between align-items-center py-5">
+                    <div class="text-center">
+                        <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                            <span>✓</span>
+                        </div>
+                        <div class="mt-1 small">Raw Material Procurement</div>
+                    </div>
+
+                    <div class="flex-grow-1 mx-2">
+                        <div class="progress" style="height: 2px;">
+                            <div class="progress-bar bg-primary" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                       <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                            <span>✓</span>
+                        </div>
+                        <div class="mt-1 small">Mold Design & Processing</div>
+                    </div>
+                    <div class="flex-grow-1 mx-2">
+                        <div class="progress" style="height: 2px;">
+                            <div class="progress-bar bg-primary" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                       <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                            <span>✓</span>
+                        </div>
+                        <div class="mt-1 small">Extrusion Processing</div>
+                    </div>
+                    <div class="flex-grow-1 mx-2">
+                        <div class="progress" style="height: 2px;">
+                            <div class="progress-bar bg-primary" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                       <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                            <span>✓</span>
+                        </div>
+                        <div class="mt-1 small">Quality Inspection</div>
+                    </div>
+                    <div class="flex-grow-1 mx-2">
+                        <div class="progress" style="height: 2px;">
+                            <div class="progress-bar bg-primary" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                       <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                            <span>✓</span>
+                        </div>
+                        <div class="mt-1 small">Finished Product Packaging</div>
+                    </div>
+                </div>
             </div>
 
             <div class="container">
@@ -93,7 +143,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/01.jpg') }}" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Angle Sections</h5>
+                                        <h6 class="card-title">Angle Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -103,7 +153,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/02.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Storefront Components</h5>
+                                        <h6 class="card-title">Storefront Components</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -113,7 +163,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/03.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Storefront Components</h5>
+                                        <h6 class="card-title">Storefront Components</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -123,7 +173,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/04.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Storefront Components</h5>
+                                        <h6 class="card-title">Storefront Components</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -133,7 +183,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/05.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Storefront Components</h5>
+                                        <h6 class="card-title">Storefront Components</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -143,7 +193,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/06.jpg') }}" class="card-img-top" alt="TQMP Screen Door and Windows" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Screen Door and Windows</h5>
+                                        <h6 class="card-title">Screen Door and Windows</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -160,7 +210,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/07.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Sliding Door Sections</h5>
+                                        <h6 class="card-title">Sliding Door Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -170,7 +220,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/08.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Sliding Door Sections</h5>
+                                        <h6 class="card-title">Sliding Door Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -180,7 +230,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/09.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Sliding Door Sections</h5>
+                                        <h6 class="card-title">Sliding Door Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -190,7 +240,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/10.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Sliding Door Sections</h5>
+                                        <h6 class="card-title">Sliding Door Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -200,7 +250,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/11.jpg') }}" class="card-img-top" alt="TQMP Miscellaneous Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Miscellaneous Sections</h5>
+                                        <h6 class="card-title">Miscellaneous Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -210,7 +260,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/12.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Swing Door Sections</h5>
+                                        <h6 class="card-title">Swing Door Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -227,7 +277,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/13.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Swing Door Sections</h5>
+                                        <h6 class="card-title">Swing Door Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -237,7 +287,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/14.jpg') }}" class="card-img-top" alt="TQMP Counter Trim Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Counter Trim Sections</h5>
+                                        <h6 class="card-title">Counter Trim Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -247,7 +297,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/15.jpg') }}" class="card-img-top" alt="TQMP YC Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">YC Sections</h5>
+                                        <h6 class="card-title">YC Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -257,7 +307,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/16.jpg') }}" class="card-img-top" alt="TQMP Vent Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Vent Sections</h5>
+                                        <h6 class="card-title">Vent Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -267,7 +317,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/17.jpg') }}" class="card-img-top" alt="TQMP Flat Bar Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Flat Bar Sections</h5>
+                                        <h6 class="card-title">Flat Bar Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -277,7 +327,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/18.jpg') }}" class="card-img-top" alt="TQMP Counter Nosing Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Counter Nosing Sections</h5>
+                                        <h6 class="card-title">Counter Nosing Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
@@ -294,7 +344,7 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/aluminum/19.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Swing Door Sections</h5>
+                                        <h6 class="card-title">Swing Door Sections</h6>
                                         <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
                                     </div>
                                 </div>
