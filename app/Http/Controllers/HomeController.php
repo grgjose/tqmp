@@ -122,18 +122,6 @@ class HomeController extends Controller
         ]);
     }
 
-
-    public function quotation()
-    {
-        /** @var \Illuminate\Auth\SessionGuard $auth */
-        $auth = auth();
-        $my_user = $auth->user();
-
-        return view('glass.processing.get_quotation', [
-            'my_user' => $my_user,
-        ]);
-    }
-
     public function addInquiry(Request $request){
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();

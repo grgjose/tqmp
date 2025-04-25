@@ -15,11 +15,26 @@ return new class extends Migration
             $table->id();
             $table->integer('user_id');
             $table->string('reference')->nullable();
-            $table->string('type')->nullable();
-            $table->string('size')->nullable();
-            $table->string('color')->nullable();
-            $table->string('filename')->nullable();
-            $table->string('message');
+            $table->string('quotation_type')->nullable();
+
+            // For Bullet Proofing
+            $table->string('plate_number')->nullable();
+            $table->string('model')->nullable();
+            $table->string('unit_color')->nullable();
+            $table->json('services')->nullable();
+            $table->string('remarks')->nullable();
+
+            // For Glass Processing
+            $table->json('type')->nullable();
+            $table->json('thickness')->nullable();
+            $table->json('h1')->nullable();
+            $table->json('h2')->nullable();
+            $table->json('w1')->nullable();
+            $table->json('w2')->nullable();
+            $table->json('quantity')->nullable();
+            $table->json('color')->nullable();
+            $table->json('cutting_details')->nullable();
+
             $table->string('status')->nullable();
             $table->double('final_price')->nullable()->default(0.0);
             $table->datetime('valid_until')->nullable();

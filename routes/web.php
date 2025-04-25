@@ -36,11 +36,11 @@ Route::get('/profile', [HomeController::class, 'profile']);
 Route::get('/add-to-cart/{id}', [ProductController::class, 'before_add_to_cart']);
 Route::post('/add-to-cart/{id}', [ProductController::class, 'after_add_to_cart']);
 Route::get('/cart', [ProductController::class, 'cart']);
-Route::get('/get-quotation', [QuotationController::class, 'getQuotation']);
+Route::get('/get-quotation-bulletproofing', [QuotationController::class, 'quotationBulletProofing']);
+Route::get('/get-quotation-glassprocessing', [QuotationController::class, 'quotationGlassProcessing']);
 Route::post('/create-quotation', [QuotationController::class, 'store']);
 Route::get('/show-quotation/{reference}', [QuotationController::class, 'showQuotation']);
 Route::post('/user-send-message', [QuotationController::class, 'userSendMessage']);
-
 
 // Product Pages
 Route::get('/services', [ServicesController::class, 'index']);

@@ -34,123 +34,190 @@
     <!-- Header -->
     @include('plus.navbar')
     <!-- End of Header -->
+
+    <style>
+        .dropzone {
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            color: #999;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+    
+        .dropzone.dragover {
+            border-color: #007bff;
+            color: #007bff;
+        }
+    
+        .preview-list {
+            list-style: none;
+            padding-left: 0;
+        }
+    
+        .preview-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            position: relative;
+        }
+    
+        .preview-item img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    
+        .preview-item .remove-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            color: red;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    
+        .progress {
+            width: 100%;
+            height: 8px;
+            margin-top: 5px;
+            background-color: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    
+        .progress-bar {
+            height: 100%;
+            background-color: #0d6efd;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+    </style>
+
     <div class=" me-5 ms-5 py-5">
-        <h3 class="mb-4 text-muted">Get a quotation for:</h3>
-        <div class="mb-3">
-            <label for="type" class="form-label text-muted">Type <span class="text-danger">*</span></label>
-            <select id="type" class="form-select form-select-sm" aria-label="Type selection" disabled>
-                <option disabled selected value>Glass Processing</option>
-                <option value="1">Glass Processing</option>
-                <option value="2">Bullet Proofing</option>
-                <option value="3">Other Type</option>
-            </select>
-        </div>
+        <form action="/create-quotation" method="POST" enctype="multipart/form-data">
+            @csrf
+            <h3 class="mb-4 text-muted">Get a quotation for:</h3>
+            <div class="mb-3">
+                <label for="type" class="form-label text-muted">Type <span class="text-danger">*</span></label>
+                <select id="type" class="form-select form-select-sm" aria-label="Type selection" disabled>
+                    <option value="glass" disabled selected>Glass Processing</option>
+                </select>
+                <input type="hidden" name="quotation_type" value="glass">
+            </div>
 
-        <div id="item-rows-container">
-            <!-- Initial row -->
-            <div class="row mb-3 item-row" data-row="1">
-                <!-- Glass Type -->
-                <div class="col-md-2">
-                    <label class="form-label text-muted">Glass Type <span class="text-danger">*</span></label>
-                    <select name="type[]" class="form-select form-select-sm" required>
-                        <option disabled selected value>Select Glass Type</option>
-                        <option value="1">Tempered Glass</option>
-                        <option value="2">Laminated Glass</option>
-                        <option value="3">Curved Tempered Glass</option>
-                        <option value="4">Insulating Glass Unit (IGU)</option>
-                    </select>
-                </div>
+            <div id="item-rows-container">
+                <!-- Initial row -->
+                <div class="row mb-3 item-row" data-row="1">
+                    <!-- Glass Type -->
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Glass Type <span class="text-danger">*</span></label>
+                        <select name="type[]" class="form-select form-select-sm" required>
+                            <option disabled selected value>Select Glass Type</option>
+                            @foreach($products as $product)
+                                @if($product->category_id == 4)
+                                    <option value="{{$product->id}}">{{ $product->display_name }}</option>
+                                @endif
+                            @endforeach
+                            </select>
+                    </div>
 
-                <!-- Size -->
-                <div class="col-md-1">
-                    <label class="form-label text-muted">Size <span class="text-danger">*</span></label>
-                    <select name="size[]" class="form-select form-select-sm" required>
-                        <option disabled selected value="">Select Size</option>
-                        <option value="1">Small</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Large</option>
-                        <option value="4">Custom</option>
-                    </select>
-                </div>
+                    <!-- Thickness -->
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Thickness <span class="text-danger">*</span></label>
+                        <select name="thickness[]" class="form-select form-select-sm" required>
+                            <option disabled selected value="">Select Thickness</option>
+                            <option value="10mm">10mm</option>
+                            <option value="15mm">15mm</option>
+                            <option value="20mm">20mm</option>
+                            <option value="25mm">25mm</option>
+                        </select>
+                    </div>
 
-                <!-- Thickness -->
-                <div class="col-md-2">
-                    <label class="form-label text-muted">Thickness <span class="text-danger">*</span></label>
-                    <select name="thickness[]" class="form-select form-select-sm" required>
-                        <option disabled selected value="">Select Thickness</option>
-                        <option value="1">10mm</option>
-                        <option value="2">15mm</option>
-                        <option value="3">20mm</option>
-                        <option value="4">25mm</option>
-                    </select>
-                </div>
+                    <!-- Height -->
+                    <div class="col-md-1">
+                        <label class="form-label text-muted">Height 1 <span class="text-danger">*</span></label>
+                        <input name="height1[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
+                    </div>
+                    <div class="col-md-1">
+                        <label class="form-label text-muted">Height 2 <span class="text-danger">*</span></label>
+                        <input name="height2[]" class="form-control form-control-sm" type="number" placeholder="mm">
+                    </div>
 
-                <!-- Height -->
-                <div class="col-md-1">
-                    <label class="form-label text-muted">Height 1 <span class="text-danger">*</span></label>
-                    <input name="height1[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
-                </div>
-                <div class="col-md-1">
-                    <label class="form-label text-muted">Height 2 <span class="text-danger">*</span></label>
-                    <input name="height2[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
-                </div>
+                    <!-- Width -->
+                    <div class="col-md-1">
+                        <label class="form-label text-muted">Width 1 <span class="text-danger">*</span></label>
+                        <input name="width1[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
+                    </div>
+                    <div class="col-md-1">
+                        <label class="form-label text-muted">Width 2 <span class="text-danger">*</span></label>
+                        <input name="width2[]" class="form-control form-control-sm" type="number" placeholder="mm">
+                    </div>
 
-                <!-- Width -->
-                <div class="col-md-1">
-                    <label class="form-label text-muted">Width 1 <span class="text-danger">*</span></label>
-                    <input name="width1[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
-                </div>
-                <div class="col-md-1">
-                    <label class="form-label text-muted">Width 2 <span class="text-danger">*</span></label>
-                    <input name="width2[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
-                </div>
+                    <!-- Color -->
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Color <span class="text-danger">*</span></label>
+                        <select name="color[]" class="form-select form-select-sm" required>
+                            <option disabled selected value="">Select Color</option>
+                            <option value="white">White</option>
+                            <option value="aqua">Aqua</option>
+                            <option value="shade">Shade</option>
+                            <option value="clear">clear</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
 
-                <!-- Color -->
-                <div class="col-md-2">
-                    <label class="form-label text-muted">Color <span class="text-danger">*</span></label>
-                    <select name="color[]" class="form-select form-select-sm" required>
-                        <option disabled selected value="">Select Color</option>
-                        <option value="1">Black</option>
-                        <option value="2">White</option>
-                        <option value="3">Silver</option>
-                        <option value="4">Gray</option>
-                        <option value="5">Custom</option>
-                    </select>
-                </div>
+                    <!-- Quantity -->
+                    <div class="col-md-1">
+                        <label class="form-label text-muted">Qty <span class="text-danger">*</span></label>
+                        <input name="quantity[]" class="form-control form-control-sm" type="number" min="1" value="1" required>
+                    </div>
 
-                <!-- Quantity -->
-                <div class="col-md-1">
-                    <label class="form-label text-muted">Qty <span class="text-danger">*</span></label>
-                    <input name="qty[]" class="form-control form-control-sm" type="number" min="1" value="1" required>
-                </div>
+                    <!-- Remarks -->
+                    <div class=" mt-3 mb-3">
+                        <label for="remarks" class="form-label text-muted">Cutting Details<span class="text-danger">*</span></label>
+                        <textarea id="remarks" name="cutting_details" rows="3" placeholder="Enter special instructions or cutting details here"
+                            class="form-control form-control-sm"></textarea>
+                    </div>
 
-                <!-- Remarks -->
-                <div class=" mt-3 mb-3">
-                    <label for="remarks" class="form-label text-muted">Remarks <span class="text-danger">*</span></label>
-                    <textarea id="remarks" name="remarks" rows="3" placeholder="Enter special instructions or remarks here"
-                        class="form-control form-control-sm" required></textarea>
-                </div>
-
-                <!-- Remove button (hidden for first row) -->
-                <div class="col-md-12 mt-2 text-end">
-                    <button type="button" class="btn btn-sm btn-danger remove-row-btn" style="display: none;">Remove Row</button>
+                    <!-- Remove button (hidden for first row) -->
+                    <div class="col-md-12 mt-2 text-end">
+                        <button type="button" class="btn btn-sm btn-danger remove-row-btn" style="display: none;">Remove Row</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <div class="mb-3">
-            <label for="file" class="form-label text-muted">Upload Sample (optional)</label>
-            <input class="form-control form-control-sm" id="formFileSm" type="file" accept=".pdf, .doc, .docx, .jpg, .jpeg, .png">
-            <div id="file-name" class="file-name mt-3 text-muted">No file chosen</div>
-        </div>
+            <!-- File Upload Section -->
+            <div class="col-md-12 mb-3">
+                <label class="form-label text-muted">Upload Samples</label>
+                <div id="dropzone" class="dropzone">
+                    Drag & drop files here or click to select
+                </div>
+                <input id="fileUpload" name="filenames[]" type="file" hidden multiple accept=".pdf, .doc, .docx, .jpg, .jpeg, .png">
+                <ul id="fileList" class="preview-list mt-3 text-muted"></ul>
+            </div>
 
-        <div class="row">
             <div class="col-md-12">
-                <button type="button" class="btn btn-primary" id="add-item-row-btn">Add item row</button>
-                <button type="submit" class="btn btn-primary btn-lg ">Get quotation</button>
+                <div class="row">
+                    <div class="col-md-6 mb-2">
+                        <button type="button" class="btn btn-primary btn-lg w-100" id="add-item-row-btn">Add item row</button>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <button type="submit" class="btn btn-danger btn-lg w-100">Submit Quotation Request</button>
+                    </div>
+                </div>
+                {{-- <button type="button" class="btn btn-primary col-" >Add item row</button>
+                <button type="submit" class="btn btn-danger btn-lg ">Submit Quotation Request</button> --}}
             </div>
-        </div>
+
+        </form>
     </div>
 
 
@@ -166,6 +233,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const container = document.getElementById('item-rows-container');
@@ -224,6 +292,116 @@
         });
     </script>
 
+    <script>
+        const dropzone = document.getElementById('dropzone');
+        const fileInput = document.getElementById('fileUpload');
+        const fileList = document.getElementById('fileList');
+    
+        let filesToUpload = [];
+    
+        dropzone.addEventListener('click', () => fileInput.click());
+    
+        dropzone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropzone.classList.add('dragover');
+        });
+    
+        dropzone.addEventListener('dragleave', () => {
+            dropzone.classList.remove('dragover');
+        });
+    
+        dropzone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropzone.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+    
+        fileInput.addEventListener('change', () => {
+            handleFiles(fileInput.files);
+        });
+    
+        function handleFiles(selectedFiles) {
+            Array.from(selectedFiles).forEach(file => {
+                const fileId = crypto.randomUUID();
+                filesToUpload.push({
+                    id: fileId,
+                    file: file,
+                    progress: 0,
+                    interval: null
+                });
+            });
+            updateFileList();
+        }
+    
+        function updateFileList() {
+            fileList.innerHTML = '';
+    
+            filesToUpload.forEach((item, index) => {
+                const { id, file, progress } = item;
+    
+                const li = document.createElement('li');
+                li.classList.add('preview-item');
+                li.setAttribute('data-id', id);
+    
+                if (file.type.startsWith('image/')) {
+                    const img = document.createElement('img');
+                    img.src = URL.createObjectURL(file);
+                    img.onload = () => URL.revokeObjectURL(img.src);
+                    li.appendChild(img);
+                }
+    
+                const span = document.createElement('span');
+                span.textContent = file.name;
+                li.appendChild(span);
+    
+                const removeBtn = document.createElement('span');
+                removeBtn.classList.add('remove-btn');
+                removeBtn.innerHTML = '&times;';
+                removeBtn.addEventListener('click', () => {
+                    removeFileById(id);
+                });
+                li.appendChild(removeBtn);
+    
+                // Progress bar
+                const progressWrapper = document.createElement('div');
+                progressWrapper.className = 'progress';
+                const progressBar = document.createElement('div');
+                progressBar.className = 'progress-bar';
+                progressBar.style.width = `${progress}%`;
+                progressWrapper.appendChild(progressBar);
+                li.appendChild(progressWrapper);
+    
+                fileList.appendChild(li);
+    
+                // Start upload simulation if not already complete
+                if (progress < 100 && item.interval === null) {
+                    item.interval = simulateUpload(item, progressBar);
+                }
+            });
+        }
+    
+        function simulateUpload(fileItem, barElement) {
+            return setInterval(() => {
+                if (fileItem.progress < 100) {
+                    fileItem.progress += 10;
+                    barElement.style.width = `${fileItem.progress}%`;
+                } else {
+                    clearInterval(fileItem.interval);
+                    fileItem.interval = null;
+                }
+            }, 100);
+        }
+    
+        function removeFileById(fileId) {
+            const index = filesToUpload.findIndex(f => f.id === fileId);
+            if (index > -1) {
+                const fileItem = filesToUpload[index];
+                if (fileItem.interval) clearInterval(fileItem.interval);
+                filesToUpload.splice(index, 1);
+                updateFileList();
+            }
+        }
+    </script>
 
     <!-- Footer -->
     @include ('plus.footer')
