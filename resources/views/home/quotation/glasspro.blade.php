@@ -35,7 +35,7 @@
     @include('plus.navbar')
     <!-- End of Header -->
     <div class=" me-5 ms-5 py-5">
-        <h3 class="mb-4 text-muted">Get a quotation for:</h3>
+        <h4 class="mb-4 text-muted">Get a quotation for:</h4>
         <div class="mb-3">
             <label for="type" class="form-label text-muted">Type <span class="text-danger">*</span></label>
             <select id="type" class="form-select form-select-sm" aria-label="Type selection" disabled>
