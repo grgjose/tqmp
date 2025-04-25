@@ -22,7 +22,7 @@
                                         <a href="/get_quotation_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                             @if($my_user==null)
                                             data-bs-toggle="modal" data-bs-target="#loginModal"
-                                            @endif>Get Quotation</a>
+                                            @endif>Add to Cart</a>
                                     </div>
 
                                 </div>
@@ -41,7 +41,7 @@
                                 <a href="/get_quotation_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Get Quotation</a>
+                                    @endif>Add to Cart</a>
                             </div>
 
                         </div>
@@ -58,7 +58,7 @@
                                 <a href="/get_quotation_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Get Quotation</a>
+                                    @endif>Add to Cart</a>
                             </div>
 
                         </div>
@@ -77,7 +77,7 @@
                                 <a href="/get_quotation_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Get Quotation</a>
+                                    @endif>Add to Cart</a>
                             </div>
 
                         </div>
@@ -94,7 +94,7 @@
                                 <a href="/get_quotation_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Get Quotation</a>
+                                    @endif>Add to Cart</a>
                             </div>
 
                         </div>
@@ -112,7 +112,7 @@
                                 <a href="/get_quotation_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Get Quotation</a>
+                                    @endif>Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                                 <a href="/get_quotation_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Get Quotation</a>
+                                    @endif>Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -148,7 +148,7 @@
                                 <a href="/get_quotation_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Get Quotation</a>
+                                    @endif>Add to Cart</a>
                             </div>
                         </div>
                     </div>
