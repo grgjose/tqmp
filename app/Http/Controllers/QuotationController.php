@@ -135,7 +135,7 @@ class QuotationController extends Controller
             $quotation->reference = $this->generateQuotationID($quotation->id+1);
             $quotation->quotation_type = $quotationType;
             $quotation->type = json_encode($validated['type']);
-            $quotation->thichkness = json_encode($validated['thickness']);
+            $quotation->thickness = json_encode($validated['thickness']);
             $quotation->h1 = json_encode($validated['height1']);
             $quotation->h2 = json_encode($validated['height2']);
             $quotation->w1 = json_encode($validated['width1']);
