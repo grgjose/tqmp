@@ -40,70 +40,86 @@
             <button class="card-button btn btn-primary">Save Changes</button>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="text-center">
-                    <img src="{{ asset('storage/user-pics/'.$my_user->user_pic) }}" alt="Profile" class="img-fluid rounded mb-2" style="height: 50%; width: 50%;">
+            <!-- Profile Section (Top) -->
+            <div class="col-md-12 mb-4">
+                <div class="row">
+                    <!-- Profile Picture Column -->
+                    <div class="col-md-4">
+                        <div class="text-center mb-3">
+                            <img src="{{ asset('storage/user-pics/'.$my_user->user_pic) }}" alt="Profile"
+                                class="img-fluid rounded" style="max-height: 200px; width: auto;">
+                        </div>
+                    </div>
 
-                </div>
+                    <!-- Profile Update Column -->
+                    <div class="col-md-8">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Update Profile Picture</label>
+                            <input type="file" class="form-control" accept="image/*">
+                        </div>
 
-                <div class="mt-3">
-                    <label for="password" class="form-label fw-bold">Update Profile Picture</label>
-                    <input type="file" class="form-control mb-2" accept="image/*">
-                    <label for="password" class="form-label fw-bold">Old Password</label>
-                    <input type="password" class="form-control mb-2" placeholder="Old Password">
-                    <label for="password" class="form-label fw-bold">New Password</label>
-                    <input type="password" class="form-control mb-4" placeholder="New Password">
-                    <button class="card-button btn btn-primary w-100">Change Password</button>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Old Password</label>
+                            <input type="password" class="form-control" placeholder="Old Password">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">New Password</label>
+                            <input type="password" class="form-control" placeholder="New Password">
+                        </div>
+
+                        <!-- <button class="btn btn-primary">Change Password</button> -->
+                    </div>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="row g-2">
+
+            <!-- User Details Section (Bottom) -->
+            <div class="col-md-12">
+                <div class="row g-3">
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Username</label>
-                        <input type="text" class="form-control" value="john.doe" placeholder="User Name">
+                        <input type="text" class="form-control py-2" value="john.doe" placeholder="User Name">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label fw-bold">First Name</label>
-                        <input type="text" class="form-control" value="{{ $my_user->fname }}" placeholder="First Name">
+                        <input type="text" class="form-control py-2" value="{{ $my_user->fname }}" placeholder="First Name">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Middle Name</label>
-                        <input type="text" class="form-control" value="{{ $my_user->mname }}" placeholder="Middle Name">
+                        <input type="text" class="form-control py-2" value="{{ $my_user->mname }}" placeholder="Middle Name">
                     </div>
-                    <!-- <div class="col-md-6">
-                        <label class="form-label">Role</label>
-                        <select class="form-select">
-                            <option>Admin</option>
-                        </select>
-                    </div> -->
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Last Name</label>
-                        <input type="text" class="form-control" value="{{ $my_user->lname }}" placeholder="Last Name">
+                        <input type="text" class="form-control py-2" value="{{ $my_user->lname }}" placeholder="Last Name">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Extension</label>
-                        <input type="text" class="form-control" value="{{ $my_user->ext }}" placeholder="Jr., Sr., III., etc">
+                        <input type="text" class="form-control py-2" value="{{ $my_user->ext }}" placeholder="Jr., Sr., III., etc">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Email (required)</label>
-                        <input type="email" class="form-control" value="{{ $my_user->email }}" placeholder="Your Email Address">
+                        <input type="email" class="form-control py-2" value="{{ $my_user->email }}" placeholder="Your Email Address">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Birthdate</label>
-                        <input type="date" class="form-control" value="{{ $my_user->birthdate }}">
+                        <input type="date" class="form-control py-2" value="{{ $my_user->birthdate }}">
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label fw-bold">Contact #</label>
-                        <input type="number" class="form-control" value="{{ $my_user->contact_num }}" placeholder="Contact Number">
+                        <label class="form-label fw-bold">Contact Number</label>
+                        <input type="tel" class="form-control py-2" value="{{ $my_user->contact_num }}" placeholder="Contact Number">
                     </div>
-                </div>
-                <div class="mt-3">
-                    <label class="form-label fw-bold">Address</label>
-                    <textarea class="form-control" rows="5">{{ $my_user->address }}</textarea>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Default Shipping Address</label>
+                        <input type="text" class="form-control py-2" value="" placeholder="Default Shipping Address">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Billing Address</label>
+                        <input type="text" class="form-control py-2" value="" placeholder="Billing Address">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
+        <!-- <div class="row mt-4">
             <div class="col-md-12">
                 <div class="border rounded overflow-hidden mb-4">
                     <div class="bg-danger text-white p-3">
@@ -146,11 +162,13 @@
                     </div>
                 </div>
             </div> --}}
-        </div>
+        </div> -->
+
+        <hr class="text-muted mt-5 mb-5">
         <div class="row mt-4">
             <div class="col-md-12">
-                <div class="border rounded overflow-hidden mb-4">
-                    <div class="bg-danger text-white p-3">
+                <div class="mb-4">
+                    <div class="fw-bold mb-3">
                         Order History
                     </div>
                     <div class="p-0">
@@ -180,8 +198,8 @@
         </div>
         <div class="row mt-4">
             <div class="col-md-12">
-                <div class="border rounded overflow-hidden mb-4">
-                    <div class="bg-danger text-white p-3">
+                <div class="mb-4">
+                    <div class="fw-bold mb-3">
                         Current Orders
                     </div>
                     <div class="p-0">
@@ -215,8 +233,8 @@
         </div>
         <div class="row mt-4">
             <div class="col-md-12">
-                <div class="border rounded overflow-hidden mb-4">
-                    <div class="bg-danger text-white p-3">
+                <div class="mb-4">
+                    <div class="fw-bold mb-3">
                         Pending Quotations
                     </div>
                     <div class="p-0">

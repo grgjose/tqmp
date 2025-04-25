@@ -100,7 +100,7 @@
                     <div class="card border-0 shadow-lg" style="height: 500px;">
                         <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="Bulletproof" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="fw-bold mb-3">Bullet Proofing</h5>
+                            <h6 class="fw-bold mb-3">Bullet Proofing</h6>
                             <p>Equip your vehicle with unparalleled protection that rivals the strength of a tank.
                                 Our advanced armor ensures superior safety, providing peace of mind and safeguarding lives on every journey.</p>
                             <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
@@ -111,7 +111,7 @@
                     <div class="card border-0 shadow-lg" style="height: 500px;">
                         <img src="{{ asset('storage/glass-processing/igu close up.jpg') }}" alt="Glass Processing" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="fw-bold mb-3">Glass Processing</h5>
+                            <h6 class="fw-bold mb-3">Glass Processing</h6>
                             <p>Our advanced glass processing techniques ensure durability and quality, catering to a wide range of architectural and industrial needs.</p>
                             <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
                         </div>
@@ -134,7 +134,7 @@
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/glass-processing/cool silver only.jpg') }}" alt="Bulletproof" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="fw-bold">Glass</h5>
+                            <h6 class="fw-bold">Glass</h6>
                             <p class="flex-grow-1">We offer a wide range of glass products for different applications, ensuring quality and durability.</p>
                             <a href="/glassmanufacturing" class="card-button btn btn-danger mt-auto">View More</a>
                         </div>
@@ -145,7 +145,7 @@
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/home/aluminum.jpg') }}" alt="Category 2" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="fw-bold">Aluminum</h5>
+                            <h6 class="fw-bold">Aluminum</h6>
                             <p class="flex-grow-1">A versatile and lightweight metal used in a variety of applications due to its strength, corrosion resistance, and aesthetic appeal.</p>
                             <a href="aluminummanufacturing" class="card-button btn btn-danger mt-auto">View More</a>
                         </div>
@@ -156,7 +156,7 @@
                     <div class="card border-0 shadow-lg d-flex flex-column">
                         <img src="{{ asset('storage/home/gen-trade.jpg') }}" alt="Gen Trade" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="fw-bold">Other Products</h5>
+                            <h6 class="fw-bold">Other Products</h6>
                             <p class="flex-grow-1">In addition to aluminum and glass, we offer a variety of hardware products essential for construction and installation.</p>
                             <a href="/gentrade" class="card-button btn btn-danger mt-auto">View More</a>
                         </div>
