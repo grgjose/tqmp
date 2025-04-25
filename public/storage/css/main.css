@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.form-control {
+    font-size: small;
+}
+
 /* background  */
 .bg-primary {
     background-color: #1e325c !important;

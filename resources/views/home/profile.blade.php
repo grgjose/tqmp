@@ -47,11 +47,11 @@
                 </div>
 
                 <div class="mt-3">
-                    <label for="password" class="form-label">Update Profile Picture</label>
+                    <label for="password" class="form-label fw-bold">Update Profile Picture</label>
                     <input type="file" class="form-control mb-2" accept="image/*">
-                    <label for="password" class="form-label">Old Password <span class="text-danger">*</span></label>
+                    <label for="password" class="form-label fw-bold">Old Password</label>
                     <input type="password" class="form-control mb-2" placeholder="Old Password">
-                    <label for="password" class="form-label">New Password <span class="text-danger">*</span></label>
+                    <label for="password" class="form-label fw-bold">New Password</label>
                     <input type="password" class="form-control mb-4" placeholder="New Password">
                     <button class="card-button btn btn-primary w-100">Change Password</button>
                 </div>
