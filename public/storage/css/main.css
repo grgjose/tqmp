@@ -1,6 +1,11 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* background  */
+.bg-primary {
+    background-color: #1e325c !important;
+}
 /*--------------------------------------------------------------
 # Text Styles
 --------------------------------------------------------------*/
@@ -456,6 +461,18 @@ body {
 .btn:focus {
     outline: none;
     box-shadow: 0 0 8px rgba(23, 38, 71, 0.8);
+}
+
+button.btn-secondary {
+    background-color: #383838;
+    color: white;
+    border: none;
+    font-size: smaller;
+}
+
+button.btn-secondary:hover {
+    background-color: #383838;
+    font-size: smaller;
 }
 
 button.btn-danger {

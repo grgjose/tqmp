@@ -45,17 +45,17 @@
             cursor: pointer;
             transition: border-color 0.3s;
         }
-    
+
         .dropzone.dragover {
             border-color: #007bff;
             color: #007bff;
         }
-    
+
         .preview-list {
             list-style: none;
             padding-left: 0;
         }
-    
+
         .preview-item {
             display: flex;
             align-items: center;
@@ -66,14 +66,14 @@
             border-radius: 8px;
             position: relative;
         }
-    
+
         .preview-item img {
             width: 40px;
             height: 40px;
             object-fit: cover;
             border-radius: 5px;
         }
-    
+
         .preview-item .remove-btn {
             position: absolute;
             top: 5px;
@@ -82,7 +82,7 @@
             cursor: pointer;
             font-weight: bold;
         }
-    
+
         .progress {
             width: 100%;
             height: 8px;
@@ -91,7 +91,7 @@
             border-radius: 10px;
             overflow: hidden;
         }
-    
+
         .progress-bar {
             height: 100%;
             background-color: #0d6efd;
@@ -116,16 +116,16 @@
                 <!-- Initial row -->
                 <div class="row mb-3 item-row" data-row="1">
                     <!-- Glass Type -->
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label class="form-label text-muted">Glass Type <span class="text-danger">*</span></label>
                         <select name="type[]" class="form-select form-select-sm" required>
                             <option disabled selected value>Select Glass Type</option>
                             @foreach($products as $product)
-                                @if($product->category_id == 4)
-                                    <option value="{{$product->id}}">{{ $product->display_name }}</option>
-                                @endif
+                            @if($product->category_id == 4)
+                            <option value="{{$product->id}}">{{ $product->display_name }}</option>
+                            @endif
                             @endforeach
-                            </select>
+                        </select>
                     </div>
 
                     <!-- Thickness -->
@@ -137,6 +137,19 @@
                             <option value="15mm">15mm</option>
                             <option value="20mm">20mm</option>
                             <option value="25mm">25mm</option>
+                        </select>
+                    </div>
+
+                    <!-- Color -->
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Color <span class="text-danger">*</span></label>
+                        <select name="color[]" class="form-select form-select-sm" required>
+                            <option disabled selected value="">Select Color</option>
+                            <option value="white">White</option>
+                            <option value="aqua">Aqua</option>
+                            <option value="shade">Shade</option>
+                            <option value="clear">clear</option>
+                            <option value="custom">Custom</option>
                         </select>
                     </div>
 
@@ -160,19 +173,6 @@
                         <input name="width2[]" class="form-control form-control-sm" type="number" placeholder="mm">
                     </div>
 
-                    <!-- Color -->
-                    <div class="col-md-2">
-                        <label class="form-label text-muted">Color <span class="text-danger">*</span></label>
-                        <select name="color[]" class="form-select form-select-sm" required>
-                            <option disabled selected value="">Select Color</option>
-                            <option value="white">White</option>
-                            <option value="aqua">Aqua</option>
-                            <option value="shade">Shade</option>
-                            <option value="clear">clear</option>
-                            <option value="custom">Custom</option>
-                        </select>
-                    </div>
-
                     <!-- Quantity -->
                     <div class="col-md-1">
                         <label class="form-label text-muted">Qty <span class="text-danger">*</span></label>
@@ -180,7 +180,7 @@
                     </div>
 
                     <!-- Remarks -->
-                    <div class=" mt-3 mb-3">
+                    <div class="mt-3">
                         <label for="remarks" class="form-label text-muted">Cutting Details<span class="text-danger">*</span></label>
                         <textarea id="remarks" name="cutting_details" rows="3" placeholder="Enter special instructions or cutting details here"
                             class="form-control form-control-sm"></textarea>
@@ -219,7 +219,6 @@
 
         </form>
     </div>
-
 
     </div>
     <!-- Add this alert div at the top of your form (initially hidden) -->
@@ -296,30 +295,30 @@
         const dropzone = document.getElementById('dropzone');
         const fileInput = document.getElementById('fileUpload');
         const fileList = document.getElementById('fileList');
-    
+
         let filesToUpload = [];
-    
+
         dropzone.addEventListener('click', () => fileInput.click());
-    
+
         dropzone.addEventListener('dragover', (e) => {
             e.preventDefault();
             dropzone.classList.add('dragover');
         });
-    
+
         dropzone.addEventListener('dragleave', () => {
             dropzone.classList.remove('dragover');
         });
-    
+
         dropzone.addEventListener('drop', (e) => {
             e.preventDefault();
             dropzone.classList.remove('dragover');
             handleFiles(e.dataTransfer.files);
         });
-    
+
         fileInput.addEventListener('change', () => {
             handleFiles(fileInput.files);
         });
-    
+
         function handleFiles(selectedFiles) {
             Array.from(selectedFiles).forEach(file => {
                 const fileId = crypto.randomUUID();
@@ -332,28 +331,32 @@
             });
             updateFileList();
         }
-    
+
         function updateFileList() {
             fileList.innerHTML = '';
-    
+
             filesToUpload.forEach((item, index) => {
-                const { id, file, progress } = item;
-    
+                const {
+                    id,
+                    file,
+                    progress
+                } = item;
+
                 const li = document.createElement('li');
                 li.classList.add('preview-item');
                 li.setAttribute('data-id', id);
-    
+
                 if (file.type.startsWith('image/')) {
                     const img = document.createElement('img');
                     img.src = URL.createObjectURL(file);
                     img.onload = () => URL.revokeObjectURL(img.src);
                     li.appendChild(img);
                 }
-    
+
                 const span = document.createElement('span');
                 span.textContent = file.name;
                 li.appendChild(span);
-    
+
                 const removeBtn = document.createElement('span');
                 removeBtn.classList.add('remove-btn');
                 removeBtn.innerHTML = '&times;';
@@ -361,7 +364,7 @@
                     removeFileById(id);
                 });
                 li.appendChild(removeBtn);
-    
+
                 // Progress bar
                 const progressWrapper = document.createElement('div');
                 progressWrapper.className = 'progress';
@@ -370,16 +373,16 @@
                 progressBar.style.width = `${progress}%`;
                 progressWrapper.appendChild(progressBar);
                 li.appendChild(progressWrapper);
-    
+
                 fileList.appendChild(li);
-    
+
                 // Start upload simulation if not already complete
                 if (progress < 100 && item.interval === null) {
                     item.interval = simulateUpload(item, progressBar);
                 }
             });
         }
-    
+
         function simulateUpload(fileItem, barElement) {
             return setInterval(() => {
                 if (fileItem.progress < 100) {
@@ -391,7 +394,7 @@
                 }
             }, 100);
         }
-    
+
         function removeFileById(fileId) {
             const index = filesToUpload.findIndex(f => f.id === fileId);
             if (index > -1) {
