@@ -149,6 +149,7 @@ Route::get('/order-summary', [OrderSummaryController::class, 'index']);
 Route::get('/order_status', [ProductController::class, 'order_status']);
 Route::get('/hidden_store', [UserProfileController::class, 'hidden_store']);
 Route::get('/main_quote', [UserProfileController::class, 'main_quote']);
+Route::get('/quote_msg', [UserProfileController::class, 'quote_msg']);
 Route::get('/quotation_bulletproof', [UserProfileController::class, 'quotation_bulletproof']);
 Route::get('/quotation_glasspro', [UserProfileController::class, 'quotation_glasspro']);
 //Route::get('/product-details', [ProductDetailsController::class, 'index']);

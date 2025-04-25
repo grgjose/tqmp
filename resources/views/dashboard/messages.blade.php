@@ -65,104 +65,154 @@
                             <!-- Work Notes List -->
                             <div class="row mt-3 mb-4">
                                 <!-- Left Column -->
-                                <div class="border col-md-4">
-                                    <!-- Basic Information Section -->
-                                    <div class="row">
+                                <div class="col-md-4">
+                            <!-- Basic Information Section -->
+                            <div class="mb-3">
+                                <div class="row">
+                                    <!-- Form Content -->
+                                    <div class="col-md-9" data-bs-spy="scroll" data-bs-target="#quotationScrollspy" data-bs-offset="100" style="height: 500px; width:auto; overflow-y: auto;">
+                                        <form action="/create-quotation" method="POST" enctype="multipart/form-data">
+                                            @csrf
 
-                                        <!-- Form Content with Scrollspy Targets -->
-                                        <div class="" data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="100" style="overflow-y: auto; height: 500px;">
-                                            <!-- Basic Information -->
-                                            <div id="basic-info" class="mt-3 mb-3 pt-3">
-                                                <h5 class="border-bottom pb-2">Basic Information</h5>
-                                                <div class="row g-2">
-                                                    <div class="col-md-12">
-                                                        <div class="row g-2">
-                                                            <div class="col-md-6">
-                                                                <label class="form-label small">Quotation ID</label>
-                                                                <input type="text" class="form-control form-control-sm">
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <label class="form-label small">Status</label>
-                                                                <input type="text" class="form-control form-control-sm">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <label class="form-label small">Created Date</label>
-                                                        <input type="datetime-local" class="form-control form-control-sm">
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <label class="form-label small">Last Updated</label>
-                                                        <input type="datetime-local" class="form-control form-control-sm">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Title and Description -->
-                                            <div id="title-desc" class="mb-3 pt-3">
-                                                <h5 class="border-bottom pb-2">Title & Description</h5>
-                                                <label class="form-label small">Title/Subject</label>
-                                                <input type="text" class="form-control form-control-sm">
+                                            <!-- Glass Details Section -->
+                                            <div id="glassDetails" class="mb-5">
                                                 <div class="mb-3">
-                                                    <label class="form-label small">Initial Message</label>
-                                                    <textarea class="form-control form-control-sm" rows="2"></textarea>
+                                                    <label class="form-label fw-bold">Service Type</label>
+                                                    <input name="glasstype[]" class="form-control" type="text" placeholder="Glass Processing" >
+                                                    <input type="hidden" name="quotation_type" value="glass">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label class="form-label fw-bold">Glass Type</label>
+                                                    <input name="glasstype[]" class="form-control" type="text" placeholder="Enter glass type" >
+                                                </div>
+
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-md-4">
+                                                        <label class="form-label fw-bold">Thickness</label>
+                                                        <input name="thickness[]" class="form-control" type="text" placeholder="Enter thickness" >
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="form-label fw-bold">Color</label>
+                                                        <input name="width1[]" class="form-control" type="text" placeholder="Enter color" >
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="form-label fw-bold">Quantity</label>
+                                                        <input name="quantity[]" class="form-control" type="number" min="1" value="1" >
+                                                    </div>
                                                 </div>
                                             </div>
 
-                                            <!-- Priority and Severity -->
-                                            <div id="specs" class="row g-2 mb-3 pt-3">
-                                                <h5 class="border-bottom pb-2">Specifications</h5>
-                                                <div class="col-md-6">
-                                                    <label class="form-label small">Size</label>
-                                                    <input type="text" class="form-control form-control-sm">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label small">Color</label>
-                                                    <input type="text" class="form-control form-control-sm">
-                                                </div>
-                                            </div>
-
-                                            <!-- Preview Image -->
-                                            <div id="preview" class="pt-3">
-                                                <h5 class="border-bottom pb-2">Uploaded Image</h5>
-                                                <div class="d-flex justify-content-center align-items-center bg-light rounded-3 overflow-hidden"
-                                                    style="height: 400px; border: 1px solid rgba(0,0,0,0.08);">
-                                                    <img id="previewImage"
-                                                        src="https://gingercathouse.co.uk/wp-content/uploads/2020/09/tabby-grey-main-coon-cat-1024x577.jpeg"
-                                                        class="img-fluid h-100 object-fit-contain p-3"
-                                                        style="cursor: zoom-in;"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#imageModal">
-                                                </div>
-
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content" style="width: auto;">
-                                                            <div class="modal-body">
-                                                                <img id="modalPreviewImage" src="https://gingercathouse.co.uk/wp-content/uploads/2020/09/tabby-grey-main-coon-cat-1024x577.jpeg" class="img-fluid">
+                                            <!-- Dimensions Section -->
+                                            <div id="dimensions" class="mb-5">
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-md-6">
+                                                        <label class="form-label fw-bold">Height (mm)</label>
+                                                        <div class="row g-2">
+                                                            <div class="col">
+                                                                <input name="height1[]" class="form-control" type="number" placeholder="H1" >
+                                                            </div>
+                                                            <div class="col">
+                                                                <input name="height2[]" class="form-control" type="number" placeholder="H2" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label fw-bold">Width (mm)</label>
+                                                        <div class="row g-2">
+                                                            <div class="col">
+                                                                <input name="width1[]" class="form-control" type="number" placeholder="W1" >
+                                                            </div>
+                                                            <div class="col">
+                                                                <input name="width2[]" class="form-control" type="number" placeholder="W2" >
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- Action Buttons -->
-                                            <div id="actions" class="pt-3">
-                                                <div class="d-flex justify-content-end gap-2 mb-3">
-                                                    <button class="btn btn-sm btn-success w-100" onclick="showInputBox('approve')">Approve</button>
-                                                    <button class="btn btn-sm btn-danger w-100" onclick="showInputBox('reject')">Reject</button>
-                                                </div>
-                                                <div id="inputBoxContainer" class="mt-3" style="display: none;">
-                                                    <label id="inputBoxLabel" class="form-label small"></label>
-                                                    <textarea id="inputBox" class="form-control form-control-sm" rows="2" placeholder="Enter your input here..."></textarea>
+                                            <!-- Cutting Details Section -->
+                                            <div id="cuttingDetails" class="mb-5">
+                                                <div class="mb-3">
+                                                    <label class="form-label fw-bold">Cutting Details</label>
+                                                    <textarea name="cutting_details" rows="2" class="form-control" ></textarea>
                                                 </div>
                                             </div>
-                                        </div>
+
+                                            <!-- Images Gallery Section -->
+                                            <div id="imagesGallery" class="mb-5">
+                                                <h6 class="mb-4 border-bottom pb-2">Images Gallery</h6>
+                                                <div class="border rounded p-2">
+                                                    @if(isset($images) && count($images) > 0)
+                                                    <div class="d-flex flex-wrap gap-2">
+                                                        @foreach($images as $image)
+                                                        <div class="border rounded overflow-hidden" style="width: 80px; height: 80px;"
+                                                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                                                            onclick="document.getElementById('modalImage').src=''">
+                                                            <img src="" alt="Quotation Image"
+                                                                class="w-100 h-100 object-fit-cover">
+                                                        </div>
+                                                        @endforeach
+                                                    </div>
+                                                    @else
+                                                    <div class="text-center py-2 text-muted">
+                                                        No images available
+                                                        <div class="d-flex flex-row gap-2 mt-3">
+                                                            <div class="border rounded overflow-hidden" style="width: 80px; height: 80px;"
+                                                                data-bs-toggle="modal" data-bs-target="#imageModal"
+                                                                onclick="document.getElementById('modalImage').src=' '">
+                                                                <img src=" " alt="Quotation Image"
+                                                                    class="w-100 h-100 object-fit-cover">
+                                                            </div>
+                                                            <div class="border rounded overflow-hidden" style="width: 80px; height: 80px;"
+                                                                data-bs-toggle="modal" data-bs-target="#imageModal"
+                                                                onclick="document.getElementById('modalImage').src=' '">
+                                                                <img src=" " alt="Quotation Image"
+                                                                    class="w-100 h-100 object-fit-cover">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    @endif
+                                                </div>
+                                            </div>
+
+                                            <!-- Vehicle Details Section -->
+                                            <div id="vehicleDetails">
+                                                <div class="mb-3">
+                                                    <label class="form-label fw-bold">Service Type</label>
+                                                    <input name="glasstype[]" class="form-control" type="text" placeholder="Bullet Proofing Manufacturing" >
+                                                    <input type="hidden" name="quotation_type" value="glass">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="plateNumber" class="form-label fw-bold">Plate Number <span class="text-danger">*</span></label>
+                                                    <input id="plateNumber" name="plateNumber" class="form-control" type="text" placeholder="Enter Plate Number" >
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="model" class="form-label fw-bold">Model <span class="text-danger">*</span></label>
+                                                    <input id="model" name="model" class="form-control" type="text" placeholder="Enter Vehicle Model" >
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label fw-bold">Color</label>
+                                                    <input id="color" name="color" class="form-control" type="text" placeholder="Enter Vehicle Color" >
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label fw-bold">Services</label>
+                                                    <input id="services" name="services" class="form-control" type="text" placeholder="Enter Services" >
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label fw-bold">Remarks</label>
+                                                    <input id="remarks" name="remarks" class="form-control" type="text" placeholder="Enter Remarks" >
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-
-
                                 </div>
+
+
+                            </div>
+
+
+                        </div>
 
                                 <!-- Middle Column -->
                                 <div class="border col-md-8">

@@ -6,6 +6,10 @@ html {
     font-size: small;
 }
 
+.form-select {
+    font-size: small;
+}
+
 /* background  */
 .bg-primary {
     background-color: #1e325c !important;
