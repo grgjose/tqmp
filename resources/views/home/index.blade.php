@@ -136,7 +136,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold">Glass</h5>
                             <p class="flex-grow-1">We offer a wide range of glass products for different applications, ensuring quality and durability.</p>
-                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
+                            <a href="/glassmanufacturing" class="card-button btn btn-danger mt-auto">View More</a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold">Aluminum</h5>
                             <p class="flex-grow-1">A versatile and lightweight metal used in a variety of applications due to its strength, corrosion resistance, and aesthetic appeal.</p>
-                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
+                            <a href="aluminummanufacturing" class="card-button btn btn-danger mt-auto">View More</a>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="fw-bold">Other Products</h5>
                             <p class="flex-grow-1">In addition to aluminum and glass, we offer a variety of hardware products essential for construction and installation.</p>
-                            <a href="#" class="card-button btn btn-danger mt-auto">Get Quotation</a>
+                            <a href="/gentrade" class="card-button btn btn-danger mt-auto">View More</a>
                         </div>
                     </div>
                 </div>
