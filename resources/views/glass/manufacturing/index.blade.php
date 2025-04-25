@@ -93,8 +93,8 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/floatglass.jpg') }}" class="card-img-top" alt="Card 1" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">CLEAR FLOAT GLASS</h5>
-                                        <p class="card-text">A Colourless and transparent glass that offers a very high level of light transmittance...</p>
+                                        <h6 class="card-title">Clear Float Glass</h6>
+                                        <p class="card-text text-muted">A Colourless and transparent glass that offers a very high level of light transmittance...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordionExample" aria-expanded="false" aria-controls="accordionExample">
                                             More Details
@@ -102,7 +102,7 @@
                                         <!-- Accordion content -->
                                         <div id="accordionExample" class="collapse mt-3">
                                             <div class="accordion-body">
-                                                <h6>A Colourless and transparent glass that offers a very high level of light transmittance. Its edge displays a slight green tint and is available from 2mm to 19mm thick.</h6>
+                                                <p>A Colourless and transparent glass that offers a very high level of light transmittance. Its edge displays a slight green tint and is available from 2mm to 19mm thick.</p>
                                                 <p><b>Thickness:</b><br> 2.0mm to 12.0mm</p>
                                                 <p><b>Standard Size:</b><br> 36" x 48" to 144" x 192"</p>
                                                 <p><b>Ultra Thick:</b><br> 15.00mm to 19.0mm</p>
@@ -121,8 +121,8 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/tintedfloat.jpg') }}" class="card-img-top" alt="Card 2" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">TINTED FLOAT GLASS</h5>
-                                        <p class="card-text">A heat absorbing, transparent glass colored by adding such metals like cobalt...</p>
+                                        <h6 class="card-title">Tinted Float Glass</h6>
+                                        <p class="card-text text-muted">A heat absorbing, transparent glass colored by adding such metals like cobalt...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="false" aria-controls="accordion2">
                                             More Details
@@ -130,7 +130,7 @@
                                         <!-- Accordion content -->
                                         <div id="accordion2" class="collapse mt-3">
                                             <div class="accordion-body">
-                                                <h6>A heat absorbing, transparent glass colored by adding such metals like cobalt, selnium or iron. It reduces the amount of heat flowing into a room thereby decreasing the cooling load.</h6>
+                                                <p>A heat absorbing, transparent glass colored by adding such metals like cobalt, selnium or iron. It reduces the amount of heat flowing into a room thereby decreasing the cooling load.</p>
                                                 <p><b>Bronze Float:</b><br> 3.0mm to 12.0mm Thickness</p>
                                                 <p><b>Dark Gray Float:</b><br> 3.0mm to 12.0mm Thickness</p>
                                                 <p><b>Euro Gray Float:</b><br> 6.0mm to 12.0mm Thickness</p>
@@ -150,8 +150,8 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/ultraclear.jpg') }}" class="card-img-top" alt="Card 3" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">ULTRA CLEAR FLOAT GLASS</h5>
-                                        <p class="card-text">This kind of glass provides extreme clarity for glazing applications requiring minimum impurities...</p>
+                                        <h6 class="card-title">Ultra Clear Float Glass</h6>
+                                        <p class="card-text text-muted">This kind of glass provides extreme clarity for glazing applications requiring minimum impurities...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-expanded="false" aria-controls="accordion3">
                                             More Details
@@ -159,7 +159,7 @@
                                         <!-- Accordion content -->
                                         <div id="accordion3" class="collapse mt-3">
                                             <div class="accordion-body">
-                                                <h6>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision, thereby allowing the most natural colors to stand out.</h6>
+                                                <p>This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision, thereby allowing the most natural colors to stand out.</p>
                                                 <p><b>Thickness:</b><br> 6.0mm to 12.0mm</p>
                                                 <p><b>Standard Size:</b><br> 84" x 120" to 84" x 192"</p>
                                                 <p><b>Ultra Thick:</b><br> 15.00mm to 19.0mm</p>
@@ -179,8 +179,8 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/lowe.jpg') }}" class="card-img-top" alt="Card 4" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">LOW-E COATED GLASS</h5>
-                                        <p class="card-text">Low-e glass stands for low emissivity glass. One side of the glass has a special metal coating...</p>
+                                        <h6 class="card-title">Low-E Coated Glass</h6>
+                                        <p class="card-text text-muted">Low-e glass stands for low emissivity glass. One side of the glass has a special metal coating...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4" aria-expanded="false" aria-controls="accordion4">
                                             More Details
@@ -188,9 +188,9 @@
                                         <!-- Accordion content -->
                                         <div id="accordion4" class="collapse mt-3">
                                             <div class="accordion-body">
-                                                <h6>Low-e glass stands for low emissivity glass. One side of the glass has a special metal coating, known as low emissivity coating.
+                                                <p>Low-e glass stands for low emissivity glass. One side of the glass has a special metal coating, known as low emissivity coating.
                                                     Low-e glass is a type of insulating glass which increases the energy efficiency of the windows by reducing the transfer of heat or cold through the glass.
-                                                    This means that during cold season, the house stays warmer, and in summer it stays cooler.</h6>
+                                                    This means that during cold season, the house stays warmer, and in summer it stays cooler.</p>
                                                 <p><b>Clear:</b><br> 6.0mm to 10.0mm Thickness</p>
                                                 <p><b>Euro Gray Float:</b><br> 6.0mm to 10.0mm Thickness</p>
                                                 <div class="d-flex justify-content-end">
@@ -207,8 +207,8 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/reflective.jpg') }}" class="card-img-top" alt="Card 5" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">REFLECTIVE COATED GLASS</h5>
-                                        <p class="card-text">Reflective glass is essentially an ordinary float glass with a metallic coating that helps...</p>
+                                        <h6 class="card-title">Reflective Coated Glass</h6>
+                                        <p class="card-text text-muted">Reflective glass is essentially an ordinary float glass with a metallic coating that helps...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion5" aria-expanded="false" aria-controls="accordion5">
                                             More Details
@@ -216,9 +216,9 @@
                                         <!-- Accordion content -->
                                         <div id="accordion5" class="collapse mt-3">
                                             <div class="accordion-body">
-                                                <h6>Reflective glass is essentially an ordinary float glass with a metallic coating that helps a building achieve a high standard of
+                                                <p>Reflective glass is essentially an ordinary float glass with a metallic coating that helps a building achieve a high standard of
                                                     visual appeal besides reflecting a greater amount of heat than normal tinted float glass.
-                                                    It comes in variety of metallic colors such as gold, silver, bronze, blue and green.</h6>
+                                                    It comes in variety of metallic colors such as gold, silver, bronze, blue and green.</p>
                                                 <p><b>Dark Blue:</b><br> 6.0mm to 10.0mm Thickness</p>
                                                 <p><b>Dark Green:</b><br> 6.0mm to 10.0mm Thickness</p>
                                                 <p><b>Euro Gray:</b><br> 6.0mm to 10.0mm Thickness</p>
@@ -237,8 +237,8 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/mirror.jpg') }}" class="card-img-top" alt="Card 6" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">MIRROR</h5>
-                                        <p class="card-text">Mirror are made from top of the line clear or tinted float glass...</p>
+                                        <h6 class="card-title">Mirror</h6>
+                                        <p class="card-text text-muted">Mirror are made from top of the line clear or tinted float glass...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion6" aria-expanded="false" aria-controls="accordion6">
                                             More Details
@@ -246,8 +246,8 @@
                                         <!-- Accordion content -->
                                         <div id="accordion6" class="collapse mt-3">
                                             <div class="accordion-body">
-                                                <h6>Mirror are made from top of the line clear or tinted float glass, chemically treated with silver and coated to prevent peeling and corrosion.
-                                                    PFGMI are oven cured to maintain durability through the years.</h6>
+                                                <p>Mirror are made from top of the line clear or tinted float glass, chemically treated with silver and coated to prevent peeling and corrosion.
+                                                    PFGMI are oven cured to maintain durability through the years.</p>
                                                 <p><b>Thickness:</b><br> 3.0mm to 6.0mm</p>
                                                 <p><b>Standard Size:</b><br> 48" x 72" to 84" x 120"</p>
                                                 <div class="d-flex justify-content-end">
@@ -271,8 +271,8 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/patternedglass.jpg') }}" class="card-img-top" alt="Card 10" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">PATTERNED GLASS</h5>
-                                        <p class="card-text">Patterned Glass is a kind of decorative translucent glass with embossed pattern on one surface...</p>
+                                        <h6 class="card-title">Patterned Glass</h6>
+                                        <p class="card-text text-muted">Patterned Glass is a kind of decorative translucent glass with embossed pattern on one surface...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion7" aria-expanded="false" aria-controls="accordion7">
                                             More Details
@@ -280,9 +280,9 @@
                                         <!-- Accordion content -->
                                         <div id="accordion7" class="collapse mt-3">
                                             <div class="accordion-body">
-                                                <h6>Patterned Glass is a kind of decorative translucent glass with embossed pattern on one surface.
+                                                <p>Patterned Glass is a kind of decorative translucent glass with embossed pattern on one surface.
                                                     It is generally used where privacy or obscurity is desired, but light transmission is still important.
-                                                    This is used in commercial, residential, and specialty applications. The sheer simplicity of patterned glass makes it popular for interior design.</h6>
+                                                    This is used in commercial, residential, and specialty applications. The sheer simplicity of patterned glass makes it popular for interior design.</p>
                                                 <p><b>Thickness:</b><br></p>
                                                 <p><b>Standard Size:</b><br></p>
                                                 <div class="d-flex justify-content-end">
@@ -300,8 +300,8 @@
                                 <div class="card border-0 shadow-lg">
                                     <img src="{{ asset('storage/glass-mfg/wiredglass.jpg') }}" class="card-img-top" alt="Card 11" style="width: 100%; height: 300px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">WIRED GLASS</h5>
-                                        <p class="card-text">Wired glass is a type of glass wherein a wire mesh is inserted during production...</p>
+                                        <h6 class="card-title">Wired Glass</h6>
+                                        <p class="card-text text-muted">Wired glass is a type of glass wherein a wire mesh is inserted during production...</p>
                                         <!-- Accordion button -->
                                         <a class="btn btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordion8" aria-expanded="false" aria-controls="accordion8">
                                             More Details
@@ -309,9 +309,9 @@
                                         <!-- Accordion content -->
                                         <div id="accordion8" class="collapse mt-3">
                                             <div class="accordion-body">
-                                                <h6>Wired glass is a type of glass wherein a wire mesh is inserted during production.
+                                                <p>Wired glass is a type of glass wherein a wire mesh is inserted during production.
                                                     It has an impact resistance similar to that of normal glass, but in case of breakage, the mesh retains the pieces of glass.
-                                                    This product is traditionally accepted as low-cost fire-resistant glass.</h6>
+                                                    This product is traditionally accepted as low-cost fire-resistant glass.</p>
                                                 <p><b>Thickness:</b><br></p>
                                                 <p><b>Standard Size:</b><br></p>
                                                 <div class="d-flex justify-content-end">
