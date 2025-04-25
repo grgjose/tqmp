@@ -79,7 +79,7 @@
                                                         @if($my_user != null)
                                                         <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
                                                         @else
-                                                        <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                        <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                                         @endif
                                                     </div>
                                                 </div>
@@ -135,7 +135,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$100.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -148,7 +148,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$120.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -161,7 +161,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$110.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -174,7 +174,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$100.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -191,7 +191,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$120.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -204,7 +204,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$110.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -217,7 +217,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -230,7 +230,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -247,7 +247,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -260,7 +260,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -302,7 +302,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -316,7 +316,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -330,7 +330,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -344,7 +344,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -361,7 +361,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -375,7 +375,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -389,7 +389,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -403,7 +403,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -422,7 +422,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -436,7 +436,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -450,7 +450,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -464,7 +464,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -482,7 +482,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -496,7 +496,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -510,7 +510,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -524,7 +524,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -542,7 +542,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -556,7 +556,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$135.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -570,7 +570,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$140.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -584,7 +584,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$140.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -603,7 +603,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$140.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -617,7 +617,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$140.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -631,7 +631,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$140.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -645,7 +645,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$140.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -663,7 +663,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -677,7 +677,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$135.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -691,7 +691,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$140.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -705,7 +705,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$145.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -723,7 +723,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$150.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -737,7 +737,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$155.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -751,7 +751,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$160.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -765,7 +765,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$165.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -784,7 +784,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -798,7 +798,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -812,7 +812,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -855,7 +855,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -868,7 +868,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -881,7 +881,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -898,7 +898,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -911,7 +911,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -924,7 +924,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -967,7 +967,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -981,7 +981,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -995,7 +995,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1009,7 +1009,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1027,7 +1027,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1041,7 +1041,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1055,7 +1055,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1069,7 +1069,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1117,7 +1117,7 @@
                                                 <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                                 <div class="d-flex justify-content-between">
                                                     <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                    <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1131,7 +1131,7 @@
                                                 <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                                 <div class="d-flex justify-content-between">
                                                     <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                    <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1145,7 +1145,7 @@
                                                 <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                                 <div class="d-flex justify-content-between">
                                                     <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                    <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1159,7 +1159,7 @@
                                                 <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                                 <div class="d-flex justify-content-between">
                                                     <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                    <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1177,7 +1177,7 @@
                                                 <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                                 <div class="d-flex justify-content-between">
                                                     <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                    <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1191,7 +1191,7 @@
                                                 <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                                 <div class="d-flex justify-content-between">
                                                     <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                    <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1205,7 +1205,7 @@
                                                 <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                                 <div class="d-flex justify-content-between">
                                                     <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                    <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1219,7 +1219,7 @@
                                                 <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                                 <div class="d-flex justify-content-between">
                                                     <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                    <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1238,7 +1238,7 @@
                                                 <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                                 <div class="d-flex justify-content-between">
                                                     <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                    <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1252,7 +1252,7 @@
                                                 <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                                 <div class="d-flex justify-content-between">
                                                     <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                    <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                    <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1296,7 +1296,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1309,7 +1309,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1326,7 +1326,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1339,7 +1339,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1379,7 +1379,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1396,7 +1396,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1436,7 +1436,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1453,7 +1453,7 @@
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
                                             <div class="d-flex justify-content-between">
                                                 <a href="#" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
-                                                <a href="#" class="btn btn-outline-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
