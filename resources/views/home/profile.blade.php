@@ -258,10 +258,8 @@
                                 @foreach($quotations as $quote)
                                 <tr>
                                     <td>
-                                        <a href="#" class="quotation-link"
-                                            data-reference="{{ $quote->reference }}"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#quotationModal">
+                                        <a href="/show-quotation/{{ $quote->reference }}" class="quotation-link"
+                                            data-reference="{{ $quote->reference }}">
                                             {{ $quote->reference }}
                                         </a>
                                     </td>

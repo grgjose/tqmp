@@ -45,17 +45,17 @@
             cursor: pointer;
             transition: border-color 0.3s;
         }
-
+    
         .dropzone.dragover {
             border-color: #007bff;
             color: #007bff;
         }
-
+    
         .preview-list {
             list-style: none;
             padding-left: 0;
         }
-
+    
         .preview-item {
             display: flex;
             align-items: center;
@@ -66,14 +66,14 @@
             border-radius: 8px;
             position: relative;
         }
-
+    
         .preview-item img {
             width: 40px;
             height: 40px;
             object-fit: cover;
             border-radius: 5px;
         }
-
+    
         .preview-item .remove-btn {
             position: absolute;
             top: 5px;
@@ -82,7 +82,7 @@
             cursor: pointer;
             font-weight: bold;
         }
-
+    
         .progress {
             width: 100%;
             height: 8px;
@@ -91,12 +91,17 @@
             border-radius: 10px;
             overflow: hidden;
         }
-
+    
         .progress-bar {
             height: 100%;
             background-color: #0d6efd;
             width: 0%;
             transition: width 0.3s ease;
+        }
+
+        .drag-over {
+            border: 2px dashed #0d6efd;
+            background-color: #f0f8ff;
         }
     </style>
 
@@ -295,6 +300,7 @@
         const dropzone = document.getElementById('dropzone');
         const fileInput = document.getElementById('fileUpload');
         const fileList = document.getElementById('fileList');
+        const form = document.querySelector('form');
 
         let filesToUpload = [];
 
@@ -320,27 +326,45 @@
         });
 
         function handleFiles(selectedFiles) {
-            Array.from(selectedFiles).forEach(file => {
-                const fileId = crypto.randomUUID();
-                filesToUpload.push({
-                    id: fileId,
-                    file: file,
-                    progress: 0,
-                    interval: null
+            const fileInput = document.getElementById('fileUpload');
+            const currentFiles = fileInput.files;
+            const newFiles = Array.from(selectedFiles);
+
+            // Check for duplicates by comparing file name and size
+            const existingFileNames = Array.from(currentFiles).map(file => file.name);
+
+            // Filter out files that are already in the list
+            const uniqueFiles = newFiles.filter(file => !existingFileNames.includes(file.name));
+
+            if (uniqueFiles.length > 0) {
+                // Add only unique files to the filesToUpload array
+                uniqueFiles.forEach(file => {
+                    const fileId = crypto.randomUUID();
+                    filesToUpload.push({
+                        id: fileId,
+                        file: file,
+                        progress: 0,
+                        interval: null
+                    });
                 });
-            });
-            updateFileList();
+
+                // Update the filenames input with the new files, avoiding duplicates
+                const allFiles = [...currentFiles, ...uniqueFiles];
+                const dataTransfer = new DataTransfer();
+                allFiles.forEach(file => dataTransfer.items.add(file));
+                fileInput.files = dataTransfer.files;
+
+                updateFileList();
+            } else {
+                console.log('No new files were added (files are duplicates).');
+            }
         }
 
         function updateFileList() {
             fileList.innerHTML = '';
 
             filesToUpload.forEach((item, index) => {
-                const {
-                    id,
-                    file,
-                    progress
-                } = item;
+                const { id, file, progress } = item;
 
                 const li = document.createElement('li');
                 li.classList.add('preview-item');
@@ -404,6 +428,9 @@
                 updateFileList();
             }
         }
+
+        //
+
     </script>
 
     <!-- Footer -->

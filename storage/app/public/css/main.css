@@ -471,6 +471,18 @@ body {
     box-shadow: 0 0 8px rgba(23, 38, 71, 0.8);
 }
 
+button.btn-success {
+    background-color: #036803;
+    color: white;
+    border: none;
+    font-size: smaller;
+}
+
+button.btn-success:hover {
+    background-color: #20a70e;
+    font-size: smaller;
+}
+
 button.btn-secondary {
     background-color: #383838;
     color: white;
