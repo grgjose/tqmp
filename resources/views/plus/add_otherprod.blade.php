@@ -121,7 +121,7 @@
                                                         <div class="card-body d-flex flex-column">
                                                             <h6 class="card-title text-start fw-bold">{{$product->display_name}}</h6>
                                                             <h6 class="card-text text-start" style="color: #7E1416;">₱{{ $product->price }}</h6>
-                                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -151,7 +151,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">Thore Door Closer Model GSM-0060</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$120.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">Abloy Door Closer Model DC420</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$120.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -185,7 +185,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">Thore Patch Fitting Model GSM-0039</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -195,7 +195,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">Thore Patch Fitting Model GSM-0056</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">THORE C-TYPE HANDLE</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -229,7 +229,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">THORE C-TYPE HANDLE</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -253,7 +253,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">THORE GSM0011</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -263,7 +263,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">THORE GSM0018</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -287,7 +287,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">THORE GSM0001</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -297,7 +297,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">THORE GSM0005</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -321,7 +321,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">Thore Door Closer Model GSM-0060</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$120.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -331,7 +331,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">Thore Door Closer Model GSM-0060</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$120.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -355,7 +355,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">Thore Door Closer Model GSM-0060</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$120.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -365,7 +365,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">Thore Door Closer Model GSM-0060</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$120.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -389,7 +389,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">Jalouplus</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>
@@ -399,7 +399,7 @@
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="card-title text-start fw-bold">Jalouplus</h6>
                                             <h6 class="card-text text-start" style="color: #7E1416;">$130.00</h6>
-                                            <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                            <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>

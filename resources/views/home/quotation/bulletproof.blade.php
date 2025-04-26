@@ -42,17 +42,17 @@
             cursor: pointer;
             transition: border-color 0.3s;
         }
-    
+
         .dropzone.dragover {
             border-color: #007bff;
             color: #007bff;
         }
-    
+
         .preview-list {
             list-style: none;
             padding-left: 0;
         }
-    
+
         .preview-item {
             display: flex;
             align-items: center;
@@ -63,14 +63,14 @@
             border-radius: 8px;
             position: relative;
         }
-    
+
         .preview-item img {
             width: 40px;
             height: 40px;
             object-fit: cover;
             border-radius: 5px;
         }
-    
+
         .preview-item .remove-btn {
             position: absolute;
             top: 5px;
@@ -79,7 +79,7 @@
             cursor: pointer;
             font-weight: bold;
         }
-    
+
         .progress {
             width: 100%;
             height: 8px;
@@ -88,7 +88,7 @@
             border-radius: 10px;
             overflow: hidden;
         }
-    
+
         .progress-bar {
             height: 100%;
             background-color: #0d6efd;
@@ -108,8 +108,16 @@
     <div class="container py-5">
         <form method="POST" action="/create-quotation" enctype="multipart/form-data">
             @csrf
-            <h3 class="mb-4 text-muted">Get a quotation for:</h3>
-            
+            <nav aria-label="breadcrumb">
+                <h6>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="text-danger" href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-danger" href="#">Get Quote</a></li>
+                        <li class="breadcrumb-item "><a>Bullet Proofing</a></li>
+                    </ol>
+                </h6>
+            </nav>
+
             <div class="mb-3">
                 <label for="quantity" class="form-label text-muted">Type <span class="text-danger">*</span></label>
                 <select class="form-select form-select-sm" aria-label=".form-select-sm example" disabled>
@@ -303,7 +311,11 @@
             fileList.innerHTML = '';
 
             filesToUpload.forEach((item, index) => {
-                const { id, file, progress } = item;
+                const {
+                    id,
+                    file,
+                    progress
+                } = item;
 
                 const li = document.createElement('li');
                 li.classList.add('preview-item');
@@ -375,14 +387,13 @@
         }
 
         //
-
     </script>
 
     <script>
-        document.getElementById('model').addEventListener('change', function () {
+        document.getElementById('model').addEventListener('change', function() {
             const otherInputId = 'otherModelInput';
             let otherInput = document.getElementById(otherInputId);
-        
+
             if (this.value === 'Other Model') {
                 if (!otherInput) {
                     otherInput = document.createElement('input');

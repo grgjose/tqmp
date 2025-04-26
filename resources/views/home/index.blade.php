@@ -165,6 +165,10 @@
             </div>
     </section>
 
+    <!-- JS Links -->
+    @include ('plus.scripts')
+    <!-- End of JS Links -->
+
     <!-- Accordion Section -->
     @include ('plus.accordion')
     <!-- End of Accordion -->
@@ -173,15 +177,15 @@
     @include ('plus.cta')
     <!-- End of Call to Action -->
 
+    <!-- Chatbot -->
     @include('plus.chatbot')
+    <!-- End of Chatbot -->
 
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
 
-    <!-- Toast -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-
+    
     @if(session()->has('error_msg'))
     <script>
         toastr.options.preventDuplicates = true;
@@ -209,9 +213,6 @@
         $("#downloadForm").submit();
     </script>
     @endif
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

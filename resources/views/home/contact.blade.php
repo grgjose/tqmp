@@ -51,7 +51,7 @@
     </section>
 
     <section id="form" class="fade-in-up container">
-        <div class="col-md-12" style="border: 1px solid #ccc; padding: 20px; border-radius: 3px;">
+        <div class="col-md-12" >
             <h3 class="fw-bold">Fill out the form</h3>
             <form class="py-3" action="/inquiry-store" method="POST" enctype="multipart/form-data">
                 @csrf
