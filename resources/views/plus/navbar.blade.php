@@ -15,8 +15,10 @@
 
     .custom-left-dropdown {
         left: auto !important;
-        right: 0 !important; /* Forces it to appear aligned from the right of the trigger */
-        transform: none !important; /* Shift to the left of the button */
+        right: 0 !important;
+        /* Forces it to appear aligned from the right of the trigger */
+        transform: none !important;
+        /* Shift to the left of the button */
     }
 </style>
 <div class="sticky-top">
@@ -117,7 +119,8 @@
                         <!-- Desktop View: Profile Picture -->
                         <a href="#" class="d-none d-md-flex align-items-center text-decoration-none dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="{{ $my_user->user_pic ? asset('storage/user-pics/' . $my_user->user_pic) : asset('storage/user-pics/default.png') }}"
-                                alt="Profile Picture" class="rounded-circle" width="40" height="40">                                
+                                alt="{{ $my_user->name }}'s profile picture"
+                                class="rounded-circle" width="40" height="40">
                         </a>
 
                         <!-- Mobile View: "My Profile" Text -->

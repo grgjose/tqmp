@@ -52,7 +52,7 @@
                                     <h6 class="card-title fw-bold">{{$product->display_name}}</h6>
                                     <p class="card-text flex-grow-1">{{$product->description}}</p>
                                     <div class="d-flex justify-content-end">
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                        <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                             @if($my_user==null)
                                             data-bs-toggle="modal" data-bs-target="#loginModal"
                                             @endif>Add to Cart</a>
@@ -89,7 +89,7 @@
                             <h6 class="card-title fw-bold">Swing Door Sections</h6>
                             <p class="card-text flex-grow-1">Angle sections are versatile aluminum profiles used in various structural and architectural applications.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -124,7 +124,7 @@
                             <h6 class="card-title fw-bold">Swing Door Sections</h6>
                             <p class="card-text flex-grow-1">Angle sections are versatile aluminum profiles used in various structural and architectural applications.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -159,7 +159,7 @@
                             <h6 class="card-title fw-bold">Storefront Components</h6>
                             <p class="card-text flex-grow-1">Storefront components are essential for creating durable and aesthetically pleasing commercial storefronts.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -194,7 +194,7 @@
                             <h6 class="card-title fw-bold">Storefront Components</h6>
                             <p class="card-text flex-grow-1">Storefront components are essential for creating durable and aesthetically pleasing commercial storefronts.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -229,7 +229,7 @@
                             <h6 class="card-title fw-bold">Screen Door and Windows</h6>
                             <p class="card-text flex-grow-1">Screen doors and windows provide ventilation while keeping insects and debris out.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -264,7 +264,7 @@
                             <h6 class="card-title fw-bold">Sliding Door Sections</h6>
                             <p class="card-text flex-grow-1">Sliding door sections are designed for smooth operation and modern aesthetics.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -299,7 +299,7 @@
                             <h6 class="card-title fw-bold">Sliding Door Sections</h6>
                             <p class="card-text flex-grow-1">Sliding door sections are designed for smooth operation and modern aesthetics.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -334,7 +334,7 @@
                             <h6 class="card-title fw-bold">Sliding Door Sections</h6>
                             <p class="card-text flex-grow-1">Sliding door sections are designed for smooth operation and modern aesthetics.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -369,7 +369,7 @@
                             <h6 class="card-title fw-bold">Sliding Door Sections</h6>
                             <p class="card-text flex-grow-1">Sliding door sections are designed for smooth operation and modern aesthetics.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -404,7 +404,7 @@
                             <h6 class="card-title fw-bold">Miscellaneous Sections</h6>
                             <p class="card-text flex-grow-1">Miscellaneous sections cater to unique and specialized aluminum profile needs.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -439,7 +439,7 @@
                             <h6 class="card-title fw-bold">Swing Door Sections</h6>
                             <p class="card-text flex-grow-1">Swing door sections provide durability and style for residential and commercial spaces.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -474,7 +474,7 @@
                             <h6 class="card-title fw-bold">Swing Door Sections</h6>
                             <p class="card-text flex-grow-1">Swing door sections provide durability and style for residential and commercial spaces.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -509,7 +509,7 @@
                             <h6 class="card-title fw-bold">Counter Trim Sections</h6>
                             <p class="card-text flex-grow-1">Counter trim sections are designed for enhancing the aesthetics and functionality of counters.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -544,7 +544,7 @@
                             <h6 class="card-title fw-bold">YC Sections</h6>
                             <p class="card-text flex-grow-1">YC sections are versatile profiles used in various structural and decorative applications.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -579,7 +579,7 @@
                             <h6 class="card-title fw-bold">Vent Sections</h6>
                             <p class="card-text flex-grow-1">Vent sections are designed for efficient airflow and ventilation in various applications.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -614,7 +614,7 @@
                             <h6 class="card-title fw-bold">Flat Bar Sections</h6>
                             <p class="card-text flex-grow-1">Flat bar sections are ideal for structural and decorative purposes in various industries.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -649,7 +649,7 @@
                             <h6 class="card-title fw-bold">Counter Nosing Sections</h6>
                             <p class="card-text flex-grow-1">Counter nosing sections provide a sleek finish and durability for counter edges.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>
@@ -684,7 +684,7 @@
                             <h6 class="card-title fw-bold">Swing Door Sections</h6>
                             <p class="card-text flex-grow-1">Angle sections are versatile aluminum profiles used in various structural and architectural applications.</p>
                             <div class="d-flex justify-content-end">
-                                <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
                                     @if($my_user==null)
                                     data-bs-toggle="modal" data-bs-target="#loginModal"
                                     @endif>Add to Cart</a>

@@ -269,7 +269,6 @@
     </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
             const checkboxes = $('input[name="checkboxes[]"]');
@@ -293,6 +292,9 @@
 </body>
 <!--end::Body-->
 
+<!-- JS Links -->
+ @include ('plus.scripts')
+<!-- End of JS Links -->
 
 <!-- Footer -->
 @include ('plus.footer')
