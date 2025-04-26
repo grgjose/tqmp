@@ -124,8 +124,14 @@ class ProductController extends Controller
             ->where('products.isDeleted', '=', false)->get();
 
         $productImages = DB::table('product_images')->get();
-        $quotations = DB::table('quotations')->get();
-        $quotationImages = DB::table('quotation_images')->get();
+
+
+        $quotations = DB::table('quotations')
+            ->leftJoin(DB::raw('(SELECT quotation_id, MIN(filename) as filename FROM quotation_images GROUP BY quotation_id) as qi'), 'quotations.id', '=', 'qi.quotation_id')
+            ->select(
+                'quotations.*', 
+                'qi.filename as image')
+            ->where('quotations.isDeleted', '=', false)->get();
 
         return view("home.cart", [
             'my_user' => $my_user,
@@ -133,7 +139,6 @@ class ProductController extends Controller
             'products' => $products,
             'productImages' => $productImages,
             'quotations' => $quotations,
-            'quotationImages' => $quotationImages,
         ]);
     }
 

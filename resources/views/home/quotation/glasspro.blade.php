@@ -197,7 +197,7 @@
                     <!-- Remarks -->
                     <div class="mt-3">
                         <label for="remarks" class="form-label text-muted">Cutting Details<span class="text-danger">*</span></label>
-                        <textarea id="remarks" name="cutting_details" rows="3" placeholder="Enter special instructions or cutting details here"
+                        <textarea id="remarks" name="cutting_details[]" rows="3" placeholder="Enter special instructions or cutting details here"
                             class="form-control form-control-sm"></textarea>
                     </div>
 

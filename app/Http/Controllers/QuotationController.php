@@ -143,9 +143,7 @@ class QuotationController extends Controller
             $quotation->w2 = json_encode($validated['width2']);
             $quotation->color = json_encode($validated['color']);
             $quotation->quantity = json_encode($validated['quantity']);
-            if(isset($validated['cutting_details'])){
-                $quotation->cutting_details = json_encode($validated['cutting_details']);
-            }
+            $quotation->cutting_details = json_encode($validated['cutting_details']);
             
             $quotation->status = 'Pending';
 
@@ -288,11 +286,23 @@ class QuotationController extends Controller
 
         $quotationImages = DB::table('quotation_images')->where('quotation_id', '=', $quotation[0]->id)->get();
 
+        $products = DB::table('products')
+            ->join('product_categories', 'products.category_id', '=', 'product_categories.id')
+            ->leftJoin('product_sub_categories', 'products.sub_category_id', '=', 'product_sub_categories.id')
+            ->leftJoin(DB::raw('(SELECT product_id, MIN(filename) as filename FROM product_images GROUP BY product_id) as pi'), 'products.id', '=', 'pi.product_id')
+            ->select(
+                'products.*', 
+                'product_categories.category as category',
+                'product_sub_categories.category as sub_category',
+                'pi.filename as image')
+            ->where('products.isDeleted', '=', false)->get();
+
         return view('home.quotation.quote_msg', [
             'my_user' => $my_user,
             'quotation' => $quotation[0],
             'quotationMessages' => $quotationMessages,
             'quotationImages' => $quotationImages,
+            'products' => $products
         ]);
 
     }

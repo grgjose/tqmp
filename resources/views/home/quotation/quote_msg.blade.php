@@ -248,7 +248,7 @@
                                             @endif
 
                                             @if($quotation->quotation_type == 'glass')
-                                                <div class="mb-3">
+                                                {{-- <div class="mb-3">
                                                     <label class="form-label fw-bold">Glass Type</label>
                                                     <input name="glasstype[]" class="form-control" type="text" placeholder="Enter glass type" readonly>
                                                 </div>
@@ -268,6 +268,7 @@
                                                     </div>
                                                     
                                                 </div>
+
                                                 <div class="row g-3 mb-3">
                                                     <div class="col-md-6">
                                                         <label class="form-label fw-bold">Height (mm)</label>
@@ -292,9 +293,111 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                
                                                 <div class="mb-3">
                                                     <label class="form-label fw-bold">Cutting Details</label>
                                                     <textarea name="cutting_details" rows="2" class="form-control" readonly></textarea>
+                                                </div> --}}
+
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-md-12">
+                                                        <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#itemsModal">View Items</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal fade" id="itemsModal" tabindex="-1" aria-labelledby="itemsModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="itemsModalLabel">List of Items</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+                                                                @php
+                                                                    $types = json_decode(str_replace("'", '"', $quotation->type), true);
+                                                                    $thicknesses = json_decode(str_replace("'", '"', $quotation->thickness), true);
+                                                                    $h1s = json_decode(str_replace("'", '"', $quotation->h1), true);
+                                                                    $h2s = json_decode(str_replace("'", '"', $quotation->h2), true);
+                                                                    $w1s = json_decode(str_replace("'", '"', $quotation->w1), true);
+                                                                    $w2s = json_decode(str_replace("'", '"', $quotation->w2), true);
+                                                                    $quantities = json_decode(str_replace("'", '"', $quotation->quantity), true);
+                                                                    $colors = json_decode(str_replace("'", '"', $quotation->color), true);
+                                                                    $cuttings = json_decode(str_replace("'", '"', $quotation->cutting_details), true);
+                                                                @endphp
+
+                                                                <div id="item-rows-container">
+                                                                    @for($i = 0; $i < count($types); $i++)
+                                                                        <div class="row mb-3 item-row" data-row="1">
+                                                                            <!-- Glass Type -->
+                                                                            <div class="col-md-3">
+                                                                                <label class="form-label text-muted">Glass Type <span class="text-danger">*</span></label>
+                                                                                @foreach($products as $product)
+                                                                                    @if($product->id == $types[$i])
+                                                                                        <input name="height1[]" class="form-control form-control-sm" type="text" placeholder="{{ $product->display_name }}" readonly>
+                                                                                    @endif
+                                                                                @endforeach
+
+                                                                            </div>
+                                                        
+                                                                            <!-- Thickness -->
+                                                                            <div class="col-md-2">
+                                                                                <label class="form-label text-muted">Thickness <span class="text-danger">*</span></label>
+                                                                                <input name="height1[]" class="form-control form-control-sm" type="text" placeholder="{{ $thicknesses[$i] }}" readonly>
+                                                                            </div>
+                                                        
+                                                                            <!-- Color -->
+                                                                            <div class="col-md-2">
+                                                                                <label class="form-label text-muted">Color <span class="text-danger">*</span></label>
+                                                                                <input name="height1[]" class="form-control form-control-sm" type="text" placeholder="{{ $colors[$i] }}" readonly>
+                                                                            </div>
+                                                        
+                                                                            <!-- Height -->
+                                                                            <div class="col-md-1">
+                                                                                <label class="form-label text-muted">H1 <span class="text-danger">*</span></label>
+                                                                                <input name="height1[]" class="form-control form-control-sm" type="number" placeholder="{{ $h1s[$i] }}" readonly>
+                                                                            </div>
+                                                                            <div class="col-md-1">
+                                                                                <label class="form-label text-muted">H2 <span class="text-danger">*</span></label>
+                                                                                <input name="height2[]" class="form-control form-control-sm" type="number" placeholder="{{ $h2s[$i] }}" readonly>
+                                                                            </div>
+                                                        
+                                                                            <!-- Width -->
+                                                                            <div class="col-md-1">
+                                                                                <label class="form-label text-muted">W1 <span class="text-danger">*</span></label>
+                                                                                <input name="width1[]" class="form-control form-control-sm" type="number" placeholder="{{ $w1s[$i] }}" readonly>
+                                                                            </div>
+                                                                            <div class="col-md-1">
+                                                                                <label class="form-label text-muted">W2 <span class="text-danger">*</span></label>
+                                                                                <input name="width2[]" class="form-control form-control-sm" type="number" placeholder="{{ $w2s[$i] }}" readonly>
+                                                                            </div>
+                                                        
+                                                                            <!-- Quantity -->
+                                                                            <div class="col-md-1">
+                                                                                <label class="form-label text-muted">Qty <span class="text-danger">*</span></label>
+                                                                                <input name="quantity[]" class="form-control form-control-sm" type="number" min="1" value="{{ $quantities[$i] }}" readonly>
+                                                                            </div>
+                                                        
+                                                                            <!-- Remarks -->
+                                                                            <div class="mt-3">
+                                                                                <label for="remarks" class="form-label text-muted">Cutting Details<span class="text-danger">*</span></label>
+                                                                                <textarea id="remarks" name="cutting_details" rows="3" placeholder="{{ $cuttings[$i] }}"
+                                                                                    class="form-control form-control-sm" readonly>{{ $cuttings[$i] }}</textarea>
+                                                                            </div>
+                                                        
+                                                                            <!-- Remove button (hidden for first row) -->
+                                                                            <div class="col-md-12 mt-2 text-end">
+                                                                                <button type="button" class="btn btn-sm btn-danger remove-row-btn" style="display: none;">Remove Row</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    @endfor
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             @endif
                                         </div>

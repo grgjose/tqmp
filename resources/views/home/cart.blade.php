@@ -102,18 +102,17 @@
                                                         @endif
                                                     @endforeach
                                                 @elseif($cart->quotation_id != null)
-                                                    @foreach($quotationImages as $image)
-                                                        @if($image->quotation_id == $cart->quotation_id)
-                                                            <img src="{{ asset('storage/quotations/'.$image->filename) }}" alt="Quotation Image" class="product-image me-3">
-                                                            @continue
-                                                        @endif
-                                                    @endforeach
-                                                    
+
                                                     @foreach($quotations as $quote)
                                                         @if($quote->id == $cart->quotation_id)
+                                                            <img src="{{ asset('storage/quotations/'.$quote->image) }}" alt="Quotation Image" class="product-image me-3">
                                                             <div>
-                                                                <p class="mb-0 fw-bold">{{ $quote->reference }}</p>
-                                                                <small class="text-muted">Color: White | Size: Medium</small>
+                                                                <p class="mb-0 fw-bold">Quotation: {{ $quote->reference }}</p>
+                                                                @if($quote->quotation_type == 'bullet')
+                                                                    <small class="text-muted">Bullet Proofing Quotation</small>
+                                                                @else
+                                                                    <small class="text-muted">Glass Processing Quotation</small>
+                                                                @endif
                                                                 <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $quote->final_price }}</small>
                                                                 <input type="hidden" name="price_{{$cart->id}}" class="hiddenPrice" value="">
                                                             </div>
