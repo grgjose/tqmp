@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cart;
 use Illuminate\Http\Request;
 use App\Models\Quotation;
 use App\Models\QuotationImage;
@@ -92,7 +93,7 @@ class QuotationController extends Controller
 
             $quotation = new Quotation();
             $quotation->user_id = $my_user->id;
-            $quotation->reference = $this->generateQuotationID($quotation->id+1);
+            $quotation->reference = $this->generateQuotationID($this->getNextAutoIncrement('quotations'));
             $quotation->quotation_type = $quotationType;
             $quotation->plate_number = $validated['plateNumber'];
             $quotation->model = $validated['model'] == 'Other Model'?$validated['other_model']:$validated['model'];
@@ -132,7 +133,7 @@ class QuotationController extends Controller
 
             $quotation = new Quotation();
             $quotation->user_id = $my_user->id;
-            $quotation->reference = $this->generateQuotationID($quotation->id+1);
+            $quotation->reference = $this->generateQuotationID($this->getNextAutoIncrement('quotations'));
             $quotation->quotation_type = $quotationType;
             $quotation->type = json_encode($validated['type']);
             $quotation->thickness = json_encode($validated['thickness']);
@@ -285,12 +286,75 @@ class QuotationController extends Controller
         ->where('quotation_messages.quotation_id', '=', $quotation[0]->id)
         ->get();
 
-        return view('home.user_messages', [
+        $quotationImages = DB::table('quotation_images')->where('quotation_id', '=', $quotation[0]->id)->get();
+
+        return view('home.quotation.quote_msg', [
             'my_user' => $my_user,
             'quotation' => $quotation[0],
             'quotationMessages' => $quotationMessages,
+            'quotationImages' => $quotationImages,
         ]);
 
+    }
+
+    /**
+     * Cancel Quotation
+     */
+    public function cancel(Request $request)
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        $id = $request->input('quotation_id');
+
+        $quotation = Quotation::find($id);
+        $quotation->status = 'Cancelled';
+        $quotation->save();
+
+        return redirect('/profile')->with('success_msg', $quotation->reference . ' Quotation Cancelled.');
+    }
+
+    /**
+     * Approve Quotation
+     */
+    public function approve(Request $request)
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        $id = $request->input('quotation_id');
+
+        $quotation = Quotation::find($id);
+        $quotation->status = 'Approve';
+        $quotation->save();
+
+        return redirect('/profile')->with('success_msg', $quotation->reference . ' Quotation Cancelled.');
+    }
+
+    /**
+     * Quotation to Cart
+     */
+    public function quotationToCart(Request $request)
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        $id = $request->input('quotation_id');
+
+        $quotation = Quotation::find($id);
+        $quotation->status = 'Added to Cart';
+        $quotation->save();
+
+        $cart = new Cart();
+        $cart->user_id = $my_user->id;
+        $cart->quotation_id = $id;
+        $cart->price = $quotation->price;
+        $cart->save();
+
+        return redirect('/profile')->with('success_msg', $quotation->reference . ' Quotation Cancelled.');
     }
 
     /**
@@ -358,7 +422,7 @@ class QuotationController extends Controller
             'quotation_id' => ['required'],
             'message' => ['required'],
         ]);
-
+    
         $quotationMessage = new QuotationMessage();
         $quotationMessage->quotation_id = $validated['quotation_id'];
         $quotationMessage->from_user_id = $my_user->id;
@@ -371,15 +435,6 @@ class QuotationController extends Controller
         ->where('id', '=', $validated['quotation_id'])
         ->where('isDeleted', '=', false)
         ->orderBy('created_at', 'DESC')->get();
-
-        $quotationMessages = DB::table('quotation_messages')
-        ->join('users', 'quotation_messages.from_user_id', '=', 'users.id')
-        ->select('quotation_messages.*', 'users.usertype as usertype', 'users.fname as fname', 'users.lname as lname')
-        ->where('quotation_messages.quotation_id', '=', $validated['quotation_id'])
-        ->get();
-
-        $users = DB::table('users')->where('isDeleted', '=', false)->get();
-        $usertypes = DB::table('usertypes')->where('isDeleted', '=', false)->get();
 
         return redirect('/show-quotation/'.$quotations[0]->reference);
 
@@ -411,6 +466,22 @@ class QuotationController extends Controller
     {
         $paddedId = str_pad($id, 6, '0', STR_PAD_LEFT); // Pad ID to 6 digits
         return "{$paddedId}-3"; // Append fixed suffix
+    }
+
+    /**
+     * Gets Next Auto Increment
+     */
+    public function getNextAutoIncrement($table)
+    {
+        // Check if table exists
+        if (!DB::getSchemaBuilder()->hasTable($table)) {
+            return 0;
+        }
+    
+        // Run the SHOW TABLE STATUS query
+        $result = DB::select("SHOW TABLE STATUS LIKE '{$table}'");
+    
+        return $result[0]->Auto_increment ?? 0;
     }
 
 

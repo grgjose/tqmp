@@ -16,8 +16,8 @@ return new class extends Migration
             $table->integer('user_id');
             $table->integer('product_id')->nullable();
             $table->integer('quotation_id')->nullable();
-            $table->integer('product_category_id');
-            $table->integer('quantity');
+            $table->integer('product_category_id')->nullable();
+            $table->integer('quantity')->nullable();
             $table->integer('price');
             $table->string('remarks')->nullable();
             $table->timestamps();

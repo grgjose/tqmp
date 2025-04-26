@@ -41,6 +41,9 @@ Route::get('/get-quotation-glassprocessing', [QuotationController::class, 'quota
 Route::post('/create-quotation', [QuotationController::class, 'store']);
 Route::get('/show-quotation/{reference}', [QuotationController::class, 'showQuotation']);
 Route::post('/user-send-message', [QuotationController::class, 'userSendMessage']);
+Route::post('/cancel-quotation', [QuotationController::class, 'cancel']);
+Route::post('/approve-quotation', [QuotationController::class, 'approve']);
+Route::post('/quotation-to-cart', [QuotationController::class, 'quotationToCart']);
 
 // Product Pages
 Route::get('/services', [ServicesController::class, 'index']);

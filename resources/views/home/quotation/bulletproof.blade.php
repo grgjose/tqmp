@@ -95,6 +95,11 @@
             width: 0%;
             transition: width 0.3s ease;
         }
+
+        .drag-over {
+            border: 2px dashed #0d6efd;
+            background-color: #f0f8ff;
+        }
     </style>
 
     <!-- Header -->
@@ -209,7 +214,7 @@
             <div class="col-md-12 mb-3">
                 <label for="remarks" class="form-label text-muted">Remarks <span class="text-danger">*</span></label>
                 <textarea id="remarks" name="remarks" rows="3" placeholder="Enter special instructions or remarks here"
-                    class="form-control form-control-sm" required></textarea>
+                    class="form-control form-control-sm"></textarea>
             </div>
 
             <!-- File Upload Section -->
@@ -237,64 +242,87 @@
         const dropzone = document.getElementById('dropzone');
         const fileInput = document.getElementById('fileUpload');
         const fileList = document.getElementById('fileList');
-    
+        const form = document.querySelector('form');
+
         let filesToUpload = [];
-    
+
         dropzone.addEventListener('click', () => fileInput.click());
-    
+
         dropzone.addEventListener('dragover', (e) => {
             e.preventDefault();
             dropzone.classList.add('dragover');
         });
-    
+
         dropzone.addEventListener('dragleave', () => {
             dropzone.classList.remove('dragover');
         });
-    
+
         dropzone.addEventListener('drop', (e) => {
             e.preventDefault();
             dropzone.classList.remove('dragover');
             handleFiles(e.dataTransfer.files);
         });
-    
+
         fileInput.addEventListener('change', () => {
             handleFiles(fileInput.files);
         });
-    
+
         function handleFiles(selectedFiles) {
-            Array.from(selectedFiles).forEach(file => {
-                const fileId = crypto.randomUUID();
-                filesToUpload.push({
-                    id: fileId,
-                    file: file,
-                    progress: 0,
-                    interval: null
+            const fileInput = document.getElementById('fileUpload');
+            const currentFiles = fileInput.files;
+            const newFiles = Array.from(selectedFiles);
+
+            // Check for duplicates by comparing file name and size
+            const existingFileNames = Array.from(currentFiles).map(file => file.name);
+
+            // Filter out files that are already in the list
+            const uniqueFiles = newFiles.filter(file => !existingFileNames.includes(file.name));
+
+            if (uniqueFiles.length > 0) {
+                // Add only unique files to the filesToUpload array
+                uniqueFiles.forEach(file => {
+                    const fileId = crypto.randomUUID();
+                    filesToUpload.push({
+                        id: fileId,
+                        file: file,
+                        progress: 0,
+                        interval: null
+                    });
                 });
-            });
-            updateFileList();
+
+                // Update the filenames input with the new files, avoiding duplicates
+                const allFiles = [...currentFiles, ...uniqueFiles];
+                const dataTransfer = new DataTransfer();
+                allFiles.forEach(file => dataTransfer.items.add(file));
+                fileInput.files = dataTransfer.files;
+
+                updateFileList();
+            } else {
+                console.log('No new files were added (files are duplicates).');
+            }
         }
-    
+
         function updateFileList() {
             fileList.innerHTML = '';
-    
+
             filesToUpload.forEach((item, index) => {
                 const { id, file, progress } = item;
-    
+
                 const li = document.createElement('li');
                 li.classList.add('preview-item');
                 li.setAttribute('data-id', id);
-    
+
                 if (file.type.startsWith('image/')) {
                     const img = document.createElement('img');
                     img.src = URL.createObjectURL(file);
                     img.onload = () => URL.revokeObjectURL(img.src);
                     li.appendChild(img);
                 }
-    
+
                 const span = document.createElement('span');
                 span.textContent = file.name;
                 li.appendChild(span);
-    
+
                 const removeBtn = document.createElement('span');
                 removeBtn.classList.add('remove-btn');
                 removeBtn.innerHTML = '&times;';
@@ -302,7 +330,7 @@
                     removeFileById(id);
                 });
                 li.appendChild(removeBtn);
-    
+
                 // Progress bar
                 const progressWrapper = document.createElement('div');
                 progressWrapper.className = 'progress';
@@ -311,16 +339,16 @@
                 progressBar.style.width = `${progress}%`;
                 progressWrapper.appendChild(progressBar);
                 li.appendChild(progressWrapper);
-    
+
                 fileList.appendChild(li);
-    
+
                 // Start upload simulation if not already complete
                 if (progress < 100 && item.interval === null) {
                     item.interval = simulateUpload(item, progressBar);
                 }
             });
         }
-    
+
         function simulateUpload(fileItem, barElement) {
             return setInterval(() => {
                 if (fileItem.progress < 100) {
@@ -332,7 +360,7 @@
                 }
             }, 100);
         }
-    
+
         function removeFileById(fileId) {
             const index = filesToUpload.findIndex(f => f.id === fileId);
             if (index > -1) {
@@ -342,6 +370,9 @@
                 updateFileList();
             }
         }
+
+        //
+
     </script>
 
     <script>
