@@ -348,13 +348,18 @@ class QuotationController extends Controller
         $quotation->status = 'Added to Cart';
         $quotation->save();
 
-        $cart = new Cart();
-        $cart->user_id = $my_user->id;
-        $cart->quotation_id = $id;
-        $cart->price = $quotation->price;
-        $cart->save();
+        $findQuotation = DB::table('carts')->where('quotation_id', '=', $id)->get();
 
-        return redirect('/profile')->with('success_msg', $quotation->reference . ' Quotation Cancelled.');
+        if(count($findQuotation) == 0){
+            $cart = new Cart();
+            $cart->user_id = $my_user->id;
+            $cart->quotation_id = $id;
+            $cart->quantity = 1;
+            $cart->price = $quotation->final_price;
+            $cart->save();
+        }
+
+        return redirect('/profile')->with('success_msg', $quotation->reference . ' Quotation Added to Cart.');
     }
 
     /**

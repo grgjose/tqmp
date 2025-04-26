@@ -269,17 +269,15 @@
 
         function handleFiles(selectedFiles) {
             const fileInput = document.getElementById('fileUpload');
-            const currentFiles = fileInput.files;
             const newFiles = Array.from(selectedFiles);
 
-            // Check for duplicates by comparing file name and size
-            const existingFileNames = Array.from(currentFiles).map(file => file.name);
+            // Check duplicates only based on filesToUpload array (not input.files)
+            const existingFileNames = filesToUpload.map(f => f.file.name);
 
-            // Filter out files that are already in the list
+            // Filter out duplicates
             const uniqueFiles = newFiles.filter(file => !existingFileNames.includes(file.name));
 
             if (uniqueFiles.length > 0) {
-                // Add only unique files to the filesToUpload array
                 uniqueFiles.forEach(file => {
                     const fileId = crypto.randomUUID();
                     filesToUpload.push({
@@ -290,16 +288,15 @@
                     });
                 });
 
-                // Update the filenames input with the new files, avoiding duplicates
-                const allFiles = [...currentFiles, ...uniqueFiles];
+                // Now update the input.files properly using all files in filesToUpload
                 const dataTransfer = new DataTransfer();
-                allFiles.forEach(file => dataTransfer.items.add(file));
+                filesToUpload.forEach(item => dataTransfer.items.add(item.file));
                 fileInput.files = dataTransfer.files;
-
-                updateFileList();
             } else {
                 console.log('No new files were added (files are duplicates).');
             }
+
+            updateFileList(); // Always update UI
         }
 
         function updateFileList() {
@@ -367,6 +364,12 @@
                 const fileItem = filesToUpload[index];
                 if (fileItem.interval) clearInterval(fileItem.interval);
                 filesToUpload.splice(index, 1);
+
+                // Update the actual input files after removing
+                const dataTransfer = new DataTransfer();
+                filesToUpload.forEach(item => dataTransfer.items.add(item.file));
+                fileInput.files = dataTransfer.files;
+
                 updateFileList();
             }
         }

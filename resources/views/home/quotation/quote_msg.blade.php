@@ -57,80 +57,94 @@
                     <div class="row mt-3">
                         
                         <!-- Top Section -->
-
                         <div class="row my-3">
-                            <div class="col-4 d-grid">
-                                <button class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#cancelModal">Cancel</button>
-                            </div>
-                            <div class="col-4 d-grid">
-                                <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#approveModal">Approve</button>
-                            </div>
-                            <div class="col-4 d-grid">
-                                <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#addToCartModal">Add to Cart</button>
-                            </div>
+                            @if($quotation->status != 'Cancelled' && $quotation->status != 'Approved')
+
+                                <div class="col-4 d-grid">
+                                    <button class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#cancelModal">Cancel</button>
+                                </div>
+                                <div class="col-4 d-grid">
+                                    <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#approveModal">Approve</button>
+                                </div>
+                                
+                             @endif
+
+                             @if($quotation->status != 'Cancelled')
+                                <div class="col-4 d-grid">
+                                    <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#addToCartModal">Add to Cart</button>
+                                </div>
+                            @endif
                         </div>
-                        
+
                         <!-- Cancel Modal -->
                         <div class="modal fade" id="cancelModal" tabindex="-1" aria-labelledby="cancelModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                              <form method="POST" action="/cancel-quotation">
-                                @csrf
-                                <input type="hidden" name="quotation_id" value="{{ $quotation->id }}"/>
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="cancelModalLabel">Confirm Cancellation</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <form method="POST" action="/cancel-quotation">
+                                        @csrf
+                                        <input type="hidden" name="quotation_id" value="{{ $quotation->id }}"/>
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="cancelModalLabel">Confirm Cancellation</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to cancel? Which means this Quotation will no longer be available for Update / Messages?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Yes, Cancel</button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="modal-body">
-                                    Are you sure you want to cancel? Which means this Quotation will no longer be available for Update / Messages?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Yes, Cancel</button>
-                                </div>
-                              </form>
                             </div>
-                          </div>
                         </div>
-                        
+                            
                         <!-- Approve Modal -->
                         <div class="modal fade" id="approveModal" tabindex="-1" aria-labelledby="approveModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="approveModalLabel">Confirm Approval</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                Are you sure you want to Approve? All Details in this Quotation will be valid and unchangeable in 2 weeks or more, making this Quotaiton uneditable.
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Yes, Approve</button>
-                              </div>
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <form method="POST" action="/approve-quotation">
+                                        @csrf
+                                        <input type="hidden" name="quotation_id" value="{{ $quotation->id }}"/>
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="approveModalLabel">Confirm Approval</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to Approve? All Details in this Quotation will be valid and unchangeable in 2 weeks or more, making this Quotaiton uneditable.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Yes, Approve</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                          </div>
-                        </div>
-                        
-                        <!-- Add to Cart Modal -->
-                        <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="addToCartModalLabel">Confirm Add to Cart</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                Are you sure you want to add this item to your cart?
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes, Add to Cart</button>
-                              </div>
-                            </div>
-                          </div>
                         </div>
 
+                        <!-- Add to Cart Modal -->
+                        <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <form method="POST" action="/quotation-to-cart">
+                                        @csrf
+                                        <input type="hidden" name="quotation_id" value="{{ $quotation->id }}"/>
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="addToCartModalLabel">Confirm Add to Cart</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to add this item to your cart?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Yes, Add to Cart</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <!-- Left Column -->
                         <div class="col-md-4">
                             <!-- Basic Information Section -->
@@ -570,23 +584,26 @@
                         </div>
                     </div>
 
-                    <div class="card-footer p-0">
-                        <form action="/user-send-message" method="POST">
-                            @csrf
-                            <input type="hidden" name="quotation_id" value="{{ $quotation->id }}">
-                            <textarea id="summernote" name="message"></textarea>
-                            <div class="p-3 bg-light d-flex justify-content-between">
-                                <div>
-                                    {{-- <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-paperclip me-1"></i>Attach File </button>
-                                    <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-history me-1"></i>View History </button>
-                                    <button class="btn btn-sm btn-outline-secondary"> <i class="fas fa-print me-1"></i>Print Notes </button> --}}
+
+                    @if($quotation->status != 'Cancelled' && $quotation->status != 'Approved')
+                        <div class="card-footer p-0">
+                            <form action="/user-send-message" method="POST">
+                                @csrf
+                                <input type="hidden" name="quotation_id" value="{{ $quotation->id }}">
+                                <textarea id="summernote" name="message"></textarea>
+                                <div class="p-3 bg-light d-flex justify-content-between">
+                                    <div>
+                                        {{-- <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-paperclip me-1"></i>Attach File </button>
+                                        <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-history me-1"></i>View History </button>
+                                        <button class="btn btn-sm btn-outline-secondary"> <i class="fas fa-print me-1"></i>Print Notes </button> --}}
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-sm btn-primary">Send Message</button>
+                                    </div>
                                 </div>
-                                <div>
-                                    <button type="submit" class="btn btn-sm btn-primary">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                            </form>
+                        </div>
+                    @endif
                 </div>
             </div>
             <!--end::Container-->

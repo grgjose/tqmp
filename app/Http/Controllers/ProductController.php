@@ -124,12 +124,16 @@ class ProductController extends Controller
             ->where('products.isDeleted', '=', false)->get();
 
         $productImages = DB::table('product_images')->get();
+        $quotations = DB::table('quotations')->get();
+        $quotationImages = DB::table('quotation_images')->get();
 
         return view("home.cart", [
             'my_user' => $my_user,
             'carts' => $carts,
             'products' => $products,
             'productImages' => $productImages,
+            'quotations' => $quotations,
+            'quotationImages' => $quotationImages,
         ]);
     }
 

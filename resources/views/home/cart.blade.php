@@ -82,35 +82,72 @@
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center">
-                                                @foreach($productImages as $image)
-                                                @if($image->product_id == $cart->product_id)
-                                                <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Product" class="product-image me-3">
-                                                @continue
-                                                @endif
-                                                @endforeach
+                                                @if($cart->product_id != null)
+                                                    @foreach($productImages as $image)
+                                                        @if($image->product_id == $cart->product_id)
+                                                            <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Product" class="product-image me-3">
+                                                            @continue
+                                                        @endif
+                                                    @endforeach
 
-                                                @foreach($products as $product)
-                                                @if($product->id == $cart->product_id)
-                                                <div>
-                                                    <p class="mb-0 fw-bold">{{ $product->display_name }}</p>
-                                                    <small class="text-muted">Color: White | Size: Medium</small>
-                                                    <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $product->price }}</small>
-                                                    <input type="hidden" name="price_{{$cart->id}}" class="hiddenPrice" value="">
-                                                </div>
-                                                @continue
+                                                    @foreach($products as $product)
+                                                        @if($product->id == $cart->product_id)
+                                                            <div>
+                                                                <p class="mb-0 fw-bold">{{ $product->display_name }}</p>
+                                                                <small class="text-muted">Color: White | Size: Medium</small>
+                                                                <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $product->price }}</small>
+                                                                <input type="hidden" name="price_{{$cart->id}}" class="hiddenPrice" value="">
+                                                            </div>
+                                                            @continue
+                                                        @endif
+                                                    @endforeach
+                                                @elseif($cart->quotation_id != null)
+                                                    @foreach($quotationImages as $image)
+                                                        @if($image->quotation_id == $cart->quotation_id)
+                                                            <img src="{{ asset('storage/quotations/'.$image->filename) }}" alt="Quotation Image" class="product-image me-3">
+                                                            @continue
+                                                        @endif
+                                                    @endforeach
+                                                    
+                                                    @foreach($quotations as $quote)
+                                                        @if($quote->id == $cart->quotation_id)
+                                                            <div>
+                                                                <p class="mb-0 fw-bold">{{ $quote->reference }}</p>
+                                                                <small class="text-muted">Color: White | Size: Medium</small>
+                                                                <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $quote->final_price }}</small>
+                                                                <input type="hidden" name="price_{{$cart->id}}" class="hiddenPrice" value="">
+                                                            </div>
+                                                            @continue
+                                                        @endif
+                                                    @endforeach
+                                                            
                                                 @endif
-                                                @endforeach
                                             </div>
                                         </td>
                                         <td class="text-center" style="width: 60px;">
-                                            <input type="number" name="quantity_{{$cart->id}}" class="form-control form-control-sm text-center" value="{{ $cart->quantity }}" min="1">
+                                            @if($cart->product_id != null)
+                                                <input type="number" name="quantity_{{$cart->id}}" class="form-control form-control-sm text-center" value="{{ $cart->quantity }}" min="1">
+                                            @elseif($cart->quotation_id != null)
+                                                <input type="number" name="quantity_{{$cart->id}}" class="form-control form-control-sm text-center" value="{{ $cart->quantity }}" min="1" readonly>
+                                            @endif
                                         </td>
-                                        @foreach($products as $product)
-                                        @if($product->id == $cart->product_id)
-                                        <td class="prices">₱{{ $product->price; }}</td>
-                                        @continue
+                                        
+                                        @if($cart->product_id != null)
+                                            @foreach($products as $product)
+                                                @if($product->id == $cart->product_id)
+                                                    <td class="prices">₱{{ $product->price; }}</td>
+                                                    @continue
+                                                @endif
+                                            @endforeach
+                                        @elseif($cart->quotation_id != null)
+                                            @foreach($quotations as $quote)
+                                                @if($quote->id == $cart->quotation_id)
+                                                    <td class="prices">₱{{ $quote->final_price; }}</td>
+                                                    @continue
+                                                @endif
+                                            @endforeach
                                         @endif
-                                        @endforeach
+
                                         <td class="text-end">
                                             <span class="btn-close" style="cursor: pointer;" onclick="removeItem(this)">&times;</span>
                                         </td>
