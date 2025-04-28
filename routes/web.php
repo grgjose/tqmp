@@ -44,6 +44,7 @@ Route::post('/user-send-message', [QuotationController::class, 'userSendMessage'
 Route::post('/cancel-quotation', [QuotationController::class, 'cancel']);
 Route::post('/approve-quotation', [QuotationController::class, 'approve']);
 Route::post('/quotation-to-cart', [QuotationController::class, 'quotationToCart']);
+Route::post('/remove-cart-item/{id}', [ProductController::class, 'remove']);
 
 // Product Pages
 Route::get('/services', [ServicesController::class, 'index']);

@@ -379,6 +379,7 @@ class ProductController extends Controller
             $order->order_id = 1;
             $order->reference_num = $validated['reference_num'];
             $order->product_id = $cart->product_id;
+            $order->quotation_id = $cart->quotation_id;
             $order->customer_id = $cart->user_id;
             $order->sales_rep_id = 0;
             $order->shipping_address = $my_user->address;
@@ -400,15 +401,51 @@ class ProductController extends Controller
         $auth = auth();
         $my_user = $auth->user();
 
+        // $orders = DB::table('orders')
+        // ->join('products', 'orders.product_id', '=', 'products.id')
+        // ->select('orders.*', 'products.name as name')
+        // ->where('orders.reference_num', '=', $reference)
+        // ->get();
+
         $orders = DB::table('orders')
         ->join('products', 'orders.product_id', '=', 'products.id')
-        ->select('orders.*', 'products.name as name')
+        ->leftJoin('quotations', 'orders.quotation_id', '=', 'quotations.id')
+        ->select(
+            'orders.*',
+            'products.name as p_name',
+            'quotations.reference as q_name'
+        )
         ->where('orders.reference_num', '=', $reference)
         ->get();
 
         return view('home.order_status', [
             'my_user' => $my_user,
             'orders' => $orders,
+        ]);
+    }
+
+    /**
+     * Remove Item from Cart
+     */
+    public function remove($id){
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        $cart = Cart::find($id);
+        if (!$cart) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Cart item not found.',
+            ], 404);
+        }
+    
+        $cart->delete();
+    
+        return response()->json([
+            'success' => true,
+            'message' => 'Item removed from cart.',
+            'user' => $my_user, // Optional — only if needed on the frontend
         ]);
     }
 

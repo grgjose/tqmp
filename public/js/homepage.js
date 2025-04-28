@@ -52,10 +52,32 @@ $(document).ready(function () {
     });
 });
 
-function removeItem(element) {
+function removeItem(element, id) {
     // Find the closest row and remove it
     const row = element.closest('tr');
     if (row) {
         row.remove();
     }
+
+    if (!id) {
+        console.error('No ID provided');
+        return;
+    }
+
+    $.ajax({
+        url: `/remove-cart-item/${id}`,
+        method: 'POST',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') // If you need CSRF token
+        },
+        success: function(response) {
+            console.log('Success:', response);
+            $(element).closest('tr').remove();
+        },
+        error: function(xhr, status, error) {
+            console.error('Error:', error);
+            alert('Failed to remove item from cart.');
+        }
+    });
+    
 }

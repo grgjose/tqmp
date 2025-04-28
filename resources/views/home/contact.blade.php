@@ -192,18 +192,25 @@
         </div>
     </section>
 
-    <!-- Accordion Section -->
-    @include ('plus.accordion')
-    <!-- End of Accordion -->
-
-    <!-- Call to Action -->
-    @include ('plus.cta')
-    <!-- End of Call to Action -->
-
-    <!-- Footer -->
-    @include ('plus.footer')
-    <!-- End of Footer -->
-
+     <!-- Accordion Section -->
+     @include ('plus.accordion')
+     <!-- End of Accordion -->
+ 
+     <!-- Call to Action -->
+     @include ('plus.cta')
+     <!-- End of Call to Action -->
+ 
+     <!-- Chatbot -->
+     @include ('plus.chatbot')
+     <!-- End of Chatbot -->
+ 
+     <!-- Footer -->
+     @include ('plus.footer')
+     <!-- End of Footer -->
+ 
+     <!-- Scripts -->
+     @include ('plus.scripts')
+     <!-- Scripts -->
 
     <!-- Toast -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>

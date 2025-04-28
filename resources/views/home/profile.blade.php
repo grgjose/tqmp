@@ -269,7 +269,8 @@
                                     <td>{{ $quote->valid_until }}</td>
                                     <td class="text-center">
                                         @if($quote->status != 'Cancelled')
-                                            <button type="button" class="btn btn-sm btn-primary py-1 px-2" style="font-size: 0.7rem;">Add to Cart</button>
+                                            <button type="button" class="btn btn-sm btn-primary py-1 px-2" style="font-size: 0.7rem;"  
+                                            data-bs-toggle="modal" data-bs-target="#addToCartModal" onclick="AddtoCartUpdateModal({{$quote->id}})">Add to Cart</button>
                                         @endif
                                     </td>
                                 </tr>
@@ -277,6 +278,29 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add to Cart Modal -->
+        <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <form method="POST" action="/quotation-to-cart">
+                        @csrf
+                        <input type="hidden" id="quotation_id_modal" name="quotation_id" value=""/>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addToCartModalLabel">Confirm Add to Cart</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to add this item to your cart?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Yes, Add to Cart</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -395,6 +419,12 @@
 
     </div>
 
+    <script>
+        function AddtoCartUpdateModal(id){
+            $("#quotation_id_modal").val(id);
+        }
+    </script>
+
     <!-- Chatbot -->
     @include ('plus.chatbot')
     <!-- End of Chatbot -->
@@ -402,6 +432,10 @@
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
+
+    <!-- Scripts -->
+    @include ('plus.scripts')
+    <!-- End of Scripts -->
 
     <!--Required Plugin(popperjs for Bootstrap 5)-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

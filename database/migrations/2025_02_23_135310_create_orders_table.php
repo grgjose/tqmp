@@ -16,6 +16,7 @@ return new class extends Migration
             $table->integer('order_id')->nullable();
             $table->string('reference_num')->nullable();
             $table->integer('product_id')->nullable();
+            $table->integer('quotation_id')->nullable();
             $table->integer('customer_id')->nullable();
             $table->integer('sales_rep_id')->nullable();
             $table->string('shipping_address')->nullable();

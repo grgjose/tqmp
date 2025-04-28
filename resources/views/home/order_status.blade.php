@@ -113,7 +113,11 @@
                         <tbody>
                             @foreach($orders as $order)
                             <tr>
-                                <td>{{ $order->name }}</td>
+                                @if($order->p_name == "" || $order->p_name == null)
+                                    <td>{{ $order->q_name }}</td>
+                                @else
+                                    <td>{{ $order->p_name }}</td>
+                                @endif
                                 <td>{{ $order->quantity }}</td>
                                 <td class="text-end">₱{{ $order->price }}</td>
                                 <span style="display: none;">

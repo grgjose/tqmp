@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Total Quality Management Products Philippines">
     <meta name="author" content="TQMP">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Title and Favicon -->
     <title>Checkout | Total Quality Management Products Philippines</title>
@@ -148,7 +149,7 @@
                                         @endif
 
                                         <td class="text-end">
-                                            <span class="btn-close" style="cursor: pointer;" onclick="removeItem(this)">&times;</span>
+                                            <span class="btn-close" style="cursor: pointer;" onclick="removeItem(this, {{$cart->id}})">&times;</span>
                                         </td>
                                     </tr>
                                     @endforeach

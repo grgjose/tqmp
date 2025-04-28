@@ -185,9 +185,18 @@
     @include ('plus.cta')
     <!-- End of Call to Action -->
 
+    <!-- Chatbot -->
+    @include ('plus.chatbot')
+    <!-- End of Chatbot -->
+
     <!-- Footer -->
     @include ('plus.footer')
     <!-- End of Footer -->
+
+    <!-- Scripts -->
+    @include ('plus.scripts')
+    <!-- Scripts -->
+
 </body>
 
 </html>

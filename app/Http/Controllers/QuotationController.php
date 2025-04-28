@@ -369,7 +369,7 @@ class QuotationController extends Controller
             $cart->save();
         }
 
-        return redirect('/profile')->with('success_msg', $quotation->reference . ' Quotation Added to Cart.');
+        return redirect('/cart')->with('success_msg', $quotation->reference . ' Quotation Added to Cart.');
     }
 
     /**
