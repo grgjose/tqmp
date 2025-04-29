@@ -376,8 +376,8 @@ body {
 .navbar .nav-link:focus,
 .navbar .nav-link.active {
     color: #7e1416;
-    font-weight: bold;
-    transition: opacity 0.3s ease;
+    font-weight: 500;
+    /* transition: opacity 0.5s ease; */
 }
 
 .sticky-top {
@@ -409,6 +409,12 @@ body {
     transform: rotate(90deg);
 }
 
+.dropdown-item {
+    color: #1c2033;
+    font-size: smaller;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
@@ -419,7 +425,7 @@ body {
     .nav-link {
         width: 100%;
         text-align: left;
-        padding: 0.5rem 1rem;
+        /* padding: 0.5rem 1rem; */
     }
 
     .navbar-collapse {
@@ -430,6 +436,7 @@ body {
     .navbar-toggler {
         display: inline-block;
     }
+
 }
 
 @media (min-width: 769px) {

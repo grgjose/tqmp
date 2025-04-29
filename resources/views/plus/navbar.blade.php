@@ -94,17 +94,18 @@
                             <li><a class="dropdown-item" href="/gentrade">Architectural Hardwares</a></li>
                         </ul>
                     </li>
+                    @if($my_user != null)
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="/shop">Shop</a>
+                    </li>
+                    @endif
                     <li class="nav-item">
                         <a class="nav-link px-3" href="/about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-3" href="/contact">Contact</a>
                     </li>
-                    @if($my_user != null)
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="/shop">Shop</a>
-                    </li>
-                    @endif
+
                 </ul>
 
                 <div class="d-flex align-items-center">
@@ -118,9 +119,10 @@
                     <div class="dropdown">
                         <!-- Desktop View: Profile Picture -->
                         <a href="#" class="d-none d-md-flex align-items-center text-decoration-none dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="{{ $my_user->user_pic ? asset('storage/user-pics/' . $my_user->user_pic) : asset('storage/user-pics/default.png') }}"
+                            <!-- <img src="{{ $my_user->user_pic ? asset('storage/user-pics/' . $my_user->user_pic) : asset('storage/user-pics/default.png') }}"
                                 alt="{{ $my_user->name }}'s profile picture"
-                                class="rounded-circle" width="40" height="40">
+                                class="rounded-circle" width="40" height="40"> -->
+                                <i class="fa-solid fa-circle-user fs-4 text-dark"></i>
                         </a>
 
                         <!-- Mobile View: "My Profile" Text -->
@@ -144,6 +146,7 @@
                                 </form>
                             </li>
                         </ul>
+
                     </div>
                     @endif
 

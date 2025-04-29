@@ -105,28 +105,30 @@
         }
     </style>
 
-    <div class=" me-5 ms-5 py-5">
-        <form action="/create-quotation" method="POST" enctype="multipart/form-data">
-            @csrf
-            <div class="card-header bg-white py-3">
-                <nav aria-label="breadcrumb">
-                    <h6>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a class="text-danger" href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-danger" href="#">Get Quote</a></li>
-                            <li class="breadcrumb-item "><a>Glass Processing</a></li>
-                        </ol>
-                    </h6>
-                </nav>
-            </div>
-            <div class="mb-3">
-                <label for="type" class="form-label text-muted">Type <span class="text-danger">*</span></label>
-                <select id="type" class="form-select form-select-sm" aria-label="Type selection" disabled>
-                    <option value="glass" disabled selected>Glass Processing</option>
-                </select>
-                <input type="hidden" name="quotation_type" value="glass">
-            </div>
+    <div class="scard-header bg-white mt-5 me-5 ms-5 mb-3">
+        <nav aria-label="breadcrumb">
+            <h6>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-danger" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-danger" href="#">Get Quote</a></li>
+                    <li class="breadcrumb-item "><a>Glass Processing</a></li>
+                </ol>
+            </h6>
+        </nav>
+    </div>
 
+    <div id="alertContainer" class="ms-5 me-5 mb-3"></div>
+    <form action="/create-quotation" method="POST" enctype="multipart/form-data">
+    @csrf
+    <div class=" me-5 ms-5">
+        <div class="mb-3">
+            <label for="type" class="form-label text-muted">Type <span class="text-danger">*</span></label>
+            <select id="type" class="form-select form-select-sm" aria-label="Type selection" disabled>
+                <option value="glass" disabled selected>Glass Processing</option>
+            </select>
+            <input type="hidden" name="quotation_type" value="glass">
+        </div>
+        
             <div id="item-rows-container">
                 <!-- Initial row -->
                 <div class="row mb-3 item-row" data-row="1">
@@ -156,7 +158,7 @@
                     </div>
 
                     <!-- Color -->
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <label class="form-label text-muted">Color <span class="text-danger">*</span></label>
                         <select name="color[]" class="form-select form-select-sm" required>
                             <option disabled selected value="">Select Color</option>
@@ -175,7 +177,7 @@
                     </div>
                     <div class="col-md-1">
                         <label class="form-label text-muted">Height 2 <span class="text-danger">*</span></label>
-                        <input name="height2[]" class="form-control form-control-sm" type="number" placeholder="mm">
+                        <input name="height2[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
                     </div>
 
                     <!-- Width -->
@@ -185,7 +187,7 @@
                     </div>
                     <div class="col-md-1">
                         <label class="form-label text-muted">Width 2 <span class="text-danger">*</span></label>
-                        <input name="width2[]" class="form-control form-control-sm" type="number" placeholder="mm">
+                        <input name="width2[]" class="form-control form-control-sm" type="number" placeholder="mm" required>
                     </div>
 
                     <!-- Quantity -->
@@ -194,17 +196,30 @@
                         <input name="quantity[]" class="form-control form-control-sm" type="number" min="1" value="1" required>
                     </div>
 
+                    <div class="col-md-1 d-flex align-items-center">
+                        <div class="d-flex justify-content-center gap-3 w-100">
+                            <div>
+                                <i class="fa-solid fa-square-plus fs-3 text-dark" id="add-item-row-btn"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-square-minus fs-3 text-danger remove-row-btn" style="display: none;"></i>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Remarks -->
                     <div class="mt-3">
                         <label for="remarks" class="form-label text-muted">Cutting Details<span class="text-danger">*</span></label>
                         <textarea id="remarks" name="cutting_details[]" rows="3" placeholder="Enter special instructions or cutting details here"
-                            class="form-control form-control-sm"></textarea>
+                            class="form-control form-control-sm" required></textarea>
                     </div>
 
                     <!-- Remove button (hidden for first row) -->
-                    <div class="col-md-12 mt-2 text-end">
+                    <!-- <div class="col-md-12 mt-2 text-end">
                         <button type="button" class="btn btn-sm btn-danger remove-row-btn" style="display: none;">Remove Row</button>
-                    </div>
+                    </div> -->
+
+
                 </div>
             </div>
 
@@ -221,24 +236,22 @@
 
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-6 mb-2">
+                    <!-- <div class="col-md-6 mb-2">
                         <button type="button" class="btn btn-primary btn-lg w-100" id="add-item-row-btn">Add item row</button>
-                    </div>
-                    <div class="col-md-6 mb-2">
+                    </div> -->
+                    <div class="col-md-12 mb-3">
                         <button type="submit" class="btn btn-danger btn-lg w-100">Submit Quotation Request</button>
                     </div>
                 </div>
-                {{-- <button type="button" class="btn btn-primary col-" >Add item row</button>
-                <button type="submit" class="btn btn-danger btn-lg ">Submit Quotation Request</button> --}}
+                <!-- {{-- <button type="button" class="btn btn-primary col-" >Add item row</button>
+                <button type="submit" class="btn btn-danger btn-lg ">Submit Quotation Request</button> --}} -->
             </div>
 
         </form>
     </div>
 
     </div>
-    <!-- Add this alert div at the top of your form (initially hidden) -->
-    <!-- Alert Container (initially empty) -->
-    <div id="alertContainer" class="ms-5 me-5"></div>
+
 
 
     <!-- Your existing container and button -->
