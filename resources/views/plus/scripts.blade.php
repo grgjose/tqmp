@@ -1,5 +1,5 @@
     <!-- Replace your current Bootstrap JS with this -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> --}}
 
     <!-- Include DataTables CSS and JS -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
@@ -14,4 +14,30 @@
     <!-- Toast -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
-    <!-- Bootstrap JS -->
+    @if(session()->has('error_msg'))
+    <script>
+        toastr.options.preventDuplicates = true;
+        toastr.error("{{ session('error_msg') }}");
+    </script>
+    @endif
+
+    @error('code')
+    <script>
+        toastr.options.preventDuplicates = true;
+        toastr.error('Code already exists');
+    </script>
+    @enderror
+
+    @if(session()->has('success_msg'))
+    <script>
+        toastr.options.preventDuplicates = true;
+        toastr.success("{{ session('success_msg') }}");
+    </script>
+    @endif
+
+    @if(session()->has('download_file'))
+    <script>
+        $("#download_filename").val("{{ session('download_file') }}");
+        $("#downloadForm").submit();
+    </script>
+    @endif

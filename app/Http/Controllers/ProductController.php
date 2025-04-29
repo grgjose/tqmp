@@ -105,7 +105,7 @@ class ProductController extends Controller
         }
 
 
-        return redirect('/cart')->with('success_msg', 'Redirected to Cart');
+        return redirect('/shop')->with('success_msg', 'Item Added to Cart');
     }
 
     /**

@@ -19,6 +19,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
+    <!-- Toast -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
     <!-- Chatbot CSS -->
     <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
 
@@ -169,9 +172,12 @@
     @include ('plus.footer')
     <!-- End of Footer -->
 
+    <!-- Scripts -->
+    @include ('plus.scripts')
+    <!-- End of Scripts -->
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    {{-- <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> --}}
 </body>
 
 </html>

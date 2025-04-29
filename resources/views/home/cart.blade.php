@@ -20,6 +20,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
+    <!-- Toast -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    
     <!-- Chatbot CSS -->
     <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
     <!-- Chatbot JS -->
@@ -66,6 +69,7 @@
                                         <th></th>
                                         <th>Product Details</th>
                                         <th>Quantity</th>
+                                        <th>Unit Price</th>
                                         <th>Price</th>
                                         <th></th>
                                     </tr>
@@ -79,7 +83,7 @@
                                     @foreach($carts as $cart)
                                     <tr>
                                         <td>
-                                            <input type="checkbox" name="checkboxes[]" value="{{$cart->id}}" class="form-check-input">
+                                            <input type="checkbox" name="checkboxes[]" value="{{$cart->id}}" class="form-check-input" checked>
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center">
@@ -87,7 +91,7 @@
                                                     @foreach($productImages as $image)
                                                         @if($image->product_id == $cart->product_id)
                                                             <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Product" class="product-image me-3">
-                                                            @continue
+                                                            @break
                                                         @endif
                                                     @endforeach
 
@@ -131,18 +135,20 @@
                                                 <input type="number" name="quantity_{{$cart->id}}" class="form-control form-control-sm text-center" value="{{ $cart->quantity }}" min="1" readonly>
                                             @endif
                                         </td>
-                                        
+
                                         @if($cart->product_id != null)
                                             @foreach($products as $product)
                                                 @if($product->id == $cart->product_id)
-                                                    <td class="prices">₱{{ $product->price; }}</td>
+                                                    <td class="item_prices">₱{{ $product->price; }}</td>
+                                                    <td class="prices">₱{{ $product->price * $cart->quantity; }}</td>
                                                     @continue
                                                 @endif
                                             @endforeach
                                         @elseif($cart->quotation_id != null)
                                             @foreach($quotations as $quote)
                                                 @if($quote->id == $cart->quotation_id)
-                                                    <td class="prices">₱{{ $quote->final_price; }}</td>
+                                                    <td class="item_prices">₱{{ $quote->final_price; }}</td>
+                                                    <td class="prices">₱{{ $quote->final_price * $cart->quantity; }}</td>
                                                     @continue
                                                 @endif
                                             @endforeach

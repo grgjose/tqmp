@@ -9,15 +9,18 @@ $(document).ready(function () {
         $("tbody tr").each(function () {
             let isChecked = $(this).find("input[type='checkbox']").prop("checked");
             if (isChecked) {
-                let priceText = $(this).find(".prices").text().replace("₱", "").trim();
+                let priceText = $(this).find(".item_prices").text().replace("₱", "").trim();
                 let quantity = $(this).find("input[type='number']").val();
 
                 if (priceText && quantity) {
                     let price = parseFloat(priceText) || 0;
                     let qty = parseInt(quantity, 10) || 1;
+                    //let qty = parseInt(quantity);
+
                     subtotal += price * qty;
 
                     $(this).find(".hiddenPrice").val(price * qty);
+                    $(this).find(".prices").text("₱" + (price * qty).toFixed(2));
                     checkedItems++; // Count checked items
                 }
             }

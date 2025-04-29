@@ -185,34 +185,6 @@
     @include ('plus.footer')
     <!-- End of Footer -->
 
-    
-    @if(session()->has('error_msg'))
-    <script>
-        toastr.options.preventDuplicates = true;
-        toastr.error("{{ session('error_msg') }}");
-    </script>
-    @endif
-
-    @error('code')
-    <script>
-        toastr.options.preventDuplicates = true;
-        toastr.error('Code already exists');
-    </script>
-    @enderror
-
-    @if(session()->has('success_msg'))
-    <script>
-        toastr.options.preventDuplicates = true;
-        toastr.success("{{ session('success_msg') }}");
-    </script>
-    @endif
-
-    @if(session()->has('download_file'))
-    <script>
-        $("#download_filename").val("{{ session('download_file') }}");
-        $("#downloadForm").submit();
-    </script>
-    @endif
 </body>
 
 </html>

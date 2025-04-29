@@ -85,9 +85,9 @@
                     <!-- Quantity and Price -->
                     <div class="d-flex align-items-center mb-4">
                         <div class="btn-group me-3" style="width: 120px;">
-                            <button class="btn btn-outline-danger">-</button>
-                            <input type="number" name="quantity" class="form-control text-center" value="1">
-                            <button class="btn btn-outline-danger">+</button>
+                            <button type="button" onclick="decreaseQuantity()" class="btn btn-outline-danger">-</button>
+                            <input type="number" id="quantity" name="quantity" class="form-control text-center" value="1">
+                            <button type="button" onclick="increaseQuantity()" class="btn btn-outline-danger">+</button>
                             <input type="hidden" name="id" value="{{ $product->id }}">
                             <input type="hidden" name="price" value="{{ $product->price }}">
                         </div>
@@ -132,16 +132,34 @@
                     </div> -->
 
                     <!-- Add to Cart Button -->
-                    <button class="card-button btn btn-danger btn-lg w-100 mb-4 mt-3">Add to Cart</button>
+                    <button type="submit" class="card-button btn btn-danger btn-lg w-100 mb-4 mt-3">Add to Cart</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <script>
+        function increaseQuantity(){
+            if(parseInt($('#quantity').val()) <= 99){
+                $('#quantity').val(parseInt($('#quantity').val()) + 1)
+            }
+        }
+
+        function decreaseQuantity(){
+            if(parseInt($('#quantity').val()) >= 2){
+                $('#quantity').val(parseInt($('#quantity').val()) - 1)
+            }
+        }
+    </script>
 </body>
 <!--end::Body-->
 
 <!-- Footer -->
 @include ('plus.footer')
 <!-- End of Footer -->
+
+<!-- Scripts -->
+@include ('plus.scripts')
+<!-- End of Scripts -->
 
 </html>
