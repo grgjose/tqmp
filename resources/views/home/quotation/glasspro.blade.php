@@ -119,16 +119,16 @@
 
     <div id="alertContainer" class="ms-5 me-5 mb-3"></div>
     <form action="/create-quotation" method="POST" enctype="multipart/form-data">
-    @csrf
-    <div class=" me-5 ms-5">
-        <div class="mb-3">
-            <label for="type" class="form-label text-muted">Type <span class="text-danger">*</span></label>
-            <select id="type" class="form-select form-select-sm" aria-label="Type selection" disabled>
-                <option value="glass" disabled selected>Glass Processing</option>
-            </select>
-            <input type="hidden" name="quotation_type" value="glass">
-        </div>
-        
+        @csrf
+        <div class=" me-5 ms-5">
+            <div class="mb-3">
+                <label for="type" class="form-label text-muted">Type <span class="text-danger">*</span></label>
+                <select id="type" class="form-select form-select-sm" aria-label="Type selection" disabled>
+                    <option value="glass" disabled selected>Glass Processing</option>
+                </select>
+                <input type="hidden" name="quotation_type" value="glass">
+            </div>
+
             <div id="item-rows-container">
                 <!-- Initial row -->
                 <div class="row mb-3 item-row" data-row="1">
@@ -199,7 +199,7 @@
                     <div class="col-md-1 d-flex align-items-center">
                         <div class="d-flex justify-content-center gap-3 w-100">
                             <div>
-                                <i class="fa-solid fa-square-plus fs-3 text-dark" id="add-item-row-btn"></i>
+                                <i class="fa-solid fa-square-plus fs-3 text-dark add-item-row-btn"></i>
                             </div>
                             <div>
                                 <i class="fa-solid fa-square-minus fs-3 text-danger remove-row-btn" style="display: none;"></i>
@@ -247,7 +247,7 @@
                 <button type="submit" class="btn btn-danger btn-lg ">Submit Quotation Request</button> --}} -->
             </div>
 
-        </form>
+    </form>
     </div>
 
     </div>
@@ -264,7 +264,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const container = document.getElementById('item-rows-container');
-            const addButton = document.getElementById('add-item-row-btn');
             const alertContainer = document.getElementById('alertContainer');
             let rowCount = 1;
             const MAX_ROWS = 10;
@@ -272,40 +271,42 @@
             // Function to show Bootstrap alert
             function showMaxItemsAlert() {
                 alertContainer.innerHTML = `
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                Maximum limit reached: You can only add up to 10 items
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        `;
-
-                // Initialize Bootstrap alert
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    Maximum limit reached: You can only add up to 10 items
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            `;
                 new bootstrap.Alert(alertContainer.querySelector('.alert'));
             }
 
-            // Add new row
-            addButton.addEventListener('click', function() {
-                if (rowCount >= MAX_ROWS) {
-                    showMaxItemsAlert();
-                    return;
+            // Event delegation for add buttons
+            container.addEventListener('click', function(e) {
+                // Handle add row button click
+                if (e.target.closest('.add-item-row-btn')) {
+                    if (rowCount >= MAX_ROWS) {
+                        showMaxItemsAlert();
+                        return;
+                    }
+
+                    rowCount++;
+                    const template = document.querySelector('.item-row');
+                    const newRow = template.cloneNode(true);
+
+                    // Remove ID from cloned add button to prevent duplicates
+                    newRow.querySelector('.add-item-row-btn').removeAttribute('id');
+
+                    newRow.setAttribute('data-row', rowCount);
+                    newRow.querySelector('.remove-row-btn').style.display = 'inline-block';
+
+                    const inputs = newRow.querySelectorAll('input, select, textarea');
+                    inputs.forEach(input => {
+                        if (input.name !== 'qty[]') input.value = '';
+                    });
+
+                    container.appendChild(newRow);
                 }
 
-                rowCount++;
-                const template = document.querySelector('.item-row');
-                const newRow = template.cloneNode(true);
-
-                newRow.setAttribute('data-row', rowCount);
-                newRow.querySelector('.remove-row-btn').style.display = 'inline-block';
-
-                const inputs = newRow.querySelectorAll('input, select, textarea');
-                inputs.forEach(input => {
-                    if (input.name !== 'qty[]') input.value = '';
-                });
-
-                container.appendChild(newRow);
-            });
-
-            // Remove row
-            container.addEventListener('click', function(e) {
+                // Handle remove row button click
                 if (e.target.classList.contains('remove-row-btn')) {
                     const rows = document.querySelectorAll('.item-row');
                     if (rows.length > 1) {
@@ -316,6 +317,9 @@
                     }
                 }
             });
+
+            // Initialize the first remove button as hidden
+            document.querySelector('.item-row .remove-row-btn').style.display = 'none';
         });
     </script>
 

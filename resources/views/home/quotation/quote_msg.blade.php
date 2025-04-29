@@ -55,24 +55,24 @@
 
                     <!-- Work Notes List -->
                     <div class="row mt-3">
-                        
+
                         <!-- Top Section -->
                         <div class="row my-3">
                             @if($quotation->status != 'Cancelled' && $quotation->status != 'Approved')
 
-                                <div class="col-4 d-grid">
-                                    <button class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#cancelModal">Cancel</button>
-                                </div>
-                                <div class="col-4 d-grid">
-                                    <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#approveModal">Approve</button>
-                                </div>
-                                
-                             @endif
+                            <div class="col-4 d-grid">
+                                <button class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#cancelModal">Cancel</button>
+                            </div>
+                            <div class="col-4 d-grid">
+                                <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#approveModal">Approve</button>
+                            </div>
 
-                             @if($quotation->status != 'Cancelled')
-                                <div class="col-4 d-grid">
-                                    <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#addToCartModal">Add to Cart</button>
-                                </div>
+                            @endif
+
+                            @if($quotation->status != 'Cancelled')
+                            <div class="col-4 d-grid">
+                                <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#addToCartModal">Add to Cart</button>
+                            </div>
                             @endif
                         </div>
 
@@ -82,7 +82,7 @@
                                 <div class="modal-content">
                                     <form method="POST" action="/cancel-quotation">
                                         @csrf
-                                        <input type="hidden" name="quotation_id" value="{{ $quotation->id }}"/>
+                                        <input type="hidden" name="quotation_id" value="{{ $quotation->id }}" />
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="cancelModalLabel">Confirm Cancellation</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -98,14 +98,14 @@
                                 </div>
                             </div>
                         </div>
-                            
+
                         <!-- Approve Modal -->
                         <div class="modal fade" id="approveModal" tabindex="-1" aria-labelledby="approveModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <form method="POST" action="/approve-quotation">
                                         @csrf
-                                        <input type="hidden" name="quotation_id" value="{{ $quotation->id }}"/>
+                                        <input type="hidden" name="quotation_id" value="{{ $quotation->id }}" />
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="approveModalLabel">Confirm Approval</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -128,7 +128,7 @@
                                 <div class="modal-content">
                                     <form method="POST" action="/quotation-to-cart">
                                         @csrf
-                                        <input type="hidden" name="quotation_id" value="{{ $quotation->id }}"/>
+                                        <input type="hidden" name="quotation_id" value="{{ $quotation->id }}" />
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="addToCartModalLabel">Confirm Add to Cart</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -144,7 +144,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Left Column -->
                         <div class="col-md-4">
                             <!-- Basic Information Section -->
@@ -173,82 +173,81 @@
                                                 <div class="col-md-4">
                                                     <label class="form-label fw-bold">Valid Until</label>
                                                     @if($quotation->valid_until == null)
-                                                        <input class="form-control" type="text" placeholder="TBD" readonly>
+                                                    <input class="form-control" type="text" placeholder="TBD" readonly>
                                                     @else
-                                                        <input class="form-control" type="text" placeholder="{{ $quotation->valid_until }}" readonly>
+                                                    <input class="form-control" type="text" placeholder="{{ $quotation->valid_until }}" readonly>
                                                     @endif
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label class="form-label fw-bold" style="color: red;">Final Price</label>
                                                     @if($quotation->final_price == 0)
-                                                        <input class="form-control" type="text" placeholder="TBD" readonly>
+                                                    <input class="form-control" type="text" placeholder="TBD" readonly>
                                                     @else
-                                                        <input class="form-control" type="text" placeholder="{{ $quotation->final_price }}" readonly>
+                                                    <input class="form-control" type="text" placeholder="{{ $quotation->final_price }}" readonly>
                                                     @endif
                                                 </div>
                                             </div>
 
                                             @if($quotation->quotation_type == 'bullet')
 
-                                                @php
-                                                    $services = [
-                                                        'armoured' => 'Armoured Car',
-                                                        'radiator' => 'Radiator Grill',
-                                                        'gasTank' => 'Gas Tank Cover',
-                                                        'suspension' => 'Upgraded Suspension',
-                                                        'battery' => 'Battery & Fuse Box Cover',
-                                                        'runFlat' => 'Run Flat Insert',
-                                                        'partition' => 'Back Door Partition',
-                                                        'catcher' => 'Bullet Catcher',
-                                                        'seats' => 'Premium Leather Seats',
-                                                    ];
+                                            @php
+                                            $services = [
+                                            'armoured' => 'Armoured Car',
+                                            'radiator' => 'Radiator Grill',
+                                            'gasTank' => 'Gas Tank Cover',
+                                            'suspension' => 'Upgraded Suspension',
+                                            'battery' => 'Battery & Fuse Box Cover',
+                                            'runFlat' => 'Run Flat Insert',
+                                            'partition' => 'Back Door Partition',
+                                            'catcher' => 'Bullet Catcher',
+                                            'seats' => 'Premium Leather Seats',
+                                            ];
 
-                                                    $selectedServices = json_decode(str_replace("'", '"', $quotation->services), true);
-                                                @endphp
+                                            $selectedServices = json_decode(str_replace("'", '"', $quotation->services), true);
+                                            @endphp
 
-                                                <div class="row g-3 mb-3">
-                                                    <div class="col-md-4">
-                                                        <label class="form-label fw-bold">Plate Number</label>
-                                                        <input class="form-control" type="text" placeholder="{{ $quotation->plate_number }}" readonly>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label class="form-label fw-bold">Model</label>
-                                                        <input class="form-control" type="text" placeholder="{{ strtoupper($quotation->model) }}" readonly>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label class="form-label fw-bold">Color</label>
-                                                        <input class="form-control" type="text" placeholder="{{ ucfirst($quotation->unit_color) }}" readonly>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-4">
+                                                    <label class="form-label fw-bold">Plate Number</label>
+                                                    <input class="form-control" type="text" placeholder="{{ $quotation->plate_number }}" readonly>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="form-label fw-bold">Model</label>
+                                                    <input class="form-control" type="text" placeholder="{{ strtoupper($quotation->model) }}" readonly>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="form-label fw-bold">Color</label>
+                                                    <input class="form-control" type="text" placeholder="{{ ucfirst($quotation->unit_color) }}" readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="row g-3 mb-3">
+                                                <label class="form-label fw-bold">Selected Services</label>
+                                                @foreach ($services as $value => $label)
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            disabled
+                                                            {{ in_array($value, $selectedServices) ? 'checked' : '' }}>
+                                                        <label class="form-check-label">{{ $label }}</label>
                                                     </div>
                                                 </div>
+                                                @endforeach
+                                            </div>
 
-                                                <div class="row g-3 mb-3">
-                                                    <label class="form-label fw-bold">Selected Services</label>
-                                                    @foreach ($services as $value => $label)
-                                                        <div class="col-md-4">
-                                                            <div class="form-check">
-                                                                <input 
-                                                                    class="form-check-input" 
-                                                                    type="checkbox" 
-                                                                    disabled 
-                                                                    {{ in_array($value, $selectedServices) ? 'checked' : '' }}
-                                                                >
-                                                                <label class="form-check-label">{{ $label }}</label>
-                                                            </div>
-                                                        </div>
-                                                    @endforeach
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-12">
+                                                    <label class="form-label fw-bold">Remarks</label>
+                                                    <input class="form-control" type="text" placeholder="{{ $quotation->remarks }}" readonly>
                                                 </div>
-
-                                                <div class="row g-3 mb-3">
-                                                    <div class="col-12">
-                                                        <label class="form-label fw-bold">Remarks</label>
-                                                        <input class="form-control" type="text" placeholder="{{ $quotation->remarks }}" readonly>
-                                                    </div>
-                                                </div>
+                                            </div>
 
                                             @endif
 
                                             @if($quotation->quotation_type == 'glass')
-                                                {{-- <div class="mb-3">
+                                            {{-- <div class="mb-3">
                                                     <label class="form-label fw-bold">Glass Type</label>
                                                     <input name="glasstype[]" class="form-control" type="text" placeholder="Enter glass type" readonly>
                                                 </div>
@@ -299,231 +298,363 @@
                                                     <textarea name="cutting_details" rows="2" class="form-control" readonly></textarea>
                                                 </div> --}}
 
-                                                <div class="row g-3 mb-3">
-                                                    <div class="col-md-12">
-                                                        <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#itemsModal">View Items</button>
-                                                    </div>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-12">
+                                                    <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#itemsModal">View Items</button>
                                                 </div>
+                                            </div>
 
-                                                <div class="modal fade" id="itemsModal" tabindex="-1" aria-labelledby="itemsModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="itemsModalLabel">List of Items</h5>
-                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div class="modal fade" id="itemsModal" tabindex="-1" aria-labelledby="itemsModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="itemsModalLabel">List of Items</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            @php
+                                                            $types = json_decode(str_replace("'", '"', $quotation->type), true);
+                                                            $thicknesses = json_decode(str_replace("'", '"', $quotation->thickness), true);
+                                                            $h1s = json_decode(str_replace("'", '"', $quotation->h1), true);
+                                                            $h2s = json_decode(str_replace("'", '"', $quotation->h2), true);
+                                                            $w1s = json_decode(str_replace("'", '"', $quotation->w1), true);
+                                                            $w2s = json_decode(str_replace("'", '"', $quotation->w2), true);
+                                                            $quantities = json_decode(str_replace("'", '"', $quotation->quantity), true);
+                                                            $colors = json_decode(str_replace("'", '"', $quotation->color), true);
+                                                            $cuttings = json_decode(str_replace("'", '"', $quotation->cutting_details), true);
+                                                            @endphp
+
+                                                            <div id="item-rows-container">
+                                                                @for($i = 0; $i < count($types); $i++)
+                                                                    <div class="row mb-3 item-row" data-row="1">
+                                                                    <!-- Glass Type -->
+                                                                    <div class="col-md-3">
+                                                                        <label class="form-label text-muted">Glass Type <span class="text-danger">*</span></label>
+                                                                        @foreach($products as $product)
+                                                                        @if($product->id == $types[$i])
+                                                                        <input name="height1[]" class="form-control form-control-sm" type="text" placeholder="{{ $product->display_name }}" readonly>
+                                                                        @endif
+                                                                        @endforeach
+
+                                                                    </div>
+
+                                                                    <!-- Thickness -->
+                                                                    <div class="col-md-2">
+                                                                        <label class="form-label text-muted">Thickness <span class="text-danger">*</span></label>
+                                                                        <input name="height1[]" class="form-control form-control-sm" type="text" placeholder="{{ $thicknesses[$i] }}" readonly>
+                                                                    </div>
+
+                                                                    <!-- Color -->
+                                                                    <div class="col-md-2">
+                                                                        <label class="form-label text-muted">Color <span class="text-danger">*</span></label>
+                                                                        <input name="height1[]" class="form-control form-control-sm" type="text" placeholder="{{ $colors[$i] }}" readonly>
+                                                                    </div>
+
+                                                                    <!-- Height -->
+                                                                    <div class="col-md-1">
+                                                                        <label class="form-label text-muted">H1 <span class="text-danger">*</span></label>
+                                                                        <input name="height1[]" class="form-control form-control-sm" type="number" placeholder="{{ $h1s[$i] }}" readonly>
+                                                                    </div>
+                                                                    <div class="col-md-1">
+                                                                        <label class="form-label text-muted">H2 <span class="text-danger">*</span></label>
+                                                                        <input name="height2[]" class="form-control form-control-sm" type="number" placeholder="{{ $h2s[$i] }}" readonly>
+                                                                    </div>
+
+                                                                    <!-- Width -->
+                                                                    <div class="col-md-1">
+                                                                        <label class="form-label text-muted">W1 <span class="text-danger">*</span></label>
+                                                                        <input name="width1[]" class="form-control form-control-sm" type="number" placeholder="{{ $w1s[$i] }}" readonly>
+                                                                    </div>
+                                                                    <div class="col-md-1">
+                                                                        <label class="form-label text-muted">W2 <span class="text-danger">*</span></label>
+                                                                        <input name="width2[]" class="form-control form-control-sm" type="number" placeholder="{{ $w2s[$i] }}" readonly>
+                                                                    </div>
+
+                                                                    <!-- Quantity -->
+                                                                    <div class="col-md-1">
+                                                                        <label class="form-label text-muted">Qty <span class="text-danger">*</span></label>
+                                                                        <input name="quantity[]" class="form-control form-control-sm" type="number" min="1" value="{{ $quantities[$i] }}" readonly>
+                                                                    </div>
+
+                                                                    <!-- Remarks -->
+                                                                    <div class="mt-3">
+                                                                        <label for="remarks" class="form-label text-muted">Cutting Details<span class="text-danger">*</span></label>
+                                                                        <textarea id="remarks" name="cutting_details" rows="3" placeholder="{{ $cuttings[$i] }}"
+                                                                            class="form-control form-control-sm" readonly>{{ $cuttings[$i] }}</textarea>
+                                                                    </div>
+
+                                                                    <!-- Remove button (hidden for first row) -->
+                                                                    <div class="col-md-12 mt-2 text-end">
+                                                                        <button type="button" class="btn btn-sm btn-danger remove-row-btn" style="display: none;">Remove Row</button>
+                                                                    </div>
                                                             </div>
-                                                            <div class="modal-body">
-
-                                                                @php
-                                                                    $types = json_decode(str_replace("'", '"', $quotation->type), true);
-                                                                    $thicknesses = json_decode(str_replace("'", '"', $quotation->thickness), true);
-                                                                    $h1s = json_decode(str_replace("'", '"', $quotation->h1), true);
-                                                                    $h2s = json_decode(str_replace("'", '"', $quotation->h2), true);
-                                                                    $w1s = json_decode(str_replace("'", '"', $quotation->w1), true);
-                                                                    $w2s = json_decode(str_replace("'", '"', $quotation->w2), true);
-                                                                    $quantities = json_decode(str_replace("'", '"', $quotation->quantity), true);
-                                                                    $colors = json_decode(str_replace("'", '"', $quotation->color), true);
-                                                                    $cuttings = json_decode(str_replace("'", '"', $quotation->cutting_details), true);
-                                                                @endphp
-
-                                                                <div id="item-rows-container">
-                                                                    @for($i = 0; $i < count($types); $i++)
-                                                                        <div class="row mb-3 item-row" data-row="1">
-                                                                            <!-- Glass Type -->
-                                                                            <div class="col-md-3">
-                                                                                <label class="form-label text-muted">Glass Type <span class="text-danger">*</span></label>
-                                                                                @foreach($products as $product)
-                                                                                    @if($product->id == $types[$i])
-                                                                                        <input name="height1[]" class="form-control form-control-sm" type="text" placeholder="{{ $product->display_name }}" readonly>
-                                                                                    @endif
-                                                                                @endforeach
-
-                                                                            </div>
-                                                        
-                                                                            <!-- Thickness -->
-                                                                            <div class="col-md-2">
-                                                                                <label class="form-label text-muted">Thickness <span class="text-danger">*</span></label>
-                                                                                <input name="height1[]" class="form-control form-control-sm" type="text" placeholder="{{ $thicknesses[$i] }}" readonly>
-                                                                            </div>
-                                                        
-                                                                            <!-- Color -->
-                                                                            <div class="col-md-2">
-                                                                                <label class="form-label text-muted">Color <span class="text-danger">*</span></label>
-                                                                                <input name="height1[]" class="form-control form-control-sm" type="text" placeholder="{{ $colors[$i] }}" readonly>
-                                                                            </div>
-                                                        
-                                                                            <!-- Height -->
-                                                                            <div class="col-md-1">
-                                                                                <label class="form-label text-muted">H1 <span class="text-danger">*</span></label>
-                                                                                <input name="height1[]" class="form-control form-control-sm" type="number" placeholder="{{ $h1s[$i] }}" readonly>
-                                                                            </div>
-                                                                            <div class="col-md-1">
-                                                                                <label class="form-label text-muted">H2 <span class="text-danger">*</span></label>
-                                                                                <input name="height2[]" class="form-control form-control-sm" type="number" placeholder="{{ $h2s[$i] }}" readonly>
-                                                                            </div>
-                                                        
-                                                                            <!-- Width -->
-                                                                            <div class="col-md-1">
-                                                                                <label class="form-label text-muted">W1 <span class="text-danger">*</span></label>
-                                                                                <input name="width1[]" class="form-control form-control-sm" type="number" placeholder="{{ $w1s[$i] }}" readonly>
-                                                                            </div>
-                                                                            <div class="col-md-1">
-                                                                                <label class="form-label text-muted">W2 <span class="text-danger">*</span></label>
-                                                                                <input name="width2[]" class="form-control form-control-sm" type="number" placeholder="{{ $w2s[$i] }}" readonly>
-                                                                            </div>
-                                                        
-                                                                            <!-- Quantity -->
-                                                                            <div class="col-md-1">
-                                                                                <label class="form-label text-muted">Qty <span class="text-danger">*</span></label>
-                                                                                <input name="quantity[]" class="form-control form-control-sm" type="number" min="1" value="{{ $quantities[$i] }}" readonly>
-                                                                            </div>
-                                                        
-                                                                            <!-- Remarks -->
-                                                                            <div class="mt-3">
-                                                                                <label for="remarks" class="form-label text-muted">Cutting Details<span class="text-danger">*</span></label>
-                                                                                <textarea id="remarks" name="cutting_details" rows="3" placeholder="{{ $cuttings[$i] }}"
-                                                                                    class="form-control form-control-sm" readonly>{{ $cuttings[$i] }}</textarea>
-                                                                            </div>
-                                                        
-                                                                            <!-- Remove button (hidden for first row) -->
-                                                                            <div class="col-md-12 mt-2 text-end">
-                                                                                <button type="button" class="btn btn-sm btn-danger remove-row-btn" style="display: none;">Remove Row</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    @endfor
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                            </div>
+                                                            @endfor
                                                         </div>
                                                     </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        @endif
+                                    </div>
+
+                                    <!-- Images Gallery Section -->
+                                    <!-- Images Gallery Section -->
+                                    <div id="imagesGallery" class="mb-5">
+                                        <h6 class="mb-4 border-bottom pb-2">Images Gallery</h6>
+                                        <div class="border rounded p-2">
+                                            @if(isset($quotationImages) && count($quotationImages) > 0)
+                                            <div class="d-flex flex-wrap gap-2">
+                                                @foreach($quotationImages as $image)
+                                                <div class="border rounded overflow-hidden position-relative" style="width: 100px; height: 100px;"
+                                                    data-bs-toggle="modal" data-bs-target="#imageModal"
+                                                    onclick="openImageModal('{{ asset('storage/quotations/'.$image->filename) }}', '{{ $image->filename }}')">
+                                                    <img src="{{ asset('storage/quotations/'.$image->filename) }}"
+                                                        alt="{{ $image->filename }}"
+                                                        loading="lazy"
+                                                        class="w-100 h-100 object-fit-cover"
+                                                        style="transition: transform 0.3s;">
+                                                    <div class="position-absolute top-0 start-0 w-100 h-100 hover-overlay"></div>
+                                                </div>
+                                                @endforeach
+                                            </div>
+                                            @else
+                                            <div class="text-center py-2 text-muted">
+                                                No images available
+                                            </div>
                                             @endif
                                         </div>
 
-                                        <!-- Images Gallery Section -->
-                                        <div id="imagesGallery" class="mb-5">
-                                            <h6 class="mb-4 border-bottom pb-2">Images Gallery</h6>
-                                            <div class="border rounded p-2">
-                                                @if(isset($quotationImages) && count($quotationImages) > 0)
-                                                    <div class="d-flex flex-wrap gap-2">
-                                                        @foreach($quotationImages as $image)
-                                                        <div class="border rounded overflow-hidden" style="width: 80px; height: 80px;"
-                                                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                                                            onclick="document.getElementById('modalImage').src='{{ asset('storage/quotations/'.$image->filename) }}'">
-                                                            <img src="{{ asset('storage/quotations/'.$image->filename) }}" alt="{{ $image->filename }}" loading="lazy"
-                                                                class="w-100 h-100 object-fit-cover">
-                                                        </div>
-                                                        @endforeach
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="imageModalLabel">Image View</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
-                                                @else
-                                                <div class="text-center py-2 text-muted">
-                                                    No images available
-                                                </div>
-                                                @endif
-                                            </div>
-                                             
-                                            <!-- Modal -->
-                                            <div class="modal modal-lg fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content" style="width: auto;">
-                                                        <div class="modal-body text-center">
-                                                            <div id="zoomContainer" style="display: inline-block;">
-                                                                <img id="modalImage" src="" class="img-fluid" style="max-height: 80vh; cursor: grab;">
-                                                            </div>
+                                                    <div class="modal-body text-center p-0">
+                                                        <div id="zoomContainer" style="overflow: hidden;">
+                                                            <img id="modalImage" src=""
+                                                                class="img-fluid"
+                                                                style="max-width: 100%; max-height: 80vh; cursor: zoom-in;"
+                                                                onclick="toggleZoom(this)">
                                                         </div>
+                                                    </div>
+                                                    <div class="modal-footer justify-content-between">
+                                                        <button type="button" class="btn btn-secondary" onclick="navigateImage(-1)">Previous</button>
+                                                        <span id="imageCounter"></span>
+                                                        <button type="button" class="btn btn-secondary" onclick="navigateImage(1)">Next</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
+
+                                    <script>
+                                        // Store all images and current index
+                                        let currentImageIndex = 0;
+                                        let allImages = [];
+
+                                        // Initialize the gallery
+                                        document.addEventListener('DOMContentLoaded', function() {
+                                            // Get all images from the gallery
+                                            const imageElements = document.querySelectorAll('#imagesGallery .overflow-hidden img');
+                                            allImages = Array.from(imageElements).map(img => ({
+                                                src: img.src,
+                                                alt: img.alt
+                                            }));
+
+                                            // Add hover effect to thumbnails
+                                            const thumbnails = document.querySelectorAll('#imagesGallery .overflow-hidden');
+                                            thumbnails.forEach(thumb => {
+                                                thumb.addEventListener('mouseenter', function() {
+                                                    this.querySelector('img').style.transform = 'scale(1.05)';
+                                                });
+                                                thumb.addEventListener('mouseleave', function() {
+                                                    this.querySelector('img').style.transform = 'scale(1)';
+                                                });
+                                            });
+                                        });
+
+                                        // Open modal with specific image
+                                        function openImageModal(src, alt) {
+                                            const modal = document.getElementById('imageModal');
+                                            const modalImage = document.getElementById('modalImage');
+                                            const modalLabel = document.getElementById('imageModalLabel');
+
+                                            // Find the index of the clicked image
+                                            currentImageIndex = allImages.findIndex(img => img.src === src);
+
+                                            // Update modal
+                                            modalImage.src = src;
+                                            modalImage.style.transform = 'scale(1)'; // Reset zoom
+                                            modalImage.style.cursor = 'zoom-in';
+                                            modalLabel.textContent = alt || 'Image View';
+                                            updateImageCounter();
+
+                                            // Show modal
+                                            new bootstrap.Modal(modal).show();
+                                        }
+
+                                        // Toggle zoom on image click
+                                        function toggleZoom(img) {
+                                            if (img.style.transform === 'scale(2)') {
+                                                img.style.transform = 'scale(1)';
+                                                img.style.cursor = 'zoom-in';
+                                            } else {
+                                                img.style.transform = 'scale(2)';
+                                                img.style.cursor = 'zoom-out';
+                                            }
+                                        }
+
+                                        // Navigate between images
+                                        function navigateImage(direction) {
+                                            currentImageIndex += direction;
+
+                                            // Wrap around if at ends
+                                            if (currentImageIndex < 0) {
+                                                currentImageIndex = allImages.length - 1;
+                                            } else if (currentImageIndex >= allImages.length) {
+                                                currentImageIndex = 0;
+                                            }
+
+                                            // Update modal with new image
+                                            const modalImage = document.getElementById('modalImage');
+                                            modalImage.src = allImages[currentImageIndex].src;
+                                            modalImage.style.transform = 'scale(1)'; // Reset zoom
+                                            modalImage.style.cursor = 'zoom-in';
+                                            document.getElementById('imageModalLabel').textContent = allImages[currentImageIndex].alt || 'Image View';
+                                            updateImageCounter();
+                                        }
+
+                                        // Update the image counter text
+                                        function updateImageCounter() {
+                                            document.getElementById('imageCounter').textContent =
+                                                `${currentImageIndex + 1} of ${allImages.length}`;
+                                        }
+
+                                        // Keyboard navigation
+                                        document.addEventListener('keydown', function(e) {
+                                            const modal = document.getElementById('imageModal');
+                                            if (modal.classList.contains('show')) {
+                                                if (e.key === 'ArrowLeft') {
+                                                    navigateImage(-1);
+                                                } else if (e.key === 'ArrowRight') {
+                                                    navigateImage(1);
+                                                } else if (e.key === 'Escape') {
+                                                    // Reset zoom when closing
+                                                    document.getElementById('modalImage').style.transform = 'scale(1)';
+                                                }
+                                            }
+                                        });
+                                    </script>
+
+                                    <style>
+                                        .hover-overlay {
+                                            background-color: rgba(0, 0, 0, 0.2);
+                                            opacity: 0;
+                                            transition: opacity 0.3s;
+                                        }
+
+                                        .overflow-hidden:hover .hover-overlay {
+                                            opacity: 1;
+                                        }
+
+                                        #zoomContainer {
+                                            transition: transform 0.3s;
+                                        }
+                                    </style>
+
                                 </div>
-
-
                             </div>
 
 
                         </div>
 
-                        <!-- Right Column -->
-                        <div class="col-md-8">
-                            <div class="card-body p-0" style="position: relative; height: 450px; overflow-y: auto;" data-bs-spy="scroll" data-bs-target="#notes-nav" data-bs-offset="20">
 
-                                <!-- Note 0 -->
-                                <div id="note-0" class="border-end border-secondary border-4 mb-3 bg-white p-3">
-                                    <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
-                                        <div class="d-flex align-items-center">
-                                            <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">TQ</div>
-                                            <div class="ms-2">
-                                                <strong>Default</strong>
-                                                <div class="text-muted small">{{ $quotation->created_at }}</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <span class="badge bg-secondary me-1">Default Message</span>
-                                            <span><i class="fas fa-ellipsis-v"></i></span>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-md-8">
+                        <div class="card-body p-0" style="position: relative; height: 450px; overflow-y: auto;" data-bs-spy="scroll" data-bs-target="#notes-nav" data-bs-offset="20">
+
+                            <!-- Note 0 -->
+                            <div id="note-0" class="border-end border-secondary border-4 mb-3 bg-white p-3">
+                                <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
+                                    <div class="d-flex align-items-center">
+                                        <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">TQ</div>
+                                        <div class="ms-2">
+                                            <strong>Default</strong>
+                                            <div class="text-muted small">{{ $quotation->created_at }}</div>
                                         </div>
                                     </div>
                                     <div>
-                                        <p class="mb-0">[Internal Note] Please wait for the Sales Representative's Verification. The Representative will message here in a bit. It is possible that the Representative will call you on your designated number for clarification.</p>
+                                        <span class="badge bg-secondary me-1">Default Message</span>
+                                        <span><i class="fas fa-ellipsis-v"></i></span>
                                     </div>
                                 </div>
-                                
-                                @foreach($quotationMessages as $message)
+                                <div>
+                                    <p class="mb-0">[Internal Note] Please wait for the Sales Representative's Verification. The Representative will message here in a bit. It is possible that the Representative will call you on your designated number for clarification.</p>
+                                </div>
+                            </div>
 
-                                    @if($message->usertype == 3)
+                            @foreach($quotationMessages as $message)
 
-                                        <!-- Note 1 -->
-                                        <div id="note-{{$message->id}}" class="border-start border-primary border-4 mb-3 bg-white p-3">
-                                            <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
-                                                        {{ strtoupper(substr($message->fname, 0, 1) . substr($message->lname, 0, 1)) }}
-                                                    </div>
-                                                    <div class="ms-2">
-                                                        <strong>{{ $message->fname.' '.$message->lname }}</strong>
-                                                        <div class="text-muted small">{{ $message->created_at }}</div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <span class="badge bg-primary me-1">Customer</span>
-                                                    <span><i class="fas fa-ellipsis-v"></i></span>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                {!! $message->message !!}
-                                            </div>
+                            @if($message->usertype == 3)
+
+                            <!-- Note 1 -->
+                            <div id="note-{{$message->id}}" class="border-start border-primary border-4 mb-3 bg-white p-3">
+                                <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
+                                    <div class="d-flex align-items-center">
+                                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                            {{ strtoupper(substr($message->fname, 0, 1) . substr($message->lname, 0, 1)) }}
                                         </div>
-
-                                    @else
-
-                                        <!-- Note 2 -->
-                                        <div id="note-2" class="border-end border-danger border-4 mb-3 bg-white p-3">
-                                            <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
-                                                    <div class="ms-2">
-                                                        <strong>{{ $message->fname.' '.$message->lname }}</strong>
-                                                        <div class="text-muted small">{{ $message->created_at }}</div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <span class="badge bg-danger me-1">Sales Representative</span>
-                                                    <span><i class="fas fa-ellipsis-v"></i></span>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                {!! $message->message !!}
-                                            </div>
+                                        <div class="ms-2">
+                                            <strong>{{ $message->fname.' '.$message->lname }}</strong>
+                                            <div class="text-muted small">{{ $message->created_at }}</div>
                                         </div>
+                                    </div>
+                                    <div>
+                                        <span class="badge bg-primary me-1">Customer</span>
+                                        <span><i class="fas fa-ellipsis-v"></i></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    {!! $message->message !!}
+                                </div>
+                            </div>
 
-                                    @endif
+                            @else
 
-                                @endforeach
+                            <!-- Note 2 -->
+                            <div id="note-2" class="border-end border-danger border-4 mb-3 bg-white p-3">
+                                <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
+                                    <div class="d-flex align-items-center">
+                                        <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
+                                        <div class="ms-2">
+                                            <strong>{{ $message->fname.' '.$message->lname }}</strong>
+                                            <div class="text-muted small">{{ $message->created_at }}</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="badge bg-danger me-1">Sales Representative</span>
+                                        <span><i class="fas fa-ellipsis-v"></i></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    {!! $message->message !!}
+                                </div>
+                            </div>
 
-                                {{-- <!-- Note 1 -->
+                            @endif
+
+                            @endforeach
+
+                            {{-- <!-- Note 1 -->
                                 <div id="note-1" class="border-start border-primary border-4 mb-3 bg-white p-3">
                                     <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
                                         <div class="d-flex align-items-center">
@@ -623,8 +754,8 @@
                                     </div>
                                 </div> --}}
 
-                                <!-- Note 4 -->
-                                {{-- <div id="note-4" class="border-end border-danger border-4 mb-3 bg-white p-3">
+                            <!-- Note 4 -->
+                            {{-- <div id="note-4" class="border-end border-danger border-4 mb-3 bg-white p-3">
                                     <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
                                         <div class="d-flex align-items-center">
                                             <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
@@ -643,8 +774,8 @@
                                     </div>
                                 </div> --}}
 
-                                <!-- Note 5 -->
-                                {{-- <div id="note-3" class="border-start border-primary border-4 mb-3 bg-white p-3">
+                            <!-- Note 5 -->
+                            {{-- <div id="note-3" class="border-start border-primary border-4 mb-3 bg-white p-3">
                                     <div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 p-2 mb-2 border-bottom">
                                         <div class="d-flex align-items-center">
                                             <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">JD</div>
@@ -664,8 +795,8 @@
                                     </div>
                                 </div> --}}
 
-                                <!-- Note 6 -->
-                                {{-- <div id="note-4" class="border-end border-danger border-4 mb-3 bg-white p-3">
+                            <!-- Note 6 -->
+                            {{-- <div id="note-4" class="border-end border-danger border-4 mb-3 bg-white p-3">
                                     <div class="d-flex justify-content-between align-items-center bg-light p-2 mb-2 border-bottom">
                                         <div class="d-flex align-items-center">
                                             <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">SR</div>
@@ -683,33 +814,33 @@
                                         <p class="mb-0">[Internal Note] This appears to be related to the ongoing authentication system issues. Escalating to L2 support.</p>
                                     </div>
                                 </div> --}}
-                            </div>
                         </div>
                     </div>
+                </div>
 
 
-                    @if($quotation->status != 'Cancelled' && $quotation->status != 'Approved')
-                        <div class="card-footer p-0">
-                            <form action="/user-send-message" method="POST">
-                                @csrf
-                                <input type="hidden" name="quotation_id" value="{{ $quotation->id }}">
-                                <textarea id="summernote" name="message"></textarea>
-                                <div class="p-3 bg-light d-flex justify-content-between">
-                                    <div>
-                                        {{-- <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-paperclip me-1"></i>Attach File </button>
+                @if($quotation->status != 'Cancelled' && $quotation->status != 'Approved')
+                <div class="card-footer p-0">
+                    <form action="/user-send-message" method="POST">
+                        @csrf
+                        <input type="hidden" name="quotation_id" value="{{ $quotation->id }}">
+                        <textarea id="summernote" name="message"></textarea>
+                        <div class="p-3 bg-light d-flex justify-content-between">
+                            <div>
+                                {{-- <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-paperclip me-1"></i>Attach File </button>
                                         <button class="btn btn-sm btn-outline-secondary me-2"> <i class="fas fa-history me-1"></i>View History </button>
                                         <button class="btn btn-sm btn-outline-secondary"> <i class="fas fa-print me-1"></i>Print Notes </button> --}}
-                                    </div>
-                                    <div>
-                                        <button type="submit" class="btn btn-sm btn-primary">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-sm btn-primary">Send Message</button>
+                            </div>
                         </div>
-                    @endif
+                    </form>
                 </div>
+                @endif
             </div>
-            <!--end::Container-->
+        </div>
+        <!--end::Container-->
         </div>
     </section>
 
@@ -743,11 +874,11 @@
     <script src="https://unpkg.com/@panzoom/panzoom@4.6.0/dist/panzoom.min.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const modal = document.getElementById('imageModal');
             let panzoomInstance = null;
 
-            modal.addEventListener('shown.bs.modal', function () {
+            modal.addEventListener('shown.bs.modal', function() {
                 const zoomContainer = document.getElementById('zoomContainer');
                 if (panzoomInstance) {
                     panzoomInstance.destroy();
@@ -759,7 +890,7 @@
                 zoomContainer.parentElement.addEventListener('wheel', panzoomInstance.zoomWithWheel);
             });
 
-            modal.addEventListener('hidden.bs.modal', function () {
+            modal.addEventListener('hidden.bs.modal', function() {
                 if (panzoomInstance) {
                     panzoomInstance.destroy();
                     panzoomInstance = null;
