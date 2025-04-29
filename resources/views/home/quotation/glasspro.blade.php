@@ -199,7 +199,7 @@
                     <div class="col-md-1 d-flex align-items-center">
                         <div class="d-flex justify-content-center gap-3 w-100">
                             <div>
-                                <i class="fa-solid fa-square-plus fs-3 text-dark add-item-row-btn"></i>
+                                <i class="fa-solid fa-square-plus fs-3 text-dark add-item-row-btn "></i>
                             </div>
                             <div>
                                 <i class="fa-solid fa-square-minus fs-3 text-danger remove-row-btn" style="display: none;"></i>
