@@ -133,16 +133,16 @@
                         <!-- Dropdown Menu -->
                         <ul class="dropdown-menu custom-left-dropdown" aria-labelledby="profileDropdown">
                             <li class="dropdown-header fw-bold text-center">{{ $my_user->name }}</li>
-                            {{-- <li><a class="dropdown-item" href="/hidden_store"><i class="fa-solid fa-box-open me-2"></i>Shop</a></li> --}}
-                            <li><a class="dropdown-item" href="/cart"><i class="fas fa-shopping-cart me-2"></i> My Cart</a></li>
-                            <li><a class="dropdown-item" href="/profile"><i class="fas fa-user-circle me-2"></i> View My Profile</a></li>
+                            <!-- {{-- <li><a class="dropdown-item" href="/hidden_store"><i class="fa-solid fa-box-open me-2"></i>Shop</a></li> --}} -->
+                            <li><a class="dropdown-item text-start" href="/cart"><i class="fa-solid fa-cart-shopping me-2"></i> My Cart</a></li>
+                            <li><a class="dropdown-item text-text-start" href="/profile"><i class="fa-solid fa-user me-2"></i> View Profile</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
                                 <form action="/logout" method="POST">
                                     @csrf
-                                    <button type="submit" class="dropdown-item text-danger"><i class="fas fa-sign-out-alt me-2"></i> Logout</button>
+                                    <button type="submit" class="dropdown-item text-danger"><i class="fa-solid fa-arrow-right-from-bracket me-2"></i> Logout</button>
                                 </form>
                             </li>
                         </ul>

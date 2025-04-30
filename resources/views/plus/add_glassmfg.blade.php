@@ -1,158 +1,289 @@
+<style>
+    /* Custom tab styling */
+    .nav-pills {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .nav-pills .nav-link {
+        color: #495057;
+        font-weight: 500;
+        border: none;
+        padding: 0.75rem 1.25rem;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .nav-pills .nav-link:hover {
+        background-color: rgba(226, 16, 19, 0.1);
+    }
+
+    .nav-pills .nav-link.active {
+        color: rgb(250, 249, 249);
+        background-color: #7E1416;
+        border: none;
+    }
+
+    /* For mobile responsiveness */
+    @media (max-width: 768px) {
+        .nav-pills {
+            flex-wrap: nowrap;
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-item {
+            flex: 0 0 auto;
+        }
+    }
+
+    /* Smooth tab transitions */
+    .tab-content>.tab-pane {
+        transition: opacity 0.3s ease;
+    }
+</style>
+
 <section id="products-glass-manufacturing" class="py-3 mt-5 fade-in-up">
-    <div class="container ">
-        <div class="container text-center">
+    <div class="container">
+        <div class="text-center">
             <h2 class="fw-bold" style="color: #7E1416;">Glass Manufacturing</h2>
             <p class="mt-3">
                 With over six decades of expertise in the national flat glass manufacturing industry, PFGMI specializes in producing high-quality flat glass, including Clear Float and Tinted Float. Our dedication extends beyond the glass industry, reflecting a broader commitment to excellence.
             </p>
         </div>
 
-        <div class="container">
-            <div class="row py-3">
+        <div class="row mt-4">
+            <div class="col-md-3 col-lg-3 nav-column">
+                <div class="nav flex-column nav-pills me-3" id="glassProducts" role="tablist">
+                    <a class="nav-link active mt-2" href="#clearFloat" data-bs-toggle="pill" role="tab">
+                        Clear Float Glass
+                    </a>
+                    <a class="nav-link mt-2" href="#tintedFloat" data-bs-toggle="pill" role="tab">
+                        Tinted Float Glass
+                    </a>
+                    <a class="nav-link mt-2" href="#ultraClear" data-bs-toggle="pill" role="tab">
+                        Ultra Clear Float Glass
+                    </a>
+                    <a class="nav-link mt-2" href="#lowE" data-bs-toggle="pill" role="tab">
+                        Low-E Coated Glass
+                    </a>
+                    <a class="nav-link mt-2" href="#reflective" data-bs-toggle="pill" role="tab">
+                        Reflective Coated Glass
+                    </a>
+                    <a class="nav-link mt-2" href="#mirror" data-bs-toggle="pill" role="tab">
+                        Mirror
+                    </a>
+                    <a class="nav-link mt-2" href="#patterned" data-bs-toggle="pill" role="tab">
+                        Patterned Glass
+                    </a>
+                    <a class="nav-link mt-2" href="#wired" data-bs-toggle="pill" role="tab">
+                        Wired Glass
+                    </a>
+                </div>
+            </div>
 
-                @foreach($products as $product)
-                    @if($product->category_id == 2)
-                        <div class="col-md-3 mb-4 d-flex ">
-                            <div class="card border-0 shadow-lg d-flex flex-column">
-                                <img src="{{ asset('storage/all-items/'.$product->image) }}" alt="{{$product->display_name}}" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                <div class="card-body d-flex flex-column">
-                                    <h6 class="card-title fw-bold">{{$product->display_name}}</h6>
-                                    <p class="card-text flex-grow-1">{{$product->description}}</p>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
-                                            @if($my_user==null)
-                                            data-bs-toggle="modal" data-bs-target="#loginModal"
-                                            @endif>Add to Cart</a>
+            <!-- Tab Content -->
+            <div class="col-md-9 col-lg-9 tab-content-container">
+                <div class="tab-content" id="glassProductsContent">
+                    <!-- Clear Float Glass -->
+                    <div class="tab-pane fade show active" id="clearFloat">
+                        <div class="row py-3">
+
+
+                            <div class="col-md-3 mb-4 d-flex">
+                                <div class="card border-0 shadow-lg d-flex flex-column w-100">
+                                    <img src="" alt="" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title fw-bold"></h6>
+                                        <p class="card-text flex-grow-1">Product Desc</p>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                                @if($my_user==null)
+                                                data-bs-toggle="modal" data-bs-target="#loginModal"
+                                                @endif>Add to Cart</a>
+                                        </div>
                                     </div>
-
                                 </div>
                             </div>
-                        </div>
-                    @endif
-                @endforeach
 
-                {{-- <div class="col-md-3 mb-4 d-flex ">
-                    <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/glass-mfg/tintedfloat.jpg') }}" alt="TQMP Tempered Glass" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                        <div class="card-body d-flex flex-column">
-                            <h6 class="card-title fw-bold">Tinted Float Glass</h6>
-                            <p class="card-text flex-grow-1">A heat absorbing, transparent glass colored by adding such metals like cobalt, selenium, or iron. It reduces the amount of heat flowing into a room thereby decreasing the cooling load.</p>
-                            <div class="d-flex justify-content-end">
-                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
-                                    @if($my_user==null)
-                                    data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Add to Cart</a>
+
+                        </div>
+                    </div>
+
+                    <!-- Tinted Float Glass -->
+                    <div class="tab-pane fade" id="tintedFloat">
+                        <div class="row py-3">
+
+
+                            <div class="col-md-3 mb-4 d-flex">
+                                <div class="card border-0 shadow-lg d-flex flex-column w-100">
+                                    <img src="" alt="" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title fw-bold"></h6>
+                                        <p class="card-text flex-grow-1">Product Desc</p>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                                @if($my_user==null)
+                                                data-bs-toggle="modal" data-bs-target="#loginModal"
+                                                @endif>Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Ultra Clear Float Glass -->
+                    <div class="tab-pane fade" id="ultraClear">
+                        <div class="row py-3">
+
+
+                            <div class="col-md-3 mb-4 d-flex">
+                                <div class="card border-0 shadow-lg d-flex flex-column w-100">
+                                    <img src="" alt="" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title fw-bold"></h6>
+                                        <p class="card-text flex-grow-1">Product Desc</p>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                                @if($my_user==null)
+                                                data-bs-toggle="modal" data-bs-target="#loginModal"
+                                                @endif>Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Low-E Coated Glass -->
+                    <div class="tab-pane fade" id="lowE">
+                        <div class="row py-3">
+
+
+                            <div class="col-md-3 mb-4 d-flex">
+                                <div class="card border-0 shadow-lg d-flex flex-column w-100">
+                                    <img src="" alt="" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title fw-bold"></h6>
+                                        <p class="card-text flex-grow-1">Product Desc</p>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                                @if($my_user==null)
+                                                data-bs-toggle="modal" data-bs-target="#loginModal"
+                                                @endif>Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Reflective Coated Glass -->
+                    <div class="tab-pane fade" id="reflective">
+                        <div class="row py-3">
+
+
+                            <div class="col-md-3 mb-4 d-flex">
+                                <div class="card border-0 shadow-lg d-flex flex-column w-100">
+                                    <img src="" alt="" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title fw-bold"></h6>
+                                        <p class="card-text flex-grow-1">Product Desc</p>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                                @if($my_user==null)
+                                                data-bs-toggle="modal" data-bs-target="#loginModal"
+                                                @endif>Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Mirror -->
+                    <div class="tab-pane fade" id="mirror">
+                        <div class="row py-3">
+
+                            <div class="col-md-3 mb-4 d-flex">
+                                <div class="card border-0 shadow-lg d-flex flex-column w-100">
+                                    <img src="" alt="" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title fw-bold"></h6>
+                                        <p class="card-text flex-grow-1">Product Desc</p>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                                @if($my_user==null)
+                                                data-bs-toggle="modal" data-bs-target="#loginModal"
+                                                @endif>Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Patterned Glass -->
+                    <div class="tab-pane fade" id="patterned">
+                        <div class="row py-3">
+
+                            <div class="col-md-3 mb-4 d-flex">
+                                <div class="card border-0 shadow-lg d-flex flex-column w-100">
+                                    <img src="" alt="" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title fw-bold"></h6>
+                                        <p class="card-text flex-grow-1">Product Desc</p>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                                @if($my_user==null)
+                                                data-bs-toggle="modal" data-bs-target="#loginModal"
+                                                @endif>Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Wired Glass -->
+                    <div class="tab-pane fade" id="wired">
+                        <div class="row py-3">
+
+                            <div class="col-md-3 mb-4 d-flex">
+                                <div class="card border-0 shadow-lg d-flex flex-column w-100">
+                                    <img src="" alt="" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title fw-bold"></h6>
+                                        <p class="card-text flex-grow-1">Product Desc</p>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
+                                                @if($my_user==null)
+                                                data-bs-toggle="modal" data-bs-target="#loginModal"
+                                                @endif>Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-3 mb-4 d-flex ">
-                    <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/glass-mfg/ultraclear.jpg') }}" alt="ULTRA CLEAR FLOAT GLASS" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                        <div class="card-body d-flex flex-column">
-                            <h6 class="card-title fw-bold">Ultra Clear Float Glass</h6>
-                            <p class="card-text flex-grow-1">This kind of glass provides extreme clarity for glazing applications requiring minimum impurities in vision, thereby allowing the most natural colors to stand out.</p>
-                            <div class="d-flex justify-content-end">
-                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
-                                    @if($my_user==null)
-                                    data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Add to Cart</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mb-4 d-flex ">
-                    <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/glass-mfg/lowe.jpg') }}" alt="LOW-E COATED GLASS" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                        <div class="card-body d-flex flex-column">
-                            <h6 class="card-title fw-bold">Low-E Coated Glass</h6>
-                            <p class="card-text flex-grow-1">Low-e glass stands for low emissivity glass.
-                                This is a type of insulating glass which increases the energy efficiency of the windows by reducing the transfer of heat or cold through the glass.
-                            </p>
-                            <div class="d-flex justify-content-end">
-                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
-                                    @if($my_user==null)
-                                    data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Add to Cart</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mb-4 d-flex ">
-                    <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/glass-mfg/reflective.jpg') }}" alt="REFLECTIVE COATED GLASS" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                        <div class="card-body d-flex flex-column">
-                            <h6 class="card-title fw-bold">Reflective Coated Glass</h6>
-                            <p class="card-text flex-grow-1">Reflective glass is essentially an ordinary float glass with a metallic coating that helps a building achieve a high standard of visual appeal besides reflecting a greater amount of heat than normal tinted float glass. It comes in variety of metallic colors such as gold, silver, bronze, blue and green.</p>
-                            <div class="d-flex justify-content-end">
-                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
-                                    @if($my_user==null)
-                                    data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Add to Cart</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mb-4 d-flex ">
-                    <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/glass-mfg/mirror.jpg') }}" alt="MIRROR" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                        <div class="card-body d-flex flex-column">
-                            <h6 class="card-title fw-bold">Mirror</h6>
-                            <p class="card-text flex-grow-1">Mirror are made from top of the line clear or tinted float glass, chemically treated with silver and coated to prevent peeling and corrosion.
-                                PFGMI are oven cured to maintain durability through the years.</p>
-                                <div class="d-flex justify-content-end">
-                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
-                                    @if($my_user==null)
-                                    data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mb-4 d-flex ">
-                    <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/glass-mfg/patternedglass.jpg') }}" alt="PATTERNED GLASS" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                        <div class="card-body d-flex flex-column">
-                            <h6 class="card-title fw-bold">Patterned Glass</h6>
-                            <p class="card-text flex-grow-1">Patterned Glass is a kind of decorative translucent glass with embossed pattern on one surface.
-                                It is generally used where privacy or obscurity is desired, but light transmission is still important.
-                                This is used in commercial, residential, and specialty applications. The sheer simplicity of patterned glass makes it popular for interior design.</p>
-                                <div class="d-flex justify-content-end">
-                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
-                                    @if($my_user==null)
-                                    data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mb-4 d-flex ">
-                    <div class="card border-0 shadow-lg d-flex flex-column">
-                        <img src="{{ asset('storage/glass-mfg/wiredglass.jpg') }}" alt="WIRED GLASS" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                        <div class="card-body d-flex flex-column">
-                            <h6 class="card-title fw-bold">Wired Glass</h6>
-                            <p class="card-text flex-grow-1">Wired glass is a type of glass wherein a wire mesh is inserted during production.
-                                It has an impact resistance similar to that of normal glass, but in case of breakage, the mesh retains the pieces of glass.
-                                This product is traditionally accepted as low-cost fire-resistant glass.</p>
-                                <div class="d-flex justify-content-end">
-                                <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto get-quotation-button w-100"
-                                    @if($my_user==null)
-                                    data-bs-toggle="modal" data-bs-target="#loginModal"
-                                    @endif>Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
+    </div>
 </section>
