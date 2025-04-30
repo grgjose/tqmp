@@ -6,6 +6,7 @@ use App\Models\Product;
 use App\Models\ProductCategory;
 use App\Models\ProductSubCategory;
 use App\Models\ProductImage;
+use App\Models\ProductVariant;
 use App\Models\User;
 use App\Models\Usertype;
 use Database\Factories\UsertypeFactory;
@@ -370,6 +371,118 @@ class DatabaseSeeder extends Seeder
                     'product_id' => '10',
                     'filename' => 'CLEAR-FLOAT-GLASS.jpg',
                     'isDeleted' => false,
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '2MM (1/16") CLEAR FLOAT 36 X 48',
+                    'price' => 200
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '2MM (1/16") CLEAR FLOAT 36 X 48',
+                    'price' => 95.52
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '3MM (1/8") CLEAR FLOAT 48 X 72',
+                    'price' => 191.04
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '5MM (3/16") CLEAR FLOAT 48 X 72',
+                    'price' => 477.84
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6MM (1/4") CLEAR FLOAT 36 X 84',
+                    'price' => 501.9
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6MM (1/4") CLEAR FLOAT 36 X 96',
+                    'price' => 573.6
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6MM (1/4") CLEAR FLOAT 48 X 72',
+                    'price' => 573.6
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6MM (1/4") CLEAR FLOAT 48 X 84',
+                    'price' => 669.2 
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6MM (1/4") CLEAR FLOAT 48 X 96',
+                    'price' => 669.2 
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6MM (1/4") CLEAR FLOAT 48 X 84',
+                    'price' => 764.8 
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6MM (1/4") CLEAR FLOAT 60 X 84',
+                    'price' => 836.5
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6MM (1/4") CLEAR FLOAT 60 X 96',
+                    'price' => 956.0
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6MM (1/4") CLEAR FLOAT 72 X 84',
+                    'price' => 1003.8
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6MM (1/4") CLEAR FLOAT 72 X 96',
+                    'price' => 1147.2
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6mm (1/4") Cool Silver Clear Float 48 x 72',
+                    'price' => 645.6
+                ]);
+
+                ProductVariant::factory()->create([
+                    'product_id' => '10',
+                    'key' => 'Size and Thickness',
+                    'value' => '6mm (1/4") Cool Silver Clear Float 48 x 84',
+                    'price' => 753.2
                 ]);
 
                 Product::factory()->create([
