@@ -6,15 +6,21 @@
                 <div class="container-fluid">
                     <!--Row-->
                     <div class="row">
-                        <!-- <div class="col-sm-6">
+                        <div class="col-sm-6">
                             <h3 class="mb-0">Inventory</h3>
                         </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-end">
+                        <div class="col-sm-6 text-end">
+                            <!-- <ol class="breadcrumb float-sm-end">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Inventory</li>
-                            </ol>
-                        </div> -->
+                            </ol> -->
+                            <button class=" btn btn-sm btn-success" onclick="showForm()">
+                                <span class="fas fa-plus"></span> Export CSV
+                            </button>
+                            <button class="btn btn-sm btn-success" style="width: 116px;" onclick="showForm()">
+                                <span class="fas fa-plus"></span> Add Inventory
+                            </button>
+                        </div>
                     </div>
                     <!--end::Row-->
                 </div>
@@ -27,19 +33,12 @@
                 <div class="container-fluid" style="border: 1px solid #ddd; padding: 15px; border-radius: 5px; background-color: white;">
                     <!--Row-->
                     <div class="row">
-                        <div class="col-6">
+                        <!-- <div class="col-6">
                             <h3 class="mb-0">Inventory</h3>
-                        </div>
-                        <div class="col-4">
-                        </div>
-                        <div class="col-2 text-end">
-                            <button class=" btn btn-sm btn-success" onclick="showForm()">
-                                <span class="fas fa-plus"></span> Export CSV
-                            </button>
-                            <button class="btn btn-sm btn-success" style="width: 116px;" onclick="showForm()">
-                                <span class="fas fa-plus"></span> Add Inventory
-                            </button>
-                        </div>
+                        </div> -->
+                        <!-- <div class="col-4">
+                        </div> -->
+
                         <table id="example" class="table is-striped" style="width:100%; text-align: left;">
                             <thead>
                                 <tr>
