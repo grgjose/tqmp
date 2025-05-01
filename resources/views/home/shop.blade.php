@@ -38,7 +38,7 @@
     <!-- End of Header -->
 
     <section id="title">
-        <div class="container text-center py-5 fade-in-up">
+        <div class="container text-center mt-5 fade-in-up">
             <span class="badge text-white mb-2" style="background-color: #950101; font-size:large;">Shop</span>
             <h2 class="fw-bold">Welcome! Come shop with us!</h2>
             <!-- Paragraph -->
@@ -49,7 +49,6 @@
     </section>
 
     <section class="container text-center fade-in-up">
-
         <ul class="nav nav-underline justify-content-center flex-nowrap overflow-x-auto pb-2" id="servicesNav">
             <li class="nav-item flex-shrink-0">
                 <a class="nav-link active" aria-current="page" href="#glass-manufacturing" data-bs-toggle="tab">
@@ -72,14 +71,14 @@
         </ul>
 
         <!-- Tab Content -->
-        <div class="tab-content" id="servicesTabContent">
-            <div class="tab-pane fade show active" id="glass-manufacturing">
+        <div class="tab-content fade-in-up" id="servicesTabContent">
+            <div class="tab-pane fade-in-up show active" id="glass-manufacturing">
                 @include('plus.add_glassmfg')
             </div>
-            <div class="tab-pane fade" id="aluminum-manufacturing">
+            <div class="tab-pane fade-in-up" id="aluminum-manufacturing">
                 @include('plus.add_alummfg')
             </div>
-            <div class="tab-pane fade" id="other-products">
+            <div class="tab-pane fade-in-up" id="other-products">
                 @include('plus.add_otherprod')
             </div>
         </div>
