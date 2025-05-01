@@ -18,12 +18,14 @@
 
     .nav-pills .nav-link:hover {
         background-color: rgba(226, 16, 19, 0.1);
+        width: 100%;
     }
 
     .nav-pills .nav-link.active {
         color: rgb(250, 249, 249);
         background-color: #7E1416;
         border: none;
+        width: 100%;
     }
 
     /* For mobile responsiveness */
@@ -46,10 +48,12 @@
     }
 </style>
 
-<div class="container py-3">
+<div class="py-5">
     <div class="row">
-        <div class="col-md-3 col-lg-3 nav-column">
-            <div class="nav flex-column nav-pills me-3" id="alumProducts" role="tablist">
+        <div class="col-md-3 col-lg-3 pe-0">
+            <div class="nav flex-column nav-pills me-3 border-end" id="productTabs" role="tablist"
+                style="border-right-width: 2px; border-right-color: #7E1416; height: 100%;">
+
                 <a class="nav-link active mt-2" href="#angleSection" data-bs-toggle="pill" role="tab">
                     Angle Sections
                 </a>
@@ -85,40 +89,197 @@
 
         <!-- Tab Content -->
         <div class="col-md-9 col-lg-9 tab-content-container">
-            <div class="tab-content" id="alumProductsContent">
-                <!-- All your tab-pane sections remain unchanged -->
+            <div class="tab-content" id="glassProductsContent">
+                <!-- Angle Section -->
                 <div class="tab-pane fade show active" id="angleSection">
-                    <div class="container mt-2" style="border-radius: .25rem;">
-                        <div class="container text-center">
-                            <div class="row py-3 g-3">
-                                <div class="col-md-3 mb-4 d-flex align-items-stretch">
-                                    <div class="card border-1 d-flex flex-column w-100">
-                                        <img src="" alt="Thore Door Closer Model GSM-0060" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <div class="card-body d-flex flex-column">
-                                            <h6 class="card-title text-start fw-bold">Thore Door Closer Model GSM-0060</h6>
-                                            <h6 class="card-text text-start" style="color: #7E1416;">$120.00</h6>
-                                            <a href="" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 mb-4 d-flex align-items-stretch">
-                                    <div class="card border-1 d-flex flex-column w-100">
-                                        <img src="" alt="Abloy Door Closer Model DC420" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                                        <div class="card-body d-flex flex-column">
-                                            <h6 class="card-title text-start fw-bold">Abloy Door Closer Model DC420</h6>
-                                            <h6 class="card-text text-start" style="color: #7E1416;">$120.00</h6>
-                                            <a href="" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
-                                        </div>
-                                    </div>
+                    <div class="row py-3">
+
+
+                        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                            <div class="card border-1 d-flex flex-column w-100">
+                                <img src="" alt="Product Name" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title text-start fw-bold">Product Name</h6>
+                                    <h6 class="card-text text-start" style="color: #7E1416;">₱100</h6>
+                                    <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
+
+                
                 <div class="tab-pane fade" id="storeFront">
-                    <!-- Content remains the same -->
+                    <div class="row py-3">
+
+
+                        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                            <div class="card border-1 d-flex flex-column w-100">
+                                <img src="" alt="Product Name" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title text-start fw-bold">Product Name</h6>
+                                    <h6 class="card-text text-start" style="color: #7E1416;">₱100</h6>
+                                    <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
-                <!-- Other tab-pane sections -->
+
+                <!-- Ultra Clear Float Glass -->
+                <div class="tab-pane fade" id="slidingDoor">
+                    <div class="row py-3">
+
+
+                        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                            <div class="card border-1 d-flex flex-column w-100">
+                                <img src="" alt="Product Name" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title text-start fw-bold">Product Name</h6>
+                                    <h6 class="card-text text-start" style="color: #7E1416;">₱100</h6>
+                                    <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Low-E Coated Glass -->
+                <div class="tab-pane fade" id="miscSection">
+                    <div class="row py-3">
+
+
+                        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                            <div class="card border-1 d-flex flex-column w-100">
+                                <img src="" alt="Product Name" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title text-start fw-bold">Product Name</h6>
+                                    <h6 class="card-text text-start" style="color: #7E1416;">₱100</h6>
+                                    <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Reflective Coated Glass -->
+                <div class="tab-pane fade" id="swingDoor">
+                    <div class="row py-3">
+
+
+                        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                            <div class="card border-1 d-flex flex-column w-100">
+                                <img src="" alt="Product Name" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title text-start fw-bold">Product Name</h6>
+                                    <h6 class="card-text text-start" style="color: #7E1416;">₱100</h6>
+                                    <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Mirror -->
+                <div class="tab-pane fade" id="counterTrim">
+                    <div class="row py-3">
+
+                        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                            <div class="card border-1 d-flex flex-column w-100">
+                                <img src="" alt="Product Name" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title text-start fw-bold">Product Name</h6>
+                                    <h6 class="card-text text-start" style="color: #7E1416;">₱100</h6>
+                                    <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Patterned Glass -->
+                <div class="tab-pane fade" id="ycSection">
+                    <div class="row py-3">
+
+                        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                            <div class="card border-1 d-flex flex-column w-100">
+                                <img src="" alt="Product Name" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title text-start fw-bold">Product Name</h6>
+                                    <h6 class="card-text text-start" style="color: #7E1416;">₱100</h6>
+                                    <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Wired Glass -->
+                <div class="tab-pane fade" id="ventSection">
+                    <div class="row py-3">
+
+                        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                            <div class="card border-1 d-flex flex-column w-100">
+                                <img src="" alt="Product Name" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title text-start fw-bold">Product Name</h6>
+                                    <h6 class="card-text text-start" style="color: #7E1416;">₱100</h6>
+                                    <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- Patterned Glass -->
+                <div class="tab-pane fade" id="flatbarSection">
+                    <div class="row py-3">
+
+                        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                            <div class="card border-1 d-flex flex-column w-100">
+                                <img src="" alt="Product Name" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title text-start fw-bold">Product Name</h6>
+                                    <h6 class="card-text text-start" style="color: #7E1416;">₱100</h6>
+                                    <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Wired Glass -->
+                <div class="tab-pane fade" id="counternosingSection">
+                    <div class="row py-3">
+
+                        <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                            <div class="card border-1 d-flex flex-column w-100">
+                                <img src="" alt="Product Name" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title text-start fw-bold">Product Name</h6>
+                                    <h6 class="card-text text-start" style="color: #7E1416;">₱100</h6>
+                                    <a href="#" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
