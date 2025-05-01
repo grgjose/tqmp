@@ -207,6 +207,8 @@ class DatabaseSeeder extends Seeder
 
         //
 
+            $product_id = 1;
+
             // Bullet Proofing Services (1-9)
 
                 Product::factory()->create([
@@ -220,10 +222,12 @@ class DatabaseSeeder extends Seeder
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => '1',
+                    'product_id' => $product_id,
                     'filename' => 'ARMOR-CAR.jpg',
                     'isDeleted' => false,
                 ]);
+
+                $product_id = $product_id  + 1;
 
                 Product::factory()->create([
                     'name' => 'RADIATOR-GRILL',
@@ -236,10 +240,12 @@ class DatabaseSeeder extends Seeder
                 ]);
 
                 ProductImage::factory()->create([
-                    'product_id' => '2',
+                    'product_id' => $product_id,
                     'filename' => 'RADIATOR-GRILL.png',
                     'isDeleted' => false,
                 ]);
+
+                $product_id = $product_id  + 1;
 
                 Product::factory()->create([
                     'name' => 'GAS-TANK-COVER',
