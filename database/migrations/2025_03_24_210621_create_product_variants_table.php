@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('key');
             $table->string('value');
             $table->double('price')->nullable();
-            $table->boolean('isDeleted')->default(false);
+            $table->boolean('isDeleted')->default(false)->nullable();
             $table->timestamps();
         });
     }
