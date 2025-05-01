@@ -89,7 +89,7 @@
 
         <!-- Tab Content -->
         <div class="col-md-9 col-lg-9 tab-content-container">
-            <div class="tab-content" id="glassProductsContent">
+            <div class="tab-content" id="aluminumContent">
                 <!-- Angle Section -->
                 <div class="tab-pane fade show active" id="angleSection">
                     <div class="row py-3">
