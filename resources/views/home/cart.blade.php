@@ -22,7 +22,7 @@
 
     <!-- Toast -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
-    
+
     <!-- Chatbot CSS -->
     <link rel="stylesheet" href="{{ asset('css/chatbot.css') }}">
     <!-- Chatbot JS -->
@@ -88,70 +88,70 @@
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 @if($cart->product_id != null)
-                                                    @foreach($productImages as $image)
-                                                        @if($image->product_id == $cart->product_id)
-                                                            <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Product" class="product-image me-3">
-                                                            @break
-                                                        @endif
-                                                    @endforeach
+                                                @foreach($productImages as $image)
+                                                @if($image->product_id == $cart->product_id)
+                                                <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Product" class="product-image me-3">
+                                                @break
+                                                @endif
+                                                @endforeach
 
-                                                    @foreach($products as $product)
-                                                        @if($product->id == $cart->product_id)
-                                                            <div>
-                                                                <p class="mb-0 fw-bold">{{ $product->display_name }}</p>
-                                                                <small class="text-muted">Color: White | Size: Medium</small>
-                                                                <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $product->price }}</small>
-                                                                <input type="hidden" name="price_{{$cart->id}}" class="hiddenPrice" value="">
-                                                            </div>
-                                                            @continue
-                                                        @endif
-                                                    @endforeach
+                                                @foreach($products as $product)
+                                                @if($product->id == $cart->product_id)
+                                                <div>
+                                                    <p class="mb-0 fw-bold">{{ $product->display_name }}</p>
+                                                    <small class="text-muted">Color: White | Size: Medium</small>
+                                                    <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $product->price }}</small>
+                                                    <input type="hidden" name="price_{{$cart->id}}" class="hiddenPrice" value="">
+                                                </div>
+                                                @continue
+                                                @endif
+                                                @endforeach
                                                 @elseif($cart->quotation_id != null)
 
-                                                    @foreach($quotations as $quote)
-                                                        @if($quote->id == $cart->quotation_id)
-                                                            <img src="{{ asset('storage/quotations/'.$quote->image) }}" alt="Quotation Image" class="product-image me-3">
-                                                            <div>
-                                                                <p class="mb-0 fw-bold">Quotation: {{ $quote->reference }}</p>
-                                                                @if($quote->quotation_type == 'bullet')
-                                                                    <small class="text-muted">Bullet Proofing Quotation</small>
-                                                                @else
-                                                                    <small class="text-muted">Glass Processing Quotation</small>
-                                                                @endif
-                                                                <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $quote->final_price }}</small>
-                                                                <input type="hidden" name="price_{{$cart->id}}" class="hiddenPrice" value="">
-                                                            </div>
-                                                            @continue
-                                                        @endif
-                                                    @endforeach
-                                                            
+                                                @foreach($quotations as $quote)
+                                                @if($quote->id == $cart->quotation_id)
+                                                <img src="{{ asset('storage/quotations/'.$quote->image) }}" alt="Quotation Image" class="product-image me-3">
+                                                <div>
+                                                    <p class="mb-0 fw-bold">Quotation: {{ $quote->reference }}</p>
+                                                    @if($quote->quotation_type == 'bullet')
+                                                    <small class="text-muted">Bullet Proofing Quotation</small>
+                                                    @else
+                                                    <small class="text-muted">Glass Processing Quotation</small>
+                                                    @endif
+                                                    <small style="display: none;" id="{{ $cart->id }}_price" class="text-muted">{{ $quote->final_price }}</small>
+                                                    <input type="hidden" name="price_{{$cart->id}}" class="hiddenPrice" value="">
+                                                </div>
+                                                @continue
+                                                @endif
+                                                @endforeach
+
                                                 @endif
                                             </div>
                                         </td>
                                         <td class="text-center" style="width: 60px;">
                                             @if($cart->product_id != null)
-                                                <input type="number" name="quantity_{{$cart->id}}" class="form-control form-control-sm text-center" value="{{ $cart->quantity }}" min="1">
+                                            <input type="number" name="quantity_{{$cart->id}}" class="form-control form-control-sm text-center" value="{{ $cart->quantity }}" min="1">
                                             @elseif($cart->quotation_id != null)
-                                                <input type="number" name="quantity_{{$cart->id}}" class="form-control form-control-sm text-center" value="{{ $cart->quantity }}" min="1" readonly>
+                                            <input type="number" name="quantity_{{$cart->id}}" class="form-control form-control-sm text-center" value="{{ $cart->quantity }}" min="1" readonly>
                                             @endif
                                         </td>
 
                                         @if($cart->product_id != null)
-                                            @foreach($products as $product)
-                                                @if($product->id == $cart->product_id)
-                                                    <td class="item_prices">₱{{ $product->price; }}</td>
-                                                    <td class="prices">₱{{ $product->price * $cart->quantity; }}</td>
-                                                    @continue
-                                                @endif
-                                            @endforeach
+                                        @foreach($products as $product)
+                                        @if($product->id == $cart->product_id)
+                                        <td class="item_prices">₱{{ $product->price; }}</td>
+                                        <td class="prices">₱{{ $product->price * $cart->quantity; }}</td>
+                                        @continue
+                                        @endif
+                                        @endforeach
                                         @elseif($cart->quotation_id != null)
-                                            @foreach($quotations as $quote)
-                                                @if($quote->id == $cart->quotation_id)
-                                                    <td class="item_prices">₱{{ $quote->final_price; }}</td>
-                                                    <td class="prices">₱{{ $quote->final_price * $cart->quantity; }}</td>
-                                                    @continue
-                                                @endif
-                                            @endforeach
+                                        @foreach($quotations as $quote)
+                                        @if($quote->id == $cart->quotation_id)
+                                        <td class="item_prices">₱{{ $quote->final_price; }}</td>
+                                        <td class="prices">₱{{ $quote->final_price * $cart->quantity; }}</td>
+                                        @continue
+                                        @endif
+                                        @endforeach
                                         @endif
 
                                         <td class="text-end">
@@ -286,7 +286,7 @@
                 </div>
                 <div class="border rounded-3 p-3 mb-3 d-flex justify-content-between align-items-center">
                     <div>
-                        <p class="mb-0 fw-bold">Cash on Delivery</p>
+                        <p class="mb-0 fw-bold">Online Payment</p>
                         <small class="text-muted">Pay when you receive the product.</small>
                     </div>
                     <div class="form-check form-switch">
@@ -336,7 +336,7 @@
 <!--end::Body-->
 
 <!-- JS Links -->
- @include ('plus.scripts')
+@include ('plus.scripts')
 <!-- End of JS Links -->
 
 <!-- Footer -->
