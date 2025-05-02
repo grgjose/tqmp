@@ -8,6 +8,8 @@ use App\Models\ProductImage;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Imports\DatabaseImport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ProductController extends Controller
 {
@@ -447,6 +449,24 @@ class ProductController extends Controller
             'message' => 'Item removed from cart.',
             'user' => $my_user, // Optional — only if needed on the frontend
         ]);
+    }
+
+    /**
+     * Testing Import
+     */
+    public function import(){
+        // Build full path to the file
+        $path = storage_path('app\public\imports\DatabaseSeeder.xlsx');
+        $importer = new DatabaseImport();
+        Excel::import($importer, $path);
+
+        $data = $importer->getData();
+        $usertypes = $data['Usertypes'];
+        $users = $data['Users'];
+        $categories = $data['Categories'];
+        $products = $data['Products'];
+
+        dd($users);
     }
 
 }
