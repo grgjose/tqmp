@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->integer('product_id');
             $table->string('key');
-            $table->string('value');
-            $table->double('price')->nullable();
+            $table->json('value');
+            $table->json('price')->nullable();
             $table->boolean('isDeleted')->default(false)->nullable();
             $table->timestamps();
         });

@@ -60,12 +60,12 @@
 
                         <div class="mb-3">
                             <label class="form-label fw-bold">Old Password</label>
-                            <input type="password" class="form-control" placeholder="Old Password">
+                            <input type="password" name="password" class="form-control" placeholder="Old Password">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label fw-bold">New Password</label>
-                            <input type="password" class="form-control" placeholder="New Password">
+                            <input type="password" name="confirm_password" class="form-control" placeholder="New Password">
                         </div>
 
                         <!-- <button class="btn btn-primary">Change Password</button> -->
@@ -78,7 +78,7 @@
                 <div class="row g-3">
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Username</label>
-                        <input type="text" class="form-control py-2" value="john.doe" placeholder="User Name">
+                        <input type="text" class="form-control py-2" value="{{ $my_user->username }}" placeholder="User Name">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label fw-bold">First Name</label>
@@ -102,19 +102,19 @@
                     </div>
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Birthdate</label>
-                        <input type="date" class="form-control py-2" value="{{ $my_user->birthdate }}">
+                        <input type="date" class="form-control py-2" value="{{ \Carbon\Carbon::parse($my_user->birthdate)->format('Y-m-d') }}">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Contact Number</label>
-                        <input type="tel" class="form-control py-2" value="{{ $my_user->contact_num }}" placeholder="Contact Number">
+                        <input type="text" class="form-control py-2" value="{{ $my_user->contact_num }}" placeholder="Contact Number">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Default Shipping Address</label>
-                        <input type="text" class="form-control py-2" value="" placeholder="Default Shipping Address">
+                        <input type="text" class="form-control py-2" value="{{ $my_user->address }}" placeholder="Default Shipping Address">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Billing Address</label>
-                        <input type="text" class="form-control py-2" value="" placeholder="Billing Address">
+                        <input type="text" class="form-control py-2" value="{{ $my_user->address }}" placeholder="Billing Address">
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class OrderController extends Controller
 {
@@ -20,10 +21,11 @@ class OrderController extends Controller
             return redirect('/')->with('error_msg', 'Invalid Access!');
         }
 
-        //return view('dashboard.order');
+        $orders = DB::table('orders')->get();
 
         return view('dashboard.index', [
             'my_user' => $my_user,
+            'orders' => $orders,
         ])
         ->with('title', 'Orders')
         ->with('main_content', 'dashboard.modules.orders');

@@ -44,9 +44,9 @@
                 <table id="tbl_approvals" class="table is-striped" style="width:100%; text-align: left;">
                     <thead>
                         <tr>
-                            <th style="width: 15%">Brand</th>
-                            <th style="width: 15%">Category</th>
-                            <th style="width: 10%">Display Name</th>
+                            {{-- <th style="width: 15%">Brand</th> --}}
+                            <th style="width: 20%">Category</th>
+                            <th style="width: 20%">Display Name</th>
                             <th style="width: 10%">Production Name</th>
                             <th style="width: 20%">Price</th>
                             <th style="width: 50%">Actions</th>
@@ -55,7 +55,7 @@
                     <tbody>
                         @foreach($products as $product)
                             <tr>
-                                <td>{{ $product->brand }}</td>
+                                {{-- <td>{{ $product->brand }}</td> --}}
                                 <td>{{ $product->category }}</td>
                                 <td>{{ $product->display_name }}</td>
                                 <td>{{ $product->name }}</td>

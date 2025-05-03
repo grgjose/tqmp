@@ -7,7 +7,7 @@
                     <!--begin::Row-->
                     <div class="row">
                         <div class="col-sm-6">
-                            <p class="mb-0">OVERVIEW</p>
+                            <p class="mb-0">Overview</p>
                             <h4 class="mb-0">Dashboard</h4>
                         </div>
                         <div class="col-sm-6">

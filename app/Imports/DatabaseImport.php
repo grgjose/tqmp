@@ -11,7 +11,7 @@ class DatabaseImport implements WithMultipleSheets
     public function sheets(): array
     {
         // You may need to dynamically define this if sheet names vary
-        $sheetNames = ['Usertypes', 'Users', 'Categories', 'Products']; // or use Sheet index: 0, 1
+        $sheetNames = ['Usertypes', 'Users', 'Categories', 'Products', 'Variants', 'Inventory']; // or use Sheet index: 0, 1
 
         $sheets = [];
         foreach ($sheetNames as $name) {

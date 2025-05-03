@@ -9,13 +9,12 @@ use App\Models\ProductImage;
 use App\Models\ProductVariant;
 use App\Models\User;
 use App\Models\Usertype;
-use Database\Factories\UsertypeFactory;
+use App\Models\Inventory;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use App\Imports\DatabaseImport;
 use Maatwebsite\Excel\Facades\Excel;
-use Illuminate\Support\Facades\DB;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
 
 class DatabaseSeeder extends Seeder
@@ -41,7 +40,8 @@ class DatabaseSeeder extends Seeder
         $users = $data['Users'];
         $categories = $data['Categories'];
         $products = $data['Products'];
-
+        $variants = $data['Variants'];
+        $inventories = $data['Inventory'];
 
         $usertypes_arr = array(); $i = 1;
 
@@ -82,6 +82,7 @@ class DatabaseSeeder extends Seeder
         $i = 0; $ctr = 1; $idx = 1;
         $categories_arr = array();
         $sub_categories_arr = array();
+        $products_arr = array();
 
         //Import Categories
         foreach(array_slice($categories, 1) as $row){
@@ -130,7 +131,9 @@ class DatabaseSeeder extends Seeder
                     'brand' => $row[6],
                     'status' => $row[7],
                     'price' => $row[8],
-                ]);
+                ]); 
+
+                $products_arr[$row[3]] = $idx;
 
                 ProductImage::factory()->create([
                     'product_id' => $idx,
@@ -139,6 +142,47 @@ class DatabaseSeeder extends Seeder
                 ]);
 
                 $idx++;
+            }
+        }
+
+        // Import Variants
+        foreach(array_slice($variants, 1) as $row){
+            if($row[1] != ""){
+
+                $tmp_arr1 = explode(',', $row[3]);
+                $out_arr1 = array();
+                foreach($tmp_arr1 as $tmp){
+                    $tmp = trim($tmp);
+                    array_push($out_arr1, $tmp);
+                }
+
+                $tmp_arr2 = explode(',', $row[4]);
+                $out_arr2 = array();
+                foreach($tmp_arr2 as $tmp){
+                    $tmp = trim($tmp);
+                    array_push($out_arr2, $tmp);
+                }
+
+                ProductVariant::factory()->create([
+                    'product_id' => $products_arr[$row[1]],
+                    'key' => $row[2],
+                    'value' => json_encode($out_arr1),
+                    'price' => json_encode($out_arr2),
+                ]); 
+
+            }
+        }
+
+        // Import Inventories
+        foreach(array_slice($inventories, 1) as $row){
+            if($row[1] != ""){
+
+                Inventory::factory()->create([
+                    'product_id' => $products_arr[$row[1]],
+                    'stock' => $row[2],
+                    'status' => $row[3],
+                ]);
+
             }
         }
 

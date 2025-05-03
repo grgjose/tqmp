@@ -141,7 +141,7 @@
                             <li class="user-footer d-flex flex-column">
                                 <div class="dropdown-divider"></div>
                                 <a href="#" class="btn btn-default mb-2">Profile</a>
-                                <a href="/logout" class="btn btn-default">Sign out</a>
+                                <a href="#" onclick="document.getElementById('logoutForm').submit(); return false;" class="btn btn-default">Sign out</a>
                             </li>
                             <!--end::Menu Footer-->
                         </ul>
@@ -259,7 +259,7 @@
                                 </li>
                                 @endif
                                 <li class="nav-item">
-                                    <a href="/logout" class="nav-link">
+                                    <a href="/#" onclick="document.getElementById('logoutForm').submit(); return false;" class="nav-link">
                                         <p><i class="fa-solid fa-arrow-right-from-bracket" style="margin-right: 10px;"></i>Logout</p>
                                     </a>
                                 </li>
@@ -277,6 +277,8 @@
             <!--end::Sidebar Wrapper-->
         </aside>
         <!--end::Sidebar-->
+
+        <form style="display:none;" id="logoutForm" action="/logout" method="POST">@csrf</form>
 
         @include($main_content)
 

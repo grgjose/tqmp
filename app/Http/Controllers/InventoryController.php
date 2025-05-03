@@ -21,13 +21,14 @@ class InventoryController extends Controller
             return redirect('/')->with('error_msg', 'Invalid Access!');
         }
 
-        $inventories = DB::table('inventories')->get();
+        $inventories = DB::table('inventories')
+        ->join('products', 'products.id', '=', 'inventories.product_id')
+        ->select('inventories.*', 'products.name as product_name', 'products.price as product_price', 'products.display_name as product_display_name')
+        ->get();
+
         $products = DB::table('products')->get();
-        $brands = DB::table('brands')->get();
         $users = DB::table('users')->where('usertype', '=', 3)->get();
 
-
-        
         // return view('dashboard.inventory', [
         //     'my_user' => $my_user,
         // ]);
@@ -36,7 +37,6 @@ class InventoryController extends Controller
             'my_user' => $my_user,
             'inventories' => $inventories,
             'products' => $products,
-            'brands' => $brands,
             'users' => $users,
         ])
         ->with('title', 'Inventory')

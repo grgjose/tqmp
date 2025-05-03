@@ -61,7 +61,7 @@
                         <a class="nav-link dropdown-toggle px-3" href="#" id="bulletproofingDropdown" data-bs-toggle="dropdown" aria-expanded="false">Bullet Proofing</a>
                         <ul class="dropdown-menu" aria-labelledby="bulletproofingDropdown">
                             <li><a class="dropdown-item" href="/bulletproofing">Bullet Proof Armouring</a></li>
-                            <li><a class="dropdown-item" href="#">Benefits</a></li>
+                            <li><a class="dropdown-item" href="/bulletproofing#benefits-bulletproofing">Benefits</a></li>
                             <li><a class="dropdown-item" href="#">Videos</a></li>
                         </ul>
                     </li>
