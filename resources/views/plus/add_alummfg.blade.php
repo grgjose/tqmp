@@ -54,7 +54,28 @@
             <div class="nav flex-column nav-pills me-3 border-end" id="productTabs" role="tablist"
                 style="border-right-width: 2px; border-right-color: #7E1416; height: 100%;">
 
-                <a class="nav-link active mt-2" href="#angleSection" data-bs-toggle="pill" role="tab">
+                @php
+                    $start = true;
+                @endphp
+                
+                @foreach($productSubCategories as $sub_category)
+                    @if($sub_category->category_id == 3)
+                        @if($start == true)
+                            <a class="nav-link active mt-2" href="#panel{{$sub_category->id}}" data-bs-toggle="pill" role="tab">
+                                {{$sub_category->category}}
+                            </a>
+                            @php
+                                $start = false;
+                            @endphp
+                        @else
+                            <a class="nav-link mt-2" href="#panel{{$sub_category->id}}" data-bs-toggle="pill" role="tab">
+                                {{$sub_category->category}}
+                            </a>
+                        @endif
+                    @endif
+                @endforeach
+
+                {{-- <a class="nav-link active mt-2" href="#angleSection" data-bs-toggle="pill" role="tab">
                     Angle Sections
                 </a>
                 <a class="nav-link mt-2" href="#storeFront" data-bs-toggle="pill" role="tab">
@@ -83,14 +104,56 @@
                 </a>
                 <a class="nav-link mt-2" href="#counternosingSection" data-bs-toggle="pill" role="tab">
                     Counter Nosing Sections
-                </a>
+                </a> --}}
             </div>
         </div>
 
         <!-- Tab Content -->
         <div class="col-md-9 col-lg-9 tab-content-container">
             <div class="tab-content" id="aluminumContent">
-                <!-- Angle Section -->
+
+                @php
+                    $start = true;
+                @endphp
+
+                @foreach($productSubCategories as $sub_category)
+                    @if($sub_category->category_id == 3)
+                        @if($start == true)
+                            <div class="tab-pane fade show active" id="panel{{$sub_category->id}}">
+                            @php
+                                $start = false;
+                            @endphp
+                        @else
+                            <div class="tab-pane fade" id="panel{{$sub_category->id}}">
+                        @endif
+
+                        <div class="container mt-2" style="border-radius: .25rem;">
+                            <div class="container text-center">
+                                <div class="row py-3 g-3">
+
+                                    @foreach($products as $product)
+                                        @if($product->sub_category_id == $sub_category->id)
+                                            <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                                                <div class="card border-1 d-flex flex-column w-100">
+                                                    <img src="{{ asset('storage/all-items/'.$product->image) }}" alt="{{$product->display_name}}" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h6 class="card-title text-start fw-bold">{{$product->display_name}}</h6>
+                                                        <h6 class="card-text text-start" style="color: #7E1416;">₱{{ $product->price }}</h6>
+                                                        <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger mt-auto w-100">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endif
+                                    @endforeach
+
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    @endif
+                @endforeach
+
+                {{-- <!-- Angle Section -->
                 <div class="tab-pane fade show active" id="angleSection">
                     <div class="row py-3">
 
@@ -109,7 +172,6 @@
 
                     </div>
                 </div>
-
                 
                 <div class="tab-pane fade" id="storeFront">
                     <div class="row py-3">
@@ -279,7 +341,8 @@
                         </div>
 
                     </div>
-                </div>
+                </div> --}}
+
             </div>
         </div>
     </div>
