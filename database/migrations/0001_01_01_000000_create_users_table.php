@@ -28,6 +28,8 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('email_verification_token')->nullable();
             $table->timestamp('email_verification_sent')->nullable();
+            $table->string('forgot_password_token')->nullable();
+            $table->timestamp('forgot_password_sent')->nullable();
             $table->string('password')->nullable();
             $table->string('status')->nullable()->default('registered');
             $table->string('remarks')->nullable();

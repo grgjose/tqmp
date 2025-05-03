@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class UserCreationMail extends Mailable
+class ForgotPasswordMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -28,8 +28,8 @@ class UserCreationMail extends Mailable
     public function build()
     {
         return $this->from(env('MAIL_FROM_ADDRESS'))
-                    ->subject('TQMP - User Creation')
-                    ->view('emails.user_creation') // Blade template for email
+                    ->subject('TQMP - Forgot Password')
+                    ->view('emails.forgot_password') // Blade template for email
                     ->with('data', $this->data);
     }
 
@@ -39,7 +39,7 @@ class UserCreationMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'TQMP - User Creation',
+            subject: 'TQMP - Forgot Password',
         );
     }
 
@@ -49,7 +49,7 @@ class UserCreationMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.user_creation',
+            view: 'emails.forgot_password',
         );
     }
 

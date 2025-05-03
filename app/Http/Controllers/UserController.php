@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\RegistrationMail;
 use App\Mail\UserCreationMail;
+use App\Mail\ForgotPasswordMail;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Hash;
 use DateTime;
 
 
@@ -569,6 +572,93 @@ class UserController extends Controller
         $user->save();
 
         return redirect('/users')->with('success_msg', 'User Successfully Deleted');
+    }
+
+    /**
+     * Sends Reset Password Link
+     */
+    public function forgot(Request $request)
+    {
+
+        $validated = $request->validate([
+            'email' => ['required'],
+        ]);
+
+        $users = DB::table('users')->where('email', '=', $validated['email'])->get();
+
+        if(count($users) == 0){
+            return redirect('/')->with('error_msg', 'No Users found with that Email!');
+        }
+
+        $token = $this->generateGUID();
+
+        $user = User::find($users[0]->id);
+        $user->forgot_password_token = $token;
+        $user->forgot_password_sent = date("Y-m-d H:i:s");
+        $user->save();
+
+        $data = [
+            'name' => $user->fname.' '.$user->lname,
+            'message' => 'Please use the link below for the Password Reset Page',
+            'token' => $token,
+        ];
+
+        Mail::to($validated['email'])->send(new ForgotPasswordMail($data));
+
+        return redirect('/')->with('success_msg', 'Please check your email!');
+    }
+
+    /**
+     * Shows Reset Password Page
+     */
+    public function reset(string $reference)
+    {
+
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+        
+        // Find user directly with Eloquent (simpler and more readable)
+        $user = User::where('forgot_password_token', $reference)->first();
+    
+        if (!$user) {
+            return redirect('/')->with('error_msg', 'Token expired or invalid');
+        }
+    
+        // Check if token is older than 24 hours
+        $tokenSentTime = Carbon::parse($user->forgot_password_sent);
+        if ($tokenSentTime->addHours(24)->isPast()) {
+            return redirect('/')->with('error_msg', 'Token has expired. Please request a new one.');
+        }
+
+        return view('home.reset_password', [
+            'user' => $user,
+            'my_user' => $my_user,
+        ]);
+    }
+
+    /**
+     * Perform Reset Password
+     */
+    public function resetPassword(Request $request)
+    {
+        $validated = $request->validate([
+            'user_id' => ['required'],
+            'password' => ['required'],
+        ]);
+
+        $user = User::find($validated['user_id']);
+
+        if (!$user) {
+            // Handle the case where the user doesn't exist
+            return redirect('/')->with('error_msg', 'User not found!');
+        }
+
+        $user->password = Hash::make($validated['password']);
+        $user->save();
+        
+        return redirect('/')->with('success_msg', 'Password Updated!');
+
     }
 
     /**

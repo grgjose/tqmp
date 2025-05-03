@@ -6,8 +6,6 @@
 <body>
     <h1>Dear {{ $data['name'] }},</h1>
 
-    <p>{{ $data['message'] }}</p>
-
     <p>Thank you for signing up with TQMP! Your account has been approved.</p>
 
     <p>{{ $data['message'] }}</p>
@@ -18,6 +16,6 @@
 
     <p>Best Regards</p>
     <p>TQMP Team</p>
-    <a href="https://tqmp.gissolve.com/">TQMP Website</p>
+    <a href="{{ config('app.url') }}">TQMP Website</p>
 </body>
 </html>

@@ -21,6 +21,7 @@
         /* Shift to the left of the button */
     }
 </style>
+
 <div class="sticky-top">
     <!-- Logo and Header Text -->
     <div class="text-center" style="background-color: #7E1416;">
@@ -170,7 +171,6 @@
     </nav>
 </div>
 
-
 <!-- Login Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -197,7 +197,7 @@
                             <input type="checkbox" class="form-check-input" id="rememberMe" />
                             <label class="form-check-label" for="rememberMe">Remember me</label>
                         </div>
-                        <a href="#" class="text-decoration-none text-danger">Forgot password?</a>
+                        <a href="#" class="text-decoration-none text-danger" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot password?</a>
                     </div>
 
                     <!-- Submit Button -->
@@ -207,6 +207,36 @@
                     <p class="text-center small">
                         Don't have an account? <a href="/register" class="text-danger text-decoration-none">Register Now!</a>
                     </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="text-center fw-bold text-danger pt-3">Forgot Password</h2>
+                <p class="text-center text-muted mb-4">Access your account</p>
+                <!-- Login Form -->
+                <form action="/forgot-password" method="post">
+                    @csrf
+                    <!-- Email Input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="loginEmail" name="email" class="form-control" placeholder="Email address" required />
+                    </div>
+
+                    <!-- Login Modal -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div></div>
+                        <a href="#" class="text-decoration-none text-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Continue to Login</a>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <input type="submit" class="card-button btn btn-danger mt-auto btn-block w-100 mb-3" value="Send Email">
+
                 </form>
             </div>
         </div>

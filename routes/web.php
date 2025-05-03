@@ -58,11 +58,11 @@ Route::get('/catalog', [CatalogController::class, 'show']);
 Route::get('/shop', [HomeController::class, 'shop']);
 
 // User Authentication
-//Route::get('/login', [UserController::class, 'login']);
 Route::post('/login', [UserController::class, 'logon']);
-Route::get('/logout', [UserController::class, 'logout']);
 Route::post('/logout', [UserController::class, 'logout']);
-
+Route::post('/forgot-password', [UserController::class, 'forgot']);
+Route::get('/reset/{reference}', [UserController::class, 'reset']);
+Route::post('/reset-password', [UserController::class, 'resetPassword']);
 
 // Register Page
 Route::get('/register', [UserController::class, 'register']);

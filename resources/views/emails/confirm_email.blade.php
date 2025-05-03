@@ -21,6 +21,6 @@
 
     <p>Best Regards</p>
     <p>TQMP Team</p>
-    <a href="https://tqmp.gissolve.com/">TQMP Website</p>
+    <a href="{{ config('app.url') }}">TQMP Website</p>
 </body>
 </html>
