@@ -49,8 +49,8 @@
                <div class="col-md-5 text-mb-4">
                    <h5 style="color: #FFFFFF;">Follow Us On</h5>
                    <div class="mb-2">
-                       <a href="#" class="me-3 text-light"><i class="fab fa-facebook"></i></a> 
-                       <a href="#" class="me-3 text-light"><i class="fab fa-youtube"></i></a>
+                       <a href="https://www.facebook.com/TQMPMarketing" class="text-light fs-5"><i class="fab fa-facebook"></i></a>
+                       <a href="https://www.facebook.com/TQMPMarketing" class="text-light fs-5"><i class="fab fa-youtube"></i></a>
                    </div>
                    <p class="small mb-0" style="color: #FFFFFF;">&copy; {{ date('Y') }} Total Quality Management Products. All Rights Reserved.</p>
                </div>
