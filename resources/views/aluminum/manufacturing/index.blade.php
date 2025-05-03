@@ -55,8 +55,8 @@
     </section>
 
     <section id="about-aluminum-profiles" class="fade-in-up">
-        <div class="container py-5 mt-5">
-            <div class="row">
+        <div class="container py-5">
+            <div class="row py-5">
                 <div class="col-lg-6 d-flex justify-content-center align-items-center">
                     <img src="{{ asset('storage/logos/master_qui-logo.png') }}" alt="Bullet Proofing" class="img-fluid rounded-lg" style="padding: 20px;">
                 </div>
@@ -73,67 +73,67 @@
         </div>
     </section>
 
-    <section id="services-aluminum-profiles" class="py-3 mt-5 fade-in-up">
+    <section id="services-aluminum-profiles" class="py-5 fade-in-up">
         <div class="container">
-            <div class="text-center">
-                <h2 class="fw-bold" style="color: #7E1416;">Aluminum Profiles</h2>
-                <div class="d-flex justify-content-between align-items-center py-5">
-                    <div class="text-center">
-                        <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
-                            <span>✓</span>
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="fw-bold" style="color: #7E1416;">Aluminum Profiles</h2>
+                    <div class="d-flex justify-content-between align-items-center py-5">
+                        <div class="text-center">
+                            <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                                <span>✓</span>
+                            </div>
+                            <div class="mt-1 small">Raw Material Procurement</div>
                         </div>
-                        <div class="mt-1 small">Raw Material Procurement</div>
-                    </div>
 
-                    <div class="flex-grow-1 mx-2">
-                        <div class="progress" style="height: 2px;">
-                            <div class="progress-bar bg-primary" style="width: 100%"></div>
+                        <div class="flex-grow-1 mx-2">
+                            <div class="progress" style="height: 2px;">
+                                <div class="progress-bar bg-primary" style="width: 100%"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="text-center">
-                       <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
-                            <span>✓</span>
+                        <div class="text-center">
+                            <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                                <span>✓</span>
+                            </div>
+                            <div class="mt-1 small">Mold Design & Processing</div>
                         </div>
-                        <div class="mt-1 small">Mold Design & Processing</div>
-                    </div>
-                    <div class="flex-grow-1 mx-2">
-                        <div class="progress" style="height: 2px;">
-                            <div class="progress-bar bg-primary" style="width: 100%"></div>
+                        <div class="flex-grow-1 mx-2">
+                            <div class="progress" style="height: 2px;">
+                                <div class="progress-bar bg-primary" style="width: 100%"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="text-center">
-                       <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
-                            <span>✓</span>
+                        <div class="text-center">
+                            <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                                <span>✓</span>
+                            </div>
+                            <div class="mt-1 small">Extrusion Processing</div>
                         </div>
-                        <div class="mt-1 small">Extrusion Processing</div>
-                    </div>
-                    <div class="flex-grow-1 mx-2">
-                        <div class="progress" style="height: 2px;">
-                            <div class="progress-bar bg-primary" style="width: 100%"></div>
+                        <div class="flex-grow-1 mx-2">
+                            <div class="progress" style="height: 2px;">
+                                <div class="progress-bar bg-primary" style="width: 100%"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="text-center">
-                       <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
-                            <span>✓</span>
+                        <div class="text-center">
+                            <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                                <span>✓</span>
+                            </div>
+                            <div class="mt-1 small">Quality Inspection</div>
                         </div>
-                        <div class="mt-1 small">Quality Inspection</div>
-                    </div>
-                    <div class="flex-grow-1 mx-2">
-                        <div class="progress" style="height: 2px;">
-                            <div class="progress-bar bg-primary" style="width: 100%"></div>
+                        <div class="flex-grow-1 mx-2">
+                            <div class="progress" style="height: 2px;">
+                                <div class="progress-bar bg-primary" style="width: 100%"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="text-center">
-                       <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
-                            <span>✓</span>
+                        <div class="text-center">
+                            <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                                <span>✓</span>
+                            </div>
+                            <div class="mt-1 small">Finished Product Packaging</div>
                         </div>
-                        <div class="mt-1 small">Finished Product Packaging</div>
                     </div>
                 </div>
-            </div>
 
-            <div class="container">
                 <div class="tab-content" id="pagination-content">
                     <!-- Page 1 -->
                     <div class="tab-pane fade show active" id="page-1" role="tabpanel" aria-labelledby="page-1-tab">
@@ -396,7 +396,7 @@
     @include ('plus.footer')
     <!-- End of Footer -->
 
-    
+
     <!-- Scripts -->
     @include ('plus.scripts')
     <!-- End of Scripts -->

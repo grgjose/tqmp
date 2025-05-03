@@ -62,31 +62,31 @@
                         <ul class="dropdown-menu" aria-labelledby="bulletproofingDropdown">
                             <li><a class="dropdown-item" href="/bulletproofing">Bullet Proof Armouring</a></li>
                             <li><a class="dropdown-item" href="/bulletproofing#benefits-bulletproofing">Benefits</a></li>
-                            <li><a class="dropdown-item" href="#">Videos</a></li>
+                            <li><a class="dropdown-item" href="/bulletproofing#videos-bulletproofing">Videos</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle px-3" href="#" id="glassMfgDropdown" data-bs-toggle="dropdown" aria-expanded="false">Glass MFG</a>
                         <ul class="dropdown-menu" aria-labelledby="glassMfgDropdown">
                             <li><a class="dropdown-item" href="/glassmanufacturing">Glass Manufacturing</a></li>
-                            <li><a class="dropdown-item" href="#">Products</a></li>
-                            <li><a class="dropdown-item" href="#">Awards</a></li>
+                            <li><a class="dropdown-item" href="/glassmanufacturing#products-glass-manufacturing">Products</a></li>
+                            <li><a class="dropdown-item" href="/glassmanufacturing#awards">Awards</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle px-3" href="#" id="aluminumMfgDropdown" data-bs-toggle="dropdown" aria-expanded="false">Aluminum MFG</a>
                         <ul class="dropdown-menu" aria-labelledby="aluminumMfgDropdown">
                             <li><a class="dropdown-item" href="/aluminummanufacturing">Aluminum MFG</a></li>
-                            <li><a class="dropdown-item" href="#">About</a></li>
-                            <li><a class="dropdown-item" href="#">Aluminum Profiles</a></li>
+                            <li><a class="dropdown-item" href="/aluminummanufacturing#about-aluminum-profiles">About</a></li>
+                            <li><a class="dropdown-item" href="/aluminummanufacturing#services-aluminum-profiles">Aluminum Profiles</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle px-3" href="#" id="glassPDropdown" data-bs-toggle="dropdown" aria-expanded="false">Glass Processing</a>
                         <ul class="dropdown-menu" aria-labelledby="glassPDropdown">
                             <li><a class="dropdown-item" href="/glassprocessing">Glass Processing</a></li>
-                            <li><a class="dropdown-item" href="#">About</a></li>
-                            <li><a class="dropdown-item" href="#">Services</a></li>
+                            <li><a class="dropdown-item" href="/glassprocessing#about-glass-processing">About</a></li>
+                            <li><a class="dropdown-item" href="/glassprocessing#services-glass-processing">Services</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
