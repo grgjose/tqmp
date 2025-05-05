@@ -93,7 +93,7 @@ class QuotationController extends Controller
 
             $quotation = new Quotation();
             $quotation->user_id = $my_user->id;
-            $quotation->reference = $this->generateQuotationID($this->getNextAutoIncrement('quotations'));
+            $quotation->reference = $this->generateQuotationID($this->getNextAutoIncrement('quotations')) . '-3';
             $quotation->quotation_type = $quotationType;
             $quotation->plate_number = $validated['plateNumber'];
             $quotation->model = $validated['model'] == 'Other Model'?$validated['other_model']:$validated['model'];

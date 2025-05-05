@@ -11,6 +11,7 @@ use App\Http\Controllers\GenTradeController;
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\InquiryController;
 use App\Http\Controllers\ConsumerController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserProfileController;
@@ -71,10 +72,14 @@ Route::get('/confirmation/{token}', [UserController::class, 'confirmation']);
 
 // Dashboard Pages
 Route::get('/dashboard', [DashboardController::class, 'index']);
-Route::get('/consumer', [ConsumerController::class, 'index']);
-Route::get('/inventory', [InventoryController::class, 'index']);
-Route::get('/order', [OrderController::class, 'index']);
 Route::get('/ticketing', [OrderController::class, 'ticketing']);
+
+// Dashboard - Modules - Inventory
+Route::get('/inventory', [InventoryController::class, 'index']);
+Route::post('/inventory-update/{id}', [InventoryController::class, 'update']);
+
+// Dashboard - Modules - Orders
+Route::get('/order', [OrderController::class, 'index']);
 
 // Dashboard - Modules - Quotations
 Route::get('/quotations', [QuotationController::class, 'index']);
@@ -86,6 +91,9 @@ Route::put('/quotations-update/{id}', [QuotationController::class, 'update']);
 Route::post('/quotations-destroy/{id}', [QuotationController::class, 'destroy']);
 Route::post('/send-message', [QuotationController::class, 'sendMessage']);
 
+// Dashboard - Modules - Consumers
+Route::get('/consumers', [UserController::class, 'consumers']);
+
 // Dashboard - Modules - Approvals
 Route::get('/approvals', [UserController::class, 'approvals']);
 Route::get('/approvals-view/{id}', [UserController::class, 'approvals_show']);
@@ -94,8 +102,8 @@ Route::get('/approvals-approve/{id}', [UserController::class, 'approvals_approve
 Route::post('/approvals-reject/{id}', [UserController::class, 'approvals_reject']);
 
 // Dashboard - Modules - Inquiries
-Route::get('/inquiries', [UserController::class, 'approvals']);
-Route::get('/inquiries-view/{id}', [UserController::class, 'approvals_show']);
+Route::get('/inquiries', [InquiryController::class, 'index']);
+Route::get('/inquiries-view/{id}', [InquiryController::class, 'index']);
 
 // Dashboard - Settings - Users
 Route::get('/users', [UserController::class, 'index']);

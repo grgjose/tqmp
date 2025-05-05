@@ -21,6 +21,21 @@ class OrderController extends Controller
             return redirect('/')->with('error_msg', 'Invalid Access!');
         }
 
+        $orders = DB::table('orders')
+        ->join('products', 'products.id', '=', 'orders.product_id')
+        ->join('quotations', 'quotations.id', '=', 'orders.quotation_id')
+        ->join('users as customers', 'customers.id', '=', 'orders.customer_id')
+        ->join('users as sales_reps', 'sales_reps.id', '=', 'orders.sales_rep_id')
+        ->select(
+            'orders.*',
+            'products.name as product_name',
+            'products.price as product_price',
+            'products.display_name as product_display_name',
+            DB::raw("CONCAT(customers.fname, ' ', customers.mname, ' ', customers.lname) as customer_fullname"),
+            DB::raw("CONCAT(sales_reps.fname, ' ', sales_reps.mname, ' ', sales_reps.lname) as sales_rep_fullname"),
+        )
+        ->get();
+
         $orders = DB::table('orders')->get();
 
         return view('dashboard.index', [

@@ -1,3 +1,23 @@
+// Inventory
+function inventoryUpdateStock(id, stock, status){
+    $('#updateForm').attr('action', '/inventory-update/' + id);
+    $('#stock').val(stock);
+    $('#status').val(status);
+}
+
+function inventoryUpdateStock1(id, stock, status){
+    window.alert(1);
+}
+
+function inventoryUpdateStatus(id, stock, status){
+    $('#updateForm').attr('action', '/inventory-update/' + id);
+    $('#stock').val(stock);
+    $('#status').val(status);
+    $('#updateForm').submit();
+}
+
+
+
 // Approvals
 function showDetails(id){
     $('.tbl').attr('style', 'display: none;');

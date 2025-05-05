@@ -319,6 +319,30 @@ class UserController extends Controller
     }
 
     /**
+     * Display Active Customers Table (Consumers)
+     */
+    public function consumers()
+    {
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $my_user = $auth->user();
+
+        if($my_user == null) return redirect('/')->with('error_msg', 'Invalid Access!');
+        if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
+
+        $users = DB::table('users')
+        ->where('usertype', '=', 3)
+        ->where('status', 'Active')->get();
+
+        return view('dashboard.index', [
+            'my_user' => $my_user,
+            'users' => $users,
+        ])
+        ->with('title', 'Consumers')
+        ->with('main_content', 'dashboard.modules.consumers');
+    }
+
+    /**
      * Display pending approvals (Customer)
      */
     public function approvals()

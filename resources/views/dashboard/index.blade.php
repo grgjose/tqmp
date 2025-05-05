@@ -205,7 +205,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/consumer" class="nav-link">
+                                    <a href="/consumers" class="nav-link">
                                         <p><i class="fa-solid fa-users" style="margin-right: 10px;"></i>Consumers</p>
                                     </a>
                                 </li>

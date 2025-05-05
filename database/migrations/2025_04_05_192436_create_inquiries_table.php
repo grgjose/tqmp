@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('subject');
             $table->text('message');
             $table->string('upload_file');
+            $table->boolean('isDeleted')->default(false);
             $table->timestamps();
         });
     }
