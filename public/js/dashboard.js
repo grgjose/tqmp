@@ -16,8 +16,6 @@ function inventoryUpdateStatus(id, stock, status){
     $('#updateForm').submit();
 }
 
-
-
 // Approvals
 function showDetails(id){
     $('.tbl').attr('style', 'display: none;');
@@ -114,8 +112,8 @@ function toggleProductCheckbox(imageId) {
 
 // Products Category
 function productCategoryShow(id){
-    $('.tbl').attr('style', 'display: none;');
-    $('#view').load('/product-categories-view/'+id);
+    //$('.tbl').attr('style', 'display: none;');
+    //$('#view').load('/product-categories-view/'+id);
 }
 
 function productCategoryHide(){

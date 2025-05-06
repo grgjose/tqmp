@@ -12,7 +12,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-end">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Product Categories</li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
                     </ol>
                 </div>
             </div>
@@ -32,6 +32,7 @@
                 </div>
             </div>
             <div class="card-body">
+                <p class="text-danger">Note: View a Category to see the Sub-Categories under it</p>
                 @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
@@ -70,7 +71,7 @@
                                 </td> --}}
                                 <td>
                                     <div class="btn-group-sm">
-                                        {{-- <button class="btn btn-warning btn-sm" onclick="productShow({{ $product->id }})"> <i class="fa-solid fa-eye"></i> View</button> --}}
+                                        <button class="btn btn-warning btn-sm" onclick="productCategoryShow({{ $category->id }})" data-bs-toggle="modal" data-bs-target="#viewModal"> <i class="fa-solid fa-eye"></i> View </button>
                                         <button class="btn btn-success btn-sm" onclick="productCategoryUpdate({{ $category->id }})"> <i class="fa-solid fa-pen"></i> Update</button>
                                         <button class="btn btn-danger btn-sm" onclick="productCategoryDelete({{ $category->id }})" data-bs-toggle="modal" data-bs-target="#deleteModal"> <i class="fa-solid fa-trash"></i> Delete</button>
                                         {{-- <button class="btn btn-success btn-sm">Add</button>
@@ -87,6 +88,36 @@
         </div>
 
         <div id="view">
+        </div>
+
+
+        <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header bg-info">
+                        <h5 class="modal-title border-0 text-white" id="modalLabel">Category Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form id="deleteForm" action="/product-categories-destroy/" method="POST">
+                        @csrf
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group col-12">
+                                    <label for="reason">Description</label>
+                                    <textarea cols="8" rows="2" class="form-control" style="resize: none;" id="reason" name="reason">Category is no longer available</textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Add Sub Category</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
