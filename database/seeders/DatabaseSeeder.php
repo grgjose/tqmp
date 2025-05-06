@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
     {
  
         // Build full path to the file
-        $path = storage_path('app\public\imports\DatabaseSeeder.xlsx');
+        $path = storage_path('app/public/imports/DatabaseSeeder.xlsx');
         
         // Declare Importer
         $importer = new DatabaseImport();
