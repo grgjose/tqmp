@@ -24,8 +24,11 @@
             <!--App Content-->
             <div class="app-content">
                 <!--Container-->
-                <div class="container-fluid" style="border: 1px solid #ddd; padding: 15px; border-radius: 5px; background-color: white;">                    <!--Row-->
-                    <div class="row">
+                <div class="card tbl">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">Customers List (Consumers)</h4>
+                    </div>
+                    <div class="card-body">
 
                         <table id="example" class="table is-striped" style="width:100%; text-align: left;">
                             <thead>

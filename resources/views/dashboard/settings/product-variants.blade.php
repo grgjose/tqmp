@@ -26,7 +26,7 @@
 
         <div class="card tbl">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <h4 class="card-title">List of Products</h4>
+                <h4 class="card-title">Product Variants per Product</h4>
                 <div class="ms-auto">
                     <button class="btn btn-success px-4" onclick="productVariantCreate()"><i class="fa-solid fa-cart-plus"></i> &nbsp; Add Product Variant</button>
                 </div>
