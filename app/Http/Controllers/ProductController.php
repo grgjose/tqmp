@@ -157,10 +157,12 @@ class ProductController extends Controller
         if($my_user->usertype > 2) return redirect('/')->with('error_msg', 'Invalid Access!');
 
         $productCategories = DB::table('product_categories')->get();
+        $productSubCategories = DB::table('product_sub_categories')->get();
 
         return view('dashboard.settings.products-create', [
             'my_user' => $my_user,
             'productCategories' => $productCategories,
+            'productSubCategories' => $productSubCategories,
         ]);
     }
 
@@ -178,6 +180,7 @@ class ProductController extends Controller
            'display_name' => ['required'],
            'description' => ['nullable'],
            'category_id' => ['required'],
+           'sub_category_id' => ['required'],
            'brand' => ['nullable'],
            'price' => ['required'],
            'upload_files.*' => ['nullable', 'file', 'mimes:jpg,jpeg,png', 'max:4096'],
@@ -201,6 +204,7 @@ class ProductController extends Controller
         $product->display_name = $validated['display_name'];
         $product->description = $validated['description'];
         $product->category_id = $validated['category_id'];
+        $product->sub_category_id = $validated['sub_category_id'] == "null" ? null : $validated['sub_category_id'];
         $product->brand = $validated['brand'];
         $product->price = $validated['price'];
         $product->status = "active";
@@ -260,6 +264,7 @@ class ProductController extends Controller
 
         $products = DB::table('products')->where('isDeleted', '=', false)->where('id', '=', $id)->get();
         $productCategories = DB::table('product_categories')->get();
+        $productSubCategories = DB::table('product_sub_categories')->get();
         $productImages = DB::table('product_images')->get();
 
         if ($products == null) return redirect('/dashboard')->with('error_msg', 'Unexpected Error!');
@@ -269,6 +274,7 @@ class ProductController extends Controller
             'my_user' => $my_user,
             'product' => $products[0],
             'productCategories' => $productCategories,
+            'productSubCategories' => $productSubCategories,
             'productImages' => $productImages,
         ]);
     }
@@ -293,6 +299,7 @@ class ProductController extends Controller
             'display_name' => ['required'],
             'description' => ['nullable'],
             'category_id' => ['required'],
+            'sub_category_id' => ['required'],
             'brand' => ['nullable'],
             'price' => ['required'],
             'upload_files.*' => ['nullable', 'file', 'mimes:jpg,jpeg,png', 'max:4096'],
@@ -341,6 +348,7 @@ class ProductController extends Controller
         $product->display_name = $validated['display_name'];
         $product->description = $validated['description'];
         $product->category_id = $validated['category_id'];
+        $product->sub_category_id = $validated['sub_category_id'] == "null" ? null : $validated['sub_category_id'];
         $product->brand = $validated['brand'];
         $product->price = $validated['price'];
 

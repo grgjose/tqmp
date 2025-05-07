@@ -97,6 +97,19 @@
                         </select>
                     </div>
                     <div class="form-group col-3">
+                        <label for="sub_category_id">Sub Category</label>
+                        <select class="form-control" name="sub_category_id" value="{{ $product->sub_category_id }}">
+                            @foreach($productSubCategories as $sub_category)
+                                <option value="{{ $sub_category->id }}" 
+                                @if($sub_category->id == $product->sub_category_id)
+                                    selected
+                                @endif
+                                >
+                                {{ $sub_category->category }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="form-group col-3">
                         <label for="brand">Brand</label>
                         <input type="text" class="form-control" id="brand" name="brand" value="{{ $product->brand }}" required>
                     </div>

@@ -1,4 +1,3 @@
-
 <style>
     .img-circle{
         border-radius: 50%;
@@ -21,6 +20,7 @@
         border-style: none;
     }
 </style>
+
 <div class="card card-info">
     <div class="card-header">
         <h3 class="card-title">Product Details</h3>
@@ -58,6 +58,15 @@
                     </select>
                 </div>
                 <div class="form-group col-3">
+                    <label for="sub_category_id">Sub Category</label>
+                    <select class="form-control" name="sub_category_id">
+                        <option value="null">None</option>
+                        @foreach($productSubCategories as $sub_category)
+                            <option class="option-{{$sub_category->category_id}}" value="{{ $sub_category->id }}">{{ $sub_category->category }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="form-group col-3">
                     <label for="brand">Brand</label>
                     <input type="text" class="form-control" id="brand" name="brand" required>
                 </div>
@@ -74,3 +83,39 @@
         </div>
     </form>
 </div>
+<script>
+    $(document).ready(function () {
+        const $subCategorySelect = $('select[name="sub_category_id"]');
+        const $allOptions = $subCategorySelect.find('option');
+    
+        $('select[name="category_id"]').on('change', function () {
+            const selectedCategory = $(this).val();
+            $subCategorySelect.html(''); // Clear all options
+    
+            // Always include the "None" option
+            const noneOption = '<option value="null">None</option>';
+            $subCategorySelect.append(noneOption);
+    
+            let firstMatchOption = null;
+    
+            // Add only matching subcategories
+            $allOptions.each(function () {
+                if ($(this).hasClass('option-' + selectedCategory)) {
+                    $subCategorySelect.append($(this));
+    
+                    if (!firstMatchOption) {
+                        firstMatchOption = $(this).val();
+                    }
+                }
+            });
+    
+            // Auto-select the first sub-category (not "None") if available
+            if (firstMatchOption) {
+                $subCategorySelect.val(firstMatchOption);
+            }
+        });
+    
+        // Trigger on page load (optional, for edit forms)
+        $('select[name="category_id"]').trigger('change');
+    });
+</script>
