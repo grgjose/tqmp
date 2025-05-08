@@ -174,17 +174,17 @@ class DatabaseSeeder extends Seeder
         // }
 
         // Import Inventories
-        foreach(array_slice($inventories, 1) as $row){
-            if($row[1] != ""){
+        // foreach(array_slice($inventories, 1) as $row){
+        //     if($row[1] != ""){
 
-                Inventory::factory()->create([
-                    'product_id' => $products_arr[$row[1]],
-                    'stock' => $row[2],
-                    'status' => $row[3],
-                ]);
+        //         Inventory::factory()->create([
+        //             'product_id' => $products_arr[$row[1]],
+        //             'stock' => $row[2],
+        //             'status' => $row[3],
+        //         ]);
 
-            }
-        }
+        //     }
+        // }
 
     }
 }
