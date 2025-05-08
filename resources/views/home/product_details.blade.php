@@ -97,31 +97,29 @@
                         </div>
                     </div>
 
-                    <!-- Product Details -->
-                    <h5>Product Details</h5>
+                    @if(count($productVariants) > 0)
 
-                    <div class="col mt-3">
-                        <label for="size" class="form-label text-muted">Size</label>
-                        <select id="size" name="size" class="form-select form-select-sm">
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                        </select>
-                    </div>
-                    <div class="col mt-3">
-                        <label for="color" class="form-label text-muted">Color</label>
-                        <select id="color" name="color" class="form-select form-select-sm">
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                            <option value="gray">Gray</option>
-                        </select>
-                    </div>
-                    <div class="col mt-3">
-                        <label for="brand" class="form-label text-muted">Brand</label>
-                        <select id="brand" name="brand" class="form-select form-select-sm">
-                            <option value="shirt-flex">Shirt Flex</option>
-                        </select>
-                    </div>
+                        <!-- Product Variant -->
+                        <h5>Product Variants</h5>
+
+                        @foreach($productVariants as $variant)
+
+                        @php
+                            $values = json_decode($variant->value);
+                        @endphp
+
+                        <div class="col mt-3">
+                            <label for="lbl-{{ $variant->id }}" class="form-label text-muted">{{ $variant->key }}</label>
+                            <select name="select-{{$variant->id}}" class="form-select form-select-sm">
+                                @foreach($values as $value)
+                                <option value="{{$value}}">{{$value}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        @endforeach
+
+                    @endif
+                    
 
                     <!-- Select Size -->
                     <!-- <h5>Select Size</h5>

@@ -20,10 +20,6 @@ return new class extends Migration
             $table->integer('sub_category_id')->nullable();
             $table->string('brand')->nullable();
             $table->string('status')->nullable();
-            $table->string('dimensions')->nullable();
-            $table->string('weight')->nullable();
-            $table->string('color')->nullable();
-            $table->string('size')->nullable();
             $table->double('price')->nullable();
             $table->boolean('isDeleted')->nullable()->default(false);
             $table->timestamps();

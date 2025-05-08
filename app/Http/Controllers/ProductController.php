@@ -51,11 +51,13 @@ class ProductController extends Controller
         $my_user = $auth->user();
 
         $product = Product::Find($id);
+        $productVariants = DB::table('product_variants')->where('product_id', '=', $id)->get();
         $productImages = DB::table('product_images')->get();
 
         return view("home.product_details", [
             'my_user' => $my_user,
             'product' => $product,
+            'productVariants' => $productVariants,
             'productImages' => $productImages,
         ]);
     }

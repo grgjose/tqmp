@@ -146,32 +146,32 @@ class DatabaseSeeder extends Seeder
         }
 
         // Import Variants
-        foreach(array_slice($variants, 1) as $row){
-            if($row[1] != ""){
+        // foreach(array_slice($variants, 1) as $row){
+        //     if($row[1] != ""){
 
-                $tmp_arr1 = explode(',', $row[3]);
-                $out_arr1 = array();
-                foreach($tmp_arr1 as $tmp){
-                    $tmp = trim($tmp);
-                    array_push($out_arr1, $tmp);
-                }
+        //         $tmp_arr1 = explode(',', $row[3]);
+        //         $out_arr1 = array();
+        //         foreach($tmp_arr1 as $tmp){
+        //             $tmp = trim($tmp);
+        //             array_push($out_arr1, $tmp);
+        //         }
 
-                $tmp_arr2 = explode(',', $row[4]);
-                $out_arr2 = array();
-                foreach($tmp_arr2 as $tmp){
-                    $tmp = trim($tmp);
-                    array_push($out_arr2, $tmp);
-                }
+        //         $tmp_arr2 = explode(',', $row[4]);
+        //         $out_arr2 = array();
+        //         foreach($tmp_arr2 as $tmp){
+        //             $tmp = trim($tmp);
+        //             array_push($out_arr2, $tmp);
+        //         }
 
-                ProductVariant::factory()->create([
-                    'product_id' => $products_arr[$row[1]],
-                    'key' => $row[2],
-                    'value' => json_encode($out_arr1),
-                    'price' => json_encode($out_arr2),
-                ]); 
+        //         ProductVariant::factory()->create([
+        //             'product_id' => $products_arr[$row[1]],
+        //             'key' => $row[2],
+        //             'value' => json_encode($out_arr1),
+        //             'price' => json_encode($out_arr2),
+        //         ]); 
 
-            }
-        }
+        //     }
+        // }
 
         // Import Inventories
         foreach(array_slice($inventories, 1) as $row){
