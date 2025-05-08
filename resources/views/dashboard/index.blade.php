@@ -578,6 +578,10 @@
     <script>
         new DataTable('#example');
         new DataTable('#tbl_approvals');
+        new DataTable('#tbl_variants');
+        new DataTable('#tbl_keys');
+        new DataTable('#tbl_values');
+        new DataTable('#tbl_mappings');
     </script>
     <!--end::Script-->
     

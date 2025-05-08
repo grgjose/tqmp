@@ -12,7 +12,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-end">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Product Variants</li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
                     </ol>
                 </div>
             </div>
@@ -32,64 +32,44 @@
                 </div>
             </div>
             <div class="card-body">
-                @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs mb-3" id="variantTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="variants-tab" data-bs-toggle="tab" data-bs-target="#variants" type="button" role="tab">Variants</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mappings-tab" data-bs-toggle="tab" data-bs-target="#mappings" type="button" role="tab">Mappings</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="keys-tab" data-bs-toggle="tab" data-bs-target="#keys" type="button" role="tab">Keys</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="values-tab" data-bs-toggle="tab" data-bs-target="#values" type="button" role="tab">Values</button>
+                    </li>
+                </ul>
+            
+                <!-- Tab panes -->
+                <div class="tab-content" id="variantTabContent">
+                    <!-- All Variants -->
+                    <div class="tab-pane fade show active" id="variants" role="tabpanel">
+                        @include('dashboard.settings.product-variants-table')
+                    </div>
+            
+                    <!-- Mappings Variants -->
+                    <div class="tab-pane fade" id="mappings" role="tabpanel">
+                        @include('dashboard.settings.product-variants-mappings')
+                    </div>
+            
+                    <!-- Keys Variants -->
+                    <div class="tab-pane fade" id="keys" role="tabpanel">
+                        @include('dashboard.settings.product-variants-keys')
+                    </div>
+
+                    <!-- Values Variants -->
+                    <div class="tab-pane fade" id="values" role="tabpanel">
+                        @include('dashboard.settings.product-variants-values')
+                    </div>
                 </div>
-                @endif
-                <table id="tbl_approvals" class="table is-striped" style="width:100%; text-align: left;">
-                    <thead>
-                        <tr>
-                            <th style="width: 30%">Product</th>
-                            <th style="width: 20%">Variant</th>
-                            <th style="width: 20%">Value</th>
-                            <th style="width: 30%">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($productVariants as $variant)
-                            <tr>
-                                <td>
-                                    @foreach($products as $product)
-                                        @if($product->id == $variant->product_id)
-                                            {{ $product->name; }}
-                                            @continue
-                                        @endif
-                                    @endforeach
-                                </td>
-                                <td>{{ $variant->key }}</td>
-                                <td>{{ $variant->value }}</td>
-                                {{-- <td>
-                                    <div class="btn-group-sm">
-                                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Status
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Approve</a></li>
-                                            <li><a class="dropdown-item" href="#">Reject</a></li>
-                                            <li><a class="dropdown-item" href="#">Out of Stock</a></li>
-                                        </ul>
-                                    </div>
-                                </td> --}}
-                                <td>
-                                    <div class="btn-group-sm">
-                                        {{-- <button class="btn btn-warning btn-sm" onclick="productShow({{ $product->id }})"> <i class="fa-solid fa-eye"></i> View</button> --}}
-                                        <button class="btn btn-success btn-sm" onclick="productVariantUpdate({{ $variant->id }})"> <i class="fa-solid fa-pen"></i> Update</button>
-                                        <button class="btn btn-danger btn-sm" onclick="productVariantDelete({{ $variant->id }})" data-bs-toggle="modal" data-bs-target="#deleteModal"> <i class="fa-solid fa-trash"></i> Delete</button>
-                                        {{-- <button class="btn btn-success btn-sm">Add</button>
-                                        <button class="btn btn-warning btn-sm">Edit</button>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
-                                        <button class="btn btn-info btn-sm">View</button> --}}
-                                    </div>
-                                </td>
-                            </tr>
-                        @endforeach
-                    </tbody>
-                </table>
             </div>
         </div>
 
