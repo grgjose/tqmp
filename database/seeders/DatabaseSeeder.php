@@ -7,6 +7,8 @@ use App\Models\ProductCategory;
 use App\Models\ProductSubCategory;
 use App\Models\ProductImage;
 use App\Models\ProductVariant;
+use App\Models\ProductVariantKey;
+use App\Models\ProductVariantMapping;
 use App\Models\User;
 use App\Models\Usertype;
 use App\Models\Inventory;
@@ -14,6 +16,7 @@ use App\Models\Inventory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use App\Imports\DatabaseImport;
+use App\Models\ProductVariantValue;
 use Maatwebsite\Excel\Facades\Excel;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
 
@@ -129,21 +132,58 @@ class DatabaseSeeder extends Seeder
                     'category_id' => $categories_arr[$current_category],
                     'sub_category_id' => $current_sub_category != "-" ? $sub_categories_arr[$current_sub_category] : null,
                     'brand' => $row[6],
-                    'status' => $row[7],
-                    'price' => $row[8],
+                    'color' => $row[7],
+                    'function' => $row[8],
+                    'size' => $row[9],
+                    'thickness' => $row[10],
+                    'status' => $row[11],
+                    'price' => $row[12],
                 ]); 
 
                 $products_arr[$row[3]] = $idx;
 
                 ProductImage::factory()->create([
                     'product_id' => $idx,
-                    'filename' => $row[9],
+                    'filename' => $row[13],
                     'isDeleted' => false,
                 ]);
 
                 $idx++;
             }
         }
+
+        ProductVariant::factory()->create([
+            'product_id' => 10,
+            'sku' => 'G-123456789',
+            'price' => 350,
+            'stock' => 150,
+        ]);
+
+        ProductVariantKey::factory()->create([
+            'key' => 'Thickness'
+        ]);
+
+        ProductVariantValue::factory()->create([
+            'product_variant_keys_id' => 1,
+            'value' => '2MM'
+        ]);
+
+        ProductVariantValue::factory()->create([
+            'product_variant_keys_id' => 1,
+            'value' => '3MM'
+        ]);
+
+        ProductVariantValue::factory()->create([
+            'product_variant_keys_id' => 1,
+            'value' => '4MM'
+        ]);
+
+        ProductVariantMapping::factory()->create([
+            'product_variant_id' => 1,
+            'product_variant_key_id' => 1,
+            'product_variant_value_id' => 2,
+        ]);
+
 
         // Import Variants
         // foreach(array_slice($variants, 1) as $row){

@@ -10,4 +10,9 @@ class Product extends Model
     use HasFactory;
 
     protected $table = 'products';
+
+    public function variants()
+    {
+        return $this->hasMany(ProductVariant::class);
+    }
 }

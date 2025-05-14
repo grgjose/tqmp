@@ -50,14 +50,47 @@ class ProductController extends Controller
         $auth = auth();
         $my_user = $auth->user();
 
-        $product = Product::Find($id);
-        $productVariants = DB::table('product_variants')->where('product_id', '=', $id)->get();
+        //$product = Product::Find($id);
+
+        $product = Product::with([
+            'variants.mappings.key',
+            'variants.mappings.value'
+        ])->findOrFail($id);
+        
         $productImages = DB::table('product_images')->get();
+
+        // Collect unique variant key/value pairs
+        $variantOptions = [];
+        $combinations = [];
+
+        foreach ($product->variants as $variant) {
+            $combination = [];
+            foreach ($variant->mappings as $mapping) {
+                $key = $mapping->key->key;
+                $value = $mapping->value->value;
+
+                $variantOptions[$key][] = $value;
+                $combination[$key] = $value;
+            }
+
+            // Save the combination with metadata (sku, price, stock)
+            $combinations[] = [
+                'attributes' => $combination,
+                'sku' => $variant->sku,
+                'price' => $variant->price,
+                'stock' => $variant->stock,
+            ];
+        }
+        // Remove duplicate values
+        foreach ($variantOptions as $key => $values) {
+            $variantOptions[$key] = array_unique($values);
+        }
 
         return view("home.product_details", [
             'my_user' => $my_user,
             'product' => $product,
-            'productVariants' => $productVariants,
+            'variantOptions' => $variantOptions,
+            'combinations' => $combinations,
             'productImages' => $productImages,
         ]);
     }

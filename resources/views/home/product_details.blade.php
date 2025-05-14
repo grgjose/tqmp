@@ -78,7 +78,7 @@
                     <div class="d-flex align-items-center mb-2">
                         <span class="me-2 text-warning">★ ★ ★ ★ ★</span>
                         <span class="text-muted me-3">5.00 Rating</span>
-                        <span class="text-success">In Stock</span>
+                        <span id="stock" class="text-success">In Stock</span>
                     </div>
                     <!-- Description -->
                     <p>{{ $product->description }}</p>
@@ -92,42 +92,81 @@
                             <input type="hidden" name="price" value="{{ $product->price }}">
                         </div>
                         <div>
-                            <h4 class="fw-bold mb-0">₱{{ $product->price }}</h4>
+                            <h4 class="fw-bold mb-0" id="product_price">₱{{ $product->price }}</h4>
                             <small class="text-muted">+12% VAT Added</small>
                         </div>
                     </div>
 
-                    @if(count($productVariants) > 0)
+                    @if($product->brand != "" && $product->brand != null)
 
-                        <!-- Product Variant -->
-                        <h5>Product Variants</h5>
-
-                        @foreach($productVariants as $variant)
-
-                        @php
-                            $values = json_decode($variant->value);
-                        @endphp
+                        <!-- Product Details -->
+                        <h5>Product Details</h5>
 
                         <div class="col mt-3">
-                            <label for="lbl-{{ $variant->id }}" class="form-label text-muted">{{ $variant->key }}</label>
-                            <select name="select-{{$variant->id}}" class="form-select form-select-sm">
-                                @foreach($values as $value)
-                                <option value="{{$value}}">{{$value}}</option>
-                                @endforeach
+                            <label for="label" class="form-label text-muted">Brand</label>
+                            <select name="Brand" id="{{ $product->brand }}" class="form-select form-select-sm variant-select" disabled>
+                                <option value="{{ $product->brand }}">{{ $product->brand }}</option>
                             </select>
                         </div>
-                        @endforeach
+
+                        @if($product->color != "" && $product->color != null)
+
+                        <div class="col mt-3">
+                            <label for="label" class="form-label text-muted">Color</label>
+                            <select name="Color" id="{{ $product->color }}" class="form-select form-select-sm variant-select" disabled>
+                                <option value="{{ $product->color }}">{{ $product->color }}</option>
+                            </select>
+                        </div>
+
+                        @endif
+
+                        @if($product->function != "" && $product->function != null)
+
+                        <div class="col mt-3">
+                            <label for="label" class="form-label text-muted">Function</label>
+                            <select name="Function" id="{{ $product->function }}" class="form-select form-select-sm variant-select" disabled>
+                                <option value="{{ $product->function }}">{{ $product->function }}</option>
+                            </select>
+                        </div>
+
+                        @endif
+
+
+                        @if($product->size != "" && $product->size != null)
+
+                        <div class="col mt-3">
+                            <label for="label" class="form-label text-muted">Size</label>
+                            <select name="Size" id="{{ $product->size }}" class="form-select form-select-sm variant-select" disabled>
+                                <option value="{{ $product->size }}">{{ $product->size }}</option>
+                            </select>
+                        </div>
+
+                        @endif
+
+                        @if($product->thickness != "" && $product->thickness != null)
+
+                        <div class="col mt-3">
+                            <label for="label" class="form-label text-muted">Thickness</label>
+                            <select name="Thickness" id="{{ $product->thickness }}" class="form-select form-select-sm variant-select" disabled>
+                                <option value="{{ $product->thickness }}">{{ $product->thickness }}</option>
+                            </select>
+                        </div>
+
+                        @endif
 
                     @endif
-                    
 
-                    <!-- Select Size -->
-                    <!-- <h5>Select Size</h5>
-                    <div class="btn-group btn-group-sm" role="group" aria-label="Select Size">
-                        <button type="button" class="btn btn-outline-danger">Small</button>
-                        <button type="button" class="btn btn-danger">Medium</button>
-                        <button type="button" class="btn btn-outline-danger">Large</button>
-                    </div> -->
+                        {{-- @foreach ($variantOptions as $key => $values)
+                            <div class="col mt-3">
+                                <label for="label" class="form-label text-muted">{{ ucfirst($key) }}</label>
+                                <select name="{{ $key }}" id="{{ $key }}" class="form-select form-select-sm variant-select">
+                                    <option value="">Select {{ $key }}</option>
+                                    @foreach ($values as $value)
+                                        <option value="{{ $value }}">{{ $value }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        @endforeach --}}
 
                     <!-- Add to Cart Button -->
                     <button type="submit" class="card-button btn btn-danger btn-lg w-100 mb-4 mt-3">Add to Cart</button>
@@ -135,6 +174,18 @@
             </div>
         </div>
     </div>
+
+
+</body>
+<!--end::Body-->
+
+<!-- Footer -->
+@include ('plus.footer')
+<!-- End of Footer -->
+
+<!-- Scripts -->
+@include ('plus.scripts')
+<!-- End of Scripts -->
 
     <script>
         function increaseQuantity(){
@@ -148,16 +199,77 @@
                 $('#quantity').val(parseInt($('#quantity').val()) - 1)
             }
         }
+
+        const combinations = @json($combinations);
+
+        function getSelectedAttributes() {
+            let selected = {};
+            $('.variant-select').each(function () {
+                const key = $(this).attr('name');
+                const value = $(this).val();
+                if (value) {
+                    selected[key] = value;
+                }
+            });
+            return selected;
+        }
+
+        function findMatchingCombination(selected) {
+            return combinations.find(combo =>
+                Object.keys(selected).every(key =>
+                    combo.attributes[key] === selected[key]
+                )
+            );
+        }
+
+        function updateVariantInfo(match) {
+            if (match) {
+                //$('#sku').text(match.sku);
+                $('#product_price').text(match.price.toFixed(2));
+                $('#stock').text(match.stock + " In Stock");
+                //$('#variant-info').show();
+            } else {
+                //$('#variant-info').hide();
+            }
+        }
+
+        function filterInvalidOptions() {
+            const selected = getSelectedAttributes();
+            const keys = Object.keys(@json($variantOptions));
+
+            keys.forEach(function (key) {
+                const $select = $('#' + key);
+                const currentVal = $select.val();
+
+                $select.find('option').each(function () {
+                    const optionVal = $(this).val();
+
+                    if (optionVal === '') return; // skip placeholder
+
+                    let testSelection = { ...selected, [key]: optionVal };
+
+                    const valid = combinations.some(combo =>
+                        Object.keys(testSelection).every(k =>
+                            combo.attributes[k] === testSelection[k]
+                        )
+                    );
+
+                    $(this).prop('disabled', !valid);
+                });
+
+                $select.val(currentVal); // restore selection
+            });
+        }
+
+        $('.variant-select').on('change', function(){
+            const selected = getSelectedAttributes();
+            const match = findMatchingCombination(selected);
+
+            updateVariantInfo(match);
+            filterInvalidOptions();
+        });
+
+        // Initial state
+        filterInvalidOptions();
     </script>
-</body>
-<!--end::Body-->
-
-<!-- Footer -->
-@include ('plus.footer')
-<!-- End of Footer -->
-
-<!-- Scripts -->
-@include ('plus.scripts')
-<!-- End of Scripts -->
-
 </html>

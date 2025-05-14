@@ -10,4 +10,9 @@ class ProductVariant extends Model
     use HasFactory;
 
     protected $table = 'product_variants';
+
+    public function mappings()
+    {
+        return $this->hasMany(ProductVariantMapping::class, 'product_variant_id');
+    }
 }

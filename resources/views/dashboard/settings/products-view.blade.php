@@ -53,6 +53,7 @@
         opacity: 1;  /* Make the checkmark visible when the checkbox is checked */
     }
 </style>
+
 <div class="card card-info">
     <div class="card-header">
         <h3 class="card-title">Product Details</h3>
