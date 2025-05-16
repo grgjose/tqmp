@@ -81,7 +81,7 @@
                         <span id="stock" class="text-success">In Stock</span>
                     </div>
                     <!-- Description -->
-                    <p>{{ $product->description }}</p>
+                    <p class="lead">{{ $product->name }}</p>
                     <!-- Quantity and Price -->
                     <div class="d-flex align-items-center mb-4">
                         <div class="btn-group me-3" style="width: 120px;">

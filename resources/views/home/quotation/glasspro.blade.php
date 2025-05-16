@@ -150,10 +150,13 @@
                         <label class="form-label text-muted">Thickness <span class="text-danger">*</span></label>
                         <select name="thickness[]" class="form-select form-select-sm" required>
                             <option disabled selected value="">Select Thickness</option>
+                            <option value="5mm">5mm</option>
+                            <option value="6mm">6mm</option>
+                            <option value="8mm">8mm</option>
                             <option value="10mm">10mm</option>
+                            <option value="12mm">12mm</option>
                             <option value="15mm">15mm</option>
-                            <option value="20mm">20mm</option>
-                            <option value="25mm">25mm</option>
+                            <option value="19mm">19mm</option>
                         </select>
                     </div>
 
