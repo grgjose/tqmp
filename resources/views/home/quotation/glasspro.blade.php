@@ -165,11 +165,13 @@
                         <label class="form-label text-muted">Color <span class="text-danger">*</span></label>
                         <select name="color[]" class="form-select form-select-sm" required>
                             <option disabled selected value="">Select Color</option>
-                            <option value="white">White</option>
-                            <option value="aqua">Aqua</option>
-                            <option value="shade">Shade</option>
-                            <option value="clear">clear</option>
-                            <option value="custom">Custom</option>
+                            <option value="clear">Clear</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="euro-gray">Euro Gray</option>
+                            <option value="dark-gray">Dark Gray</option>
+                            <option value="reflective-bronze">Reflective Bronze</option>
                         </select>
                     </div>
 

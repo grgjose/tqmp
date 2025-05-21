@@ -129,7 +129,10 @@
                                         @if($product->sub_category_id == $sub_category->id)
                                             <div class="col-md-3 mb-4 d-flex align-items-stretch">
                                                 <div class="card border-1 d-flex flex-column w-100">
-                                                    <img src="{{ asset('storage/all-items/'.$product->image) }}" alt="{{$product->display_name}}" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                                    <img src="{{ asset('storage/all-items/'.$product->image) }}" 
+                                                     onerror="this.onerror=null; this.src='{{ asset('storage/all-items/default-product-image.png') }}';"
+                                                     class="card-img-top" 
+                                                     style="object-fit: cover; width: 100%; height: 200px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                                     <div class="card-body d-flex flex-column">
                                                         <h6 class="card-title text-start fw-bold">{{$product->display_name}}</h6>
                                                         <h6 class="card-text text-start" style="color: #7E1416;">₱{{ $product->price }}</h6>
