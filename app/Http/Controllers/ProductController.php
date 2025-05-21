@@ -10,6 +10,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Imports\DatabaseImport;
 use Maatwebsite\Excel\Facades\Excel;
+use App\Mail\OrderPlacedMail;
+use Illuminate\Support\Facades\Mail;
 
 class ProductController extends Controller
 {
@@ -434,6 +436,37 @@ class ProductController extends Controller
             $order->save();
             $cart->delete();
         }
+
+        $products = DB::table('products')
+            ->join('product_categories', 'products.category_id', '=', 'product_categories.id')
+            ->select('products.*', 'product_categories.category as category')
+            ->where('products.isDeleted', '=', false)->get();
+
+        $orders = DB::table('orders')
+        ->leftJoin('products', 'products.id', '=', 'orders.product_id')
+        ->leftJoin('quotations', 'quotations.id', '=', 'orders.quotation_id')
+        ->leftJoin('users as customers', 'customers.id', '=', 'orders.customer_id')
+        ->leftJoin('users as sales_reps', 'sales_reps.id', '=', 'orders.sales_rep_id')
+        ->select(
+            'orders.*',
+            'products.name as product_name',
+            'products.price as product_price',
+            'products.display_name as product_display_name',
+            DB::raw("CONCAT(customers.fname, ' ', customers.mname, ' ', customers.lname) as customer_fullname"),
+            DB::raw("CONCAT(sales_reps.fname, ' ', sales_reps.mname, ' ', sales_reps.lname) as sales_rep_fullname"),
+        )
+        ->where('orders.reference_num', $validated['reference_num'])
+        ->get();
+    
+        $data = [
+            'orders' => $orders,
+            'user' => $my_user,
+            'products' => $products,
+            'reference_num' => $validated['reference_num'],
+            'date' => date('Y-m-d')
+        ];
+
+        Mail::to('georgelouisjose@gmail.com')->cc('georgelouisjose@gmail.com')->send(new OrderPlacedMail($data));
 
         return redirect('/order-status/'.$validated['reference_num']);
     }

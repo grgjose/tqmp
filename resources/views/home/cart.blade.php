@@ -90,7 +90,9 @@
                                                 @if($cart->product_id != null)
                                                 @foreach($productImages as $image)
                                                 @if($image->product_id == $cart->product_id)
-                                                <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Product" class="product-image me-3">
+                                                <img src="{{ asset('storage/all-items/'.$image->filename) }}" 
+                                                 onerror="this.onerror=null; this.src='{{ asset('storage/all-items/default-product-image.png') }}';"
+                                                 alt="Product" class="product-image me-3">
                                                 @break
                                                 @endif
                                                 @endforeach
@@ -110,7 +112,9 @@
 
                                                 @foreach($quotations as $quote)
                                                 @if($quote->id == $cart->quotation_id)
-                                                <img src="{{ asset('storage/quotations/'.$quote->image) }}" alt="Quotation Image" class="product-image me-3">
+                                                <img src="{{ asset('storage/quotations/'.$quote->image) }}" 
+                                                 onerror="this.onerror=null; this.src='{{ asset('storage/all-items/default-product-image.png') }}';"
+                                                 alt="Quotation Image" class="product-image me-3">
                                                 <div>
                                                     <p class="mb-0 fw-bold">Quotation: {{ $quote->reference }}</p>
                                                     @if($quote->quotation_type == 'bullet')

@@ -2,10 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
-    scroll-margin-top: 200px; /* Adjust based on your header/nav height */
-  }
-
 .form-control {
     font-size: small;
 }

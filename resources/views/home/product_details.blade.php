@@ -54,7 +54,9 @@
                 <!-- Main Image -->
                 @foreach($productImages as $image)
                 @if($image->product_id == $product->id)
-                <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Main Product" class="mb-3 rounded" style="height: 400px; width: 60%;">
+                <img src="{{ asset('storage/all-items/'.$image->filename) }}"
+                 onerror="this.onerror=null; this.src='{{ asset('storage/all-items/default-product-image.png') }}';"
+                 alt="Main Product" class="mb-3 rounded" style="height: 400px; width: 60%;">
                 @continue
                 @endif
                 @endforeach
@@ -63,7 +65,9 @@
                 <div class="d-flex justify-content-between">
                     @foreach($productImages as $image)
                     @if($image->product_id == $product->id)
-                    <img src="{{ asset('storage/all-items/'.$image->filename) }}" alt="Thumbnail" class="thumbnail">
+                    <img src="{{ asset('storage/all-items/'.$image->filename) }}"
+                     onerror="this.onerror=null; this.src='{{ asset('storage/all-items/default-product-image.png') }}';"
+                     alt="Thumbnail" class="thumbnail">
                     @endif
                     @endforeach
                 </div>
