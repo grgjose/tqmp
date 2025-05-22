@@ -466,7 +466,7 @@ class ProductController extends Controller
             'date' => date('Y-m-d')
         ];
 
-        Mail::to('georgelouisjose@gmail.com')->cc('georgelouisjose@gmail.com')->send(new OrderPlacedMail($data));
+        Mail::to('salesgpaad@gmail.com')->cc('efb21@tqmp.biz')->send(new OrderPlacedMail($data));
 
         return redirect('/order-status/'.$validated['reference_num']);
     }
