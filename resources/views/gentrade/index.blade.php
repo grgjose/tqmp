@@ -67,7 +67,9 @@
 
                                 <div class="col-md-3">
                                     <div class="card" style="height: 450px;">
-                                        <img src="{{ asset('storage/all-items/'.$product->image) }}" alt="{{ $product->display_name }}" class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                        <img src="{{ asset('storage/all-items/'.$product->image) }}" alt="{{ $product->display_name }}" 
+                                        onerror="this.onerror=null; this.src='{{ asset('storage/all-items/default-product-image.png') }}';"
+                                        class="" style="object-fit: contain; width: 100%; height: 300px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                         <div class="card-body">
                                             <h6 class="card-title text-start">{{ $product->display_name }}</h6>
                                             @if($my_user != null)
@@ -77,7 +79,7 @@
                                                 @if($my_user != null)
                                                 <a href="/add-to-cart/{{ $product->id }}" class="card-button btn btn-danger flex-grow-1 me-1">Add to Cart</a>
                                                 @else
-                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1">Order Now</a>
+                                                <a href="#" class="btn btn-danger flex-grow-1 ms-1" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
                                                 @endif
                                             </div>
                                         </div>

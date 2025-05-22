@@ -109,7 +109,11 @@
                                                 <p><b>Standard Size:</b><br> 120" x 390"</p>
                                                 <div class="d-flex justify-content-end">
                                                     <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordionExample" aria-expanded="false" aria-controls="accordionExample">Close</button>
-                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
+                                                    @if($my_user != null)
+                                                    <a href="/shop" class="btn btn-danger w-100">Order Now</a>
+                                                    @else
+                                                    <a href="#" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -138,7 +142,11 @@
                                                 <p><b>Dark Blue:</b><br> 6.0mm to 12.0mm Thickness</p>
                                                 <div class="d-flex justify-content-end">
                                                     <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="false" aria-controls="accordion2">Close</button>
-                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
+                                                    @if($my_user != null)
+                                                    <a href="/shop" class="btn btn-danger w-100">Order Now</a>
+                                                    @else
+                                                    <a href="#" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -166,7 +174,11 @@
                                                 <p><b>Standard Size:</b><br> 120" x 236"</p>
                                                 <div class="d-flex justify-content-end">
                                                     <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-expanded="false" aria-controls="accordion3">Close</button>
-                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
+                                                    @if($my_user != null)
+                                                    <a href="/shop" class="btn btn-danger w-100">Order Now</a>
+                                                    @else
+                                                    <a href="#" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -195,7 +207,11 @@
                                                 <p><b>Euro Gray Float:</b><br> 6.0mm to 10.0mm Thickness</p>
                                                 <div class="d-flex justify-content-end">
                                                     <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion4" aria-expanded="false" aria-controls="accordion4">Close</button>
-                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
+                                                    @if($my_user != null)
+                                                    <a href="/shop" class="btn btn-danger w-100">Order Now</a>
+                                                    @else
+                                                    <a href="#" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -225,7 +241,11 @@
                                                 <p><b>Clear:</b><br> 6.0mm to 10.0mm Thickness</p>
                                                 <div class="d-flex justify-content-end">
                                                     <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion5" aria-expanded="false" aria-controls="accordion5">Close</button>
-                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
+                                                    @if($my_user != null)
+                                                    <a href="/shop" class="btn btn-danger w-100">Order Now</a>
+                                                    @else
+                                                    <a href="#" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -252,7 +272,11 @@
                                                 <p><b>Standard Size:</b><br> 48" x 72" to 84" x 120"</p>
                                                 <div class="d-flex justify-content-end">
                                                     <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion6" aria-expanded="false" aria-controls="accordion6">Close</button>
-                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
+                                                    @if($my_user != null)
+                                                    <a href="/shop" class="btn btn-danger w-100">Order Now</a>
+                                                    @else
+                                                    <a href="#" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -287,7 +311,11 @@
                                                 <p><b>Standard Size:</b><br></p>
                                                 <div class="d-flex justify-content-end">
                                                     <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion7" aria-expanded="false" aria-controls="accordion7">Close</button>
-                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
+                                                    @if($my_user != null)
+                                                    <a href="/shop" class="btn btn-danger w-100">Order Now</a>
+                                                    @else
+                                                    <a href="#" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -316,7 +344,11 @@
                                                 <p><b>Standard Size:</b><br></p>
                                                 <div class="d-flex justify-content-end">
                                                     <button type="button" class="btn btn btn-primary me-2 w-100" data-bs-toggle="collapse" data-bs-target="#accordion8" aria-expanded="false" aria-controls="accordion8">Close</button>
-                                                    <a href="/get_quotation_mfg" class="btn btn-danger w-100">Order Now</a>
+                                                    @if($my_user != null)
+                                                    <a href="/shop" class="btn btn-danger w-100">Order Now</a>
+                                                    @else
+                                                    <a href="#" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>

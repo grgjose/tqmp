@@ -43,7 +43,7 @@
             <div class="row justify-content-center text-center text-light">
                 <div class="col-xl-9 col-lg-8">
                     <h2 class="word-fade-in landing-text sub-heading">
-                        <span>Your</span> <span>Partner</span> <span>in</span> <span>Progress:</span>
+                        <span>Partner</span> <span>in</span> <span>Progress:</span>
                         <br><span>The</span> <span>Marketing</span> <span>Arm</span> <span>of</span>
                         <br><span>Philippines</span> <span>Glass</span> <span>and</span> <span>Aluminum</span> <span>Conglomerate</span>
                     </h2>

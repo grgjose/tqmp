@@ -144,7 +144,11 @@
                                     <img src="{{ asset('storage/aluminum/01.jpg') }}" class="card-img-top" alt="TQMP Angle Sections" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Angle Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +158,11 @@
                                     <img src="{{ asset('storage/aluminum/02.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Storefront Components</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +172,11 @@
                                     <img src="{{ asset('storage/aluminum/03.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Storefront Components</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +186,11 @@
                                     <img src="{{ asset('storage/aluminum/04.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Storefront Components</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +200,11 @@
                                     <img src="{{ asset('storage/aluminum/05.jpg') }}" class="card-img-top" alt="TQMP Storefront Components" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Storefront Components</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -194,7 +214,11 @@
                                     <img src="{{ asset('storage/aluminum/06.jpg') }}" class="card-img-top" alt="TQMP Screen Door and Windows" style="object-fit: cover; width: 100%;border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Screen Door and Windows</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -211,7 +235,11 @@
                                     <img src="{{ asset('storage/aluminum/07.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Sliding Door Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -221,7 +249,11 @@
                                     <img src="{{ asset('storage/aluminum/08.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Sliding Door Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -231,7 +263,11 @@
                                     <img src="{{ asset('storage/aluminum/09.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Sliding Door Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -241,7 +277,11 @@
                                     <img src="{{ asset('storage/aluminum/10.jpg') }}" class="card-img-top" alt="TQMP Sliding Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Sliding Door Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +291,11 @@
                                     <img src="{{ asset('storage/aluminum/11.jpg') }}" class="card-img-top" alt="TQMP Miscellaneous Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Miscellaneous Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -261,7 +305,11 @@
                                     <img src="{{ asset('storage/aluminum/12.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Swing Door Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -278,7 +326,11 @@
                                     <img src="{{ asset('storage/aluminum/13.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Swing Door Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -288,7 +340,11 @@
                                     <img src="{{ asset('storage/aluminum/14.jpg') }}" class="card-img-top" alt="TQMP Counter Trim Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Counter Trim Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -298,7 +354,11 @@
                                     <img src="{{ asset('storage/aluminum/15.jpg') }}" class="card-img-top" alt="TQMP YC Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">YC Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -308,7 +368,11 @@
                                     <img src="{{ asset('storage/aluminum/16.jpg') }}" class="card-img-top" alt="TQMP Vent Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Vent Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -318,7 +382,11 @@
                                     <img src="{{ asset('storage/aluminum/17.jpg') }}" class="card-img-top" alt="TQMP Flat Bar Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Flat Bar Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -328,7 +396,11 @@
                                     <img src="{{ asset('storage/aluminum/18.jpg') }}" class="card-img-top" alt="TQMP Counter Nosing Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Counter Nosing Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -345,7 +417,11 @@
                                     <img src="{{ asset('storage/aluminum/19.jpg') }}" class="card-img-top" alt="TQMP Swing Door Sections" style="object-fit: cover; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                                     <div class="card-body">
                                         <h6 class="card-title">Swing Door Sections</h6>
-                                        <a href="/get_quotation_aluminum_mfg" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @if($my_user != null)
+                                        <a href="/shop" class="card-button btn btn-danger mt-auto w-100">Order Now</a>
+                                        @else
+                                        <a href="#" class="card-button btn btn-danger mt-auto w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>

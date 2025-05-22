@@ -102,6 +102,10 @@ class HomeController extends Controller
         $auth = auth();
         $my_user = $auth->user();
 
+        if($my_user == null){
+            return redirect('/')->with('error_msg', 'Login First to avail shopping');
+        }
+
         $products = DB::table('products')
             ->join('product_categories', 'products.category_id', '=', 'product_categories.id')
             ->leftJoin('product_sub_categories', 'products.sub_category_id', '=', 'product_sub_categories.id')
@@ -114,6 +118,7 @@ class HomeController extends Controller
             ->where('products.isDeleted', '=', false)->get();
 
         $productSubCategories = DB::table('product_sub_categories')->get();
+        
         
         return view('home.shop', [
             'my_user' => $my_user,
