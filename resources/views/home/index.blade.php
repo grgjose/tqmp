@@ -103,7 +103,11 @@
                             <h6 class="fw-bold mb-3">Bullet Proofing</h6>
                             <p>Equip your vehicle with unparalleled protection that rivals the strength of a tank.
                                 Our advanced armor ensures superior safety, providing peace of mind and safeguarding lives on every journey.</p>
-                            <a href="/get-quotation-bulletproofing" class="card-button btn btn-danger mt-auto">Get Quotation</a>
+                            @if($my_user != null)
+                            <a href="/get-quotation-bulletproofing" class="card-button btn btn-danger w-100">Get Quotation</a>
+                            @else
+                            <a href="/#" class="card-button btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Get Quotation</a>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -113,8 +117,12 @@
                         <div class="card-body d-flex flex-column">
                             <h6 class="fw-bold mb-3">Glass Processing</h6>
                             <p>Our advanced glass processing techniques ensure durability and quality, catering to a wide range of architectural and industrial needs.</p>
-                            <a href="/get-quotation-glassprocessing" class="card-button btn btn-danger mt-auto">Get Quotation</a>
-                        </div>
+                            @if($my_user != null)
+                            <a href="/get-quotation-glassprocessing" class="card-button btn btn-danger w-100">Get Quotation</a>
+                            @else
+                            <a href="/#" class="card-button btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#loginModal">Get Quotation</a>
+                            @endif
+                            </div>
                     </div>
                 </div>
             </div>
