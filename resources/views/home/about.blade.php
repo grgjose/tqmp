@@ -126,7 +126,7 @@
                                         </div>
                                     </div>
 
-
+                                    <!-- Timeline Item 8 -->
                                     <div class="timeline-item row align-items-center justify-content-center">
                                         <div class="col-md-6 order-md-2 mb-3">
                                             <h2 class="my-3" style="color: #920B12;"><b>First Quarter of 2018</b></h2>
@@ -136,7 +136,7 @@
                                             <img src="{{ asset('storage/logos/pfgmi.jpg') }}" alt="2018 Q1" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
                                         </div>
                                     </div>
-                                    <!-- Timeline Item 4 -->
+                                    <!-- Timeline Item 9 -->
                                     <div class="timeline-item row align-items-center justify-content-center">
                                         <div class="col-md-6 order-md-1 text-md-end mb-3">
                                             <h2 class="my-3" style="color: #920B12;"><b>Fourth Quarter of 2022</b></h2>
@@ -146,9 +146,9 @@
                                             <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="2022 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
                                         </div>
                                     </div>
-                                    <!-- Timeline Item 5 -->
+                                    <!-- Timeline Item 10 -->
                                     <div class="timeline-item row align-items-center justify-content-center">
-                                    <div class="col-md-6 order-md-2 mb-3">
+                                        <div class="col-md-6 order-md-2 mb-3">
                                             <h2 class="my-3" style="color: #920B12;"><b>Fourth Quarter of 2024</b></h2>
                                             <p>In the fourth quarter of 2024, TQMP was seeking for extending their marketing, then it establish another company. HSP Paragon Corporation, which equipped with both powder coating and anodizing lines, is committed to mass-producing and advancing high-end aluminum profiles. Our facility also features a recycling plant for all types of aluminum scraps, ensuring comprehensive solutions for your aluminum section needs.</p>
                                         </div>
