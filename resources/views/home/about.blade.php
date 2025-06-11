@@ -125,6 +125,37 @@
                                             <img src="{{ asset('storage/logos/tqmpnew-edited.jpg') }}" alt="2014 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
                                         </div>
                                     </div>
+
+
+                                    <div class="timeline-item row align-items-center justify-content-center">
+                                        <div class="col-md-6 order-md-2 mb-3">
+                                            <h2 class="my-3" style="color: #920B12;"><b>First Quarter of 2018</b></h2>
+                                            <p>In the first quarter of 2018, TQMP Glass Manufacturing Corp acquired 100% of the AGPH shares and now operates the Philippine Float Glass Plant under the name Pioneer Float Glass Manufacturing Inc. (PFGMI)</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-1 text-md-end mb-3">
+                                            <img src="{{ asset('storage/logos/pfgmi.jpg') }}" alt="2018 Q1" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Item 4 -->
+                                    <div class="timeline-item row align-items-center justify-content-center">
+                                        <div class="col-md-6 order-md-1 text-md-end mb-3">
+                                            <h2 class="my-3" style="color: #920B12;"><b>Fourth Quarter of 2022</b></h2>
+                                            <p>In the fourth quarter of 2022, this the company experiencing a hard time at marketing so we try different side of view for the marketing. "Bulletproofing" which we called MASTER Armoured Vehicle which is your premier source for top-of-the-line and precision-engineered armoured vehicles</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-1 text-md-end mb-3">
+                                            <img src="{{ asset('storage/logos/bulletproof-10.jpg') }}" alt="2022 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Item 5 -->
+                                    <div class="timeline-item row align-items-center justify-content-center">
+                                    <div class="col-md-6 order-md-2 mb-3">
+                                            <h2 class="my-3" style="color: #920B12;"><b>Fourth Quarter of 2024</b></h2>
+                                            <p>In the fourth quarter of 2024, TQMP was seeking for extending their marketing, then it establish another company. HSP Paragon Corporation, which equipped with both powder coating and anodizing lines, is committed to mass-producing and advancing high-end aluminum profiles. Our facility also features a recycling plant for all types of aluminum scraps, ensuring comprehensive solutions for your aluminum section needs.</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-1 text-md-end mb-3">
+                                            <img src="{{ asset('storage/logos/about-bg-q4.jpg') }}" alt="2024 Q4" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                    </div>
                                 </div> <!-- End of Timeline -->
                             </div>
                         </div>
