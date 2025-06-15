@@ -34,6 +34,7 @@ return new class extends Migration
             $table->string('status')->nullable()->default('registered');
             $table->string('remarks')->nullable();
             $table->boolean('isDeleted')->nullable()->default(false);
+            $table->string('last_session_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

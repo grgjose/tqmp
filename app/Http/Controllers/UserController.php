@@ -11,6 +11,7 @@ use App\Mail\UserCreationMail;
 use App\Mail\ForgotPasswordMail;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 use DateTime;
 
 
@@ -83,29 +84,68 @@ class UserController extends Controller
             "password" => ['required', 'min:2']
         ]);
         
+        /** @var \App\Models\User|null $user */
+        $user = \App\Models\User::where('email', $validated['email'])->first();
+
+        if (!$user) {
+            return redirect('/')->with('error_msg', 'Invalid Credentials!');
+        }
+        
+        // 🧠 Step 1: Check if the user has an active session
+        if ($user->last_session_id) {
+            $active = DB::table('sessions')->where('id', $user->last_session_id)->exists();
+
+            if ($active) {
+                return redirect('/')->with('error_msg', 'This account is already logged in on another device/browser.');
+            }
+        }
+
         /** @var \Illuminate\Auth\SessionGuard $auth */
         $auth = auth();
-
         $remember = $request->input("remember_me");
 
-        
         if($auth->attempt($validated, $remember) || $auth->viaRemember()){
             $request->session()->regenerate();
 
+            // Save new session ID
+            $user->last_session_id = Session::getId();
+            $user->save();
 
-
-            if($auth->check() && $auth->user()->usertype <= 2){
+            if ($user->usertype <= 2) {
                 return redirect('/dashboard');
-            } elseif($auth->user()->status == "registered"){
+            } elseif ($user->status === "registered") {
                 $auth->logout();
-                return redirect('/')->with('error_msg', 'Your user is not yet verified, Please wait for Email Confirmation from our Team!');
-            }  else {
+                return redirect('/')->with('error_msg', 'Your user is not yet verified. Please wait for email confirmation.');
+            } else {
                 return redirect('/');
             }
 
         } else {
             return redirect('/')->with('error_msg', 'Invalid Credentials!');
         }
+    }
+
+
+    /**
+     * Logout a User
+     */    
+    public function logout(Request $request)
+    {   
+        /** @var \Illuminate\Auth\SessionGuard $auth */
+        $auth = auth();
+        $user  = $auth->user();
+
+        if($user == null) { return redirect('/'); }
+
+        if ($user) {
+            $user->last_session_id = null;
+            $user->save();
+        }
+        
+        $auth->logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/');
     }
 
     /**
@@ -200,19 +240,6 @@ class UserController extends Controller
 
     }
 
-    /**
-     * Logout a User
-     */    
-    public function logout(Request $request)
-    {   
-        /** @var \Illuminate\Auth\SessionGuard $auth */
-        $auth = auth();
-        $my_user = $auth->user();
-
-        if($my_user == null) { return redirect('/'); }
-        $auth->logout();
-        return redirect('/');
-    }
 
     /**
      * Show the form for creating a new resource.
